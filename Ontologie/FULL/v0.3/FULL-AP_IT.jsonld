@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://w3id.org/italia/onto/FULL",
+  "@type": "owl:Ontology",
+  "owl:imports": [
+    {
+      "@id": "https://w3id.org/italia/onto/PARK"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/CPV"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/SM"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Language"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Cultural-ON"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/MU"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/TI"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/POI"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/IoT"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/RO"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/AccessCondition"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/l0"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/COV"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ACCO"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/POT"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/CLV"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/CPEV"
+    }
+  ],
+  "owl:versionIRI": {
+    "@id": "https://w3id.org/italia/onto/FULL/0.3"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "https://w3id.org/italia/onto/full/0.2"
+  }
+}

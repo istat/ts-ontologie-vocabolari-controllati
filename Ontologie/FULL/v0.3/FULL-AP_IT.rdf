@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/italia/onto/FULL">
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/ACCO"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
+    <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/full/0.2"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/SM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/POI"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/PARK"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/IoT"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/CPEV"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/RO"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/Cultural-ON"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/POT"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/FULL/0.3"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/Language"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/AccessCondition"/>
+  </rdf:Description>
+</rdf:RDF>

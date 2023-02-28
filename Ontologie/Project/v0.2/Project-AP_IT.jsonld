@@ -1,0 +1,1369 @@
+{
+  "@context": {
+    "CLV": "https://w3id.org/italia/onto/CLV/",
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/italia/onto/Project/projectTotalCost",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that represents the total cost of the project"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di rappresentare il costo totale del progetto"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "costo totale progetto"
+        },
+        {
+          "@language": "en",
+          "@value": "project total cost"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:float"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/MU/value"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/UniqueProjectCode",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe che rappresenta il Codice Univoco del Progetto (CUP). Secondo i dati di open cup un cup può essere di diversi tipi, in particolare esso può essere \"Normale\" (normal nell'ontologia), \"Master\" (master nell'ontologia) e \"Collegato\" (linked nell'ontologia)"
+        },
+        {
+          "@language": "en",
+          "@value": "The unique identifier of the project (in Italian the acronym CUP). It can be of different types; namely, \"normal\", \"master\" and \"linked\"."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Unique Project Code"
+        },
+        {
+          "@language": "it",
+          "@value": "CUP"
+        },
+        {
+          "@language": "it",
+          "@value": "Codice Unico di Progetto"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub65bL410C36"
+        },
+        {
+          "@id": "_:ub65bL414C36"
+        },
+        {
+          "@id": "l0:Characteristic"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/involvesEntity",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/italia/onto/Project/isInvolvedInProject"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that allows one to connect a project with the entities (persons, organizations, cultural institute or site, etc.) that are involved in the project"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di collegare il progetto alle entittà (e.g., persone, organizzazioni, luoghi della cultura, ecc.) che sono coinvolte nel progetto stesso."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "involves entity"
+        },
+        {
+          "@language": "it",
+          "@value": "coinvolge entità"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "l0:Entity"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/ProcurementProject",
+      "@type": "owl:Class",
+      "owl:disjointWith": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicResearchProject"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The class that includes projects aiming at meet the needs detected by a public administration."
+        },
+        {
+          "@language": "it",
+          "@value": "La classe che comprende i progetti atti a soddisfare un fabbisogno individuato dall'amministrazione."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Procurement Project"
+        },
+        {
+          "@language": "it",
+          "@value": "Progetto di approvigionamento"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/projectFunder",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per collegare direttamente il progetto all'organizzazione finanziatrice del progetto"
+        },
+        {
+          "@language": "en",
+          "@value": "Property used to directly link a project with the organization that funds it"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "project funder"
+        },
+        {
+          "@language": "it",
+          "@value": "finanziatore del progetto"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/italia/onto/COV/Organization"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/uniqueProjectCodeValue",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is the alfanumeric string representing the value of the unique code for the project (in Italian CUP acronym)"
+        },
+        {
+          "@language": "it",
+          "@value": "La stringa alfanumerica che rappresenta il valore del Codice Unico di Progetto"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub65bL283C37"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "unique project code value"
+        },
+        {
+          "@language": "it",
+          "@value": "valore del Codice Unico di Progetto"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "_:ub65bL414C36",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:ub65bL417C54"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/uniqueProjectCodeType"
+      }
+    },
+    {
+      "@id": "_:ub65bL336C42",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/italia/onto/RO/TimeIndexedRole"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/RO/hasRiT"
+      }
+    },
+    {
+      "@id": "_:ub65bL363C42",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "rdfs:Literal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/projectKeyword"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/projectTitle",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The full title of the project"
+        },
+        {
+          "@language": "it",
+          "@value": "Il titolo, per esteso, del progetto"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "titolo del progetto"
+        },
+        {
+          "@language": "en",
+          "@value": "project title"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:name"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/hasParticipantingAgent",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/italia/onto/Project/isParticipantingAgentOfProject"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that allows one to link the project to agents. Specializes the generic property of involvement in order to indicate, for the project, the agents participating in it."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di collegare il progetto agli agenti. Specializza la proprietà generica di coinvolgimento al fine di indicare, per il progetto, gli agenti che vi partecipano."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has participanting agent"
+        },
+        {
+          "@language": "it",
+          "@value": "ha agente participante"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "l0:Agent"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/Project/involvesEntity"
+      }
+    },
+    {
+      "@id": "_:ub65bL417C54",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "linked",
+          "master",
+          "normal"
+        ]
+      }
+    },
+    {
+      "@id": "_:ub65bL324C42",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/projectFunder"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/italia/onto/COV/Organization"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/projectAcronym",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is the acronym of the project"
+        },
+        {
+          "@language": "it",
+          "@value": "E' l'acronimo con cui identificare il progetto"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "project acronym"
+        },
+        {
+          "@language": "it",
+          "@value": "acronimo progetto"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:name"
+      }
+    },
+    {
+      "@id": "_:ub65bL332C42",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "l0:Agent"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/hasParticipantingAgent"
+      }
+    },
+    {
+      "@id": "_:ub65bL328C42",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "CLV:Feature"
+      },
+      "owl:onProperty": {
+        "@id": "CLV:hasSpatialCoverage"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project",
+      "@type": [
+        "owl:Ontology",
+        "admsapit:SemanticAsset",
+        "owl:NamedIndividual"
+      ],
+      "admsapit:acronym": "PRJ-AP_IT",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": [
+        {
+          "@id": "https://w3id.org/italia/onto/Project/UniqueProjectCode"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+        }
+      ],
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/italia/data/distribution/PROJECTAPIT-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/italia/data/distribution/PROJECTAPIT-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/italia/data/distribution/PROJECTAPIT-RDF-XML"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        }
+      ],
+      "admsapit:last": {
+        "@id": "https://w3id.org/italia/onto/Project/0.1"
+      },
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/italia/onto/Project"
+      },
+      "admsapit:prefix": "prjapit",
+      "admsapit:semanticAssetInUse": [
+        {
+          "@id": "https://w3id.org/italia/data/project/DAF"
+        },
+        {
+          "@id": "https://w3id.org/italia/data/project/OntoPiA"
+        }
+      ],
+      "admsapit:status": "draft",
+      "admsapit:target": [
+        "Imprese",
+        "Pubbliche Amministrazioni"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:DomainOntology"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/italia/data/contact-point/onto-agid"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "progetto"
+        },
+        {
+          "@language": "it",
+          "@value": "cup"
+        },
+        {
+          "@language": "it",
+          "@value": "progetti"
+        }
+      ],
+      "dcat:theme": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/GOVE"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/TECH"
+        }
+      ],
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia del profilo applicativo italiano sui progetti pubblici"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the Italian application profile for Public Project"
+        }
+      ],
+      "dcterms:identifier": "https://w3id.org/italia/onto/Project",
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2019-05-14"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2020-06-16"
+      },
+      "dcterms:publisher": {
+        "@id": "http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Project-AP_IT - Project Ontology - Italian Application Profile "
+        },
+        {
+          "@language": "it",
+          "@value": "Project-AP_IT: Profilo applicativo italiano - Ontologia dei progetti"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/italia/onto/TI"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/SM"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/COV"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/italia/onto/Project/0.2"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "Version 0.2 - 16  June 2020 - included keyword element for projects."
+        },
+        {
+          "@language": "it",
+          "@value": "Versione 0.2 - 16 Giugno 2020 - l'ontologia include un nuovo elemento: le keyword per il progetto."
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the Italian application profile for (public) Projects"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia del profilo applicativo italiano sui progetti pubblici."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Project ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia dei progetti (pubblici)"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub65bL367C42",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/uniqueProjectCodeValue"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/isInvolvedInProject",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"involves entity\" that links the entity to the project in which it is involved"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"coinvolge entità\"; consente di collegare l'entità al progetto"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "l0:Entity"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is involved in project"
+        },
+        {
+          "@language": "it",
+          "@value": "è coinvolta in progetto"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      }
+    },
+    {
+      "@id": "http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid",
+      "@type": [
+        "foaf:Agent",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "owl:NamedIndividual"
+      ],
+      "dcterms:identifier": "agid",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Italian Digital Agency"
+        },
+        {
+          "@language": "it",
+          "@value": "Agenzia per l'Italia Digitale"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/isParticipantingAgentOfProject",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of has participating agent that links the Agent to the project"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha agente partecipante\" che collega l'agente al progetto in cui partecipa"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "l0:Agent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è agente partecipante al progetto"
+        },
+        {
+          "@language": "en",
+          "@value": "is participating agent of project"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/Project/isInvolvedInProject"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/data/project/OntoPiA",
+      "@type": [
+        "admsapit:Project",
+        "owl:NamedIndividual"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/projectKeyword",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable - included in version 0.2 of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile - inclusa nella versione 0.2 dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di specificare più di una parola chiave a un progetto."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that allows one to specify more than one keyword for a project."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "project keyword"
+        },
+        {
+          "@language": "it",
+          "@value": "parola chiave progetto"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:ub65bL340C42",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/italia/onto/TI/Duration"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/TI/hasDuration"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/data/distribution/PROJECTAPIT-RDF-TURTLE",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/Project/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/Project/latest/Project-AP_IT.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/turtle of the project ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia dei Progetti"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia PRJ-AP_IT"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of PRJ-AP_IT Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub65bL256C35",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "linked",
+          "master",
+          "normal"
+        ]
+      }
+    },
+    {
+      "@id": "_:ub65bL410C36",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/uniqueProjectCodeValue"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/data/distribution/PROJECTAPIT-JSON-LD",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/Project/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/Project/latest/Project-AP_IT.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia dei Progetti"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of the project ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of PRJ-AP_IT Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia PRJ-AP_IT"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub65bL355C42",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/projectTitle"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/hasUniqueProjectCode",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to connect the project with the varous information (value and type) of the Unique Project Code (in Italian the acronym CUP)"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per collegare il progetto alle varie informazioni (valore e tipo) del CUP"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has unique project code"
+        },
+        {
+          "@language": "it",
+          "@value": "ha CUP"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/italia/onto/Project/UniqueProjectCode"
+      }
+    },
+    {
+      "@id": "_:ub65bL350C42",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/italia/onto/SM/OnlineContactPoint"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/SM/hasOnlineContactPoint"
+      }
+    },
+    {
+      "@id": "_:ub65bL359C42",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "l0:description"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:ub65bL371C42",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/projectAcronym"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/PublicResearchProject",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The class represents the research projects funded with public programmes (e.g., Horizon2020, FET Open, FTI, etc.)"
+        },
+        {
+          "@language": "it",
+          "@value": "La classe rappresenta progetti di ricerca finanziati con programmi pubblici (es. Horizon2020,  FETOpen, FTI, ecc.)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Public Research Project"
+        },
+        {
+          "@language": "it",
+          "@value": "Progetto di Ricerca Pubblica"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/data/distribution/PROJECTAPIT-RDF-XML",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/Project/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/Project/latest/Project-AP_IT.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia dei Progetti"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of the project ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of PRJ-AP_IT Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia PRJ-AP_IT"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/italia/data/project/DAF",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:Project"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "Data & Analytics Framework"
+      }
+    },
+    {
+      "@id": "_:ub65bL283C37",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
+          },
+          {
+            "@id": "https://w3id.org/italia/onto/Project/UniqueProjectCode"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe consente di rappresentare progetti di investimento pubblico."
+        },
+        {
+          "@language": "en",
+          "@value": "The class allows one to model a public investmnet project."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/italia/onto/Project"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Progetto d'Investimento Pubblico"
+        },
+        {
+          "@language": "en",
+          "@value": "Public Investment Project"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub65bL363C42"
+        },
+        {
+          "@id": "_:ub65bL340C42"
+        },
+        {
+          "@id": "_:ub65bL345C42"
+        },
+        {
+          "@id": "_:ub65bL355C42"
+        },
+        {
+          "@id": "_:ub65bL359C42"
+        },
+        {
+          "@id": "_:ub65bL324C42"
+        },
+        {
+          "@id": "l0:Object"
+        },
+        {
+          "@id": "_:ub65bL350C42"
+        },
+        {
+          "@id": "_:ub65bL328C42"
+        },
+        {
+          "@id": "_:ub65bL332C42"
+        },
+        {
+          "@id": "_:ub65bL367C42"
+        },
+        {
+          "@id": "_:ub65bL336C42"
+        },
+        {
+          "@id": "_:ub65bL371C42"
+        },
+        {
+          "@id": "_:ub65bL375C42"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub65bL345C42",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/italia/onto/Project/UniqueProjectCode"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/hasUniqueProjectCode"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab",
+      "@type": [
+        "owl:NamedIndividual",
+        "l0:Agent"
+      ],
+      "dcterms:identifier": "cnr - Z6HZEH - STLab",
+      "l0:name": [
+        {
+          "@language": "en",
+          "@value": "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"
+        },
+        {
+          "@language": "it",
+          "@value": "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/italia/data/contact-point/onto-agid",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "vcard:Organization",
+        "vcard:Kind",
+        "owl:NamedIndividual"
+      ],
+      "vcard:fn": "banche dati e open data",
+      "vcard:hasEmail": {
+        "@id": "mailto:info@dati.gov.it"
+      }
+    },
+    {
+      "@id": "_:ub65bL375C42",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:float"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/Project/projectTotalCost"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/Project/uniqueProjectCodeType",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The type of the unique code of the project (CUP acronym in Italian). It can assume one of the following three values: normal, master, linked"
+        },
+        {
+          "@language": "it",
+          "@value": "Il tipo associato al CUP del progetto. Esso può assumere uno dei seguenti tre valori: \"normale\" (normal), \"master\" (master), \"collegato\" (linked)"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/Project/UniqueProjectCode"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Tipo CUP"
+        },
+        {
+          "@language": "en",
+          "@value": "Type of Unique Project Code"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub65bL256C35"
+      }
+    }
+  ]
+}
