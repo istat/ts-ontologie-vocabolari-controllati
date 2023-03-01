@@ -1,0 +1,3989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphol version="3">
+  <project version="https://w3id.org/italia/onto/ACO/1.0" name="Ontologia dei Certificati Anagrafici">
+    <ontology addLabelFromSimpleName="1" lang="it" prefix="aco" iri="https://w3id.org/italia/onto/ACO/" addLabelFromUserInput="0">
+      <imports>
+        <import version="https://w3id.org/italia/onto/CLV" iri="https://w3id.org/italia/onto/CLV" location="https://w3id.org/italia/onto/CLV" isLocal="0"/>
+        <import version="https://w3id.org/italia/onto/l0" iri="https://w3id.org/italia/onto/l0" location="https://w3id.org/italia/onto/CPV" isLocal="0"/>
+      </imports>
+      <prefixes>
+        <prefix>
+          <value>aco</value>
+          <namespace>https://w3id.org/italia/onto/ACO/</namespace>
+        </prefix>
+        <prefix>
+          <value>admsapit</value>
+          <namespace>https://w3id.org/italia/onto/ADMS/</namespace>
+        </prefix>
+        <prefix>
+          <value>clv</value>
+          <namespace>https://w3id.org/italia/onto/CLV/</namespace>
+        </prefix>
+        <prefix>
+          <value>cov</value>
+          <namespace>https://w3id.org/italia/onto/COV/</namespace>
+        </prefix>
+        <prefix>
+          <value>cpv</value>
+          <namespace>https://w3id.org/italia/onto/CPV/</namespace>
+        </prefix>
+        <prefix>
+          <value>dcat</value>
+          <namespace>http://www.w3.org/ns/dcat#</namespace>
+        </prefix>
+        <prefix>
+          <value>dct</value>
+          <namespace>http://purl.org/dc/terms/</namespace>
+        </prefix>
+        <prefix>
+          <value>iao</value>
+          <namespace>https://w3id.org/italia/onto/IAO/</namespace>
+        </prefix>
+        <prefix>
+          <value>ito</value>
+          <namespace>https://w3id.org/italia/onto/ITO/</namespace>
+        </prefix>
+        <prefix>
+          <value>owl</value>
+          <namespace>http://www.w3.org/2002/07/owl#</namespace>
+        </prefix>
+        <prefix>
+          <value>pro</value>
+          <namespace>https://w3id.org/italia/onto/PRO/</namespace>
+        </prefix>
+        <prefix>
+          <value>rdf</value>
+          <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdfs</value>
+          <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+        </prefix>
+        <prefix>
+          <value>xml</value>
+          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
+        </prefix>
+        <prefix>
+          <value>xsd</value>
+          <namespace>http://www.w3.org/2001/XMLSchema#</namespace>
+        </prefix>
+      </prefixes>
+      <datatypes>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</datatype>
+        <datatype>http://www.w3.org/2000/01/rdf-schema#Literal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NCName</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NMTOKEN</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#Name</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#base64Binary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#boolean</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#byte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTimeStamp</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#float</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#hexBinary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#int</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#integer</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#language</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#long</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#negativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonPositiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#normalizedString</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#positiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#short</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#token</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedByte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedInt</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedLong</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedShort</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#rational</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#real</datatype>
+      </datatypes>
+      <languages>
+        <language></language>
+        <language>de</language>
+        <language>en</language>
+        <language>es</language>
+        <language>fr</language>
+        <language>it</language>
+      </languages>
+      <facets>
+        <facet>http://www.w3.org/2001/XMLSchema#langRange</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#length</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#pattern</facet>
+      </facets>
+      <annotationProperties>
+        <annotationProperty>http://purl.org/dc/terms/accrualPeriodicity</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/creator</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/description</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/identifier</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/issued</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/language</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/publisher</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/rightsHolder</annotationProperty>
+        <annotationProperty>http://purl.org/dc/terms/title</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#comment</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#label</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#deprecated</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#incompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#priorVersion</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#versionInfo</annotationProperty>
+        <annotationProperty>http://www.w3.org/ns/dcat#contactPoint</annotationProperty>
+        <annotationProperty>http://www.w3.org/ns/dcat#keyword</annotationProperty>
+        <annotationProperty>http://www.w3.org/ns/dcat#theme</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/acronym</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/hasContributor</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/hasFormalityLevel</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/hasKeyClass</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/hasOntologyLanguage</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/hasTask</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/last</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/officialURI</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/prefix</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/status</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/target</annotationProperty>
+        <annotationProperty>https://w3id.org/italia/onto/ADMS/type</annotationProperty>
+      </annotationProperties>
+      <iris>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/AC/</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Ontologia dei Certificati Anagrafici</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/accrualPeriodicity</property>
+              <object>
+                <lexicalForm>http://publications.europa.eu/resource/authority/frequency/IRREG</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/creator</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/data/public-organization/ISTAT</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/description</property>
+              <object>
+                <lexicalForm>Questa è l'ontologia dei certificati anagrafici</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/description</property>
+              <object>
+                <lexicalForm>This is the ontology of the administrative certifications.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/identifier</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ACO</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/issued</property>
+              <object>
+                <lexicalForm>2022-12-15</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#dateTimeStamp</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/language</property>
+              <object>
+                <lexicalForm>http://publications.europa.eu/resource/authority/language/ITA</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/publisher</property>
+              <object>
+                <lexicalForm>---</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/rightsHolder</property>
+              <object>
+                <lexicalForm>Ministero degli Interni</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/title</property>
+              <object>
+                <lexicalForm>ACO_IT - Administrative Certification Ontology</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://purl.org/dc/terms/title</property>
+              <object>
+                <lexicalForm>ACO_IT - Ontologia dei Certificati Anagrafici</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Questa è l'ontologia dei certificati anagrafici.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>This is the administrative certification ontology.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ACO</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Admministrative Certification Ontology</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/2002/07/owl#versionInfo</property>
+              <object>
+                <lexicalForm>Versione 1.0</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/ns/dcat#contactPoint</property>
+              <object>
+                <lexicalForm> ---</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/ns/dcat#keyword</property>
+              <object>
+                <lexicalForm>Certificato</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/ns/dcat#theme</property>
+              <object>
+                <lexicalForm>http://publications.europa.eu/resource/authority/data-theme/SOCI</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/acronym</property>
+              <object>
+                <lexicalForm>ACO</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasContributor</property>
+              <object>
+                <lexicalForm> ---</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasFormalityLevel</property>
+              <object>
+                <lexicalForm> ---</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasKeyClass</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ACO/Residenza</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasOntologyLanguage</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ADMS/OWL</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasTask</property>
+              <object>
+                <lexicalForm> ---</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/last</property>
+              <object>
+                <lexicalForm>https//w3id.org/italia/onto/ACO/1.0</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/officialURI</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ACO</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/prefix</property>
+              <object>
+                <lexicalForm>aco</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/status</property>
+              <object>
+                <lexicalForm>published</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/target</property>
+              <object>
+                <lexicalForm>Pubbliche Amministrazioni</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/type</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ADMS/DomainOntology</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/ns/dcat#keyword</property>
+              <object>
+                <lexicalForm>Residente</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>http://www.w3.org/ns/dcat#keyword</property>
+              <object>
+                <lexicalForm>Anagrafe</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasKeyClass</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/ACO/Certificato</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/</subject>
+              <property>https://w3id.org/italia/onto/ADMS/hasKeyClass</property>
+              <object>
+                <lexicalForm>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente</lexicalForm>
+                <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+                <language/>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AmministrazionePubblica</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AmministrazionePubblica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Amministrazione pubblica</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AmministrazionePubblica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Ente che svolge istituzionalmente una funzione amministrativa disciplinata da norme di diritto pubblico e da atti autoritativi e caratterizzata dalla formazione e dalla manifestazione della volontà della pubblica amministrazione o dal suo svolgersi per mezzo di poteri autoritativi o certificativi. 
+</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoAmministrativo</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoAmministrativo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto amministrativo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoAmministrativo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto giuridico posto in essere da un'autorità amministrativa nell'esercizio di una sua funzione amministrativa.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDelloStatoCivile</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDelloStatoCivile</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto dello stato civile</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDelloStatoCivile</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto rilasciato dall'ufficio di stato civile contenente le informazioni sullo stato civile di una persona.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiCittadinanza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiCittadinanza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di cittadinanza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiCittadinanza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto rilasciato dall'ufficio di stato civile contenente le informazioni sulla cittadinanza di una persona.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiDivorzio</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiDivorzio</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di divorzio</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiDivorzio</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul divorzio di una persona.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiMatrimonio</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiMatrimonio</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di matrimonio</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiMatrimonio</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul matrimonio di una persona.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiMorte</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiMorte</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di morte</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiMorte</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul decesso di una persona.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiNascita</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l'anno, il mese, il giorno e l'ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiSeparazioneLegale</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiSeparazioneLegale</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di separazione legale</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiSeparazioneLegale</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Sentenza di separazione giudiziale o decreto di omologazione dell’accordo di separazione (artt. 709 bis e 711 c.p.c.) che l’ufficiale di stato civile annota sull’atto di matrimonio </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/AttoDiUnioneCivile</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiUnioneCivile</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Atto di unione civile</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/AttoDiUnioneCivile</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto rilasciato dall'ufficio di stato civile contenente le informazioni sull'unione civile di una persona.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/Certificato</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Certificato</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Certificato</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Dichiarazione scritta rilasciata da ente o persona qualificata cui la legge affida un potere certificativo idoneo ad attestare l'effettiva esistenza e verità di un fatto, di una situazione o di una condizione.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoAnagrafico</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoAnagrafico</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato anagrafico</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoAnagrafico</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato rilasciato dal Ministero dell’Interno in cui si attesta quanto risulta in anagrafe.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiNascita</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato 
+anagrafico di 
+nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto all’atto di nascita (artt. 5 e 100, DPR 396/00 ; Artt.12 e 33 del DPR n.223/1989). </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiResidenza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato 
+anagrafico di 
+residenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato rilasciato dal Ministero o dal Comune dell’Interno in cui si attesta quanto risulta in anagrafe rispetto alla residenza e ai relativi dati di una persona (art. 33 DPR 223/1989).</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoDiCittadinanza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoDiCittadinanza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato di 
+cittadinanza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoDiCittadinanza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto alla cittadinanza e ai relativi dati di una persona. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoDiStatoCivile</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoDiStatoCivile</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato di 
+stato civile</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoDiStatoCivile</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato civile e ai relativi dati di una persona. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoDiStatoDiFamiglia</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoDiStatoDiFamiglia</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato di 
+stato di famiglia</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoDiStatoDiFamiglia</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato di famiglia e ai relativi dati di una persona. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaDirittiDiSegreteria</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaDirittiDiSegreteria</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato esente 
+da diritti di segreteria</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaDirittiDiSegreteria</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato anagrafico rilasciato senza obbligo di versamento di un corrispettivo per l'attività svolta. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaImpostaDiBollo</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaImpostaDiBollo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Certificato esente 
+da imposta di bollo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaImpostaDiBollo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Certificato anagrafico rilasciato senza obbligo di pagamento di una imposta di bollo.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/DirittiDiSegreteria</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/DirittiDiSegreteria</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Diritti di segreteria</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/DirittiDiSegreteria</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Versamento effettuato quale corrispettivo per il servizio svolto dalla pubblica amministrazione </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/Evidenza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Evidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>per Evidenza, detta anche Prova, si intende “ogni documento o dato, compresi testi o registrazioni sonore, visive o audiovisive, su qualsiasi supporto, richiesto da un’autorità competente per dimostrare la veridicità dei fatti o il rispetto degli obblighi procedurali di cui all’articolo 2, paragrafo 2, lettera b)</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Evidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Evidenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiNascita</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Evidenza di 
+certificato anagrafico 
+di nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiResidenza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Evidenza di 
+certificato anagrafico 
+di residenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/ImpostaDiBollo</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/ImpostaDiBollo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Imposta di bollo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/ImpostaDiBollo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Imposta indiretta cui sono soggetti gli atti, i documenti e i registri indicati nella tariffa annessa al DPR 26 ottobre 1972, n. 642. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/Interessato</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Interessato</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Interessato</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Interessato</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Soggetto interessato all’emissione di un determinato provvedimento da parte della Pubblica Amministrazione competente (art. 8, legge n. 241/1990).</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/IscrizioneAnagrafica</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/IscrizioneAnagrafica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Iscrizione anagrafica</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/IscrizioneAnagrafica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto amministrativo mediante il quale una persona fisica viene registrata nell’anagrafe della popolazione residente (Art. 7 DPR 223/1989). </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/IscrizioneAnagraficaPerNascita</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/IscrizioneAnagraficaPerNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Iscrizione 
+anagrafica 
+per nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/IscrizioneAnagraficaPerNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Atto amministrativo che determina la registrazione nell'anagrafe comunale dei nati da genitori iscritti nell’anagrafe della popolazione residente del comune, anche se la nascita è avvenuta in altro comune o all’estero purché siano pervenuti i relativi atti per la trascrizione. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/Richiedente</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Richiedente</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Richiedente</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/Richiedente</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Soggetto che dà impulso al procedimento amministrativo (l. n. 241/1990).</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/RichiestaDiCertificato</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/RichiestaDiCertificato</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Richiesta di 
+certificato</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/RichiestaDiCertificato</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Istanza volta a ottenere un certificato per se stesso ovvero per gli altri componenti inclusi nello stato di famiglia. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/RuoloRispettoARichiesta</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/RuoloRispettoARichiesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Ruolo rispetto 
+a richiesta</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/RuoloRispettoARichiesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Funzione ricoperta da colui che richiede il certificato anagrafico: diretto interessato o semplice richiedente (delegato).</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/annoAtto</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/annoAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>anno atto</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/annoAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Anno di iscrizione nel registro riportante l'atto.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/attesta</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>attesta</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra atto amministrativo e iscrizione anagrafica per nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/attestaNascita</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attestaNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>attesta nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attestaNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra l’atto amministrativo e iscrizione anagrafica per l’evento nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/attoEmessoDa</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attoEmessoDa</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>atto emesso da</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attoEmessoDa</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra atto amministrativo e amministrazione pubblica.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/attoRegistratoIn</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attoRegistratoIn</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>atto registratoIn</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/attoRegistratoIn</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra atto amministrativo e unità amministrativa.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/certifica</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certifica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>certifica</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certifica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato ed evento registrato. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/certificaResidenza</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certificaResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>certifica residenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certificaResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e residenza.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/certificatoEmessoDa</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certificatoEmessoDa</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>certificato emesso da</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certificatoEmessoDa</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e amministrazione pubblica.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/certificatoSuRichiesta</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certificatoSuRichiesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>certificato per richiesta</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/certificatoSuRichiesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e richiesta di certificato.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/citaAtto</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/citaAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>cita atto</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/citaAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e atto amministrativo.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/dataDiEmissione</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/dataDiEmissione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>data di emissione</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/dataDiEmissione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e data.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/dataDiIscrizioneAnagraficaPerNascita</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/dataDiIscrizioneAnagraficaPerNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>data di iscrizione anagrafica per nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/dataDiIscrizioneAnagraficaPerNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Data dell'iscrizione in anagrafe di una persona per nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/dataDiScadenza</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/dataDiScadenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>data di scadenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/dataDiScadenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Durata del certificato: 6 mesi (art. 41 dpr 445/00), 3 mesi (art. 33 d. lgs. 223/1989). </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/depositatoPresso</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/depositatoPresso</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>depositato presso</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/depositatoPresso</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra atto amministrativo e amministrazione pubblica.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/esito</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/esito</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>esito</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/esito</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>L'esito può essere di due tipi: accoglimento e rigetto della richiesta di certificato.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/faRiferimentoAdAttoDiNascita</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/faRiferimentoAdAttoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>fa riferimento ad atto di nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/faRiferimentoAdAttoDiNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra atto di nascita e iscrizione anagrafica per nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/fornisceEvidenza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/fornisceEvidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>fornisceEvidenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/haNascita</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/haNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>haNascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/haNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra persona fisica e iscrizione anagrafica per nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/haResidenza</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/haResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha residenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/haResidenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra persona anagraficamente residente e residenza.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/luogoIscrizioneAnagraficaperNascita</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/luogoIscrizioneAnagraficaperNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>luogo di iscrizione anagrafica per nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/luogoIscrizioneAnagraficaperNascita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Dato che consente di stabilire, sotto il profilo spaziale, il Comune di iscrizione per nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/motivazioneEsito</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/motivazioneEsito</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>motivazione esito</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/motivazioneEsito</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Motivazione dell'esito negativo della richiesta di certificato.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/numeroAtto</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/numeroAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>numero atto</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/numeroAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Identificativo dell'atto amministrativo.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/protocolloANPR</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/protocolloANPR</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>protocollo ANPR</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/protocolloANPR</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Numero progressivo, unico e obbligatorio, che viene assegnato a ciascun documento registrato sul registro di protocollo, nel quale si classificano e annotano giornalmente i varî documenti e la corrispondenza ufficiale in partenza e in arrivo presso l'Anagrafe nazionale della popolazione residente.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/residenzaInComune</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/residenzaInComune</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>residenza in comune</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/residenzaInComune</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra residenza e comune. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/residenzaInIndirizzo</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/residenzaInIndirizzo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>residenza in indirizzo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/residenzaInIndirizzo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Residenza stabilita in un indirizzo.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/ricopreRuolo</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/ricopreRuolo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ricopre ruolo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/ricopreRuolo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra persona fisica e autorità che rilascia il certificato o l’atto e il ruolo ricoperto, oppure interessato o delegato. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/rilasciatoConDirittiDiSegreteria</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/rilasciatoConDirittiDiSegreteria</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>rilasciato con diritti di segreteria</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/rilasciatoConDirittiDiSegreteria</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e diritti di segreteria.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/rilasciatoConImpostaDiBollo</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/rilasciatoConImpostaDiBollo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>rilasciato con imposta di bollo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/rilasciatoConImpostaDiBollo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra certificato e imposta di bollo.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/rispettoARichiesta</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/rispettoARichiesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>rispetto a richiesta</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/rispettoARichiesta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Relazione tra ruolo rispetto a richiesta e richiesta di certificato.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/tipoRuolo</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/tipoRuolo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>tipo ruolo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/tipoRuolo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>il ruolo può essere di due tipi: richiedente e interessato alla richiesta di certificato.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/tipologiaUtilizzo</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/tipologiaUtilizzo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>tipologia utilizzo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/tipologiaUtilizzo</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Tipo di utilizzo del certificato.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/ACO/titoloAtto</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/titoloAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>titolo atto</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/ACO/titoloAtto</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Intestazione dell'atto amministrativo.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CLV/Address</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CLV/Address</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Indirizzo</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CLV/AdminUnitComponent</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CLV/AdminUnitComponent</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Componente Unità Amministrativa</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CLV/City</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CLV/City</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Comune</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/COV/PublicOrganization</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/COV/PublicOrganization</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Amministrazione pubblica</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/Alive</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/Alive</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Persona in vita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/PersonaFisica</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/PersonaFisica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Persona fisica</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/PersonaFisica</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Individuo nato vivo che può essere in vita o non in vita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/PersonaInVita</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/PersonaInVita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Persona in vita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/PersonaInVita</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Individuo nato vivo e in vita a cui si associano le seguenti caratteristiche fondamentali: sesso alla nascita, data e luogo di nascita.</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/ResidenceInTime</value>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/Residenza</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/Residenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Residenza</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/Residenza</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/codiceFiscale</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/codiceFiscale</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>codiceFiscale</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/dateOfBirth</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/dateOfBirth</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>data di nascita</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/familyName</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/familyName</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>cognome</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/CPV/givenName</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/CPV/givenName</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>nome</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteNonResidente</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteNonResidente</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Persona 
+anagraficamente 
+non residente</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteNonResidente</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Persona fisica non registrata nell’anagrafe della popolazione residente. </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Persona 
+anagraficamente 
+residente</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Persona fisica avente dimora abituale in un determinato Comune come risultante nell'anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). </lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+      </iris>
+    </ontology>
+    <diagrams>
+      <diagram width="50000" height="50000" name="CertificatiAnagrafici">
+        <node id="n1" type="concept" color="#c2b078">
+          <geometry y="240" width="110" height="50" x="-450"/>
+          <iri>https://w3id.org/italia/onto/CPV/PersonaFisica</iri>
+          <label y="240" width="83" height="23" x="-450" size="12" customSize="0"/>
+        </node>
+        <node id="n102" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-230" width="20" height="20" x="-250"/>
+          <label y="-252" width="39" height="23" x="-250" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n103" type="range-restriction" color="#000000">
+          <geometry y="-230" width="20" height="20" x="-450"/>
+          <label y="-252" width="39" height="23" x="-450" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n106" type="range-restriction" color="#000000">
+          <geometry y="-230" width="20" height="20" x="1020"/>
+          <label y="-252" width="39" height="23" x="1020" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n107" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-150" width="20" height="20" x="910"/>
+          <label y="-150" width="39" height="23" x="940" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n108" type="concept" color="#c2b078">
+          <geometry y="-230" width="110" height="50" x="1140"/>
+          <iri>https://w3id.org/italia/onto/CPV/Residenza</iri>
+          <label y="-230" width="62" height="23" x="1140" size="12" customSize="0"/>
+        </node>
+        <node id="n12" type="concept" color="#fcfcfc">
+          <geometry y="-300" width="110" height="50" x="210"/>
+          <iri>https://w3id.org/italia/onto/ACO/Certificato</iri>
+          <label y="-300" width="63" height="23" x="210" size="12" customSize="0"/>
+        </node>
+        <node id="n13" type="concept" color="#fcfcfc">
+          <geometry y="80" width="110" height="50" x="0"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiNascita</iri>
+          <label y="80" width="80" height="53" x="5" size="12" customSize="0"/>
+        </node>
+        <node id="n14" type="concept" color="#fcfcfc">
+          <geometry y="80" width="110" height="50" x="360"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiResidenza</iri>
+          <label y="80" width="80" height="53" x="360" size="12" customSize="0"/>
+        </node>
+        <node id="n15" type="disjoint-union" color="#000000">
+          <geometry y="10" width="50" height="30" x="240"/>
+        </node>
+        <node id="n16" type="attribute" color="#fcfcfc">
+          <geometry y="-410" width="20" height="20" x="370"/>
+          <iri>https://w3id.org/italia/onto/ACO/dataDiEmissione</iri>
+          <label y="-432" width="102" height="23" x="370" size="12" customSize="0"/>
+        </node>
+        <node id="n17" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-410" width="20" height="20" x="290"/>
+          <label y="-393" width="39" height="23" x="288" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n179" type="role" color="#fcfcfc">
+          <geometry y="320" width="70" height="50" x="1140"/>
+          <iri>https://w3id.org/italia/onto/ACO/haResidenza</iri>
+          <label y="322" width="75" height="23" x="1054" size="12" customSize="0"/>
+        </node>
+        <node id="n18" type="range-restriction" color="#000000">
+          <geometry y="-410" width="20" height="20" x="450"/>
+          <label y="-392" width="39" height="23" x="448" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n180" type="domain-restriction" color="#fcfcfc">
+          <geometry y="390" width="20" height="20" x="1140"/>
+          <label y="390" width="39" height="23" x="1170" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n181" type="range-restriction" color="#000000">
+          <geometry y="240" width="20" height="20" x="1140"/>
+          <label y="240" width="39" height="23" x="1170" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n19" type="value-domain" color="#fcfcfc">
+          <geometry y="-380" width="90" height="40" x="560"/>
+          <iri>http://www.w3.org/2001/XMLSchema#dateTime</iri>
+          <label y="-380" width="80" height="23" x="560" size="12" customSize="0"/>
+        </node>
+        <node id="n20" type="concept" color="#fcfcfc">
+          <geometry y="-670" width="110" height="50" x="-140"/>
+          <iri>https://w3id.org/italia/onto/ACO/AmministrazionePubblica</iri>
+          <label y="-655" width="146" height="23" x="-135" size="12" customSize="0"/>
+        </node>
+        <node id="n201" type="attribute" color="#fcfcfc">
+          <geometry y="-460" width="20" height="20" x="-1520"/>
+          <iri>https://w3id.org/italia/onto/ACO/titoloAtto</iri>
+          <label y="-482" width="59" height="23" x="-1520" size="12" customSize="0"/>
+        </node>
+        <node id="n202" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-460" width="20" height="20" x="-1460"/>
+          <label y="-482" width="39" height="23" x="-1460" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n203" type="range-restriction" color="#000000">
+          <geometry y="-460" width="20" height="20" x="-1590"/>
+          <label y="-482" width="39" height="23" x="-1590" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n204" type="value-domain" color="#fcfcfc">
+          <geometry y="-459" width="90" height="40" x="-1684"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="-459" width="60" height="23" x="-1684" size="12" customSize="0"/>
+        </node>
+        <node id="n205" type="role" color="#fcfcfc">
+          <geometry y="-180" width="70" height="50" x="-1190"/>
+          <iri>https://w3id.org/italia/onto/ACO/attoRegistratoIn</iri>
+          <label y="-157" width="92" height="23" x="-1251" size="12" customSize="0"/>
+        </node>
+        <node id="n206" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-240" width="20" height="20" x="-1190"/>
+          <label y="-238" width="39" height="23" x="-1159" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n207" type="range-restriction" color="#000000">
+          <geometry y="-120" width="20" height="20" x="-1190"/>
+          <label y="-120" width="39" height="23" x="-1160" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n208" type="attribute" color="#fcfcfc">
+          <geometry y="-70" width="20" height="20" x="390"/>
+          <iri>https://w3id.org/italia/onto/ACO/protocolloANPR</iri>
+          <label y="-50" width="96" height="23" x="395" size="12" customSize="0"/>
+        </node>
+        <node id="n209" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-70" width="20" height="20" x="330"/>
+          <label y="-92" width="39" height="23" x="330" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n21" type="role" color="#fcfcfc">
+          <geometry y="-670" width="70" height="50" x="60"/>
+          <iri>https://w3id.org/italia/onto/ACO/certificatoEmessoDa</iri>
+          <label y="-705" width="123" height="23" x="60" size="12" customSize="0"/>
+        </node>
+        <node id="n210" type="range-restriction" color="#000000">
+          <geometry y="-70" width="20" height="20" x="450"/>
+          <label y="-92" width="39" height="23" x="450" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n211" type="value-domain" color="#fcfcfc">
+          <geometry y="-470" width="90" height="40" x="560"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="-470" width="60" height="23" x="560" size="12" customSize="0"/>
+        </node>
+        <node id="n213" type="concept" color="#86f42e">
+          <geometry y="-770" width="110" height="50" x="50"/>
+          <iri>https://w3id.org/italia/onto/COV/PublicOrganization</iri>
+          <label y="-758" width="146" height="23" x="60" size="12" customSize="0"/>
+        </node>
+        <node id="n228" type="role" color="#fcfcfc">
+          <geometry y="-440" width="70" height="50" x="1000"/>
+          <iri>https://w3id.org/italia/onto/ACO/residenzaInComune</iri>
+          <label y="-470" width="118" height="23" x="1000" size="12" customSize="0"/>
+        </node>
+        <node id="n229" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-440" width="20" height="20" x="1080"/>
+          <label y="-462" width="39" height="23" x="1080" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n230" type="range-restriction" color="#000000">
+          <geometry y="-440" width="20" height="20" x="910"/>
+          <label y="-462" width="39" height="23" x="910" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n24" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-670" width="20" height="20" x="160"/>
+          <label y="-692" width="39" height="23" x="160" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n25" type="range-restriction" color="#000000">
+          <geometry y="-670" width="20" height="20" x="-40"/>
+          <label y="-692" width="39" height="23" x="-40" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n26" type="concept" color="#fcfcfc">
+          <geometry y="-300" width="110" height="50" x="-1350"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoAmministrativo</iri>
+          <label y="-300" width="113" height="23" x="-1350" size="12" customSize="0"/>
+        </node>
+        <node id="n269" type="concept" color="#c2b078">
+          <geometry y="450" width="110" height="50" x="-450"/>
+          <iri>https://w3id.org/italia/onto/CPV/PersonaInVita</iri>
+          <label y="450" width="86" height="23" x="-450" size="12" customSize="0"/>
+        </node>
+        <node id="n27" type="concept" color="#fcfcfc">
+          <geometry y="42" width="110" height="50" x="-1450"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiNascita</iri>
+          <label y="42" width="84" height="23" x="-1450" size="12" customSize="0"/>
+        </node>
+        <node id="n271" type="concept" color="#f29210">
+          <geometry y="620" width="110" height="50" x="-360"/>
+          <iri>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente</iri>
+          <label y="620" width="100" height="53" x="-360" size="12" customSize="0"/>
+        </node>
+        <node id="n272" type="concept" color="#f29210">
+          <geometry y="604" width="110" height="50" x="-531"/>
+          <iri>https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteNonResidente</iri>
+          <label y="604" width="100" height="53" x="-531" size="12" customSize="0"/>
+        </node>
+        <node id="n273" type="disjoint-union" color="#000000">
+          <geometry y="540" width="50" height="30" x="-450"/>
+        </node>
+        <node id="n276" type="concept" color="#fcfcfc">
+          <geometry y="-540" width="110" height="50" x="570"/>
+          <iri>https://w3id.org/italia/onto/ACO/ImpostaDiBollo</iri>
+          <label y="-540" width="93" height="23" x="570" size="12" customSize="0"/>
+        </node>
+        <node id="n277" type="role" color="#fcfcfc">
+          <geometry y="-540" width="70" height="50" x="360"/>
+          <iri>https://w3id.org/italia/onto/ACO/rilasciatoConImpostaDiBollo</iri>
+          <label y="-570" width="167" height="23" x="360" size="12" customSize="0"/>
+        </node>
+        <node id="n278" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-540" width="20" height="20" x="252"/>
+          <label y="-520" width="39" height="23" x="253" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n279" type="range-restriction" color="#000000">
+          <geometry y="-542" width="20" height="20" x="450"/>
+          <label y="-521" width="39" height="23" x="446" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n280" type="concept" color="#fcfcfc">
+          <geometry y="-180" width="110" height="50" x="370"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaImpostaDiBollo</iri>
+          <label y="-180" width="109" height="38" x="370" size="12" customSize="0"/>
+        </node>
+        <node id="n283" type="attribute" color="#fcfcfc">
+          <geometry y="-470" width="20" height="20" x="370"/>
+          <iri>https://w3id.org/italia/onto/ACO/tipologiaUtilizzo</iri>
+          <label y="-492" width="95" height="23" x="370" size="12" customSize="0"/>
+        </node>
+        <node id="n284" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-470" width="20" height="20" x="290"/>
+          <label y="-451" width="39" height="23" x="289" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n285" type="range-restriction" color="#000000">
+          <geometry y="-470" width="20" height="20" x="450"/>
+          <label y="-451" width="39" height="23" x="450" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n286" type="concept" color="#fcfcfc">
+          <geometry y="-143" width="110" height="50" x="526"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoEsenteDaDirittiDiSegreteria</iri>
+          <label y="-143" width="120" height="38" x="526" size="12" customSize="0"/>
+        </node>
+        <node id="n287" type="concept" color="#fcfcfc">
+          <geometry y="-620" width="110" height="50" x="560"/>
+          <iri>https://w3id.org/italia/onto/ACO/DirittiDiSegreteria</iri>
+          <label y="-620" width="105" height="23" x="560" size="12" customSize="0"/>
+        </node>
+        <node id="n288" type="role" color="#fcfcfc">
+          <geometry y="-620" width="70" height="50" x="350"/>
+          <iri>https://w3id.org/italia/onto/ACO/rilasciatoConDirittiDiSegreteria</iri>
+          <label y="-650" width="178" height="23" x="350" size="12" customSize="0"/>
+        </node>
+        <node id="n289" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-620" width="20" height="20" x="250"/>
+          <label y="-599" width="39" height="23" x="252" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n29" type="concept" color="#fcfcfc">
+          <geometry y="40" width="110" height="50" x="-830"/>
+          <iri>https://w3id.org/italia/onto/ACO/IscrizioneAnagraficaPerNascita</iri>
+          <label y="52" width="67" height="53" x="-830" size="12" customSize="0"/>
+        </node>
+        <node id="n290" type="range-restriction" color="#000000">
+          <geometry y="-620" width="20" height="20" x="450"/>
+          <label y="-598" width="39" height="23" x="450" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n291" type="concept" color="#fcfcfc">
+          <geometry y="430" width="132" height="50" x="690"/>
+          <iri>https://w3id.org/italia/onto/ACO/RuoloRispettoARichiesta</iri>
+          <label y="430" width="85" height="38" x="695" size="12" customSize="0"/>
+        </node>
+        <node id="n292" type="concept" color="#fcfcfc">
+          <geometry y="570" width="110" height="50" x="580"/>
+          <iri>https://w3id.org/italia/onto/ACO/Richiedente</iri>
+          <label y="570" width="70" height="23" x="580" size="12" customSize="0"/>
+        </node>
+        <node id="n293" type="concept" color="#fcfcfc">
+          <geometry y="570" width="110" height="50" x="800"/>
+          <iri>https://w3id.org/italia/onto/ACO/Interessato</iri>
+          <label y="570" width="67" height="23" x="800" size="12" customSize="0"/>
+        </node>
+        <node id="n295" type="role" color="#fcfcfc">
+          <geometry y="430" width="70" height="50" x="480"/>
+          <iri>https://w3id.org/italia/onto/ACO/ricopreRuolo</iri>
+          <label y="400" width="75" height="23" x="480" size="12" customSize="0"/>
+        </node>
+        <node id="n296" type="domain-restriction" color="#fcfcfc">
+          <geometry y="430" width="20" height="20" x="390"/>
+          <label y="450" width="39" height="23" x="390" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n297" type="range-restriction" color="#000000">
+          <geometry y="430" width="20" height="20" x="570"/>
+          <label y="408" width="39" height="23" x="570" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n298" type="union" color="#fcfcfc">
+          <geometry y="240" width="50" height="30" x="-340"/>
+          <label y="240" width="18" height="23" x="-340" size="12" customSize="0"/>
+        </node>
+        <node id="n299" type="role" color="#fcfcfc">
+          <geometry y="260" width="70" height="50" x="690"/>
+          <iri>https://w3id.org/italia/onto/ACO/rispettoARichiesta</iri>
+          <label y="285" width="106" height="23" x="615" size="12" customSize="0"/>
+        </node>
+        <node id="n30" type="role" color="#fcfcfc">
+          <geometry y="-300" width="70" height="50" x="-1080"/>
+          <iri>https://w3id.org/italia/onto/ACO/attesta</iri>
+          <label y="-301" width="45" height="23" x="-1006" size="12" customSize="0"/>
+        </node>
+        <node id="n300" type="domain-restriction" color="#fcfcfc">
+          <geometry y="340" width="20" height="20" x="690"/>
+          <label y="340" width="39" height="23" x="655" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n301" type="range-restriction" color="#000000">
+          <geometry y="190" width="20" height="20" x="690"/>
+          <label y="190" width="39" height="23" x="720" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n302" type="range-restriction" color="#000000">
+          <geometry y="640" width="20" height="20" x="480"/>
+          <label y="660" width="39" height="23" x="480" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n303" type="intersection" color="#fcfcfc">
+          <geometry y="640" width="50" height="30" x="580"/>
+          <label y="640" width="27" height="23" x="580" size="12" customSize="0"/>
+        </node>
+        <node id="n304" type="domain-restriction" color="#fcfcfc">
+          <geometry y="260" width="20" height="20" x="770"/>
+          <label y="245" width="39" height="23" x="800" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n305" type="union" color="#fcfcfc">
+          <geometry y="140" width="50" height="30" x="770"/>
+          <label y="140" width="18" height="23" x="770" size="12" customSize="0"/>
+        </node>
+        <node id="n306" type="union" color="#fcfcfc">
+          <geometry y="640" width="50" height="30" x="360"/>
+          <label y="640" width="18" height="23" x="360" size="12" customSize="0"/>
+        </node>
+        <node id="n307" type="intersection" color="#fcfcfc">
+          <geometry y="680" width="50" height="30" x="800"/>
+          <label y="680" width="27" height="23" x="800" size="12" customSize="0"/>
+        </node>
+        <node id="n309" type="range-restriction" color="#000000">
+          <geometry y="500" width="20" height="20" x="420"/>
+          <label y="480" width="39" height="23" x="410" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n311" type="disjoint-union" color="#000000">
+          <geometry y="500" width="50" height="30" x="690"/>
+        </node>
+        <node id="n312" type="attribute" color="#fcfcfc">
+          <geometry y="360" width="20" height="20" x="530"/>
+          <iri>https://w3id.org/italia/onto/ACO/tipoRuolo</iri>
+          <label y="338" width="58" height="23" x="530" size="12" customSize="0"/>
+        </node>
+        <node id="n313" type="domain-restriction" color="#fcfcfc">
+          <geometry y="360" width="20" height="20" x="590"/>
+          <label y="338" width="39" height="23" x="590" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n314" type="range-restriction" color="#000000">
+          <geometry y="360" width="20" height="20" x="470"/>
+          <label y="340" width="39" height="23" x="470" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n315" type="value-domain" color="#fcfcfc">
+          <geometry y="360" width="90" height="40" x="380"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="360" width="60" height="23" x="380" size="12" customSize="0"/>
+        </node>
+        <node id="n316" type="concept" color="#fcfcfc">
+          <geometry y="-70" width="110" height="50" x="210"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoAnagrafico</iri>
+          <label y="-70" width="122" height="23" x="210" size="12" customSize="0"/>
+        </node>
+        <node id="n317" type="value-domain" color="#fcfcfc">
+          <geometry y="-70" width="90" height="40" x="530"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="-70" width="60" height="23" x="530" size="12" customSize="0"/>
+        </node>
+        <node id="n318" type="concept" color="#fcfcfc">
+          <geometry y="80" width="110" height="50" x="120"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoDiCittadinanza</iri>
+          <label y="92" width="78" height="38" x="120" size="12" customSize="0"/>
+        </node>
+        <node id="n319" type="concept" color="#fcfcfc">
+          <geometry y="-100" width="110" height="50" x="60"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoDiStatoCivile</iri>
+          <label y="-100" width="78" height="38" x="60" size="12" customSize="0"/>
+        </node>
+        <node id="n320" type="concept" color="#fcfcfc">
+          <geometry y="80" width="110" height="50" x="240"/>
+          <iri>https://w3id.org/italia/onto/ACO/CertificatoDiStatoDiFamiglia</iri>
+          <label y="80" width="93" height="38" x="240" size="12" customSize="0"/>
+        </node>
+        <node id="n321" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-350" width="20" height="20" x="1080"/>
+          <label y="-372" width="39" height="23" x="1080" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n322" type="range-restriction" color="#000000">
+          <geometry y="-350" width="20" height="20" x="910"/>
+          <label y="-372" width="39" height="23" x="910" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n323" type="role" color="#fcfcfc">
+          <geometry y="-350" width="70" height="50" x="1000"/>
+          <iri>https://w3id.org/italia/onto/ACO/residenzaInIndirizzo</iri>
+          <label y="-380" width="119" height="23" x="1000" size="12" customSize="0"/>
+        </node>
+        <node id="n33" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-300" width="20" height="20" x="-1190"/>
+          <label y="-322" width="39" height="23" x="-1190" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n330" type="concept" color="#fcfcfc">
+          <geometry y="190" width="110" height="50" x="470"/>
+          <iri>https://w3id.org/italia/onto/ACO/RichiestaDiCertificato</iri>
+          <label y="190" width="72" height="38" x="475" size="12" customSize="0"/>
+        </node>
+        <node id="n332" type="attribute" color="#fcfcfc">
+          <geometry y="180" width="20" height="20" x="270"/>
+          <iri>https://w3id.org/italia/onto/ACO/esito</iri>
+          <label y="155" width="34" height="23" x="270" size="12" customSize="0"/>
+        </node>
+        <node id="n334" type="domain-restriction" color="#fcfcfc">
+          <geometry y="180" width="20" height="20" x="320"/>
+          <label y="200" width="39" height="23" x="322" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n335" type="range-restriction" color="#000000">
+          <geometry y="180" width="20" height="20" x="220"/>
+          <label y="202" width="39" height="23" x="220" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n336" type="role" color="#fcfcfc">
+          <geometry y="-190" width="70" height="50" x="660"/>
+          <iri>https://w3id.org/italia/onto/ACO/certificatoSuRichiesta</iri>
+          <label y="-190" width="130" height="23" x="776" size="12" customSize="0"/>
+        </node>
+        <node id="n337" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-270" width="20" height="20" x="660"/>
+          <label y="-265" width="39" height="23" x="695" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n338" type="range-restriction" color="#000000">
+          <geometry y="-120" width="20" height="20" x="660"/>
+          <label y="-120" width="39" height="23" x="690" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n339" type="attribute" color="#fcfcfc">
+          <geometry y="250" width="20" height="20" x="270"/>
+          <iri>https://w3id.org/italia/onto/ACO/motivazioneEsito</iri>
+          <label y="270" width="102" height="23" x="270" size="12" customSize="0"/>
+        </node>
+        <node id="n340" type="domain-restriction" color="#fcfcfc">
+          <geometry y="250" width="20" height="20" x="320"/>
+          <label y="228" width="39" height="23" x="320" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n341" type="range-restriction" color="#000000">
+          <geometry y="250" width="20" height="20" x="220"/>
+          <label y="228" width="39" height="23" x="220" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n342" type="value-domain" color="#fcfcfc">
+          <geometry y="200" width="90" height="40" x="100"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="200" width="60" height="23" x="100" size="12" customSize="0"/>
+        </node>
+        <node id="n349" type="attribute" color="#c2b078">
+          <geometry y="300" width="20" height="20" x="-650"/>
+          <iri>https://w3id.org/italia/onto/CPV/dateOfBirth</iri>
+          <label y="325" width="86" height="23" x="-660" size="12" customSize="0"/>
+        </node>
+        <node id="n35" type="attribute" color="#fcfcfc">
+          <geometry y="110" width="20" height="20" x="-730"/>
+          <iri>https://w3id.org/italia/onto/ACO/dataDiIscrizioneAnagraficaPerNascita</iri>
+          <label y="141" width="219" height="23" x="-646" size="12" customSize="0"/>
+        </node>
+        <node id="n350" type="domain-restriction" color="#fcfcfc">
+          <geometry y="300" width="20" height="20" x="-600"/>
+          <label y="320" width="39" height="23" x="-600" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n351" type="range-restriction" color="#000000">
+          <geometry y="300" width="20" height="20" x="-720"/>
+          <label y="320" width="39" height="23" x="-720" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n352" type="value-domain" color="#fcfcfc">
+          <geometry y="300" width="90" height="40" x="-830"/>
+          <iri>http://www.w3.org/2001/XMLSchema#dateTime</iri>
+          <label y="300" width="80" height="23" x="-830" size="12" customSize="0"/>
+        </node>
+        <node id="n353" type="attribute" color="#c2b078">
+          <geometry y="360" width="20" height="20" x="-650"/>
+          <iri>https://w3id.org/italia/onto/CPV/familyName</iri>
+          <label y="380" width="58" height="23" x="-650" size="12" customSize="0"/>
+        </node>
+        <node id="n354" type="domain-restriction" color="#fcfcfc">
+          <geometry y="360" width="20" height="20" x="-600"/>
+          <label y="380" width="39" height="23" x="-600" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n355" type="range-restriction" color="#000000">
+          <geometry y="360" width="20" height="20" x="-720"/>
+          <label y="380" width="39" height="23" x="-720" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n356" type="value-domain" color="#fcfcfc">
+          <geometry y="360" width="90" height="40" x="-830"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="360" width="60" height="23" x="-830" size="12" customSize="0"/>
+        </node>
+        <node id="n357" type="attribute" color="#c2b078">
+          <geometry y="410" width="20" height="20" x="-650"/>
+          <iri>https://w3id.org/italia/onto/CPV/givenName</iri>
+          <label y="430" width="38" height="23" x="-650" size="12" customSize="0"/>
+        </node>
+        <node id="n358" type="domain-restriction" color="#fcfcfc">
+          <geometry y="410" width="20" height="20" x="-600"/>
+          <label y="430" width="39" height="23" x="-600" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n359" type="range-restriction" color="#000000">
+          <geometry y="410" width="20" height="20" x="-720"/>
+          <label y="430" width="39" height="23" x="-720" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n36" type="domain-restriction" color="#fcfcfc">
+          <geometry y="110" width="20" height="20" x="-790"/>
+          <label y="130" width="39" height="23" x="-790" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n364" type="role" color="#fcfcfc">
+          <geometry y="40" width="70" height="50" x="-1080"/>
+          <iri>https://w3id.org/italia/onto/ACO/faRiferimentoAdAttoDiNascita</iri>
+          <label y="77" width="174" height="23" x="-1075" size="12" customSize="0"/>
+        </node>
+        <node id="n365" type="domain-restriction" color="#fcfcfc">
+          <geometry y="39" width="20" height="20" x="-989"/>
+          <label y="17" width="39" height="23" x="-989" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n369" type="range-restriction" color="#000000">
+          <geometry y="41" width="20" height="20" x="-1181"/>
+          <label y="19" width="39" height="23" x="-1181" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n37" type="range-restriction" color="#000000">
+          <geometry y="110" width="20" height="20" x="-680"/>
+          <label y="86" width="39" height="23" x="-680" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n370" type="concept" color="#fcfcfc">
+          <geometry y="-280" width="110" height="50" x="-830"/>
+          <iri>https://w3id.org/italia/onto/ACO/IscrizioneAnagrafica</iri>
+          <label y="-280" width="118" height="23" x="-830" size="12" customSize="0"/>
+        </node>
+        <node id="n371" type="concept" color="#fcfcfc">
+          <geometry y="-200" width="110" height="50" x="-1350"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDelloStatoCivile</iri>
+          <label y="-200" width="119" height="23" x="-1350" size="12" customSize="0"/>
+        </node>
+        <node id="n372" type="disjoint-union" color="#000000">
+          <geometry y="-120" width="50" height="30" x="-1350"/>
+        </node>
+        <node id="n373" type="concept" color="#fcfcfc">
+          <geometry y="-268" width="110" height="50" x="-1671"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiMatrimonio</iri>
+          <label y="-268" width="107" height="23" x="-1671" size="12" customSize="0"/>
+        </node>
+        <node id="n374" type="concept" color="#fcfcfc">
+          <geometry y="-199" width="110" height="50" x="-1670"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiUnioneCivile</iri>
+          <label y="-199" width="111" height="23" x="-1670" size="12" customSize="0"/>
+        </node>
+        <node id="n375" type="concept" color="#fcfcfc">
+          <geometry y="-130" width="110" height="50" x="-1670"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiMorte</iri>
+          <label y="-130" width="77" height="23" x="-1670" size="12" customSize="0"/>
+        </node>
+        <node id="n376" type="concept" color="#fcfcfc">
+          <geometry y="-65" width="110" height="50" x="-1669"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiCittadinanza</iri>
+          <label y="-65" width="111" height="23" x="-1669" size="12" customSize="0"/>
+        </node>
+        <node id="n377" type="concept" color="#fcfcfc">
+          <geometry y="-1" width="110" height="50" x="-1671"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiSeparazioneLegale</iri>
+          <label y="-1" width="145" height="23" x="-1671" size="12" customSize="0"/>
+        </node>
+        <node id="n378" type="concept" color="#fcfcfc">
+          <geometry y="69" width="110" height="50" x="-1669"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiDivorzio</iri>
+          <label y="69" width="87" height="23" x="-1669" size="12" customSize="0"/>
+        </node>
+        <node id="n38" type="value-domain" color="#fcfcfc">
+          <geometry y="110" width="90" height="40" x="-580"/>
+          <iri>http://www.w3.org/2001/XMLSchema#dateTime</iri>
+          <label y="110" width="80" height="23" x="-580" size="12" customSize="0"/>
+        </node>
+        <node id="n382" type="union" color="#fcfcfc">
+          <geometry y="-160" width="50" height="30" x="210"/>
+          <label y="-160" width="18" height="23" x="210" size="12" customSize="0"/>
+        </node>
+        <node id="n383" type="concept" color="#c2b078">
+          <geometry y="560" width="110" height="50" x="-670"/>
+          <iri>https://w3id.org/italia/onto/CPV/Alive</iri>
+          <label y="560" width="86" height="23" x="-670" size="12" customSize="0"/>
+        </node>
+        <node id="n384" type="concept" color="#c2b078">
+          <geometry y="-110" width="110" height="50" x="1050"/>
+          <iri>https://w3id.org/italia/onto/CPV/ResidenceInTime</iri>
+          <label y="-110" width="121" height="23" x="1050" size="12" customSize="0"/>
+        </node>
+        <node id="n385" type="concept" color="#fcfcfc">
+          <geometry y="-870" width="110" height="50" x="-400"/>
+          <iri>https://w3id.org/italia/onto/ACO/Evidenza</iri>
+          <label y="-870" width="55" height="23" x="-400" size="12" customSize="0"/>
+        </node>
+        <node id="n386" type="role" color="#fcfcfc">
+          <geometry y="-870" width="70" height="50" x="40"/>
+          <iri>https://w3id.org/italia/onto/ACO/fornisceEvidenza</iri>
+          <label y="-900" width="98" height="23" x="40" size="12" customSize="0"/>
+        </node>
+        <node id="n389" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-870" width="20" height="20" x="140"/>
+          <label y="-892" width="39" height="23" x="140" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n390" type="range-restriction" color="#000000">
+          <geometry y="-870" width="20" height="20" x="-60"/>
+          <label y="-892" width="39" height="23" x="-60" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n391" type="concept" color="#fcfcfc">
+          <geometry y="-930" width="110" height="50" x="-770"/>
+          <iri>https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiNascita</iri>
+          <label y="-930" width="124" height="53" x="-765" size="12" customSize="0"/>
+        </node>
+        <node id="n392" type="concept" color="#fcfcfc">
+          <geometry y="-820" width="110" height="50" x="-770"/>
+          <iri>https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiResidenza</iri>
+          <label y="-820" width="124" height="53" x="-765" size="12" customSize="0"/>
+        </node>
+        <node id="n393" type="disjoint-union" color="#000000">
+          <geometry y="-870" width="50" height="30" x="-620"/>
+        </node>
+        <node id="n394" type="attribute" color="#c2b078">
+          <geometry y="240" width="20" height="20" x="-650"/>
+          <iri>https://w3id.org/italia/onto/CPV/codiceFiscale</iri>
+          <label y="265" width="81" height="23" x="-660" size="12" customSize="0"/>
+        </node>
+        <node id="n395" type="domain-restriction" color="#fcfcfc">
+          <geometry y="240" width="20" height="20" x="-600"/>
+          <label y="260" width="39" height="23" x="-600" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n396" type="range-restriction" color="#000000">
+          <geometry y="240" width="20" height="20" x="-720"/>
+          <label y="260" width="39" height="23" x="-720" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n397" type="value-domain" color="#fcfcfc">
+          <geometry y="240" width="90" height="40" x="-830"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="240" width="60" height="23" x="-830" size="12" customSize="0"/>
+        </node>
+        <node id="n40" type="role" color="#fcfcfc">
+          <geometry y="-300" width="70" height="50" x="-280"/>
+          <iri>https://w3id.org/italia/onto/ACO/certifica</iri>
+          <label y="-336" width="51" height="23" x="-277" size="12" customSize="0"/>
+        </node>
+        <node id="n402" type="concept" color="#2da735">
+          <geometry y="-1030" width="110" height="50" x="-950"/>
+          <iri>https://w3id.org/italia/onto/CLV/AdminUnitComponent</iri>
+          <label y="-1040" width="190" height="23" x="-935" size="12" customSize="0"/>
+        </node>
+        <node id="n403" type="range-restriction" color="#000000">
+          <geometry y="-1030" width="20" height="20" x="-1080"/>
+          <label y="-1052" width="39" height="23" x="-1080" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n404" type="role" color="#fcfcfc">
+          <geometry y="-1030" width="70" height="50" x="-1170"/>
+          <iri>https://w3id.org/italia/onto/ACO/luogoIscrizioneAnagraficaperNascita</iri>
+          <label y="-1030" width="225" height="23" x="-1329" size="12" customSize="0"/>
+        </node>
+        <node id="n406" type="concept" color="#fcfcfc">
+          <geometry y="-1030" width="110" height="50" x="-640"/>
+          <iri>https://w3id.org/italia/onto/ACO/AttoDiNascita</iri>
+          <label y="-1030" width="84" height="23" x="-640" size="12" customSize="0"/>
+        </node>
+        <node id="n407" type="attribute" color="#c2b078">
+          <geometry y="-820" width="20" height="20" x="-1030"/>
+          <iri>https://w3id.org/italia/onto/CPV/codiceFiscale</iri>
+          <label y="-820" width="81" height="23" x="-1091" size="12" customSize="0"/>
+        </node>
+        <node id="n409" type="attribute" color="#c2b078">
+          <geometry y="-760" width="20" height="20" x="-930"/>
+          <iri>https://w3id.org/italia/onto/CPV/familyName</iri>
+          <label y="-760" width="58" height="23" x="-986" size="12" customSize="0"/>
+        </node>
+        <node id="n410" type="attribute" color="#c2b078">
+          <geometry y="-780" width="20" height="20" x="-870"/>
+          <iri>https://w3id.org/italia/onto/CPV/givenName</iri>
+          <label y="-782" width="38" height="23" x="-926" size="12" customSize="0"/>
+        </node>
+        <node id="n412" type="attribute" color="#c2b078">
+          <geometry y="-740" width="20" height="20" x="-1010"/>
+          <iri>https://w3id.org/italia/onto/CPV/dateOfBirth</iri>
+          <label y="-740" width="86" height="23" x="-1065" size="12" customSize="0"/>
+        </node>
+        <node id="n413" type="range-restriction" color="#000000">
+          <geometry y="-710" width="20" height="20" x="-390"/>
+          <label y="-732" width="39" height="23" x="-390" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n414" type="role" color="#fcfcfc">
+          <geometry y="-710" width="70" height="50" x="-300"/>
+          <iri>https://w3id.org/italia/onto/ACO/residenzaInIndirizzo</iri>
+          <label y="-724" width="119" height="23" x="-208" size="12" customSize="0"/>
+        </node>
+        <node id="n415" type="concept" color="#2da735">
+          <geometry y="-710" width="110" height="50" x="-510"/>
+          <iri>https://w3id.org/italia/onto/CLV/Address</iri>
+          <label y="-710" width="53" height="23" x="-510" size="12" customSize="0"/>
+        </node>
+        <node id="n416" type="range-restriction" color="#000000">
+          <geometry y="-770" width="20" height="20" x="-390"/>
+          <label y="-792" width="39" height="23" x="-390" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n417" type="role" color="#fcfcfc">
+          <geometry y="-770" width="70" height="50" x="-300"/>
+          <iri>https://w3id.org/italia/onto/ACO/residenzaInComune</iri>
+          <label y="-787" width="118" height="23" x="-210" size="12" customSize="0"/>
+        </node>
+        <node id="n418" type="concept" color="#2da735">
+          <geometry y="-770" width="110" height="50" x="-510"/>
+          <iri>https://w3id.org/italia/onto/CLV/City</iri>
+          <label y="-770" width="52" height="23" x="-505" size="12" customSize="0"/>
+        </node>
+        <node id="n419" type="concept" color="#2da735">
+          <geometry y="-350" width="110" height="50" x="790"/>
+          <iri>https://w3id.org/italia/onto/CLV/Address</iri>
+          <label y="-350" width="53" height="23" x="790" size="12" customSize="0"/>
+        </node>
+        <node id="n421" type="concept" color="#2da735">
+          <geometry y="-440" width="110" height="50" x="790"/>
+          <iri>https://w3id.org/italia/onto/CLV/City</iri>
+          <label y="-440" width="52" height="23" x="790" size="12" customSize="0"/>
+        </node>
+        <node id="n43" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-300" width="20" height="20" x="-200"/>
+          <label y="-322" width="39" height="23" x="-200" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n45" type="concept" color="#2da735">
+          <geometry y="220" width="110" height="50" x="-1250"/>
+          <iri>https://w3id.org/italia/onto/CLV/AdminUnitComponent</iri>
+          <label y="220" width="190" height="23" x="-1250" size="12" customSize="0"/>
+        </node>
+        <node id="n46" type="role" color="#fcfcfc">
+          <geometry y="140" width="70" height="50" x="-1030"/>
+          <iri>https://w3id.org/italia/onto/ACO/luogoIscrizioneAnagraficaperNascita</iri>
+          <label y="173" width="225" height="23" x="-993" size="12" customSize="0"/>
+        </node>
+        <node id="n49" type="domain-restriction" color="#fcfcfc">
+          <geometry y="140" width="20" height="20" x="-930"/>
+          <label y="118" width="39" height="23" x="-930" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n50" type="range-restriction" color="#000000">
+          <geometry y="140" width="20" height="20" x="-1130"/>
+          <label y="118" width="39" height="23" x="-1130" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n51" type="attribute" color="#fcfcfc">
+          <geometry y="-410" width="20" height="20" x="-1520"/>
+          <iri>https://w3id.org/italia/onto/ACO/annoAtto</iri>
+          <label y="-432" width="58" height="23" x="-1520" size="12" customSize="0"/>
+        </node>
+        <node id="n56" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-410" width="20" height="20" x="-1460"/>
+          <label y="-432" width="39" height="23" x="-1460" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n57" type="range-restriction" color="#000000">
+          <geometry y="-410" width="20" height="20" x="-1590"/>
+          <label y="-432" width="39" height="23" x="-1590" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n58" type="value-domain" color="#fcfcfc">
+          <geometry y="-410" width="90" height="40" x="-1686"/>
+          <iri>http://www.w3.org/2001/XMLSchema#integer</iri>
+          <label y="-410" width="66" height="23" x="-1686" size="12" customSize="0"/>
+        </node>
+        <node id="n59" type="role" color="#fcfcfc">
+          <geometry y="-670" width="70" height="50" x="-1040"/>
+          <iri>https://w3id.org/italia/onto/ACO/attoEmessoDa</iri>
+          <label y="-700" width="90" height="23" x="-1040" size="12" customSize="0"/>
+        </node>
+        <node id="n60" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-670" width="20" height="20" x="-1140"/>
+          <label y="-692" width="39" height="23" x="-1140" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n61" type="range-restriction" color="#000000">
+          <geometry y="-670" width="20" height="20" x="-940"/>
+          <label y="-692" width="39" height="23" x="-940" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n69" type="role" color="#fcfcfc">
+          <geometry y="-110" width="70" height="50" x="-450"/>
+          <iri>https://w3id.org/italia/onto/ACO/haNascita</iri>
+          <label y="-110" width="61" height="23" x="-515" size="12" customSize="0"/>
+        </node>
+        <node id="n72" type="range-restriction" color="#000000">
+          <geometry y="-180" width="20" height="20" x="-450"/>
+          <label y="-202" width="39" height="23" x="-451" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n73" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-40" width="20" height="20" x="-450"/>
+          <label y="-40" width="39" height="23" x="-480" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n74" type="attribute" color="#fcfcfc">
+          <geometry y="-360" width="20" height="20" x="-1520"/>
+          <iri>https://w3id.org/italia/onto/ACO/numeroAtto</iri>
+          <label y="-382" width="72" height="23" x="-1520" size="12" customSize="0"/>
+        </node>
+        <node id="n75" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-360" width="20" height="20" x="-1460"/>
+          <label y="-382" width="39" height="23" x="-1460" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n76" type="range-restriction" color="#000000">
+          <geometry y="-360" width="20" height="20" x="-1590"/>
+          <label y="-382" width="39" height="23" x="-1590" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n77" type="value-domain" color="#fcfcfc">
+          <geometry y="-360" width="90" height="40" x="-1686"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label y="-360" width="60" height="23" x="-1686" size="12" customSize="0"/>
+        </node>
+        <node id="n78" type="role" color="#fcfcfc">
+          <geometry y="-590" width="70" height="50" x="-1040"/>
+          <iri>https://w3id.org/italia/onto/ACO/depositatoPresso</iri>
+          <label y="-620" width="104" height="23" x="-1040" size="12" customSize="0"/>
+        </node>
+        <node id="n79" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-590" width="20" height="20" x="-1140"/>
+          <label y="-612" width="39" height="23" x="-1140" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n80" type="range-restriction" color="#000000">
+          <geometry y="-590" width="20" height="20" x="-940"/>
+          <label y="-612" width="39" height="23" x="-940" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n81" type="role" color="#fcfcfc">
+          <geometry y="-230" width="70" height="50" x="-350"/>
+          <iri>https://w3id.org/italia/onto/ACO/attestaNascita</iri>
+          <label y="-195" width="87" height="23" x="-355" size="12" customSize="0"/>
+        </node>
+        <node id="n86" type="role" color="#fcfcfc">
+          <geometry y="-410" width="70" height="50" x="-390"/>
+          <iri>https://w3id.org/italia/onto/ACO/citaAtto</iri>
+          <label y="-446" width="51" height="23" x="-387" size="12" customSize="0"/>
+        </node>
+        <node id="n89" type="range-restriction" color="#000000">
+          <geometry y="-410" width="20" height="20" x="-490"/>
+          <label y="-432" width="39" height="23" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n90" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-410" width="20" height="20" x="-290"/>
+          <label y="-432" width="39" height="23" x="-290" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n92" type="attribute" color="#fcfcfc">
+          <geometry y="-360" width="20" height="20" x="370"/>
+          <iri>https://w3id.org/italia/onto/ACO/dataDiScadenza</iri>
+          <label y="-382" width="98" height="23" x="370" size="12" customSize="0"/>
+        </node>
+        <node id="n93" type="domain-restriction" color="#fcfcfc">
+          <geometry y="-360" width="20" height="20" x="290"/>
+          <label y="-340" width="39" height="23" x="289" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n94" type="range-restriction" color="#000000">
+          <geometry y="-360" width="20" height="20" x="450"/>
+          <label y="-341" width="39" height="23" x="450" size="12" customSize="0">exists</label>
+        </node>
+        <node id="n97" type="role" color="#fcfcfc">
+          <geometry y="-230" width="70" height="50" x="910"/>
+          <iri>https://w3id.org/italia/onto/ACO/certificaResidenza</iri>
+          <label y="-265" width="105" height="23" x="915" size="12" customSize="0"/>
+        </node>
+        <edge id="e10" type="input" target="n15" source="n14">
+          <point y="80" x="360"/>
+          <point y="10" x="360"/>
+          <point y="10" x="240"/>
+        </edge>
+        <edge id="e11" type="input" target="n17" source="n16">
+          <point y="-410" x="370"/>
+          <point y="-410" x="290"/>
+        </edge>
+        <edge id="e12" type="input" target="n18" source="n16">
+          <point y="-410" x="370"/>
+          <point y="-410" x="450"/>
+        </edge>
+        <edge id="e13" type="equivalence" target="n17" source="n12">
+          <point y="-300" x="210"/>
+          <point y="-410" x="210"/>
+          <point y="-410" x="290"/>
+        </edge>
+        <edge id="e14" type="inclusion" target="n19" source="n18">
+          <point y="-410" x="450"/>
+          <point y="-380" x="560"/>
+        </edge>
+        <edge id="e15" type="input" target="n25" source="n21">
+          <point y="-670" x="60"/>
+          <point y="-670" x="-40"/>
+        </edge>
+        <edge id="e16" type="input" target="n24" source="n21">
+          <point y="-670" x="60"/>
+          <point y="-670" x="160"/>
+        </edge>
+        <edge id="e169" type="input" target="n180" source="n179">
+          <point y="320" x="1140"/>
+          <point y="390" x="1140"/>
+        </edge>
+        <edge id="e17" type="inclusion" target="n20" source="n25">
+          <point y="-670" x="-40"/>
+          <point y="-670" x="-140"/>
+        </edge>
+        <edge id="e170" type="input" target="n181" source="n179">
+          <point y="320" x="1140"/>
+          <point y="240" x="1140"/>
+        </edge>
+        <edge id="e174" type="equivalence" target="n108" source="n181">
+          <point y="240" x="1140"/>
+          <point y="-229" x="1139"/>
+        </edge>
+        <edge id="e18" type="equivalence" target="n24" source="n12">
+          <point y="-325" x="190"/>
+          <point y="-670" x="190"/>
+          <point y="-670" x="160"/>
+        </edge>
+        <edge id="e202" type="input" target="n202" source="n201">
+          <point y="-460" x="-1520"/>
+          <point y="-460" x="-1460"/>
+        </edge>
+        <edge id="e203" type="input" target="n203" source="n201">
+          <point y="-460" x="-1520"/>
+          <point y="-460" x="-1590"/>
+        </edge>
+        <edge id="e204" type="equivalence" target="n26" source="n202">
+          <point y="-460" x="-1460"/>
+          <point y="-461" x="-1370"/>
+          <point y="-325" x="-1370"/>
+        </edge>
+        <edge id="e205" type="inclusion" target="n204" source="n203">
+          <point y="-460" x="-1590"/>
+          <point y="-459" x="-1684"/>
+        </edge>
+        <edge id="e206" type="input" target="n206" source="n205">
+          <point y="-180" x="-1190"/>
+          <point y="-240" x="-1190"/>
+        </edge>
+        <edge id="e207" type="input" target="n207" source="n205">
+          <point y="-180" x="-1190"/>
+          <point y="-120" x="-1190"/>
+        </edge>
+        <edge id="e208" type="equivalence" target="n206" source="n26">
+          <point y="-280" x="-1405"/>
+          <point y="-280" x="-1190"/>
+          <point y="-240" x="-1190"/>
+        </edge>
+        <edge id="e209" type="inclusion" target="n45" source="n207">
+          <point y="-120" x="-1190"/>
+          <point y="-120" x="-1250"/>
+          <point y="220" x="-1250"/>
+        </edge>
+        <edge id="e210" type="input" target="n209" source="n208">
+          <point y="-70" x="390"/>
+          <point y="-70" x="330"/>
+        </edge>
+        <edge id="e211" type="input" target="n210" source="n208">
+          <point y="-70" x="390"/>
+          <point y="-70" x="450"/>
+        </edge>
+        <edge id="e214" type="equivalence" target="n20" source="n213">
+          <point y="-770" x="50"/>
+          <point y="-770" x="-90"/>
+          <point y="-695" x="-90"/>
+        </edge>
+        <edge id="e22" type="input" target="n33" source="n30">
+          <point y="-300" x="-1080"/>
+          <point y="-300" x="-1190"/>
+        </edge>
+        <edge id="e23" type="inclusion" target="n26" source="n33">
+          <point y="-300" x="-1190"/>
+          <point y="-300" x="-1350"/>
+        </edge>
+        <edge id="e232" type="input" target="n229" source="n228">
+          <point y="-440" x="1000"/>
+          <point y="-440" x="1080"/>
+        </edge>
+        <edge id="e233" type="input" target="n230" source="n228">
+          <point y="-440" x="1000"/>
+          <point y="-440" x="910"/>
+        </edge>
+        <edge id="e234" type="equivalence" target="n229" source="n108">
+          <point y="-230" x="1140"/>
+          <point y="-440" x="1140"/>
+          <point y="-440" x="1080"/>
+        </edge>
+        <edge id="e25" type="input" target="n36" source="n35">
+          <point y="110" x="-730"/>
+          <point y="110" x="-790"/>
+        </edge>
+        <edge id="e26" type="input" target="n37" source="n35">
+          <point y="110" x="-730"/>
+          <point y="110" x="-680"/>
+        </edge>
+        <edge id="e27" type="inclusion" target="n38" source="n37">
+          <point y="110" x="-680"/>
+          <point y="110" x="-580"/>
+        </edge>
+        <edge id="e28" type="equivalence" target="n36" source="n29">
+          <point y="64" x="-790"/>
+          <point y="110" x="-790"/>
+        </edge>
+        <edge id="e289" type="input" target="n273" source="n272">
+          <point y="604" x="-531"/>
+          <point y="540" x="-530"/>
+          <point y="540" x="-450"/>
+        </edge>
+        <edge id="e290" type="input" target="n273" source="n271">
+          <point y="620" x="-360"/>
+          <point y="540" x="-360"/>
+          <point y="540" x="-450"/>
+        </edge>
+        <edge id="e291" type="equivalence" target="n273" source="n269">
+          <point y="450" x="-450"/>
+          <point y="540" x="-450"/>
+        </edge>
+        <edge id="e292" type="input" target="n278" source="n277">
+          <point y="-540" x="360"/>
+          <point y="-540" x="252"/>
+        </edge>
+        <edge id="e293" type="input" target="n279" source="n277">
+          <point y="-540" x="360"/>
+          <point y="-542" x="450"/>
+        </edge>
+        <edge id="e294" type="inclusion" target="n12" source="n278">
+          <point y="-540" x="252"/>
+          <point y="-540" x="210"/>
+          <point y="-300" x="210"/>
+        </edge>
+        <edge id="e296" type="inclusion" target="n276" source="n279">
+          <point y="-542" x="450"/>
+          <point y="-540" x="570"/>
+        </edge>
+        <edge id="e297" type="inclusion" target="n12" source="n280">
+          <point y="-180" x="370"/>
+          <point y="-280" x="370"/>
+          <point y="-280" x="264"/>
+        </edge>
+        <edge id="e298" type="input" target="n284" source="n283">
+          <point y="-470" x="370"/>
+          <point y="-470" x="290"/>
+        </edge>
+        <edge id="e299" type="input" target="n285" source="n283">
+          <point y="-470" x="370"/>
+          <point y="-470" x="450"/>
+        </edge>
+        <edge id="e30" type="input" target="n43" source="n40">
+          <point y="-300" x="-280"/>
+          <point y="-300" x="-200"/>
+        </edge>
+        <edge id="e300" type="inclusion" target="n211" source="n285">
+          <point y="-470" x="450"/>
+          <point y="-470" x="560"/>
+        </edge>
+        <edge id="e301" type="equivalence" target="n12" source="n284">
+          <point y="-470" x="290"/>
+          <point y="-470" x="210"/>
+          <point y="-300" x="210"/>
+        </edge>
+        <edge id="e302" type="inclusion" target="n12" source="n286">
+          <point y="-143" x="526"/>
+          <point y="-290" x="530"/>
+          <point y="-289" x="264"/>
+        </edge>
+        <edge id="e303" type="input" target="n289" source="n288">
+          <point y="-620" x="350"/>
+          <point y="-620" x="250"/>
+        </edge>
+        <edge id="e304" type="input" target="n290" source="n288">
+          <point y="-620" x="350"/>
+          <point y="-620" x="450"/>
+        </edge>
+        <edge id="e305" type="inclusion" target="n12" source="n289">
+          <point y="-620" x="250"/>
+          <point y="-620" x="210"/>
+          <point y="-300" x="210"/>
+        </edge>
+        <edge id="e306" type="inclusion" target="n287" source="n290">
+          <point y="-620" x="450"/>
+          <point y="-620" x="560"/>
+        </edge>
+        <edge id="e307" type="inclusion" target="n291" source="n311">
+          <point y="500" x="690"/>
+          <point y="430" x="690"/>
+        </edge>
+        <edge id="e308" type="input" target="n311" source="n292">
+          <point y="570" x="580"/>
+          <point y="500" x="580"/>
+          <point y="500" x="690"/>
+        </edge>
+        <edge id="e309" type="input" target="n311" source="n293">
+          <point y="570" x="800"/>
+          <point y="500" x="800"/>
+          <point y="500" x="690"/>
+        </edge>
+        <edge id="e31" type="equivalence" target="n12" source="n43">
+          <point y="-300" x="-200"/>
+          <point y="-300" x="210"/>
+        </edge>
+        <edge id="e310" type="input" target="n296" source="n295">
+          <point y="430" x="480"/>
+          <point y="430" x="390"/>
+        </edge>
+        <edge id="e311" type="input" target="n297" source="n295">
+          <point y="430" x="480"/>
+          <point y="430" x="570"/>
+        </edge>
+        <edge id="e312" type="equivalence" target="n291" source="n297">
+          <point y="430" x="570"/>
+          <point y="430" x="690"/>
+        </edge>
+        <edge id="e313" type="inclusion" target="n298" source="n296">
+          <point y="430" x="390"/>
+          <point y="430" x="-340"/>
+          <point y="240" x="-340"/>
+        </edge>
+        <edge id="e314" type="input" target="n298" source="n1">
+          <point y="240" x="-450"/>
+          <point y="240" x="-340"/>
+        </edge>
+        <edge id="e315" type="input" target="n298" source="n20">
+          <point y="-670" x="-140"/>
+          <point y="-60" x="-140"/>
+          <point y="-60" x="-340"/>
+          <point y="240" x="-340"/>
+        </edge>
+        <edge id="e316" type="input" target="n300" source="n299">
+          <point y="260" x="690"/>
+          <point y="340" x="690"/>
+        </edge>
+        <edge id="e317" type="input" target="n301" source="n299">
+          <point y="260" x="690"/>
+          <point y="190" x="690"/>
+        </edge>
+        <edge id="e319" type="equivalence" target="n291" source="n300">
+          <point y="340" x="690"/>
+          <point y="430" x="690"/>
+        </edge>
+        <edge id="e321" type="input" target="n302" source="n295">
+          <point y="430" x="480"/>
+          <point y="489" x="479"/>
+          <point y="640" x="480"/>
+        </edge>
+        <edge id="e322" type="input" target="n303" source="n292">
+          <point y="570" x="580"/>
+          <point y="640" x="580"/>
+        </edge>
+        <edge id="e323" type="input" target="n304" source="n299">
+          <point y="260" x="690"/>
+          <point y="260" x="770"/>
+        </edge>
+        <edge id="e324" type="input" target="n304" source="n305">
+          <point y="140" x="770"/>
+          <point y="260" x="770"/>
+        </edge>
+        <edge id="e325" type="input" target="n305" source="n13">
+          <point y="80" x="0"/>
+          <point y="140" x="0"/>
+          <point y="140" x="770"/>
+        </edge>
+        <edge id="e326" type="input" target="n305" source="n14">
+          <point y="90" x="414"/>
+          <point y="90" x="770"/>
+          <point y="140" x="770"/>
+        </edge>
+        <edge id="e328" type="inclusion" target="n302" source="n303">
+          <point y="640" x="580"/>
+          <point y="640" x="480"/>
+        </edge>
+        <edge id="e33" type="input" target="n50" source="n46">
+          <point y="140" x="-1030"/>
+          <point y="140" x="-1130"/>
+        </edge>
+        <edge id="e330" type="input" target="n306" source="n271">
+          <point y="640" x="-306"/>
+          <point y="640" x="360"/>
+        </edge>
+        <edge id="e331" type="input" target="n306" source="n20">
+          <point y="-646" x="-100"/>
+          <point y="600" x="-100"/>
+          <point y="600" x="360"/>
+          <point y="640" x="360"/>
+        </edge>
+        <edge id="e332" type="input" target="n302" source="n306">
+          <point y="640" x="360"/>
+          <point y="640" x="480"/>
+        </edge>
+        <edge id="e333" type="input" target="n307" source="n293">
+          <point y="570" x="800"/>
+          <point y="680" x="800"/>
+        </edge>
+        <edge id="e337" type="input" target="n309" source="n295">
+          <point y="430" x="480"/>
+          <point y="500" x="420"/>
+        </edge>
+        <edge id="e338" type="input" target="n309" source="n271">
+          <point y="595" x="-340"/>
+          <point y="500" x="-340"/>
+          <point y="500" x="420"/>
+        </edge>
+        <edge id="e339" type="inclusion" target="n309" source="n307">
+          <point y="680" x="800"/>
+          <point y="680" x="420"/>
+          <point y="500" x="420"/>
+        </edge>
+        <edge id="e34" type="input" target="n49" source="n46">
+          <point y="140" x="-1030"/>
+          <point y="140" x="-930"/>
+        </edge>
+        <edge id="e343" type="input" target="n313" source="n312">
+          <point y="360" x="530"/>
+          <point y="360" x="590"/>
+        </edge>
+        <edge id="e344" type="input" target="n314" source="n312">
+          <point y="360" x="530"/>
+          <point y="360" x="470"/>
+        </edge>
+        <edge id="e345" type="inclusion" target="n315" source="n314">
+          <point y="360" x="470"/>
+          <point y="360" x="380"/>
+        </edge>
+        <edge id="e346" type="inclusion" target="n291" source="n313">
+          <point y="360" x="590"/>
+          <point y="360" x="650"/>
+          <point y="405" x="650"/>
+        </edge>
+        <edge id="e347" type="input" target="n307" source="n304">
+          <point y="260" x="770"/>
+          <point y="260" x="940"/>
+          <point y="680" x="940"/>
+          <point y="680" x="800"/>
+        </edge>
+        <edge id="e348" type="input" target="n303" source="n304">
+          <point y="260" x="770"/>
+          <point y="290" x="770"/>
+          <point y="290" x="880"/>
+          <point y="640" x="880"/>
+          <point y="640" x="580"/>
+        </edge>
+        <edge id="e349" type="equivalence" target="n316" source="n15">
+          <point y="10" x="240"/>
+          <point y="-46" x="240"/>
+        </edge>
+        <edge id="e35" type="equivalence" target="n45" source="n50">
+          <point y="140" x="-1130"/>
+          <point y="140" x="-1220"/>
+          <point y="195" x="-1220"/>
+        </edge>
+        <edge id="e351" type="inclusion" target="n317" source="n210">
+          <point y="-70" x="450"/>
+          <point y="-70" x="530"/>
+        </edge>
+        <edge id="e352" type="equivalence" target="n316" source="n209">
+          <point y="-70" x="330"/>
+          <point y="-70" x="210"/>
+        </edge>
+        <edge id="e353" type="input" target="n15" source="n318">
+          <point y="80" x="120"/>
+          <point y="10" x="120"/>
+          <point y="10" x="240"/>
+        </edge>
+        <edge id="e357" type="input" target="n321" source="n323">
+          <point y="-350" x="1000"/>
+          <point y="-350" x="1080"/>
+        </edge>
+        <edge id="e358" type="input" target="n322" source="n323">
+          <point y="-350" x="1000"/>
+          <point y="-350" x="910"/>
+        </edge>
+        <edge id="e359" type="equivalence" target="n108" source="n321">
+          <point y="-350" x="1080"/>
+          <point y="-350" x="1140"/>
+          <point y="-230" x="1140"/>
+        </edge>
+        <edge id="e36" type="equivalence" target="n29" source="n49">
+          <point y="140" x="-930"/>
+          <point y="140" x="-830"/>
+          <point y="40" x="-830"/>
+        </edge>
+        <edge id="e361" type="equivalence" target="n180" source="n271">
+          <point y="620" x="-360"/>
+          <point y="740" x="-360"/>
+          <point y="740" x="1140"/>
+          <point y="390" x="1140"/>
+        </edge>
+        <edge id="e370" type="input" target="n15" source="n320">
+          <point y="80" x="240"/>
+          <point y="10" x="240"/>
+        </edge>
+        <edge id="e371" type="equivalence" target="n330" source="n301">
+          <point y="190" x="690"/>
+          <point y="190" x="470"/>
+        </edge>
+        <edge id="e372" type="input" target="n334" source="n332">
+          <point y="180" x="270"/>
+          <point y="180" x="320"/>
+        </edge>
+        <edge id="e373" type="input" target="n335" source="n332">
+          <point y="180" x="270"/>
+          <point y="180" x="220"/>
+        </edge>
+        <edge id="e374" type="input" target="n337" source="n336">
+          <point y="-190" x="660"/>
+          <point y="-270" x="660"/>
+        </edge>
+        <edge id="e375" type="input" target="n338" source="n336">
+          <point y="-190" x="660"/>
+          <point y="-120" x="660"/>
+        </edge>
+        <edge id="e376" type="equivalence" target="n337" source="n12">
+          <point y="-300" x="210"/>
+          <point y="-300" x="660"/>
+          <point y="-270" x="660"/>
+        </edge>
+        <edge id="e377" type="inclusion" target="n330" source="n338">
+          <point y="-120" x="660"/>
+          <point y="180" x="660"/>
+          <point y="180" x="524"/>
+        </edge>
+        <edge id="e378" type="equivalence" target="n330" source="n334">
+          <point y="180" x="320"/>
+          <point y="180" x="415"/>
+        </edge>
+        <edge id="e379" type="input" target="n340" source="n339">
+          <point y="250" x="270"/>
+          <point y="250" x="320"/>
+        </edge>
+        <edge id="e380" type="input" target="n341" source="n339">
+          <point y="250" x="270"/>
+          <point y="250" x="220"/>
+        </edge>
+        <edge id="e381" type="inclusion" target="n330" source="n340">
+          <point y="250" x="320"/>
+          <point y="250" x="470"/>
+          <point y="190" x="470"/>
+        </edge>
+        <edge id="e382" type="inclusion" target="n342" source="n335">
+          <point y="180" x="220"/>
+          <point y="200" x="100"/>
+        </edge>
+        <edge id="e383" type="inclusion" target="n342" source="n341">
+          <point y="250" x="220"/>
+          <point y="200" x="100"/>
+        </edge>
+        <edge id="e384" type="inclusion" target="n1" source="n269">
+          <point y="450" x="-450"/>
+          <point y="240" x="-450"/>
+        </edge>
+        <edge id="e389" type="input" target="n350" source="n349">
+          <point y="300" x="-650"/>
+          <point y="300" x="-600"/>
+        </edge>
+        <edge id="e390" type="input" target="n351" source="n349">
+          <point y="300" x="-650"/>
+          <point y="300" x="-720"/>
+        </edge>
+        <edge id="e391" type="inclusion" target="n352" source="n351">
+          <point y="300" x="-720"/>
+          <point y="300" x="-830"/>
+        </edge>
+        <edge id="e392" type="equivalence" target="n350" source="n1">
+          <point y="264" x="-500"/>
+          <point y="300" x="-500"/>
+          <point y="300" x="-600"/>
+        </edge>
+        <edge id="e393" type="input" target="n354" source="n353">
+          <point y="360" x="-650"/>
+          <point y="360" x="-600"/>
+        </edge>
+        <edge id="e394" type="input" target="n355" source="n353">
+          <point y="360" x="-650"/>
+          <point y="360" x="-720"/>
+        </edge>
+        <edge id="e395" type="equivalence" target="n354" source="n1">
+          <point y="264" x="-490"/>
+          <point y="360" x="-490"/>
+          <point y="360" x="-600"/>
+        </edge>
+        <edge id="e396" type="inclusion" target="n356" source="n355">
+          <point y="360" x="-720"/>
+          <point y="360" x="-830"/>
+        </edge>
+        <edge id="e398" type="input" target="n358" source="n357">
+          <point y="410" x="-650"/>
+          <point y="410" x="-600"/>
+        </edge>
+        <edge id="e399" type="input" target="n359" source="n357">
+          <point y="410" x="-650"/>
+          <point y="410" x="-720"/>
+        </edge>
+        <edge id="e400" type="inclusion" target="n356" source="n359">
+          <point y="410" x="-720"/>
+          <point y="410" x="-830"/>
+          <point y="360" x="-830"/>
+        </edge>
+        <edge id="e401" type="equivalence" target="n1" source="n358">
+          <point y="410" x="-600"/>
+          <point y="410" x="-480"/>
+          <point y="264" x="-480"/>
+        </edge>
+        <edge id="e408" type="inclusion" target="n30" source="n364">
+          <point y="40" x="-1080"/>
+          <point y="-300" x="-1080"/>
+        </edge>
+        <edge id="e409" type="input" target="n365" source="n364">
+          <point y="40" x="-1080"/>
+          <point y="39" x="-989"/>
+        </edge>
+        <edge id="e415" type="input" target="n369" source="n364">
+          <point y="40" x="-1080"/>
+          <point y="41" x="-1181"/>
+        </edge>
+        <edge id="e416" type="equivalence" target="n369" source="n27">
+          <point y="42" x="-1450"/>
+          <point y="41" x="-1181"/>
+        </edge>
+        <edge id="e417" type="equivalence" target="n29" source="n365">
+          <point y="39" x="-989"/>
+          <point y="40" x="-830"/>
+        </edge>
+        <edge id="e418" type="inclusion" target="n370" source="n29">
+          <point y="40" x="-830"/>
+          <point y="-280" x="-830"/>
+        </edge>
+        <edge id="e419" type="equivalence" target="n372" source="n371">
+          <point y="-200" x="-1350"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e42" type="input" target="n56" source="n51">
+          <point y="-410" x="-1520"/>
+          <point y="-410" x="-1460"/>
+        </edge>
+        <edge id="e420" type="input" target="n372" source="n27">
+          <point y="42" x="-1450"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e421" type="inclusion" target="n26" source="n371">
+          <point y="-200" x="-1350"/>
+          <point y="-300" x="-1350"/>
+        </edge>
+        <edge id="e422" type="input" target="n372" source="n378">
+          <point y="69" x="-1669"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e423" type="input" target="n372" source="n377">
+          <point y="-1" x="-1671"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e424" type="input" target="n372" source="n376">
+          <point y="-65" x="-1669"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e425" type="input" target="n372" source="n375">
+          <point y="-130" x="-1670"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e426" type="input" target="n372" source="n374">
+          <point y="-199" x="-1670"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e427" type="input" target="n372" source="n373">
+          <point y="-268" x="-1671"/>
+          <point y="-120" x="-1350"/>
+        </edge>
+        <edge id="e43" type="input" target="n57" source="n51">
+          <point y="-410" x="-1520"/>
+          <point y="-410" x="-1590"/>
+        </edge>
+        <edge id="e430" type="inclusion" target="n319" source="n13">
+          <point y="55" x="-39"/>
+          <point y="-100" x="-40"/>
+          <point y="-100" x="5"/>
+        </edge>
+        <edge id="e433" type="input" target="n382" source="n316">
+          <point y="-70" x="210"/>
+          <point y="-160" x="210"/>
+        </edge>
+        <edge id="e434" type="inclusion" target="n12" source="n382">
+          <point y="-160" x="210"/>
+          <point y="-300" x="210"/>
+        </edge>
+        <edge id="e435" type="input" target="n382" source="n319">
+          <point y="-100" x="60"/>
+          <point y="-160" x="60"/>
+          <point y="-160" x="210"/>
+        </edge>
+        <edge id="e438" type="input" target="n15" source="n13">
+          <point y="80" x="0"/>
+          <point y="10" x="0"/>
+          <point y="10" x="240"/>
+        </edge>
+        <edge id="e44" type="inclusion" target="n58" source="n57">
+          <point y="-410" x="-1590"/>
+          <point y="-410" x="-1686"/>
+        </edge>
+        <edge id="e442" type="equivalence" target="n383" source="n269">
+          <point y="470" x="-505"/>
+          <point y="470" x="-670"/>
+          <point y="560" x="-670"/>
+        </edge>
+        <edge id="e443" type="equivalence" target="n384" source="n108">
+          <point y="-230" x="1140"/>
+          <point y="-110" x="1050"/>
+        </edge>
+        <edge id="e444" type="inclusion" target="n26" source="n370">
+          <point y="-280" x="-830"/>
+          <point y="-340" x="-830"/>
+          <point y="-340" x="-1310"/>
+          <point y="-325" x="-1310"/>
+        </edge>
+        <edge id="e445" type="input" target="n390" source="n386">
+          <point y="-870" x="40"/>
+          <point y="-870" x="-60"/>
+        </edge>
+        <edge id="e446" type="input" target="n389" source="n386">
+          <point y="-870" x="40"/>
+          <point y="-870" x="140"/>
+        </edge>
+        <edge id="e447" type="equivalence" target="n390" source="n385">
+          <point y="-870" x="-400"/>
+          <point y="-870" x="-60"/>
+        </edge>
+        <edge id="e448" type="equivalence" target="n12" source="n389">
+          <point y="-870" x="140"/>
+          <point y="-870" x="200"/>
+          <point y="-325" x="200"/>
+        </edge>
+        <edge id="e449" type="input" target="n393" source="n391">
+          <point y="-930" x="-770"/>
+          <point y="-930" x="-620"/>
+          <point y="-870" x="-620"/>
+        </edge>
+        <edge id="e45" type="equivalence" target="n26" source="n56">
+          <point y="-410" x="-1460"/>
+          <point y="-411" x="-1382"/>
+          <point y="-325" x="-1380"/>
+        </edge>
+        <edge id="e450" type="input" target="n393" source="n392">
+          <point y="-820" x="-770"/>
+          <point y="-820" x="-620"/>
+          <point y="-870" x="-620"/>
+        </edge>
+        <edge id="e451" type="inclusion" target="n385" source="n393">
+          <point y="-870" x="-620"/>
+          <point y="-870" x="-400"/>
+        </edge>
+        <edge id="e46" type="input" target="n60" source="n59">
+          <point y="-670" x="-1040"/>
+          <point y="-670" x="-1140"/>
+        </edge>
+        <edge id="e464" type="input" target="n395" source="n394">
+          <point y="240" x="-650"/>
+          <point y="240" x="-600"/>
+        </edge>
+        <edge id="e465" type="input" target="n396" source="n394">
+          <point y="240" x="-650"/>
+          <point y="240" x="-720"/>
+        </edge>
+        <edge id="e466" type="equivalence" target="n1" source="n395">
+          <point y="240" x="-600"/>
+          <point y="240" x="-450"/>
+        </edge>
+        <edge id="e467" type="inclusion" target="n397" source="n396">
+          <point y="240" x="-720"/>
+          <point y="240" x="-830"/>
+        </edge>
+        <edge id="e47" type="input" target="n61" source="n59">
+          <point y="-670" x="-1040"/>
+          <point y="-670" x="-940"/>
+        </edge>
+        <edge id="e473" type="input" target="n403" source="n404">
+          <point y="-1030" x="-1170"/>
+          <point y="-1030" x="-1080"/>
+        </edge>
+        <edge id="e477" type="equivalence" target="n402" source="n403">
+          <point y="-1030" x="-1080"/>
+          <point y="-1030" x="-950"/>
+        </edge>
+        <edge id="e479" type="membership" target="n391" source="n402">
+          <point y="-1030" x="-950"/>
+          <point y="-1030" x="-770"/>
+          <point y="-930" x="-770"/>
+        </edge>
+        <edge id="e48" type="equivalence" target="n60" source="n26">
+          <point y="-300" x="-1350"/>
+          <point y="-670" x="-1350"/>
+          <point y="-670" x="-1140"/>
+        </edge>
+        <edge id="e480" type="membership" target="n392" source="n402">
+          <point y="-1030" x="-950"/>
+          <point y="-830" x="-950"/>
+          <point y="-830" x="-825"/>
+        </edge>
+        <edge id="e481" type="membership" target="n391" source="n406">
+          <point y="-1030" x="-640"/>
+          <point y="-1030" x="-750"/>
+          <point y="-955" x="-750"/>
+        </edge>
+        <edge id="e484" type="membership" target="n391" source="n407">
+          <point y="-820" x="-1030"/>
+          <point y="-940" x="-1030"/>
+          <point y="-940" x="-825"/>
+        </edge>
+        <edge id="e485" type="membership" target="n391" source="n412">
+          <point y="-740" x="-1010"/>
+          <point y="-930" x="-1010"/>
+          <point y="-930" x="-770"/>
+        </edge>
+        <edge id="e486" type="membership" target="n391" source="n409">
+          <point y="-760" x="-930"/>
+          <point y="-920" x="-930"/>
+          <point y="-919" x="-825"/>
+        </edge>
+        <edge id="e487" type="membership" target="n391" source="n410">
+          <point y="-780" x="-870"/>
+          <point y="-910" x="-870"/>
+          <point y="-910" x="-825"/>
+        </edge>
+        <edge id="e488" type="membership" target="n392" source="n407">
+          <point y="-820" x="-1030"/>
+          <point y="-820" x="-770"/>
+        </edge>
+        <edge id="e489" type="membership" target="n392" source="n412">
+          <point y="-740" x="-1010"/>
+          <point y="-740" x="-800"/>
+          <point y="-796" x="-800"/>
+        </edge>
+        <edge id="e490" type="membership" target="n392" source="n409">
+          <point y="-760" x="-930"/>
+          <point y="-760" x="-810"/>
+          <point y="-796" x="-810"/>
+        </edge>
+        <edge id="e491" type="membership" target="n392" source="n410">
+          <point y="-780" x="-870"/>
+          <point y="-780" x="-820"/>
+          <point y="-796" x="-820"/>
+        </edge>
+        <edge id="e492" type="equivalence" target="n415" source="n413">
+          <point y="-710" x="-390"/>
+          <point y="-710" x="-510"/>
+        </edge>
+        <edge id="e493" type="input" target="n413" source="n414">
+          <point y="-710" x="-300"/>
+          <point y="-710" x="-390"/>
+        </edge>
+        <edge id="e494" type="input" target="n416" source="n417">
+          <point y="-770" x="-300"/>
+          <point y="-770" x="-390"/>
+        </edge>
+        <edge id="e495" type="inclusion" target="n418" source="n416">
+          <point y="-770" x="-390"/>
+          <point y="-770" x="-510"/>
+        </edge>
+        <edge id="e496" type="membership" target="n392" source="n418">
+          <point y="-770" x="-510"/>
+          <point y="-770" x="-740"/>
+          <point y="-796" x="-740"/>
+        </edge>
+        <edge id="e497" type="membership" target="n392" source="n415">
+          <point y="-710" x="-510"/>
+          <point y="-710" x="-770"/>
+          <point y="-820" x="-770"/>
+        </edge>
+        <edge id="e498" type="equivalence" target="n419" source="n322">
+          <point y="-350" x="910"/>
+          <point y="-350" x="790"/>
+        </edge>
+        <edge id="e499" type="inclusion" target="n421" source="n230">
+          <point y="-440" x="910"/>
+          <point y="-440" x="790"/>
+        </edge>
+        <edge id="e59" type="input" target="n72" source="n69">
+          <point y="-110" x="-450"/>
+          <point y="-180" x="-450"/>
+        </edge>
+        <edge id="e60" type="input" target="n73" source="n69">
+          <point y="-110" x="-450"/>
+          <point y="-40" x="-450"/>
+        </edge>
+        <edge id="e62" type="equivalence" target="n73" source="n1">
+          <point y="240" x="-450"/>
+          <point y="-40" x="-450"/>
+        </edge>
+        <edge id="e63" type="equivalence" target="n72" source="n29">
+          <point y="15" x="-790"/>
+          <point y="-180" x="-790"/>
+          <point y="-180" x="-450"/>
+        </edge>
+        <edge id="e64" type="input" target="n75" source="n74">
+          <point y="-360" x="-1520"/>
+          <point y="-360" x="-1460"/>
+        </edge>
+        <edge id="e65" type="input" target="n76" source="n74">
+          <point y="-360" x="-1520"/>
+          <point y="-360" x="-1590"/>
+        </edge>
+        <edge id="e66" type="equivalence" target="n75" source="n26">
+          <point y="-325" x="-1390"/>
+          <point y="-360" x="-1391"/>
+          <point y="-360" x="-1460"/>
+        </edge>
+        <edge id="e67" type="inclusion" target="n77" source="n76">
+          <point y="-360" x="-1590"/>
+          <point y="-360" x="-1686"/>
+        </edge>
+        <edge id="e68" type="input" target="n79" source="n78">
+          <point y="-590" x="-1040"/>
+          <point y="-590" x="-1140"/>
+        </edge>
+        <edge id="e69" type="input" target="n80" source="n78">
+          <point y="-590" x="-1040"/>
+          <point y="-590" x="-940"/>
+        </edge>
+        <edge id="e70" type="equivalence" target="n79" source="n26">
+          <point y="-325" x="-1340"/>
+          <point y="-590" x="-1340"/>
+          <point y="-590" x="-1140"/>
+        </edge>
+        <edge id="e71" type="equivalence" target="n20" source="n80">
+          <point y="-590" x="-940"/>
+          <point y="-590" x="-170"/>
+          <point y="-646" x="-170"/>
+        </edge>
+        <edge id="e72" type="equivalence" target="n20" source="n61">
+          <point y="-670" x="-940"/>
+          <point y="-670" x="-140"/>
+        </edge>
+        <edge id="e73" type="inclusion" target="n40" source="n81">
+          <point y="-230" x="-350"/>
+          <point y="-300" x="-350"/>
+          <point y="-300" x="-280"/>
+        </edge>
+        <edge id="e74" type="input" target="n103" source="n81">
+          <point y="-230" x="-350"/>
+          <point y="-230" x="-450"/>
+        </edge>
+        <edge id="e75" type="input" target="n102" source="n81">
+          <point y="-230" x="-350"/>
+          <point y="-230" x="-250"/>
+        </edge>
+        <edge id="e76" type="equivalence" target="n13" source="n102">
+          <point y="-230" x="-250"/>
+          <point y="80" x="-250"/>
+          <point y="80" x="0"/>
+        </edge>
+        <edge id="e77" type="equivalence" target="n103" source="n29">
+          <point y="15" x="-810"/>
+          <point y="-230" x="-810"/>
+          <point y="-230" x="-450"/>
+        </edge>
+        <edge id="e78" type="input" target="n89" source="n86">
+          <point y="-410" x="-390"/>
+          <point y="-410" x="-490"/>
+        </edge>
+        <edge id="e79" type="input" target="n90" source="n86">
+          <point y="-410" x="-390"/>
+          <point y="-410" x="-290"/>
+        </edge>
+        <edge id="e81" type="inclusion" target="n12" source="n90">
+          <point y="-410" x="-290"/>
+          <point y="-410" x="160"/>
+          <point y="-325" x="160"/>
+        </edge>
+        <edge id="e82" type="inclusion" target="n26" source="n89">
+          <point y="-410" x="-490"/>
+          <point y="-410" x="-1320"/>
+          <point y="-325" x="-1320"/>
+        </edge>
+        <edge id="e83" type="input" target="n93" source="n92">
+          <point y="-360" x="370"/>
+          <point y="-360" x="290"/>
+        </edge>
+        <edge id="e84" type="input" target="n94" source="n92">
+          <point y="-360" x="370"/>
+          <point y="-360" x="450"/>
+        </edge>
+        <edge id="e85" type="inclusion" target="n19" source="n94">
+          <point y="-360" x="450"/>
+          <point y="-380" x="560"/>
+        </edge>
+        <edge id="e86" type="inclusion" target="n12" source="n93">
+          <point y="-360" x="290"/>
+          <point y="-360" x="210"/>
+          <point y="-300" x="210"/>
+        </edge>
+        <edge id="e87" type="input" target="n106" source="n97">
+          <point y="-230" x="910"/>
+          <point y="-230" x="1020"/>
+        </edge>
+        <edge id="e88" type="input" target="n107" source="n97">
+          <point y="-230" x="910"/>
+          <point y="-150" x="910"/>
+        </edge>
+        <edge id="e89" type="equivalence" target="n14" source="n107">
+          <point y="-150" x="910"/>
+          <point y="80" x="910"/>
+          <point y="80" x="360"/>
+        </edge>
+        <edge id="e90" type="inclusion" target="n108" source="n106">
+          <point y="-230" x="1020"/>
+          <point y="-229" x="1139"/>
+        </edge>
+        <edge id="e91" type="inclusion" target="n40" source="n97">
+          <point y="-230" x="910"/>
+          <point y="-230" x="-180"/>
+          <point y="-300" x="-280"/>
+        </edge>
+      </diagram>
+    </diagrams>
+  </project>
+</graphol>
