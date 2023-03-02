@@ -1,592 +1,1142 @@
-Prefix(:=<https://w3id.org/italia/onto/CPV/>)
-Prefix(cp:=<https://w3id.org/italia/onto/l0/>)
-Prefix(CLV:=<https://w3id.org/italia/onto/CLV/>)
-Prefix(cpv:=<https://w3id.org/italia/onto/CPV/>)
-Prefix(dct:=<http://purl.org/dc/terms/>)
-Prefix(geo:=<http://www.opengis.net/ont/geosparql#>)
-Prefix(iao:=<https://w3id.org/italia/onto/IAO/>)
-Prefix(ito:=<https://w3id.org/italia/onto/ITO/>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(pro:=<https://w3id.org/italia/onto/PRO/>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(dcat:=<http://www.w3.org/ns/dcat#>)
-Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
-Prefix(prov:=<http://www.w3.org/ns/prov#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
-Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
-Prefix(time:=<http://www.w3.org/2006/time#>)
-Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
-Prefix(vcard:=<http://www.w3.org/2006/vcard/ns#>)
-Prefix(cv-mst:=<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/>)
-Prefix(cv-prt:=<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/>)
-Prefix(cv-ror:=<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/>)
-Prefix(admsapit:=<https://w3id.org/italia/onto/ADMS/>)
-Prefix(cv-rorem:=<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/>)
+@prefix : <https://w3id.org/italia/onto/CPV/> .
+@prefix cp: <https://w3id.org/italia/onto/l0/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix cpv: <https://w3id.org/italia/onto/CPV/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix iao: <https://w3id.org/italia/onto/IAO/> .
+@prefix ito: <https://w3id.org/italia/onto/ITO/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <https://w3id.org/italia/onto/PRO/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix cv-mst: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/> .
+@prefix cv-prt: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/> .
+@prefix cv-ror: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix cv-rorem: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/> .
+@base <https://w3id.org/italia/onto/PRO/> .
 
-Ontology(<https://w3id.org/italia/onto/PRO/>
+<https://w3id.org/italia/onto/PRO/> rdf:type owl:Ontology ;
+                                     owl:versionIRI pro:1.0 ;
+                                     owl:imports <https://w3id.org/italia/onto/CLV> ,
+                                                 <https://w3id.org/italia/onto/l0> ;
+                                     admsapit:acronym "PRO" ;
+                                     rdfs:isDefinedBy "https://w3id.org/italia/onto/PRO"^^xsd:anyURI ;
+                                     admsapit:hasKeyClass "https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente"^^xsd:anyURI ;
+                                     admsapit:type "https://w3id.org/italia/onto/ADMS/DomainOntology" ;
+                                     dcat:contactPoint " ---" ;
+                                     admsapit:officialURI "https://w3id.org/italia/onto/PRO"^^xsd:anyURI ;
+                                     admsapit:hasTask " ---" ;
+                                     dct:identifier "https://w3id.org/italia/onto/PRO"^^xsd:anyURI ;
+                                     dcat:keyword "Residente"@it ;
+                                     rdfs:comment "This is the registered person ontology."@en ;
+                                     dct:description "This is the ontology of the population registered in the registry office."@en ;
+                                     dct:publisher "---" ;
+                                     dct:title "PRO_IT - Registered Person Ontology"@en ;
+                                     rdfs:label "Registered Person Ontology"@en ;
+                                     admsapit:hasContributor " ---" ;
+                                     dct:creator "https://w3id.org/italia/data/public-organization/ISTAT"^^xsd:anyURI ;
+                                     dct:issued "2022-12-15"^^xsd:dateTimeStamp ;
+                                     admsapit:target "Pubbliche Amministrazioni" ;
+                                     dct:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/IRREG"^^xsd:anyURI ;
+                                     dct:description "Questa è l'ontologia della popolazione residente registrata in anagrafe."@it ;
+                                     admsapit:hasFormalityLevel " ---" ;
+                                     dct:rightsHolder "https://www.interno.gov.it/it"^^xsd:anyURI ;
+                                     owl:versionInfo "Versione 1.0"@it ;
+                                     admsapit:last "https//w3id.org/italia/onto/PRO/1.0"^^xsd:anyURI ;
+                                     rdfs:label "Ontologia della popolazione residente anagrafica."@it ;
+                                     dcat:theme "http://publications.europa.eu/resource/authority/data-theme/SOCI"^^xsd:anyURI ;
+                                     rdfs:comment "Questa è l'ontologia della Popolazione Registrata in Anagrafe."@it ;
+                                     dct:language "http://publications.europa.eu/resource/authority/language/ITA"^^xsd:anyURI ;
+                                     admsapit:hasOntologyLanguage "https://w3id.org/italia/onto/ADMS/OWL"^^xsd:anyURI ;
+                                     dcat:keyword "Anagrafe"@it ;
+                                     admsapit:prefix "pro"^^xsd:string ;
+                                     admsapit:hasKeyClass "https://w3id.org/italia/onto/PRO/Residenza"^^xsd:anyURI ;
+                                     admsapit:status "published" ;
+                                     dct:title "PRO_IT - Ontologia della Popolazione Registrata in Anagrafe"@it ;
+                                     admsapit:hasSemanticAssetDistribution "https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE"^^xsd:anyURI .
 
-<https://w3id.org/italia/onto/PRO/1.0>
-Import(<https://w3id.org/italia/onto/CLV>)
-Import(<https://w3id.org/italia/onto/l0>)
-Annotation(dct:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/IRREG"^^xsd:anyURI)
-Annotation(dct:creator "https://w3id.org/italia/data/public-organization/ISTAT"^^xsd:anyURI)
-Annotation(dct:description "Questa è l'ontologia della popolazione residente registrata in anagrafe."@it)
-Annotation(dct:description "This is the ontology of the population registered in the registry office."@en)
-Annotation(dct:identifier "https://w3id.org/italia/onto/PRO"^^xsd:anyURI)
-Annotation(dct:issued "2022-12-15"^^xsd:dateTimeStamp)
-Annotation(dct:language "http://publications.europa.eu/resource/authority/language/ITA"^^xsd:anyURI)
-Annotation(dct:publisher "---")
-Annotation(dct:rightsHolder "Ministero degli Interni"@it)
-Annotation(dct:title "PRO_IT - Ontologia della Popolazione Registrata in Anagrafe"@it)
-Annotation(dct:title "PRO_IT - Registered Person Ontology"@en)
-Annotation(rdfs:comment "Questa è l'ontologia della Popolazione Registrata in Anagrafe."@it)
-Annotation(rdfs:comment "This is the registered person ontology."@en)
-Annotation(rdfs:isDefinedBy "https://w3id.org/italia/onto/PRO"^^xsd:anyURI)
-Annotation(rdfs:label "Ontologia della popolazione residente anagrafica."@it)
-Annotation(rdfs:label "Registered Person Ontology"@en)
-Annotation(owl:versionInfo "Versione 1.0"@it)
-Annotation(dcat:contactPoint " ---")
-Annotation(dcat:keyword "Anagrafe"@it)
-Annotation(dcat:keyword "Residente"@it)
-Annotation(dcat:theme "http://publications.europa.eu/resource/authority/data-theme/SOCI"^^xsd:anyURI)
-Annotation(admsapit:acronym "PRO")
-Annotation(admsapit:hasContributor " ---")
-Annotation(admsapit:hasFormalityLevel " ---")
-Annotation(admsapit:hasKeyClass "https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente"^^xsd:anyURI)
-Annotation(admsapit:hasKeyClass "https://w3id.org/italia/onto/PRO/Residenza"^^xsd:anyURI)
-Annotation(admsapit:hasOntologyLanguage "https://w3id.org/italia/onto/ADMS/OWL"^^xsd:anyURI)
-Annotation(admsapit:hasSemanticAssetDistribution "https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE"^^xsd:anyURI)
-Annotation(admsapit:hasTask " ---")
-Annotation(admsapit:last "https//w3id.org/italia/onto/PRO/1.0"^^xsd:anyURI)
-Annotation(admsapit:officialURI "https://w3id.org/italia/onto/PRO"^^xsd:anyURI)
-Annotation(admsapit:prefix "pro"^^xsd:string)
-Annotation(admsapit:status "published")
-Annotation(admsapit:target "Pubbliche Amministrazioni")
-Annotation(admsapit:type "https://w3id.org/italia/onto/ADMS/DomainOntology")
-Declaration(Class(CLV:Address))
-Declaration(Class(CLV:City))
-Declaration(Class(CLV:Country))
-Declaration(Class(cpv:Alive))
-Declaration(Class(cpv:Dead))
-Declaration(Class(cpv:Person))
-Declaration(Class(cpv:PersonaFisica))
-Declaration(Class(cpv:Resident))
-Declaration(Class(pro:AppartenenzaInFamigliaAnagrafica))
-Declaration(Class(pro:Cittadinanza))
-Declaration(Class(pro:ConvivenzaAnagrafica))
-Declaration(Class(pro:Domicilio))
-Declaration(Class(pro:FamigliaAnagrafica))
-Declaration(Class(pro:GradoDiIstruzione))
-Declaration(Class(pro:MotivoCancellazioneAnagrafe))
-Declaration(Class(pro:MotivoIscrizioneAnagrafe))
-Declaration(Class(pro:PersonaAnagraficamenteNonResidente))
-Declaration(Class(pro:PersonaAnagraficamenteResidente))
-Declaration(Class(pro:PersonaDeceduta))
-Declaration(Class(pro:PersonaSenzaFissaDimora))
-Declaration(Class(pro:RelazioneParentale))
-Declaration(Class(pro:Residenza))
-Declaration(Class(pro:StatoCivile))
-Declaration(Class(pro:TipoEventoRegistrazioneAnagrafe))
-Declaration(Class(pro:TipoRelazioneParentale))
-Declaration(ObjectProperty(pro:appartieneAFamAnagrafica))
-Declaration(ObjectProperty(pro:appartieneAFamigliaOConvivenza))
-Declaration(ObjectProperty(pro:cittadinanzaAlDecesso))
-Declaration(ObjectProperty(pro:comuneDiResidenzaAlDecesso))
-Declaration(ObjectProperty(pro:domicilioInComune))
-Declaration(ObjectProperty(pro:domicilioInIndirizzo))
-Declaration(ObjectProperty(pro:haDomicilio))
-Declaration(ObjectProperty(pro:haDomicilioAttualmenteIn))
-Declaration(ObjectProperty(pro:haIndirizzoDiDomicilioAttuale))
-Declaration(ObjectProperty(pro:haMotivoCancellazioneAnagrafe))
-Declaration(ObjectProperty(pro:haMotivoIscrizioneAnagrafe))
-Declaration(ObjectProperty(pro:haRelazioneParentale))
-Declaration(ObjectProperty(pro:haResidenza))
-Declaration(ObjectProperty(pro:haStatoCivileAttuale))
-Declaration(ObjectProperty(pro:haTipoRelazioneParentale))
-Declaration(ObjectProperty(pro:haTitoloDiStudio))
-Declaration(ObjectProperty(pro:inFamiglia))
-Declaration(ObjectProperty(pro:natoInComune))
-Declaration(ObjectProperty(pro:nato_in_stato))
-Declaration(ObjectProperty(pro:precedeImmediatamente))
-Declaration(ObjectProperty(pro:relazioneParentaleInFamiglia))
-Declaration(ObjectProperty(pro:residenzaInComune))
-Declaration(ObjectProperty(pro:residenzaInIndirizzo))
-Declaration(ObjectProperty(pro:risiedeAttualmenteIn))
-Declaration(ObjectProperty(pro:stato_civile_al_decesso))
-Declaration(ObjectProperty(pro:èAttualmenteCittadino))
-Declaration(ObjectProperty(pro:èAttualmenteCittadinoAcquisito))
-Declaration(ObjectProperty(pro:èAttualmentePrevalentementeCittadino))
-Declaration(DataProperty(pro:codiceConvivenza))
-Declaration(DataProperty(pro:codiceFamiglia))
-Declaration(DataProperty(pro:codiceStatoCivile))
-Declaration(DataProperty(pro:codiceTipoEventoRegistrazioneAnagrafe))
-Declaration(DataProperty(pro:codiceTipoRelazioneParentale))
-Declaration(DataProperty(pro:codiceTitoloStudio))
-Declaration(DataProperty(pro:dataFineDomicilio))
-Declaration(DataProperty(pro:dataFineInFamiglia))
-Declaration(DataProperty(pro:dataFineRelazioneParentale))
-Declaration(DataProperty(pro:dataFineValiditaResidenza))
-Declaration(DataProperty(pro:dataIinizioValiditaResidenza))
-Declaration(DataProperty(pro:dataInizioDomicilio))
-Declaration(DataProperty(pro:dataInizioInFamiglia))
-Declaration(DataProperty(pro:dataInizioRelazioneParentale))
-Declaration(DataProperty(pro:dataInizioStatoCivileAttuale))
-Declaration(DataProperty(pro:dataMatrimonio))
-Declaration(DataProperty(pro:denominazioneStatoDivile))
-Declaration(DataProperty(pro:denominazioneTipoEventoRegistrazioneAnagrafe))
-Declaration(DataProperty(pro:denominazioneTipoRelazioneParentale))
-Declaration(DataProperty(pro:denominazioneTitoloStudio))
-Declaration(DataProperty(pro:nomeConvivenza))
-Declaration(DataProperty(pro:numeroComponentiConvivenza))
-Declaration(DataProperty(pro:numeroComponentiFamigliaAnagrafica))
-Declaration(NamedIndividual(cv-mst:1))
-Declaration(NamedIndividual(cv-mst:2))
-Declaration(NamedIndividual(cv-mst:3))
-Declaration(NamedIndividual(cv-mst:4))
-Declaration(NamedIndividual(cv-mst:6))
-Declaration(NamedIndividual(cv-mst:7))
-Declaration(NamedIndividual(cv-mst:8))
-Declaration(NamedIndividual(cv-mst:9))
-Declaration(NamedIndividual(cv-prt:1))
-Declaration(NamedIndividual(cv-prt:10))
-Declaration(NamedIndividual(cv-prt:11))
-Declaration(NamedIndividual(cv-prt:12))
-Declaration(NamedIndividual(cv-prt:13))
-Declaration(NamedIndividual(cv-prt:16))
-Declaration(NamedIndividual(cv-prt:17))
-Declaration(NamedIndividual(cv-prt:18))
-Declaration(NamedIndividual(cv-prt:2))
-Declaration(NamedIndividual(cv-prt:20))
-Declaration(NamedIndividual(cv-prt:21))
-Declaration(NamedIndividual(cv-prt:22))
-Declaration(NamedIndividual(cv-prt:23))
-Declaration(NamedIndividual(cv-prt:24))
-Declaration(NamedIndividual(cv-prt:25))
-Declaration(NamedIndividual(cv-prt:26))
-Declaration(NamedIndividual(cv-prt:28))
-Declaration(NamedIndividual(cv-prt:3))
-Declaration(NamedIndividual(cv-prt:4))
-Declaration(NamedIndividual(cv-prt:5))
-Declaration(NamedIndividual(cv-prt:6))
-Declaration(NamedIndividual(cv-prt:7))
-Declaration(NamedIndividual(cv-prt:80))
-Declaration(NamedIndividual(cv-prt:9))
-Declaration(NamedIndividual(cv-ror:1))
-Declaration(NamedIndividual(cv-ror:2))
-Declaration(NamedIndividual(cv-ror:4))
-Declaration(NamedIndividual(cv-ror:5))
-Declaration(NamedIndividual(cv-ror:6))
-Declaration(NamedIndividual(cv-ror:7))
-Declaration(NamedIndividual(cv-ror:9))
-Declaration(NamedIndividual(cv-rorem:1))
-Declaration(NamedIndividual(cv-rorem:11))
-Declaration(NamedIndividual(cv-rorem:13))
-Declaration(NamedIndividual(cv-rorem:2))
-Declaration(NamedIndividual(cv-rorem:5))
-Declaration(NamedIndividual(cv-rorem:6))
-Declaration(NamedIndividual(cv-rorem:7))
-Declaration(NamedIndividual(cv-rorem:9))
-Declaration(AnnotationProperty(dct:accrualPeriodicity))
-Declaration(AnnotationProperty(dct:creator))
-Declaration(AnnotationProperty(dct:description))
-Declaration(AnnotationProperty(dct:identifier))
-Declaration(AnnotationProperty(dct:issued))
-Declaration(AnnotationProperty(dct:language))
-Declaration(AnnotationProperty(dct:publisher))
-Declaration(AnnotationProperty(dct:rightsHolder))
-Declaration(AnnotationProperty(dct:title))
-Declaration(AnnotationProperty(dcat:contactPoint))
-Declaration(AnnotationProperty(dcat:keyword))
-Declaration(AnnotationProperty(dcat:theme))
-Declaration(AnnotationProperty(admsapit:acronym))
-Declaration(AnnotationProperty(admsapit:hasContributor))
-Declaration(AnnotationProperty(admsapit:hasFormalityLevel))
-Declaration(AnnotationProperty(admsapit:hasKeyClass))
-Declaration(AnnotationProperty(admsapit:hasOntologyLanguage))
-Declaration(AnnotationProperty(admsapit:hasSemanticAssetDistribution))
-Declaration(AnnotationProperty(admsapit:hasTask))
-Declaration(AnnotationProperty(admsapit:last))
-Declaration(AnnotationProperty(admsapit:officialURI))
-Declaration(AnnotationProperty(admsapit:prefix))
-Declaration(AnnotationProperty(admsapit:status))
-Declaration(AnnotationProperty(admsapit:target))
-Declaration(AnnotationProperty(admsapit:type))
-Declaration(Datatype(xsd:dateTime))
-Declaration(Datatype(xsd:integer))
-Declaration(Datatype(xsd:string))
-AnnotationAssertion(rdfs:label pro:appartieneAFamAnagrafica "appartiene a famiglia anagrafica"@it)
-InverseFunctionalObjectProperty(pro:appartieneAFamAnagrafica)
-ObjectPropertyDomain(pro:appartieneAFamAnagrafica pro:PersonaAnagraficamenteResidente)
-ObjectPropertyRange(pro:appartieneAFamAnagrafica pro:AppartenenzaInFamigliaAnagrafica)
-AnnotationAssertion(rdfs:label pro:appartieneAFamigliaOConvivenza "appartiene a  famiglia o convivenza"@it)
-FunctionalObjectProperty(pro:appartieneAFamigliaOConvivenza)
-ObjectPropertyDomain(pro:appartieneAFamigliaOConvivenza cpv:Alive)
-AnnotationAssertion(rdfs:label pro:cittadinanzaAlDecesso "cittadinanza_al_decesso"@it)
-ObjectPropertyDomain(pro:cittadinanzaAlDecesso pro:PersonaDeceduta)
-ObjectPropertyRange(pro:cittadinanzaAlDecesso pro:Cittadinanza)
-AnnotationAssertion(rdfs:label pro:comuneDiResidenzaAlDecesso "comune di residenza al decesso"@it)
-FunctionalObjectProperty(pro:comuneDiResidenzaAlDecesso)
-ObjectPropertyDomain(pro:comuneDiResidenzaAlDecesso pro:PersonaDeceduta)
-ObjectPropertyRange(pro:comuneDiResidenzaAlDecesso CLV:City)
-AnnotationAssertion(rdfs:label pro:domicilioInComune "domicilio in comune"@it)
-ObjectPropertyDomain(pro:domicilioInComune pro:Domicilio)
-ObjectPropertyRange(pro:domicilioInComune CLV:City)
-AnnotationAssertion(rdfs:label pro:domicilioInIndirizzo "domicilio in indirizzo"@it)
-FunctionalObjectProperty(pro:domicilioInIndirizzo)
-ObjectPropertyDomain(pro:domicilioInIndirizzo pro:Domicilio)
-ObjectPropertyRange(pro:domicilioInIndirizzo CLV:Address)
-AnnotationAssertion(rdfs:label pro:haDomicilio "ha domicilio"@it)
-FunctionalObjectProperty(pro:haDomicilio)
-ObjectPropertyDomain(pro:haDomicilio cpv:PersonaFisica)
-ObjectPropertyRange(pro:haDomicilio pro:Domicilio)
-AnnotationAssertion(rdfs:label pro:haDomicilioAttualmenteIn "ha domicilio attualmente in"@it)
-FunctionalObjectProperty(pro:haDomicilioAttualmenteIn)
-ObjectPropertyDomain(pro:haDomicilioAttualmenteIn pro:PersonaAnagraficamenteResidente)
-ObjectPropertyRange(pro:haDomicilioAttualmenteIn CLV:City)
-AnnotationAssertion(rdfs:label pro:haIndirizzoDiDomicilioAttuale "ha indirizzo di domicilio attuale"@it)
-FunctionalObjectProperty(pro:haIndirizzoDiDomicilioAttuale)
-ObjectPropertyDomain(pro:haIndirizzoDiDomicilioAttuale pro:PersonaAnagraficamenteResidente)
-ObjectPropertyRange(pro:haIndirizzoDiDomicilioAttuale CLV:Address)
-AnnotationAssertion(rdfs:label pro:haMotivoCancellazioneAnagrafe "ha motivo cancellazione anagrafe"@it)
-FunctionalObjectProperty(pro:haMotivoCancellazioneAnagrafe)
-ObjectPropertyDomain(pro:haMotivoCancellazioneAnagrafe pro:Residenza)
-ObjectPropertyRange(pro:haMotivoCancellazioneAnagrafe pro:MotivoCancellazioneAnagrafe)
-AnnotationAssertion(rdfs:label pro:haMotivoIscrizioneAnagrafe "ha motivo iscrizione anagrafe"@it)
-FunctionalObjectProperty(pro:haMotivoIscrizioneAnagrafe)
-ObjectPropertyDomain(pro:haMotivoIscrizioneAnagrafe pro:Residenza)
-ObjectPropertyRange(pro:haMotivoIscrizioneAnagrafe pro:MotivoIscrizioneAnagrafe)
-AnnotationAssertion(rdfs:label pro:haRelazioneParentale "ha relazione parentale"@it)
-InverseFunctionalObjectProperty(pro:haRelazioneParentale)
-ObjectPropertyDomain(pro:haRelazioneParentale pro:PersonaAnagraficamenteResidente)
-ObjectPropertyRange(pro:haRelazioneParentale pro:RelazioneParentale)
-AnnotationAssertion(rdfs:label pro:haResidenza "ha residenza"@it)
-InverseFunctionalObjectProperty(pro:haResidenza)
-ObjectPropertyDomain(pro:haResidenza cpv:PersonaFisica)
-ObjectPropertyRange(pro:haResidenza pro:Residenza)
-AnnotationAssertion(rdfs:label pro:haStatoCivileAttuale "ha stato civile attuale"@it)
-FunctionalObjectProperty(pro:haStatoCivileAttuale)
-ObjectPropertyDomain(pro:haStatoCivileAttuale cpv:Alive)
-ObjectPropertyRange(pro:haStatoCivileAttuale pro:StatoCivile)
-AnnotationAssertion(rdfs:label pro:haTipoRelazioneParentale "ha tipo relazione parentale"@it)
-FunctionalObjectProperty(pro:haTipoRelazioneParentale)
-ObjectPropertyDomain(pro:haTipoRelazioneParentale pro:RelazioneParentale)
-ObjectPropertyRange(pro:haTipoRelazioneParentale pro:TipoRelazioneParentale)
-AnnotationAssertion(rdfs:label pro:haTitoloDiStudio "ha titolo di studio"@it)
-ObjectPropertyDomain(pro:haTitoloDiStudio cpv:Alive)
-ObjectPropertyRange(pro:haTitoloDiStudio pro:GradoDiIstruzione)
-AnnotationAssertion(rdfs:label pro:inFamiglia "in famiglia"@it)
-InverseFunctionalObjectProperty(pro:inFamiglia)
-ObjectPropertyDomain(pro:inFamiglia pro:FamigliaAnagrafica)
-ObjectPropertyRange(pro:inFamiglia pro:AppartenenzaInFamigliaAnagrafica)
-AnnotationAssertion(rdfs:label pro:natoInComune "nato in comune"@it)
-FunctionalObjectProperty(pro:natoInComune)
-ObjectPropertyDomain(pro:natoInComune cpv:PersonaFisica)
-ObjectPropertyRange(pro:natoInComune CLV:City)
-AnnotationAssertion(rdfs:label pro:nato_in_stato "nato_in_stato"@it)
-FunctionalObjectProperty(pro:nato_in_stato)
-ObjectPropertyDomain(pro:nato_in_stato cpv:PersonaFisica)
-ObjectPropertyRange(pro:nato_in_stato CLV:Country)
-AnnotationAssertion(rdfs:label pro:precedeImmediatamente "precede immediatamente"@it)
-FunctionalObjectProperty(pro:precedeImmediatamente)
-InverseFunctionalObjectProperty(pro:precedeImmediatamente)
-ObjectPropertyDomain(pro:precedeImmediatamente pro:Residenza)
-ObjectPropertyRange(pro:precedeImmediatamente pro:Residenza)
-AnnotationAssertion(rdfs:label pro:relazioneParentaleInFamiglia "relazione parentale in famiglia"@it)
-FunctionalObjectProperty(pro:relazioneParentaleInFamiglia)
-ObjectPropertyDomain(pro:relazioneParentaleInFamiglia pro:RelazioneParentale)
-ObjectPropertyRange(pro:relazioneParentaleInFamiglia pro:FamigliaAnagrafica)
-AnnotationAssertion(rdfs:label pro:residenzaInComune "residenza in comune"@it)
-ObjectPropertyDomain(pro:residenzaInComune pro:Residenza)
-ObjectPropertyRange(pro:residenzaInComune CLV:City)
-AnnotationAssertion(rdfs:label pro:residenzaInIndirizzo "residenza in indirizzo"@it)
-FunctionalObjectProperty(pro:residenzaInIndirizzo)
-ObjectPropertyDomain(pro:residenzaInIndirizzo pro:Residenza)
-ObjectPropertyRange(pro:residenzaInIndirizzo CLV:Address)
-AnnotationAssertion(rdfs:label pro:risiedeAttualmenteIn "risiede attualmente in"@it)
-FunctionalObjectProperty(pro:risiedeAttualmenteIn)
-ObjectPropertyDomain(pro:risiedeAttualmenteIn pro:PersonaAnagraficamenteResidente)
-ObjectPropertyRange(pro:risiedeAttualmenteIn CLV:City)
-AnnotationAssertion(rdfs:label pro:stato_civile_al_decesso "stato_civile_al_decesso"@it)
-FunctionalObjectProperty(pro:stato_civile_al_decesso)
-ObjectPropertyDomain(pro:stato_civile_al_decesso pro:PersonaDeceduta)
-ObjectPropertyRange(pro:stato_civile_al_decesso pro:StatoCivile)
-AnnotationAssertion(rdfs:label pro:èAttualmenteCittadino "è attualmente cittadino"@it)
-ObjectPropertyDomain(pro:èAttualmenteCittadino cpv:Alive)
-ObjectPropertyRange(pro:èAttualmenteCittadino pro:Cittadinanza)
-AnnotationAssertion(rdfs:label pro:èAttualmenteCittadinoAcquisito "è attualmente cittadino acquisito"@it)
-SubObjectPropertyOf(pro:èAttualmenteCittadinoAcquisito pro:èAttualmenteCittadino)
-AnnotationAssertion(rdfs:label pro:èAttualmentePrevalentementeCittadino "è attualmente prevalentemente cittadino"@it)
-SubObjectPropertyOf(pro:èAttualmentePrevalentementeCittadino pro:èAttualmenteCittadino)
-FunctionalObjectProperty(pro:èAttualmentePrevalentementeCittadino)
-AnnotationAssertion(rdfs:label pro:codiceConvivenza "codice convivenza"@it)
-FunctionalDataProperty(pro:codiceConvivenza)
-DataPropertyDomain(pro:codiceConvivenza pro:ConvivenzaAnagrafica)
-DataPropertyRange(pro:codiceConvivenza xsd:string)
-AnnotationAssertion(rdfs:label pro:codiceFamiglia "codice famiglia"@it)
-FunctionalDataProperty(pro:codiceFamiglia)
-DataPropertyDomain(pro:codiceFamiglia pro:FamigliaAnagrafica)
-DataPropertyRange(pro:codiceFamiglia xsd:string)
-AnnotationAssertion(rdfs:label pro:codiceStatoCivile "codice stato civile"@it)
-FunctionalDataProperty(pro:codiceStatoCivile)
-DataPropertyDomain(pro:codiceStatoCivile pro:StatoCivile)
-DataPropertyRange(pro:codiceStatoCivile xsd:string)
-AnnotationAssertion(rdfs:label pro:codiceTipoEventoRegistrazioneAnagrafe "codice tipo evento registrazione anagrafe"@it)
-FunctionalDataProperty(pro:codiceTipoEventoRegistrazioneAnagrafe)
-DataPropertyDomain(pro:codiceTipoEventoRegistrazioneAnagrafe pro:TipoEventoRegistrazioneAnagrafe)
-DataPropertyRange(pro:codiceTipoEventoRegistrazioneAnagrafe xsd:integer)
-AnnotationAssertion(rdfs:label pro:codiceTipoRelazioneParentale "codiceTipoRelazioneParentale"@it)
-DataPropertyDomain(pro:codiceTipoRelazioneParentale pro:TipoRelazioneParentale)
-DataPropertyRange(pro:codiceTipoRelazioneParentale xsd:string)
-AnnotationAssertion(rdfs:label pro:codiceTitoloStudio "codice titolo di studio"@it)
-FunctionalDataProperty(pro:codiceTitoloStudio)
-DataPropertyDomain(pro:codiceTitoloStudio pro:GradoDiIstruzione)
-DataPropertyRange(pro:codiceTitoloStudio xsd:string)
-AnnotationAssertion(rdfs:label pro:dataFineDomicilio "data fine domicilio"@it)
-FunctionalDataProperty(pro:dataFineDomicilio)
-DataPropertyDomain(pro:dataFineDomicilio pro:Domicilio)
-DataPropertyRange(pro:dataFineDomicilio xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataFineInFamiglia "data fine in famiglia"@it)
-FunctionalDataProperty(pro:dataFineInFamiglia)
-DataPropertyDomain(pro:dataFineInFamiglia pro:AppartenenzaInFamigliaAnagrafica)
-DataPropertyRange(pro:dataFineInFamiglia xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataFineRelazioneParentale "data fine relazione parentale"@it)
-FunctionalDataProperty(pro:dataFineRelazioneParentale)
-DataPropertyDomain(pro:dataFineRelazioneParentale pro:RelazioneParentale)
-DataPropertyRange(pro:dataFineRelazioneParentale xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataFineValiditaResidenza "data fine validita residenza"@it)
-FunctionalDataProperty(pro:dataFineValiditaResidenza)
-DataPropertyDomain(pro:dataFineValiditaResidenza pro:Residenza)
-DataPropertyRange(pro:dataFineValiditaResidenza xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataIinizioValiditaResidenza "data inizio validita residenza"@it)
-FunctionalDataProperty(pro:dataIinizioValiditaResidenza)
-DataPropertyDomain(pro:dataIinizioValiditaResidenza pro:Residenza)
-DataPropertyRange(pro:dataIinizioValiditaResidenza xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataInizioDomicilio "data inizio domicilio"@it)
-FunctionalDataProperty(pro:dataInizioDomicilio)
-DataPropertyDomain(pro:dataInizioDomicilio pro:Domicilio)
-DataPropertyRange(pro:dataInizioDomicilio xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataInizioInFamiglia "data inizio in famiglia"@it)
-FunctionalDataProperty(pro:dataInizioInFamiglia)
-DataPropertyDomain(pro:dataInizioInFamiglia pro:AppartenenzaInFamigliaAnagrafica)
-DataPropertyRange(pro:dataInizioInFamiglia xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataInizioRelazioneParentale "data inizio relazione parentale"@it)
-FunctionalDataProperty(pro:dataInizioRelazioneParentale)
-DataPropertyDomain(pro:dataInizioRelazioneParentale pro:RelazioneParentale)
-DataPropertyRange(pro:dataInizioRelazioneParentale xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataInizioStatoCivileAttuale "data inizio stato  civile attuale"@it)
-FunctionalDataProperty(pro:dataInizioStatoCivileAttuale)
-DataPropertyDomain(pro:dataInizioStatoCivileAttuale cpv:Alive)
-DataPropertyRange(pro:dataInizioStatoCivileAttuale xsd:dateTime)
-AnnotationAssertion(rdfs:label pro:dataMatrimonio "dataMatrimonio"@it)
-DataPropertyDomain(pro:dataMatrimonio cpv:PersonaFisica)
-DataPropertyRange(pro:dataMatrimonio xsd:integer)
-AnnotationAssertion(rdfs:label pro:denominazioneStatoDivile "denominazione stato civile"@it)
-FunctionalDataProperty(pro:denominazioneStatoDivile)
-DataPropertyDomain(pro:denominazioneStatoDivile pro:StatoCivile)
-DataPropertyRange(pro:denominazioneStatoDivile xsd:string)
-AnnotationAssertion(rdfs:label pro:denominazioneTipoEventoRegistrazioneAnagrafe "denominazione tipo evento registrazione anagrafe"@it)
-FunctionalDataProperty(pro:denominazioneTipoEventoRegistrazioneAnagrafe)
-DataPropertyDomain(pro:denominazioneTipoEventoRegistrazioneAnagrafe pro:TipoEventoRegistrazioneAnagrafe)
-DataPropertyRange(pro:denominazioneTipoEventoRegistrazioneAnagrafe xsd:string)
-AnnotationAssertion(rdfs:label pro:denominazioneTipoRelazioneParentale "denominazioneTipoRelazioneParentale"@it)
-DataPropertyDomain(pro:denominazioneTipoRelazioneParentale pro:TipoRelazioneParentale)
-DataPropertyRange(pro:denominazioneTipoRelazioneParentale xsd:string)
-AnnotationAssertion(rdfs:label pro:denominazioneTitoloStudio "denominazione titolo di studio"@it)
-FunctionalDataProperty(pro:denominazioneTitoloStudio)
-DataPropertyDomain(pro:denominazioneTitoloStudio pro:GradoDiIstruzione)
-DataPropertyRange(pro:denominazioneTitoloStudio xsd:string)
-AnnotationAssertion(rdfs:label pro:nomeConvivenza "nomeConvivenza"@it)
-FunctionalDataProperty(pro:nomeConvivenza)
-DataPropertyDomain(pro:nomeConvivenza pro:ConvivenzaAnagrafica)
-DataPropertyRange(pro:nomeConvivenza xsd:string)
-AnnotationAssertion(rdfs:label pro:numeroComponentiConvivenza "numero componenti convivenza"@it)
-FunctionalDataProperty(pro:numeroComponentiConvivenza)
-DataPropertyDomain(pro:numeroComponentiConvivenza pro:ConvivenzaAnagrafica)
-DataPropertyRange(pro:numeroComponentiConvivenza xsd:integer)
-AnnotationAssertion(rdfs:label pro:numeroComponentiFamigliaAnagrafica "numero componenti famiglia anagrafica"@it)
-FunctionalDataProperty(pro:numeroComponentiFamigliaAnagrafica)
-DataPropertyDomain(pro:numeroComponentiFamigliaAnagrafica pro:FamigliaAnagrafica)
-DataPropertyRange(pro:numeroComponentiFamigliaAnagrafica xsd:integer)
-AnnotationAssertion(rdfs:label CLV:Address "Indirizzo"@it)
-AnnotationAssertion(rdfs:label CLV:City "Comune"@it)
-EquivalentClasses(CLV:City ObjectSomeValuesFrom(ObjectInverseOf(pro:comuneDiResidenzaAlDecesso) owl:Thing))
-EquivalentClasses(CLV:City ObjectSomeValuesFrom(ObjectInverseOf(pro:haDomicilioAttualmenteIn) owl:Thing))
-EquivalentClasses(CLV:City ObjectSomeValuesFrom(ObjectInverseOf(pro:risiedeAttualmenteIn) owl:Thing))
-AnnotationAssertion(rdfs:label CLV:Country "Stato"@it)
-EquivalentClasses(CLV:Country ObjectSomeValuesFrom(ObjectInverseOf(pro:nato_in_stato) owl:Thing))
-AnnotationAssertion(rdfs:comment cpv:Alive "Essere umano nato vivo e in vita a cui si associano le seguenti caratteristiche fondamentali: sesso alla nascita, data e luogo di nascita."@it)
-AnnotationAssertion(rdfs:label cpv:Alive "PersonaInVita"@it)
-EquivalentClasses(cpv:Alive ObjectUnionOf(pro:PersonaAnagraficamenteNonResidente pro:PersonaAnagraficamenteResidente))
-EquivalentClasses(cpv:Alive ObjectSomeValuesFrom(pro:haStatoCivileAttuale owl:Thing))
-EquivalentClasses(cpv:Alive ObjectSomeValuesFrom(pro:haTitoloDiStudio owl:Thing))
-EquivalentClasses(cpv:Alive ObjectSomeValuesFrom(pro:èAttualmenteCittadino owl:Thing))
-EquivalentClasses(cpv:Alive DataSomeValuesFrom(pro:dataInizioStatoCivileAttuale rdfs:Literal))
-DisjointClasses(cpv:Alive pro:PersonaDeceduta)
-AnnotationAssertion(rdfs:comment cpv:Dead "Essere umano per la quale è cessato ogni segno di vita in un qualsiasi momento successivo alla nascita vitale."@it)
-AnnotationAssertion(rdfs:label cpv:Dead "Deceduto"@it)
-AnnotationAssertion(rdfs:label cpv:Person "Person"@it)
-AnnotationAssertion(rdfs:comment cpv:PersonaFisica "Individuo nato vivo che può essere in vita o non in vita"@it)
-AnnotationAssertion(rdfs:label cpv:PersonaFisica "Persona fisica"@it)
-EquivalentClasses(cpv:PersonaFisica ObjectUnionOf(cpv:Alive pro:PersonaDeceduta))
-EquivalentClasses(cpv:PersonaFisica ObjectSomeValuesFrom(pro:haDomicilio owl:Thing))
-EquivalentClasses(cpv:PersonaFisica ObjectSomeValuesFrom(pro:natoInComune owl:Thing))
-EquivalentClasses(cpv:PersonaFisica ObjectSomeValuesFrom(pro:nato_in_stato owl:Thing))
-SubClassOf(cpv:PersonaFisica cpv:Person)
-AnnotationAssertion(rdfs:comment cpv:Resident "A natural person who is resident in the country"@en)
-AnnotationAssertion(rdfs:comment cpv:Resident "Una persona naturale residente nel Paese."@it)
-AnnotationAssertion(rdfs:isDefinedBy cpv:Resident "https://w3id.org/italia/onto/CPV")
-AnnotationAssertion(rdfs:label cpv:Resident "Resident"@en)
-AnnotationAssertion(rdfs:label cpv:Resident "Residente"@it)
-AnnotationAssertion(owl:versionInfo cpv:Resident "stabile"@it)
-AnnotationAssertion(owl:versionInfo cpv:Resident "stable"@en)
-EquivalentClasses(cpv:Resident pro:PersonaAnagraficamenteResidente)
-AnnotationAssertion(rdfs:comment pro:AppartenenzaInFamigliaAnagrafica "Registrazione della persona in una famiglia anagrafica."@it)
-AnnotationAssertion(rdfs:label pro:AppartenenzaInFamigliaAnagrafica "Appartenenza in  famiglia Anagrafica"@it)
-EquivalentClasses(pro:AppartenenzaInFamigliaAnagrafica ObjectSomeValuesFrom(ObjectInverseOf(pro:appartieneAFamAnagrafica) owl:Thing))
-EquivalentClasses(pro:AppartenenzaInFamigliaAnagrafica ObjectSomeValuesFrom(ObjectInverseOf(pro:inFamiglia) owl:Thing))
-EquivalentClasses(pro:AppartenenzaInFamigliaAnagrafica DataSomeValuesFrom(pro:dataInizioInFamiglia rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:Cittadinanza "Vincolo giuridico tra un individuo e lo Stato di appartenenza che garantisce il godimento di diritti e l’assoggettamento a particolari oneri. Viene acquisito per nascita o per naturalizzazione, mediante dichiarazione, opzione, matrimonio o altre modalità previste dalla legislazione nazionale.  Ad una persona con cittadinanza doppia o multipla, nella rilevazione censuaria va assegnato un unico paese di cittadinanza, da determinare con il seguente ordine di precedenza:   1. paese dichiarante; o   2. se la persona non ha la cittadinanza del paese dichiarante: altro Stato membro dell'Ue; o   3. se la persona non ha la cittadinanza di un altro Stato membro dell'Ue: altro paese non membro dell'Unione europea.  Per \"Stato membro dell'Ue\" si intende un paese che è membro dell'Unione europea al tempo di riferimento dell’indagine. Nei casi di doppia cittadinanza, in cui entrambi i paesi sono Stati membri dell'Unione europea ma nessuno è il paese dichiarante, gli Stati membri determinano il paese di cittadinanza da assegnare."@it)
-AnnotationAssertion(rdfs:label pro:Cittadinanza "Cittadinanza"@it)
-AnnotationAssertion(rdfs:comment pro:ConvivenzaAnagrafica "Insieme di persone che, senza essere legate da vincoli di matrimonio, parentela, afﬁnità e simili, conducono vita in comune per motivi religiosi, di cura, di assistenza, militari, di pena e simili. Le persone addette alla convivenza per ragioni di lavoro, se vi convivono abitualmente, sono considerate componenti residenti della convivenza purché non costituiscano famiglia a sé stante. I principali tipi di convivenza sono: istituti d’istruzione, istituti assistenziali, istituti penitenziari, convivenze ecclesiastiche, convivenze militari e di altri corpi accasermati, navi mercantili, altre convivenze (ad esempio, case dello studente, dormitori per lavoratori eccetera). Le persone ospitate anche abitualmente in alberghi, locande, pensioni e simili non costituiscono convivenza anagrafica (art. 5 DPR 223/1989). Le case degli studenti e gli istituti di cura difficilmente possono costituire convivenza anagrafica per la temporaneità della presenza (art. 3, comma 2, e art. 10bis DPR 223/1989)."@it)
-AnnotationAssertion(rdfs:label pro:ConvivenzaAnagrafica "Convivenza Anagrafica"@it)
-EquivalentClasses(pro:ConvivenzaAnagrafica DataSomeValuesFrom(pro:codiceConvivenza rdfs:Literal))
-EquivalentClasses(pro:ConvivenzaAnagrafica DataSomeValuesFrom(pro:numeroComponentiConvivenza rdfs:Literal))
-DisjointClasses(pro:ConvivenzaAnagrafica pro:FamigliaAnagrafica)
-AnnotationAssertion(rdfs:comment pro:Domicilio "Luogo in cui la persona ha stabilito la sede principale dei suoi affari e interessi (art. 43 c.c.)."@it)
-AnnotationAssertion(rdfs:label pro:Domicilio "Domicilio"@it)
-EquivalentClasses(pro:Domicilio ObjectSomeValuesFrom(pro:domicilioInComune owl:Thing))
-EquivalentClasses(pro:Domicilio ObjectSomeValuesFrom(pro:domicilioInIndirizzo owl:Thing))
-EquivalentClasses(pro:Domicilio ObjectSomeValuesFrom(ObjectInverseOf(pro:haDomicilio) owl:Thing))
-EquivalentClasses(pro:Domicilio DataSomeValuesFrom(pro:dataInizioDomicilio rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:FamigliaAnagrafica "Insieme di persone legate da vincoli di matrimonio, parentela, affinità, adozione, tutela o vincoli affettivi, coabitanti e residenti anagraficamente nello stesso comune. Una famiglia anagrafica può essere costituita anche da una sola persona (famiglia monocomponente). (art. 4 DPR 223/1989) "@it)
-AnnotationAssertion(rdfs:label pro:FamigliaAnagrafica "Famiglia anagrafica"@it)
-EquivalentClasses(pro:FamigliaAnagrafica ObjectSomeValuesFrom(ObjectInverseOf(pro:relazioneParentaleInFamiglia) owl:Thing))
-EquivalentClasses(pro:FamigliaAnagrafica DataSomeValuesFrom(pro:codiceFamiglia rdfs:Literal))
-EquivalentClasses(pro:FamigliaAnagrafica DataSomeValuesFrom(pro:numeroComponentiFamigliaAnagrafica rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:GradoDiIstruzione "Il più alto titolo di studio conseguito. In assenza di titolo di studio si rileva il grado di alfabetizzazione."@it)
-AnnotationAssertion(rdfs:label pro:GradoDiIstruzione "Grado di istruzione"@it)
-EquivalentClasses(pro:GradoDiIstruzione DataSomeValuesFrom(pro:codiceTitoloStudio rdfs:Literal))
-EquivalentClasses(pro:GradoDiIstruzione DataSomeValuesFrom(pro:denominazioneTitoloStudio rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:MotivoCancellazioneAnagrafe "Classificazione degli eventi di cancellazione anagrafica secondo i possibili motivi: morte accertata; morte presunta giudizialmente dichiarata; trasferimento di residenza all’estero di uno straniero; irreperibilità; mancato rinnovo dimora abituale/permesso di soggiorno; rettifiche post censuarie; perdita della cittadinanza italiana (AIRE); altro motivo."@it)
-AnnotationAssertion(rdfs:label pro:MotivoCancellazioneAnagrafe "Motivo cancellazione anagrafe"@it)
-DisjointClasses(pro:MotivoCancellazioneAnagrafe pro:MotivoIscrizioneAnagrafe)
-AnnotationAssertion(rdfs:comment pro:MotivoIscrizioneAnagrafe "Classificazione degli eventi di iscrizione anagrafica secondo i possibili motivi: nascita; esistenza (giudizialmente riconosciuta); immigrazione dall’estero; ricomparsa (da irreperibilità); rimpatrio (da AIRE); rettifiche post censuarie; altri motivi (descrizione da fornire a cura del comune. "@it)
-AnnotationAssertion(rdfs:label pro:MotivoIscrizioneAnagrafe "Motivo iscrizione anagrafe"@it)
-AnnotationAssertion(rdfs:comment pro:PersonaAnagraficamenteNonResidente "Persona fisica non registrata nell’anagrafe della popolazione residente."@it)
-AnnotationAssertion(rdfs:label pro:PersonaAnagraficamenteNonResidente "Persona anagraficamente non residente"@it)
-DisjointClasses(pro:PersonaAnagraficamenteNonResidente pro:PersonaAnagraficamenteResidente)
-AnnotationAssertion(rdfs:comment pro:PersonaAnagraficamenteResidente "Persona fisica avente dimora abituale in un determinato Comune come risultante nell'anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). "@it)
-AnnotationAssertion(rdfs:label pro:PersonaAnagraficamenteResidente "Persona anagraficamente residente"@it)
-EquivalentClasses(pro:PersonaAnagraficamenteResidente ObjectSomeValuesFrom(pro:appartieneAFamAnagrafica owl:Thing))
-EquivalentClasses(pro:PersonaAnagraficamenteResidente ObjectSomeValuesFrom(pro:risiedeAttualmenteIn owl:Thing))
-AnnotationAssertion(rdfs:comment pro:PersonaDeceduta "Individuo per il quale è cessato ogni segno di vita in un qualsiasi momento successivo alla nascita vitale."@it)
-AnnotationAssertion(rdfs:label pro:PersonaDeceduta "Persona deceduta"@it)
-EquivalentClasses(pro:PersonaDeceduta ObjectSomeValuesFrom(pro:cittadinanzaAlDecesso owl:Thing))
-EquivalentClasses(pro:PersonaDeceduta ObjectSomeValuesFrom(pro:stato_civile_al_decesso owl:Thing))
-SubClassOf(pro:PersonaDeceduta cpv:Dead)
-AnnotationAssertion(rdfs:comment pro:PersonaSenzaFissaDimora "Persona che non ha in alcun comune la dimora abituale e che è registrata in anagrafe sulla base del requisito del domicilio. In mancanza del domicilio, si considera residente nel comune di nascita. (art.2 Legge anagrafica n.1228/1954)"@it)
-AnnotationAssertion(rdfs:label pro:PersonaSenzaFissaDimora "Persona senza  fissa dimora"@it)
-SubClassOf(pro:PersonaSenzaFissaDimora pro:PersonaAnagraficamenteResidente)
-AnnotationAssertion(rdfs:comment pro:RelazioneParentale "Il legame di ciascun membro della famiglia anagrafica con una persona di riferimento all'interno della famiglia stessa.  Le relazioni di parentela consentono di ricostruire la composizione e dimensione delle famiglie, le relazioni tra i diversi componenti, le relazioni di coppia de iure (matrimonio/unione civile/) o de facto (convivenza di fatto, art. 1, commi 6ss, L. 20 maggio 2016, 76) e la condizione genitoriale. "@it)
-AnnotationAssertion(rdfs:label pro:RelazioneParentale "Relazione parentale"@it)
-EquivalentClasses(pro:RelazioneParentale ObjectSomeValuesFrom(pro:haTipoRelazioneParentale owl:Thing))
-EquivalentClasses(pro:RelazioneParentale ObjectSomeValuesFrom(pro:relazioneParentaleInFamiglia owl:Thing))
-EquivalentClasses(pro:RelazioneParentale ObjectSomeValuesFrom(ObjectInverseOf(pro:haRelazioneParentale) owl:Thing))
-EquivalentClasses(pro:RelazioneParentale DataSomeValuesFrom(pro:dataFineRelazioneParentale rdfs:Literal))
-EquivalentClasses(pro:RelazioneParentale DataSomeValuesFrom(pro:dataInizioRelazioneParentale rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:Residenza "Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe."@it)
-AnnotationAssertion(rdfs:label pro:Residenza "Residenza"@it)
-EquivalentClasses(pro:Residenza ObjectSomeValuesFrom(pro:residenzaInComune owl:Thing))
-EquivalentClasses(pro:Residenza ObjectSomeValuesFrom(pro:residenzaInIndirizzo owl:Thing))
-EquivalentClasses(pro:Residenza ObjectSomeValuesFrom(ObjectInverseOf(pro:haResidenza) owl:Thing))
-EquivalentClasses(pro:Residenza DataSomeValuesFrom(pro:dataFineValiditaResidenza rdfs:Literal))
-EquivalentClasses(pro:Residenza DataSomeValuesFrom(pro:dataIinizioValiditaResidenza rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:StatoCivile "Complesso delle singole posizioni giuridiche spettanti alla persona nella famiglia, nello Stato e nella comunità giuridica. "@it)
-AnnotationAssertion(rdfs:label pro:StatoCivile "Stato civile"@it)
-EquivalentClasses(pro:StatoCivile DataSomeValuesFrom(pro:codiceStatoCivile rdfs:Literal))
-EquivalentClasses(pro:StatoCivile DataSomeValuesFrom(pro:denominazioneStatoDivile rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:TipoEventoRegistrazioneAnagrafe "La registrazione in anagrafe può consistere nell'iscrizione o nella cancellazione."@it)
-AnnotationAssertion(rdfs:label pro:TipoEventoRegistrazioneAnagrafe "Tipo evento  registrazione anagrafe"@it)
-EquivalentClasses(pro:TipoEventoRegistrazioneAnagrafe ObjectUnionOf(pro:MotivoCancellazioneAnagrafe pro:MotivoIscrizioneAnagrafe))
-EquivalentClasses(pro:TipoEventoRegistrazioneAnagrafe DataSomeValuesFrom(pro:codiceTipoEventoRegistrazioneAnagrafe rdfs:Literal))
-EquivalentClasses(pro:TipoEventoRegistrazioneAnagrafe DataSomeValuesFrom(pro:denominazioneTipoEventoRegistrazioneAnagrafe rdfs:Literal))
-AnnotationAssertion(rdfs:comment pro:TipoRelazioneParentale "Classificazione dei legami parentali che sussistono tra ciascun membro della famiglia e una persona di riferimento all'interno della famiglia stessa (in questo caso l'intestatario della scheda).  È una classificazione ad un livello composta delle seguenti categorie: intestatario della scheda; marito/moglie; figlio/figlia; nipote (discendente); pronipote (discendente); padre/madre; nonno/nonna; fratello/sorella; nipote (collaterale); zio/zia (collaterale); cugino/cugina; altro parente; genero/nuora; suocero/suocera; cognato/cognata; nipote (affine); zio/zia (affine); altro affine; convivente (con vincoli di adozione o affettivi); responsabile della convivenza non affettiva; convivente in convivenza non affettiva; adottato; unito civilmente."@it)
-AnnotationAssertion(rdfs:label pro:TipoRelazioneParentale "Tipo relazione parentale"@it)
-EquivalentClasses(pro:TipoRelazioneParentale ObjectSomeValuesFrom(ObjectInverseOf(pro:haTipoRelazioneParentale) owl:Thing))
-EquivalentClasses(pro:TipoRelazioneParentale DataSomeValuesFrom(pro:codiceTipoRelazioneParentale rdfs:Literal))
-EquivalentClasses(pro:TipoRelazioneParentale DataSomeValuesFrom(pro:denominazioneTipoRelazioneParentale rdfs:Literal))
-AnnotationAssertion(rdfs:label cv-mst:1 "Celibe/Nubile"@it)
-ClassAssertion(pro:StatoCivile cv-mst:1)
-AnnotationAssertion(rdfs:label cv-mst:2 "Coniugato/a"@it)
-ClassAssertion(pro:StatoCivile cv-mst:2)
-AnnotationAssertion(rdfs:label cv-mst:3 "Vedovo/a"@it)
-ClassAssertion(pro:StatoCivile cv-mst:3)
-AnnotationAssertion(rdfs:label cv-mst:4 "Divorziato/a"@it)
-ClassAssertion(pro:StatoCivile cv-mst:4)
-AnnotationAssertion(rdfs:label cv-mst:6 "Unito civilmente"@it)
-ClassAssertion(pro:StatoCivile cv-mst:6)
-AnnotationAssertion(rdfs:label cv-mst:7 "Stato libero a seguito di decesso della parte unita civilmente"@it)
-ClassAssertion(pro:StatoCivile cv-mst:7)
-AnnotationAssertion(rdfs:label cv-mst:8 "Stato libero a seguito di scioglimento dell’unione"@it)
-ClassAssertion(pro:StatoCivile cv-mst:8)
-AnnotationAssertion(rdfs:label cv-mst:9 "Non classificabile/ignoto/n.c"@it)
-ClassAssertion(pro:StatoCivile cv-mst:9)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:1)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:10)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:11)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:12)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:13)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:16)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:17)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:18)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:2)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:20)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:21)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:22)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:23)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:24)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:25)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:26)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:28)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:3)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:4)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:5)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:6)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:7)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:80)
-ClassAssertion(pro:TipoRelazioneParentale cv-prt:9)
-AnnotationAssertion(rdfs:label cv-ror:1 "Nascita"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:1)
-AnnotationAssertion(rdfs:label cv-ror:2 "Esistenza (giudizialmente riconosciuta)"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:2)
-AnnotationAssertion(rdfs:label cv-ror:4 "Immigrazione dall’estero"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:4)
-AnnotationAssertion(rdfs:label cv-ror:5 "Ricomparsa (da irreperibilità)"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:5)
-AnnotationAssertion(rdfs:label cv-ror:6 "Rimpatrio (da AIRE)"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:6)
-AnnotationAssertion(rdfs:label cv-ror:7 "Rettifiche post censuarie"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:7)
-AnnotationAssertion(rdfs:label cv-ror:9 "Altri motivi (descrizione da fornire a cura del comune)"@it)
-ClassAssertion(pro:MotivoIscrizioneAnagrafe cv-ror:9)
-AnnotationAssertion(rdfs:label cv-rorem:1 "Morte accertata"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:1)
-AnnotationAssertion(rdfs:label cv-rorem:11 "Perdita della cittadinanza italiana"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:11)
-AnnotationAssertion(rdfs:label cv-rorem:13 "Altro"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:13)
-AnnotationAssertion(rdfs:label cv-rorem:2 "Morte presunta giudizialmente dichiarata"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:2)
-AnnotationAssertion(rdfs:label cv-rorem:5 "Trasferimento di residenza all’estero di uno straniero"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:5)
-AnnotationAssertion(rdfs:label cv-rorem:6 "Irreperibilita"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:6)
-AnnotationAssertion(rdfs:label cv-rorem:7 "Mancato rinnovo dimora abituale/permesso di soggiorno"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:7)
-AnnotationAssertion(rdfs:label cv-rorem:9 "Rettifiche post censuarie"@it)
-ClassAssertion(pro:MotivoCancellazioneAnagrafe cv-rorem:9)
-SubClassOf(ObjectUnionOf(pro:ConvivenzaAnagrafica pro:FamigliaAnagrafica) ObjectSomeValuesFrom(ObjectInverseOf(pro:appartieneAFamigliaOConvivenza) owl:Thing))
-)
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#dateTime
+xsd:dateTime rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/onto/PRO/appartieneAFamAnagrafica
+pro:appartieneAFamAnagrafica rdf:type owl:ObjectProperty ,
+                                      owl:InverseFunctionalProperty ;
+                             rdfs:domain pro:PersonaAnagraficamenteResidente ;
+                             rdfs:range pro:AppartenenzaInFamigliaAnagrafica ;
+                             rdfs:label "appartiene a famiglia anagrafica"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/appartieneAFamigliaOConvivenza
+pro:appartieneAFamigliaOConvivenza rdf:type owl:ObjectProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:domain cpv:Alive ;
+                                   rdfs:label "appartiene a  famiglia o convivenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/cittadinanzaAlDecesso
+pro:cittadinanzaAlDecesso rdf:type owl:ObjectProperty ;
+                          rdfs:domain pro:PersonaDeceduta ;
+                          rdfs:range pro:Cittadinanza ;
+                          rdfs:label "cittadinanza_al_decesso"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/comuneDiResidenzaAlDecesso
+pro:comuneDiResidenzaAlDecesso rdf:type owl:ObjectProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain pro:PersonaDeceduta ;
+                               rdfs:range CLV:City ;
+                               rdfs:label "comune di residenza al decesso"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/domicilioInComune
+pro:domicilioInComune rdf:type owl:ObjectProperty ;
+                      rdfs:domain pro:Domicilio ;
+                      rdfs:range CLV:City ;
+                      rdfs:label "domicilio in comune"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/domicilioInIndirizzo
+pro:domicilioInIndirizzo rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain pro:Domicilio ;
+                         rdfs:range CLV:Address ;
+                         rdfs:label "domicilio in indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haDomicilio
+pro:haDomicilio rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain cpv:PersonaFisica ;
+                rdfs:range pro:Domicilio ;
+                rdfs:label "ha domicilio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haDomicilioAttualmenteIn
+pro:haDomicilioAttualmenteIn rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain pro:PersonaAnagraficamenteResidente ;
+                             rdfs:range CLV:City ;
+                             rdfs:label "ha domicilio attualmente in"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haIndirizzoDiDomicilioAttuale
+pro:haIndirizzoDiDomicilioAttuale rdf:type owl:ObjectProperty ,
+                                           owl:FunctionalProperty ;
+                                  rdfs:domain pro:PersonaAnagraficamenteResidente ;
+                                  rdfs:range CLV:Address ;
+                                  rdfs:label "ha indirizzo di domicilio attuale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haMotivoCancellazioneAnagrafe
+pro:haMotivoCancellazioneAnagrafe rdf:type owl:ObjectProperty ,
+                                           owl:FunctionalProperty ;
+                                  rdfs:domain pro:Residenza ;
+                                  rdfs:range pro:MotivoCancellazioneAnagrafe ;
+                                  rdfs:label "ha motivo cancellazione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haMotivoIscrizioneAnagrafe
+pro:haMotivoIscrizioneAnagrafe rdf:type owl:ObjectProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain pro:Residenza ;
+                               rdfs:range pro:MotivoIscrizioneAnagrafe ;
+                               rdfs:label "ha motivo iscrizione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haRelazioneParentale
+pro:haRelazioneParentale rdf:type owl:ObjectProperty ,
+                                  owl:InverseFunctionalProperty ;
+                         rdfs:domain pro:PersonaAnagraficamenteResidente ;
+                         rdfs:range pro:RelazioneParentale ;
+                         rdfs:label "ha relazione parentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haResidenza
+pro:haResidenza rdf:type owl:ObjectProperty ,
+                         owl:InverseFunctionalProperty ;
+                rdfs:domain cpv:PersonaFisica ;
+                rdfs:range pro:Residenza ;
+                rdfs:label "ha residenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haStatoCivileAttuale
+pro:haStatoCivileAttuale rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain cpv:Alive ;
+                         rdfs:range pro:StatoCivile ;
+                         rdfs:label "ha stato civile attuale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haTipoRelazioneParentale
+pro:haTipoRelazioneParentale rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain pro:RelazioneParentale ;
+                             rdfs:range pro:TipoRelazioneParentale ;
+                             rdfs:label "ha tipo relazione parentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/haTitoloDiStudio
+pro:haTitoloDiStudio rdf:type owl:ObjectProperty ;
+                     rdfs:domain cpv:Alive ;
+                     rdfs:range pro:GradoDiIstruzione ;
+                     rdfs:label "ha titolo di studio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/inFamiglia
+pro:inFamiglia rdf:type owl:ObjectProperty ,
+                        owl:InverseFunctionalProperty ;
+               rdfs:domain pro:FamigliaAnagrafica ;
+               rdfs:range pro:AppartenenzaInFamigliaAnagrafica ;
+               rdfs:label "in famiglia"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/natoInComune
+pro:natoInComune rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain cpv:PersonaFisica ;
+                 rdfs:range CLV:City ;
+                 rdfs:label "nato in comune"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/nato_in_stato
+pro:nato_in_stato rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain cpv:PersonaFisica ;
+                  rdfs:range CLV:Country ;
+                  rdfs:label "nato_in_stato"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/precedeImmediatamente
+pro:precedeImmediatamente rdf:type owl:ObjectProperty ,
+                                   owl:FunctionalProperty ,
+                                   owl:InverseFunctionalProperty ;
+                          rdfs:domain pro:Residenza ;
+                          rdfs:range pro:Residenza ;
+                          rdfs:label "precede immediatamente"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/relazioneParentaleInFamiglia
+pro:relazioneParentaleInFamiglia rdf:type owl:ObjectProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain pro:RelazioneParentale ;
+                                 rdfs:range pro:FamigliaAnagrafica ;
+                                 rdfs:label "relazione parentale in famiglia"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/residenzaInComune
+pro:residenzaInComune rdf:type owl:ObjectProperty ;
+                      rdfs:domain pro:Residenza ;
+                      rdfs:range CLV:City ;
+                      rdfs:label "residenza in comune"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/residenzaInIndirizzo
+pro:residenzaInIndirizzo rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain pro:Residenza ;
+                         rdfs:range CLV:Address ;
+                         rdfs:label "residenza in indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/risiedeAttualmenteIn
+pro:risiedeAttualmenteIn rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain pro:PersonaAnagraficamenteResidente ;
+                         rdfs:range CLV:City ;
+                         rdfs:label "risiede attualmente in"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/stato_civile_al_decesso
+pro:stato_civile_al_decesso rdf:type owl:ObjectProperty ,
+                                     owl:FunctionalProperty ;
+                            rdfs:domain pro:PersonaDeceduta ;
+                            rdfs:range pro:StatoCivile ;
+                            rdfs:label "stato_civile_al_decesso"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/èAttualmenteCittadino
+pro:èAttualmenteCittadino rdf:type owl:ObjectProperty ;
+                          rdfs:domain cpv:Alive ;
+                          rdfs:range pro:Cittadinanza ;
+                          rdfs:label "è attualmente cittadino"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/èAttualmenteCittadinoAcquisito
+pro:èAttualmenteCittadinoAcquisito rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf pro:èAttualmenteCittadino ;
+                                   rdfs:label "è attualmente cittadino acquisito"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/èAttualmentePrevalentementeCittadino
+pro:èAttualmentePrevalentementeCittadino rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf pro:èAttualmenteCittadino ;
+                                         rdf:type owl:FunctionalProperty ;
+                                         rdfs:label "è attualmente prevalentemente cittadino"@it .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/italia/onto/PRO/codiceConvivenza
+pro:codiceConvivenza rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain pro:ConvivenzaAnagrafica ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "codice convivenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/codiceFamiglia
+pro:codiceFamiglia rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain pro:FamigliaAnagrafica ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "codice famiglia"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/codiceStatoCivile
+pro:codiceStatoCivile rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain pro:StatoCivile ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "codice stato civile"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/codiceTipoEventoRegistrazioneAnagrafe
+pro:codiceTipoEventoRegistrazioneAnagrafe rdf:type owl:DatatypeProperty ,
+                                                   owl:FunctionalProperty ;
+                                          rdfs:domain pro:TipoEventoRegistrazioneAnagrafe ;
+                                          rdfs:range xsd:integer ;
+                                          rdfs:label "codice tipo evento registrazione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/codiceTipoRelazioneParentale
+pro:codiceTipoRelazioneParentale rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain pro:TipoRelazioneParentale ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:label "codiceTipoRelazioneParentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/codiceTitoloStudio
+pro:codiceTitoloStudio rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain pro:GradoDiIstruzione ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "codice titolo di studio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataFineDomicilio
+pro:dataFineDomicilio rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain pro:Domicilio ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:label "data fine domicilio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataFineInFamiglia
+pro:dataFineInFamiglia rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain pro:AppartenenzaInFamigliaAnagrafica ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:label "data fine in famiglia"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataFineRelazioneParentale
+pro:dataFineRelazioneParentale rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain pro:RelazioneParentale ;
+                               rdfs:range xsd:dateTime ;
+                               rdfs:label "data fine relazione parentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataFineValiditaResidenza
+pro:dataFineValiditaResidenza rdf:type owl:DatatypeProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain pro:Residenza ;
+                              rdfs:range xsd:dateTime ;
+                              rdfs:label "data fine validita residenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataIinizioValiditaResidenza
+pro:dataIinizioValiditaResidenza rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain pro:Residenza ;
+                                 rdfs:range xsd:dateTime ;
+                                 rdfs:label "data inizio validita residenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataInizioDomicilio
+pro:dataInizioDomicilio rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain pro:Domicilio ;
+                        rdfs:range xsd:dateTime ;
+                        rdfs:label "data inizio domicilio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataInizioInFamiglia
+pro:dataInizioInFamiglia rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain pro:AppartenenzaInFamigliaAnagrafica ;
+                         rdfs:range xsd:dateTime ;
+                         rdfs:label "data inizio in famiglia"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataInizioRelazioneParentale
+pro:dataInizioRelazioneParentale rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain pro:RelazioneParentale ;
+                                 rdfs:range xsd:dateTime ;
+                                 rdfs:label "data inizio relazione parentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataInizioStatoCivileAttuale
+pro:dataInizioStatoCivileAttuale rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain cpv:Alive ;
+                                 rdfs:range xsd:dateTime ;
+                                 rdfs:label "data inizio stato  civile attuale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/dataMatrimonio
+pro:dataMatrimonio rdf:type owl:DatatypeProperty ;
+                   rdfs:domain cpv:PersonaFisica ;
+                   rdfs:range xsd:integer ;
+                   rdfs:label "dataMatrimonio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/denominazioneStatoDivile
+pro:denominazioneStatoDivile rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain pro:StatoCivile ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "denominazione stato civile"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/denominazioneTipoEventoRegistrazioneAnagrafe
+pro:denominazioneTipoEventoRegistrazioneAnagrafe rdf:type owl:DatatypeProperty ,
+                                                          owl:FunctionalProperty ;
+                                                 rdfs:domain pro:TipoEventoRegistrazioneAnagrafe ;
+                                                 rdfs:range xsd:string ;
+                                                 rdfs:label "denominazione tipo evento registrazione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/denominazioneTipoRelazioneParentale
+pro:denominazioneTipoRelazioneParentale rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain pro:TipoRelazioneParentale ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:label "denominazioneTipoRelazioneParentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/denominazioneTitoloStudio
+pro:denominazioneTitoloStudio rdf:type owl:DatatypeProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain pro:GradoDiIstruzione ;
+                              rdfs:range xsd:string ;
+                              rdfs:label "denominazione titolo di studio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/nomeConvivenza
+pro:nomeConvivenza rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain pro:ConvivenzaAnagrafica ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "nomeConvivenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/numeroComponentiConvivenza
+pro:numeroComponentiConvivenza rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain pro:ConvivenzaAnagrafica ;
+                               rdfs:range xsd:integer ;
+                               rdfs:label "numero componenti convivenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/numeroComponentiFamigliaAnagrafica
+pro:numeroComponentiFamigliaAnagrafica rdf:type owl:DatatypeProperty ,
+                                                owl:FunctionalProperty ;
+                                       rdfs:domain pro:FamigliaAnagrafica ;
+                                       rdfs:range xsd:integer ;
+                                       rdfs:label "numero componenti famiglia anagrafica"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/onto/CLV/Address
+CLV:Address rdf:type owl:Class ;
+            rdfs:label "Indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/City
+CLV:City rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty [ owl:inverseOf pro:comuneDiResidenzaAlDecesso
+                                              ] ;
+                               owl:someValuesFrom owl:Thing
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty [ owl:inverseOf pro:haDomicilioAttualmenteIn
+                                              ] ;
+                               owl:someValuesFrom owl:Thing
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty [ owl:inverseOf pro:risiedeAttualmenteIn
+                                              ] ;
+                               owl:someValuesFrom owl:Thing
+                             ] ;
+         rdfs:label "Comune"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/Country
+CLV:Country rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf pro:nato_in_stato
+                                                 ] ;
+                                  owl:someValuesFrom owl:Thing
+                                ] ;
+            rdfs:label "Stato"@it .
+
+
+###  https://w3id.org/italia/onto/CPV/Alive
+cpv:Alive rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( pro:PersonaAnagraficamenteNonResidente
+                                              pro:PersonaAnagraficamenteResidente
+                                            )
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty pro:haStatoCivileAttuale ;
+                                owl:someValuesFrom owl:Thing
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty pro:haTitoloDiStudio ;
+                                owl:someValuesFrom owl:Thing
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty pro:èAttualmenteCittadino ;
+                                owl:someValuesFrom owl:Thing
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty pro:dataInizioStatoCivileAttuale ;
+                                owl:someValuesFrom rdfs:Literal
+                              ] ;
+          owl:disjointWith pro:PersonaDeceduta ;
+          rdfs:comment "Essere umano nato vivo e in vita a cui si associano le seguenti caratteristiche fondamentali: sesso alla nascita, data e luogo di nascita."@it ;
+          rdfs:label "PersonaInVita"@it .
+
+
+###  https://w3id.org/italia/onto/CPV/Dead
+cpv:Dead rdf:type owl:Class ;
+         rdfs:comment "Essere umano per la quale è cessato ogni segno di vita in un qualsiasi momento successivo alla nascita vitale."@it ;
+         rdfs:label "Deceduto"@it .
+
+
+###  https://w3id.org/italia/onto/CPV/Person
+cpv:Person rdf:type owl:Class ;
+           rdfs:label "Person"@it .
+
+
+###  https://w3id.org/italia/onto/CPV/PersonaFisica
+cpv:PersonaFisica rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:unionOf ( cpv:Alive
+                                                      pro:PersonaDeceduta
+                                                    )
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty pro:haDomicilio ;
+                                        owl:someValuesFrom owl:Thing
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty pro:natoInComune ;
+                                        owl:someValuesFrom owl:Thing
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty pro:nato_in_stato ;
+                                        owl:someValuesFrom owl:Thing
+                                      ] ;
+                  rdfs:subClassOf cpv:Person ;
+                  rdfs:comment "Individuo nato vivo che può essere in vita o non in vita"@it ;
+                  rdfs:label "Persona fisica"@it .
+
+
+###  https://w3id.org/italia/onto/CPV/Resident
+cpv:Resident rdf:type owl:Class ;
+             owl:equivalentClass pro:PersonaAnagraficamenteResidente ;
+             rdfs:comment "A natural person who is resident in the country"@en ,
+                          "Una persona naturale residente nel Paese."@it ;
+             rdfs:isDefinedBy "https://w3id.org/italia/onto/CPV" ;
+             rdfs:label "Resident"@en ,
+                        "Residente"@it ;
+             owl:versionInfo "stabile"@it ,
+                             "stable"@en .
+
+
+###  https://w3id.org/italia/onto/PRO/AppartenenzaInFamigliaAnagrafica
+pro:AppartenenzaInFamigliaAnagrafica rdf:type owl:Class ;
+                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf pro:appartieneAFamAnagrafica
+                                                                          ] ;
+                                                           owl:someValuesFrom owl:Thing
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf pro:inFamiglia
+                                                                          ] ;
+                                                           owl:someValuesFrom owl:Thing
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty pro:dataInizioInFamiglia ;
+                                                           owl:someValuesFrom rdfs:Literal
+                                                         ] ;
+                                     rdfs:comment "Registrazione della persona in una famiglia anagrafica."@it ;
+                                     rdfs:label "Appartenenza in  famiglia Anagrafica"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/Cittadinanza
+pro:Cittadinanza rdf:type owl:Class ;
+                 rdfs:comment "Vincolo giuridico tra un individuo e lo Stato di appartenenza che garantisce il godimento di diritti e l’assoggettamento a particolari oneri. Viene acquisito per nascita o per naturalizzazione, mediante dichiarazione, opzione, matrimonio o altre modalità previste dalla legislazione nazionale.  Ad una persona con cittadinanza doppia o multipla, nella rilevazione censuaria va assegnato un unico paese di cittadinanza, da determinare con il seguente ordine di precedenza:   1. paese dichiarante; o   2. se la persona non ha la cittadinanza del paese dichiarante: altro Stato membro dell'Ue; o   3. se la persona non ha la cittadinanza di un altro Stato membro dell'Ue: altro paese non membro dell'Unione europea.  Per \"Stato membro dell'Ue\" si intende un paese che è membro dell'Unione europea al tempo di riferimento dell’indagine. Nei casi di doppia cittadinanza, in cui entrambi i paesi sono Stati membri dell'Unione europea ma nessuno è il paese dichiarante, gli Stati membri determinano il paese di cittadinanza da assegnare."@it ;
+                 rdfs:label "Cittadinanza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/ConvivenzaAnagrafica
+pro:ConvivenzaAnagrafica rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty pro:codiceConvivenza ;
+                                               owl:someValuesFrom rdfs:Literal
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pro:numeroComponentiConvivenza ;
+                                               owl:someValuesFrom rdfs:Literal
+                                             ] ;
+                         owl:disjointWith pro:FamigliaAnagrafica ;
+                         rdfs:comment "Insieme di persone che, senza essere legate da vincoli di matrimonio, parentela, afﬁnità e simili, conducono vita in comune per motivi religiosi, di cura, di assistenza, militari, di pena e simili. Le persone addette alla convivenza per ragioni di lavoro, se vi convivono abitualmente, sono considerate componenti residenti della convivenza purché non costituiscano famiglia a sé stante. I principali tipi di convivenza sono: istituti d’istruzione, istituti assistenziali, istituti penitenziari, convivenze ecclesiastiche, convivenze militari e di altri corpi accasermati, navi mercantili, altre convivenze (ad esempio, case dello studente, dormitori per lavoratori eccetera). Le persone ospitate anche abitualmente in alberghi, locande, pensioni e simili non costituiscono convivenza anagrafica (art. 5 DPR 223/1989). Le case degli studenti e gli istituti di cura difficilmente possono costituire convivenza anagrafica per la temporaneità della presenza (art. 3, comma 2, e art. 10bis DPR 223/1989)."@it ;
+                         rdfs:label "Convivenza Anagrafica"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/Domicilio
+pro:Domicilio rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:domicilioInComune ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:domicilioInIndirizzo ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf pro:haDomicilio
+                                                   ] ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:dataInizioDomicilio ;
+                                    owl:someValuesFrom rdfs:Literal
+                                  ] ;
+              rdfs:comment "Luogo in cui la persona ha stabilito la sede principale dei suoi affari e interessi (art. 43 c.c.)."@it ;
+              rdfs:label "Domicilio"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/FamigliaAnagrafica
+pro:FamigliaAnagrafica rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty [ owl:inverseOf pro:relazioneParentaleInFamiglia
+                                                            ] ;
+                                             owl:someValuesFrom owl:Thing
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pro:codiceFamiglia ;
+                                             owl:someValuesFrom rdfs:Literal
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pro:numeroComponentiFamigliaAnagrafica ;
+                                             owl:someValuesFrom rdfs:Literal
+                                           ] ;
+                       rdfs:comment "Insieme di persone legate da vincoli di matrimonio, parentela, affinità, adozione, tutela o vincoli affettivi, coabitanti e residenti anagraficamente nello stesso comune. Una famiglia anagrafica può essere costituita anche da una sola persona (famiglia monocomponente). (art. 4 DPR 223/1989) "@it ;
+                       rdfs:label "Famiglia anagrafica"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/GradoDiIstruzione
+pro:GradoDiIstruzione rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty pro:codiceTitoloStudio ;
+                                            owl:someValuesFrom rdfs:Literal
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pro:denominazioneTitoloStudio ;
+                                            owl:someValuesFrom rdfs:Literal
+                                          ] ;
+                      rdfs:comment "Il più alto titolo di studio conseguito. In assenza di titolo di studio si rileva il grado di alfabetizzazione."@it ;
+                      rdfs:label "Grado di istruzione"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe
+pro:MotivoCancellazioneAnagrafe rdf:type owl:Class ;
+                                owl:disjointWith pro:MotivoIscrizioneAnagrafe ;
+                                rdfs:comment "Classificazione degli eventi di cancellazione anagrafica secondo i possibili motivi: morte accertata; morte presunta giudizialmente dichiarata; trasferimento di residenza all’estero di uno straniero; irreperibilità; mancato rinnovo dimora abituale/permesso di soggiorno; rettifiche post censuarie; perdita della cittadinanza italiana (AIRE); altro motivo."@it ;
+                                rdfs:label "Motivo cancellazione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe
+pro:MotivoIscrizioneAnagrafe rdf:type owl:Class ;
+                             rdfs:comment "Classificazione degli eventi di iscrizione anagrafica secondo i possibili motivi: nascita; esistenza (giudizialmente riconosciuta); immigrazione dall’estero; ricomparsa (da irreperibilità); rimpatrio (da AIRE); rettifiche post censuarie; altri motivi (descrizione da fornire a cura del comune. "@it ;
+                             rdfs:label "Motivo iscrizione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteNonResidente
+pro:PersonaAnagraficamenteNonResidente rdf:type owl:Class ;
+                                       owl:disjointWith pro:PersonaAnagraficamenteResidente ;
+                                       rdfs:comment "Persona fisica non registrata nell’anagrafe della popolazione residente."@it ;
+                                       rdfs:label "Persona anagraficamente non residente"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente
+pro:PersonaAnagraficamenteResidente rdf:type owl:Class ;
+                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                          owl:onProperty pro:appartieneAFamAnagrafica ;
+                                                          owl:someValuesFrom owl:Thing
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty pro:risiedeAttualmenteIn ;
+                                                          owl:someValuesFrom owl:Thing
+                                                        ] ;
+                                    rdfs:comment "Persona fisica avente dimora abituale in un determinato Comune come risultante nell'anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). "@it ;
+                                    rdfs:label "Persona anagraficamente residente"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/PersonaDeceduta
+pro:PersonaDeceduta rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty pro:cittadinanzaAlDecesso ;
+                                          owl:someValuesFrom owl:Thing
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pro:stato_civile_al_decesso ;
+                                          owl:someValuesFrom owl:Thing
+                                        ] ;
+                    rdfs:subClassOf cpv:Dead ;
+                    rdfs:comment "Individuo per il quale è cessato ogni segno di vita in un qualsiasi momento successivo alla nascita vitale."@it ;
+                    rdfs:label "Persona deceduta"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/PersonaSenzaFissaDimora
+pro:PersonaSenzaFissaDimora rdf:type owl:Class ;
+                            rdfs:subClassOf pro:PersonaAnagraficamenteResidente ;
+                            rdfs:comment "Persona che non ha in alcun comune la dimora abituale e che è registrata in anagrafe sulla base del requisito del domicilio. In mancanza del domicilio, si considera residente nel comune di nascita. (art.2 Legge anagrafica n.1228/1954)"@it ;
+                            rdfs:label "Persona senza  fissa dimora"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/RelazioneParentale
+pro:RelazioneParentale rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty pro:haTipoRelazioneParentale ;
+                                             owl:someValuesFrom owl:Thing
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pro:relazioneParentaleInFamiglia ;
+                                             owl:someValuesFrom owl:Thing
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty [ owl:inverseOf pro:haRelazioneParentale
+                                                            ] ;
+                                             owl:someValuesFrom owl:Thing
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pro:dataFineRelazioneParentale ;
+                                             owl:someValuesFrom rdfs:Literal
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pro:dataInizioRelazioneParentale ;
+                                             owl:someValuesFrom rdfs:Literal
+                                           ] ;
+                       rdfs:comment "Il legame di ciascun membro della famiglia anagrafica con una persona di riferimento all'interno della famiglia stessa.  Le relazioni di parentela consentono di ricostruire la composizione e dimensione delle famiglie, le relazioni tra i diversi componenti, le relazioni di coppia de iure (matrimonio/unione civile/) o de facto (convivenza di fatto, art. 1, commi 6ss, L. 20 maggio 2016, 76) e la condizione genitoriale. "@it ;
+                       rdfs:label "Relazione parentale"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/Residenza
+pro:Residenza rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:residenzaInComune ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:residenzaInIndirizzo ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf pro:haResidenza
+                                                   ] ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:dataFineValiditaResidenza ;
+                                    owl:someValuesFrom rdfs:Literal
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty pro:dataIinizioValiditaResidenza ;
+                                    owl:someValuesFrom rdfs:Literal
+                                  ] ;
+              rdfs:comment "Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe."@it ;
+              rdfs:label "Residenza"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/StatoCivile
+pro:StatoCivile rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty pro:codiceStatoCivile ;
+                                      owl:someValuesFrom rdfs:Literal
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty pro:denominazioneStatoDivile ;
+                                      owl:someValuesFrom rdfs:Literal
+                                    ] ;
+                rdfs:comment "Complesso delle singole posizioni giuridiche spettanti alla persona nella famiglia, nello Stato e nella comunità giuridica. "@it ;
+                rdfs:label "Stato civile"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/TipoEventoRegistrazioneAnagrafe
+pro:TipoEventoRegistrazioneAnagrafe rdf:type owl:Class ;
+                                    owl:equivalentClass [ rdf:type owl:Class ;
+                                                          owl:unionOf ( pro:MotivoCancellazioneAnagrafe
+                                                                        pro:MotivoIscrizioneAnagrafe
+                                                                      )
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty pro:codiceTipoEventoRegistrazioneAnagrafe ;
+                                                          owl:someValuesFrom rdfs:Literal
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty pro:denominazioneTipoEventoRegistrazioneAnagrafe ;
+                                                          owl:someValuesFrom rdfs:Literal
+                                                        ] ;
+                                    rdfs:comment "La registrazione in anagrafe può consistere nell'iscrizione o nella cancellazione."@it ;
+                                    rdfs:label "Tipo evento  registrazione anagrafe"@it .
+
+
+###  https://w3id.org/italia/onto/PRO/TipoRelazioneParentale
+pro:TipoRelazioneParentale rdf:type owl:Class ;
+                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf pro:haTipoRelazioneParentale
+                                                                ] ;
+                                                 owl:someValuesFrom owl:Thing
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty pro:codiceTipoRelazioneParentale ;
+                                                 owl:someValuesFrom rdfs:Literal
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty pro:denominazioneTipoRelazioneParentale ;
+                                                 owl:someValuesFrom rdfs:Literal
+                                               ] ;
+                           rdfs:comment "Classificazione dei legami parentali che sussistono tra ciascun membro della famiglia e una persona di riferimento all'interno della famiglia stessa (in questo caso l'intestatario della scheda).  È una classificazione ad un livello composta delle seguenti categorie: intestatario della scheda; marito/moglie; figlio/figlia; nipote (discendente); pronipote (discendente); padre/madre; nonno/nonna; fratello/sorella; nipote (collaterale); zio/zia (collaterale); cugino/cugina; altro parente; genero/nuora; suocero/suocera; cognato/cognata; nipote (affine); zio/zia (affine); altro affine; convivente (con vincoli di adozione o affettivi); responsabile della convivenza non affettiva; convivente in convivenza non affettiva; adottato; unito civilmente."@it ;
+                           rdfs:label "Tipo relazione parentale"@it .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1
+cv-mst:1 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Celibe/Nubile"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/2
+cv-mst:2 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Coniugato/a"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/3
+cv-mst:3 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Vedovo/a"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/4
+cv-mst:4 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Divorziato/a"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/6
+cv-mst:6 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Unito civilmente"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/7
+cv-mst:7 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Stato libero a seguito di decesso della parte unita civilmente"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/8
+cv-mst:8 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Stato libero a seguito di scioglimento dell’unione"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/9
+cv-mst:9 rdf:type owl:NamedIndividual ,
+                  pro:StatoCivile ;
+         rdfs:label "Non classificabile/ignoto/n.c"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/1
+cv-prt:1 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/10
+cv-prt:10 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/11
+cv-prt:11 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/12
+cv-prt:12 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/13
+cv-prt:13 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/16
+cv-prt:16 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/17
+cv-prt:17 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/18
+cv-prt:18 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/2
+cv-prt:2 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/20
+cv-prt:20 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/21
+cv-prt:21 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/22
+cv-prt:22 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/23
+cv-prt:23 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/24
+cv-prt:24 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/25
+cv-prt:25 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/26
+cv-prt:26 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/28
+cv-prt:28 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/3
+cv-prt:3 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/4
+cv-prt:4 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/5
+cv-prt:5 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/6
+cv-prt:6 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/7
+cv-prt:7 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/80
+cv-prt:80 rdf:type owl:NamedIndividual ,
+                   pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/9
+cv-prt:9 rdf:type owl:NamedIndividual ,
+                  pro:TipoRelazioneParentale .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1
+cv-ror:1 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Nascita"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/2
+cv-ror:2 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Esistenza (giudizialmente riconosciuta)"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/4
+cv-ror:4 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Immigrazione dall’estero"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/5
+cv-ror:5 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Ricomparsa (da irreperibilità)"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/6
+cv-ror:6 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Rimpatrio (da AIRE)"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/7
+cv-ror:7 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Rettifiche post censuarie"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9
+cv-ror:9 rdf:type owl:NamedIndividual ,
+                  pro:MotivoIscrizioneAnagrafe ;
+         rdfs:label "Altri motivi (descrizione da fornire a cura del comune)"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1
+cv-rorem:1 rdf:type owl:NamedIndividual ,
+                    pro:MotivoCancellazioneAnagrafe ;
+           rdfs:label "Morte accertata"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11
+cv-rorem:11 rdf:type owl:NamedIndividual ,
+                     pro:MotivoCancellazioneAnagrafe ;
+            rdfs:label "Perdita della cittadinanza italiana"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13
+cv-rorem:13 rdf:type owl:NamedIndividual ,
+                     pro:MotivoCancellazioneAnagrafe ;
+            rdfs:label "Altro"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/2
+cv-rorem:2 rdf:type owl:NamedIndividual ,
+                    pro:MotivoCancellazioneAnagrafe ;
+           rdfs:label "Morte presunta giudizialmente dichiarata"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5
+cv-rorem:5 rdf:type owl:NamedIndividual ,
+                    pro:MotivoCancellazioneAnagrafe ;
+           rdfs:label "Trasferimento di residenza all’estero di uno straniero"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/6
+cv-rorem:6 rdf:type owl:NamedIndividual ,
+                    pro:MotivoCancellazioneAnagrafe ;
+           rdfs:label "Irreperibilita"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/7
+cv-rorem:7 rdf:type owl:NamedIndividual ,
+                    pro:MotivoCancellazioneAnagrafe ;
+           rdfs:label "Mancato rinnovo dimora abituale/permesso di soggiorno"@it .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9
+cv-rorem:9 rdf:type owl:NamedIndividual ,
+                    pro:MotivoCancellazioneAnagrafe ;
+           rdfs:label "Rettifiche post censuarie"@it .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( pro:ConvivenzaAnagrafica
+                pro:FamigliaAnagrafica
+              ) ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty [ owl:inverseOf pro:appartieneAFamigliaOConvivenza
+                                   ] ;
+                    owl:someValuesFrom owl:Thing
+                  ]
+] .
+
+
+###  Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi

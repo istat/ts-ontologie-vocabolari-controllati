@@ -52,7 +52,7 @@
                                      dct:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/IRREG"^^xsd:anyURI ;
                                      dct:description "Questa è l'ontologia della popolazione residente registrata in anagrafe."@it ;
                                      admsapit:hasFormalityLevel " ---" ;
-                                     dct:rightsHolder "Ministero degli Interni"@it ;
+                                     dct:rightsHolder "https://www.interno.gov.it/it"^^xsd:anyURI ;
                                      owl:versionInfo "Versione 1.0"@it ;
                                      admsapit:last "https//w3id.org/italia/onto/PRO/1.0"^^xsd:anyURI ;
                                      rdfs:label "Ontologia della popolazione residente anagrafica."@it ;
