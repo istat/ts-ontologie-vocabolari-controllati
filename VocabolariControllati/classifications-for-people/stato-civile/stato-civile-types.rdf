@@ -1,160 +1,453 @@
-@base          <https://w3id.org/italia> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix spdx:  <http://spdx.org/rdf/terms#> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix schema-org: <http://schema.org/> .
-@prefix bio:   <http://purl.org/vocab/bio/0.1/> .
-@prefix conf:  <http://lodview.it/conf#> .
-@prefix metalex: <http://www.metalex.eu/metalex/2008-05-02#> .
-@prefix ocd:   <http://dati.camera.it/ocd/> .
-@prefix qb:    <http://purl.org/linked-data/cube#> .
-@prefix daq:   <http://purl.org/eis/vocab/daq#> .
-@prefix rel:   <http://purl.org/vocab/relationship/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
-@prefix dbpprop: <http://dbpedia.org/property/> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix bbc:   <http://www.bbc.co.uk/ontologies/> .
-@prefix void:  <http://rdfs.org/ns/void#> .
-@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
-@prefix resource: <https://w3id.org/italia> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix frbr:  <http://purl.org/vocab/frbr/core#> .
-@prefix dwc:   <http://rs.tdwg.org/dwc/terms/> .
-@prefix claros: <http://purl.org/NET/Claros/vocab#> .
-@prefix crm-owl: <http://purl.org/NET/crm-owl#> .
-@prefix meta:  <http://example.org/metadata#> .
-@prefix kees:  <http://linkeddata.center/kees/v1#> .
-@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
-@prefix bmuseum: <http://collection.britishmuseum.org/id/ontology/> .
-@prefix ods:   <http://lod.xdams.org/ontologies/ods/> .
-@prefix schema: <http://schema.org/> .
-@prefix gml:   <http://www.opengis.net/gml/> .
-@prefix muninn: <http://rdf.muninn-project.org/ontologies/documents#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix yago:  <http://dbpedia.org/class/yago/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix units: <http://dbpedia.org/units/> .
-@prefix fr:    <http://linkeddata.center/botk-fr/v1#> .
-@prefix rso:   <http://www.researchspace.org/ontology/> .
-@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
-@prefix oad:   <http://lod.xdams.org/reload/oad/> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix crm120111: <http://erlangen-crm.org/120111/> .
-@prefix cdoc:  <http://www.cidoc-crm.org/cidoc-crm#> .
-@prefix dcat:  <http://www.w3.org/ns/dcat#> .
-@prefix bibleontology: <http://bibleontology.com/property#> .
-@prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix crm:   <http://erlangen-crm.org/current/> .
-@prefix cc:    <http://creativecommons.org/ns#> .
-@prefix sdaas: <http://linkeddata.center/sdaas/v1#> .
-@prefix shoah: <http://dati.cdec.it/lod/shoah/> .
-@prefix npg:   <http://ns.nature.com/terms/> .
-@prefix org:   <http://www.w3.org/ns/org#> .
-@prefix gn:    <http://www.geonames.org/ontology#> .
-@prefix ibc:   <http://dati.ibc.it/ibc/> .
-@prefix aemetonto: <http://aemet.linkeddata.es/ontology/> .
-@prefix skos-xl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix lgdo:  <http://linkedgeodata.org/ontology/capital> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix eac-cpf: <http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/> .
-@prefix bibo:  <http://purl.org/ontology/bibo/> .
-@prefix time:  <http://www.w3.org/2006/time#> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
-@prefix prism21: <http://prismstandard.org/namespaces/basic/2.1/> .
-@prefix po:    <http://purl.org/ontology/po/> .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fr="http://linkeddata.center/botk-fr/v1#"
+     xmlns:po="http://purl.org/ontology/po/"
+     xmlns:qb="http://purl.org/linked-data/cube#"
+     xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:NDC="https://w3id.org/italia/onto/NDC/"
+     xmlns:bbc="http://www.bbc.co.uk/ontologies/"
+     xmlns:bio="http://purl.org/vocab/bio/0.1/"
+     xmlns:crm="http://erlangen-crm.org/current/"
+     xmlns:daq="http://purl.org/eis/vocab/daq#"
+     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:gml="http://www.opengis.net/gml/"
+     xmlns:ibc="http://dati.ibc.it/ibc/"
+     xmlns:npg="http://ns.nature.com/terms/"
+     xmlns:oad="http://lod.xdams.org/reload/oad/"
+     xmlns:ocd="http://dati.camera.it/ocd/"
+     xmlns:ods="http://lod.xdams.org/ontologies/ods/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rel="http://purl.org/vocab/relationship/"
+     xmlns:rso="http://www.researchspace.org/ontology/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:cdoc="http://www.cidoc-crm.org/cidoc-crm#"
+     xmlns:conf="http://lodview.it/conf#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:frbr="http://purl.org/vocab/frbr/core#"
+     xmlns:kees="http://linkeddata.center/kees/v1#"
+     xmlns:lgdo="http://linkedgeodata.org/ontology/capital"
+     xmlns:meta="http://example.org/metadata#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:spdx="http://spdx.org/rdf/terms#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+     xmlns:yago="http://dbpedia.org/class/yago/"
+     xmlns:sdaas="http://linkeddata.center/sdaas/v1#"
+     xmlns:shoah="http://dati.cdec.it/lod/shoah/"
+     xmlns:units="http://dbpedia.org/units/"
+     xmlns:claros="http://purl.org/NET/Claros/vocab#"
+     xmlns:muninn="http://rdf.muninn-project.org/ontologies/documents#"
+     xmlns:bmuseum="http://collection.britishmuseum.org/id/ontology/"
+     xmlns:crm-owl="http://purl.org/NET/crm-owl#"
+     xmlns:dbpedia="http://dbpedia.org/resource/"
+     xmlns:dbpprop="http://dbpedia.org/property/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:eac-cpf="http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/"
+     xmlns:metalex="http://www.metalex.eu/metalex/2008-05-02#"
+     xmlns:prism21="http://prismstandard.org/namespaces/basic/2.1/"
+     xmlns:skos-xl="http://www.w3.org/2008/05/skos-xl#"
+     xmlns:geonames="http://www.geonames.org/ontology#"
+     xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+     xmlns:resource="https://w3id.org/italia"
+     xmlns:aemetonto="http://aemet.linkeddata.es/ontology/"
+     xmlns:crm120111="http://erlangen-crm.org/120111/"
+     xmlns:schema-org="http://schema.org/"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:bibleontology="http://bibleontology.com/property#"
+     xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+     xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#">
+    <Ontology/>
+    
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types>
-        a                       <http://dati.gov.it/onto/dcatapit#Dataset> , skos:ConceptScheme , <http://www.w3.org/ns/adms#Asset> ;
-        rdfs:comment            "Questo è il vocabolario controllato sulle tipologie di stati civili."@it , "This is the Marital Status controlled vocabulary."@en ;
-        rdfs:isDefinedBy        <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        rdfs:label              "Vocabolario Controllato Stati Civili"@it , "Marital Status Controlled Vocabulary"@en ;
-        dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-        dct:conformsTo          <italia/data/standard/SKOS> ;
-        dct:creator             <italia/data/public-organization/agid> , <italia/data/public-organization/ISTAT> ;
-        dct:description         "Questo è il vocabolario controllato sulle tipologie di stati civili."@it , "This is the Marital Status controlled vocabulary."@en ;
-        dct:identifier          "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types" ;
-        dct:issued              "2022-12-15"^^xsd:date ;
-        dct:language            <http://publications.europa.eu/resource/authority/language/ITA> ;
-        dct:publisher           <italia/data/public-organization/agid> ;
-        dct:rightsHolder        <italia/data/public-organization/ISTAT> ;
-        dct:title               "Vocabolario Controllato Stati Civili"@it , "Marital Status Controlled Vocabulary"@en ;
-        dct:type                <http://purl.org/adms/assettype/CodeList> ;
-        <http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels>
-                "1" ;
-        owl:versionInfo         "First version."@en , "Prima versione."@it ;
-        skos:hasTopConcept      <italia/controlled-vocabulary/classifications-for-people/marital-status-types/1> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/2> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/3> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/4> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/6> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/7> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/8> , <italia/controlled-vocabulary/classifications-for-people/marital-status-types/9> ;
-        <http://www.w3.org/ns/adms#representationTechnique>
-                <http://purl.org/adms/representationtechnique/SKOS> ;
-        dcat:contactPoint       <italia/data/contact-point/voc_AgID> ;
-        dcat:distribution       <italia/data/distribution/PR_CSV> , <italia/data/distribution/PR_RDF_Turtle> , <italia/data/distribution/PR_JSON_LD> , <italia/data/distribution/PR_RDF_XML> , <italia/data/distribution/PR_XLSX> ;
-        dcat:keyword            "Stato Civile"@it;
-        dcat:theme              <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-        <italia/onto/NDC/keyConcept>  "marital-status-types" .
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/1>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "1" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "1" ;
-        skos:prefLabel  "Celibe / Nubile"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/2>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "2" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "2" ;
-        skos:prefLabel  "Coniugato / a"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .
+    
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/3>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "3" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "3" ;
-        skos:prefLabel  "Vedovo / a"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .       
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/4>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "4" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "4" ;
-        skos:prefLabel  "Divorziato / a"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .  
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/6>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "6" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "6" ;
-        skos:prefLabel  "Unito civilmente"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .  
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/7>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "7" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "7" ;
-        skos:prefLabel  "Stato libero a seguito di decesso della parte unita civilmente"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .  
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/8>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "8" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "8" ;
-        skos:prefLabel  "Stato libero a seguito di scioglimento dell’unione"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .  
+    <!-- http://purl.org/dc/terms/conformsTo -->
 
-<italia/controlled-vocabulary/classifications-for-people/marital-status-types/8>
-        a               <italia/onto/PRO/StatoCivile> , skos:Concept ;
-        dct:identifier  "8" ;
-        skos:inScheme   <italia/controlled-vocabulary/classifications-for-people/marital-status-types> ;
-        skos:notation   "8" ;
-        skos:prefLabel  "Non classificabile / ignoto / n.c"@it ;
-        <italia/onto/CLV/hasRankOrder>  "1" .  
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
+    
+
+
+    <!-- http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels -->
+
+    <AnnotationProperty rdf:about="http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#representationTechnique -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/adms#representationTechnique"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasRankOrder -->
+
+    <AnnotationProperty rdf:about="https://w3id.org/italia/onto/CLV/hasRankOrder"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/NDC/keyConcept -->
+
+    <AnnotationProperty rdf:about="https://w3id.org/italia/onto/NDC/keyConcept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Dataset -->
+
+    <Class rdf:about="http://dati.gov.it/onto/dcatapit#Dataset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#Asset -->
+
+    <Class rdf:about="http://www.w3.org/ns/adms#Asset"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/PRO/StatoCivile -->
+
+    <Class rdf:about="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+        <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dcterms:conformsTo rdf:resource="https://w3id.org/italia/data/standard/SKOS"/>
+        <dcterms:creator rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
+        <dcterms:creator rdf:resource="https://w3id.org/italia/data/public-organization/agid"/>
+        <dcterms:description xml:lang="it">Questo è il vocabolario controllato sulle tipologie di stati civili.</dcterms:description>
+        <dcterms:description xml:lang="en">This is the Marital Status controlled vocabulary.</dcterms:description>
+        <dcterms:identifier>https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types</dcterms:identifier>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-15</dcterms:issued>
+        <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-15</dcterms:modified>
+        <dcterms:publisher rdf:resource="https://w3id.org/italia/data/public-organization/agid"/>
+        <dcterms:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
+        <dcterms:title xml:lang="en">Marital Status Controlled Vocabulary</dcterms:title>
+        <dcterms:title xml:lang="it">Vocabolario Controllato Stati Civili</dcterms:title>
+        <dcterms:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+        <xkos:numberOfLevels>1</xkos:numberOfLevels>
+        <rdfs:comment xml:lang="it">Questo è il vocabolario controllato sulle tipologie di stati civili.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the Marital Status controlled vocabulary.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <rdfs:label xml:lang="en">Marital Status Controlled Vocabulary</rdfs:label>
+        <rdfs:label xml:lang="it">Vocabolario Controllato Stati Civili</rdfs:label>
+        <versionInfo xml:lang="en">First version.</versionInfo>
+        <versionInfo xml:lang="it">Prima versione.</versionInfo>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/3"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/4"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/6"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/7"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/8"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/9"/>
+        <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+        <dcat:contactPoint rdf:resource="https://w3id.org/italia/data/contact-point/voc_AgID"/>
+        <dcat:distribution rdf:resource="https://w3id.org/italia/data/distribution/PR_CSV"/>
+        <dcat:distribution rdf:resource="https://w3id.org/italia/data/distribution/PR_JSON_LD"/>
+        <dcat:distribution rdf:resource="https://w3id.org/italia/data/distribution/PR_RDF_Turtle"/>
+        <dcat:distribution rdf:resource="https://w3id.org/italia/data/distribution/PR_RDF_XML"/>
+        <dcat:distribution rdf:resource="https://w3id.org/italia/data/distribution/PR_XLSX"/>
+        <dcat:keyword xml:lang="it">Stato Civile</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
+        <NDC:keyConcept>marital-status-types</NDC:keyConcept>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>1</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>1</skos:notation>
+        <skos:prefLabel xml:lang="it">Celibe / Nubile</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>2</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>2</skos:notation>
+        <skos:prefLabel xml:lang="it">Coniugato / a</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/3 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>3</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>3</skos:notation>
+        <skos:prefLabel xml:lang="it">Vedovo / a</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/4 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/4">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>4</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>4</skos:notation>
+        <skos:prefLabel xml:lang="it">Divorziato / a</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/6 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/6">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>6</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>6</skos:notation>
+        <skos:prefLabel xml:lang="it">Unito civilmente</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/7 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/7">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>7</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>7</skos:notation>
+        <skos:prefLabel xml:lang="it">Stato libero a seguito di decesso della parte unita civilmente</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/8 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/8">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/PRO/StatoCivile"/>
+        <dcterms:identifier>8</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types"/>
+        <skos:notation>8</skos:notation>
+        <skos:prefLabel xml:lang="it">Non classificabile / ignoto / n.c</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Stato libero a seguito di scioglimento dell’unione</skos:prefLabel>
+        <CLV:hasRankOrder>1</CLV:hasRankOrder>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

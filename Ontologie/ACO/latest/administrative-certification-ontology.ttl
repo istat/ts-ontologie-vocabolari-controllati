@@ -17,46 +17,47 @@
 @base <https://w3id.org/italia/onto/ACO/> .
 
 <https://w3id.org/italia/onto/ACO/> rdf:type owl:Ontology ;
-                                     owl:versionIRI aco:1.0 ;
+                                     owl:versionIRI <https://w3id.org/italia/onto/ACO/1.0> ;
                                      owl:imports <https://w3id.org/italia/onto/CLV> ,
                                                  <https://w3id.org/italia/onto/l0> ;
-                                     dct:description "Questa è l'ontologia dei certificati anagrafici"@it ;
-                                     admsapit:last <https//w3id.org/italia/onto/ACO/1.0> ;
-                                     dct:title "ACO_IT - Ontologia dei Certificati Anagrafici"@it ;
-                                     rdfs:label "Admministrative Certification Ontology"@en ;
-                                     admsapit:hasKeyClass <https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente> ;
-                                     admsapit:type "https://w3id.org/italia/onto/ADMS/DomainOntology" ;
-                                     dct:description "This is the ontology of the administrative certifications."@en ;
-                                     rdfs:comment "This is the administrative certification ontology."@en ;
-                                     dcat:keyword "Certificato"@it ;
-                                     dcat:contactPoint " ---" ;
-                                     admsapit:hasTask " ---" ;
-                                     admsapit:prefix "aco"^^xsd:string ;
-                                     dcat:keyword "Residente"@it ;
-                                     admsapit:hasKeyClass <https://w3id.org/italia/onto/ACO/Residenza> ;
-                                     dct:publisher "---" ;
-                                     admsapit:hasContributor " ---" ;
-                                     dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
-                                     dct:issued "2022-12-15"^^xsd:dateTimeStamp ;
-                                     admsapit:target "Pubbliche Amministrazioni" ;
                                      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                     admsapit:hasFormalityLevel " ---" ;
-                                     dct:rightsHolder "Ministero degli Interni"@it ;
-                                     owl:versionInfo "Versione 1.0"@it ;
-                                     rdfs:label "Ontologia dei Certificati Anagrafici"@it ;
-                                     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-                                     rdfs:comment "Questa è l'ontologia dei certificati anagrafici."@it ;
-                                     admsapit:acronym "ACO" ;
-                                     rdfs:isDefinedBy <https://w3id.org/italia/onto/ACO> ;
-                                     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                     admsapit:hasOntologyLanguage <https://w3id.org/italia/onto/ADMS/OWL> ;
-                                     dcat:keyword "Anagrafe"@it ;
-                                     admsapit:officialURI <https://w3id.org/italia/onto/ACO> ;
+                                     dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
+                                     dct:description "Questa è l'ontologia dei certificati anagrafici"@it ,
+                                                     "This is the ontology of the administrative certifications."@en ;
                                      dct:identifier <https://w3id.org/italia/onto/ACO> ;
-                                     admsapit:hasKeyClass <https://w3id.org/italia/onto/ACO/Certificato> ;
-                                     dct:title "ACO_IT - Administrative Certification Ontology"@en ;
+                                     dct:issued "2022-12-15"^^xsd:date ;
+                                     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                     dct:modified "2022-12-15"^^xsd:date ;
+                                     dct:publisher "---" ;
+                                     dct:rightsHolder <https://www.interno.gov.it/it> ;
+                                     dct:title "ACO_IT - Administrative Certification Ontology"@en ,
+                                               "ACO_IT - Ontologia dei Certificati Anagrafici"@it ;
+                                     rdfs:comment "Questa è l'ontologia dei certificati anagrafici."@it ,
+                                                  "This is the administrative certification ontology."@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/italia/onto/ACO> ;
+                                     rdfs:label "Admministrative Certification Ontology"@en ,
+                                                "Ontologia dei Certificati Anagrafici"@it ;
+                                     owl:versionInfo "Versione 1.0"@it ;
+                                     dcat:contactPoint " ---" ;
+                                     dcat:keyword "Anagrafe"@it ,
+                                                  "Certificato"@it ,
+                                                  "Residente"@it ;
+                                     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+                                     admsapit:acronym "ACO" ;
+                                     admsapit:hasContributor " ---" ;
+                                     admsapit:hasFormalityLevel " ---" ;
+                                     admsapit:hasKeyClass aco:Certificato ,
+                                                          aco:Residenza ,
+                                                          pro:PersonaAnagraficamenteResidente ;
+                                     admsapit:hasOntologyLanguage admsapit:OWL ;
+                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> ;
+                                     admsapit:hasTask " ---" ;
+                                     admsapit:last <https://w3id.org/italia/onto/ACO/https//w3id.org/italia/onto/ACO/1.0> ;
+                                     admsapit:officialURI <https://w3id.org/italia/onto/ACO> ;
+                                     admsapit:prefix "aco"^^xsd:string ;
                                      admsapit:status "published" ;
-                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> .
+                                     admsapit:target "Pubbliche Amministrazioni" ;
+                                     admsapit:type admsapit:DomainOntology .
 
 #################################################################
 #    Datatypes
@@ -1005,4 +1006,4 @@ cpv:givenName rdfs:label "nome"@it .
 ] .
 
 
-###  Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
