@@ -1,0 +1,299 @@
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix tiapit: <https://w3id.org/italia/onto/TI/> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/accrualPeriodicity
+dct:accrualPeriodicity rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dct:conformsTo rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+dct:language rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+dct:rightsHolder rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/type
+dct:type rdf:type owl:AnnotationProperty .
+
+
+###  http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels
+<http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+skos:hasTopConcept rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/adms#representationTechnique
+<http://www.w3.org/ns/adms#representationTechnique> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#contactPoint
+dcat:contactPoint rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+dcat:distribution rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+dcat:keyword rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+dcat:theme rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/NDC/keyConcept
+<https://w3id.org/italia/onto/NDC/keyConcept> rdf:type owl:AnnotationProperty .
+
+###  https://w3id.org/italia/onto/CLV/hasRankOrder
+clvapit:hasRankOrder rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dati.gov.it/onto/dcatapit#Dataset
+<http://dati.gov.it/onto/dcatapit#Dataset> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/adms#Asset
+<http://www.w3.org/ns/adms#Asset> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe
+<https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> 
+a	 skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
+ dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
+ dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+             <https://w3id.org/italia/data/public-organization/agid> ; 
+ dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ,                                                                                                                   
+                 "This is the Registry Office Removal Motivations controlled vocabulary."@en ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types" ;
+  dct:issued "2022-12-15"^^xsd:date ;
+   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+
+  dct:publisher <https://w3id.org/italia/data/public-organization/agid> ;
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+ dct:title "Registry Office Registration Mtivations Controlled Vocabulary"@en ,
+           "Vocabolario Controllato Motivi Iscrizione in Anagrafe"@it ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  xkos:numberOfLevels "1" ;
+ rdfs:comment "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ;
+ rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+ rdfs:label "Registry Office Removal Motivations Controlled Vocabulary"@en ,
+            "Vocabolario Controllato Motivi Cancellazione in Anagrafe"@it ;
+   owl:versionInfo "First version."@en ,
+                   "1.0"@it ;            
+																												 
+																										 
+									 
+skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/10> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/12> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/2> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/3> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/4> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/6> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/7> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/8> ,
+			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9> ;
+<http://www.w3.org/ns/adms#representationTechnique> <http://purl.org/adms/representationtechnique/SKOS> ;
+dcat:contactPoint <https://w3id.org/italia/data/contact-point/voc_AgID> ;
+dcat:distribution <https://w3id.org/italia/data/distribution/PR_CSV> ,
+		   <https://w3id.org/italia/data/distribution/PR_JSON_LD> ,
+		   <https://w3id.org/italia/data/distribution/PR_RDF_Turtle> ,
+		   <https://w3id.org/italia/data/distribution/PR_RDF_XML> ,
+		   <https://w3id.org/italia/data/distribution/PR_XLSX> ;
+dcat:keyword "Motivo cancellazione anagrafe"@it ;
+dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+<https://w3id.org/italia/onto/NDC/keyConcept> "registry-office-removal-types" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1> rdf:type owl:NamedIndividual ,
+                                                                                                                    skos:Concept ,
+                                                                                                                    <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                           dct:identifier "1" ;
+                                                                                                           skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                           skos:notation "1" ;
+                                                                                                           skos:prefLabel "Morte accertata"@it ;
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11> rdf:type owl:NamedIndividual ,
+                                                                                                                     skos:Concept ,
+                                                                                                                     <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                            dct:identifier "11" ;
+                                                                                                            skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                            skos:notation "11" ;
+                                                                                                            skos:prefLabel "Perdita della cittadinanza italiana"@it ;
+                                                                                                            <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13> rdf:type owl:NamedIndividual ,
+                                                                                                                     skos:Concept ,
+                                                                                                                     <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                            dct:identifier "13" ;
+                                                                                                            skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                            skos:notation "13" ;
+                                                                                                            skos:prefLabel "Altro"@it ;
+                                                                                                            <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/2
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/2> rdf:type owl:NamedIndividual ,
+                                                                                                                    skos:Concept ,
+                                                                                                                    <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                           dct:identifier "2" ;
+                                                                                                           skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                           skos:notation "2" ;
+                                                                                                           skos:prefLabel "Morte presunta giudizialmente dichiarata"@it ;
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5> rdf:type owl:NamedIndividual ,
+                                                                                                                    skos:Concept ,
+                                                                                                                    <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                           dct:identifier "5" ;
+                                                                                                           skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                           skos:notation "5" ;
+                                                                                                           skos:prefLabel "Trasferimento di residenza all’estero di uno straniero"@it ;
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/6
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/6> rdf:type owl:NamedIndividual ,
+                                                                                                                    skos:Concept ,
+                                                                                                                    <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                           dct:identifier "6" ;
+                                                                                                           skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                           skos:notation "6" ;
+                                                                                                           skos:prefLabel "Irreperibilità"@it ;
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/7
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/7> rdf:type owl:NamedIndividual ,
+                                                                                                                    skos:Concept ,
+                                                                                                                    <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                           dct:identifier "7" ;
+                                                                                                           skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                           skos:notation "7" ;
+                                                                                                           skos:prefLabel "Mancato rinnovo dimora abituale/permesso di soggiorno"@it ;
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9> rdf:type owl:NamedIndividual ,
+                                                                                                                    skos:Concept ,
+                                                                                                                    <https://w3id.org/italia/onto/PRO/MotivoCancellazioneAnagrafe> ;
+                                                                                                           dct:identifier "9" ;
+                                                                                                           skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+                                                                                                           skos:notation "9" ;
+                                                                                                           skos:prefLabel "Rettifiche post censuarie"@it ;
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
