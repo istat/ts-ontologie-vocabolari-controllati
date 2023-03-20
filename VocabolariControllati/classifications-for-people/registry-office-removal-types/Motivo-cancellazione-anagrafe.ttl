@@ -157,31 +157,29 @@ skos:ConceptScheme rdf:type owl:Class .
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> 
-a	 skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
-dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
- dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
- dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
-             <https://w3id.org/italia/data/public-organization/agid> ; 
- dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ,                                                                                                                   
-                 "This is the Registry Office Removal Motivations controlled vocabulary."@en ;
-  dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types" ;
-  dct:issued "2022-12-15"^^xsd:date ;
-   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-
-  dct:publisher <https://w3id.org/italia/data/public-organization/agid> ;
-  dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
- dct:title "Registry Office Registration Mtivations Controlled Vocabulary"@en ,
-           "Vocabolario Controllato Motivi Iscrizione in Anagrafe"@it ;
-  dct:type <http://purl.org/adms/assettype/CodeList> ;
-  xkos:numberOfLevels "1" ;
- rdfs:comment "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ;
- rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
- rdfs:label "Registry Office Removal Motivations Controlled Vocabulary"@en ,
-            "Vocabolario Controllato Motivi Cancellazione in Anagrafe"@it ;
-   owl:versionInfo "First version."@en ,
-                   "1.0"@it ;            
-																												 
-																										 
+			a	 skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+			dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
+			dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
+			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+						<https://w3id.org/italia/data/public-organization/agid> ; 
+			dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ,                                                                                                                   
+							"This is the Registry Office Removal Motivations controlled vocabulary."@en ;
+			dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types" ;
+			dct:issued "2022-12-15"^^xsd:date ;
+			dct:modified "2022-12-15"^^xsd:date ;
+			dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+			dct:publisher <https://w3id.org/italia/data/public-organization/agid> ;
+			dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+			dct:title "Registry Office Registration Mtivations Controlled Vocabulary"@en ,
+					  "Vocabolario Controllato Motivi Iscrizione in Anagrafe"@it ;
+			dct:type <http://purl.org/adms/assettype/CodeList> ;
+			xkos:numberOfLevels "1" ;
+			rdfs:comment "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ;
+			rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
+			rdfs:label "Registry Office Removal Motivations Controlled Vocabulary"@en ,
+					   "Vocabolario Controllato Motivi Cancellazione in Anagrafe"@it ;
+		   owl:versionInfo "First version."@en ,
+						   "Prima versione."@it ;           																					 
 									 
 skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1> ,
 			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/10> ,
