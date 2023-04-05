@@ -7,8 +7,8 @@
 @prefix iao: <https://w3id.org/italia/onto/IAO/> .
 @prefix ito: <https://w3id.org/italia/onto/ITO/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pro: <https://w3id.org/italia/onto/PRO/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rpo: <https://w3id.org/italia/onto/RPO/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -28,7 +28,7 @@
                                      dct:issued "2022-12-15"^^xsd:date ;
                                      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
                                      dct:modified "2022-12-15"^^xsd:date ;
-                                     dct:publisher "---" ;
+                                      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
                                      dct:rightsHolder <https://www.interno.gov.it/it> ;
                                      dct:title "ACO_IT - Administrative Certification Ontology"@en ,
                                                "ACO_IT - Ontologia dei Certificati Anagrafici"@it ;
@@ -46,9 +46,9 @@
                                      admsapit:acronym "ACO" ;
                                      admsapit:hasContributor " ---" ;
                                      admsapit:hasFormalityLevel " ---" ;
-                                     admsapit:hasKeyClass aco:Certificato ,
-                                                          aco:Residenza ,
-                                                          pro:PersonaAnagraficamenteResidente ;
+                                     admsapit:hasKeyClass aco:Certificate ,
+                                                          aco:Residence ,
+                                                          rpo:RegisteredResidentPerson ;
                                      admsapit:hasOntologyLanguage admsapit:OWL ;
                                      admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> ;
                                      admsapit:hasTask " ---" ;
@@ -79,323 +79,355 @@ xsd:string rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/italia/onto/ACO/attesta
-aco:attesta rdf:type owl:ObjectProperty ;
-            rdfs:domain aco:AttoAmministrativo ;
+###  https://w3id.org/italia/onto/ACO/attests
+aco:attests rdf:type owl:ObjectProperty ;
+            rdfs:domain aco:AdministrativeDeed ;
             rdfs:comment "Relazione tra atto amministrativo e iscrizione anagrafica per nascita."@it ;
-            rdfs:label "attesta"@it .
+            rdfs:label "attesta"@it ,
+                       "attests"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/attestaNascita
-aco:attestaNascita rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf aco:certifica ;
-                   rdf:type owl:FunctionalProperty ;
-                   rdfs:domain aco:CertificatoAnagraficoDiNascita ;
-                   rdfs:range aco:IscrizioneAnagraficaPerNascita ;
-                   rdfs:comment "Relazione tra l’atto amministrativo e iscrizione anagrafica per l’evento nascita."@it ;
-                   rdfs:label "attesta nascita"@it .
+###  https://w3id.org/italia/onto/ACO/attestsBirth
+aco:attestsBirth rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf aco:certifies ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain aco:BirthCertificate ;
+                 rdfs:range aco:RegistryEntryForBirth ;
+                 rdfs:comment "Relazione tra l’atto amministrativo e iscrizione anagrafica per l’evento nascita."@it ;
+                 rdfs:label "attesta nascita"@it ,
+                            "attests birth"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/attoEmessoDa
-aco:attoEmessoDa rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/ACO/certificateIssuedBy
+aco:certificateIssuedBy rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain aco:Certificate ;
+                        rdfs:range aco:PublicAdministration ;
+                        rdfs:comment "Relazione tra certificato e amministrazione pubblica."@it ;
+                        rdfs:label "certificate issued by"@en ,
+                                   "certificato emesso da"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/certificateIssuedForApplication
+aco:certificateIssuedForApplication rdf:type owl:ObjectProperty ,
+                                             owl:FunctionalProperty ,
+                                             owl:InverseFunctionalProperty ;
+                                    rdfs:domain aco:Certificate ;
+                                    rdfs:range aco:CertificateApplication ;
+                                    rdfs:comment "Relazione tra certificato e richiesta di certificato."@it ;
+                                    rdfs:label "certificate issued for application"@en ,
+                                               "certificato per richiesta"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/certifies
+aco:certifies rdf:type owl:ObjectProperty ;
+              rdfs:domain aco:Certificate ;
+              rdfs:comment "Relazione tra certificato ed evento registrato. "@it ;
+              rdfs:label "certifica"@it ,
+                         "certifies"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/certifiesResidence
+aco:certifiesResidence rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf aco:certifies ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:domain aco:ResidenceCertificate ;
+                       rdfs:range aco:Residence ;
+                       rdfs:comment "Relazione tra certificato e residenza."@it ;
+                       rdfs:label "certifica residenza"@it ,
+                                  "certifies residence"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/deedIssuedBy
+aco:deedIssuedBy rdf:type owl:ObjectProperty ,
                           owl:FunctionalProperty ;
-                 rdfs:domain aco:AttoAmministrativo ;
-                 rdfs:range aco:AmministrazionePubblica ;
+                 rdfs:domain aco:AdministrativeDeed ;
+                 rdfs:range aco:PublicAdministration ;
                  rdfs:comment "Relazione tra atto amministrativo e amministrazione pubblica."@it ;
-                 rdfs:label "atto emesso da"@it .
+                 rdfs:label "atto emesso da"@it ,
+                            "deed issued by"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/attoRegistratoIn
-aco:attoRegistratoIn rdf:type owl:ObjectProperty ;
-                     rdfs:domain aco:AttoAmministrativo ;
+###  https://w3id.org/italia/onto/ACO/deedRegisteredIn
+aco:deedRegisteredIn rdf:type owl:ObjectProperty ;
+                     rdfs:domain aco:AdministrativeDeed ;
                      rdfs:range clv:AdminUnitComponent ;
                      rdfs:comment "Relazione tra atto amministrativo e unità amministrativa."@it ;
-                     rdfs:label "atto registratoIn"@it .
+                     rdfs:label "atto registratoIn"@it ,
+                                "deed registered in"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/certifica
-aco:certifica rdf:type owl:ObjectProperty ;
-              rdfs:domain aco:Certificato ;
-              rdfs:comment "Relazione tra certificato ed evento registrato. "@it ;
-              rdfs:label "certifica"@it .
+###  https://w3id.org/italia/onto/ACO/depositedIn
+aco:depositedIn rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain aco:AdministrativeDeed ;
+                rdfs:range aco:PublicAdministration ;
+                rdfs:comment "Relazione tra atto amministrativo e amministrazione pubblica."@it ;
+                rdfs:label "depositato presso"@it ,
+                           "deposited in"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/certificaResidenza
-aco:certificaResidenza rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf aco:certifica ;
-                       rdf:type owl:FunctionalProperty ;
-                       rdfs:domain aco:CertificatoAnagraficoDiResidenza ;
-                       rdfs:range cpv:Residenza ;
-                       rdfs:comment "Relazione tra certificato e residenza."@it ;
-                       rdfs:label "certifica residenza"@it .
+###  https://w3id.org/italia/onto/ACO/hasBirth
+aco:hasBirth rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:InverseFunctionalProperty ;
+             rdfs:domain cpv:Person ;
+             rdfs:range aco:RegistryEntryForBirth ;
+             rdfs:comment "Relazione tra persona fisica e iscrizione anagrafica per nascita."@it ;
+             rdfs:label "haNascita"@it ,
+                        "has birth"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/certificatoEmessoDa
-aco:certificatoEmessoDa rdf:type owl:ObjectProperty ,
-                                 owl:FunctionalProperty ;
-                        rdfs:domain aco:Certificato ;
-                        rdfs:range aco:AmministrazionePubblica ;
-                        rdfs:comment "Relazione tra certificato e amministrazione pubblica."@it ;
-                        rdfs:label "certificato emesso da"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/certificatoSuRichiesta
-aco:certificatoSuRichiesta rdf:type owl:ObjectProperty ,
-                                    owl:FunctionalProperty ,
-                                    owl:InverseFunctionalProperty ;
-                           rdfs:domain aco:Certificato ;
-                           rdfs:range aco:RichiestaDiCertificato ;
-                           rdfs:comment "Relazione tra certificato e richiesta di certificato."@it ;
-                           rdfs:label "certificato per richiesta"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/citaAtto
-aco:citaAtto rdf:type owl:ObjectProperty ;
-             rdfs:domain aco:Certificato ;
-             rdfs:range aco:AttoAmministrativo ;
-             rdfs:comment "Relazione tra certificato e atto amministrativo."@it ;
-             rdfs:label "cita atto"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/depositatoPresso
-aco:depositatoPresso rdf:type owl:ObjectProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain aco:AttoAmministrativo ;
-                     rdfs:range aco:AmministrazionePubblica ;
-                     rdfs:comment "Relazione tra atto amministrativo e amministrazione pubblica."@it ;
-                     rdfs:label "depositato presso"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/faRiferimentoAdAttoDiNascita
-aco:faRiferimentoAdAttoDiNascita rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aco:attesta ;
-                                 rdf:type owl:FunctionalProperty ;
-                                 rdfs:domain aco:IscrizioneAnagraficaPerNascita ;
-                                 rdfs:range aco:AttoDiNascita ;
-                                 rdfs:comment "Relazione tra atto di nascita e iscrizione anagrafica per nascita."@it ;
-                                 rdfs:label "fa riferimento ad atto di nascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/fornisceEvidenza
-aco:fornisceEvidenza rdf:type owl:ObjectProperty ;
-                     rdfs:domain aco:Certificato ;
-                     rdfs:range aco:Evidenza ;
-                     rdfs:label "fornisceEvidenza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/haNascita
-aco:haNascita rdf:type owl:ObjectProperty ,
-                       owl:FunctionalProperty ,
-                       owl:InverseFunctionalProperty ;
-              rdfs:domain cpv:PersonaFisica ;
-              rdfs:range aco:IscrizioneAnagraficaPerNascita ;
-              rdfs:comment "Relazione tra persona fisica e iscrizione anagrafica per nascita."@it ;
-              rdfs:label "haNascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/haResidenza
-aco:haResidenza rdf:type owl:ObjectProperty ,
-                         owl:InverseFunctionalProperty ;
-                rdfs:domain pro:PersonaAnagraficamenteResidente ;
-                rdfs:range cpv:Residenza ;
-                rdfs:comment "Relazione tra persona anagraficamente residente e residenza."@it ;
-                rdfs:label "ha residenza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/luogoIscrizioneAnagraficaperNascita
-aco:luogoIscrizioneAnagraficaperNascita rdf:type owl:ObjectProperty ,
-                                                 owl:FunctionalProperty ;
-                                        rdfs:domain aco:IscrizioneAnagraficaPerNascita ;
-                                        rdfs:range clv:AdminUnitComponent ;
-                                        rdfs:comment "Dato che consente di stabilire, sotto il profilo spaziale, il Comune di iscrizione per nascita."@it ;
-                                        rdfs:label "luogo di iscrizione anagrafica per nascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/residenzaInComune
-aco:residenzaInComune rdf:type owl:ObjectProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:domain cpv:Residenza ;
-                      rdfs:range clv:City ;
-                      rdfs:comment "Relazione tra residenza e comune. "@it ;
-                      rdfs:label "residenza in comune"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/residenzaInIndirizzo
-aco:residenzaInIndirizzo rdf:type owl:ObjectProperty ,
-                                  owl:FunctionalProperty ;
-                         rdfs:domain cpv:Residenza ;
-                         rdfs:range clv:Address ;
-                         rdfs:comment "Residenza stabilita in un indirizzo."@it ;
-                         rdfs:label "residenza in indirizzo"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/ricopreRuolo
-aco:ricopreRuolo rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/ACO/hasResidence
+aco:hasResidence rdf:type owl:ObjectProperty ,
                           owl:InverseFunctionalProperty ;
-                 rdfs:domain [ rdf:type owl:Class ;
-                               owl:unionOf ( aco:AmministrazionePubblica
-                                             cpv:PersonaFisica
-                                           )
-                             ] ;
-                 rdfs:range aco:RuoloRispettoARichiesta ;
-                 rdfs:comment "Relazione tra persona fisica e autorità che rilascia il certificato o l’atto e il ruolo ricoperto, oppure interessato o delegato. "@it ;
-                 rdfs:label "ricopre ruolo"@it .
+                 rdfs:domain rpo:RegisteredResidentPerson ;
+                 rdfs:range aco:Residence ;
+                 rdfs:comment "Relazione tra persona anagraficamente residente e residenza."@it ;
+                 rdfs:label "ha residenza"@it ,
+                            "has residence"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/rilasciatoConDirittiDiSegreteria
-aco:rilasciatoConDirittiDiSegreteria rdf:type owl:ObjectProperty ,
-                                              owl:FunctionalProperty ;
-                                     rdfs:domain aco:Certificato ;
-                                     rdfs:range aco:DirittiDiSegreteria ;
-                                     rdfs:comment "Relazione tra certificato e diritti di segreteria."@it ;
-                                     rdfs:label "rilasciato con diritti di segreteria"@it .
+###  https://w3id.org/italia/onto/ACO/issuedWithSecretarialFees
+aco:issuedWithSecretarialFees rdf:type owl:ObjectProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain aco:Certificate ;
+                              rdfs:range aco:SecretarialFees ;
+                              rdfs:comment "Relazione tra certificato e diritti di segreteria."@it ;
+                              rdfs:label "issued with secretarial fees"@en ,
+                                         "rilasciato con diritti di segreteria"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/rilasciatoConImpostaDiBollo
-aco:rilasciatoConImpostaDiBollo rdf:type owl:ObjectProperty ,
-                                         owl:FunctionalProperty ;
-                                rdfs:domain aco:Certificato ;
-                                rdfs:range aco:ImpostaDiBollo ;
-                                rdfs:comment "Relazione tra certificato e imposta di bollo."@it ;
-                                rdfs:label "rilasciato con imposta di bollo"@it .
+###  https://w3id.org/italia/onto/ACO/issuedWithStampDuty
+aco:issuedWithStampDuty rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain aco:Certificate ;
+                        rdfs:range aco:StampDuty ;
+                        rdfs:comment "Relazione tra certificato e imposta di bollo."@it ;
+                        rdfs:label "issued with stamp duty"@en ,
+                                   "rilasciato con imposta di bollo"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/rispettoARichiesta
-aco:rispettoARichiesta rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/ACO/placeOfRegistryEntryForBirth
+aco:placeOfRegistryEntryForBirth rdf:type owl:ObjectProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain aco:RegistryEntryForBirth ;
+                                 rdfs:range clv:AdminUnitComponent ;
+                                 rdfs:comment "Dato che consente di stabilire, sotto il profilo spaziale, il Comune di iscrizione per nascita."@it ;
+                                 rdfs:label "luogo di iscrizione anagrafica per nascita"@it ,
+                                            "place of registry entry for birth"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/playsRole
+aco:playsRole rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( aco:PublicAdministration
+                                          cpv:Person
+                                        )
+                          ] ;
+              rdfs:range aco:RoleInApplication ;
+              rdfs:comment "Relazione tra persona fisica e autorità che rilascia il certificato o l’atto e il ruolo ricoperto, oppure interessato o delegato. "@it ;
+              rdfs:label "plays role"@en ,
+                         "ricopre ruolo"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/providesEvidence
+aco:providesEvidence rdf:type owl:ObjectProperty ;
+                     rdfs:domain aco:Certificate ;
+                     rdfs:range aco:Evidence ;
+                     rdfs:label "fornisceEvidenza"@it ,
+                                "provides evidence"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/referencesBirthDeed
+aco:referencesBirthDeed rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf aco:attests ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain aco:RegistryEntryForBirth ;
+                        rdfs:range aco:BirthDeed ;
+                        rdfs:comment "Relazione tra atto di nascita e iscrizione anagrafica per nascita."@it ;
+                        rdfs:label "fa riferimento ad atto di nascita"@it ,
+                                   "references birth deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/referencesDeed
+aco:referencesDeed rdf:type owl:ObjectProperty ;
+                   rdfs:domain aco:Certificate ;
+                   rdfs:range aco:AdministrativeDeed ;
+                   rdfs:comment "Relazione tra certificato e atto amministrativo."@it ;
+                   rdfs:label "cita atto"@it ,
+                              "references deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/residenceInAddress
+aco:residenceInAddress rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ;
-                       rdfs:domain aco:RuoloRispettoARichiesta ;
-                       rdfs:range aco:RichiestaDiCertificato ;
-                       rdfs:comment "Relazione tra ruolo rispetto a richiesta e richiesta di certificato."@it ;
-                       rdfs:label "rispetto a richiesta"@it .
+                       rdfs:domain aco:Residence ;
+                       rdfs:range clv:Address ;
+                       rdfs:comment "Residenza stabilita in un indirizzo."@it ;
+                       rdfs:label "residence in address"@en ,
+                                  "residenza in indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/residenceInCity
+aco:residenceInCity rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain aco:Residence ;
+                    rdfs:range clv:City ;
+                    rdfs:comment "Relazione tra residenza e comune. "@it ;
+                    rdfs:label "residence in city"@en ,
+                               "residenza in comune"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/roleRelativeToApplication
+aco:roleRelativeToApplication rdf:type owl:ObjectProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain aco:RoleInApplication ;
+                              rdfs:range aco:CertificateApplication ;
+                              rdfs:comment "Relazione tra ruolo rispetto a richiesta e richiesta di certificato."@it ;
+                              rdfs:label "rispetto a richiesta"@it ,
+                                         "role relative to application"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/italia/onto/ACO/annoAtto
-aco:annoAtto rdf:type owl:DatatypeProperty ,
-                      owl:FunctionalProperty ;
-             rdfs:domain aco:AttoAmministrativo ;
-             rdfs:range xsd:integer ;
-             rdfs:comment "Anno di iscrizione nel registro riportante l'atto."@it ;
-             rdfs:label "anno atto"@it .
+###  https://w3id.org/italia/onto/ACO/ANPRProtocol
+aco:ANPRProtocol rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain aco:RegistrationCertificate ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Numero progressivo, unico e obbligatorio, che viene assegnato a ciascun documento registrato sul registro di protocollo, nel quale si classificano e annotano giornalmente i varî documenti e la corrispondenza ufficiale in partenza e in arrivo presso l'Anagrafe nazionale della popolazione residente."@it ;
+                 rdfs:label "ANPR protocol"@en ,
+                            "protocollo ANPR"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/dataDiEmissione
-aco:dataDiEmissione rdf:type owl:DatatypeProperty ,
-                             owl:FunctionalProperty ;
-                    rdfs:domain aco:Certificato ;
-                    rdfs:range xsd:dateTime ;
-                    rdfs:comment "Relazione tra certificato e data."@it ;
-                    rdfs:label "data di emissione"@it .
+###  https://w3id.org/italia/onto/ACO/dateOfRegistryEntryForBirth
+aco:dateOfRegistryEntryForBirth rdf:type owl:DatatypeProperty ,
+                                         owl:FunctionalProperty ;
+                                rdfs:domain aco:RegistryEntryForBirth ;
+                                rdfs:range xsd:dateTime ;
+                                rdfs:comment "Data dell'iscrizione in anagrafe di una persona per nascita."@it ;
+                                rdfs:label "data di iscrizione anagrafica per nascita"@it ,
+                                           "dateo of registry entry for birth"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/dataDiIscrizioneAnagraficaPerNascita
-aco:dataDiIscrizioneAnagraficaPerNascita rdf:type owl:DatatypeProperty ,
-                                                  owl:FunctionalProperty ;
-                                         rdfs:domain aco:IscrizioneAnagraficaPerNascita ;
-                                         rdfs:range xsd:dateTime ;
-                                         rdfs:comment "Data dell'iscrizione in anagrafe di una persona per nascita."@it ;
-                                         rdfs:label "data di iscrizione anagrafica per nascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/dataDiScadenza
-aco:dataDiScadenza rdf:type owl:DatatypeProperty ,
-                            owl:FunctionalProperty ;
-                   rdfs:domain aco:Certificato ;
-                   rdfs:range xsd:dateTime ;
-                   rdfs:comment "Durata del certificato: 6 mesi (art. 41 dpr 445/00), 3 mesi (art. 33 d. lgs. 223/1989). "@it ;
-                   rdfs:label "data di scadenza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/esito
-aco:esito rdf:type owl:DatatypeProperty ,
-                   owl:FunctionalProperty ;
-          rdfs:domain aco:RichiestaDiCertificato ;
-          rdfs:range xsd:string ;
-          rdfs:comment "L'esito può essere di due tipi: accoglimento e rigetto della richiesta di certificato."@it ;
-          rdfs:label "esito"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/motivazioneEsito
-aco:motivazioneEsito rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain aco:RichiestaDiCertificato ;
-                     rdfs:range xsd:string ;
-                     rdfs:comment "Motivazione dell'esito negativo della richiesta di certificato."@it ;
-                     rdfs:label "motivazione esito"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/numeroAtto
-aco:numeroAtto rdf:type owl:DatatypeProperty ,
+###  https://w3id.org/italia/onto/ACO/deedNumber
+aco:deedNumber rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
-               rdfs:domain aco:AttoAmministrativo ;
+               rdfs:domain aco:AdministrativeDeed ;
                rdfs:range xsd:string ;
                rdfs:comment "Identificativo dell'atto amministrativo."@it ;
-               rdfs:label "numero atto"@it .
+               rdfs:label "deed number"@en ,
+                          "numero atto"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/protocolloANPR
-aco:protocolloANPR rdf:type owl:DatatypeProperty ,
-                            owl:FunctionalProperty ;
-                   rdfs:domain aco:CertificatoAnagrafico ;
-                   rdfs:range xsd:string ;
-                   rdfs:comment "Numero non progressivo (calcolato con algoritmo) unico e obbligatorio assegnato ad ogni certificato anagrafico rilasciato da ANPR e riportato all’interno del QRCode per il recupero della copia originale nel caso di richiesta di verifica."@it ;
-                   rdfs:label "protocollo ANPR"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/tipoRuolo
-aco:tipoRuolo rdf:type owl:DatatypeProperty ,
+###  https://w3id.org/italia/onto/ACO/deedTitle
+aco:deedTitle rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
-              rdfs:domain aco:RuoloRispettoARichiesta ;
+              rdfs:domain aco:AdministrativeDeed ;
               rdfs:range xsd:string ;
-              rdfs:comment "il ruolo può essere di due tipi: richiedente e interessato alla richiesta di certificato."@it ;
-              rdfs:label "tipo ruolo"@it .
+              rdfs:comment "Intestazione dell'atto amministrativo."@it ;
+              rdfs:label "deed title"@en ,
+                         "titolo atto"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/tipologiaUtilizzo
-aco:tipologiaUtilizzo rdf:type owl:DatatypeProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:domain aco:Certificato ;
-                      rdfs:range xsd:string ;
-                      rdfs:comment "Tipo di utilizzo del certificato."@it ;
-                      rdfs:label "tipologia utilizzo"@it .
+###  https://w3id.org/italia/onto/ACO/deedYear
+aco:deedYear rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain aco:AdministrativeDeed ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "Anno di iscrizione nel registro riportante l'atto."@it ;
+             rdfs:label "anno atto"@it ,
+                        "deed year"@en .
 
 
-###  https://w3id.org/italia/onto/ACO/titoloAtto
-aco:titoloAtto rdf:type owl:DatatypeProperty ,
+###  https://w3id.org/italia/onto/ACO/expiryDate
+aco:expiryDate rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
-               rdfs:domain aco:AttoAmministrativo ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Intestazione dell'atto amministrativo."@it ;
-               rdfs:label "titolo atto"@it .
+               rdfs:domain aco:Certificate ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "Durata del certificato: 6 mesi (art. 41 dpr 445/00), 3 mesi (art. 33 d. lgs. 223/1989). "@it ;
+               rdfs:label "data di scadenza"@it ,
+                          "expiry date"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/issueDate
+aco:issueDate rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain aco:Certificate ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Relazione tra certificato e data."@it ;
+              rdfs:label "data di emissione"@it ,
+                         "issue date"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/outcome
+aco:outcome rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain aco:CertificateApplication ;
+            rdfs:range xsd:string ;
+            rdfs:comment "L'esito può essere di due tipi: accoglimento e rigetto della richiesta di certificato."@it ;
+            rdfs:label "esito"@it ,
+                       "outcome"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/outcomeMotivation
+aco:outcomeMotivation rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain aco:CertificateApplication ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Motivazione dell'esito negativo della richiesta di certificato."@it ;
+                      rdfs:label "motivazione esito"@it ,
+                                 "outcome motivation"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/roleType
+aco:roleType rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain aco:RoleInApplication ;
+             rdfs:range xsd:string ;
+             rdfs:comment "il ruolo può essere di due tipi: richiedente e interessato alla richiesta di certificato."@it ;
+             rdfs:label "role type"@en ,
+                        "tipo ruolo"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/typeOfUse
+aco:typeOfUse rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain aco:Certificate ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Tipo di utilizzo del certificato."@it ;
+              rdfs:label "tipologia utilizzo"@it ,
+                         "type of use"@en .
 
 
 ###  https://w3id.org/italia/onto/CPV/codiceFiscale
 cpv:codiceFiscale rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
-                  rdfs:domain cpv:PersonaFisica ;
+                  rdfs:domain cpv:Person ;
                   rdfs:range xsd:string .
 
 
 ###  https://w3id.org/italia/onto/CPV/dateOfBirth
 cpv:dateOfBirth rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
-                rdfs:domain cpv:PersonaFisica ;
+                rdfs:domain cpv:Person ;
                 rdfs:range xsd:dateTime .
 
 
 ###  https://w3id.org/italia/onto/CPV/familyName
 cpv:familyName rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
-               rdfs:domain cpv:PersonaFisica ;
+               rdfs:domain cpv:Person ;
                rdfs:range xsd:string .
 
 
 ###  https://w3id.org/italia/onto/CPV/givenName
 cpv:givenName rdf:type owl:DatatypeProperty ;
-              rdfs:domain cpv:PersonaFisica ;
+              rdfs:domain cpv:Person ;
               rdfs:range xsd:string .
 
 
@@ -403,332 +435,399 @@ cpv:givenName rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://w3id.org/italia/onto/ACO/AmministrazionePubblica
-aco:AmministrazionePubblica rdf:type owl:Class ;
-                            owl:equivalentClass cov:PublicOrganization ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty [ owl:inverseOf aco:attoEmessoDa
-                                                                 ] ;
-                                                  owl:someValuesFrom owl:Thing
-                                                ] ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty [ owl:inverseOf aco:depositatoPresso
-                                                                 ] ;
-                                                  owl:someValuesFrom owl:Thing
-                                                ] ;
-                            rdfs:comment "Ente che svolge istituzionalmente una funzione amministrativa disciplinata da norme di diritto pubblico e da atti autoritativi e caratterizzata dalla formazione e dalla manifestazione della volontà della pubblica amministrazione o dal suo svolgersi per mezzo di poteri autoritativi o certificativi.  "@it ;
-                            rdfs:label "Amministrazione pubblica"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/AttoAmministrativo
-aco:AttoAmministrativo rdf:type owl:Class ;
+###  https://w3id.org/italia/onto/ACO/AdministrativeDeed
+aco:AdministrativeDeed rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Restriction ;
-                                             owl:onProperty aco:attoEmessoDa ;
+                                             owl:onProperty aco:deedIssuedBy ;
                                              owl:someValuesFrom owl:Thing
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty aco:attoRegistratoIn ;
+                                             owl:onProperty aco:deedRegisteredIn ;
                                              owl:someValuesFrom owl:Thing
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty aco:depositatoPresso ;
+                                             owl:onProperty aco:depositedIn ;
                                              owl:someValuesFrom owl:Thing
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty aco:annoAtto ;
+                                             owl:onProperty aco:deedNumber ;
                                              owl:someValuesFrom rdfs:Literal
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty aco:numeroAtto ;
+                                             owl:onProperty aco:deedTitle ;
                                              owl:someValuesFrom rdfs:Literal
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty aco:titoloAtto ;
+                                             owl:onProperty aco:deedYear ;
                                              owl:someValuesFrom rdfs:Literal
                                            ] ;
                        rdfs:comment "Atto giuridico posto in essere da un'autorità amministrativa nell'esercizio di una sua funzione amministrativa."@it ;
-                       rdfs:label "Atto amministrativo"@it .
+                       rdfs:label "Administrative deed"@en ,
+                                  "Atto amministrativo"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/AttoDelloStatoCivile
-aco:AttoDelloStatoCivile rdf:type owl:Class ;
-                         owl:equivalentClass [ rdf:type owl:Class ;
-                                               owl:unionOf ( aco:AttoDiCittadinanza
-                                                             aco:AttoDiDivorzio
-                                                             aco:AttoDiMatrimonio
-                                                             aco:AttoDiMorte
-                                                             aco:AttoDiNascita
-                                                             aco:AttoDiSeparazioneLegale
-                                                             aco:AttoDiUnioneCivile
-                                                           )
-                                             ] ;
-                         rdfs:subClassOf aco:AttoAmministrativo ;
-                         rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sullo stato civile di una persona."@it ;
-                         rdfs:label "Atto dello stato civile"@it .
+###  https://w3id.org/italia/onto/ACO/Applicant
+aco:Applicant rdf:type owl:Class ;
+              owl:disjointWith aco:ApplicationSubject ;
+              rdfs:comment "Soggetto che dà impulso al procedimento amministrativo (l. n. 241/1990)."@it ;
+              rdfs:label "Applicant"@en ,
+                         "Richiedente"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/AttoDiCittadinanza
-aco:AttoDiCittadinanza rdf:type owl:Class ;
-                       rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sulla cittadinanza di una persona."@it ;
-                       rdfs:label "Atto di cittadinanza"@it .
+###  https://w3id.org/italia/onto/ACO/ApplicationSubject
+aco:ApplicationSubject rdf:type owl:Class ;
+                       rdfs:comment "Soggetto interessato all’emissione di un determinato provvedimento da parte della Pubblica Amministrazione competente (art. 8, legge n. 241/1990)."@it ;
+                       rdfs:label "Application subject"@en ,
+                                  "Interessato"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/AttoDiDivorzio
-aco:AttoDiDivorzio rdf:type owl:Class ;
-                   rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul divorzio di una persona."@it ;
-                   rdfs:label "Atto di divorzio"@it .
+###  https://w3id.org/italia/onto/ACO/BirthCertificate
+aco:BirthCertificate rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty aco:attestsBirth ;
+                                           owl:someValuesFrom owl:Thing
+                                         ] ;
+                     rdfs:subClassOf aco:MaritalStatusCertificate ;
+                     rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto all’atto di nascita (artt. 5 e 100, DPR 396/00 ; Artt.12 e 33 del DPR n.223/1989). "@it ;
+                     rdfs:label "Birth certificate"@en ,
+                                """Certificato 
+anagrafico di 
+nascita"""@it .
 
 
-###  https://w3id.org/italia/onto/ACO/AttoDiMatrimonio
-aco:AttoDiMatrimonio rdf:type owl:Class ;
-                     rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul matrimonio di una persona."@it ;
-                     rdfs:label "Atto di matrimonio"@it .
+###  https://w3id.org/italia/onto/ACO/BirthDeed
+aco:BirthDeed rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf aco:referencesBirthDeed
+                                                   ] ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] .
 
 
-###  https://w3id.org/italia/onto/ACO/AttoDiMorte
-aco:AttoDiMorte rdf:type owl:Class ;
-                rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul decesso di una persona."@it ;
-                rdfs:label "Atto di morte"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/AttoDiNascita
-aco:AttoDiNascita rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty [ owl:inverseOf aco:faRiferimentoAdAttoDiNascita
-                                                       ] ;
-                                        owl:someValuesFrom owl:Thing
-                                      ] .
-
-
-###  https://w3id.org/italia/onto/ACO/AttoDiSeparazioneLegale
-aco:AttoDiSeparazioneLegale rdf:type owl:Class ;
-                            rdfs:comment "Sentenza di separazione giudiziale o decreto di omologazione dell’accordo di separazione (artt. 709 bis e 711 c.p.c.) che l’ufficiale di stato civile annota sull’atto di matrimonio "@it ;
-                            rdfs:label "Atto di separazione legale"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/AttoDiUnioneCivile
-aco:AttoDiUnioneCivile rdf:type owl:Class ;
-                       rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sull'unione civile di una persona."@it ;
-                       rdfs:label "Atto di unione civile"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/Certificato
-aco:Certificato rdf:type owl:Class ;
+###  https://w3id.org/italia/onto/ACO/Certificate
+aco:Certificate rdf:type owl:Class ;
                 owl:equivalentClass [ rdf:type owl:Restriction ;
-                                      owl:onProperty aco:certifica ;
+                                      owl:onProperty aco:certificateIssuedBy ;
                                       owl:someValuesFrom owl:Thing
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty aco:certificatoEmessoDa ;
+                                      owl:onProperty aco:certificateIssuedForApplication ;
                                       owl:someValuesFrom owl:Thing
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty aco:certificatoSuRichiesta ;
+                                      owl:onProperty aco:certifies ;
                                       owl:someValuesFrom owl:Thing
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty aco:fornisceEvidenza ;
+                                      owl:onProperty aco:providesEvidence ;
                                       owl:someValuesFrom owl:Thing
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty aco:dataDiEmissione ;
+                                      owl:onProperty aco:issueDate ;
                                       owl:someValuesFrom rdfs:Literal
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty aco:tipologiaUtilizzo ;
+                                      owl:onProperty aco:typeOfUse ;
                                       owl:someValuesFrom rdfs:Literal
                                     ] ;
                 rdfs:comment "Dichiarazione scritta rilasciata da ente o persona qualificata cui la legge affida un potere certificativo idoneo ad attestare l'effettiva esistenza e verità di un fatto, di una situazione o di una condizione."@it ;
-                rdfs:label "Certificato"@it .
+                rdfs:label "Certificate"@en ,
+                           "Certificato"@it .
 
 
-###  https://w3id.org/italia/onto/ACO/CertificatoAnagrafico
-aco:CertificatoAnagrafico rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Class ;
-                                                owl:unionOf ( aco:CertificatoAnagraficoDiNascita
-                                                              aco:CertificatoAnagraficoDiResidenza
-                                                              aco:CertificatoDiCittadinanza
-                                                              aco:CertificatoDiStatoDiFamiglia
-                                                            )
-                                              ] ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty aco:protocolloANPR ;
-                                                owl:someValuesFrom rdfs:Literal
-                                              ] ;
-                          rdfs:comment "Certificato rilasciato dal Ministero dell’Interno in cui si attesta quanto risulta in anagrafe."@it ;
-                          rdfs:label "Certificato anagrafico"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiNascita
-aco:CertificatoAnagraficoDiNascita rdf:type owl:Class ;
-                                   owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                         owl:onProperty aco:attestaNascita ;
-                                                         owl:someValuesFrom owl:Thing
-                                                       ] ;
-                                   rdfs:subClassOf aco:CertificatoDiStatoCivile ;
-                                   rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto all’atto di nascita (artt. 5 e 100, DPR 396/00 ; Artt.12 e 33 del DPR n.223/1989). "@it ;
-                                   rdfs:label "Certificato  anagrafico di  nascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoAnagraficoDiResidenza
-aco:CertificatoAnagraficoDiResidenza rdf:type owl:Class ;
-                                     owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                           owl:onProperty aco:certificaResidenza ;
-                                                           owl:someValuesFrom owl:Thing
-                                                         ] ;
-                                     rdfs:comment "Certificato rilasciato dal Ministero o dal Comune dell’Interno in cui si attesta quanto risulta in anagrafe rispetto alla residenza e ai relativi dati di una persona (art. 33 DPR 223/1989)."@it ;
-                                     rdfs:label "Certificato  anagrafico di  residenza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoDiCittadinanza
-aco:CertificatoDiCittadinanza rdf:type owl:Class ;
-                              rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto alla cittadinanza e ai relativi dati di una persona. "@it ;
-                              rdfs:label "Certificato di  cittadinanza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoDiStatoCivile
-aco:CertificatoDiStatoCivile rdf:type owl:Class ;
-                             rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato civile e ai relativi dati di una persona. "@it ;
-                             rdfs:label "Certificato di  stato civile"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoDiStatoDiFamiglia
-aco:CertificatoDiStatoDiFamiglia rdf:type owl:Class ;
-                                 rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato di famiglia e ai relativi dati di una persona. "@it ;
-                                 rdfs:label "Certificato di  stato di famiglia"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoEsenteDaDirittiDiSegreteria
-aco:CertificatoEsenteDaDirittiDiSegreteria rdf:type owl:Class ;
-                                           rdfs:subClassOf aco:Certificato ;
-                                           rdfs:comment "Certificato anagrafico rilasciato senza obbligo di versamento di un corrispettivo per l'attività svolta. "@it ;
-                                           rdfs:label "Certificato esente  da diritti di segreteria"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/CertificatoEsenteDaImpostaDiBollo
-aco:CertificatoEsenteDaImpostaDiBollo rdf:type owl:Class ;
-                                      rdfs:subClassOf aco:Certificato ;
-                                      rdfs:comment "Certificato anagrafico rilasciato senza obbligo di pagamento di una imposta di bollo."@it ;
-                                      rdfs:label "Certificato esente  da imposta di bollo"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/DirittiDiSegreteria
-aco:DirittiDiSegreteria rdf:type owl:Class ;
-                        rdfs:comment "Versamento effettuato quale corrispettivo per il servizio svolto dalla pubblica amministrazione "@it ;
-                        rdfs:label "Diritti di segreteria"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/Evidenza
-aco:Evidenza rdf:type owl:Class ;
-             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                   owl:onProperty [ owl:inverseOf aco:fornisceEvidenza
-                                                  ] ;
-                                   owl:someValuesFrom owl:Thing
-                                 ] ;
-             rdfs:comment "per Evidenza, detta anche Prova, si intende “ogni documento o dato, compresi testi o registrazioni sonore, visive o audiovisive, su qualsiasi supporto, richiesto da un’autorità competente per dimostrare la veridicità dei fatti o il rispetto degli obblighi procedurali di cui all’articolo 2, paragrafo 2, lettera b)"@it ;
-             rdfs:label "Evidenza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiNascita
-aco:EvidenzaDiCertificatoAnagraficoDiNascita rdf:type owl:Class ;
-                                             owl:disjointWith aco:EvidenzaDiCertificatoAnagraficoDiResidenza ;
-                                             rdfs:label "Evidenza di  certificato anagrafico  di nascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/EvidenzaDiCertificatoAnagraficoDiResidenza
-aco:EvidenzaDiCertificatoAnagraficoDiResidenza rdf:type owl:Class ;
-                                               rdfs:label "Evidenza di  certificato anagrafico  di residenza"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/ImpostaDiBollo
-aco:ImpostaDiBollo rdf:type owl:Class ;
-                   rdfs:comment "Imposta indiretta cui sono soggetti gli atti, i documenti e i registri indicati nella tariffa annessa al DPR 26 ottobre 1972, n. 642. "@it ;
-                   rdfs:label "Imposta di bollo"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/Interessato
-aco:Interessato rdf:type owl:Class ;
-                owl:disjointWith aco:Richiedente ;
-                rdfs:comment "Soggetto interessato all’emissione di un determinato provvedimento da parte della Pubblica Amministrazione competente (art. 8, legge n. 241/1990)."@it ;
-                rdfs:label "Interessato"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/IscrizioneAnagrafica
-aco:IscrizioneAnagrafica rdf:type owl:Class ;
-                         rdfs:subClassOf aco:AttoAmministrativo ;
-                         rdfs:comment "Atto amministrativo mediante il quale una persona fisica viene registrata nell’anagrafe della popolazione residente (Art. 7 DPR 223/1989). "@it ;
-                         rdfs:label "Iscrizione anagrafica"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/IscrizioneAnagraficaPerNascita
-aco:IscrizioneAnagraficaPerNascita rdf:type owl:Class ;
-                                   owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                         owl:onProperty aco:faRiferimentoAdAttoDiNascita ;
-                                                         owl:someValuesFrom owl:Thing
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty aco:luogoIscrizioneAnagraficaperNascita ;
-                                                         owl:someValuesFrom owl:Thing
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty [ owl:inverseOf aco:attestaNascita
-                                                                        ] ;
-                                                         owl:someValuesFrom owl:Thing
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty [ owl:inverseOf aco:haNascita
-                                                                        ] ;
-                                                         owl:someValuesFrom owl:Thing
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty aco:dataDiIscrizioneAnagraficaPerNascita ;
-                                                         owl:someValuesFrom rdfs:Literal
-                                                       ] ;
-                                   rdfs:subClassOf aco:IscrizioneAnagrafica ;
-                                   rdfs:comment "Atto amministrativo che determina la registrazione nell'anagrafe comunale dei nati da genitori iscritti nell’anagrafe della popolazione residente del comune, anche se la nascita è avvenuta in altro comune o all’estero purché siano pervenuti i relativi atti per la trascrizione. "@it ;
-                                   rdfs:label "Iscrizione  anagrafica  per nascita"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/Richiedente
-aco:Richiedente rdf:type owl:Class ;
-                rdfs:comment "Soggetto che dà impulso al procedimento amministrativo (l. n. 241/1990)."@it ;
-                rdfs:label "Richiedente"@it .
-
-
-###  https://w3id.org/italia/onto/ACO/RichiestaDiCertificato
-aco:RichiestaDiCertificato rdf:type owl:Class ;
+###  https://w3id.org/italia/onto/ACO/CertificateApplication
+aco:CertificateApplication rdf:type owl:Class ;
                            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                 owl:onProperty [ owl:inverseOf aco:rispettoARichiesta
+                                                 owl:onProperty [ owl:inverseOf aco:roleRelativeToApplication
                                                                 ] ;
                                                  owl:someValuesFrom owl:Thing
                                                ] ,
                                                [ rdf:type owl:Restriction ;
-                                                 owl:onProperty aco:esito ;
+                                                 owl:onProperty aco:outcome ;
                                                  owl:someValuesFrom rdfs:Literal
                                                ] ;
                            rdfs:comment "Istanza volta a ottenere un certificato per se stesso ovvero per gli altri componenti inclusi nello stato di famiglia. "@it ;
-                           rdfs:label "Richiesta di  certificato"@it .
+                           rdfs:label "Certificate application"@en ,
+                                      """Richiesta di 
+certificato"""@it .
 
 
-###  https://w3id.org/italia/onto/ACO/RuoloRispettoARichiesta
-aco:RuoloRispettoARichiesta rdf:type owl:Class ;
-                            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                  owl:onProperty aco:rispettoARichiesta ;
-                                                  owl:someValuesFrom owl:Thing
+###  https://w3id.org/italia/onto/ACO/CertificateExemptFromSecretarialFees
+aco:CertificateExemptFromSecretarialFees rdf:type owl:Class ;
+                                         rdfs:subClassOf aco:Certificate ;
+                                         rdfs:comment "Certificato anagrafico rilasciato senza obbligo di versamento di un corrispettivo per l'attività svolta. "@it ;
+                                         rdfs:label "Certificate exempt from secretarial fees"@en ,
+                                                    """Certificato esente 
+da diritti di segreteria"""@it .
+
+
+###  https://w3id.org/italia/onto/ACO/CertificateExemptFromStampDuty
+aco:CertificateExemptFromStampDuty rdf:type owl:Class ;
+                                   rdfs:subClassOf aco:Certificate ;
+                                   rdfs:comment "Certificato anagrafico rilasciato senza obbligo di pagamento di una imposta di bollo."@it ;
+                                   rdfs:label "Certificate exempt from stamp duty"@en ,
+                                              """Certificato esente 
+da imposta di bollo"""@it .
+
+
+###  https://w3id.org/italia/onto/ACO/CertificateOfFamilyStatus
+aco:CertificateOfFamilyStatus rdf:type owl:Class ;
+                              rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato di famiglia e ai relativi dati di una persona. "@it ;
+                              rdfs:label "Certificate of family status"@en ,
+                                         """Certificato di 
+stato di famiglia"""@it .
+
+
+###  https://w3id.org/italia/onto/ACO/CitizenshipCertificate
+aco:CitizenshipCertificate rdf:type owl:Class ;
+                           rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto alla cittadinanza e ai relativi dati di una persona. "@it ;
+                           rdfs:label """Certificato di 
+cittadinanza"""@it ,
+                                      "Citizenship certificate"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/CitizenshipDeed
+aco:CitizenshipDeed rdf:type owl:Class ;
+                    rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sulla cittadinanza di una persona."@it ;
+                    rdfs:label "Atto di cittadinanza"@it ,
+                               "Citizenship deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/CivilUnionDeed
+aco:CivilUnionDeed rdf:type owl:Class ;
+                   rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sull'unione civile di una persona."@it ;
+                   rdfs:label "Atto di unione civile"@it ,
+                              "Civil union deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/DeathDeed
+aco:DeathDeed rdf:type owl:Class ;
+              rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul decesso di una persona."@it ;
+              rdfs:label "Atto di morte"@it ,
+                         "Death deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/DivorceDeed
+aco:DivorceDeed rdf:type owl:Class ;
+                rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul divorzio di una persona."@it ;
+                rdfs:label "Atto di divorzio"@it ,
+                           "Divorce deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/Evidence
+aco:Evidence rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty [ owl:inverseOf aco:providesEvidence
+                                                  ] ;
+                                   owl:someValuesFrom owl:Thing
+                                 ] ;
+             rdfs:comment "per Evidenza, detta anche Prova, si intende “ogni documento o dato, compresi testi o registrazioni sonore, visive o audiovisive, su qualsiasi supporto, richiesto da un’autorità competente per dimostrare la veridicità dei fatti o il rispetto degli obblighi procedurali di cui all’articolo 2, paragrafo 2, lettera b)"@it ;
+             rdfs:label "Evidence"@en ,
+                        "Evidenza"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate
+aco:EvidenceOfBirthCertificate rdf:type owl:Class ;
+                               owl:disjointWith aco:EvidenceOfResidenceCertificate ;
+                               rdfs:label "Evidence of birth certificate"@en ,
+                                          """Evidenza di 
+certificato anagrafico 
+di nascita"""@it .
+
+
+###  https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate
+aco:EvidenceOfResidenceCertificate rdf:type owl:Class ;
+                                   rdfs:label "Evidence of residence certificate"@en ,
+                                              """Evidenza di 
+certificato anagrafico 
+di residenza"""@it .
+
+
+###  https://w3id.org/italia/onto/ACO/LegalSeparationDeed
+aco:LegalSeparationDeed rdf:type owl:Class ;
+                        rdfs:comment "Sentenza di separazione giudiziale o decreto di omologazione dell’accordo di separazione (artt. 709 bis e 711 c.p.c.) che l’ufficiale di stato civile annota sull’atto di matrimonio "@it ;
+                        rdfs:label "Atto di separazione legale"@it ,
+                                   "Legal separation deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/MaritalStatusCertificate
+aco:MaritalStatusCertificate rdf:type owl:Class ;
+                             rdfs:comment "Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato civile e ai relativi dati di una persona. "@it ;
+                             rdfs:label """Certificato di 
+stato civile"""@it ,
+                                        "Marital status certificate"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/MaritalStatusDeed
+aco:MaritalStatusDeed rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:unionOf ( aco:BirthDeed
+                                                          aco:CitizenshipDeed
+                                                          aco:CivilUnionDeed
+                                                          aco:DeathDeed
+                                                          aco:DivorceDeed
+                                                          aco:LegalSeparationDeed
+                                                          aco:MarriageDeed
+                                                        )
+                                          ] ;
+                      rdfs:subClassOf aco:AdministrativeDeed ;
+                      rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sullo stato civile di una persona."@it ;
+                      rdfs:label "Atto dello stato civile"@it ,
+                                 "Marital status deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/MarriageDeed
+aco:MarriageDeed rdf:type owl:Class ;
+                 rdfs:comment "Atto rilasciato dall'ufficio di stato civile contenente le informazioni sul matrimonio di una persona."@it ;
+                 rdfs:label "Atto di matrimonio"@it ,
+                            "Marriage deed"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/PublicAdministration
+aco:PublicAdministration rdf:type owl:Class ;
+                         owl:equivalentClass cov:PublicOrganization ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty [ owl:inverseOf aco:deedIssuedBy
+                                                              ] ;
+                                               owl:someValuesFrom owl:Thing
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty [ owl:inverseOf aco:depositedIn
+                                                              ] ;
+                                               owl:someValuesFrom owl:Thing
+                                             ] ;
+                         rdfs:comment """Ente che svolge istituzionalmente una funzione amministrativa disciplinata da norme di diritto pubblico e da atti autoritativi e caratterizzata dalla formazione e dalla manifestazione della volontà della pubblica amministrazione o dal suo svolgersi per mezzo di poteri autoritativi o certificativi. 
+"""@it ;
+                         rdfs:label "Amministrazione pubblica"@it ,
+                                    "Public administration"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/RegistrationCertificate
+aco:RegistrationCertificate rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Class ;
+                                                  owl:unionOf ( aco:BirthCertificate
+                                                                aco:CertificateOfFamilyStatus
+                                                                aco:CitizenshipCertificate
+                                                                aco:ResidenceCertificate
+                                                              )
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:onProperty [ owl:inverseOf aco:ricopreRuolo
-                                                                 ] ;
-                                                  owl:someValuesFrom owl:Thing
+                                                  owl:onProperty aco:ANPRProtocol ;
+                                                  owl:someValuesFrom rdfs:Literal
                                                 ] ;
-                            rdfs:comment "Funzione ricoperta da colui che richiede il certificato anagrafico: diretto interessato o semplice richiedente (delegato)."@it ;
-                            rdfs:label "Ruolo rispetto  a richiesta"@it .
+                            rdfs:comment "Certificato rilasciato dal Ministero dell’Interno in cui si attesta quanto risulta in anagrafe."@it ;
+                            rdfs:label "Certificato anagrafico"@it ,
+                                       "Registration certificate"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/RegistryEntry
+aco:RegistryEntry rdf:type owl:Class ;
+                  rdfs:subClassOf aco:AdministrativeDeed ;
+                  rdfs:comment "Atto amministrativo mediante il quale una persona fisica viene registrata nell’anagrafe della popolazione residente (Art. 7 DPR 223/1989). "@it ;
+                  rdfs:label "Iscrizione anagrafica"@it ,
+                             "Registry entry"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/RegistryEntryForBirth
+aco:RegistryEntryForBirth rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty aco:placeOfRegistryEntryForBirth ;
+                                                owl:someValuesFrom owl:Thing
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty aco:referencesBirthDeed ;
+                                                owl:someValuesFrom owl:Thing
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty [ owl:inverseOf aco:attestsBirth
+                                                               ] ;
+                                                owl:someValuesFrom owl:Thing
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty [ owl:inverseOf aco:hasBirth
+                                                               ] ;
+                                                owl:someValuesFrom owl:Thing
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty aco:dateOfRegistryEntryForBirth ;
+                                                owl:someValuesFrom rdfs:Literal
+                                              ] ;
+                          rdfs:subClassOf aco:RegistryEntry ;
+                          rdfs:comment "Atto amministrativo che determina la registrazione nell'anagrafe comunale dei nati da genitori iscritti nell’anagrafe della popolazione residente del comune, anche se la nascita è avvenuta in altro comune o all’estero purché siano pervenuti i relativi atti per la trascrizione. "@it ;
+                          rdfs:label """Iscrizione 
+anagrafica 
+per nascita"""@it ,
+                                     "Registry entry for birth"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/Residence
+aco:Residence rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty aco:residenceInAddress ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty aco:residenceInCity ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf aco:hasResidence
+                                                   ] ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ;
+              rdfs:comment "Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe. "@it ;
+              rdfs:label "Residence"@en ,
+                         "Residenza"@it .
+
+
+###  https://w3id.org/italia/onto/ACO/ResidenceCertificate
+aco:ResidenceCertificate rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty aco:certifiesResidence ;
+                                               owl:someValuesFrom owl:Thing
+                                             ] ;
+                         rdfs:comment "Certificato rilasciato dal Ministero o dal Comune dell’Interno in cui si attesta quanto risulta in anagrafe rispetto alla residenza e ai relativi dati di una persona (art. 33 DPR 223/1989)."@it ;
+                         rdfs:label """Certificato 
+anagrafico di 
+residenza"""@it ,
+                                    "Residence certificate"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/RoleInApplication
+aco:RoleInApplication rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty aco:roleRelativeToApplication ;
+                                            owl:someValuesFrom owl:Thing
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty [ owl:inverseOf aco:playsRole
+                                                           ] ;
+                                            owl:someValuesFrom owl:Thing
+                                          ] ;
+                      rdfs:comment "Funzione ricoperta da colui che richiede il certificato anagrafico: diretto interessato o semplice richiedente (delegato)."@it ;
+                      rdfs:label "Role in application"@en ,
+                                 """Ruolo rispetto 
+a richiesta"""@it .
+
+
+###  https://w3id.org/italia/onto/ACO/SecretarialFees
+aco:SecretarialFees rdf:type owl:Class ;
+                    rdfs:comment "Versamento effettuato quale corrispettivo per il servizio svolto dalla pubblica amministrazione "@it ;
+                    rdfs:label "Diritti di segreteria"@it ,
+                               "Secretarial fees"@en .
+
+
+###  https://w3id.org/italia/onto/ACO/StampDuty
+aco:StampDuty rdf:type owl:Class ;
+              rdfs:comment "Imposta indiretta cui sono soggetti gli atti, i documenti e i registri indicati nella tariffa annessa al DPR 26 ottobre 1972, n. 642. "@it ;
+              rdfs:label "Imposta di bollo"@it ,
+                         "Stamp duty"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/Address
 clv:Address rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty [ owl:inverseOf aco:residenzaInIndirizzo
+                                  owl:onProperty [ owl:inverseOf aco:residenceInAddress
                                                  ] ;
                                   owl:someValuesFrom owl:Thing
                                 ] .
@@ -737,7 +836,7 @@ clv:Address rdf:type owl:Class ;
 ###  https://w3id.org/italia/onto/CLV/AdminUnitComponent
 clv:AdminUnitComponent rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Restriction ;
-                                             owl:onProperty [ owl:inverseOf aco:luogoIscrizioneAnagraficaperNascita
+                                             owl:onProperty [ owl:inverseOf aco:placeOfRegistryEntryForBirth
                                                             ] ;
                                              owl:someValuesFrom owl:Thing
                                            ] .
@@ -754,144 +853,116 @@ cov:PublicOrganization rdf:type owl:Class ;
 
 ###  https://w3id.org/italia/onto/CPV/Alive
 cpv:Alive rdf:type owl:Class ;
-          owl:equivalentClass cpv:PersonaInVita ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( rpo:PersonWithoutRegisteredResidence
+                                              rpo:RegisteredResidentPerson
+                                            )
+                              ] ;
+          rdfs:subClassOf cpv:Person ;
           rdfs:label "Persona in vita"@it .
 
 
-###  https://w3id.org/italia/onto/CPV/PersonaFisica
-cpv:PersonaFisica rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty aco:haNascita ;
-                                        owl:someValuesFrom owl:Thing
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cpv:codiceFiscale ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cpv:dateOfBirth ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cpv:familyName ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cpv:givenName ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ;
-                  rdfs:comment "Individuo nato vivo che può essere in vita o non in vita."@it ;
-                  rdfs:label "Persona fisica"@it .
+###  https://w3id.org/italia/onto/CPV/Person
+cpv:Person rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty aco:hasBirth ;
+                                 owl:someValuesFrom owl:Thing
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cpv:codiceFiscale ;
+                                 owl:someValuesFrom rdfs:Literal
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cpv:dateOfBirth ;
+                                 owl:someValuesFrom rdfs:Literal
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cpv:familyName ;
+                                 owl:someValuesFrom rdfs:Literal
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cpv:givenName ;
+                                 owl:someValuesFrom rdfs:Literal
+                               ] .
 
 
-###  https://w3id.org/italia/onto/CPV/PersonaInVita
-cpv:PersonaInVita rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Class ;
-                                        owl:unionOf ( pro:PersonaAnagraficamenteNonResidente
-                                                      pro:PersonaAnagraficamenteResidente
-                                                    )
-                                      ] ;
-                  rdfs:subClassOf cpv:PersonaFisica ;
-                  rdfs:comment "Individuo nato vivo e in vita a cui si associano le seguenti caratteristiche fondamentali: sesso alla nascita, data e luogo di nascita."@it ;
-                  rdfs:label "Persona in vita"@it .
+###  https://w3id.org/italia/onto/RPO/PersonWithoutRegisteredResidence
+rpo:PersonWithoutRegisteredResidence rdf:type owl:Class ;
+                                     owl:disjointWith rpo:RegisteredResidentPerson ;
+                                     rdfs:comment "Persona fisica non registrata nell’anagrafe della popolazione residente. "@it ;
+                                     rdfs:label """Persona 
+anagraficamente 
+non residente"""@it .
 
 
-###  https://w3id.org/italia/onto/CPV/ResidenceInTime
-cpv:ResidenceInTime rdf:type owl:Class ;
-                    owl:equivalentClass cpv:Residenza .
-
-
-###  https://w3id.org/italia/onto/CPV/Residenza
-cpv:Residenza rdf:type owl:Class ;
-              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty aco:residenzaInComune ;
-                                    owl:someValuesFrom owl:Thing
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty aco:residenzaInIndirizzo ;
-                                    owl:someValuesFrom owl:Thing
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty [ owl:inverseOf aco:haResidenza
-                                                   ] ;
-                                    owl:someValuesFrom owl:Thing
-                                  ] ;
-              rdfs:comment "Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe. "@it ;
-              rdfs:label "Residenza"@it .
-
-
-###  https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteNonResidente
-pro:PersonaAnagraficamenteNonResidente rdf:type owl:Class ;
-                                       owl:disjointWith pro:PersonaAnagraficamenteResidente ;
-                                       rdfs:comment "Persona fisica non registrata nell’anagrafe della popolazione residente. "@it ;
-                                       rdfs:label "Persona  anagraficamente  non residente"@it .
-
-
-###  https://w3id.org/italia/onto/PRO/PersonaAnagraficamenteResidente
-pro:PersonaAnagraficamenteResidente rdf:type owl:Class ;
-                                    owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                          owl:onProperty aco:haResidenza ;
-                                                          owl:someValuesFrom owl:Thing
-                                                        ] ;
-                                    rdfs:comment "Persona fisica avente dimora abituale in un determinato Comune come risultante nell'anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). "@it ;
-                                    rdfs:label "Persona  anagraficamente  residente"@it .
+###  https://w3id.org/italia/onto/RPO/RegisteredResidentPerson
+rpo:RegisteredResidentPerson rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                   owl:onProperty aco:hasResidence ;
+                                                   owl:someValuesFrom owl:Thing
+                                                 ] ;
+                             rdfs:comment "Persona fisica avente dimora abituale in un determinato Comune come risultante nell'anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). "@it ;
+                             rdfs:label """Persona 
+anagraficamente 
+residente"""@it .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://w3id.org/italia/onto/ACO/AttoDiNascita
-aco:AttoDiNascita rdf:type owl:NamedIndividual ,
-                           aco:EvidenzaDiCertificatoAnagraficoDiNascita .
+###  https://w3id.org/italia/onto/ACO/BirthDeed
+aco:BirthDeed rdf:type owl:NamedIndividual ,
+                       aco:EvidenceOfBirthCertificate .
 
 
 ###  https://w3id.org/italia/onto/CLV/Address
 clv:Address rdf:type owl:NamedIndividual ,
-                     aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                     aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CLV/AdminUnitComponent
 clv:AdminUnitComponent rdf:type owl:NamedIndividual ,
-                                aco:EvidenzaDiCertificatoAnagraficoDiNascita ,
-                                aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                                aco:EvidenceOfBirthCertificate ,
+                                aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CLV/City
 clv:City rdf:type owl:NamedIndividual ,
-                  aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                  aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/codiceFiscale
 cpv:codiceFiscale rdf:type owl:NamedIndividual ,
-                           aco:EvidenzaDiCertificatoAnagraficoDiNascita ,
-                           aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                           aco:EvidenceOfBirthCertificate ,
+                           aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/dateOfBirth
 cpv:dateOfBirth rdf:type owl:NamedIndividual ,
-                         aco:EvidenzaDiCertificatoAnagraficoDiNascita ,
-                         aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                         aco:EvidenceOfBirthCertificate ,
+                         aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/familyName
 cpv:familyName rdf:type owl:NamedIndividual ,
-                        aco:EvidenzaDiCertificatoAnagraficoDiNascita ,
-                        aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                        aco:EvidenceOfBirthCertificate ,
+                        aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/givenName
 cpv:givenName rdf:type owl:NamedIndividual ,
-                       aco:EvidenzaDiCertificatoAnagraficoDiNascita ,
-                       aco:EvidenzaDiCertificatoAnagraficoDiResidenza .
+                       aco:EvidenceOfBirthCertificate ,
+                       aco:EvidenceOfResidenceCertificate .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-aco:AttoDiNascita rdfs:label "Atto di nascita"@it ;
-                  rdfs:comment "Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l'anno, il mese, il giorno e l'ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00."@it .
+aco:BirthDeed rdfs:label "Atto di nascita"@it ;
+              rdfs:comment "Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l'anno, il mese, il giorno e l'ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00."@it ;
+              rdfs:label "Birth deed"@en .
 
 
 clv:Address rdfs:label "Indirizzo"@it .
@@ -919,91 +990,91 @@ cpv:givenName rdfs:label "nome"@it .
 #    General axioms
 #################################################################
 
-[ owl:intersectionOf ( aco:Interessato
+[ owl:intersectionOf ( aco:Applicant
                        [ rdf:type owl:Restriction ;
-                         owl:onProperty aco:rispettoARichiesta ;
+                         owl:onProperty aco:roleRelativeToApplication ;
                          owl:someValuesFrom [ rdf:type owl:Class ;
-                                              owl:unionOf ( aco:CertificatoAnagraficoDiNascita
-                                                            aco:CertificatoAnagraficoDiResidenza
+                                              owl:unionOf ( aco:BirthCertificate
+                                                            aco:ResidenceCertificate
                                                           )
                                             ]
                        ]
                      ) ;
   rdf:type owl:Class ;
   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                    owl:onProperty [ owl:inverseOf aco:ricopreRuolo
-                                   ] ;
-                    owl:someValuesFrom pro:PersonaAnagraficamenteResidente
-                  ]
-] .
-
-
-[ owl:intersectionOf ( aco:Richiedente
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty aco:rispettoARichiesta ;
-                         owl:someValuesFrom [ rdf:type owl:Class ;
-                                              owl:unionOf ( aco:CertificatoAnagraficoDiNascita
-                                                            aco:CertificatoAnagraficoDiResidenza
-                                                          )
-                                            ]
-                       ]
-                     ) ;
-  rdf:type owl:Class ;
-  rdfs:subClassOf [ rdf:type owl:Restriction ;
-                    owl:onProperty [ owl:inverseOf aco:ricopreRuolo
+                    owl:onProperty [ owl:inverseOf aco:playsRole
                                    ] ;
                     owl:someValuesFrom [ rdf:type owl:Class ;
-                                         owl:unionOf ( aco:AmministrazionePubblica
-                                                       pro:PersonaAnagraficamenteResidente
+                                         owl:unionOf ( aco:PublicAdministration
+                                                       rpo:RegisteredResidentPerson
                                                      )
                                        ]
                   ]
 ] .
 
 
-[ rdf:type owl:Class ;
-  owl:unionOf ( aco:CertificatoAnagrafico
-                aco:CertificatoDiStatoCivile
-              ) ;
-  rdfs:subClassOf aco:Certificato
+[ owl:intersectionOf ( aco:ApplicationSubject
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty aco:roleRelativeToApplication ;
+                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( aco:BirthCertificate
+                                                            aco:ResidenceCertificate
+                                                          )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty [ owl:inverseOf aco:playsRole
+                                   ] ;
+                    owl:someValuesFrom rpo:RegisteredResidentPerson
+                  ]
 ] .
 
 
 [ rdf:type owl:Class ;
-  owl:unionOf ( aco:EvidenzaDiCertificatoAnagraficoDiNascita
-                aco:EvidenzaDiCertificatoAnagraficoDiResidenza
+  owl:unionOf ( aco:Applicant
+                aco:ApplicationSubject
               ) ;
-  rdfs:subClassOf aco:Evidenza
+  rdfs:subClassOf aco:RoleInApplication
 ] .
 
 
 [ rdf:type owl:Class ;
-  owl:unionOf ( aco:Interessato
-                aco:Richiedente
+  owl:unionOf ( aco:EvidenceOfBirthCertificate
+                aco:EvidenceOfResidenceCertificate
               ) ;
-  rdfs:subClassOf aco:RuoloRispettoARichiesta
+  rdfs:subClassOf aco:Evidence
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( aco:MaritalStatusCertificate
+                aco:RegistrationCertificate
+              ) ;
+  rdfs:subClassOf aco:Certificate
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aco:AttoDiCittadinanza
-                aco:AttoDiDivorzio
-                aco:AttoDiMatrimonio
-                aco:AttoDiMorte
-                aco:AttoDiNascita
-                aco:AttoDiSeparazioneLegale
-                aco:AttoDiUnioneCivile
+  owl:members ( aco:BirthCertificate
+                aco:CertificateOfFamilyStatus
+                aco:CitizenshipCertificate
+                aco:ResidenceCertificate
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aco:CertificatoAnagraficoDiNascita
-                aco:CertificatoAnagraficoDiResidenza
-                aco:CertificatoDiCittadinanza
-                aco:CertificatoDiStatoDiFamiglia
+  owl:members ( aco:BirthDeed
+                aco:CitizenshipDeed
+                aco:CivilUnionDeed
+                aco:DeathDeed
+                aco:DivorceDeed
+                aco:LegalSeparationDeed
+                aco:MarriageDeed
               )
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi
