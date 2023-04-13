@@ -28,8 +28,8 @@
                                      dct:issued "2022-12-15"^^xsd:date ;
                                      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
                                      dct:modified "2022-12-15"^^xsd:date ;
-                                      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
-                                     dct:rightsHolder <https://www.interno.gov.it/it> ;
+                                     dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+                                     dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
                                      dct:title "ACO_IT - Administrative Certification Ontology"@en ,
                                                "ACO_IT - Ontologia dei Certificati Anagrafici"@it ;
                                      rdfs:comment "Questa è l'ontologia dei certificati anagrafici."@it ,
@@ -38,7 +38,7 @@
                                      rdfs:label "Admministrative Certification Ontology"@en ,
                                                 "Ontologia dei Certificati Anagrafici"@it ;
                                      owl:versionInfo "Versione 1.0"@it ;
-                                     dcat:contactPoint " ---" ;
+                                     dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
                                      dcat:keyword "Anagrafe"@it ,
                                                   "Certificato"@it ,
                                                   "Residente"@it ;
