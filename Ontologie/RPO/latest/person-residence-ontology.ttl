@@ -39,8 +39,8 @@
                                      dct:issued "2022-12-31"^^xsd:date ;
                                      dct:language "http://publications.europa.eu/resource/authority/language/ITA"^^xsd:anyURI ;
                                      dct:modified "2022-12-31"^^xsd:date ;
-                                     dct:publisher <https://w3id.org/italia/data/public-organization/PCM> ;
-                                     dct:rightsHolder <https://www.interno.gov.it/it> ;
+                                     dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+                                     dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
                                      dct:title "RPO_IT - Ontologia della Popolazione Registrata in Anagrafe."@it ,
                                                "RPO_IT - Registered Person Ontology."@en ;
                                      rdfs:comment "Questa è l'ontologia della Popolazione Registrata in Anagrafe."@it ,
@@ -49,7 +49,7 @@
                                      rdfs:label "Ontologia della popolazione residente anagrafica."@it ,
                                                 "Registered Person Ontology"@en ;
                                      owl:versionInfo "Versione 1.0"@it ;
-                                     dcat:contactPoint "https://w3id.org/italia/data/resource/ContactPoint/voc_AgID" ;
+                                     dcat:contactPoint "https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC" ;
                                      dcat:keyword "Anagrafe"@it ,
                                                   "Residente"@it ;
                                      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
