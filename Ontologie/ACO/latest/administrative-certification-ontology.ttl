@@ -14,6 +14,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @base <https://w3id.org/italia/onto/ACO/> .
 
 <https://w3id.org/italia/onto/ACO/> rdf:type owl:Ontology ;
@@ -58,6 +60,55 @@
                                      admsapit:status "published" ;
                                      admsapit:target "Pubbliche Amministrazioni" ;
                                      admsapit:type admsapit:DomainOntology .
+									 
+									 
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+dct:format rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+dcat:downloadURL rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/controlledVocabulary
+l0:controlledVocabulary rdf:type owl:AnnotationProperty .
+									 
 
 #################################################################
 #    Datatypes
@@ -910,6 +961,81 @@ residente"""@it .
 #################################################################
 #    Individuals
 #################################################################
+
+
+###  https://w3id.org/italia/data/public-organization/ISTAT
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type owl:NamedIndividual ,
+                                                                           <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                           foaf:Agent ;
+                                                                  dct:identifier "ISTAT" ;
+                                                                  foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+                                                                            "Italian National Institute of Statistics - ISTAT"@en .
+
+
+###  https://w3id.org/italia/data/public-organization/agid
+<https://w3id.org/italia/data/public-organization/agid> rdf:type owl:NamedIndividual ,
+                                                                          <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                          foaf:Agent ;
+                                                                 dct:identifier "agid" ;
+                                                                 foaf:name "Agenzia per l'Italia Digitale"@it ,
+                                                                           "Italian Digital Agency"@en .
+																		   
+###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ																		   
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type owl:NamedIndividual ,
+                                                                <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                vcard:Kind ,
+                                                                vcard:Organization ;
+                                                       vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
+                                                       vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+###  https://w3id.org/italia/data/distribution/CPVAPIT-JSON-LD
+<https://w3id.org/italia/data/distribution/CPVAPIT-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                                     admsapit:SemanticAssetDistribution ;
+                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei certificati anagrafici"@it ,
+                                                                            "This is the distribution in JSON-LD of the administrative certifications"@en ;
+                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                            dct:title "Distribuzione JSON-LD ontologia ACO_IT"@it ,
+                                                                      "JSON-LD distribution of ACO_IT Ontology"@en ;
+                                                            ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
+                                                            ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.jsonld> .
+
+
+###  https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                        admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei certificati anagrafici"@it ,
+                                                                               "This is the distribution in RDF/turtle of the administrative certifications"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/Turtle ontologia ACO_IT "@it ,
+                                                                         "RDF/Turtle distribution of ACO_IT  Ontology"@en ;
+                                                               ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
+                                                               ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.ttl> .
+
+
+###  https://w3id.org/italia/data/distribution/CPVAPIT-RDF-XML
+<https://w3id.org/italia/data/distribution/CPVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                                     admsapit:SemanticAssetDistribution ;
+                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei certificati anagrafici"@it ,
+                                                                            "This is the distribution in RDF/XML of the administrative certifications"@en ;
+                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                            dct:title "Distribuzione RDF/XML ontologia ACO_IT "@it ,
+                                                                      "RDF/XML distribution of ACO_IT Ontology"@en ;
+                                                            ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
+                                                            ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.rdf> .
+
+
+
 
 ###  https://w3id.org/italia/onto/ACO/BirthDeed
 aco:BirthDeed rdf:type owl:NamedIndividual ,
