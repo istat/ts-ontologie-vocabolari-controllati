@@ -20,6 +20,7 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
 @prefix cv-mst: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/> .
 @prefix cv-prt: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/> .
 @prefix cv-ror: <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/> .

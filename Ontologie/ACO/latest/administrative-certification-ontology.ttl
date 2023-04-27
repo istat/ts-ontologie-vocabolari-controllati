@@ -16,6 +16,7 @@
 @prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
 @base <https://w3id.org/italia/onto/ACO/> .
 
 <https://w3id.org/italia/onto/ACO/> rdf:type owl:Ontology ;
