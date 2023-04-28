@@ -32,7 +32,7 @@
                                      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
                                      dct:modified "2022-12-15"^^xsd:date ;
                                      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
-                                     dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+                                     dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
                                      dct:title "ACO_IT - Administrative Certification Ontology"@en ,
                                                "ACO_IT - Ontologia dei Certificati Anagrafici"@it ;
                                      rdfs:comment "Questa è l'ontologia dei certificati anagrafici."@it ,
@@ -988,6 +988,15 @@ residente"""@it .
       dct:identifier "PCM-1RSIZZ" ;
       foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
 	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+	  
+##https://w3id.org/italia/data/public-organization/m_it
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "m_it" ;
+      foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
+	  "Ministry of the Interior - DAIT Central Directorate of Population Services"@en .
+	  
 
 ###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
 <https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type owl:NamedIndividual ,
@@ -1005,7 +1014,7 @@ residente"""@it .
                                                             dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
                                                             dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                             dct:title "Distribuzione JSON-LD ontologia ACO_IT"@it ,
-                                                                      "JSON-LD distribution of ACO_IT Ontology"@en ;
+                                                                      "JSON-LD distribution of ACO_IT Ontology"@en .
                                                             ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
                                                             ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.jsonld> .
 
@@ -1018,7 +1027,7 @@ residente"""@it .
                                                                dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia ACO_IT "@it ,
-                                                                         "RDF/Turtle distribution of ACO_IT  Ontology"@en ;
+                                                                         "RDF/Turtle distribution of ACO_IT  Ontology"@en .
                                                                ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
                                                                ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.ttl> .
 
@@ -1031,7 +1040,7 @@ residente"""@it .
                                                             dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
                                                             dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                             dct:title "Distribuzione RDF/XML ontologia ACO_IT "@it ,
-                                                                      "RDF/XML distribution of ACO_IT Ontology"@en ;
+                                                                      "RDF/XML distribution of ACO_IT Ontology"@en .
                                                             ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
                                                             ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.rdf> .
 
