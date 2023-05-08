@@ -60,7 +60,7 @@
                                      admsapit:hasKeyClass rpo:RegisteredResidentPerson ,
                                                           rpo:Residence ;
                                      admsapit:hasOntologyLanguage admsapit:OWL ;
-                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> ;
+                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE> ;
                                      admsapit:hasTask " ---" ;
                                      admsapit:last <https://w3id.org/italia/onto/RPO/https//w3id.org/italia/onto/RPO/1.0> ;
                                      admsapit:officialURI <https://w3id.org/italia/onto/RPO> ;
@@ -994,20 +994,9 @@ rpo:Residence rdf:type owl:Class ;
                                                        vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
                                                        vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
 
-###  https://w3id.org/italia/data/distribution/CPVAPIT-JSON-LD
-<https://w3id.org/italia/data/distribution/CPVAPIT-JSON-LD> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia della popolazione residente registrata in anagrafe"@it ,
-                                                                            "This is the distribution in JSON-LD of the ontology of the population registered in the registry office"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione JSON-LD ontologia RPO_IT"@it ,
-                                                                      "JSON-LD distribution of RPO_IT Ontology"@en .
-                                                            ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
-                                                            ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.jsonld> .
 
-###  https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE
-<https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+###  https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE> rdf:type owl:NamedIndividual ,
                                                                         admsapit:SemanticAssetDistribution ;
                                                                dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia della popolazione residente registrata in anagrafe"@it ,
                                                                                "This is the distribution in RDF/turtle of the ontology of the population registered in the registry office"@en ;
@@ -1015,21 +1004,8 @@ rpo:Residence rdf:type owl:Class ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia RPO_IT "@it ,
                                                                          "RDF/Turtle distribution of RPO_IT  Ontology"@en .
-                                                               ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
-                                                               ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.ttl> .
-
-###  https://w3id.org/italia/data/distribution/CPVAPIT-RDF-XML
-<https://w3id.org/italia/data/distribution/CPVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia della popolazione residente registrata in anagrafe"@it ,
-                                                                            "This is the distribution in RDF/XML of the ontology of the population registered in the registry office"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione RDF/XML ontologia RPO_IT "@it ,
-                                                                      "RDF/XML distribution of RPO_IT Ontology"@en .
-                                                            ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
-                                                            ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.rdf> .
-
+                                                               dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/RPO/latest> ;
+                                                               dcat:downloadURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/RPO/latest/person-residence-ontology.ttl> .
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1

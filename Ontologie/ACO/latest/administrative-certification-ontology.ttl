@@ -53,7 +53,7 @@
                                                           aco:Residence ,
                                                           rpo:RegisteredResidentPerson ;
                                      admsapit:hasOntologyLanguage admsapit:OWL ;
-                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> ;
+                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE> ;
                                      admsapit:hasTask " ---" ;
                                      admsapit:last <https://w3id.org/italia/onto/ACO/https//w3id.org/italia/onto/ACO/1.0> ;
                                      admsapit:officialURI <https://w3id.org/italia/onto/ACO> ;
@@ -1006,21 +1006,9 @@ residente"""@it .
                                                        vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
                                                        vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
 
-###  https://w3id.org/italia/data/distribution/CPVAPIT-JSON-LD
-<https://w3id.org/italia/data/distribution/CPVAPIT-JSON-LD> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei certificati anagrafici"@it ,
-                                                                            "This is the distribution in JSON-LD of the administrative certifications"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione JSON-LD ontologia ACO_IT"@it ,
-                                                                      "JSON-LD distribution of ACO_IT Ontology"@en .
-                                                            ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
-                                                            ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.jsonld> .
 
-
-###  https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE
-<https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+### https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE> rdf:type owl:NamedIndividual ,
                                                                         admsapit:SemanticAssetDistribution ;
                                                                dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei certificati anagrafici"@it ,
                                                                                "This is the distribution in RDF/turtle of the administrative certifications"@en ;
@@ -1028,23 +1016,8 @@ residente"""@it .
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia ACO_IT "@it ,
                                                                          "RDF/Turtle distribution of ACO_IT  Ontology"@en .
-                                                               ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
-                                                               ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.ttl> .
-
-
-###  https://w3id.org/italia/data/distribution/CPVAPIT-RDF-XML
-<https://w3id.org/italia/data/distribution/CPVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei certificati anagrafici"@it ,
-                                                                            "This is the distribution in RDF/XML of the administrative certifications"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione RDF/XML ontologia ACO_IT "@it ,
-                                                                      "RDF/XML distribution of ACO_IT Ontology"@en .
-                                                            ##dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CPV/latest> ;
-                                                            ##dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/CPV/latest/CPV-AP_IT.rdf> .
-
-
+                                                               dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/ACO/latest> ;
+                                                               dcat:downloadURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/ACO/latest/administrative-certification-ontology.ttl> .
 
 
 ###  https://w3id.org/italia/onto/ACO/BirthDeed
