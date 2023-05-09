@@ -1003,7 +1003,7 @@ rpo:Residence rdf:type owl:Class ;
                                                                dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia RPO_IT "@it ,
-                                                                         "RDF/Turtle distribution of RPO_IT  Ontology"@en .
+                                                                         "RDF/Turtle distribution of RPO_IT  Ontology"@en ;
                                                                dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/RPO/latest> ;
                                                                dcat:downloadURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/RPO/latest/person-residence-ontology.ttl> .
 
