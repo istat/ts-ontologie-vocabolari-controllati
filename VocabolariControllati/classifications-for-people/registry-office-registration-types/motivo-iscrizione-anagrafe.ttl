@@ -19,6 +19,7 @@
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 
@@ -185,6 +186,7 @@ foaf:Agent rdf:type owl:Class .
 					 "Vocabolario Controllato Motivi Iscrizione in Anagrafe"@it ;
 			owl:versionInfo "First version."@en ,
 						  "Prima versione."@it ;
+			admsapit:acronym "RORM" ;
 
 			skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1> ,
 							 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/10> ,
