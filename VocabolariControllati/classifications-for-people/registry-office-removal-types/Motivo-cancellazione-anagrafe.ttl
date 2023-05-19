@@ -178,7 +178,6 @@ foaf:Agent rdf:type owl:Class .
 			dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
 			dct:title "Registry Office Removal Motivations Controlled Vocabulary"@en ,
 					  "Vocabolario Controllato Motivi Cancellazione in Anagrafe"@it ;
-			admsapit:acronym "ROReM" ;
 			dct:type <http://purl.org/adms/assettype/CodeList> ;
 			xkos:numberOfLevels "1" ;
 			rdfs:comment "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ;
