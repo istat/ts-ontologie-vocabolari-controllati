@@ -19,6 +19,7 @@
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 [ rdf:type owl:Ontology
@@ -185,7 +186,8 @@ foaf:Agent rdf:type owl:Class .
 			rdfs:label "Registry Office Removal Motivations Controlled Vocabulary"@en ,
 					   "Vocabolario Controllato Motivi Cancellazione in Anagrafe"@it ;
 		   owl:versionInfo "First version."@en ,
-						   "Prima versione."@it ;           																					 
+						   "Prima versione."@it ;    
+           admsapit:acronym "ROReM" ;						   
 									 
 skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1> ,
 			<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/10> ,
