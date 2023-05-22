@@ -167,7 +167,8 @@ foaf:Agent rdf:type owl:Class .
                  rdf:type skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
 			dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
 			dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
-			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>; 
+			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                        <https://w3id.org/italia/data/public-organization/m_it> ;
 			dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di registrazione in anagrafe."@it ,
 							  "This is the Registry Office Registration Motivations controlled vocabulary."@en ;
 			dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types" ;
@@ -295,7 +296,8 @@ foaf:Agent rdf:type owl:Class .
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "8" ;
                                                                                                                 skos:prefLabel "Trasferimento di domicilio di un senza fissa dimora (da comune non subentrato o nato da genitori senza fissa dimora)"@it ;
-                                                                                                                <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+                                                                                                                <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" ;
+																												owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9
