@@ -19,6 +19,7 @@
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 
@@ -153,8 +154,8 @@ dcatapit:Agent rdf:type owl:Class .
 foaf:Agent rdf:type owl:Class .
 
 
-###  https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe
-<https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> rdf:type owl:Class .
+###  https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe
+<https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> rdf:type owl:Class .
 
 
 #################################################################
@@ -163,20 +164,18 @@ foaf:Agent rdf:type owl:Class .
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> 
-                 rdf:type owl:NamedIndividual ,
-				 skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+                 rdf:type skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
 			dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
 			dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
-			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
-					 <https://w3id.org/italia/data/public-organization/agid> ; 
+			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>; 
 			dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di registrazione in anagrafe."@it ,
 							  "This is the Registry Office Registration Motivations controlled vocabulary."@en ;
 			dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types" ;
 			dct:issued "2022-12-15"^^xsd:date ;
 			dct:modified "2022-12-15"^^xsd:date ;
 			dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-			dct:publisher <https://w3id.org/italia/data/public-organization/agid> ;
-			dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+			dct:publisher <https://schema.gov.it/lodview/data/public-organization/PCM-1RSIZZ> ;
+			dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
 			dct:title "Registry Office Registration Motivations Controlled Vocabulary"@en ,
 						"Vocabolario Controllato Motivi Iscrizione in Anagrafe"@it ;
 			dct:type <http://purl.org/adms/assettype/CodeList> ;
@@ -187,6 +186,7 @@ foaf:Agent rdf:type owl:Class .
 					 "Vocabolario Controllato Motivi Iscrizione in Anagrafe"@it ;
 			owl:versionInfo "First version."@en ,
 						  "Prima versione."@it ;
+			admsapit:acronym "RORM" ;
 
 			skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1> ,
 							 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/10> ,
@@ -199,21 +199,27 @@ foaf:Agent rdf:type owl:Class .
 							 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/8> ,
 							 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9> ;
 			<http://www.w3.org/ns/adms#representationTechnique> <http://purl.org/adms/representationtechnique/SKOS> ;
-			dcat:contactPoint <https://w3id.org/italia/data/contact-point/voc_AgID> ;
-			dcat:distribution <https://w3id.org/italia/data/distribution/PR_CSV> ,
-							<https://w3id.org/italia/data/distribution/PR_JSON_LD> ,
-							<https://w3id.org/italia/data/distribution/PR_RDF_Turtle> ,
-							<https://w3id.org/italia/data/distribution/PR_RDF_XML> ,
-							<https://w3id.org/italia/data/distribution/PR_XLSX> ;
+			dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
+			dcat:distribution <https://w3id.org/italia/data/distribution/RORM_RDF_Turtle>  ;
 			dcat:keyword "Motivo iscrizione anagrafe"@it ;
 			dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 			<https://w3id.org/italia/onto/NDC/keyConcept> "registry-office-registration-types" .
+
+### https://w3id.org/italia/data/distribution/RORM_RDF_Turtle
+<https://w3id.org/italia/data/distribution/RORM_RDF_Turtle> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato dei motivi di iscrizione anagrafica"@it ,
+                                                                               "This is the distribution in RDF/turtle of the controlled vocabolary of the registry office registration motivations"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/Turtle del Vocabolario Controllato Motivi Iscrizione in Anagrafe "@it ,
+                                                                         "RDF/Turtle distribution of Registry Office Registration Motivations Controlled Vocabulary"@en ;
+                                                               dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-people/registry-office-registration-types> ;
+                                                               dcat:downloadURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-people/registry-office-registration-types/motivo-iscrizione-anagrafe.ttl> .			
 			
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "1" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "1" ;
@@ -221,10 +227,20 @@ foaf:Agent rdf:type owl:Class .
                                                                                                                 <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
 
 
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/3
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/3> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
+                                                                                                                dct:identifier "3" ;
+                                                                                                                skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
+                                                                                                                skos:notation "3" ;
+                                                                                                                skos:prefLabel "Immigrazione (da comune non subentrato)"@it ;
+                                                                                                                <https://w3id.org/italia/onto/CLV/hasRankOrder> "1"  ;
+																									        	owl:deprecated "true"^^xsd:boolean.
+
+
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/2
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/2> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/2> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "2" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "2" ;
@@ -233,9 +249,8 @@ foaf:Agent rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/4
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/4> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/4> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "4" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "4" ;
@@ -244,9 +259,8 @@ foaf:Agent rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/5
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/5> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/5> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "5" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "5" ;
@@ -255,9 +269,8 @@ foaf:Agent rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/6
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/6> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/6> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "6" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "6" ;
@@ -266,9 +279,8 @@ foaf:Agent rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/7
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/7> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/7> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "7" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "7" ;
@@ -276,23 +288,38 @@ foaf:Agent rdf:type owl:Class .
                                                                                                                 <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
 
 
+###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/8
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/8> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
+                                                                                                                dct:identifier "8" ;
+                                                                                                                skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
+                                                                                                                skos:notation "8" ;
+                                                                                                                skos:prefLabel "Trasferimento di domicilio di un senza fissa dimora (da comune non subentrato o nato da genitori senza fissa dimora)"@it ;
+                                                                                                                <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+
+
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9> rdf:type owl:NamedIndividual ,
-                                                                                                                         skos:Concept ,
-                                                                                                                         <https://w3id.org/italia/onto/PRO/MotivoIscrizioneAnagrafe> ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9> rdf:type skos:Concept ,
+                                                                                                                         <https://w3id.org/italia/onto/RPO/MotivoIscrizioneAnagrafe> ;
                                                                                                                 dct:identifier "9" ;
                                                                                                                 skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types> ;
                                                                                                                 skos:notation "9" ;
                                                                                                                 skos:prefLabel "Altri motivi (descrizione da fornire a cura del comune)"@it ;
                                                                                                                 <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
 
-			<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type owl:NamedIndividual ,
-                                                                  dcatapit:Agent ,
+			<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type dcatapit:Agent ,
                                                                   foaf:Agent ;
                                                          dct:identifier "ISTAT" ;
                                                          foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
                                                                    "Italian National Institute of Statistics - ISTAT"@en .
 
+##https://w3id.org/italia/data/public-organization/m_it
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type  <http://dati.gov.it/onto/dcatapit#Agent> ,
+      foaf:Agent ;
+      dct:identifier "m_it" ;
+      foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
+      "Ministry of the Interior - Central Directorate of Population Services"@en .
 
 
-###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
+
+
