@@ -355,5 +355,10 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                          foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
                                                                    "Italian National Institute of Statistics - ISTAT"@en .
 
-
+##https://w3id.org/italia/data/public-organization/m_it
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type  <http://dati.gov.it/onto/dcatapit#Agent> ,
+      foaf:Agent ;
+      dct:identifier "m_it" ;
+      foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
+      "Ministry of the Interior - Central Directorate of Population Services"@en .
 
