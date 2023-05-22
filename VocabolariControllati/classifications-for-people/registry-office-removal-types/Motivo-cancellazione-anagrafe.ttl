@@ -205,6 +205,7 @@ skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classification
 <http://www.w3.org/ns/adms#representationTechnique> <http://purl.org/adms/representationtechnique/SKOS> ;
 dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
 dcat:distribution <https://w3id.org/italia/data/distribution/ROCM_RDF_Turtle> ;
+dcat:keyword "Motivo cancellazione dall anagrafe"@it ;
 dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 <https://w3id.org/italia/onto/NDC/keyConcept> "registry-office-removal-types" .
 
