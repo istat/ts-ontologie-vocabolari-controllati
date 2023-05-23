@@ -168,7 +168,8 @@ foaf:Agent rdf:type owl:Class .
 			 rdf:type skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
 			dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
 			dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
-			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>; 
+			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                        <https://w3id.org/italia/data/public-organization/m_it> ; 
 			dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ,                                                                                                                   
 							"This is the Registry Office Removal Motivations controlled vocabulary."@en ;
 			dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types" ;
@@ -258,7 +259,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 																									        skos:inScheme   <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
 																									        skos:notation   "4" ;
 																									        skos:prefLabel  "Trasferimento di domicilio (senza fissa dimora)"@it ;
-																									        <italia/onto/CLV/hasRankOrder>  "1" .   
+																									        <italia/onto/CLV/hasRankOrder>  "1" ;
+																											owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5
@@ -298,7 +300,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 																									        skos:inScheme   <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
 																									        skos:notation   "8" ;
 																									        skos:prefLabel  "Trasferimento di residenza (iscrizione AIRE)"@it ;
-																									        <italia/onto/CLV/hasRankOrder>  "1" . 
+																									        <italia/onto/CLV/hasRankOrder>  "1" ;
+																											owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9
@@ -317,7 +320,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                                                            skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
                                                                                                            skos:notation "10" ;
                                                                                                            skos:prefLabel "Doppia iscrizione"@it ;
-                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" ;
+																										   owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11
@@ -337,7 +341,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                                                            skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
                                                                                                            skos:notation "12" ;
                                                                                                            skos:prefLabel "Ripristino posizione precedente"@it ;
-                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" ;
+																										   owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13
