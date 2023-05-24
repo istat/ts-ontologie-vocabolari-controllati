@@ -401,15 +401,16 @@ foaf:name rdf:type owl:NamedIndividual ,
                                                                                                                 adms:Asset ;
                                                                                                        dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                                                                                        dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-                                                                                                       dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
-                                                                                                       dct:description "Questo è il vocabolario controllato sulle relazioni di parentela delle persone. Il vocabolario nella sua versione attuale è ricavato dalla documentazione pubblicata da ISTAT (http://demografiche.istat.it/fileadmin/DCIS/TRACCIATO_E_REGOLE_CONTROLLO_01.pdf) e ripreso anche nel contesto ANPR. Si noti che il vocabolario controllato non è completo; è necessario attendere infatti il raccordo complessivo sulle voci del vocabolario da parte di ISTAT in base a quanto indicato nei regolamenti europei di competenza."@it ,
+                                                                                                       dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+																												<https://w3id.org/italia/data/public-organization/m_it> ;
+                                                                                                       dct:description "Questo è il vocabolario controllato sulle relazioni di parentela delle persone. Il vocabolario nella sua versione attuale è ricavato dalla documentazione pubblicata da ANPR."@it ,
                                                                                                                        "This is the Parental Relationships controlled vocabulary"@en ;
                                                                                                        dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types" ;
                                                                                                        dct:issued "2019-07-17"^^xsd:date ;
                                                                                                        dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                                                                                       dct:modified "2019-07-18"^^xsd:date ;
-                                                                                                       dct:publisher <https://w3id.org/italia/data/public-organization/agid> ;
-                                                                                                       dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+                                                                                                       dct:modified "2023-06-03"^^xsd:date ;
+                                                                                                       dct:publisher <https://schema.gov.it/lodview/data/public-organization/PCM-1RSIZZ> ;
+                                                                                                       dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
                                                                                                        dct:title "Parental Relationships Controlled Vocabulary"@en ,
                                                                                                                  "Vocabolario Controllato Relazioni di Parentela"@it ;
                                                                                                        dct:type <http://purl.org/adms/assettype/CodeList> ;
@@ -436,7 +437,6 @@ foaf:name rdf:type owl:NamedIndividual ,
                                                                                                                           <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/23> ,
                                                                                                                           <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/24> ,
                                                                                                                           <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/25> ,
-                                                                                                                          <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/26> ,
                                                                                                                           <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/28> ,
                                                                                                                           <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/3> ,
                                                                                                                           <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/4> ,
@@ -629,17 +629,6 @@ foaf:name rdf:type owl:NamedIndividual ,
                                                                                                           clvapit:hasRankOrder "1" .
 
 
-###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/26
-<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/26> rdf:type owl:NamedIndividual ,
-                                                                                                                   skos:Concept ,
-                                                                                                                   cpvapit:ParentalRelationshipType ;
-                                                                                                          dct:identifier "26" ;
-                                                                                                          skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types> ;
-                                                                                                          skos:notation "26" ;
-                                                                                                          skos:prefLabel "Tutore"@it ;
-                                                                                                          clvapit:hasRankOrder "1" .
-
-
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/28
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/28> rdf:type owl:NamedIndividual ,
                                                                                                                    skos:Concept ,
@@ -809,7 +798,12 @@ foaf:name rdf:type owl:NamedIndividual ,
                                                          dct:identifier "ISTAT" ;
                                                          foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
                                                                    "Italian National Institute of Statistics - ISTAT"@en .
-
+##https://w3id.org/italia/data/public-organization/m_it
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type  <http://dati.gov.it/onto/dcatapit#Agent> ,
+      foaf:Agent ;
+      dct:identifier "m_it" ;
+      foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
+      "Ministry of the Interior - Central Directorate of Population Services"@en .
 
 ###  https://w3id.org/italia/data/standard/SKOS
 <https://w3id.org/italia/data/standard/SKOS> rdf:type owl:NamedIndividual ,

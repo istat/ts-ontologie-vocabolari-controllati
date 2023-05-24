@@ -168,7 +168,8 @@ foaf:Agent rdf:type owl:Class .
 			 rdf:type skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
 			dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;  
 			dct:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS> ;  
-			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>; 
+			dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                        <https://w3id.org/italia/data/public-organization/m_it> ; 
 			dct:description "Questo è il vocabolario controllato sulle tipologie di motivi di cancellazione in anagrafe."@it ,                                                                                                                   
 							"This is the Registry Office Removal Motivations controlled vocabulary."@en ;
 			dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types" ;
@@ -205,6 +206,7 @@ skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/classification
 <http://www.w3.org/ns/adms#representationTechnique> <http://purl.org/adms/representationtechnique/SKOS> ;
 dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
 dcat:distribution <https://w3id.org/italia/data/distribution/ROCM_RDF_Turtle> ;
+dcat:keyword "Motivo cancellazione dall anagrafe"@it ;
 dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 <https://w3id.org/italia/onto/NDC/keyConcept> "registry-office-removal-types" .
 
@@ -257,7 +259,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 																									        skos:inScheme   <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
 																									        skos:notation   "4" ;
 																									        skos:prefLabel  "Trasferimento di domicilio (senza fissa dimora)"@it ;
-																									        <italia/onto/CLV/hasRankOrder>  "1" .   
+																									        <italia/onto/CLV/hasRankOrder>  "1" ;
+																											owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5
@@ -297,7 +300,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
 																									        skos:inScheme   <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
 																									        skos:notation   "8" ;
 																									        skos:prefLabel  "Trasferimento di residenza (iscrizione AIRE)"@it ;
-																									        <italia/onto/CLV/hasRankOrder>  "1" . 
+																									        <italia/onto/CLV/hasRankOrder>  "1" ;
+																											owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9
@@ -316,7 +320,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                                                            skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
                                                                                                            skos:notation "10" ;
                                                                                                            skos:prefLabel "Doppia iscrizione"@it ;
-                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" ;
+																										   owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11
@@ -336,7 +341,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                                                            skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types> ;
                                                                                                            skos:notation "12" ;
                                                                                                            skos:prefLabel "Ripristino posizione precedente"@it ;
-                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .
+                                                                                                           <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" ;
+																										   owl:deprecated "true"^^xsd:boolean.  
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13
@@ -355,5 +361,10 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                          foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
                                                                    "Italian National Institute of Statistics - ISTAT"@en .
 
-
+##https://w3id.org/italia/data/public-organization/m_it
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type  <http://dati.gov.it/onto/dcatapit#Agent> ,
+      foaf:Agent ;
+      dct:identifier "m_it" ;
+      foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
+      "Ministry of the Interior - Central Directorate of Population Services"@en .
 
