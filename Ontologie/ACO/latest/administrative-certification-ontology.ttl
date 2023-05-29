@@ -53,7 +53,7 @@
                                                           rpo:RegisteredResidentPerson ;
                                      admsapit:hasOntologyLanguage admsapit:OWL ;
                                      admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE> ;
-                                     admsapit:last <https://w3id.org/italia/onto/ACO/https//w3id.org/italia/onto/ACO/1.0> ;
+                                     admsapit:last <https://w3id.org/italia/onto/ACO/1.0> ;
                                      admsapit:officialURI <https://w3id.org/italia/onto/ACO> ;
                                      admsapit:prefix "aco"^^xsd:string ;
                                      admsapit:status "published" ;
