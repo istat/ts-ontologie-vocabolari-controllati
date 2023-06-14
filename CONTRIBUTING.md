@@ -37,7 +37,7 @@ Questi test controllano anche la correttezza dei link a github contenuti nei fil
 
 ## Test specifici per ogni tipo di asset
 
-Il software per la validazione sintattica è pubblicato su https://github.com/teamdigitale/json-semantic-playground
+Il software per la validazione sintattica è pubblicato su https://github.com/istat/json-semantic-playground
 ed i controlli sono configurabili in [.pre-commit-config.yaml](.pre-commit-config.yaml).
 Ad esempio, il modulo `validate-csv` analizza solo i file .csv contenuti in `VocabolariControllati` e sottodirectory,
 ad esclusione dei path che contengono scriptR2RML e vocs-deprecated.
