@@ -164,14 +164,14 @@ foaf:Agent rdf:type owl:Class .
         a                       <http://dati.gov.it/onto/dcatapit#Dataset> , skos:ConceptScheme , <http://www.w3.org/ns/adms#Asset> ;
 		dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
 		 dct:conformsTo          <http://dati.gov.it/data/resource/Standard/SKOS> ;  
-		dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+		dct:creator      <https://w3id.org/italia/data/public-organization/ISTAT> ,
                         <https://w3id.org/italia/data/public-organization/m_it> ; 
 		dct:description         "Questo è il vocabolario controllato sulle tipologie di stati civili."@it , "This is the Marital Status controlled vocabulary."@en ;
 		dct:identifier          "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types" ;
 		dct:issued              "2022-12-15"^^xsd:date ;  
-		dct:modified            "2022-12-15"^^xsd:date ;	
+		dct:modified            "2023-07-15"^^xsd:date ;	
         dct:language            <http://publications.europa.eu/resource/authority/language/ITA> ;
-		dct:publisher <https://schema.gov.it/lodview/data/public-organization/PCM-1RSIZZ> ;
+		dct:publisher    <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
 	    dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
 		dct:title               "Vocabolario Controllato Stati Civili"@it , "Marital Status Controlled Vocabulary"@en ;
 		dct:type                <http://purl.org/adms/assettype/CodeList> ;
@@ -223,6 +223,14 @@ foaf:Agent rdf:type owl:Class .
       foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
       "Ministry of the Interior - Central Directorate of Population Services"@en .
 	  
+	  
+	  ###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ																		   
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1>
         a               <https://w3id.org/italia/onto/PRO/StatoCivile> , skos:Concept ;

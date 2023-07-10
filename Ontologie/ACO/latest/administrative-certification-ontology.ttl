@@ -31,7 +31,7 @@
                                      dct:identifier <https://w3id.org/italia/onto/ACO> ;
                                      dct:issued "2022-12-15"^^xsd:date ;
                                      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                     dct:modified "2022-12-15"^^xsd:date ;
+                                     dct:modified "2023-07-15"^^xsd:date ;
                                      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
                                      dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
                                      dct:title "ACO_IT - Administrative Certification Ontology"@en ,
