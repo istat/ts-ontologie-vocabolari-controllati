@@ -26,7 +26,7 @@
                                                  <https://w3id.org/italia/onto/l0> ;
                                      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                      dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
-                                     dct:description "Questa è l'ontologia dei certificati anagrafici"@it ,
+                                     dct:description "Questa è l'ontologia dei certificati anagrafici."@it ,
                                                      "This is the ontology of the administrative certifications."@en ;
                                      dct:identifier <https://w3id.org/italia/onto/ACO> ;
                                      dct:issued "2022-12-15"^^xsd:date ;
@@ -34,8 +34,8 @@
                                      dct:modified "2023-07-15"^^xsd:date ;
                                      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
                                      dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
-                                     dct:title "ACO_IT - Administrative Certification Ontology"@en ,
-                                               "ACO_IT - Ontologia dei Certificati Anagrafici"@it ;
+                                     dct:title "Administrative Certification Ontology"@en ,
+                                               "Ontologia dei Certificati Anagrafici"@it ;
                                      rdfs:comment "Questa è l'ontologia dei certificati anagrafici."@it ,
                                                   "This is the administrative certification ontology."@en ;
                                      rdfs:isDefinedBy <https://w3id.org/italia/onto/ACO> ;
