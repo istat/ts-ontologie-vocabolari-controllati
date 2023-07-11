@@ -174,9 +174,9 @@ foaf:Agent rdf:type owl:Class .
 							"This is the Registry Office Removal Motivations controlled vocabulary."@en ;
 			dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types" ;
 			dct:issued "2022-12-15"^^xsd:date ;
-			dct:modified "2022-12-15"^^xsd:date ;
+			dct:modified "2023-07-15"^^xsd:date ;
 			dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-			dct:publisher <https://schema.gov.it/lodview/data/public-organization/PCM-1RSIZZ> ;
+			dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
 			dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
 			dct:title "Registry Office Removal Motivations Controlled Vocabulary"@en ,
 					  "Vocabolario Controllato Motivi Cancellazione in Anagrafe"@it ;
@@ -218,8 +218,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle del Vocabolario Controllato Motivi Cancellazione in Anagrafe "@it ,
                                                                          "RDF/Turtle distribution of Registry Office Removal Motivations Controlled Vocabulary"@en ;
-                                                               dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-people/registry-office-removal-types> ;
-                                                               dcat:downloadURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/blob/main/VocabolariControllati/classifications-for-people/registry-office-removal-types/Motivo-cancellazione-anagrafe.ttl> .	
+																dcat:downloadURL  <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-people/registry-office-removal-types/Motivo-cancellazione-anagrafe.ttl> ;
+																dcat:accessURL    <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-people/registry-office-removal-types> .	
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1
@@ -354,12 +354,12 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                                                             skos:prefLabel "Altro"@it ;
                                                                                                             <https://w3id.org/italia/onto/CLV/hasRankOrder> "1" .                                                                                                           
 
-
-			<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type dcatapit:Agent ,
-                                                                  foaf:Agent ;
-                                                         dct:identifier "ISTAT" ;
-                                                         foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
-                                                                   "Italian National Institute of Statistics - ISTAT"@en .
+##<https://w3id.org/italia/data/public-organization/ISTAT>
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type dcatapit:Agent ,
+		  foaf:Agent ;
+		 dct:identifier "ISTAT" ;
+		 foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+				   "Italian National Institute of Statistics - ISTAT"@en .
 
 ##https://w3id.org/italia/data/public-organization/m_it
 <https://w3id.org/italia/data/public-organization/m_it> rdf:type  <http://dati.gov.it/onto/dcatapit#Agent> ,
@@ -367,4 +367,12 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
       dct:identifier "m_it" ;
       foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
       "Ministry of the Interior - Central Directorate of Population Services"@en .
+	  
 
+###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ																		   
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .

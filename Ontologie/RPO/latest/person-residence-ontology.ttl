@@ -40,11 +40,11 @@
                                      dct:identifier <https://w3id.org/italia/onto/RPO> ;
                                      dct:issued "2022-12-31"^^xsd:date ;
                                      dct:language "http://publications.europa.eu/resource/authority/language/ITA"^^xsd:anyURI ;
-                                     dct:modified "2022-12-31"^^xsd:date ;
+                                     dct:modified "2023-07-15"^^xsd:date ;
                                      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
                                      dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it> ;
-                                     dct:title "Ontologia della Popolazione Residente Registrata in Anagrafe."@it ,
-                                               "Registered Residence Person Ontology."@en ;
+                                     dct:title "Ontologia della Popolazione Residente Registrata in Anagrafe"@it ,
+                                               "Registered Residence Person Ontology"@en ;
                                      rdfs:comment "Questa è l'ontologia della popolazione residente registrata in anagrafe."@it ,
                                                   "This is the ontology of the population registered in the registry office."@en ;
                                      rdfs:isDefinedBy <https://w3id.org/italia/onto/RPO> ;
@@ -116,9 +116,9 @@
                                                                dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia RPO"@it ,
-                                                                         "RDF/Turtle distribution of RPO Ontology"@en ;
-                                                               dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/RPO/latest> ;
-                                                               dcat:downloadURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/RPO/latest/person-residence-ontology.ttl> .
+                                                                         "RDF/Turtle distribution of RPO Ontology"@en ;                                                         
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest> ;
+															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl> .
 
 
 #################################################################
