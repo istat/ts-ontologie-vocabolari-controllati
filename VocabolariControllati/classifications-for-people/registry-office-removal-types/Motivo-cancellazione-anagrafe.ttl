@@ -218,8 +218,8 @@ dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle del Vocabolario Controllato Motivi Cancellazione in Anagrafe "@it ,
                                                                          "RDF/Turtle distribution of Registry Office Removal Motivations Controlled Vocabulary"@en ;
-																dcat:accessURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-people/registry-office-removal-types> ;
-																dcat:downloadURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-people/registry-office-removal-types/Motivo-cancellazione-anagrafe.ttl> .	
+																dcat:downloadURL  <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-people/registry-office-removal-types/Motivo-cancellazione-anagrafe.ttl> ;
+																dcat:accessURL    <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-people/registry-office-removal-types> .	
 
 
 ###  https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1

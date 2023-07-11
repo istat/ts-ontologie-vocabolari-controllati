@@ -206,8 +206,8 @@ foaf:Agent rdf:type owl:Class .
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle del Vocabolario Controllato sulle tipologie di stati civili "@it ,
                                                                          "RDF/Turtle distribution of the Marital Status controlled vocabulary"@en ;
-                                                               dcat:accessURL <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types>;                                                                              
-															   dcat:downloadURL <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/Motivo-cancellazione-anagrafe.ttl> .	
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-people/marital-status-types>;                                                                              
+															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-people/marital-status-types/statiCivili.ttl> .	
 	
 		
 <https://w3id.org/italia/data/public-organization/ISTAT> rdf:type dcatapit:Agent ,
