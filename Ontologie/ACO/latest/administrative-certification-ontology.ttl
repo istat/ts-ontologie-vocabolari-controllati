@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/italia/onto/ACO/> .
+@prefix : <https://w3id.org/italia/onto/CPV/> .
 @prefix aco: <https://w3id.org/italia/onto/ACO/> .
 @prefix clv: <https://w3id.org/italia/onto/CLV/> .
 @prefix cov: <https://w3id.org/italia/onto/COV/> .
