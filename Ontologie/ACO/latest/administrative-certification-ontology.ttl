@@ -109,10 +109,25 @@ foaf:name rdf:type owl:AnnotationProperty .
 l0:controlledVocabulary rdf:type owl:AnnotationProperty .
 
 
+#################################################################
+#    Datatypes
+#################################################################
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTime
+xsd:dateTime rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Object Properties
+#    Object Properties
 #################################################################
 
 ###  https://w3id.org/italia/onto/ACO/attests
