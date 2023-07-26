@@ -60,53 +60,6 @@
                                      admsapit:target "Pubbliche Amministrazioni" ;
                                      admsapit:type admsapit:DomainOntology .
 									 
-									 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/description
-dct:description rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/format
-dct:format rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/identifier
-dct:identifier rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-dct:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dct:title rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2006/vcard/ns#fn
-vcard:fn rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2006/vcard/ns#hasEmail
-vcard:hasEmail rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/dcat#accessURL
-dcat:accessURL rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/dcat#downloadURL
-dcat:downloadURL rdf:type owl:AnnotationProperty .
-
-
-###  http://xmlns.com/foaf/0.1/name
-foaf:name rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/l0/controlledVocabulary
-l0:controlledVocabulary rdf:type owl:AnnotationProperty .
 
 
 #################################################################
