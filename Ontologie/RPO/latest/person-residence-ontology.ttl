@@ -59,7 +59,9 @@
                                      admsapit:hasKeyClass rpo:RegisteredResidentPerson ,
                                                           rpo:Residence ;
                                      admsapit:hasOntologyLanguage admsapit:OWL ;
-                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE> ;
+                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE>,
+                                                                           <https://w3id.org/italia/data/distribution/RPO-RDF-XML>,
+                                                                           <https://w3id.org/italia/data/distribution/RPO-JSON-LD>;
                                      admsapit:last <https://w3id.org/italia/onto/RPO/https//w3id.org/italia/onto/RPO/1.0> ;
                                      admsapit:officialURI <https://w3id.org/italia/onto/RPO> ;
                                      admsapit:prefix "rpo"^^xsd:string ;
@@ -120,6 +122,27 @@
                                                                dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest> ;
 															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl> .
 
+### https://w3id.org/italia/data/distribution/RPO-RDF-XML
+<https://w3id.org/italia/data/distribution/RPO-RDF-XML> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/XML dell'ontologia della popolazione residente registrata in anagrafe"@it ,
+                                                                               "This is the distribution in RDF/XML of the ontology of the population registered in the registry office"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/XML ontologia RPO "@it ,
+                                                                         "RDF/XML distribution of RPO  Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl> .
+
+### https://w3id.org/italia/data/distribution/RPO-JSON-LD
+<https://w3id.org/italia/data/distribution/RPO-JSON-LD> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione JSON-LD dell'ontologia della popolazione residente registrata in anagrafe"@it ,
+                                                                               "This is the distribution in JSON-LD of the ontology of the population registered in the registry office"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione JSON-LD ontologia RPO "@it ,
+                                                                         "JSON-LD distribution of RPO  Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl> .
 
 #################################################################
 #    Datatypes
