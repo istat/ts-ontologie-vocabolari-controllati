@@ -52,7 +52,9 @@
                                                           aco:Residence ,
                                                           rpo:RegisteredResidentPerson ;
                                      admsapit:hasOntologyLanguage admsapit:OWL ;
-                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE> ;
+                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE>,
+                                                                           <https://w3id.org/italia/data/distribution/ACO-RDF-XML>,
+                                                                           <https://w3id.org/italia/data/distribution/ACO-JSON-LD>;
                                      admsapit:last <https://w3id.org/italia/onto/ACO/1.0> ;
                                      admsapit:officialURI <https://w3id.org/italia/onto/ACO> ;
                                      admsapit:prefix "aco"^^xsd:string ;
@@ -110,9 +112,11 @@ l0:controlledVocabulary rdf:type owl:AnnotationProperty .
 									 
 
 #################################################################
-#    Datatypes
+#    Datatypes
+
 #################################################################
-
+
+
 ###  http://www.w3.org/2001/XMLSchema#dateTime
 xsd:dateTime rdf:type rdfs:Datatype .
 
@@ -126,9 +130,11 @@ xsd:string rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Object Properties
+#    Object Properties
+
 #################################################################
-
+
+
 ###  https://w3id.org/italia/onto/ACO/attests
 aco:attests rdf:type owl:ObjectProperty ;
             rdfs:domain aco:AdministrativeDeed ;
@@ -335,9 +341,11 @@ rpo:hasRegisteredResidence rdf:type owl:ObjectProperty ,
 
 
 #################################################################
-#    Data properties
+#    Data properties
+
 #################################################################
-
+
+
 ###  https://w3id.org/italia/onto/ACO/ANPRProtocol
 aco:ANPRProtocol rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
@@ -468,9 +476,11 @@ cpv:givenName rdf:type owl:DatatypeProperty .
 
 
 #################################################################
-#    Classes
+#    Classes
+
 #################################################################
-
+
+
 ###  https://w3id.org/italia/onto/ACO/AdministrativeDeed
 aco:AdministrativeDeed rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -859,11 +869,12 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 
 
 #################################################################
-#    Individuals
+#    Individuals
+
 #################################################################
-###  https://w3id.org/italia/data/public-organization/ISTAT
-<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type owl:NamedIndividual ,
-                                                                           <http://dati.gov.it/onto/dcatapit#Agent> ,
+
+###  https://w3id.org/italia/data/public-organization/ISTAT
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                            foaf:Agent ;
                                                                   dct:identifier "ISTAT" ;
                                                                   foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
@@ -871,24 +882,21 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 
 
 ###  https://w3id.org/italia/data/public-organization/agid
-<https://w3id.org/italia/data/public-organization/agid> rdf:type owl:NamedIndividual ,
-                                                                          <http://dati.gov.it/onto/dcatapit#Agent> ,
+<https://w3id.org/italia/data/public-organization/agid> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                           foaf:Agent ;
                                                                  dct:identifier "agid" ;
                                                                  foaf:name "Agenzia per l'Italia Digitale"@it ,
                                                                            "Italian Digital Agency"@en .
 																		   
 ###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ																		   
-<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type owl:NamedIndividual ,
-      <http://dati.gov.it/onto/dcatapit#Agent> ,
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
 	  foaf:Agent ;
       dct:identifier "PCM-1RSIZZ" ;
       foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
 	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
 	  
 ##https://w3id.org/italia/data/public-organization/m_it
-<https://w3id.org/italia/data/public-organization/m_it> rdf:type owl:NamedIndividual ,
-      <http://dati.gov.it/onto/dcatapit#Agent> ,
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
 	  foaf:Agent ;
       dct:identifier "m_it" ;
       foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
@@ -896,8 +904,7 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 	  
 
 ###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
-<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type owl:NamedIndividual ,
-                                                       <http://dati.gov.it/onto/dcatapit#Organization> ,
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type <http://dati.gov.it/onto/dcatapit#Organization> ,
                                                        vcard:Kind ,
                                                        vcard:Organization ;
                                                        vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
@@ -905,8 +912,7 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 
 
 ### https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE
-<https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE> rdf:type owl:NamedIndividual ,
-                                                                        admsapit:SemanticAssetDistribution ;
+<https://w3id.org/italia/data/distribution/ACO-RDF-TURTLE> rdf:type admsapit:SemanticAssetDistribution ;
                                                                dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei certificati anagrafici"@it ,
                                                                                "This is the distribution in RDF/turtle of the administrative certifications"@en ;
                                                                dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -916,69 +922,83 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 															   dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
 															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/administrative-certification-ontology.ttl> .
 
+### https://w3id.org/italia/data/distribution/ACO-RDF-XML
+<https://w3id.org/italia/data/distribution/ACO-RDF-XML> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei certificati anagrafici"@it ,
+                                                                               "This is the distribution in RDF/XML of the administrative certifications"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/XML ontologia ACO_IT "@it ,
+                                                                         "RDF/XML distribution of ACO_IT  Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/administrative-certification-ontology.ttl> .
 
-
-
+### https://w3id.org/italia/data/distribution/ACO-JSON-LD
+<https://w3id.org/italia/data/distribution/ACO-JSON-LD> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei certificati anagrafici"@it ,
+                                                                               "This is the distribution in JSON-LD of the administrative certifications"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione JSON-LD ontologia ACO_IT "@it ,
+                                                                         "JSON-LD distribution of ACO_IT  Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/administrative-certification-ontology.ttl> .
 
 
 ###  https://w3id.org/italia/onto/ACO/BirthDeed
-aco:BirthDeed rdf:type owl:NamedIndividual ,
-                       aco:EvidenceOfBirthCertificate .
+aco:BirthDeed rdf:type aco:EvidenceOfBirthCertificate .
 
 
 ###  https://w3id.org/italia/onto/CLV/Address
-clv:Address rdf:type owl:NamedIndividual ,
-                     aco:EvidenceOfResidenceCertificate .
+clv:Address rdf:type aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CLV/AdminUnitComponent
-clv:AdminUnitComponent rdf:type owl:NamedIndividual ,
-                                aco:EvidenceOfBirthCertificate ,
+clv:AdminUnitComponent rdf:type aco:EvidenceOfBirthCertificate ,
                                 aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CLV/City
-clv:City rdf:type owl:NamedIndividual ,
-                  aco:EvidenceOfResidenceCertificate .
+clv:City rdf:type aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/codiceFiscale
-cpv:codiceFiscale rdf:type owl:NamedIndividual ,
-                           aco:EvidenceOfBirthCertificate ,
+cpv:codiceFiscale rdf:type aco:EvidenceOfBirthCertificate ,
                            aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/dateOfBirth
-cpv:dateOfBirth rdf:type owl:NamedIndividual ,
-                         aco:EvidenceOfBirthCertificate ,
+cpv:dateOfBirth rdf:type aco:EvidenceOfBirthCertificate ,
                          aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/familyName
-cpv:familyName rdf:type owl:NamedIndividual ,
-                        aco:EvidenceOfBirthCertificate ,
+cpv:familyName rdf:type aco:EvidenceOfBirthCertificate ,
                         aco:EvidenceOfResidenceCertificate .
 
 
 ###  https://w3id.org/italia/onto/CPV/givenName
-cpv:givenName rdf:type owl:NamedIndividual ,
-                       aco:EvidenceOfBirthCertificate ,
+cpv:givenName rdf:type aco:EvidenceOfBirthCertificate ,
                        aco:EvidenceOfResidenceCertificate .
 
 
 #################################################################
-#    Annotations
+#    Annotations
+
 #################################################################
-
+
+
 aco:BirthDeed rdfs:label "Atto di nascita"@it ;
               rdfs:comment "Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l'anno, il mese, il giorno e l'ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00."@it ;
               rdfs:label "Birth deed"@en .
 
 
 #################################################################
-#    General axioms
+#    General axioms
+
 #################################################################
-
+
+
 [ owl:intersectionOf ( aco:Applicant
                        [ rdf:type owl:Restriction ;
                          owl:onProperty aco:roleRelativeToApplication ;

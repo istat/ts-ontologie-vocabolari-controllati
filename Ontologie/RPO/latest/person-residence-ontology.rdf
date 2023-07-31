@@ -1,72 +1,76 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/italia/onto/CPV/"
      xml:base="https://w3id.org/italia/onto/CPV/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
-     xmlns:geo="http://www.opengis.net/ont/geosparql#"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:iao="https://w3id.org/italia/onto/IAO/"
-     xmlns:cv-rorem="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/"
-     xmlns:cv-prt="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/"
-     xmlns:dcat="http://www.w3.org/ns/dcat#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
-     xmlns:ito="https://w3id.org/italia/onto/ITO/"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:cpv="https://w3id.org/italia/onto/CPV/"
-     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
      xmlns:cp="https://w3id.org/italia/onto/l0/"
-     xmlns:rpo="https://w3id.org/italia/onto/RPO/"
-     xmlns:cv-mst="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:cpv="https://w3id.org/italia/onto/CPV/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:iao="https://w3id.org/italia/onto/IAO/"
+     xmlns:ito="https://w3id.org/italia/onto/ITO/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rpo="https://w3id.org/italia/onto/RPO/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:cv-ror="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:cv-mst="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/"
+     xmlns:cv-prt="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/"
+     xmlns:cv-ror="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/"
+     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
+     xmlns:cv-rorem="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/">
     <owl:Ontology rdf:about="https://w3id.org/italia/onto/RPO/">
         <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/RPO/1.0"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/RPO"/>
-        <admsapit:hasTask> ---</admsapit:hasTask>
-        <dct:title xml:lang="it">RPO_IT - Ontologia della Popolazione Registrata in Anagrafe.</dct:title>
-        <dct:rightsHolder rdf:resource="https://www.interno.gov.it/it"/>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
-        <dcat:keyword xml:lang="it">Residente</dcat:keyword>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-31</dct:modified>
-        <rdfs:comment xml:lang="en">This is the registered person ontology.</rdfs:comment>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <rdfs:label xml:lang="en">Registered Person Ontology</rdfs:label>
-        <admsapit:hasContributor> ---</admsapit:hasContributor>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/m_it"/>
+        <dct:description xml:lang="it">Questa è l&apos;ontologia della popolazione residente registrata in anagrafe.</dct:description>
         <dct:description xml:lang="en">This is the ontology of the population registered in the registry office.</dct:description>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CPVAPIT-RDF-TURTLE"/>
-        <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
         <dct:identifier rdf:resource="https://w3id.org/italia/onto/RPO"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-31</dct:issued>
-        <dct:description xml:lang="it">Questa è l&apos;ontologia della popolazione residente registrata in anagrafe.</dct:description>
-        <admsapit:hasFormalityLevel> ---</admsapit:hasFormalityLevel>
-        <owl:versionInfo xml:lang="it">Versione 1.0</owl:versionInfo>
-        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <rdfs:label xml:lang="it">Ontologia della popolazione residente anagrafica.</rdfs:label>
-        <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
-        <admsapit:officialURI rdf:resource="https://w3id.org/italia/onto/RPO"/>
-        <dct:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM"/>
-        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia della Popolazione Registrata in Anagrafe.</rdfs:comment>
-        <admsapit:last rdf:resource="https://w3id.org/italia/onto/RPO/https//w3id.org/italia/onto/RPO/1.0"/>
         <dct:language rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://publications.europa.eu/resource/authority/language/ITA</dct:language>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-15</dct:modified>
+        <dct:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
+        <dct:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/m_it"/>
+        <dct:title xml:lang="it">Ontologia della Popolazione Residente Registrata in Anagrafe</dct:title>
+        <dct:title xml:lang="en">Registered Residence Person Ontology</dct:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia della popolazione residente registrata in anagrafe.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology of the population registered in the registry office.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/RPO"/>
+        <rdfs:label xml:lang="it">Ontologia della Popolazione Residente Registrata in Anagrafe.</rdfs:label>
+        <rdfs:label xml:lang="en">Registered Residence Person Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="it">Versione 1.0</owl:versionInfo>
+        <dcat:contactPoint>https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC</dcat:contactPoint>
         <dcat:keyword xml:lang="it">Anagrafe</dcat:keyword>
-        <dcat:contactPoint>https://w3id.org/italia/data/resource/ContactPoint/voc_AgID</dcat:contactPoint>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
-        <admsapit:status>published</admsapit:status>
-        <admsapit:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpo</admsapit:prefix>
+        <dcat:keyword xml:lang="it">Residente</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
         <admsapit:acronym>RPO</admsapit:acronym>
-        <dct:title xml:lang="en">RPO_IT - Registered Person Ontology.</dct:title>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/RPO-JSON-LD"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/RPO-RDF-XML"/>
+        <admsapit:last rdf:resource="https://w3id.org/italia/onto/RPO/https//w3id.org/italia/onto/RPO/1.0"/>
+        <admsapit:officialURI rdf:resource="https://w3id.org/italia/onto/RPO"/>
+        <admsapit:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpo</admsapit:prefix>
+        <admsapit:status>published</admsapit:status>
+        <admsapit:target xml:lang="en">Citizens</admsapit:target>
+        <admsapit:target xml:lang="it">Cittadini</admsapit:target>
+        <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
+        <admsapit:target xml:lang="en">Public Organization</admsapit:target>
+        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
     
 
@@ -111,6 +115,30 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CPV/hasBirthPlace -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CPV/hasBirthPlace"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/hasResidenceInTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CPV/hasResidenceInTime"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/residenceInLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CPV/residenceInLocation"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/residentIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CPV/residentIn"/>
+    
+
+
     <!-- https://w3id.org/italia/onto/RPO/belongsToRegisteredFamily -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/belongsToRegisteredFamily">
@@ -138,6 +166,7 @@ famiglia o convivenza</rdfs:label>
     <!-- https://w3id.org/italia/onto/RPO/bornInCity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/bornInCity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CPV/hasBirthPlace"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
@@ -150,6 +179,7 @@ famiglia o convivenza</rdfs:label>
     <!-- https://w3id.org/italia/onto/RPO/bornInCountry -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/bornInCountry">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CPV/hasBirthPlace"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
@@ -182,14 +212,15 @@ famiglia o convivenza</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/currentlyResidesIn -->
+    <!-- https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/currentlyResidesIn">
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CPV/residentIn"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
-        <rdfs:label xml:lang="en">currently resides in</rdfs:label>
-        <rdfs:label xml:lang="it">risiede attualmente in</rdfs:label>
+        <rdfs:label xml:lang="en">currently has registered residence in</rdfs:label>
+        <rdfs:label xml:lang="it">risiede anagraficamente attualmente in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -253,18 +284,6 @@ famiglia o convivenza</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/hasParentalRelationship -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasParentalRelationship">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationship"/>
-        <rdfs:label xml:lang="it">ha relazione parentale</rdfs:label>
-        <rdfs:label xml:lang="en">has parental relationship</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/RPO/hasParentalRelationshipType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasParentalRelationshipType">
@@ -277,11 +296,36 @@ famiglia o convivenza</rdfs:label>
     
 
 
+    <!-- https://w3id.org/italia/onto/RPO/hasRegisteredParentalRelationship -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasRegisteredParentalRelationship">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationship"/>
+        <rdfs:label xml:lang="it">ha relazione parentale anagrafica</rdfs:label>
+        <rdfs:label xml:lang="en">has registered parental relationship</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RPO/hasRegisteredResidence -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasRegisteredResidence">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CPV/hasResidenceInTime"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
+        <rdfs:label xml:lang="it">ha residenza anagrafica</rdfs:label>
+        <rdfs:label xml:lang="en">has registered residence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/italia/onto/RPO/hasRegistryOfficeRegistrationMotivation -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasRegistryOfficeRegistrationMotivation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
         <rdfs:label xml:lang="it">ha motivo iscrizione anagrafe</rdfs:label>
         <rdfs:label xml:lang="en">has registry office registration motivation</rdfs:label>
@@ -293,22 +337,10 @@ famiglia o convivenza</rdfs:label>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasRegistryOfficeRemovalMotivation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
         <rdfs:label xml:lang="it">ha motivo cancellazione anagrafe</rdfs:label>
         <rdfs:label xml:lang="en">has registry office removal motivation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/RPO/hasResidence -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasResidence">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <rdfs:label xml:lang="it">ha residenza</rdfs:label>
-        <rdfs:label xml:lang="en">has residence</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -318,8 +350,8 @@ famiglia o convivenza</rdfs:label>
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/immediatelyPrecedes">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
         <rdfs:label xml:lang="en">immediately precedes</rdfs:label>
         <rdfs:label xml:lang="it">precede immediatamente</rdfs:label>
     </owl:ObjectProperty>
@@ -394,25 +426,26 @@ famiglia o convivenza</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/residenceInAddress -->
+    <!-- https://w3id.org/italia/onto/RPO/registeredResidenceInCity -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/residenceInAddress">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
-        <rdfs:label xml:lang="en">residence in address</rdfs:label>
-        <rdfs:label xml:lang="it">residenza in indirizzo</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/registeredResidenceInCity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CPV/residenceInLocation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+        <rdfs:label xml:lang="en">registerd residence in city</rdfs:label>
+        <rdfs:label xml:lang="it">residenza anagrafica in comune</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/residenceInCity -->
+    <!-- https://w3id.org/italia/onto/RPO/residenceInAddress -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/residenceInCity">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
-        <rdfs:label xml:lang="en">residence in city</rdfs:label>
-        <rdfs:label xml:lang="it">residenza in comune</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/residenceInAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:label xml:lang="en">residence in address</rdfs:label>
+        <rdfs:label xml:lang="it">residenza in indirizzo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -499,30 +532,6 @@ civile attuale</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/domicileEndDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/domicileEndDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Domicile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data fine domicilio</rdfs:label>
-        <rdfs:label xml:lang="en">domicile end date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/RPO/domicileStartDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/domicileStartDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Domicile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data inizio domicilio</rdfs:label>
-        <rdfs:label xml:lang="en">domicile start date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/RPO/maritalStatusCode -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/maritalStatusCode">
@@ -547,30 +556,6 @@ civile attuale</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/membershipInRegisteredFamilyEndDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/membershipInRegisteredFamilyEndDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/MembershipInRegisteredFamily"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data fine in famiglia</rdfs:label>
-        <rdfs:label xml:lang="en">membership in registered family end date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/RPO/membershipInRegisteredFamilyStartDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/membershipInRegisteredFamilyStartDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/MembershipInRegisteredFamily"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data inizio in famiglia</rdfs:label>
-        <rdfs:label xml:lang="en">membership in registered family start date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/RPO/numberOfCohabitants -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/numberOfCohabitants">
@@ -591,30 +576,6 @@ civile attuale</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">number of components of registered family</rdfs:label>
         <rdfs:label xml:lang="it">numero componenti famiglia anagrafica</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/RPO/parentalRelationshipEndDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/parentalRelationshipEndDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationship"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data fine relazione parentale</rdfs:label>
-        <rdfs:label xml:lang="en">parental relationship end date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/RPO/parentalRelationshipStartDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/parentalRelationshipStartDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationship"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data inizio relazione parentale</rdfs:label>
-        <rdfs:label xml:lang="en">parental relationship start date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -677,30 +638,6 @@ civile attuale</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/residenceEndDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/residenceEndDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data fine validita residenza</rdfs:label>
-        <rdfs:label xml:lang="en">residence end date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/RPO/residenceStartDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/residenceStartDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/Residence"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="it">data inizio validita residenza</rdfs:label>
-        <rdfs:label xml:lang="en">residence start date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/RPO/weddingDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/RPO/weddingDate">
@@ -725,9 +662,7 @@ civile attuale</rdfs:label>
 
     <!-- https://w3id.org/italia/onto/CLV/Address -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address">
-        <rdfs:label xml:lang="it">Indirizzo</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address"/>
     
 
 
@@ -748,7 +683,7 @@ civile attuale</rdfs:label>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RPO/currentlyResidesIn"/>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn"/>
                     </rdf:Description>
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -764,7 +699,6 @@ civile attuale</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:label xml:lang="it">Comune</rdfs:label>
     </owl:Class>
     
 
@@ -817,8 +751,6 @@ civile attuale</rdfs:label>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/CPV/Dead"/>
-        <rdfs:comment xml:lang="it">Essere umano nato vivo e in vita a cui si associano le seguenti caratteristiche fondamentali: sesso alla nascita, data e luogo di nascita.</rdfs:comment>
-        <rdfs:label xml:lang="it">PersonaInVita</rdfs:label>
     </owl:Class>
     
 
@@ -838,8 +770,6 @@ civile attuale</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Essere umano per la quale è cessato ogni segno di vita in un qualsiasi momento successivo alla nascita vitale.</rdfs:comment>
-        <rdfs:label xml:lang="it">Deceduto</rdfs:label>
     </owl:Class>
     
 
@@ -873,8 +803,13 @@ civile attuale</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:label xml:lang="it">Persona</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/ResidenceInTime -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/ResidenceInTime"/>
     
 
 
@@ -930,12 +865,7 @@ Per &quot;Stato membro dell&apos;Ue&quot; si intende un paese che è membro dell
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/domicileStartDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
         <rdfs:comment xml:lang="it">Luogo in cui la persona ha stabilito la sede principale dei suoi affari e interessi (art. 43 c.c.).</rdfs:comment>
         <rdfs:label xml:lang="en">Domicile</rdfs:label>
         <rdfs:label xml:lang="it">Domicilio</rdfs:label>
@@ -1000,12 +930,7 @@ fissa dimora</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/membershipInRegisteredFamilyStartDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
         <rdfs:comment xml:lang="it">Registrazione della persona in una famiglia anagrafica.</rdfs:comment>
         <rdfs:label xml:lang="it">Appartenenza in 
 famiglia Anagrafica</rdfs:label>
@@ -1033,24 +958,13 @@ famiglia Anagrafica</rdfs:label>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RPO/hasParentalRelationship"/>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RPO/hasRegisteredParentalRelationship"/>
                     </rdf:Description>
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/parentalRelationshipEndDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/parentalRelationshipStartDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
         <rdfs:comment xml:lang="it">Il legame di ciascun membro della famiglia anagrafica con una persona di riferimento all&apos;interno della famiglia stessa. 
 Le relazioni di parentela consentono di ricostruire la composizione e dimensione delle famiglie, le relazioni tra i diversi componenti, le relazioni di coppia de iure (matrimonio/unione civile/) o de facto (convivenza di fatto, art. 1, commi 6ss, L. 20 maggio 2016, 76) e la condizione genitoriale. </rdfs:comment>
         <rdfs:label xml:lang="en">Parental relationship</rdfs:label>
@@ -1158,6 +1072,39 @@ Le relazioni di parentela consentono di ricostruire la composizione e dimensione
     
 
 
+    <!-- https://w3id.org/italia/onto/RPO/RegisteredResidence -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/registeredResidenceInCity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/residenceInAddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RPO/hasRegisteredResidence"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CPV/ResidenceInTime"/>
+        <rdfs:comment xml:lang="it">Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe.</rdfs:comment>
+        <rdfs:label xml:lang="en">Registered residence</rdfs:label>
+        <rdfs:label xml:lang="it">Residenza anagrafica</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/RPO/RegisteredResidenceEventType -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidenceEventType">
@@ -1200,7 +1147,7 @@ registrazione anagrafe</rdfs:label>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/currentlyResidesIn"/>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -1234,47 +1181,9 @@ anagrafe</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/Residence -->
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/Residence">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/residenceInAddress"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/residenceInCity"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RPO/hasResidence"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/residenceEndDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RPO/residenceStartDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe.</rdfs:comment>
-        <rdfs:label xml:lang="en">Residence</rdfs:label>
-        <rdfs:label xml:lang="it">Residenza</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
     
 
 
@@ -1289,401 +1198,110 @@ anagrafe</rdfs:label>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1 -->
+    <!-- https://w3id.org/italia/data/contact-point/ISTAT-NDC -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/1">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Celibe/Nubile</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/contact-point/ISTAT-NDC">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <vcard:fn>Segreteria Tecnica Istat - Progetto PNRR National Data Catalog </vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:ndc-segr-tec@istat.it"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/2 -->
+    <!-- https://w3id.org/italia/data/distribution/RPO-JSON-LD -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/2">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Coniugato/a</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/RPO-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia della popolazione residente registrata in anagrafe</dct:description>
+        <dct:description xml:lang="en">This is the distribution in JSON-LD of the ontology of the population registered in the registry office</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione JSON-LD ontologia RPO </dct:title>
+        <dct:title xml:lang="en">JSON-LD distribution of RPO  Ontology</dct:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/3 -->
+    <!-- https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/3">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Vedovo/a</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/RPO-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia della popolazione residente registrata in anagrafe</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/turtle of the ontology of the population registered in the registry office</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia RPO</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of RPO Ontology</dct:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/4 -->
+    <!-- https://w3id.org/italia/data/distribution/RPO-RDF-XML -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/4">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Divorziato/a</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/RPO-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia della popolazione residente registrata in anagrafe</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/XML of the ontology of the population registered in the registry office</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia RPO </dct:title>
+        <dct:title xml:lang="en">RDF/XML distribution of RPO  Ontology</dct:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/RPO/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/person-residence-ontology.ttl"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/6 -->
+    <!-- https://w3id.org/italia/data/public-organization/ISTAT -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/6">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Unito civilmente</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/ISTAT">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>ISTAT</dct:identifier>
+        <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
+        <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/7 -->
+    <!-- https://w3id.org/italia/data/public-organization/PCM-1RSIZZ -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/7">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Stato libero a seguito di decesso della parte unita civilmente</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>PCM-1RSIZZ</dct:identifier>
+        <foaf:name xml:lang="en">Digital Transformation Department of the Presidency of the Council of Ministers</foaf:name>
+        <foaf:name xml:lang="it">Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri</foaf:name>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/8 -->
+    <!-- https://w3id.org/italia/data/public-organization/agid -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/8">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Stato libero a seguito di scioglimento dell’unione</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/agid">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>agid</dct:identifier>
+        <foaf:name xml:lang="it">Agenzia per l&apos;Italia Digitale</foaf:name>
+        <foaf:name xml:lang="en">Italian Digital Agency</foaf:name>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/9 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/marital-status-types/9">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/MaritalStatus"/>
-        <rdfs:label xml:lang="it">Non classificabile/ignoto/n.c</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/1">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/10 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/10">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/11 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/11">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/12 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/12">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/13 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/13">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/16 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/16">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/17 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/17">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/18 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/18">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/2">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/20 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/20">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/21 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/21">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/22 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/22">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/23 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/23">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/24 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/24">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/25 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/25">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/26 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/26">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/28 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/28">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/3 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/3">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/4 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/4">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/5 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/5">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/6 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/6">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/7 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/7">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/80 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/80">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/9 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/parental-relationship-types/9">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/ParentalRelationshipType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/1">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Nascita</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/2">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Esistenza (giudizialmente riconosciuta)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/4 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/4">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Immigrazione dall’estero</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/5 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/5">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Ricomparsa (da irreperibilità)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/6 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/6">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Rimpatrio (da AIRE)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/7 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/7">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Rettifiche post censuarie</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-registration-types/9">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRegistrationMotivation"/>
-        <rdfs:label xml:lang="it">Altri motivi (descrizione da fornire a cura del comune)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/1">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Morte accertata</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/11">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Perdita della cittadinanza italiana</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/13">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Altro</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/2">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Morte presunta giudizialmente dichiarata</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/5">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Trasferimento di residenza all’estero di uno straniero</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/6 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/6">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Irreperibilita</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/7 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/7">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Mancato rinnovo dimora abituale/permesso di soggiorno</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/registry-office-removal-types/9">
-        <rdf:type rdf:resource="https://w3id.org/italia/onto/RPO/RegistryOfficeRemovalMotivation"/>
-        <rdfs:label xml:lang="it">Rettifiche post censuarie</rdfs:label>
+    <!-- https://w3id.org/italia/data/public-organization/m_it -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/m_it">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>m_it</dct:identifier>
+        <foaf:name xml:lang="it">Ministero dell&apos;Interno - DAIT Direzione Centrale dei servizi demografici</foaf:name>
+        <foaf:name xml:lang="en">Ministry of the Interior - DAIT Central Directorate of Population Services</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -1716,5 +1334,5 @@ anagrafe</rdfs:label>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
