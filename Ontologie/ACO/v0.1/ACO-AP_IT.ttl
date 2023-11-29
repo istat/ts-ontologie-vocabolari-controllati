@@ -149,7 +149,8 @@ aco:attestsBirth rdf:type owl:ObjectProperty ;
                  rdfs:domain aco:BirthCertificate ;
                  rdfs:range aco:RegistryEntryForBirth ;
                  rdfs:comment "Relazione tra l’atto amministrativo e iscrizione anagrafica per l’evento nascita."@it ;
-                 rdfs:label "attesta nascita"@it ,
+                 rdfs:label """attesta\r
+					nascita"""@it ,
                             "attests birth"@en .
 
 
@@ -503,8 +504,10 @@ aco:AdministrativeDeed rdf:type owl:Class ;
                                              owl:someValuesFrom rdfs:Literal
                                            ] ;
                        rdfs:comment "Atto giuridico posto in essere da un'autorità amministrativa nell'esercizio di una sua funzione amministrativa."@it ;
-                       rdfs:label "Administrative deed"@en ,
-                                  "Atto amministrativo"@it .
+                       rdfs:label """Administrative\r 
+						deed"""@en ,
+                                  """Atto\r
+									amministrativo"""@it .
 
 
 ###  https://w3id.org/italia/onto/ACO/Applicant
