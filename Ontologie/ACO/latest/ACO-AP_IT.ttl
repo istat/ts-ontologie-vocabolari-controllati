@@ -504,10 +504,10 @@ aco:AdministrativeDeed rdf:type owl:Class ;
                                              owl:someValuesFrom rdfs:Literal
                                            ] ;
                        rdfs:comment "Atto giuridico posto in essere da un'autorità amministrativa nell'esercizio di una sua funzione amministrativa."@it ;
-                       rdfs:label """Administrative\r
-					   deed"""@en ,
-                                  """Atto\r 
-								  amministrativo"""@it .
+                       rdfs:label """Administrative\r 
+						deed"""@en ,
+                                  """Atto\r
+									amministrativo"""@it .
 
 
 ###  https://w3id.org/italia/onto/ACO/Applicant
