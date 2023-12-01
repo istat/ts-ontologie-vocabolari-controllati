@@ -1511,7 +1511,7 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
                                                             <http://purl.org/dc/terms/identifier> "PCM-1RSIZZ" ;
-                                                            rdfs:label "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+                                                            rdfs:label "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it;
                                                             <http://xmlns.com/foaf/0.1/name> "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it.
 
 ###  https://w3id.org/italia/onto/Learning
