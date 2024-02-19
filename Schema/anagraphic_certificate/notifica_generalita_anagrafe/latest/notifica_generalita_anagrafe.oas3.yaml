@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   title: Consultazione ANPR API C001
   description: |-
-    Il servizio viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta
+    Lo schema dati del servizio che viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta
     Pattern Model applicati:
     - [AUDIT_REST_02 ] Inoltro dati tracciati nel dominio del Fruitore REST con correlazione
     - [BLOCK_REST] Blocking REST
@@ -19,73 +19,9 @@ servers:
     description: Url di test per Consultazione Enti C001
   - url: 'https://modipa.anpr.interno.it/govway/rest/in/MinInternoPortaANPR-PDND/C001–servizioNotifica/v1'
     description: Url di esercizio per Consultazione Enti C001
-tags:
-- name: E002 service
-  description: Manage consultazione enti
-security:
-  - bearerAuth: []
-    Agid-JWT-Signature: []
-paths:
-  /status:
-    get:
-      summary: Returns the application status
-      description: |
-        Returns the application status. For testing purposes, it might randomly reply with an error.
-      operationId: get_status
-      tags:
-        - health
-      responses:
-        '200':
-          description: |
-            This is the valid status from the server.
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/RispostaKO'
-  /anpr-service-e002:
-    post:
-      tags:
-        - E002 service
-      summary: Trova caso d'uso
-      description: Consultazione di un caso d'uso
-      operationId: e002
-      security:
-        - bearerAuth: []
-      requestBody:
-        required: true
-        description: Richiesta da consultare
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/RichiestaE002'
-      responses:
-        "200":
-          description: Caso d'uso trovato
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RispostaE002OK'
-        "400":
-          description: Caso d'uso invalido
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/RispostaKO'
-        "404":
-          description: Caso d'uso non trovato
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/RispostaKO'
-        "500":
-          description: Internal Server Error
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/RispostaKO'
 components:
   schemas:
-    RichiestaE002:
+    Richiesta:
       type: object
       required:
         - idOperazioneClient
@@ -98,8 +34,8 @@ components:
         criteriRicerca:
           $ref: '#/components/schemas/PersonaAnagraficamenteResidente'
         datiRichiesta:
-          $ref: '#/components/schemas/TipoDatiRichiestaE002'
-    RispostaE002OK:
+          $ref: '#/components/schemas/TipoDatiRichiesta'
+    RispostaOK:
       type: object
       properties:
         idOperazioneANPR:
@@ -162,7 +98,18 @@ components:
         idANPR:
           title: codice persona
           description: |
-            E' un codice univoco associato a una persona. Potrebbe essere per esempio il codice individuo attribuito dall'ISTAT per la gestione dei dati nei propri registri interni.
+            Codice identificativo univoco attribuito dall'ANPR a ciascun cittadino per garantire la circolarità dei dati anagrafici e l'interoperabilità con le altre banche dati delle pubbliche amministrazioni e dei gestori di servizi pubblici. L’ID ANPR è attribuito ad ogni individuo all’atto della sua iscrizione in anagrafe e conseguente registrazione in ANPR [art. 62, c.3, ultimo periodo, CAD; DM Ministero Interno 18.4.2023; artt. 7 e 17 DPR 223/1989].
+            Il codice si contraddistingue per le seguenti caratteristiche:
+            a. è alfanumerico con lunghezza di 9 caratteri compreso il check digit;
+            b. è attribuito e associato univocamente ad ogni individuo già registrato in ANPR ovvero ad ogni individuo in fase di registrazione nell’ANPR;
+            c. può essere generato soltanto dal sistema ANPR;
+            d. non è ricavato dai dati anagrafici della persona a cui è attribuito; 
+            e. non contiene elementi identificativi dei dati anagrafici della persona a cui è attribuito;
+            f. non può essere riassegnato;
+            g. garantisce l’associazione immutabile al soggetto cui è attribuito; 
+            h. non fornisce evidenza di alcuna sequenzialità, tantomeno temporale;
+            i. è dotato di check digit (il check digit è l’ultimo carattere dell’ID ANPR calcolato tramite uno specifico algoritmo per consentire di verificare la validità dei numeri che lo precedono);
+            j. è possibile la ricostruzione del check digit’ID ANPR è attribuito ad ogni individuo all’atto della sua iscrizione in anagrafe e conseguente registrazione in ANPR.
           type: string
           maxLength: 9
           minLength: 9
@@ -348,7 +295,6 @@ components:
           $ref: '#/components/schemas/Indirizzo'
         residenzaInComune:
           title: residenza anagrafica in comune 
-          # manca la description della residenza anagrafica in comune su schema
           type: string
           pattern: >-
             [A-Z0-9]{6}
@@ -530,7 +476,7 @@ components:
             Numero progressivo, unico e obbligatorio, che viene assegnato a ciascun documento registrato sul registro di protocollo, nel quale si classificano e annotano giornalmente i varî documenti e la corrispondenza ufficiale in partenza e in arrivo presso l'Anagrafe nazionale della popolazione residente.
           type: string 
 
-    TipoDatiRichiestaE002:
+    TipoDatiRichiesta:
       type: object
       required:
         - dataRiferimentoRichiesta

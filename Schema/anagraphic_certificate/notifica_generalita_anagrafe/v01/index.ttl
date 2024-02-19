@@ -15,25 +15,25 @@
 @prefix rpo: <https://w3id.org/italia/onto/RPO/> .
 
 
-<https://w3id.org/italia/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe/latest/C001.oas3.yaml> a dcatapit:Dataset ;
+<https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> a dcatapit:Dataset ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ; 
-	dct:identifier <https://w3id.org/italia/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe>;
+	dct:identifier <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe>;
     dct:conformsTo <https://w3id.org/italia/onto/RPO>; # da controllare
-	dct:issued "2024-01-19"^^xsd:date ;
-    dct:description """ Il servizio viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta.""" ;
+	dct:issued "2024-02-19"^^xsd:date ;
+    dct:description """ Lo schema dati del servizio che viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta.""" ;
 	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ; 
 	
 	rdfs:comment "Servizio di notifica"@it ; 
 	rdfs:label "Consultazione ANPR API C001" @it ; 
     
-    dct:modified "2024-01-19"^^xsd:date ;
+    dct:modified "2024-02-19"^^xsd:date ;
 	dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ; 
     dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it>  ; 
 	dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ; 
     dct:title "Consultazione ANPR API C001"@it ; 
     owl:versionInfo "Versione 1.0"@it ; 
     
-    dcat:distribution <https://w3id.org/italia/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe/latest/C001.oas3.yaml> ; 
+    dcat:distribution <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> ; 
     
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; 
 	dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ; 
@@ -42,8 +42,7 @@
 	admsapit:acronym "ANPR-C001" ; 
     admsapt:hasKeyClass <https://w3id.org/italia/onto/RPO/RegisteredResidentPerson>;
 	
-	admsapit:prefix "rpo"^^xsd:string ; 
-    admsapit:status "ppp" ; 
+	admsapit:prefix "rpo"^^xsd:string ;  
     admsapit:target "Pubbliche Amministrazioni" .
 
 <https://w3id.org/italia/data/public-organization/ISTAT> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
@@ -70,8 +69,8 @@
                                                        			vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
                                                        			vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
                                                        
-<https://w3id.org/italia/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe> a dcatapit:Distribution ; 
+<https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe> a dcatapit:Distribution ; 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcat:accessURL <https://github.com/italia/ts-ontologie-vocabolari-controllati/tree/master/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe/latest> ; 
-    dcat:downloadURL <https://raw.githubusercontent.com/italia/ts-ontologie-vocabolari-controllati/master/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe/latest/C001.oas3.yaml> . 
+    dcat:accessURL <https://github.com/italia/ts-ontologie-vocabolari-controllati/tree/master/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest> ; 
+    dcat:downloadURL <https://raw.githubusercontent.com/italia/ts-ontologie-vocabolari-controllati/master/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> . 
   	 
