@@ -18,7 +18,11 @@
 <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> a dcatapit:Dataset ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ; 
 	dct:identifier <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe>;
+<<<<<<<< HEAD:Schema/anagraphic_certificate/notifica_generalita_anagrafe/v01/index.ttl
     dct:conformsTo <https://w3id.org/italia/onto/RPO>; 
+========
+    dct:conformsTo <https://w3id.org/italia/onto/RPO>; # da controllare
+>>>>>>>> e7a18992c4bfacf4ec1ab4f31182610769a6e378:Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/index.ttl
 	dct:issued "2024-02-19"^^xsd:date ;
     dct:description """ Lo schema dati del servizio che viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta.""" ;
 	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ; 
@@ -87,8 +91,15 @@
                                                        			vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
                                                        			vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
                                                        
+<<<<<<<< HEAD:Schema/anagraphic_certificate/notifica_generalita_anagrafe/v01/index.ttl
 <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> a dcatapit:Distribution ; 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest> ; 
     dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> . 
+========
+<https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe> a dcatapit:Distribution ; 
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:accessURL <https://github.com/italia/ts-ontologie-vocabolari-controllati/tree/master/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest> ; 
+    dcat:downloadURL <https://raw.githubusercontent.com/italia/ts-ontologie-vocabolari-controllati/master/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> . 
+>>>>>>>> e7a18992c4bfacf4ec1ab4f31182610769a6e378:Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/index.ttl
   	 

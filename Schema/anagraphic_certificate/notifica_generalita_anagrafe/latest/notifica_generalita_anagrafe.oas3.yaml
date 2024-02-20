@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Schema del Servizio di Notifica Generalità
+  title: Consultazione ANPR API C001
   description: |-
     Lo schema dati del servizio che viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta
     Pattern Model applicati:
@@ -13,10 +13,12 @@ info:
     email: ndc-segr-tec@istat.it
   termsOfService: 'http://swagger.io/terms/'
   x-api-id: C001
-  x-summary: Schema del Servizio di Notifica Generalità
-paths: {}
-servers: []
-tags: []
+  x-summary: Servizio di notifica
+servers:
+  - url: 'https://modipa-val.anpr.interno.it/govway/rest/in/MinInternoPortaANPR-PDND/C001–servizioNotifica/v1'
+    description: Url di test per Consultazione Enti C001
+  - url: 'https://modipa.anpr.interno.it/govway/rest/in/MinInternoPortaANPR-PDND/C001–servizioNotifica/v1'
+    description: Url di esercizio per Consultazione Enti C001
 components:
   schemas:
     Richiesta:
