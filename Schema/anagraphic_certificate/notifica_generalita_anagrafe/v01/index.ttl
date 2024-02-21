@@ -18,19 +18,19 @@
 <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> a dcatapit:Dataset ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ; 
 	dct:identifier <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe>;
-    dct:conformsTo <https://w3id.org/italia/onto/RPO>; # da controllare
+    dct:conformsTo <https://w3id.org/italia/onto/RPO>; 
 	dct:issued "2024-02-19"^^xsd:date ;
     dct:description """ Lo schema dati del servizio che viene invocato per ottenere le generalità, l’esistenza in vita, la residenza, l’eventuale domicilio digitale presenti in ANPR per un cittadino, alla data di riferimento della richiesta.""" ;
 	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ; 
 	
 	rdfs:comment "Servizio di notifica"@it ; 
-	rdfs:label "Consultazione ANPR API C001" @it ; 
+	rdfs:label "Consultazione Notifica Generalità API" @it ; 
     
     dct:modified "2024-02-19"^^xsd:date ;
 	dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ; 
     dct:rightsHolder <https://w3id.org/italia/data/public-organization/m_it>  ; 
 	dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ; 
-    dct:title "Consultazione ANPR API C001"@it ; 
+    dct:title "Consultazione Notifica Generalità API"@it ; 
     owl:versionInfo "Versione 1.0"@it ; 
     
     dcat:distribution <https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> ; 
@@ -40,10 +40,28 @@
 	dcat:keyword "Persona"@it , "Anagrafe"@it , "Residente"@it, "Persona Anagraficamente Residente" @it ; 
 	
 	admsapit:acronym "ANPR-C001" ; 
-    admsapt:hasKeyClass <https://w3id.org/italia/onto/RPO/RegisteredResidentPerson>;
+    admsapit:hasKeyClass <https://w3id.org/italia/onto/RPO/RegisteredResidentPerson>;
 	
 	admsapit:prefix "rpo"^^xsd:string ;  
     admsapit:target "Pubbliche Amministrazioni" .
+	
+	<https://w3id.org/italia/onto/RPO> rdf:type owl:Ontology ;
+        foaf:name "Ontologia della Popolazione Residente Registrata in Anagrafe".
+
+
+
+	rpo:RegisteredResidentPerson rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                   owl:onProperty rpo:belongsToRegisteredFamily ;
+                                                   owl:someValuesFrom owl:Thing
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty rpo:currentlyHasRegisteredResidenceIn ;
+                                                   owl:someValuesFrom owl:Thing
+                                                 ] ;
+                             rdfs:comment "Persona fisica avente dimora abituale in un determinato Comune come risultante nell'anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). "@it ;
+                             rdfs:label "Persona anagraficamente residente"@it ,
+                                        "Registered resident person"@en .
 
 <https://w3id.org/italia/data/public-organization/ISTAT> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                            foaf:Agent ;
@@ -69,8 +87,8 @@
                                                        			vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
                                                        			vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
                                                        
-<https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe> a dcatapit:Distribution ; 
+<https://w3id.org/italia/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> a dcatapit:Distribution ; 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcat:accessURL <https://github.com/italia/ts-ontologie-vocabolari-controllati/tree/master/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest> ; 
-    dcat:downloadURL <https://raw.githubusercontent.com/italia/ts-ontologie-vocabolari-controllati/master/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> . 
+    dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest> ; 
+    dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest/notifica_generalita_anagrafe.oas3.yaml> . 
   	 
