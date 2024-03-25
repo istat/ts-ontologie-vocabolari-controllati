@@ -192,7 +192,7 @@ ndc:keyConcept
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy> ;
   dcat:keyword "Italia"@it, "Paese"@it , "Italy"@en, "Country"@en ;
-  dcat:distribution <http://dati.gov.it/data/resource/Distribution/country_RDF_Turtle> , <http://dati.gov.it/data/resource/Distribution/country_RDF_XML> , <http://dati.gov.it/data/resource/Distribution/country_JSON_LD>  ;
+  dcat:distribution <http://dati.gov.it/data/resource/Distribution/country_RDF_Turtle> , <http://dati.gov.it/data/resource/Distribution/country_RDF_XML> , <http://dati.gov.it/data/resource/Distribution/country_JSON_LD>, <http://dati.gov.it/data/resource/Distribution/country_CSV>  ;
   dcat:contactPoint <http://dati.gov.it/data/resource/ContactPoint/voc_AgID> ;
   skos:hasTopConcept <http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
   dct:issued "2018-04-12"^^xsd:date ;
@@ -246,6 +246,16 @@ ndc:keyConcept
   dct:license   <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
   dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/territorial-classifications/countries/italy/italy.jsonld> ;
   dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/blob/master/VocabolariControllati/territorial-classifications/countries/italy> .
+
+  <http://dati.gov.it/data/resource/Distribution/country_CSV>
+  a						dcatapit:Distribution  ;
+  dct:title				"Distribuzione CSV del vocabolario controllato sul paese italia"@it , "CSV distribution of the Italy controlled vocabulary"@en ;
+  dct:description			"Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato sul paese Italia"@it , "This is the distribution in CSV of the Linked Open Dataset of Italy controlled vocabulary "@en ;
+  dct:format 				<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license   <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/territorial-classifications/countries/italy/italy.csv> ;
+  dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/blob/master/VocabolariControllati/territorial-classifications/countries/italy> .
+
 
 ## First level ##
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA>
