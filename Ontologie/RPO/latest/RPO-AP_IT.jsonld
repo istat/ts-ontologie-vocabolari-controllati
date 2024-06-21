@@ -474,27 +474,6 @@
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/language",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/modified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/rightsHolder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#dateTime",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
@@ -503,15 +482,6 @@
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#string",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#contactPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#keyword",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#theme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/italia/data/contact-point/ISTAT-NDC",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Organization", "http://www.w3.org/2006/vcard/ns#Kind", "http://www.w3.org/2006/vcard/ns#Organization" ],
@@ -661,33 +631,6 @@
     "@value" : "Ministry of the Interior - DAIT Central Directorate of Population Services"
   } ]
 }, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/acronym",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasKeyClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/last",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/officialURI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/prefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/target",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/italia/onto/CLV/Address",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -763,6 +706,143 @@
 }, {
   "@id" : "https://w3id.org/italia/onto/CPV/residentIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/RPO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/RPO-AP_IT.png"
+  } ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://w3id.org/italia/data/public-organization/ISTAT"
+  }, {
+    "@id" : "https://w3id.org/italia/data/public-organization/m_it"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia della popolazione residente registrata in anagrafe."
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology of the population registered in the registry office."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@id" : "https://w3id.org/italia/onto/RPO"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-12-31"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://publications.europa.eu/resource/authority/language/ITA"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-10"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://w3id.org/italia/data/public-organization/m_it"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Ontologia della Popolazione Residente Registrata in Anagrafe"
+  }, {
+    "@language" : "en",
+    "@value" : "Registered Residence Person Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia della popolazione residente registrata in anagrafe."
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology of the population registered in the registry office."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/RPO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ontologia della Popolazione Residente Registrata in Anagrafe."
+  }, {
+    "@language" : "en",
+    "@value" : "Registered Residence Person Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/l0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/italia/onto/RPO/0.2"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "Versione 0.2 - Inserita la proprietà, residentPersonID, che descrive il codice identificativo univoco attribuito dall'Anagrafe Nazionale delle Persone Residenti (ANPR) "
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "it",
+    "@value" : "Anagrafe"
+  }, {
+    "@language" : "it",
+    "@value" : "Residente"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/data-theme/SOCI"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
+    "@value" : "RPO-AP_IT"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/RPO/RegisteredResidence"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
+    "@id" : "https://w3id.org/italia/data/distribution/RPOAPIT-JSON-LD"
+  }, {
+    "@id" : "https://w3id.org/italia/data/distribution/RPOAPIT-RDF-TURTLE"
+  }, {
+    "@id" : "https://w3id.org/italia/data/distribution/RPOAPIT-RDF-XML"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/last" : [ {
+    "@id" : "https://w3id.org/italia/onto/RPO/0.1"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
+    "@id" : "https://w3id.org/italia/onto/RPO"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
+    "@value" : "rpoapit"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/status" : [ {
+    "@value" : "published"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/target" : [ {
+    "@language" : "en",
+    "@value" : "Citizens"
+  }, {
+    "@language" : "it",
+    "@value" : "Cittadini"
+  }, {
+    "@language" : "it",
+    "@value" : "Pubbliche Amministrazioni"
+  }, {
+    "@language" : "en",
+    "@value" : "Public Organization"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/type" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
+  } ]
 }, {
   "@id" : "https://w3id.org/italia/onto/RPO/Citizenship",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1787,138 +1867,4 @@
 }, {
   "@id" : "https://w3id.org/italia/onto/TI/TimeIndexedEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/l0",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Ontologie/RPO/latest/RPO-AP_IT.png"
-  } ],
-  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://w3id.org/italia/data/public-organization/ISTAT"
-  }, {
-    "@id" : "https://w3id.org/italia/data/public-organization/m_it"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia della popolazione residente registrata in anagrafe."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology of the population registered in the registry office."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@id" : "https://w3id.org/italia/onto/RPO"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-12-31"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "http://publications.europa.eu/resource/authority/language/ITA"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-06-10"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"
-  } ],
-  "http://purl.org/dc/terms/rightsHolder" : [ {
-    "@id" : "https://w3id.org/italia/data/public-organization/m_it"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Ontologia della Popolazione Residente Registrata in Anagrafe"
-  }, {
-    "@language" : "en",
-    "@value" : "Registered Residence Person Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia della popolazione residente registrata in anagrafe."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology of the population registered in the registry office."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/italia/onto/RPO"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Ontologia della Popolazione Residente Registrata in Anagrafe."
-  }, {
-    "@language" : "en",
-    "@value" : "Registered Residence Person Ontology"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "Versione iniziale 0.1"
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "it",
-    "@value" : "Anagrafe"
-  }, {
-    "@language" : "it",
-    "@value" : "Residente"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/SOCI"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
-    "@value" : "RPO-AP_IT"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/RPO/RegisteredResidence"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
-    "@id" : "https://w3id.org/italia/data/distribution/RPOAPIT-JSON-LD"
-  }, {
-    "@id" : "https://w3id.org/italia/data/distribution/RPOAPIT-RDF-TURTLE"
-  }, {
-    "@id" : "https://w3id.org/italia/data/distribution/RPOAPIT-RDF-XML"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/last" : [ {
-    "@id" : "https://w3id.org/italia/onto/RPO/0.1"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
-    "@id" : "https://w3id.org/italia/onto/RPO"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
-    "@value" : "rpoapit"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@value" : "published"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/target" : [ {
-    "@language" : "en",
-    "@value" : "Citizens"
-  }, {
-    "@language" : "it",
-    "@value" : "Cittadini"
-  }, {
-    "@language" : "it",
-    "@value" : "Pubbliche Amministrazioni"
-  }, {
-    "@language" : "en",
-    "@value" : "Public Organization"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/type" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
-  } ]
 } ]

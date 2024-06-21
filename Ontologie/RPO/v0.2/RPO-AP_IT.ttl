@@ -32,7 +32,7 @@
                                      owl:versionIRI <https://w3id.org/italia/onto/RPO/0.2> ;
                                      owl:imports <https://w3id.org/italia/onto/CLV> ,
                                                  <https://w3id.org/italia/onto/l0> ;
-								     <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Ontologie/RPO/latest/RPO-AP_IT.png> ;
+								     <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/RPO/latest/RPO-AP_IT.png> ;
                                      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                      dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
                                                  <https://w3id.org/italia/data/public-organization/m_it> ;
@@ -51,7 +51,7 @@
                                      rdfs:isDefinedBy <https://w3id.org/italia/onto/RPO> ;
                                      rdfs:label "Ontologia della Popolazione Residente Registrata in Anagrafe."@it ,
                                                 "Registered Residence Person Ontology"@en ;
-                                     owl:versionInfo "Versione iniziale 0.1"@it ;
+                                     owl:versionInfo "Versione 0.2 - Inserita la proprietà, residentPersonID, che descrive il codice identificativo univoco attribuito dall'Anagrafe Nazionale delle Persone Residenti (ANPR) "@it ;
                                      dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
                                      dcat:keyword "Anagrafe"@it ,
                                                   "Residente"@it ;
