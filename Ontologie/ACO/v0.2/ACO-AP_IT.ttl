@@ -1157,7 +1157,77 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
-
+###  https://w3id.org/italia/data/public-organization/ISTAT
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                           foaf:Agent ;
+                                                                  dct:identifier "ISTAT" ;
+                                                                  foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+                                                                            "Italian National Institute of Statistics - ISTAT"@en .
+
+
+###  https://w3id.org/italia/data/public-organization/agid
+<https://w3id.org/italia/data/public-organization/agid> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                          foaf:Agent ;
+                                                                 dct:identifier "agid" ;
+                                                                 foaf:name "Agenzia per l'Italia Digitale"@it ,
+                                                                           "Italian Digital Agency"@en .
+																		   
+###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ																		   
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+	  
+##https://w3id.org/italia/data/public-organization/m_it
+<https://w3id.org/italia/data/public-organization/m_it> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "m_it" ;
+      foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
+	  "Ministry of the Interior - DAIT Central Directorate of Population Services"@en .
+	  
+
+###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                       vcard:Kind ,
+                                                       vcard:Organization ;
+                                                       vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog " ;
+                                                       vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+
+### https://w3id.org/italia/data/distribution/ACOAPIT-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/ACOAPIT-RDF-TURTLE> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei certificati anagrafici"@it ,
+                                                                               "This is the distribution in RDF/turtle of the administrative certifications"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/Turtle ontologia ACO_IT "@it ,
+                                                                         "RDF/Turtle distribution of ACO_IT  Ontology"@en ;
+															   dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
+															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.ttl> .
+
+### https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML
+<https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei certificati anagrafici"@it ,
+                                                                               "This is the distribution in RDF/XML of the administrative certifications"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/XML ontologia ACO_IT "@it ,
+                                                                         "RDF/XML distribution of ACO_IT  Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.rdf> .
+
+### https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD
+<https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD> rdf:type admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei certificati anagrafici"@it ,
+                                                                               "This is the distribution in JSON-LD of the administrative certifications"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione JSON-LD ontologia ACO_IT "@it ,
+                                                                         "JSON-LD distribution of ACO_IT  Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.jsonld> .
+
 ###  https://w3id.org/italia/onto/ACO/BirthDeed
 aco:BirthDeed rdf:type owl:NamedIndividual ,
                        aco:EvidenceOfBirthCertificate .
@@ -1369,6 +1439,3 @@ cpv:givenName rdfs:label "nome"@it .
                 aco:RegistrationOfDissolvedMarriage
               )
 ] .
-
-
-###  Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi
