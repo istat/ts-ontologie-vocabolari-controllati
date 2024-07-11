@@ -414,6 +414,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/isCurrentlyPredominantlyCitizen">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/RPO/isCurrentlyCitizen"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+		<rdfs:comment xml:lang="it">La persona nei cui confronti è riconosciuta la cittadinanza da parte di più Stati è sottoposta alle rispettive leggi di ciascuno Stato di appartenenza. Nell'ordinamento italiano, nei rapporti di diritto internazionale privato, se la persona ha più cittadinanze, si applica la legge di quello tra gli Stati di appartenenza con il quale essa ha il collegamento più stretto. Se tra le cittadinanze vi è quella italiana, questa prevale (art. 19 legge 218/1995)</rdfs:comment>
         <rdfs:label xml:lang="en">is currently predominantly citizen</rdfs:label>
         <rdfs:label xml:lang="it">è attualmente prevalentemente cittadino</rdfs:label>
     </owl:ObjectProperty>

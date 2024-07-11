@@ -164,9 +164,8 @@ xsd:string rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Object Properties
-#################################################################
-
+#    Object Properties#################################################################
+
 ###  https://w3id.org/italia/onto/CPV/hasBirthPlace
 cpv:hasBirthPlace rdf:type owl:ObjectProperty .
 
@@ -375,6 +374,7 @@ rpo:isCurrentlyCitizen rdf:type owl:ObjectProperty ;
 rpo:isCurrentlyPredominantlyCitizen rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf rpo:isCurrentlyCitizen ;
                                     rdf:type owl:FunctionalProperty ;
+									rdfs:comment "La persona nei cui confronti è riconosciuta la cittadinanza da parte di più Stati è sottoposta alle rispettive leggi di ciascuno Stato di appartenenza. Nell'ordinamento italiano, nei rapporti di diritto internazionale privato, se la persona ha più cittadinanze, si applica la legge di quello tra gli Stati di appartenenza con il quale essa ha il collegamento più stretto. Se tra le cittadinanze vi è quella italiana, questa prevale (art. 19 legge 218/1995)."@it ;
                                     rdfs:label "is currently predominantly citizen"@en ,
                                                "è attualmente prevalentemente cittadino"@it .
 
@@ -425,9 +425,8 @@ rpo:residenceInCityAtTimeOfDeath rdf:type owl:ObjectProperty ,
 
 
 #################################################################
-#    Data properties
-#################################################################
-
+#    Data properties#################################################################
+
 ###  https://w3id.org/italia/onto/CPV/personID
 cpv:personID rdf:type owl:DatatypeProperty .
 
@@ -574,9 +573,8 @@ rpo:weddingDate rdf:type owl:DatatypeProperty ;
 
 
 #################################################################
-#    Classes
-#################################################################
-
+#    Classes#################################################################
+
 ###  https://w3id.org/italia/onto/CLV/Address
 CLV:Address rdf:type owl:Class .
 
@@ -899,9 +897,8 @@ TI:TimeIndexedEvent rdf:type owl:Class .
 
 
 #################################################################
-#    General axioms
-#################################################################
-
+#    General axioms#################################################################
+
 [ rdf:type owl:Class ;
   owl:unionOf ( rpo:RegisteredCohabitance
                 rpo:RegisteredFamily
