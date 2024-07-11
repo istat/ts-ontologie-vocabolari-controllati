@@ -119,9 +119,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 l0:controlledVocabulary rdf:type owl:AnnotationProperty .
 
 #################################################################
-#    Datatypes
-#################################################################
-
+#    Datatypes#################################################################
 
 ###  http://www.w3.org/2001/XMLSchema#dateTime
 xsd:dateTime rdf:type rdfs:Datatype .
@@ -136,9 +134,8 @@ xsd:string rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Object Properties
-#################################################################
-
+#    Object Properties#################################################################
+
 ###  https://w3id.org/italia/onto/ACO/annotationOf
 aco:annotationOf rdf:type owl:ObjectProperty ;
                  rdfs:domain aco:AdministrativeDeed ;
@@ -397,9 +394,8 @@ aco:unitedCivillyWith rdf:type owl:ObjectProperty ,
 
 
 #################################################################
-#    Data properties
-#################################################################
-
+#    Data properties#################################################################
+
 ###  https://w3id.org/italia/onto/ACO/ANPRProtocol
 aco:ANPRProtocol rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
@@ -530,9 +526,8 @@ cpv:givenName rdf:type owl:DatatypeProperty .
 
 
 #################################################################
-#    Classes
-#################################################################
-
+#    Classes#################################################################
+
 ###  https://w3id.org/italia/onto/ACO/AdministrativeDeed
 aco:AdministrativeDeed rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -1156,9 +1151,9 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
 
 
 #################################################################
-#    Individuals
-#################################################################
-###  https://w3id.org/italia/data/public-organization/ISTAT
+#    Individuals#################################################################
+
+###  https://w3id.org/italia/data/public-organization/ISTAT
 <https://w3id.org/italia/data/public-organization/ISTAT> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                            foaf:Agent ;
                                                                   dct:identifier "ISTAT" ;
@@ -1275,9 +1270,7 @@ cpv:givenName rdf:type owl:NamedIndividual ,
 
 
 #################################################################
-#    Annotations
-#################################################################
-
+#    Annotations#################################################################
 aco:BirthDeed rdfs:label "Atto di nascita"@it ;
               rdfs:comment "Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l'anno, il mese, il giorno e l'ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00."@it ;
               rdfs:label "Birth deed"@en .
@@ -1302,9 +1295,7 @@ cpv:givenName rdfs:label "nome"@it .
 
 
 #################################################################
-#    General axioms
-#################################################################
-
+#    General axioms#################################################################
 [ owl:intersectionOf ( aco:Applicant
                        [ rdf:type owl:Restriction ;
                          owl:onProperty aco:roleRelativeToApplication ;
