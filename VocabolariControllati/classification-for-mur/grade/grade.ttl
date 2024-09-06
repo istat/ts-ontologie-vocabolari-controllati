@@ -1,0 +1,319 @@
+@prefix grade: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grades/> .
+@prefix obda:  <http://obdasystems.com/ontology/> .
+@prefix l0:    <https://w3id.org/italia/onto/l0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix learn: <https://w3id.org/italia/onto/Learning/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+#################################################################
+#    Metadati 
+#################################################################
+
+
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade>
+      a dcatapit:Dataset ;
+	  dct:title "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei Voti di Laurea"@it ;
+      dct:description "This is the controlled vocabulary on Degree Grade ."@en , "Questo è il vocabolario controllato dei Voti di Laurea."@it ;
+      rdfs:comment "This is the controlled vocabulary on Degree Grade ."@en , "Questo è il vocabolario controllato dei Voti di Laurea ."@it ;
+      rdfs:label "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei voti di Laurea"@it ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      xkos:numberOfLevels "1";
+      ndc:keyConcept "grade" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade";
+      dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
+      dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                  <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
+      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade> ;
+      dcat:keyword "Voti di Laurea"@it, "Istruzione"@it ;
+#      dcat:distribution <https://w3id.org/italia/data/distribution/grade_RDF_Turtle> ,  <https://w3id.org/italia/data/distribution/grade_CSV>;
+      dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+      dct:issued "2024-09-03"^^xsd:date ;
+      dct:modified "2024-09-03"^^xsd:date ;
+      owl:versionInfo "0.1" ;
+      skos:hasTopConcept  grade:85 , grade:105 , grade:98 , grade:92 , grade:112 , grade:77 , grade:998 , grade:71 , grade:84 , grade:104 , grade:97 , grade:69 , grade:91 , grade:111 , grade:76 , grade:997 , grade:89 , grade:109 , grade:70 , grade:83 , grade:103 , grade:96 , grade:68 , grade:90 , grade:110 , grade:75 , grade:88 , grade:108 , grade:82 , grade:102 , grade:95 , grade:67 , grade:74 , grade:87 , grade:107 , grade:81 , grade:101 , grade:94 , grade:66 , grade:79 , grade:78 , grade:80 , grade:86 , grade:106 , grade:99 , grade:999 , grade:73 , grade:72 , grade:93 , grade:100 .
+
+
+
+#################################################################
+#    Individuals 
+#################################################################
+
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+
+<https://w3id.org/italia/data/public-organization/KH5RHFCV> 
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+      <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://purl.org/dc/terms/identifier> "KH5RHFCV" ;
+      rdfs:label "Ministero dell'Università e della Ricerca"@it ;
+      <http://xmlns.com/foaf/0.1/name> "Ministero dell'Università e della Ricerca"@it .
+
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+      a						dcatapit:Organization , vcard:Organization, vcard:Kind ;
+    	vcard:fn		"Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+    	vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+      a dcatapit:Agent , foaf:Agent ;
+      dct:identifier "ISTAT" ;
+      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
+	  
+<https://w3id.org/italia/data/standard/SKOS>
+      a dcatapit:Standard , dct:Standard ;
+	  foaf:name "Simple Knowledge Organization System - SKOS"@it ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web"@en .	  
+
+#################################################################
+#    Distribution 
+#################################################################
+
+#<https://w3id.org/italia/data/distribution/grade_CSV>
+#        a						dcatapit:Distribution  ;
+#        dct:title				"Distribuzione CSV vocabolario controllato dei Voti di Laurea"@it , "CSV distribution of Degree Grade controlled vocabulary"@en ;
+#        dct:description			"Questa è la distribuzione CSV del vocabolario controllato dei Voti di Laurea"@it , "This is the distribution in CSV of dataset on the Degree Grade controlled vocabulary"@en ;
+#        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+#        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/grade/grade.csv> ;
+#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/grade> .
+#
+#
+#<https://w3id.org/italia/data/distribution/grade_RDF_Turtle>
+#        a						dcatapit:Distribution  ;
+#        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato dei Voti di Laurea"@it , "RDF/Turtle distribution of Degree Grade controlled vocabulary"@en ;
+#        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato dei Voti di Laurea"@it , "This is the distribution in RDF/Turtle of dataset on the Degree Grade controlled vocabulary"@en ;
+#        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+#        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/master/VocabolariControllati/classification-for-mur/grade/grade.ttl> ;
+#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classification-for-mur/grade> .
+
+
+grade:85  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "85"@it ;
+        l0:name           "Laurea: 85/110 - 77/100"@it .
+
+grade:105  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "105"@it ;
+        l0:name           "Laurea: 105/110 - 95/100"@it .
+
+grade:98  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "98"@it ;
+        l0:name           "Laurea: 98/110 - 89/100"@it .
+
+grade:92  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "92"@it ;
+        l0:name           "Laurea: 92/110 - 84/100"@it .
+
+grade:112  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "112"@it ;
+        l0:name           "Idoneo"@it .
+
+grade:77  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "77"@it ;
+        l0:name           "Laurea: 77/110 - 70/100"@it .
+
+grade:998  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "998"@it ;
+        l0:name           "Laurea estera"@it .
+
+grade:71  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "71"@it ;
+        l0:name           "Laurea: 71/110 - 65/100"@it .
+
+grade:84  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "84"@it ;
+        l0:name           "Laurea: 84/110 - 76/100"@it .
+
+grade:104  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "104"@it ;
+        l0:name           "Laurea: 104/110 - 95/100"@it .
+
+grade:97  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "97"@it ;
+        l0:name           "Laurea: 97/110 - 88/100"@it .
+
+grade:69  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "69"@it ;
+        l0:name           "Laurea: 69/110 - 63/100"@it .
+
+grade:91  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "91"@it ;
+        l0:name           "Laurea: 91/110 - 83/100"@it .
+
+grade:111  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "111"@it ;
+        l0:name           "Laurea: 110/110 - 100/100 con lode"@it .
+
+grade:76  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "76"@it ;
+        l0:name           "Laurea: 76/110 - 69/100"@it .
+
+grade:997  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "997"@it ;
+        l0:name           "Voto non previsto"@it .
+
+grade:89  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "89"@it ;
+        l0:name           "Laurea: 89/110 - 81/100"@it .
+
+grade:109  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "109"@it ;
+        l0:name           "Laurea: 109/110 - 99/100"@it .
+
+grade:70  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "70"@it ;
+        l0:name           "Laurea: 70/110 - 64/100"@it .
+
+grade:83  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "83"@it ;
+        l0:name           "Laurea: 83/110 - 75/100"@it .
+
+grade:103  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "103"@it ;
+        l0:name           "Laurea: 103/110 - 94/100"@it .
+
+grade:96  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "96"@it ;
+        l0:name           "Laurea: 96/110 - 87/100"@it .
+
+grade:68  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "68"@it ;
+        l0:name           "Laurea: 68/110 - 62/100"@it .
+
+grade:90  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "90"@it ;
+        l0:name           "Laurea: 90/110 - 82/100"@it .
+
+grade:110  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "110"@it ;
+        l0:name           "Laurea: 110/110 - 100/100"@it .
+
+grade:75  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "75"@it ;
+        l0:name           "Laurea: 75/110 - 68/100"@it .
+
+grade:88  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "88"@it ;
+        l0:name           "Laurea: 88/110 - 80/100"@it .
+
+grade:108  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "108"@it ;
+        l0:name           "Laurea: 108/110 - 98/100"@it .
+
+grade:82  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "82"@it ;
+        l0:name           "Laurea: 82/110 - 75/100"@it .
+
+grade:102  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "102"@it ;
+        l0:name           "Laurea: 102/110 - 93/100"@it .
+
+grade:95  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "95"@it ;
+        l0:name           "Laurea: 95/110 - 86/100"@it .
+
+grade:67  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "67"@it ;
+        l0:name           "Laurea: 67/110 - 61/100"@it .
+
+grade:74  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "74"@it ;
+        l0:name           "Laurea: 74/110 - 67/100"@it .
+
+grade:87  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "87"@it ;
+        l0:name           "Laurea: 87/110 - 79/100"@it .
+
+grade:107  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "107"@it ;
+        l0:name           "Laurea: 107/110 - 97/100"@it .
+
+grade:81  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "81"@it ;
+        l0:name           "Laurea: 81/110 - 74/100"@it .
+
+grade:101  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "101"@it ;
+        l0:name           "Laurea: 101/110 - 92/100"@it .
+
+grade:94  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "94"@it ;
+        l0:name           "Laurea: 94/110 - 85/100"@it .
+
+grade:66  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "66"@it ;
+        l0:name           "Laurea: 66/110 - 60/100"@it .
+
+grade:79  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "79"@it ;
+        l0:name           "Laurea: 79/110 - 72/100"@it .
+
+grade:78  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "78"@it ;
+        l0:name           "Laurea: 78/110 - 71/100"@it .
+
+grade:80  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "80"@it ;
+        l0:name           "Laurea: 80/110 - 73/100"@it .
+
+grade:86  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "86"@it ;
+        l0:name           "Laurea: 86/110 - 78/100"@it .
+
+grade:106  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "106"@it ;
+        l0:name           "Laurea: 106/110 - 96/100"@it .
+
+grade:99  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "99"@it ;
+        l0:name           "Laurea: 99/110 - 90/100"@it .
+
+grade:999  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "999"@it ;
+        l0:name           "Voto non fornito"@it .
+
+grade:73  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "73"@it ;
+        l0:name           "Laurea: 73/110 - 66/100"@it .
+
+grade:72  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "72"@it ;
+        l0:name           "Laurea: 72/110 - 65/100"@it .
+
+grade:93  a               skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "93"@it ;
+        l0:name           "Laurea: 93/110 - 85/100"@it .
+
+grade:100  a              skos:TopConcept , learn:Grade ;
+        learn:gradeValue  "100"@it ;
+        l0:name           "Laurea: 100/110 - 91/100"@it .

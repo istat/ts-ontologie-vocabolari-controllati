@@ -1,0 +1,1776 @@
+@prefix mur-pt: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur/> .
+@prefix obda:  <http://obdasystems.com/ontology/> .
+@prefix afam-pt: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam/> .
+@prefix l0:    <https://w3id.org/italia/onto/l0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix learn: <https://w3id.org/italia/onto/Learning/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix classes: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+#################################################################
+#    Metadati 
+#################################################################
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> 
+	  a dcatapit:Dataset ;
+	  dct:title "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;
+      dct:description "This is the controlled vocabulary on Degree Classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea."@it ;
+      rdfs:comment "This is the controlled vocabulary on Degree classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea ."@it ;
+      rdfs:label "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      xkos:numberOfLevels "1";
+      ndc:keyConcept "degree-classes" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes";
+      dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
+      dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                  <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
+      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> ;
+      dcat:keyword "Classi di Laurea"@it, "Istruzione"@it ;
+#      dcat:distribution <https://w3id.org/italia/data/distribution/degree-classes_RDF_Turtle> ,  <https://w3id.org/italia/data/distribution/degree-classes_CSV>;
+      dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+      dct:issued "2024-09-03"^^xsd:date ;
+      dct:modified "2024-09-03"^^xsd:date ;
+      owl:versionInfo "0.1" ;
+	  skos:hasTopConcept  classes:99999 , classes:2040 , classes:1020 , classes:21 , classes:3086 , classes:1061 , classes:3111 , classes:34 , classes:1005 , classes:1074 , classes:1046 , classes:19 , classes:1087 , classes:8 , classes:3080 , classes:3024 , classes:3093 , classes:1040 , classes:41 , classes:13 , classes:1081 , classes:1053 , classes:2 , classes:26 , classes:1066 , classes:1038 , classes:39 , classes:99998 , classes:1079 , classes:1104 , classes:20 , classes:3085 , classes:1060 , classes:1032 , classes:33 , classes:1004 , classes:1045 , classes:1017 , classes:18 , classes:1086 , classes:1058 , classes:1083 , classes:1084 , classes:1075 , classes:1078 , classes:1069 , classes:43 , classes:42 , classes:1070 , classes:1024 , classes:1 , classes:1027 , classes:37 , classes:4 , classes:5 , classes:10 , classes:1098 , classes:38 , classes:1019 , classes:1009 , classes:1099 , classes:1089 , classes:3050 , classes:30 , classes:24 , classes:25 , classes:15 , classes:16 , classes:2051 , classes:1044 , classes:3118 , classes:2029 , classes:1002 , classes:1072 , classes:3027 , classes:1067 , classes:3019 , classes:1049 , classes:1031 , classes:40 , classes:1021 , classes:35 , classes:1022 , classes:1096 , classes:1093 , classes:1013 , classes:1026 , classes:1016 , classes:36 , classes:3089 , classes:1007 , classes:1102 , classes:3091 , classes:1037 , classes:3077 , classes:22 , classes:23 , classes:14 , classes:2035 , classes:3115 , classes:1042 , classes:3119 , classes:28 , classes:29 , classes:1109 , classes:1062 , classes:1052 , classes:1057 , classes:1047 , classes:1048 , classes:1010 , classes:1011 , classes:1001 , classes:1014 , classes:3087 , classes:3054 , classes:1095 , classes:1006 , classes:1101 , classes:3046 , classes:1077 , classes:45 , classes:44 , classes:1035 , classes:3083 , classes:1034 , classes:1029 , classes:3074 , classes:3 , classes:3079 , classes:6 , classes:11 , classes:12 , classes:7 , classes:1106 , classes:2015 , classes:1092 , classes:31 , classes:32 , classes:27 , classes:17 , classes:1050 , classes:1051 , classes:1054 , classes:1055 , classes:9 , classes:3095 , classes:1003 , classes:DCSL38 , classes:DCSL17 , classes:DDPL02 , classes:DCSL67 , classes:DCPL59 , classes:DADPL03 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCPL15%2FA> , classes:DCPL38 , classes:DAPL02 , classes:DCPL17 , classes:DCSL46 , classes:DCSL25 , classes:DCSL04 , classes:DDSL01 , classes:DASL01 , classes:DCPL67 , classes:DCPL46 , classes:DAPL10 , classes:DCSL54 , classes:DCPL25 , classes:DCPL04 , classes:DCSL33 , classes:DCSL12 , classes:DASL09 , classes:DCPL54 , classes:DCSL62 , classes:DCPL33 , classes:DCPL12 , classes:DCSL41 , classes:DCSL20 , classes:DCPL62 , classes:DCPL41 , classes:DAPL05 , classes:DCPL20 , classes:DCSL49 , classes:DCSL28 , classes:DCSL07 , classes:DASL04 , classes:DCPL49 , classes:DCSL57 , classes:DCPL28 , classes:DCSL36 , classes:DCPL07 , classes:DCSL15 , classes:DCSL26 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL14%2FA> , classes:DASL03 , classes:DCSL19 , classes:DCPL40 , classes:DAPL04 , classes:DCPL18 , classes:DCSL21 , classes:DCSL47 , classes:DCSL06 , classes:DDSL02 , classes:DCPL53 , classes:DCPL39 , classes:DCSL34 , classes:DCSL27 , classes:DCPL21 , classes:DCSL64 , classes:DCSL02 , classes:DCPL26 , classes:DIPL01 , classes:DCPL19 , classes:DCPL01 , classes:DCSL23 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCPL27%2FA> , classes:DASL02 , classes:DCSL72 , classes:DCPL22 , classes:DCSL65 , classes:DCPL15 , classes:DCSL53 , classes:DCSL03 , classes:DIPL02 , classes:DCPL52 , classes:DCPL02 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL65%2FA> , classes:DAPL09 , classes:DCSL59 , classes:DASL10 , classes:DCPL65 , classes:DCPL58 , classes:DCPL73 , classes:DISL01 , classes:DCSL39 , classes:DCSL35 , classes:DCPL66 , classes:DCPL34 , classes:DCPL27 , classes:DAPL06 , classes:DCSL30 , classes:DCSL08 , classes:DCPL14 , classes:DCPL55 , classes:DCSL10 , classes:DCPL42 , classes:DASLQ01 , classes:DCPL35 , classes:DCSL16 , classes:DCSL60 , classes:DCSL09 , classes:DCPL10 , classes:DCPL03 , classes:DCPL08 , classes:DASL08 , classes:DDPL01 , classes:DCPL31 , classes:DADPL02 , classes:DCSL61 , classes:DCPL61 , classes:DCPL11 , classes:DCSL42 , classes:DCSL22 , classes:DCSL48 , classes:DDSL03 , classes:DCPL47 , classes:DCSL50 , classes:DCSL43 , classes:DASL05 , classes:DAPL01 , classes:DCSL11 , classes:DCSL56 , classes:DCPL43 , classes:DCSL24 , classes:DCPL48 , classes:DADSL03 , classes:DCSL29 , classes:DCSL66 , classes:DCPL23 , classes:DCPL16 , classes:DCPL44 , classes:DASL11 , classes:DCPL24 , classes:DISL02 , classes:DCSL55 , classes:DCSL05 , classes:DCSL63 , classes:DCSL51 , classes:DCSL01 , classes:DCPL50 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL27%2FA> , classes:DAPL07 , classes:DCSL31 , classes:DADSL02 , classes:DCPL30 , classes:DCPL56 , classes:DCSL37 , classes:DCSL52 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL99+%28codice+temporaneo+in+attesa+di+accreditamento> , classes:DCPL51 , classes:DCPL36 , classes:DCPL29 , classes:DAPL08 , classes:DCSL32 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL06%2FB> , classes:DCPL64 , classes:DCPL57 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL15%2FA> , classes:DCSL45 , classes:DCPL09 , classes:DCPL32 , classes:DAPL11 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL22%2FA> , classes:DCSL13 , classes:DCPL37 , classes:DCPL05 , classes:DDPL03 , classes:DCSL68 , classes:DCSL14 , classes:DCPL63 , classes:DCPL13 , classes:DCPL06 , classes:DCSL44 , classes:DASL06 , classes:DCSL40 , classes:DAPL03 , classes:DCSL58 , <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL15%2FC+> , classes:DCPL60 , classes:DCPL45 .
+
+
+#################################################################
+#    Individuals 
+#################################################################
+
+																		   
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+
+<https://w3id.org/italia/data/public-organization/KH5RHFCV> 
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+      <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://purl.org/dc/terms/identifier> "KH5RHFCV" ;
+      rdfs:label "Ministero dell'Università e della Ricerca"@it ;
+      <http://xmlns.com/foaf/0.1/name> "Ministero dell'Università e della Ricerca"@it .
+
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+      a						dcatapit:Organization , vcard:Organization, vcard:Kind ;
+    	vcard:fn		"Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+    	vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+      a dcatapit:Agent , foaf:Agent ;
+      dct:identifier "ISTAT" ;
+      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
+	  
+<https://w3id.org/italia/data/standard/SKOS>
+      a dcatapit:Standard , dct:Standard ;
+	  foaf:name "Simple Knowledge Organization System - SKOS"@it ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web"@en .	  
+
+#################################################################
+#    Distribution 
+#################################################################
+
+#<https://w3id.org/italia/data/distribution/degree-classes_CSV>
+#        a						dcatapit:Distribution  ;
+#        dct:title				"Distribuzione CSV vocabolario controllato delle Classi di Laurea"@it , "CSV distribution of Degree Classes controlled vocabulary"@en ;
+#        dct:description			"Questa è la distribuzione CSV del vocabolario controllato delle Classi di Laurea"@it , "This is the distribution in CSV of dataset on the Degree Classes controlled vocabulary"@en ;
+#        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+#        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/degree-classes/degree-classes.csv> ;
+#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/degree-classes> .
+#
+#
+#<https://w3id.org/italia/data/distribution/degree-classes_RDF_Turtle>
+#        a						dcatapit:Distribution  ;
+#        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato delle Classi di Laurea"@it , "RDF/Turtle distribution of Degree Classes controlled vocabulary"@en ;
+#        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato delle Classi di Laurea"@it , "This is the distribution in RDF/Turtle of dataset on the Degree Classes controlled vocabulary"@en ;
+#        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+#        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/degree-classes/degree-classes.ttl> ;
+#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/degree-classes> .
+
+
+classes:99999  a                skos:TopConcept , learn:DegreeClass ;
+        l0:identifier           "99999"@it ;
+        l0:name                 "Classe non definita"@it .
+
+classes:2040  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MT ;
+        l0:identifier           "2040"@it ;
+        l0:name                 "Sociologia"@it .
+
+classes:1020  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1020"@it ;
+        l0:name                 "Specialistiche in fisica"@it .
+
+classes:21  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "21"@it ;
+        l0:name                 "Scienze e tecnologie chimiche"@it .
+
+classes:3086  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3086"@it ;
+        l0:name                 "Scienze pedagogiche"@it .
+
+classes:1061  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1061"@it ;
+        l0:name                 "Specialistiche in scienza e ingegneria dei materiali"@it .
+
+classes:3111  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3111"@it ;
+        l0:name                 "Scienze delle professioni sanitarie tecniche"@it .
+
+classes:34  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "34"@it ;
+        l0:name                 "Scienze e tecniche psicologiche"@it .
+
+classes:1005  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1005"@it ;
+        l0:name                 "Specialistiche in archivistica e biblioteconomia"@it .
+
+classes:1074  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1074"@it ;
+        l0:name                 "Specialistiche in scienze e gestione delle risorse rurali e forestali"@it .
+
+classes:1046  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:TU ;
+        l0:identifier           "1046"@it ;
+        l0:name                 "Specialistiche in medicina e chirurgia"@it .
+
+classes:19  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "19"@it ;
+        l0:name                 "Scienze dell'amministrazione"@it .
+
+classes:1087  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1087"@it ;
+        l0:name                 "Specialistiche in scienze pedagogiche"@it .
+
+classes:8  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "8"@it ;
+        l0:name                 "Ingegneria civile e ambientale"@it .
+
+classes:3080  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3080"@it ;
+        l0:name                 "Scienze geofisiche"@it .
+
+classes:3024  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3024"@it ;
+        l0:name                 "Ingegneria civile"@it .
+
+classes:3093  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3093"@it ;
+        l0:name                 "Teorie della comunicazione"@it .
+
+classes:1040  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1040"@it ;
+        l0:name                 "Specialistiche in lingua e cultura italiana"@it .
+
+classes:41  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "41"@it ;
+        l0:name                 "Tecnologie per la conservazione e il restauro dei beni culturali"@it .
+
+classes:13  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "13"@it ;
+        l0:name                 "Scienze dei beni culturali"@it .
+
+classes:1081  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1081"@it ;
+        l0:name                 "Specialistiche in scienze e tecnologie della chimica industriale"@it .
+
+classes:1053  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1053"@it ;
+        l0:name                 "Specialistiche in organizzazione e gestione dei servizi per lo sport e le attivita motorie"@it .
+
+classes:2  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "2"@it ;
+        l0:name                 "Scienze dei servizi giuridici"@it .
+
+classes:26  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "26"@it ;
+        l0:name                 "Scienze e tecnologie informatiche"@it .
+
+classes:1066  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1066"@it ;
+        l0:name                 "Specialistiche in scienze dell'universo"@it .
+
+classes:1038  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1038"@it ;
+        l0:name                 "Specialistiche in ingegneria per l'ambiente e il territorio"@it .
+
+classes:39  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "39"@it ;
+        l0:name                 "Scienze del turismo"@it .
+
+classes:99998  a                skos:TopConcept , learn:DegreeClass ;
+        l0:identifier           "99998"@it ;
+        l0:name                 "Classe non richiesta"@it .
+
+classes:1079  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1079"@it ;
+        l0:name                 "Specialistiche in scienze e tecnologie agrozootecniche"@it .
+
+classes:1104  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1104"@it ;
+        l0:name                 "Specialistiche in traduzione letteraria e in traduzione tecnico-scientifica"@it .
+
+classes:20  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "20"@it ;
+        l0:name                 "Scienze e tecnologie agrarie, agroalimentari e forestali"@it .
+
+classes:3085  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3085"@it ;
+        l0:name                 "Scienze storiche"@it .
+
+classes:1060  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1060"@it ;
+        l0:name                 "Specialistiche in relazioni internazionali"@it .
+
+classes:1032  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1032"@it ;
+        l0:name                 "Specialistiche in ingegneria elettronica"@it .
+
+classes:33  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "33"@it ;
+        l0:name                 "Scienze delle attivita motorie e sportive"@it .
+
+classes:1004  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1004"@it ;
+        l0:name                 "Specialistiche in architettura e ingegneria edile"@it .
+
+classes:1045  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1045"@it ;
+        l0:name                 "Specialistiche in matematica"@it .
+
+classes:1017  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1017"@it ;
+        l0:name                 "Specialistiche in filosofia e storia della scienza"@it .
+
+classes:18  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "18"@it ;
+        l0:name                 "Scienze dell'educazione e della formazione"@it .
+
+classes:1086  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1086"@it ;
+        l0:name                 "Specialistiche in scienze geologiche"@it .
+
+classes:1058  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1058"@it ;
+        l0:name                 "Specialistiche in psicologia"@it .
+
+classes:1083  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1083"@it ;
+        l0:name                 "Specialistiche in scienze economiche per l'ambiente e la cultura"@it .
+
+classes:1084  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1084"@it ;
+        l0:name                 "Specialistiche in scienze economico-aziendali"@it .
+
+classes:1075  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1075"@it ;
+        l0:name                 "Specialistiche in scienze e tecnica dello sport"@it .
+
+classes:1078  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1078"@it ;
+        l0:name                 "Specialistiche in scienze e tecnologie agroalimentari"@it .
+
+classes:1069  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1069"@it ;
+        l0:name                 "Specialistiche in scienze della nutrizione umana"@it .
+
+classes:43  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "43"@it ;
+        l0:name                 "Professioni sanitarie, infermieristiche e professione sanitaria ostetrica"@it .
+
+classes:42  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "42"@it ;
+        l0:name                 "Disegno industriale"@it .
+
+classes:1070  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1070"@it ;
+        l0:name                 "Specialistiche in scienze della politica"@it .
+
+classes:1024  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1024"@it ;
+        l0:name                 "Specialistiche in informatica per le discipline umanistiche"@it .
+
+classes:1  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "1"@it ;
+        l0:name                 "Biotecnologie"@it .
+
+classes:1027  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1027"@it ;
+        l0:name                 "Specialistiche in ingegneria chimica"@it .
+
+classes:37  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "37"@it ;
+        l0:name                 "Scienze statistiche"@it .
+
+classes:4  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "4"@it ;
+        l0:name                 "Scienze dell'architettura e dell'ingegneria edile"@it .
+
+classes:5  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "5"@it ;
+        l0:name                 "Lettere"@it .
+
+classes:10  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "10"@it ;
+        l0:name                 "Ingegneria industriale"@it .
+
+classes:1098  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1098"@it ;
+        l0:name                 "Specialistiche in storia moderna"@it .
+
+classes:38  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "38"@it ;
+        l0:name                 "Scienze storiche"@it .
+
+classes:1019  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1019"@it ;
+        l0:name                 "Specialistiche in finanza"@it .
+
+classes:1009  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1009"@it ;
+        l0:name                 "Specialistiche in biotecnologie mediche, veterinarie e farmaceutiche"@it .
+
+classes:1099  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1099"@it ;
+        l0:name                 "Specialistiche in studi europei"@it .
+
+classes:1089  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1089"@it ;
+        l0:name                 "Specialistiche in sociologia"@it .
+
+classes:3050  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3050"@it ;
+        l0:name                 "Progettazione e gestione dei sistemi turistici"@it .
+
+classes:30  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "30"@it ;
+        l0:name                 "Scienze geografiche"@it .
+
+classes:24  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "24"@it ;
+        l0:name                 "Scienze e tecnologie farmaceutiche"@it .
+
+classes:25  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "25"@it ;
+        l0:name                 "Scienze e tecnologie fisiche"@it .
+
+classes:15  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "15"@it ;
+        l0:name                 "Scienze politiche e delle relazioni internazionali"@it .
+
+classes:16  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "16"@it ;
+        l0:name                 "Scienze della Terra"@it .
+
+classes:2051  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MT ;
+        l0:identifier           "2051"@it ;
+        l0:name                 "Scienze criminologiche e della sicurezza"@it .
+
+classes:1044  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1044"@it ;
+        l0:name                 "Specialistiche in linguistica"@it .
+
+classes:3118  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3118"@it ;
+        l0:name                 "Scienze della difesa e della sicurezza"@it .
+
+classes:2029  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MT ;
+        l0:identifier           "2029"@it ;
+        l0:name                 "Scienze e tecnologie farmaceutiche"@it .
+
+classes:1002  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1002"@it ;
+        l0:name                 "Specialistiche in archeologia"@it .
+
+classes:1072  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1072"@it ;
+        l0:name                 "Specialistiche in scienze delle religioni"@it .
+
+classes:3027  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3027"@it ;
+        l0:name                 "Ingegneria della sicurezza"@it .
+
+classes:1067  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1067"@it ;
+        l0:name                 "Specialistiche in scienze della comunicazione sociale e istituzionale"@it .
+
+classes:3019  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3019"@it ;
+        l0:name                 "Informatica"@it .
+
+classes:1049  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1049"@it ;
+        l0:name                 "Specialistiche in metodi per la ricerca empirica nelle scienze sociali"@it .
+
+classes:1031  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1031"@it ;
+        l0:name                 "Specialistiche in ingegneria elettrica"@it .
+
+classes:40  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "40"@it ;
+        l0:name                 "Scienze e tecnologie zootecniche e delle produzioni animali"@it .
+
+classes:1021  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1021"@it ;
+        l0:name                 "Specialistiche in geografia"@it .
+
+classes:35  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "35"@it ;
+        l0:name                 "Scienze sociali per la cooperazione, lo sviluppo e la pace"@it .
+
+classes:1022  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1022"@it ;
+        l0:name                 "Specialistiche in giurisprudenza"@it .
+
+classes:1096  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1096"@it ;
+        l0:name                 "Specialistiche in storia della filosofia"@it .
+
+classes:1093  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1093"@it ;
+        l0:name                 "Specialistiche in storia antica"@it .
+
+classes:1013  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1013"@it ;
+        l0:name                 "Specialistiche in editoria, comunicazione multimediale e giornalismo"@it .
+
+classes:1026  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1026"@it ;
+        l0:name                 "Specialistiche in ingegneria biomedica"@it .
+
+classes:1016  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1016"@it ;
+        l0:name                 "Specialistiche in filologia moderna"@it .
+
+classes:36  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "36"@it ;
+        l0:name                 "Scienze sociologiche"@it .
+
+classes:3089  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3089"@it ;
+        l0:name                 "Sociologia e ricerca sociale"@it .
+
+classes:1007  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1007"@it ;
+        l0:name                 "Specialistiche in biotecnologie agrarie"@it .
+
+classes:1102  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1102"@it ;
+        l0:name                 "Specialistiche in teoria e tecniche della normazione e dell'informazione giuridica"@it .
+
+classes:3091  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3091"@it ;
+        l0:name                 "Studi europei"@it .
+
+classes:1037  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1037"@it ;
+        l0:name                 "Specialistiche in ingegneria navale"@it .
+
+classes:3077  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3077"@it ;
+        l0:name                 "Scienze economiche per l'ambiente e la cultura"@it .
+
+classes:22  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "22"@it ;
+        l0:name                 "Scienze e tecnologie della navigazione marittima e aerea"@it .
+
+classes:23  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "23"@it ;
+        l0:name                 "Scienze e tecnologie delle arti figurative, della musica, dello spettacolo e della moda"@it .
+
+classes:14  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "14"@it ;
+        l0:name                 "Scienze della comunicazione"@it .
+
+classes:2035  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MT ;
+        l0:identifier           "2035"@it ;
+        l0:name                 "Scienze matematiche"@it .
+
+classes:3115  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3115"@it ;
+        l0:name                 "Scienze criminologiche applicate all'investigazione e alla sicurezza"@it .
+
+classes:1042  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1042"@it ;
+        l0:name                 "Specialistiche in lingue e letterature moderne euroamericane"@it .
+
+classes:3119  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LM ;
+        l0:identifier           "3119"@it ;
+        l0:name                 "Architettura e ingegneria edile-architettura (quinquennale)"@it .
+
+classes:28  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "28"@it ;
+        l0:name                 "Scienze economiche"@it .
+
+classes:29  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "29"@it ;
+        l0:name                 "Filosofia"@it .
+
+classes:1109  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1109"@it ;
+        l0:name                 "Specialistiche nelle scienze delle professioni sanitarie della prevenzione"@it .
+
+classes:1062  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1062"@it ;
+        l0:name                 "Specialistiche in scienze chimiche"@it .
+
+classes:1052  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:TU ;
+        l0:identifier           "1052"@it ;
+        l0:name                 "Specialistiche in odontoiatria e protesi dentaria"@it .
+
+classes:1057  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1057"@it ;
+        l0:name                 "Specialistiche in programmazione e gestione delle politiche e dei servizi sociali"@it .
+
+classes:1047  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:TU ;
+        l0:identifier           "1047"@it ;
+        l0:name                 "Specialistiche in medicina veterinaria"@it .
+
+classes:1048  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1048"@it ;
+        l0:name                 "Specialistiche in metodi per l'analisi valutativa dei sistemi complessi"@it .
+
+classes:1010  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1010"@it ;
+        l0:name                 "Specialistiche in conservazione dei beni architettonici e ambientali"@it .
+
+classes:1011  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1011"@it ;
+        l0:name                 "Specialistiche in conservazione dei beni scientifici e della civilta industriale"@it .
+
+classes:1001  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1001"@it ;
+        l0:name                 "Specialistiche in antropologia culturale ed etnologia"@it .
+
+classes:1014  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:TU ;
+        l0:identifier           "1014"@it ;
+        l0:name                 "Specialistiche in farmacia e farmacia industriale"@it .
+
+classes:3087  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3087"@it ;
+        l0:name                 "Scienze zootecniche e tecnologie  animali"@it .
+
+classes:3054  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3054"@it ;
+        l0:name                 "Scienza e ingegneria dei materiali"@it .
+
+classes:1095  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1095"@it ;
+        l0:name                 "Specialistiche in storia dell'arte"@it .
+
+classes:1006  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1006"@it ;
+        l0:name                 "Specialistiche in biologia"@it .
+
+classes:1101  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1101"@it ;
+        l0:name                 "Specialistiche in teoria della comunicazione"@it .
+
+classes:3046  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3046"@it ;
+        l0:name                 "Musicologia e beni musicali"@it .
+
+classes:1077  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1077"@it ;
+        l0:name                 "Specialistiche in scienze e tecnologie agrarie"@it .
+
+classes:45  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "45"@it ;
+        l0:name                 "Professioni sanitarie tecniche"@it .
+
+classes:44  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "44"@it ;
+        l0:name                 "Professioni sanitarie della riabilitazione"@it .
+
+classes:1035  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1035"@it ;
+        l0:name                 "Specialistiche in ingegneria informatica"@it .
+
+classes:3083  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3083"@it ;
+        l0:name                 "Scienze statistiche"@it .
+
+classes:1034  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1034"@it ;
+        l0:name                 "Specialistiche in ingegneria gestionale"@it .
+
+classes:1029  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1029"@it ;
+        l0:name                 "Specialistiche in ingegneria dell'automazione"@it .
+
+classes:3074  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3074"@it ;
+        l0:name                 "Scienze e tecnologie forestali ed ambientali"@it .
+
+classes:3  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "3"@it ;
+        l0:name                 "Scienze della mediazione linguistica"@it .
+
+classes:3079  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3079"@it ;
+        l0:name                 "Scienze filosofiche"@it .
+
+classes:6  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "6"@it ;
+        l0:name                 "Scienze del servizio sociale"@it .
+
+classes:11  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "11"@it ;
+        l0:name                 "Lingue e culture moderne"@it .
+
+classes:12  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "12"@it ;
+        l0:name                 "Scienze biologiche"@it .
+
+classes:7  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "7"@it ;
+        l0:name                 "Urbanistica e scienze della pianificazione territoriale e ambientale"@it .
+
+classes:1106  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1106"@it ;
+        l0:name                 "Specialistiche nelle scienze infermieristiche e ostetriche"@it .
+
+classes:2015  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MT ;
+        l0:identifier           "2015"@it ;
+        l0:name                 "Scienze del turismo"@it .
+
+classes:1092  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1092"@it ;
+        l0:name                 "Specialistiche in statistica per la ricerca sperimentale"@it .
+
+classes:31  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "31"@it ;
+        l0:name                 "Scienze giuridiche"@it .
+
+classes:32  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "32"@it ;
+        l0:name                 "Scienze matematiche"@it .
+
+classes:27  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "27"@it ;
+        l0:name                 "Scienze e tecnologie per l'ambiente e la natura"@it .
+
+classes:17  a                   skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "17"@it ;
+        l0:name                 "Scienze dell'economia e della gestione aziendale"@it .
+
+classes:1050  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1050"@it ;
+        l0:name                 "Specialistiche in modellistica matematico-fisica per l'ingegneria"@it .
+
+classes:1051  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1051"@it ;
+        l0:name                 "Specialistiche in musicologia e beni musicali"@it .
+
+classes:1054  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1054"@it ;
+        l0:name                 "Specialistiche in pianificazione territoriale urbanistica e ambientale"@it .
+
+classes:1055  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1055"@it ;
+        l0:name                 "Specialistiche in progettazione e gestione dei sistemi turistici"@it .
+
+classes:9  a                    skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LT ;
+        l0:identifier           "9"@it ;
+        l0:name                 "Ingegneria dell'informazione"@it .
+
+classes:3095  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:MS ;
+        l0:identifier           "3095"@it ;
+        l0:name                 "Traduzione specialistica e interpretariato"@it .
+
+classes:1003  a                 skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  mur-pt:LS ;
+        l0:identifier           "1003"@it ;
+        l0:name                 "Specialistiche in architettura del paesaggio"@it .
+
+classes:DCSL38  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL38"@it ;
+        l0:name                 "ORGANO"@it .
+
+classes:DCSL17  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL17"@it ;
+        l0:name                 "CONTRABBASSO JAZZ"@it .
+
+classes:DDPL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DDPL02"@it ;
+        l0:name                 "DANZA CONTEMPORANEA"@it .
+
+classes:DCSL67  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL67"@it ;
+        l0:name                 "POPULAR MUSIC"@it .
+
+classes:DCPL59  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL59"@it ;
+        l0:name                 "PREPOLIFONIA"@it .
+
+classes:DADPL03  a              skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DADPL03"@it ;
+        l0:name                 "REGIA"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCPL15%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL15/A"@it ;
+        l0:name                 "Discipline storiche, critiche e analitiche della musica"@it .
+
+classes:DCPL38  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL38"@it ;
+        l0:name                 "ORGANO"@it .
+
+classes:DAPL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL02"@it ;
+        l0:name                 "SCULTURA"@it .
+
+classes:DCPL17  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL17"@it ;
+        l0:name                 "CONTRABBASSO JAZZ"@it .
+
+classes:DCSL46  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL46"@it ;
+        l0:name                 "TROMBA"@it .
+
+classes:DCSL25  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL25"@it ;
+        l0:name                 "FAGOTTO BAROCCO E CLASSICO"@it .
+
+classes:DCSL04  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL04"@it ;
+        l0:name                 "BASSO TUBA"@it .
+
+classes:DDSL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DDSL01"@it ;
+        l0:name                 "DANZA CLASSICA"@it .
+
+classes:DASL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL01"@it ;
+        l0:name                 "PITTURA"@it .
+
+classes:DCPL67  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL67"@it ;
+        l0:name                 "POPULAR MUSIC"@it .
+
+classes:DCPL46  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL46"@it ;
+        l0:name                 "TROMBA"@it .
+
+classes:DAPL10  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL10"@it ;
+        l0:name                 "DIDATTICA DELL'ARTE"@it .
+
+classes:DCSL54  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL54"@it ;
+        l0:name                 "VIOLINO"@it .
+
+classes:DCPL25  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL25"@it ;
+        l0:name                 "FAGOTTO BAROCCO"@it .
+
+classes:DCPL04  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL04"@it ;
+        l0:name                 "BASSO TUBA"@it .
+
+classes:DCSL33  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL33"@it ;
+        l0:name                 "DIREZIONE DI CORO E COMPOSIZIONE CORALE"@it .
+
+classes:DCSL12  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL12"@it ;
+        l0:name                 "CLARINETTO JAZZ"@it .
+
+classes:DASL09  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL09"@it ;
+        l0:name                 "COMUNICAZIONE E VALORIZZAZIONE DEL PATRIMONIO ARTISTICO CONTEMPORANEO"@it .
+
+classes:DCPL54  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL54"@it ;
+        l0:name                 "VIOLINO"@it .
+
+classes:DCSL62  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL62"@it ;
+        l0:name                 "MUSICA SACRA in lingua tedesca"@it .
+
+classes:DCPL33  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL33"@it ;
+        l0:name                 "DIREZIONE DI CORO E COMPOSIZIONE CORALE"@it .
+
+classes:DCPL12  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL12"@it ;
+        l0:name                 "CLARINETTO JAZZ"@it .
+
+classes:DCSL41  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL41"@it ;
+        l0:name                 "SAXOFONO"@it .
+
+classes:DCSL20  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL20"@it ;
+        l0:name                 "CORNO NATURALE"@it .
+
+classes:DCPL62  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL62"@it ;
+        l0:name                 "MUSICA SACRA IN LINGUA TEDESCA"@it .
+
+classes:DCPL41  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL41"@it ;
+        l0:name                 "SAXOFONO"@it .
+
+classes:DAPL05  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL05"@it ;
+        l0:name                 "SCENOGRAFIA"@it .
+
+classes:DCPL20  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL20"@it ;
+        l0:name                 "CORNO NATURALE"@it .
+
+classes:DCSL49  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL49"@it ;
+        l0:name                 "TROMBONE"@it .
+
+classes:DCSL28  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL28"@it ;
+        l0:name                 "FLAUTO DOLCE"@it .
+
+classes:DCSL07  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL07"@it ;
+        l0:name                 "CANTO JAZZ"@it .
+
+classes:DASL04  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL04"@it ;
+        l0:name                 "GRAFICA"@it .
+
+classes:DCPL49  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL49"@it ;
+        l0:name                 "TROMBONE"@it .
+
+classes:DCSL57  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL57"@it ;
+        l0:name                 "VIOLONCELLO"@it .
+
+classes:DCPL28  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL28"@it ;
+        l0:name                 "FLAUTO DOLCE"@it .
+
+classes:DCSL36  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL36"@it ;
+        l0:name                 "OBOE"@it .
+
+classes:DCPL07  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL07"@it ;
+        l0:name                 "CANTO JAZZ"@it .
+
+classes:DCSL15  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL15"@it ;
+        l0:name                 "COMPOSIZIONE"@it .
+
+classes:DCSL26  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL26"@it ;
+        l0:name                 "FISARMONICA"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL14%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL14/A"@it ;
+        l0:name                 "PIANOFORTE STORICO"@it .
+
+classes:DASL03  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL03"@it ;
+        l0:name                 "DECORAZIONE"@it .
+
+classes:DCSL19  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL19"@it ;
+        l0:name                 "CORNO"@it .
+
+classes:DCPL40  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL40"@it ;
+        l0:name                 "PIANOFORTE JAZZ"@it .
+
+classes:DAPL04  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL04"@it ;
+        l0:name                 "GRAFICA"@it .
+
+classes:DCPL18  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL18"@it ;
+        l0:name                 "CORNETTO"@it .
+
+classes:DCSL21  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL21"@it ;
+        l0:name                 "DIDATTICA DELLA MUSICA"@it .
+
+classes:DCSL47  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL47"@it ;
+        l0:name                 "TROMBA JAZZ"@it .
+
+classes:DCSL06  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL06"@it ;
+        l0:name                 "CANTO"@it .
+
+classes:DDSL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DDSL02"@it ;
+        l0:name                 "DANZA CONTEMPORANEA"@it .
+
+classes:DCPL53  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL53"@it ;
+        l0:name                 "VIOLA DA GAMBA"@it .
+
+classes:DCPL39  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL39"@it ;
+        l0:name                 "PIANOFORTE"@it .
+
+classes:DCSL34  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL34"@it ;
+        l0:name                 "MUSICA ELETTRONICA"@it .
+
+classes:DCSL27  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL27"@it ;
+        l0:name                 "FLAUTO"@it .
+
+classes:DCPL21  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL21"@it ;
+        l0:name                 "DIDATTICA DELLA MUSICA"@it .
+
+classes:DCSL64  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL64"@it ;
+        l0:name                 "COMPOSIZIONE JAZZ"@it .
+
+classes:DCSL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL02"@it ;
+        l0:name                 "ARPA RINASCIMENTALE E BAROCCA"@it .
+
+classes:DCPL26  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL26"@it ;
+        l0:name                 "FISARMONICA"@it .
+
+classes:DIPL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DIPL01"@it ;
+        l0:name                 "PROGETTAZIONE GRAFICA ED EDITORIALE"@it .
+
+classes:DCPL19  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL19"@it ;
+        l0:name                 "CORNO"@it .
+
+classes:DCPL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL01"@it ;
+        l0:name                 "ARPA"@it .
+
+classes:DCSL23  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL23"@it ;
+        l0:name                 "EUFONIO"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCPL27%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL27/A"@it ;
+        l0:name                 "FLAUTO JAZZ"@it .
+
+classes:DASL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL02"@it ;
+        l0:name                 "SCULTURA"@it .
+
+classes:DCSL72  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL72"@it ;
+        l0:name                 "Teorie e tecniche in musicoterapia"@it .
+
+classes:DCPL22  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL22"@it ;
+        l0:name                 "DIREZIONE D'ORCHESTRA"@it .
+
+classes:DCSL65  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL65"@it ;
+        l0:name                 "MUSICHE TRADIZIONALI"@it .
+
+classes:DCPL15  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL15"@it ;
+        l0:name                 "COMPOSIZIONE"@it .
+
+classes:DCSL53  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL53"@it ;
+        l0:name                 "VIOLA DA GAMBA"@it .
+
+classes:DCSL03  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL03"@it ;
+        l0:name                 "BASSO ELETTRICO JAZZ"@it .
+
+classes:DIPL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DIPL02"@it ;
+        l0:name                 "DESIGN"@it .
+
+classes:DCPL52  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL52"@it ;
+        l0:name                 "VIOLA"@it .
+
+classes:DCPL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL02"@it ;
+        l0:name                 "ARPA RINASCIMENTALE E BAROCCA"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL65%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL65/A"@it ;
+        l0:name                 "Musiche tradizionali – Canzone classica napoletana"@it .
+
+classes:DAPL09  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL09"@it ;
+        l0:name                 "COMUNICAZIONE E VALORIZZAZIONE DEL PATRIMONIO ARTISTICO CONTEMPORANEO"@it .
+
+classes:DCSL59  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL59"@it ;
+        l0:name                 "PREPOLIFONIA"@it .
+
+classes:DASL10  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL10"@it ;
+        l0:name                 "DIDATTICA DELL'ARTE"@it .
+
+classes:DCPL65  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL65"@it ;
+        l0:name                 "MUSICHE TRADIZIONALI"@it .
+
+classes:DCPL58  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL58"@it ;
+        l0:name                 "VIOLONCELLO BAROCCO"@it .
+
+classes:DCPL73  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL73"@it ;
+        l0:name                 "ARMONICA A BOCCA CROMATICA"@it .
+
+classes:DISL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DISL01"@it ;
+        l0:name                 "PROGETTAZIONE GRAFICA ED EDITORIALE"@it .
+
+classes:DCSL39  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL39"@it ;
+        l0:name                 "PIANOFORTE"@it .
+
+classes:DCSL35  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL35"@it ;
+        l0:name                 "MUSICA VOCALE DA CAMERA"@it .
+
+classes:DCPL66  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL66"@it ;
+        l0:name                 "ORGANO E MUSICA LITURGICA"@it .
+
+classes:DCPL34  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL34"@it ;
+        l0:name                 "MUSICA ELETTRONICA"@it .
+
+classes:DCPL27  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL27"@it ;
+        l0:name                 "FLAUTO"@it .
+
+classes:DAPL06  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL06"@it ;
+        l0:name                 "PROGETTAZIONE ARTISTICA PER L'IMPRESA"@it .
+
+classes:DCSL30  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL30"@it ;
+        l0:name                 "LIUTO"@it .
+
+classes:DCSL08  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL08"@it ;
+        l0:name                 "CANTO RINASCIMENTALE E BAROCCO"@it .
+
+classes:DCPL14  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL14"@it ;
+        l0:name                 "CLAVICEMBALO E TASTIERE STORICHE"@it .
+
+classes:DCPL55  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL55"@it ;
+        l0:name                 "VIOLINO BAROCCO"@it .
+
+classes:DCSL10  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL10"@it ;
+        l0:name                 "CHITARRA JAZZ"@it .
+
+classes:DCPL42  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL42"@it ;
+        l0:name                 "SAXOFONO JAZZ"@it .
+
+classes:DASLQ01  a              skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SLQCU ;
+        l0:identifier           "DASLQ01"@it ;
+        l0:name                 "RESTAURO"@it .
+
+classes:DCPL35  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL35"@it ;
+        l0:name                 "MUSICA VOCALE DA CAMERA"@it .
+
+classes:DCSL16  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL16"@it ;
+        l0:name                 "CONTRABBASSO"@it .
+
+classes:DCSL60  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL60"@it ;
+        l0:name                 "MUSICA APPLICATA"@it .
+
+classes:DCSL09  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL09"@it ;
+        l0:name                 "CHITARRA"@it .
+
+classes:DCPL10  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL10"@it ;
+        l0:name                 "CHITARRA JAZZ"@it .
+
+classes:DCPL03  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL03"@it ;
+        l0:name                 "BASSO ELETTRICO JAZZ"@it .
+
+classes:DCPL08  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL08"@it ;
+        l0:name                 "CANTO RINASCIMENTALE E BAROCCO"@it .
+
+classes:DASL08  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL08"@it ;
+        l0:name                 "NUOVE TECNOLOGIE PER L’ARTE"@it .
+
+classes:DDPL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DDPL01"@it ;
+        l0:name                 "DANZA CLASSICA"@it .
+
+classes:DCPL31  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL31"@it ;
+        l0:name                 "MAESTRO COLLABORATORE"@it .
+
+classes:DADPL02  a              skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DADPL02"@it ;
+        l0:name                 "RECITAZIONE"@it .
+
+classes:DCSL61  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL61"@it ;
+        l0:name                 "TECNICO DEL SUONO"@it .
+
+classes:DCPL61  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL61"@it ;
+        l0:name                 "TECNICO DEL SUONO"@it .
+
+classes:DCPL11  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL11"@it ;
+        l0:name                 "CLARINETTO"@it .
+
+classes:DCSL42  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL42"@it ;
+        l0:name                 "PIANOFORTE JAZZ"@it .
+
+classes:DCSL22  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL22"@it ;
+        l0:name                 "DIREZIONE D'ORCHESTRA"@it .
+
+classes:DCSL48  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL48"@it ;
+        l0:name                 "TROMBA RINASCIMENTALE E BAROCCA"@it .
+
+classes:DDSL03  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DDSL03"@it ;
+        l0:name                 "COREOGRAFIA"@it .
+
+classes:DCPL47  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL47"@it ;
+        l0:name                 "TROMBA JAZZ"@it .
+
+classes:DCSL50  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL50"@it ;
+        l0:name                 "TROMBONE JAZZ"@it .
+
+classes:DCSL43  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL43"@it ;
+        l0:name                 "STRUMENTAZIONE PER ORCHESTRA DI FIATI"@it .
+
+classes:DASL05  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL05"@it ;
+        l0:name                 "SCENOGRAFIA"@it .
+
+classes:DAPL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL01"@it ;
+        l0:name                 "PITTURA"@it .
+
+classes:DCSL11  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL11"@it ;
+        l0:name                 "CLARINETTO"@it .
+
+classes:DCSL56  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL56"@it ;
+        l0:name                 "VIOLINO JAZZ"@it .
+
+classes:DCPL43  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL43"@it ;
+        l0:name                 "STRUMENTAZIONE PER ORCHESTRA DI FIATI"@it .
+
+classes:DCSL24  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL24"@it ;
+        l0:name                 "FAGOTTO"@it .
+
+classes:DCPL48  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL48"@it ;
+        l0:name                 "TROMBA RINASCIMENTALE E BAROCCA"@it .
+
+classes:DADSL03  a              skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DADSL03"@it ;
+        l0:name                 "REGIA"@it .
+
+classes:DCSL29  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL29"@it ;
+        l0:name                 "FLAUTO TRAVERSIERE"@it .
+
+classes:DCSL66  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL66"@it ;
+        l0:name                 "ORGANO LITURGICO"@it .
+
+classes:DCPL23  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL23"@it ;
+        l0:name                 "EUFONIO"@it .
+
+classes:DCPL16  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL16"@it ;
+        l0:name                 "CONTRABBASSO"@it .
+
+classes:DCPL44  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL44"@it ;
+        l0:name                 "STRUMENTI A PERCUSSIONE"@it .
+
+classes:DASL11  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL11"@it ;
+        l0:name                 "CINEMA, AUDIOVISIVO, FOTOGRAFIA"@it .
+
+classes:DCPL24  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL24"@it ;
+        l0:name                 "FAGOTTO"@it .
+
+classes:DISL02  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DISL02"@it ;
+        l0:name                 "DESIGN"@it .
+
+classes:DCSL55  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL55"@it ;
+        l0:name                 "VIOLINO BAROCCO"@it .
+
+classes:DCSL05  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL05"@it ;
+        l0:name                 "BATTERIA E PERCUSSIONI JAZZ"@it .
+
+classes:DCSL63  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL63"@it ;
+        l0:name                 "LIED E ORATORIO in lingua tedesca"@it .
+
+classes:DCSL51  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL51"@it ;
+        l0:name                 "TROMBONE RINASCIMENTALE E BAROCCO"@it .
+
+classes:DCSL01  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL01"@it ;
+        l0:name                 "ARPA"@it .
+
+classes:DCPL50  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL50"@it ;
+        l0:name                 "TROMBONE JAZZ"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL27%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL27/A"@it ;
+        l0:name                 "FLAUTO JAZZ"@it .
+
+classes:DAPL07  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL07"@it ;
+        l0:name                 "RESTAURO"@it .
+
+classes:DCSL31  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL31"@it ;
+        l0:name                 "MAESTRO COLLABORATORE"@it .
+
+classes:DADSL02  a              skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DADSL02"@it ;
+        l0:name                 "RECITAZIONE"@it .
+
+classes:DCPL30  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL30"@it ;
+        l0:name                 "LIUTO"@it .
+
+classes:DCPL56  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL56"@it ;
+        l0:name                 "VIOLINO JAZZ"@it .
+
+classes:DCSL37  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL37"@it ;
+        l0:name                 "OBOE BAROCCO E CLASSICO"@it .
+
+classes:DCSL52  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL52"@it ;
+        l0:name                 "VIOLA"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL99+%28codice+temporaneo+in+attesa+di+accreditamento>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL99 (codice temporaneo in attesa di accreditamento"@it ;
+        l0:name                 "TERAPEUTICA ARTISTICA"@it .
+
+classes:DCPL51  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL51"@it ;
+        l0:name                 "TROMBONE RINASCIMENTALE E BAROCCO"@it .
+
+classes:DCPL36  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL36"@it ;
+        l0:name                 "OBOE"@it .
+
+classes:DCPL29  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL29"@it ;
+        l0:name                 "FLAUTO TRAVERSIERE"@it .
+
+classes:DAPL08  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL08"@it ;
+        l0:name                 "PROGETTAZIONE ARTISTICA PER L'IMPRESA"@it , "NUOVE TECNOLOGIE PER L’ARTE"@it .
+
+classes:DCSL32  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL32"@it ;
+        l0:name                 "MANDOLINO"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL06%2FB>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL06/B"@it ;
+        l0:name                 "Regia nel teatro musicale"@it .
+
+classes:DCPL64  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL64"@it ;
+        l0:name                 "COMPOSIZIONE JAZZ"@it .
+
+classes:DCPL57  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL57"@it ;
+        l0:name                 "VIOLONCELLO"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL15%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL15/A"@it ;
+        l0:name                 "Discipline storiche, critiche e analitiche della musica"@it .
+
+classes:DCSL45  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL45"@it ;
+        l0:name                 "TASTIERE ELETTRONICHE JAZZ"@it .
+
+classes:DCPL09  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL09"@it ;
+        l0:name                 "CHITARRA"@it .
+
+classes:DCPL32  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL32"@it ;
+        l0:name                 "MANDOLINO"@it .
+
+classes:DAPL11  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL11"@it ;
+        l0:name                 "CINEMA, AUDIOVISIVO, FOTOGRAFIA"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL22%2FA>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL22/A"@it ;
+        l0:name                 "Direzione del repertorio vocale e sacro"@it .
+
+classes:DCSL13  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL13"@it ;
+        l0:name                 "CLARINETTO STORICO"@it .
+
+classes:DCPL37  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL37"@it ;
+        l0:name                 "OBOE BAROCCO E CLASSICO"@it .
+
+classes:DCPL05  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL05"@it ;
+        l0:name                 "BATTERIA E PERCUSSIONI JAZZ"@it .
+
+classes:DDPL03  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DDPL03"@it ;
+        l0:name                 "COREOGRAFIA"@it .
+
+classes:DCSL68  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL68"@it ;
+        l0:name                 "MUSICA D'INSIEME"@it .
+
+classes:DCSL14  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL14"@it ;
+        l0:name                 "CLAVICEMBALO E TASTIERE STORICHE"@it .
+
+classes:DCPL63  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL63"@it ;
+        l0:name                 "LIED ED ORATORIO IN LINGUA TEDESCA"@it .
+
+classes:DCPL13  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL13"@it ;
+        l0:name                 "CLARINETTO STORICO"@it .
+
+classes:DCPL06  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL06"@it ;
+        l0:name                 "CANTO"@it .
+
+classes:DCSL44  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL44"@it ;
+        l0:name                 "STRUMENTI A PERCUSSIONE"@it .
+
+classes:DASL06  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DASL06"@it ;
+        l0:name                 "PROGETTAZIONE ARTISTICA PER L'IMPRESA"@it .
+
+classes:DCSL40  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL40"@it ;
+        l0:name                 "JAZZ"@it .
+
+classes:DAPL03  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DAPL03"@it ;
+        l0:name                 "DECORAZIONE"@it .
+
+classes:DCSL58  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL58"@it ;
+        l0:name                 "VIOLONCELLO BAROCCO"@it .
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/DCSL15%2FC+>
+        a                       skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:SL ;
+        l0:identifier           "DCSL15/C "@it ;
+        l0:name                 "Composizione per teatro e cinema"@it .
+
+classes:DCPL60  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL60"@it ;
+        l0:name                 "MUSICA APPLICATA"@it .
+
+classes:DCPL45  a               skos:TopConcept , learn:DegreeClass ;
+        learn:hasProgrammeType  afam-pt:PL ;
+        l0:identifier           "DCPL45"@it ;
+        l0:name                 "TASTIERE ELETTRONICHE JAZZ"@it .
