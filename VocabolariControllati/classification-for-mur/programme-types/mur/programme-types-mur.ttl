@@ -1,0 +1,236 @@
+@prefix obda:  <http://obdasystems.com/ontology/> .
+@prefix l0:    <https://w3id.org/italia/onto/l0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix learn: <https://w3id.org/italia/onto/Learning/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix classes: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix mur:   <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur/> .
+
+#################################################################
+#    Metadati 
+#################################################################
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur>
+	  a dcatapit:Dataset ;
+	  dct:title "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;
+      dct:description "This is the controlled vocabulary on Programme Types MUR."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio MUR (Ministero dell'Università e della Ricerca)."@it ;
+      rdfs:comment "This is the controlled vocabulary on Programme Types MUR."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio MUR (Ministero dell'Università e della Ricerca)."@it ;
+      rdfs:label "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      xkos:numberOfLevels "1";
+      ndc:keyConcept "programme-types-mur" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur";
+      dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
+      dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                  <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
+      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur> ;
+      dcat:keyword "Tipologia di Corso di Laurea"@it, "Istruzione"@it , "MUR"@it ;
+      dcat:distribution <https://w3id.org/italia/data/distribution/programme-types-mur_RDF_Turtle> ,  <https://w3id.org/italia/data/distribution/programme-types-mur_CSV>;
+      dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+      dct:issued "2024-09-03"^^xsd:date ;
+      dct:modified "2024-09-03"^^xsd:date ;
+      owl:versionInfo "0.1" ;
+      skos:hasTopConcept  mur:TF , mur:CP , mur:MA , mur:PS , mur:LT , mur:TU , mur:SS , mur:SM , mur:DR , mur:SB , mur:PG , mur:AP , mur:SA , mur:LM , mur:CT , mur:LS , mur:MT , mur:SQ , mur:SL , mur:CL , mur:CF , mur:SR , mur:LV , mur:M2 , mur:M1 , mur:SP , mur:SV , mur:SD , mur:SC , mur:MS .
+
+#################################################################
+#    Individuals 
+#################################################################
+
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+<https://w3id.org/italia/data/public-organization/KH5RHFCV> 
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+      <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://purl.org/dc/terms/identifier> "KH5RHFCV" ;
+      rdfs:label "Ministero dell'Università e della Ricerca"@it ;
+      <http://xmlns.com/foaf/0.1/name> "Ministero dell'Università e della Ricerca"@it .
+
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+      a						dcatapit:Organization , vcard:Organization, vcard:Kind ;
+    	vcard:fn		"Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+    	vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+      a dcatapit:Agent , foaf:Agent ;
+      dct:identifier "ISTAT" ;
+      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
+	  
+<https://w3id.org/italia/data/standard/SKOS>
+      a dcatapit:Standard , dct:Standard ;
+	  foaf:name "Simple Knowledge Organization System - SKOS"@it ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web"@en .	  
+
+
+#################################################################
+#    Distribution 
+#################################################################
+
+<https://w3id.org/italia/data/distribution/programme-types-mur_CSV>
+        a						dcatapit:Distribution  ;
+        dct:title				"Distribuzione CSV vocabolario controllato delle Tipologie di Corsi di Laurea MUR"@it , "CSV distribution of Programme Types MUR controlled vocabulary"@en ;
+        dct:description			"Questa è la distribuzione CSV del vocabolario controllato delle Tipologie di Corsi di Laurea MUR"@it , "This is the distribution in CSV of dataset on the Programme Types MUR controlled vocabulary"@en ;
+        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/mur/programme-types-mur.ttl> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/mur> .
+
+
+<https://w3id.org/italia/data/distribution/programme-types-mur_RDF_Turtle>
+        a						dcatapit:Distribution  ;
+        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea MUR"@it , "RDF/Turtle distribution of Programme Types MUR controlled vocabulary"@en ;
+        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea MUR"@it , "This is the distribution in CSV of dataset on the Programme Types MUR controlled vocabulary"@en ;
+        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/mur/programme-types-mur.csv> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/mur> .
+
+
+
+mur:TF  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "TF"@it ;
+        l0:name        "Tirocinio Formativo Attivo (TFA)"@it .
+
+mur:CP  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "CP"@it ;
+        l0:name        "Corso di Perfezionamento/Alta Formazione (monte ore minimo 200 ore)"@it .
+
+mur:MA  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "MA"@it ;
+        l0:name        "Altri Master"@it .
+
+mur:PS  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "PS"@it ;
+        l0:name        "Percorsi Abilitanti Speciali (PAS)"@it .
+
+mur:LT  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "LT"@it ;
+        l0:name        "Laurea Triennale (DM 509/99)"@it .
+
+mur:TU  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "TU"@it ;
+        l0:name        "Laurea a Ciclo Unico (DM 509/99)"@it .
+
+mur:SS  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SS"@it ;
+        l0:name        "Scuola di Specializzazione Sanitaria - Area Servizi Clinici"@it .
+
+mur:SM  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SM"@it ;
+        l0:name        "Scuola di Specializzazione Medica Vecchio Ordinamento"@it .
+
+mur:DR  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "DR"@it ;
+        l0:name        "Dottorato di Ricerca"@it .
+
+mur:SB  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SB"@it ;
+        l0:name        "Scuola di Specializzazione Beni Culturali"@it .
+
+mur:PG  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "PG"@it ;
+        l0:name        "Corso generico per Mobilita Incoming POST-LAUREA"@it .
+
+mur:AP  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "AP"@it ;
+        l0:name        "Abilitazione Professionale"@it .
+
+mur:SA  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SA"@it ;
+        l0:name        "Scuola di Giornalismo, Altra Scuole di Specializzazione Non Medica Vecchio Ordinamento"@it .
+
+mur:LM  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "LM"@it ;
+        l0:name        "Laurea Magistrale Ciclo Unico (DM 270/04)"@it .
+
+mur:CT  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "CT"@it ;
+        l0:name        "Corsi di Specializzazione per le attivit� di Sostegno didattico agli alunni con disabilita (CSS)"@it .
+
+mur:LS  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "LS"@it ;
+        l0:name        "Laurea Specialistica (DM 509/99)"@it .
+
+mur:MT  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "MT"@it ;
+        l0:name        "Laurea (DM 270/04)"@it .
+
+mur:SQ  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SQ"@it ;
+        l0:name        "Scuola di Specializzazione Psicologia (DM 50/2019)"@it .
+
+mur:SL  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SL"@it ;
+        l0:name        "Scuola di Specializzazione Professioni Legali"@it .
+
+mur:CL  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "CL"@it ;
+        l0:name        "Perfezionamento insegnamento di disciplina non linguistica in lingua (CLIL)"@it .
+
+mur:CF  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "CF"@it ;
+        l0:name        "Corso di Formazione Professionale (monte ore massimo 200 ore)"@it .
+
+mur:SR  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SR"@it ;
+        l0:name        "Scuola di Specializzazione Ricerca"@it .
+
+mur:LV  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "LV"@it ;
+        l0:name        "Laurea Vecchio Ordinamento"@it .
+
+mur:M2  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "M2"@it ;
+        l0:name        "Master di Secondo Livello"@it .
+
+mur:M1  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "M1"@it ;
+        l0:name        "Master di Primo Livello"@it .
+
+mur:SP  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SP"@it ;
+        l0:name        "Scuola di Specializzazione Psicologia"@it .
+
+mur:SV  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SV"@it ;
+        l0:name        "Scuola di Specializzazione Veterinaria"@it .
+
+mur:SD  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SD"@it ;
+        l0:name        "Scuola di Specializzazione Sanitaria - Area Medica"@it .
+
+mur:SC  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SC"@it ;
+        l0:name        "Scuola di Specializzazione Sanitaria - Area Chirurgica"@it .
+
+mur:MS  a              skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "MS"@it ;
+        l0:name        "Laurea Magistrale (DM 270/04)"@it .

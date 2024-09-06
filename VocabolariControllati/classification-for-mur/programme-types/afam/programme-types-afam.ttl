@@ -1,0 +1,148 @@
+@prefix obda:  <http://obdasystems.com/ontology/> .
+@prefix l0:    <https://w3id.org/italia/onto/l0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix learn: <https://w3id.org/italia/onto/Learning/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix classes: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix afam:  <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam/> .
+
+#################################################################
+#    Metadati 
+#################################################################
+
+<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam>
+	  a dcatapit:Dataset ;
+	  dct:title "Programme Types AFAM Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio AFAM"@it ;
+      dct:description "This is the controlled vocabulary on Programme Types AFAM."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio AFAM (Alta formazione artistica, musicale e coreutica)."@it ;
+      rdfs:comment "This is the controlled vocabulary on Programme Types AFAM."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio AFAM (Alta formazione artistica, musicale e coreutica)."@it ;
+      rdfs:label "Programme Types AFAM Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio AFAM"@it ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      xkos:numberOfLevels "1";
+      ndc:keyConcept "programme-types-afam" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam";
+      dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
+      dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
+                  <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
+      dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam> ;
+      dcat:keyword "Tipologia di Corso di Laurea"@it, "Istruzione"@it , "AFAM"@it ;
+      dcat:distribution <https://w3id.org/italia/data/distribution/programme-types-afam_RDF_Turtle> ,  <https://w3id.org/italia/data/distribution/programme-types-afam_CSV>;
+      dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+      dct:issued "2024-09-03"^^xsd:date ;
+      dct:modified "2024-09-03"^^xsd:date ;
+      owl:versionInfo "0.1" ;
+	  skos:hasTopConcept  afam:VO , afam:DR , afam:SL , afam:MSL , afam:SLQCU , afam:SP , afam:MPL , afam:PL .
+
+#################################################################
+#    Individuals 
+#################################################################
+
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+	  foaf:Agent ;
+      dct:identifier "PCM-1RSIZZ" ;
+      foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+<https://w3id.org/italia/data/public-organization/KH5RHFCV> 
+      rdf:type owl:NamedIndividual ,
+      <http://dati.gov.it/onto/dcatapit#Agent> ,
+      <http://xmlns.com/foaf/0.1/Agent> ;
+      <http://purl.org/dc/terms/identifier> "KH5RHFCV" ;
+      rdfs:label "Ministero dell'Università e della Ricerca"@it ;
+      <http://xmlns.com/foaf/0.1/name> "Ministero dell'Università e della Ricerca"@it .
+
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+      a						dcatapit:Organization , vcard:Organization, vcard:Kind ;
+    	vcard:fn		"Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+    	vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+      a dcatapit:Agent , foaf:Agent ;
+      dct:identifier "ISTAT" ;
+      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
+	  
+<https://w3id.org/italia/data/standard/SKOS>
+      a dcatapit:Standard , dct:Standard ;
+	  foaf:name "Simple Knowledge Organization System - SKOS"@it ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web"@en .	  
+
+#################################################################
+#    Distribution 
+#################################################################
+
+<https://w3id.org/italia/data/distribution/programme-types-afam_CSV>
+        a						dcatapit:Distribution  ;
+        dct:title				"Distribuzione CSV vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "CSV distribution of Programme Types AFAM controlled vocabulary"@en ;
+        dct:description			"Questa è la distribuzione CSV del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "This is the distribution in CSV of dataset on the Programme Types AFAM controlled vocabulary"@en ;
+        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/afam/programme-types-afam.ttl> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/afam> .
+
+
+<https://w3id.org/italia/data/distribution/programme-types-afam_RDF_Turtle>
+        a						dcatapit:Distribution  ;
+        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "RDF/Turtle distribution of Programme Types AFAM controlled vocabulary"@en ;
+        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "This is the distribution in CSV of dataset on the Programme Types AFAM controlled vocabulary"@en ;
+        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/afam/programme-types-afam.csv> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/afam> .
+
+
+
+
+afam:VO  a             skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "VO"@it ;
+        l0:name        "Diploma di vecchio ordinamento"@it .
+
+afam:DR  a             skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "DR"@it ;
+        l0:name        "Dottorato di ricerca"@it .
+
+afam:SL  a             skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SL"@it ;
+        l0:name        "Diploma accademico di secondo livello"@it .
+
+afam:MSL  a            skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "MSL"@it ;
+        l0:name        "Diploma di perfezionamento o master di secondo livello"@it .
+
+afam:SLQCU  a          skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SLQCU"@it ;
+        l0:name        "Diploma accademico di secondo livello quinquennale a ciclo unico, abilitante alla professione (riguarda il solo corso di Restauro) "@it .
+
+afam:SP  a             skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "SP"@it ;
+        l0:name        "Diploma accademico di specializzazione"@it .
+
+afam:MPL  a            skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "MPL"@it ;
+        l0:name        "Diploma di perfezionamento o master di primo livello"@it .
+
+afam:PL  a             skos:TopConcept , learn:ProgrammeType ;
+        l0:identifier  "PL"@it ;
+        l0:name        "Diploma accademico di primo livello"@it .
