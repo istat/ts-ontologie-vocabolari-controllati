@@ -45,7 +45,8 @@
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
       rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade> ;
       dcat:keyword "Voti di Laurea"@it, "Istruzione"@it ;
-      dcat:distribution <https://w3id.org/italia/data/distribution/grade_RDF_Turtle> ,  <https://w3id.org/italia/data/distribution/grade_CSV>;
+      dcat:distribution <https://w3id.org/italia/data/distribution/grade_RDF_Turtle> ;
+#	  <https://w3id.org/italia/data/distribution/grade_CSV>;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
       dct:issued "2024-09-03"^^xsd:date ;
       dct:modified "2024-09-03"^^xsd:date ;
@@ -98,14 +99,14 @@
 #    Distribution 
 #################################################################
 
-<https://w3id.org/italia/data/distribution/grade_CSV>
-        a						dcatapit:Distribution  ;
-        dct:title				"Distribuzione CSV vocabolario controllato dei Voti di Laurea"@it , "CSV distribution of Degree Grade controlled vocabulary"@en ;
-        dct:description			"Questa è la distribuzione CSV del vocabolario controllato dei Voti di Laurea"@it , "This is the distribution in CSV of dataset on the Degree Grade controlled vocabulary"@en ;
-        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
-        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
-        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/grade/grade.csv> ;
-      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/grade> .
+#<https://w3id.org/italia/data/distribution/grade_CSV>
+#        a						dcatapit:Distribution  ;
+#        dct:title				"Distribuzione CSV vocabolario controllato dei Voti di Laurea"@it , "CSV distribution of Degree Grade controlled vocabulary"@en ;
+#        dct:description			"Questa è la distribuzione CSV del vocabolario controllato dei Voti di Laurea"@it , "This is the distribution in CSV of dataset on the Degree Grade controlled vocabulary"@en ;
+#        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+#        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/grade/grade.csv> ;
+#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/grade> .
 
 
 <https://w3id.org/italia/data/distribution/grade_RDF_Turtle>
