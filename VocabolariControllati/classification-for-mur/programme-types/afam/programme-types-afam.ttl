@@ -43,6 +43,7 @@
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
       rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam> ;
       dcat:keyword "Tipologia di Corso di Laurea"@it, "Istruzione"@it , "AFAM"@it ;
+      dcat:distribution <https://w3id.org/italia/data/distribution/programme-types-afam_RDF_Turtle> ,  <https://w3id.org/italia/data/distribution/programme-types-afam_CSV>;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
       dct:issued "2024-09-03"^^xsd:date ;
       dct:modified "2024-09-03"^^xsd:date ;
@@ -92,6 +93,24 @@
 #    Distribution 
 #################################################################
 
+<https://w3id.org/italia/data/distribution/programme-types-afam_CSV>
+        a						dcatapit:Distribution  ;
+        dct:title				"Distribuzione CSV vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "CSV distribution of Programme Types AFAM controlled vocabulary"@en ;
+        dct:description			"Questa è la distribuzione CSV del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "This is the distribution in CSV of dataset on the Programme Types AFAM controlled vocabulary"@en ;
+        dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
+        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/afam/programme-types-afam.ttl> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/afam> .
+
+
+<https://w3id.org/italia/data/distribution/programme-types-afam_RDF_Turtle>
+        a						dcatapit:Distribution  ;
+        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "RDF/Turtle distribution of Programme Types AFAM controlled vocabulary"@en ;
+        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "This is the distribution in CSV of dataset on the Programme Types AFAM controlled vocabulary"@en ;
+        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/afam/programme-types-afam.csv> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/afam> .
 
 
 
