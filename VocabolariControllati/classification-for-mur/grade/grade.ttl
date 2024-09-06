@@ -114,8 +114,8 @@
 #        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato dei Voti di Laurea"@it , "This is the distribution in RDF/Turtle of dataset on the Degree Grade controlled vocabulary"@en ;
 #        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
 #        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
-#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/master/VocabolariControllati/classification-for-mur/grade/grade.ttl> ;
-#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classification-for-mur/grade> .
+#        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/grade/grade.ttl> ;
+#      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/grade> .
 
 
 grade:85  a               skos:TopConcept , learn:Grade ;
