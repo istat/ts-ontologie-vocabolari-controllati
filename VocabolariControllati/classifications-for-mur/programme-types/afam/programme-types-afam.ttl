@@ -100,8 +100,8 @@
         dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato delle Tipologie di Corsi di Laurea AFAM"@it , "This is the distribution in CSV of dataset on the Programme Types AFAM controlled vocabulary"@en ;
         dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
         dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
-        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classification-for-mur/programme-types/afam/programme-types-afam.ttl> ;
-      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classification-for-mur/programme-types/afam> .
+        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-mur/programme-types/afam/programme-types-afam.ttl> ;
+      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-mur/programme-types/afam> .
 
 
 
