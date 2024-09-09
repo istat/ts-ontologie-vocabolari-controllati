@@ -44,7 +44,6 @@
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
       rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> ;
       dcat:keyword "Classi di Laurea"@it, "Istruzione"@it ;
-	  dcat:distribution <https://w3id.org/italia/data/distribution/degree-classes_RDF_Turtle>;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
       dct:issued "2024-09-03"^^xsd:date ;
       dct:modified "2024-09-03"^^xsd:date ;
@@ -97,14 +96,6 @@
 #    Distribution 
 #################################################################
 
-<https://w3id.org/italia/data/distribution/degree-classes_RDF_Turtle>
-        a						dcatapit:Distribution  ;
-        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato delle Classi di Laurea"@it , "RDF/Turtle distribution of Degree Classes controlled vocabulary"@en ;
-        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato delle Classi di Laurea"@it , "This is the distribution in RDF/Turtle of dataset on the Degree Classes controlled vocabulary"@en ;
-        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
-        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-mur/degree-classes/degree-classes.ttl> ;
-      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-mur/degree-classes> .
 
 
 classes:99999  a                skos:TopConcept , learn:DegreeClass ;
