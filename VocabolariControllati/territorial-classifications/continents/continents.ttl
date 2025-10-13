@@ -41,7 +41,7 @@
   dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
-  rdfs:isDefinedBy <https://w3id.org/stat/italia/controlled-vocabulary/territorial-classifications/continents> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents> ;
   dcat:keyword "Contienti"@it, "Continents"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle>, <https://w3id.org/italia/data/distribution/continents_CSV>, <https://w3id.org/italia/data/distribution/continents_XLSX>  ;
   dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
