@@ -50,115 +50,115 @@ dct:Standard
       a       rdfs:Class .
 
 skos:prefLabel
-      a       rdf:Property .
+      a       rdfs:Property .
 
 skos:notation
-      a       rdf:Property .
+      a       rdfs:Property .
 
 skos:inScheme
-      a       rdf:Property .
+      a       rdfs:Property .
 
 skos:narrower
-	  a 	  rdf:Property .
+	  a 	  rdfs:Property .
 
 skos:broader
-	  a		  rdf:Property .
+	  a		  rdfs:Property .
 
 skos:broaderTransitive
-      a 	  rdf:Property .
+      a 	  rdfs:Property .
 
 skos:narrowerTransitive
-      a       rdf:Property .
+      a       rdfs:Property .
 
 skos:definition
-	  a		  rdf:Property .
+	  a		  rdfs:Property .
 
 dct:identifier
-	  a       rdf:Property .
+	  a       rdfs:Property .
 
 dct:title
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:type
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:description
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:creator
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:publisher
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:rightsHolder
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:conformsTo
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:subject
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:accrualPeriodicity
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:language
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:format
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:issued
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:modified
-    a       rdf:Property .
+    a       rdfs:Property .
 
 dct:license
-    a       rdf:Property .
+    a       rdfs:Property .
 
 xkos:numberOfLevels
-    a     rdf:Property .
+    a     rdfs:Property .
 
 clvapit:hasRankOrder
-    a     rdf:Property .
+    a     rdfs:Property .
 
 dcat:theme
-    a     rdf:Property .
+    a     rdfs:Property .
 
 dcat:distribution
-    a     rdf:Property .
+    a     rdfs:Property .
 
 foaf:name
-    a     rdf:Property .
+    a     rdfs:Property .
 
 dcat:keyword
-    a     rdf:Property .
+    a     rdfs:Property .
 
 dcat:contactPoint
-    a     rdf:Property .
+    a     rdfs:Property .
 
 dcat:accessURL
-    a     rdf:Property .
+    a     rdfs:Property .
 
 dcat:downloadURL
-    a     rdf:Property .
+    a     rdfs:Property .
 
 owl:versionInfo
-    a     rdf:Property .
+    a     rdfs:Property .
 
 adms:representationTechnique
-    a     rdf:Property .
+    a     rdfs:Property .
 
 vcard:fn
-    a     rdf:Property .
+    a     rdfs:Property .
 
 vcard:hasEmail
-    a     rdf:Property .
+    a     rdfs:Property .
 
 ndc:keyConcept
-    a     rdf:Property .
+    a     rdfs:Property .
 
 #Metadata DCAT-AP_IT for the controlled vocabulary
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/public-services-subject-matters>
@@ -219,8 +219,8 @@ ndc:keyConcept
     	dct:description	"Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sulle materie (tematiche) dei servizi pubblici"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the controlled vocabulary on the Subject Matters for Public Services"@en ;
     	dct:format 				<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     	dct:license  <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    	dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.ttl> ;
-    	dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
+    	dcat:downloadURL		<https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.ttl> ;
+    	dcat:accessURL 			<https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
 
 <https://w3id.org/italia/data/distribution/PS-RDF-XML>
       a						dcatapit:Distribution  ;
@@ -228,8 +228,8 @@ ndc:keyConcept
       dct:description	"Questa è la distribuzione RDF/XML del dataset Linked Open Data del vocabolario controllato sulle materie (tematiche) dei servizi pubblici"@it , "This is the distribution in RDF/XML of the Linked Open Dataset of the controlled vocabulary on the Subject Matters for Public Services"@en ;
       dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
       dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.rdf> ;
-      dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
+      dcat:downloadURL		<https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.rdf> ;
+      dcat:accessURL 			<https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
 
 <https://w3id.org/italia/data/distribution/PS-JSON-LD>
       a		dcatapit:Distribution  ;
@@ -237,8 +237,8 @@ ndc:keyConcept
       dct:description	"Questa è la distribuzione JSON_LD del dataset Linked Open Data del vocabolario controllato sulle materie (tematiche) dei servizi pubblici"@it , "This is the distribution in JSON_LD of the Linked Open Dataset of the controlled vocabulary on the Subject Matters for Public Services"@en ;
       dct:format  <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
       dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.jsonld> ;
-      dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
+      dcat:downloadURL		<https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.jsonld> ;
+      dcat:accessURL 			<https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
 
   <https://w3id.org/italia/data/distribution/PS-CSV>
       a						dcatapit:Distribution  ;
@@ -246,8 +246,8 @@ ndc:keyConcept
       dct:description			"Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato sulle materie (tematiche) dei servizi pubblici"@it , "This is the distribution in CSV of the Linked Open Dataset of the controlled vocabulary on the Subject Matters for Public Services"@en ;
       dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
       dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.csv> ;
-      dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
+      dcat:downloadURL		<https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.csv> ;
+      dcat:accessURL 			<https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
 
 <https://w3id.org/italia/data/distribution/PS-XLSX>
       a						dcatapit:Distribution  ;
@@ -255,8 +255,8 @@ ndc:keyConcept
       dct:description	"Questa è la distribuzione XLSX del dataset Linked Open Data del vocabolario controllato sulle materie (tematiche) dei servizi pubblici"@it , "This is the distribution in XLSX of the Linked Open Dataset of the controlled vocabulary on the Subject Matters for Public Services"@en ;
       dct:format 		<http://publications.europa.eu/resource/authority/file-type/XLSX> ;
       dct:license 	<https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL		<https://github.com/italia/daf-ontologie-vocabolari-controllati/raw/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.xlsx> ;
-      dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
+      dcat:downloadURL		<https://github.com/italia/dati-semantic-assets/raw/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters/public-services-subject-matters.xlsx> ;
+      dcat:accessURL 			<https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-public-services/public-services-subject-matters> .
 
 #Definition of the controlled vocabulary
  <https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/public-services-subject-matters/1>
