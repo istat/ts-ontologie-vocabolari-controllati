@@ -1,65 +1,59 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/italia/onto/ACO/"
      xml:base="https://w3id.org/italia/onto/ACO/"
-     xmlns:RO="https://w3id.org/italia/onto/RO/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
-     xmlns:aco="https://w3id.org/italia/onto/ACO/"
-     xmlns:clv="https://w3id.org/italia/onto/CLV/"
-     xmlns:cov="https://w3id.org/italia/onto/COV/"
-     xmlns:cpv="https://w3id.org/italia/onto/CPV/"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:iao="https://w3id.org/italia/onto/IAO/"
-     xmlns:ito="https://w3id.org/italia/onto/ITO/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rpo="https://w3id.org/italia/onto/RPO/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
-     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/italia/onto/ACO">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/ACO/0.2"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/ACO/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
-        <dct:description xml:lang="it">Questa è l&apos;ontologia dei certificati anagrafici.</dct:description>
-        <dct:description xml:lang="en">This is the ontology of the administrative certifications.</dct:description>
-        <dct:identifier rdf:resource="https://w3id.org/italia/onto/ACO"/>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-15</dct:issued>
-        <dct:language rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://publications.europa.eu/resource/authority/language/ITA</dct:language>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-26</dct:modified>
-        <dct:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
-        <dct:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/m_it"/>
-        <dct:title xml:lang="en">Administrative Certification Ontology</dct:title>
-        <dct:title xml:lang="it">Ontologia dei Certificati Anagrafici</dct:title>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia dei certificati anagrafici.</terms:description>
+        <terms:description xml:lang="en">This is the ontology of the administrative certifications.</terms:description>
+        <terms:identifier rdf:resource="https://w3id.org/italia/onto/ACO"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-15</terms:issued>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://publications.europa.eu/resource/authority/language/ITA</terms:language>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-15</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/m_it"/>
+        <terms:title xml:lang="en">Administrative Certification Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia dei Certificati Anagrafici</terms:title>
         <rdfs:comment xml:lang="it">Questa è l&apos;ontologia dei certificati anagrafici.</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the administrative certification ontology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ACO"/>
         <rdfs:label xml:lang="en">Admministrative Certification Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia dei Certificati Anagrafici</rdfs:label>
-        <owl:versionInfo xml:lang="it">Versione 0.2 - Inserite per le classi Matrimonio e Unione Civile i relativi Atti Amministrativi di registrazione, annullamento o cessazione.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 1.0</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC"/>
         <dcat:keyword xml:lang="it">Anagrafe</dcat:keyword>
         <dcat:keyword xml:lang="it">Certificato</dcat:keyword>
         <dcat:keyword xml:lang="it">Residente</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
-        <admsapit:acronym>ACO-AP_IT</admsapit:acronym>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/ACO/ResidenceCertificate"/>
-        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ACOAPIT-RDF-TURTLE"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML"/>
-        <admsapit:last rdf:resource="https://w3id.org/italia/onto/ACO/0.1"/>
-        <admsapit:officialURI rdf:resource="https://w3id.org/italia/onto/ACO"/>
-        <admsapit:prefix>acoapit</admsapit:prefix>
-        <admsapit:status>published</admsapit:status>
-        <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
-        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+        <ADMS:acronym>ACO-AP_IT</ADMS:acronym>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/ACO/ResidenceCertificate"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ACOAPIT-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML"/>
+        <ADMS:last rdf:resource="https://w3id.org/italia/onto/ACO/0.1"/>
+        <ADMS:officialURI rdf:resource="https://w3id.org/italia/onto/ACO"/>
+        <ADMS:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acoapit</ADMS:prefix>
+        <ADMS:status>published</ADMS:status>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
     
 
@@ -72,18 +66,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -105,39 +87,9 @@
     
 
 
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/language -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
-
-
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/rightsHolder -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
     
 
 
@@ -165,27 +117,9 @@
     
 
 
-    <!-- http://www.w3.org/ns/dcat#contactPoint -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
-
-
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#keyword -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#theme -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
     
 
 
@@ -195,69 +129,9 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/controlledVocabulary -->
+    <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ACO/controlledVocabulary"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/last -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/last"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/status -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/target -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/type -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
     
 
 
@@ -269,12 +143,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -307,17 +175,6 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/annotationOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/annotationOf">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/AdministrativeDeed"/>
-        <rdfs:comment>Relazione tra annotazione di annullamento o cessazione unione civile e unione civile annullata o cessata, relazione tra annotazione di annullamento o cessazione matrimonio e matrimonio annullato o cessato</rdfs:comment>
-        <rdfs:label xml:lang="en">annotation of</rdfs:label>
-        <rdfs:label xml:lang="it">annotazione di</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/ACO/attests -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/attests">
@@ -339,19 +196,6 @@
         <rdfs:comment xml:lang="it">Relazione tra l’atto amministrativo e iscrizione anagrafica per l’evento nascita.</rdfs:comment>
         <rdfs:label xml:lang="it">attesta nascita</rdfs:label>
         <rdfs:label xml:lang="en">attests birth</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/certificateIssuedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/certificateIssuedBy">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/PublicAdministration"/>
-        <rdfs:comment xml:lang="it">Relazione tra certificato e amministrazione pubblica.</rdfs:comment>
-        <rdfs:label xml:lang="en">certificate issued by</rdfs:label>
-        <rdfs:label xml:lang="it">certificato emesso da</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -387,23 +231,10 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/ACO/certifies"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/ResidenceCertificate"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/Residence"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
         <rdfs:comment xml:lang="it">Relazione tra certificato e residenza.</rdfs:comment>
         <rdfs:label xml:lang="it">certifica residenza</rdfs:label>
         <rdfs:label xml:lang="en">certifies residence</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/deedIssuedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/deedIssuedBy">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/AdministrativeDeed"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/PublicAdministration"/>
-        <rdfs:comment xml:lang="it">Relazione tra atto amministrativo e amministrazione pubblica.</rdfs:comment>
-        <rdfs:label xml:lang="it">atto emesso da</rdfs:label>
-        <rdfs:label xml:lang="en">deed issued by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -414,7 +245,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/AdministrativeDeed"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
         <rdfs:comment xml:lang="it">Relazione tra atto amministrativo e unità amministrativa.</rdfs:comment>
-        <rdfs:label xml:lang="it">atto registrato in</rdfs:label>
+        <rdfs:label xml:lang="it">atto registratoIn</rdfs:label>
         <rdfs:label xml:lang="en">deed registered in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -425,36 +256,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/depositedIn">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/AdministrativeDeed"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/PublicAdministration"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/PublicAdministration"/>
         <rdfs:comment xml:lang="it">Relazione tra atto amministrativo e amministrazione pubblica.</rdfs:comment>
         <rdfs:label xml:lang="it">depositato presso</rdfs:label>
         <rdfs:label xml:lang="en">deposited in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/hasAnnulledOrTerminantedCivilunion -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/hasAnnulledOrTerminantedCivilunion">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedCivilUnion"/>
-        <rdfs:comment>Relazione tra persona e unione civile annullata o cessata</rdfs:comment>
-        <rdfs:label xml:lang="it">ha unione civile annullata o cessata</rdfs:label>
-        <rdfs:label xml:lang="en">has annulled or terminanted civilunion</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/hasAnnulledOrTerminatedWedding -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/hasAnnulledOrTerminatedWedding">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedWedding"/>
-        <rdfs:comment>Relazione tra persona e matrimonio annullato o cessato</rdfs:comment>
-        <rdfs:label xml:lang="it">ha matrimonio annullato o cessato</rdfs:label>
-        <rdfs:label xml:lang="en">has annulled or terminated wedding</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -467,21 +272,26 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/RegistryEntryForBirth"/>
         <rdfs:comment xml:lang="it">Relazione tra persona fisica e iscrizione anagrafica per nascita.</rdfs:comment>
-        <rdfs:label xml:lang="it">ha nascita</rdfs:label>
+        <rdfs:label xml:lang="it">haNascita</rdfs:label>
         <rdfs:label xml:lang="en">has birth</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/hasResidence -->
+    <!-- https://w3id.org/italia/onto/ACO/issuedBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/hasResidence">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/Residence"/>
-        <rdfs:comment xml:lang="it">Relazione tra persona anagraficamente residente e residenza.</rdfs:comment>
-        <rdfs:label xml:lang="it">ha residenza</rdfs:label>
-        <rdfs:label xml:lang="en">has residence</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/issuedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AdministrativeDeed"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/Certificate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/PublicAdministration"/>
+        <rdfs:comment xml:lang="it">Relazione tra atto amministrativo o un certificato e amministrazione pubblica.</rdfs:comment>
+        <rdfs:label xml:lang="it">issued by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -491,7 +301,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/issuedWithSecretarialFees">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/SecretarialFees"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACO/SecretarialFee"/>
         <rdfs:comment xml:lang="it">Relazione tra certificato e diritti di segreteria.</rdfs:comment>
         <rdfs:label xml:lang="en">issued with secretarial fees</rdfs:label>
         <rdfs:label xml:lang="it">rilasciato con diritti di segreteria</rdfs:label>
@@ -532,7 +342,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/PublicAdministration"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/COV/PublicAdministration"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/Person"/>
                 </owl:unionOf>
             </owl:Class>
@@ -582,21 +392,10 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/registrationOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/registrationOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:label xml:lang="en">registration of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/ACO/residenceInAddress -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/residenceInAddress">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/Residence"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
         <rdfs:comment xml:lang="it">Residenza stabilita in un indirizzo.</rdfs:comment>
         <rdfs:label xml:lang="en">residence in address</rdfs:label>
@@ -609,7 +408,6 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/residenceInCity">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACO/Residence"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
         <rdfs:comment xml:lang="it">Relazione tra residenza e comune. </rdfs:comment>
         <rdfs:label xml:lang="en">residence in city</rdfs:label>
@@ -631,16 +429,22 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/unitedCivillyWith -->
+    <!-- https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACO/unitedCivillyWith">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
+        <rdfs:label xml:lang="it">currentlyHasRegisteredResidenceIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RPO/hasRegisteredResidence -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RPO/hasRegisteredResidence">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
-        <rdfs:comment xml:lang="it">Persona fisica legata dal vincolo di unione civile ai sensi della L. n. 76/2016 con altra persona dello stesso in virtù del quale entrambe le parti acquistano gli stessi diritti e assumono i medesimi doveri; dall&apos;unione civile deriva l&apos;obbligo reciproco all&apos;assistenza morale e materiale e alla coabitazione. Entrambe le parti sono tenute, ciascuna in relazione alle proprie sostanze e alla propria capacità di lavoro professionale e casalingo, a contribuire ai bisogni comuni.</rdfs:comment>
-        <rdfs:label xml:lang="en">united civilly with</rdfs:label>
-        <rdfs:label xml:lang="it">unito civilmente con</rdfs:label>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
     </owl:ObjectProperty>
     
 
@@ -840,45 +644,9 @@
     
 
 
-    <!-- http://dati.gov.it/onto/dcatapit#Agent -->
-
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
-    
-
-
-    <!-- http://dati.gov.it/onto/dcatapit#Organization -->
-
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
-    
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
-
-    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
-    
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
-
-    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
-    
-
-
     <!-- https://w3id.org/italia/onto/ACO/AdministrativeDeed -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/AdministrativeDeed">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/deedIssuedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/deedRegisteredIn"/>
@@ -916,112 +684,11 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/AnnotationOfAnnulledOrTerminatedCivilUnion -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/AnnotationOfAnnulledOrTerminatedCivilUnion">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/annotationOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedCivilUnion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale dello stato civile con cui si annotano nell’atto di costituzione di unione civile (art. 69 DPR 396/00):- le dichiarazioni contenenti la manifestazione di volontà di scioglimento dell&apos;unione civile (art. 1, comma 24, L 76/2016); - le sentenze, anche straniere, di scioglimento dell&apos;unione civile; di quelle che dichiarano efficace nello Stato la pronuncia straniera di nullità o di scioglimento dell&apos;unione civile; - gli accordi di negoziazione assistita da uno o più avvocati conclusi tra le parti al fine di raggiungere una soluzione consensuale di scioglimento dell&apos;unione civile; - gli accordi di scioglimento dell&apos;unione civile ricevuti dall&apos;ufficiale dello stato civile; - le sentenze dichiarative di assenza o di morte presunta di una delle parti dell&apos;unione civile o ne accertano la morte</rdfs:comment>
-        <rdfs:label xml:lang="en">Annotation of annulled or terminated civil union</rdfs:label>
-        <rdfs:label xml:lang="it">Annotazione annullamento o cessazione unione civile</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/AnnotationOfAnnullmentOrTerminationOfWedding -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/AnnotationOfAnnullmentOrTerminationOfWedding">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/annotationOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedWedding"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale dello stato civile con cui si annotano nell’atto di matrimonio (art. 69 DPR 396/00):- le sentenze, anche straniere, di scioglimento o di cessazione degli effetti civili del matrimonio (art. 3 L 898/1970); quelle che dichiarano efficace nello Stato la pronuncia straniera di nullità o di scioglimento del matrimonio; quelle che dichiarano efficace nello Stato la pronuncia dell&apos;autorità ecclesiastica di nullità del matrimonio;- gli accordi di separazione personale, di scioglimento o di cessazione degli effetti civili del matrimonio ricevuti dall&apos;ufficiale dello stato civile (art. 12 DL 132/2014);- gli accordi tra i coniugi di cessazione degli effetti civili del matrimonio e di scioglimento del matrimonio raggiunti a seguito di convenzione assistita da avvocati (art. 6 DL 132/2014); - le sentenze dichiarative di assenza o di morte presunta di uno degli sposi o ne accertano la morte</rdfs:comment>
-        <rdfs:label xml:lang="en">Annotation of annullment or termination of wedding</rdfs:label>
-        <rdfs:label xml:lang="it">Annotazione annullamento o cessazione matrimonio</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedCivilUnion -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedCivilUnion">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/hasAnnulledOrTerminantedCivilunion"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Unione civile che non produce effetti per l’ordinamento giuridico. Sottoclassi: unione civile sciolta (L. 76/2016, art. 1, commi 22-26: nel caso di morte o dichiarazione di morte presunta di una delle parti dell&apos;unione civile; nei casi previsti dall&apos;articolo 3, numero 1) e numero 2), lettere a), c), d) ed e), della legge 1° dicembre 1970, n. 898; quando le parti hanno manifestato anche disgiuntamente la volontà di scioglimento dinanzi all&apos;ufficiale dello stato civile; nel caso di sentenza di rettificazione di attribuzione di sesso); unione civile annullata (L. 76/2016, art. 1, commi 4, 5, 16, 51 e 57, tra cui, a titolo di esempio: ritorno o accertamento esistenza precedente coniuge dichiarato morto; violenza; vizio della forma scritta; precedente matrimonio; interdizione per infermità di mente di una delle parti).</rdfs:comment>
-        <rdfs:label xml:lang="en">Annulled or terminated civil union</rdfs:label>
-        <rdfs:label xml:lang="it">Unione civile annullata o cessata</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedWedding -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/AnnulledOrTerminatedWedding">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AnnulledWedding"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/ConcordatMarriageWithCeasedCivilEffects"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DissolvedMarriage"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/hasAnnulledOrTerminatedWedding"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/registrationOf"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Matrimonio che non produce effetti per l’ordinamento giuridico.</rdfs:comment>
-        <rdfs:label xml:lang="en">Annulled or terminated wedding</rdfs:label>
-        <rdfs:label xml:lang="it">Matrimonio annullato o cessato</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/AnnulledWedding -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/AnnulledWedding">
-        <rdfs:comment xml:lang="it">Matrimonio di cui è stata accertata giudizialmente l’invalidità del relativo negozio giuridico per una delle cause previste dalla legge (artt. 117-129 bis c.c.). L’annullamento del matrimonio ha, di regola, effetti retroattivi sin dal momento della sua celebrazione; in caso di annullamento del matrimonio, gli effetti del matrimonio valido si producono fino alla sentenza che pronuncia la nullità (matrimonio putativo) qualora il matrimonio sia stato contratto in buona fede dai coniugi o con violenza o timore di eccezionale gravità (art. 128 c.c.).In caso di matrimonio annullato, si hanno conseguenze in merito a: perdita della qualità di coniuge; cessazione della comunione legale; scioglimento del fondo patrimoniale; perdita dei diritti ereditari; perdita di efficacia eventuali donazioni obnuziali; rapporti con i figli e rapporti di parentela, venendo meno il vincolo di affinità tra l’ex coniuge e i parenti dell’altro.</rdfs:comment>
-        <rdfs:label xml:lang="en">Annulled wedding</rdfs:label>
-        <rdfs:label xml:lang="it">Matrimonio annullato</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/italia/onto/ACO/Applicant -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/Applicant">
         <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/ACO/ApplicationSubject"/>
-        <rdfs:comment xml:lang="it">Soggetto che dà impulso al procedimento amministrativo (l. n. 241/1990).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ruolo svolto dal soggetto che dà impulso al procedimento amministrativo (l. n. 241/1990).</rdfs:comment>
         <rdfs:label xml:lang="en">Applicant</rdfs:label>
         <rdfs:label xml:lang="it">Richiedente</rdfs:label>
     </owl:Class>
@@ -1031,7 +698,7 @@
     <!-- https://w3id.org/italia/onto/ACO/ApplicationSubject -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/ApplicationSubject">
-        <rdfs:comment xml:lang="it">Soggetto interessato all’emissione di un determinato provvedimento da parte della Pubblica Amministrazione competente (art. 8, legge n. 241/1990).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ruolo svolto dal soggetto interessato all’emissione di un determinato provvedimento da parte della Pubblica Amministrazione competente (art. 8, legge n. 241/1990).</rdfs:comment>
         <rdfs:label xml:lang="en">Application subject</rdfs:label>
         <rdfs:label xml:lang="it">Interessato</rdfs:label>
     </owl:Class>
@@ -1050,7 +717,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/MaritalStatusCertificate"/>
         <rdfs:comment xml:lang="it">Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto all’atto di nascita (artt. 5 e 100, DPR 396/00 ; Artt.12 e 33 del DPR n.223/1989). </rdfs:comment>
         <rdfs:label xml:lang="en">Birth certificate</rdfs:label>
-        <rdfs:label xml:lang="it">Certificato anagrafico di nascita</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato  anagrafico di  nascita</rdfs:label>
     </owl:Class>
     
 
@@ -1075,12 +742,6 @@
     <!-- https://w3id.org/italia/onto/ACO/Certificate -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/Certificate">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/certificateIssuedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/certificateIssuedForApplication"/>
@@ -1139,7 +800,7 @@
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Istanza volta a ottenere un certificato per se stesso ovvero per gli altri componenti inclusi nello stato di famiglia. </rdfs:comment>
         <rdfs:label xml:lang="en">Certificate application</rdfs:label>
-        <rdfs:label xml:lang="it">Richiesta di certificato</rdfs:label>
+        <rdfs:label xml:lang="it">Richiesta di  certificato</rdfs:label>
     </owl:Class>
     
 
@@ -1150,7 +811,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
         <rdfs:comment xml:lang="it">Certificato anagrafico rilasciato senza obbligo di versamento di un corrispettivo per l&apos;attività svolta. </rdfs:comment>
         <rdfs:label xml:lang="en">Certificate exempt from secretarial fees</rdfs:label>
-        <rdfs:label xml:lang="it">Certificato esente da diritti di segreteria</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato esente  da diritti di segreteria</rdfs:label>
     </owl:Class>
     
 
@@ -1161,7 +822,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
         <rdfs:comment xml:lang="it">Certificato anagrafico rilasciato senza obbligo di pagamento di una imposta di bollo.</rdfs:comment>
         <rdfs:label xml:lang="en">Certificate exempt from stamp duty</rdfs:label>
-        <rdfs:label xml:lang="it">Certificato esente da imposta di bollo</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato esente  da imposta di bollo</rdfs:label>
     </owl:Class>
     
 
@@ -1171,7 +832,7 @@
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CertificateOfFamilyStatus">
         <rdfs:comment xml:lang="it">Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato di famiglia e ai relativi dati di una persona. </rdfs:comment>
         <rdfs:label xml:lang="en">Certificate of family status</rdfs:label>
-        <rdfs:label xml:lang="it">Certificato di stato di famiglia</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato di  stato di famiglia</rdfs:label>
     </owl:Class>
     
 
@@ -1180,7 +841,7 @@
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CitizenshipCertificate">
         <rdfs:comment xml:lang="it">Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto alla cittadinanza e ai relativi dati di una persona. </rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato di cittadinanza</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato di  cittadinanza</rdfs:label>
         <rdfs:label xml:lang="en">Citizenship certificate</rdfs:label>
     </owl:Class>
     
@@ -1189,20 +850,9 @@
     <!-- https://w3id.org/italia/onto/ACO/CitizenshipDeed -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CitizenshipDeed">
-        <rdfs:comment xml:lang="it">Atto che formalizza la cittadinanza riconosciuta per beneficio di legge agli stranieri nati e residenti ininterrottamente in Italia fino al 18mo anno di età ovvero in casi particolari di discendenti in linea retta di cittadini per nascita e contenente la relativa dichiarazione per l’acquisto della cittadinanza resa all’Ufficiale di stato civile ovvero, in caso di residenza all&apos;estero, davanti all&apos;autorità diplomatica o consolare del luogo di residenza. (artt. 4 e 23, l. 91/92).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Atto che formalizza la cittadinanza riconosciuta per beneficio di legge agli stranieri nati e residenti ininterrottamente in Italia fino al 18mo anno di età ovvero in casi particolari di discendenti in linea retta di cittadini per nascita e contenente la relativa dichiarazione per l’acquisto della cittadinanza resa all’Ufficiale di stato civile ovvero, in caso di residenza all&apos;estero, davanti all&apos;autorità diplomatica o consolare del luogo di residenza. [artt. 4 e 23, l. 91/92].</rdfs:comment>
         <rdfs:label xml:lang="it">Atto di cittadinanza</rdfs:label>
         <rdfs:label xml:lang="en">Citizenship deed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/CivilRegistryOffice -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CivilRegistryOffice">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/PublicAdministration"/>
-        <rdfs:comment xml:lang="it">Ufficio comunale competente ad emanare atti amministrativi in materia di stato civile. (art. 1 DPR 396/00)</rdfs:comment>
-        <rdfs:label xml:lang="en">Civil registry office</rdfs:label>
-        <rdfs:label xml:lang="it">Ufficio di stato civile</rdfs:label>
     </owl:Class>
     
 
@@ -1210,61 +860,9 @@
     <!-- https://w3id.org/italia/onto/ACO/CivilUnionDeed -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDeed">
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile che costituisce l’unione civile di due persone dello stesso sesso mediante dichiarazione rilasciata alla presenza di due testimoni e contenente quanto indicato dall’art. 70 quaterdecies DPR 396/2000 tra cui: il nome e il cognome, il luogo e la data di nascita, la cittadinanza e la residenza delle parti dell&apos;unione civile; il nome, il cognome, il luogo e la data di nascita e la residenza dei testimoni; la dichiarazione delle parti di voler costituire l&apos;unione civile. [art. 1 L. 76/2016; art. 70bis ss.]</rdfs:comment>
+        <rdfs:comment xml:lang="it">Atto che costituisce l’unione civile di due persone dello stesso sesso mediante dichiarazione rilasciata all’ufficiale di stato civile ed alla presenza di due testimoni (art. 1 L. 76/2016; art. 70bis ss. DPR 396/2000).</rdfs:comment>
         <rdfs:label xml:lang="it">Atto di unione civile</rdfs:label>
         <rdfs:label xml:lang="en">Civil union deed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/CivilUnionDissolutionDeed -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDissolutionDeed">
-        <rdfs:comment xml:lang="it">Atto che, in presenza di un negozio giuridico di unione civile valido, determina la fine del vincolo di unione civile con effetti non retroattivi, che può consistere in:a) una sentenza di scioglimento di unione civile del tribunale, nei casi previsti dall&apos;articolo 3, n. 1) e n. 2), lett. a), c), d) ed e), L. 898/1970.b) un atto dell’ufficiale di stato civile che accerta la volontà, manifestata anche disgiuntamente dalle parti, di sciogliere l’unione civile;c) una convenzione assistita da avvocati (art. 6 DL 132/2014) con il nulla osta o, in presenza di figli, l’autorizzazione del procuratore della Repubblica.</rdfs:comment>
-        <rdfs:label xml:lang="it">Atto di scioglimento di unione civile</rdfs:label>
-        <rdfs:label xml:lang="en">Civil union dissolution deed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/CivilUnionReedRegistration -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionReedRegistration">
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile con cui si registrano e conservano, mediante iscrizione o trascrizione nell’archivio informatico dell’ufficio di stato civile del Comune, le unioni civili costituite nel Comune (artt. 10, 63 DPR 396/00).</rdfs:comment>
-        <rdfs:label xml:lang="en">Civil union reed registration</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione unione civile</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/ConcordatMarriageWithCeasedCivilEffects -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/ConcordatMarriageWithCeasedCivilEffects">
-        <rdfs:comment xml:lang="it">Matrimonio celebrato secondo le norme del diritto canonico (dinanzi a un ministro di culto cattolico e trascritto nei registri dello stato civile da parte dell’ufficiale di stato civile) con riferimento al quale, fermo restando il vincolo matrimoniale secondo il diritto canonico, sono cessati gli effetti civili dello stesso. È equivalente a “Matrimonio sciolto” relativamente agli effetti per l’ordinamento giuridico italiano. Casi: a) morte di uno dei coniugi (art. 149 c.c.);b) sentenza di divorzio del tribunale, in tutti i casi previsti dall’art. 3 L 989/1970; c) volontà manifestata congiuntamente dai coniugi e accertata con atto dell’ufficiale dello stato civile (art. 12 DL 132/2014) nei casi previsti dall’art. 3, comma 1, n. 2), lett. b), L 898/1970 (separazione giudiziale passata in giudicato, separazione consensuale omologata o separazione di fatto ante 18.12.1968); d) accordo tra i coniugi raggiunto a seguito di convenzione assistita da avvocati (art. 6 DL 132/2014) negli stessi casi sub c) munito del nulla osta ovvero, in presenza di figli, dell’autorizzazione del procuratore della Repubblica.&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">Concordat marriage with ceased civil effects</rdfs:label>
-        <rdfs:label xml:lang="it">Matrimonio concordatario con effetti civili cessati</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/ConsensualDivorceDeed -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/ConsensualDivorceDeed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/DivorceDeed"/>
-        <rdfs:comment xml:lang="it">Atto di scioglimento del vincolo matrimoniale tra i coniugi derivante dall’accordo degli stessi, che può consistere in: - una sentenza del tribunale in caso di domanda congiunta dei coniugi di scioglimento [art. 4 L 898/1970, abrogato]; - un atto dell’ufficiale di stato civile contenente la dichiarazione dei coniugi di volere ottenere lo scioglimento del matrimonio [art. 12 DL 132/2014]; - una convenzione di negoziazione assistita da avvocati con il nulla osta ovvero, in presenza di figli, l’autorizzazione del procuratore della Repubblica dell’accordo raggiunto a seguito di [art. 6 DL 132/2014]. </rdfs:comment>
-        <rdfs:label xml:lang="it">Atto di divorzio consensuale</rdfs:label>
-        <rdfs:label xml:lang="en">Consensual divorce deed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/ConsensualSeparationDeed -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/ConsensualSeparationDeed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/SeparationDeed"/>
-        <rdfs:comment xml:lang="it">Atto che determina lo stato di separazione personale dei coniugi derivante dall’accordo degli stessi, che può consistere in: – un atto dell’ufficiale di stato civile contenente l’accordo di separazione personale concluso innanzi a sé dai coniugi, da cui riceve personalmente la dichiarazione di volersi separare, laddove non vi siano figli minori, figli maggiorenni incapaci o portatori di handicap grave ovvero economicamente non autosufficienti [art. 12 DL 132/2014];- un decreto di omologazione del tribunale che rende efficace l’accordo raggiunto dai coniugi [art. 711 c.p.c.]; - un convenzione di negoziazione assistita da avvocati con il nulla osta o, in presenza di figli, l’autorizzazione del procuratore della Repubblica. [art. 6 DL 132/2014]</rdfs:comment>
-        <rdfs:label xml:lang="it">Atto di separazione consensuale</rdfs:label>
-        <rdfs:label xml:lang="en">Consensual separation deed</rdfs:label>
     </owl:Class>
     
 
@@ -1279,22 +877,11 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/DissolvedMarriage -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/DissolvedMarriage">
-        <rdfs:comment xml:lang="it">Matrimonio, celebrato con rito civile, con riferimento al quale è venuto meno il vincolo matrimoniale ed i relativi effetti per l’ordinamento giuridico. Sottoclassi: a) matrimonio sciolto per morte di uno dei coniugi (art. 149 c.c.);b) matrimonio sciolto con sentenza di divorzio del tribunale, in tutti i casi previsti dall’art. 3 L 989/1970; c) matrimonio sciolto per volontà manifestata congiuntamente dai coniugi e accertata con atto dell’ufficiale dello stato civile (art. 12 DL 132/2014) nei casi previsti dall’art. 3, comma 1, n. 2), lett. b), L 898/1970 (separazione giudiziale passata in giudicato, separazione consensuale omologata o separazione di fatto ante 18.12.1968); d) matrimonio sciolto con accordo tra i coniugi raggiunto a seguito di convenzione assistita da avvocati (art. 6 DL 132/2014) negli stessi casi sub c) munito del nulla osta ovvero, in presenza di figli, dell’autorizzazione del procuratore della Repubblica.&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">Dissolved marriage</rdfs:label>
-        <rdfs:label xml:lang="it">Matrimonio sciolto</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/italia/onto/ACO/DivorceDeed -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/DivorceDeed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/MarriageDissolutionDeed"/>
-        <rdfs:comment xml:lang="it">Atto rilasciato dall&apos;ufficio di stato civile contenente le informazioni sul divorzio di una persona.</rdfs:comment>
-        <rdfs:label xml:lang="it">Atto di divorzio</rdfs:label>
+        <rdfs:comment xml:lang="it">Atto che formalizza lo scioglimento del vincolo matrimoniale tra i coniugi derivante dall’accordo degli stessi: - la sentenza del tribunale in caso di domanda congiunta dei coniugi di scioglimento [art. 4 L 898/1970, abrogato]; - l’atto dell’ufficiale di stato civile contenente la dichiarazione dei coniugi di volere ottenere lo scioglimento del matrimonio [art. 12 DL 132/2014]; - il nulla osta ovvero l’autorizzazione del procuratore della Repubblica dell’accordo raggiunto a seguito di convenzione di negoziazione assistita da avvocati [art. 6 DL 132/2014]. </rdfs:comment>
+        <rdfs:label xml:lang="it">Atto di divorzio </rdfs:label>
         <rdfs:label xml:lang="en">Divorce deed</rdfs:label>
     </owl:Class>
     
@@ -1323,9 +910,8 @@
     <!-- https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate">
-        <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
         <rdfs:label xml:lang="en">Evidence of birth certificate</rdfs:label>
-        <rdfs:label xml:lang="it">Evidenza di certificato anagrafico di nascita</rdfs:label>
+        <rdfs:label xml:lang="it">Evidenza di  certificato anagrafico  di nascita</rdfs:label>
     </owl:Class>
     
 
@@ -1334,7 +920,7 @@
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate">
         <rdfs:label xml:lang="en">Evidence of residence certificate</rdfs:label>
-        <rdfs:label xml:lang="it">Evidenza di certificato anagrafico di residenza</rdfs:label>
+        <rdfs:label xml:lang="it">Evidenza di  certificato anagrafico  di residenza</rdfs:label>
     </owl:Class>
     
 
@@ -1343,7 +929,7 @@
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/MaritalStatusCertificate">
         <rdfs:comment xml:lang="it">Certificato rilasciato dal Ministero dell’Interno o dal Comune in cui si attesta quanto risulta in anagrafe rispetto allo stato civile e ai relativi dati di una persona. </rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato di stato civile</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato di  stato civile</rdfs:label>
         <rdfs:label xml:lang="en">Marital status certificate</rdfs:label>
     </owl:Class>
     
@@ -1355,27 +941,18 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AnnotationOfAnnulledOrTerminatedCivilUnion"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AnnotationOfAnnullmentOrTerminationOfWedding"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/BirthDeed"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CitizenshipDeed"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDeed"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDissolutionDeed"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DeathDeed"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DivorceDeed"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeed"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDissolutionDeed"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/SeparationDeed"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/AdministrativeDeed"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/deedIssuedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ACO/CivilRegistryOffice"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Atto formato dall&apos;ufficio di stato civile contenente le informazioni sullo stato civile di una persona.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Atto rilasciato dall&apos;ufficio di stato civile contenente le informazioni sullo stato civile di una persona.</rdfs:comment>
         <rdfs:label xml:lang="it">Atto dello stato civile</rdfs:label>
         <rdfs:label xml:lang="en">Marital status deed</rdfs:label>
     </owl:Class>
@@ -1385,60 +962,9 @@
     <!-- https://w3id.org/italia/onto/ACO/MarriageDeed -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeed">
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile relativo al matrimonio celebrato innanzi a lui contenente quanto indicato dall’art. 64 DPR 396/00 tra cui: il nome, il cognome, il luogo e la data di nascita, la cittadinanza e la residenza degli sposi e dei testimoni; la dichiarazione degli sposi di volersi prendere rispettivamente in marito e in moglie; il luogo della celebrazione (se diverso dalla casa comunale).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Atto che formalizza il matrimonio celebrato dinanzi all’ufficiale di stato civile tra gli sposi e contenente la dichiarazione fatta dall&apos;ufficiale dello stato civile che gli sposi sono uniti in matrimonio. [art. 64 DPR 396/00]</rdfs:comment>
         <rdfs:label xml:lang="it">Atto di matrimonio</rdfs:label>
         <rdfs:label xml:lang="en">Marriage deed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/MarriageDeedRegistration -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeedRegistration">
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile con cui si registrano e conservano, mediante iscrizione o trascrizione nell’archivio informatico dell’ufficio di stato civile del Comune, gli atti dei matrimoni celebrati nel Comune (artt. 10, 63 DPR 396/00).</rdfs:comment>
-        <rdfs:label xml:lang="en">Marriage deed registration</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione atto di matrimonio</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/MarriageDissolutionDeed -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/MarriageDissolutionDeed">
-        <rdfs:comment xml:lang="it">Atto che, in presenza di un negozio giuridico di matrimonio valido, determina la fine del vincolo matrimoniale con effetti non retroattivi, che può consistere in: a) una sentenza di divorzio del tribunale, in tutti i casi previsti dall’art. 3 L 989/1970; b) un atto dell’ufficiale dello stato civile (art. 12 DL 132/2014) che, nei casi previsti dall’art. 3, comma 1, n. 2), lett. b), L 898/1970 (separazione giudiziale passata in giudicato, separazione consensuale omologata o separazione di fatto ante 18.12.1968) accerta la volontà, manifestata congiuntamente dai coniugi, di sciogliere il matrimonio; c) una convenzione assistita da avvocati (art. 6 DL 132/2014) negli stessi casi sub b) con il nulla osta ovvero, in presenza di figli, l’autorizzazione del procuratore della Repubblica.Atto di divorzio consensuale (v.) è sottoclasse di a), b) e c).</rdfs:comment>
-        <rdfs:label xml:lang="it">Atto di scioglimento di matrimonio</rdfs:label>
-        <rdfs:label xml:lang="en">Marriage dissolution deed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/PublicAdministration -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/PublicAdministration">
-        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/deedIssuedBy"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/depositedIn"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Ente che svolge istituzionalmente una funzione amministrativa disciplinata da norme di diritto pubblico e da atti autoritativi e caratterizzata dalla formazione e dalla manifestazione della volontà della pubblica amministrazione o dal suo svolgersi per mezzo di poteri autoritativi o certificativi. </rdfs:comment>
-        <rdfs:label xml:lang="it">Amministrazione pubblica</rdfs:label>
-        <rdfs:label xml:lang="en">Public administration</rdfs:label>
     </owl:Class>
     
 
@@ -1465,80 +991,6 @@
         <rdfs:comment xml:lang="it">Certificato rilasciato dal Ministero dell’Interno in cui si attesta quanto risulta in anagrafe.</rdfs:comment>
         <rdfs:label xml:lang="it">Certificato anagrafico</rdfs:label>
         <rdfs:label xml:lang="en">Registration certificate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledMarriage -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledMarriage">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/registrationOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ACO/AnnulledWedding"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Matrimonio di cui è stata accertata giudizialmente l’invalidità del relativo negozio giuridico per una delle cause previste dalla legge (artt. 117-129 bis c.c.). L’annullamento del matrimonio ha, di regola, effetti retroattivi sin dal momento della sua celebrazione; in caso di annullamento del matrimonio, gli effetti del matrimonio valido si producono fino alla sentenza che pronuncia la nullità (matrimonio putativo) qualora il matrimonio sia stato contratto in buona fede dai coniugi o con violenza o timore di eccezionale gravità (art. 128 c.c.).In caso di matrimonio annullato, si hanno conseguenze in merito a: perdita della qualità di coniuge; cessazione della comunione legale; scioglimento del fondo patrimoniale; perdita dei diritti ereditari; perdita di efficacia eventuali donazioni obnuziali; rapporti con i figli e rapporti di parentela, venendo meno il vincolo di affinità tra l’ex coniuge e i parenti dell’altro.</rdfs:comment>
-        <rdfs:label xml:lang="en">Annulled marriage</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione di matrimonio annullato</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedCivilUnion -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedCivilUnion">
-        <rdfs:comment xml:lang="it">Unione civile che non produce effetti per l’ordinamento giuridico. Sottoclassi: unione civile sciolta (L. 76/2016, art. 1, commi 22-26: nel caso di morte o dichiarazione di morte presunta di una delle parti dell&apos;unione civile; nei casi previsti dall&apos;articolo 3, numero 1) e numero 2), lettere a), c), d) ed e), della legge 1° dicembre 1970, n. 898; quando le parti hanno manifestato anche disgiuntamente la volontà di scioglimento dinanzi all&apos;ufficiale dello stato civile; nel caso di sentenza di rettificazione di attribuzione di sesso); unione civile annullata (L. 76/2016, art. 1, commi 4, 5, 16, 51 e 57, tra cui, a titolo di esempio: ritorno o accertamento esistenza precedente coniuge dichiarato morto; violenza; vizio della forma scritta; precedente matrimonio; interdizione per infermità di mente di una delle parti).</rdfs:comment>
-        <rdfs:label xml:lang="en">Registration of annulled or terminated civil union</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione di unione civile annullata o cessata</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedWedding -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedWedding">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/registrationOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Matrimonio che non produce effetti per l’ordinamento giuridico. Sottoclassi: matrimonio annullato (v.), del matrimonio sciolto (v.) e del matrimonio concordatario con effetti civili cessati (v.).</rdfs:comment>
-        <rdfs:label xml:lang="en">Registration of annulled or terminated wedding</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione di matrimonio annullato o cessato</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/RegistrationOfConcordatMarriageWithCeasedCivilEffects -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfConcordatMarriageWithCeasedCivilEffects">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/registrationOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ACO/ConcordatMarriageWithCeasedCivilEffects"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Matrimonio celebrato secondo le norme del diritto canonico (dinanzi a un ministro di culto cattolico e trascritto nei registri dello stato civile da parte dell’ufficiale di stato civile) con riferimento al quale, fermo restando il vincolo matrimoniale secondo il diritto canonico, sono cessati gli effetti civili dello stesso. È equivalente a “Matrimonio sciolto” relativamente agli effetti per l’ordinamento giuridico italiano. Casi: a) morte di uno dei coniugi (art. 149 c.c.);b) sentenza di divorzio del tribunale, in tutti i casi previsti dall’art. 3 L 989/1970; c) volontà manifestata congiuntamente dai coniugi e accertata con atto dell’ufficiale dello stato civile (art. 12 DL 132/2014) nei casi previsti dall’art. 3, comma 1, n. 2), lett. b), L 898/1970 (separazione giudiziale passata in giudicato, separazione consensuale omologata o separazione di fatto ante 18.12.1968); d) accordo tra i coniugi raggiunto a seguito di convenzione assistita da avvocati (art. 6 DL 132/2014) negli stessi casi sub c) munito del nulla osta ovvero, in presenza di figli, dell’autorizzazione del procuratore della Repubblica.&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">Concordat marriage with ceased civil effects</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione di matrimonio concordatario con effetti civili cessati</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/RegistrationOfDissolvedMarriage -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfDissolvedMarriage">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/registrationOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ACO/DissolvedMarriage"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Matrimonio, celebrato con rito civile, con riferimento al quale è venuto meno il vincolo matrimoniale ed i relativi effetti per l’ordinamento giuridico. Sottoclassi: a) matrimonio sciolto per morte di uno dei coniugi (art. 149 c.c.);b) matrimonio sciolto con sentenza di divorzio del tribunale, in tutti i casi previsti dall’art. 3 L 989/1970; c) matrimonio sciolto per volontà manifestata congiuntamente dai coniugi e accertata con atto dell’ufficiale dello stato civile (art. 12 DL 132/2014) nei casi previsti dall’art. 3, comma 1, n. 2), lett. b), L 898/1970 (separazione giudiziale passata in giudicato, separazione consensuale omologata o separazione di fatto ante 18.12.1968); d) matrimonio sciolto con accordo tra i coniugi raggiunto a seguito di convenzione assistita da avvocati (art. 6 DL 132/2014) negli stessi casi sub c) munito del nulla osta ovvero, in presenza di figli, dell’autorizzazione del procuratore della Repubblica.&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">Dissolved marriage</rdfs:label>
-        <rdfs:label xml:lang="it">Registrazione di matrimonio sciolto</rdfs:label>
     </owl:Class>
     
 
@@ -1595,41 +1047,10 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/RegistryEntry"/>
         <rdfs:comment xml:lang="it">Atto amministrativo che determina la registrazione nell&apos;anagrafe comunale dei nati da genitori iscritti nell’anagrafe della popolazione residente del comune, anche se la nascita è avvenuta in altro comune o all’estero purché siano pervenuti i relativi atti per la trascrizione. </rdfs:comment>
-        <rdfs:label xml:lang="it">Iscrizione anagrafica per nascita</rdfs:label>
+        <rdfs:label xml:lang="it">Iscrizione  anagrafica  per nascita</rdfs:label>
         <rdfs:label xml:lang="en">Registry entry for birth</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ACO/Residence -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/Residence">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/residenceInAddress"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/residenceInCity"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/hasResidence"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Luogo in cui una persona ha fissato la dimora abituale (art. 43 c.c.) come risultante in anagrafe. </rdfs:comment>
-        <rdfs:label xml:lang="en">Residence</rdfs:label>
-        <rdfs:label xml:lang="it">Residenza</rdfs:label>
     </owl:Class>
     
 
@@ -1644,7 +1065,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Certificato rilasciato dal Ministero o dal Comune dell’Interno in cui si attesta quanto risulta in anagrafe rispetto alla residenza e ai relativi dati di una persona (art. 33 DPR 223/1989).</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato anagrafico di residenza</rdfs:label>
+        <rdfs:label xml:lang="it">Certificato  anagrafico di  residenza</rdfs:label>
         <rdfs:label xml:lang="en">Residence certificate</rdfs:label>
     </owl:Class>
     
@@ -1669,16 +1090,17 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Funzione ricoperta da colui che richiede il certificato anagrafico: diretto interessato o semplice richiedente (delegato).</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:comment xml:lang="it">Ruolo ricoperto da colui che richiede il certificato anagrafico: diretto interessato o semplice richiedente (delegato).</rdfs:comment>
         <rdfs:label xml:lang="en">Role in application</rdfs:label>
-        <rdfs:label xml:lang="it">Ruolo rispetto a richiesta</rdfs:label>
+        <rdfs:label xml:lang="it">Ruolo rispetto  a richiesta</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/SecretarialFees -->
+    <!-- https://w3id.org/italia/onto/ACO/SecretarialFee -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/SecretarialFees">
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/SecretarialFee">
         <rdfs:comment xml:lang="it">Versamento effettuato quale corrispettivo per il servizio svolto dalla pubblica amministrazione </rdfs:comment>
         <rdfs:label xml:lang="it">Diritti di segreteria</rdfs:label>
         <rdfs:label xml:lang="en">Secretarial fees</rdfs:label>
@@ -1689,7 +1111,8 @@
     <!-- https://w3id.org/italia/onto/ACO/SeparationDeed -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/SeparationDeed">
-        <rdfs:label xml:lang="it">Atto di separazione</rdfs:label>
+        <rdfs:comment xml:lang="it">Atto che formalizza lo stato di separazione personale dei coniugi derivante dall’accordo degli stessi. L’atto di separazione consensuale può, alternativamente e ricorrendo i requisiti specifici per ciascuna fattispecie, configurarsi: – nell’atto dell’ufficiale di stato civile contenente l’accordo di separazione personale concluso innanzi a sé dai coniugi, da cui riceve personalmente la dichiarazione di volersi separare, laddove non vi siano figli minori, figli maggiorenni incapaci o portatori di handicap grave ovvero economicamente non autosufficienti [art. 12 DL 132/2014]; - nel decreto di omologazione del tribunale che rende efficace l’accordo raggiunto dai coniugi [art. 711 c.p.c.]; - nella convenzione di negoziazione assistita da avvocati. [art. 6 DL 132/2014] </rdfs:comment>
+        <rdfs:label xml:lang="it">Atto di separazione </rdfs:label>
         <rdfs:label xml:lang="en">Separation deed</rdfs:label>
     </owl:Class>
     
@@ -1705,24 +1128,20 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ACO/WeddingCertificate -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ACO/WeddingCertificate">
-        <rdfs:label xml:lang="it">Certificato di matrimonio</rdfs:label>
-        <rdfs:label xml:lang="en">Wedding certificate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-    
-
-
     <!-- https://w3id.org/italia/onto/CLV/Address -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address"/>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/residenceInAddress"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -1749,10 +1168,29 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/COV/PublicOrganization -->
+    <!-- https://w3id.org/italia/onto/COV/PublicAdministration -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PublicOrganization">
-        <rdfs:label xml:lang="it">Amministrazione pubblica</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PublicAdministration">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/depositedIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/ACO/issuedBy"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -1760,16 +1198,7 @@
     <!-- https://w3id.org/italia/onto/CPV/Alive -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Alive">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/RPO/PersonWithoutRegisteredResidence"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
-        <rdfs:label xml:lang="it">Persona in vita</rdfs:label>
     </owl:Class>
     
 
@@ -1787,27 +1216,22 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/RPO/PersonWithoutRegisteredResidence -->
+    <!-- https://w3id.org/italia/onto/RO/Role -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/PersonWithoutRegisteredResidence">
-        <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
-        <rdfs:comment xml:lang="it">Persona fisica non registrata nell’anagrafe della popolazione residente. </rdfs:comment>
-        <rdfs:label xml:lang="it">Persona anagraficamente non residente</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RPO/RegisteredResidence -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
     
 
 
     <!-- https://w3id.org/italia/onto/RPO/RegisteredResidentPerson -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACO/hasResidence"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Persona fisica avente dimora abituale in un determinato Comune come risultante nell&apos;anagrafe della popolazione residente (artt. 3 e 7 DPR n. 223/1989; art. 43 cc). </rdfs:comment>
-        <rdfs:label xml:lang="it">Persona anagraficamente residente</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/>
     </owl:Class>
     
 
@@ -1829,8 +1253,8 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-        <vcard:fn>Segreteria Tecnica Istat - Progetto PNRR National Data Catalog </vcard:fn>
-        <vcard:hasEmail rdf:resource="mailto:ndc-segr-tec@istat.it"/>
+        <ns:fn>Segreteria Tecnica Istat - Progetto PNRR National Data Catalog </ns:fn>
+        <ns:hasEmail rdf:resource="mailto:ndc-segr-tec@istat.it"/>
     </owl:NamedIndividual>
     
 
@@ -1839,14 +1263,14 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei certificati anagrafici</dct:description>
-        <dct:description xml:lang="en">This is the distribution in JSON-LD of the administrative certifications</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <dct:title xml:lang="it">Distribuzione JSON-LD ontologia ACO_IT </dct:title>
-        <dct:title xml:lang="en">JSON-LD distribution of ACO_IT  Ontology</dct:title>
-        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.jsonld"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei certificati anagrafici</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of the administrative certifications</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia ACO_IT </terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of ACO_IT  Ontology</terms:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/ACO/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/ACO/latest/ACO-AP_IT.jsonld"/>
     </owl:NamedIndividual>
     
 
@@ -1855,14 +1279,14 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ACOAPIT-RDF-TURTLE">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei certificati anagrafici</dct:description>
-        <dct:description xml:lang="en">This is the distribution in RDF/turtle of the administrative certifications</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia ACO_IT </dct:title>
-        <dct:title xml:lang="en">RDF/Turtle distribution of ACO_IT  Ontology</dct:title>
-        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.ttl"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei certificati anagrafici</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/turtle of the administrative certifications</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia ACO_IT </terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of ACO_IT  Ontology</terms:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/ACO/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/ACO/latest/ACO-AP_IT.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -1871,14 +1295,14 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei certificati anagrafici</dct:description>
-        <dct:description xml:lang="en">This is the distribution in RDF/XML of the administrative certifications</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia ACO_IT </dct:title>
-        <dct:title xml:lang="en">RDF/XML distribution of ACO_IT  Ontology</dct:title>
-        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.rdf"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei certificati anagrafici</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of the administrative certifications</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia ACO_IT </terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of ACO_IT  Ontology</terms:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/ACO/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/ACO/latest/ACO-AP_IT.rdf"/>
     </owl:NamedIndividual>
     
 
@@ -1888,7 +1312,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/ISTAT">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>ISTAT</dct:identifier>
+        <terms:identifier>ISTAT</terms:identifier>
         <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
         <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
     </owl:NamedIndividual>
@@ -1900,7 +1324,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>PCM-1RSIZZ</dct:identifier>
+        <terms:identifier>PCM-1RSIZZ</terms:identifier>
         <foaf:name xml:lang="en">Digital Transformation Department of the Presidency of the Council of Ministers</foaf:name>
         <foaf:name xml:lang="it">Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri</foaf:name>
     </owl:NamedIndividual>
@@ -1912,7 +1336,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/agid">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>agid</dct:identifier>
+        <terms:identifier>agid</terms:identifier>
         <foaf:name xml:lang="it">Agenzia per l&apos;Italia Digitale</foaf:name>
         <foaf:name xml:lang="en">Italian Digital Agency</foaf:name>
     </owl:NamedIndividual>
@@ -1924,7 +1348,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/m_it">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>m_it</dct:identifier>
+        <terms:identifier>m_it</terms:identifier>
         <foaf:name xml:lang="it">Ministero dell&apos;Interno - DAIT Direzione Centrale dei servizi demografici</foaf:name>
         <foaf:name xml:lang="en">Ministry of the Interior - DAIT Central Directorate of Population Services</foaf:name>
     </owl:NamedIndividual>
@@ -2009,27 +1433,9 @@
      -->
 
     <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/BirthDeed">
-        <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l&apos;anno, il mese, il giorno e l&apos;ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00.</rdfs:comment>
         <rdfs:label xml:lang="it">Atto di nascita</rdfs:label>
+        <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l&apos;anno, il mese, il giorno e l&apos;ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00.</rdfs:comment>
         <rdfs:label xml:lang="en">Birth deed</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Address">
-        <rdfs:label xml:lang="it">Indirizzo</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/AdminUnitComponent">
-        <rdfs:label xml:lang="it">Componente Unità Amministrativa</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City">
-        <rdfs:label xml:lang="it">Comune</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/dateOfBirth">
-        <rdfs:label xml:lang="it">data di nascita</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/familyName">
-        <rdfs:label xml:lang="it">cognome</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/givenName">
-        <rdfs:label xml:lang="it">nome</rdfs:label>
     </rdf:Description>
     
 
@@ -2067,7 +1473,7 @@
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/PublicAdministration"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/COV/PublicAdministration"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
                         </owl:unionOf>
                     </owl:Class>
@@ -2110,16 +1516,6 @@
     </owl:Class>
     <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionReedRegistration"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeedRegistration"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedCivilUnion"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedWedding"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistryEntryForBirth"/>
-        </owl:unionOf>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/RegistryEntry"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
             <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
         </owl:unionOf>
@@ -2129,41 +1525,9 @@
         <owl:unionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MaritalStatusCertificate"/>
             <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationCertificate"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/WeddingCertificate"/>
         </owl:unionOf>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/Certificate"/>
     </owl:Class>
-    <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledMarriage"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfConcordatMarriageWithCeasedCivilEffects"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfDissolvedMarriage"/>
-        </owl:unionOf>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedWedding"/>
-    </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AnnotationOfAnnulledOrTerminatedCivilUnion"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AnnotationOfAnnullmentOrTerminationOfWedding"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/BirthDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CitizenshipDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDissolutionDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DeathDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDissolutionDeed"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/SeparationDeed"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/AnnulledWedding"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/ConcordatMarriageWithCeasedCivilEffects"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DissolvedMarriage"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -2176,24 +1540,18 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionReedRegistration"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeedRegistration"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedCivilUnion"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledOrTerminatedWedding"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistryEntryForBirth"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfAnnulledMarriage"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfConcordatMarriageWithCeasedCivilEffects"/>
-            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/RegistrationOfDissolvedMarriage"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/BirthDeed"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CitizenshipDeed"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/CivilUnionDeed"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DeathDeed"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/DivorceDeed"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/MarriageDeed"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/ACO/SeparationDeed"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
