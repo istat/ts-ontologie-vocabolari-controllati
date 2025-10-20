@@ -27,7 +27,7 @@
 
 
 # OWL
-owl:versionInfo a rdf:Property .
+owl:versionInfo a rdfs:Property .
 
 # DCAT-AP_IT
 dcatapit:Dataset a rdfs:Class .
@@ -37,67 +37,67 @@ dcatapit:Organization a rdfs:Class .
 dcatapit:Agent a rdfs:Class .
 
 # DCAT
-dcat:keyword a rdf:Property .
-dcat:contactPoint a rdf:Property .
-dcat:accessURL a rdf:Property .
-dcat:downloadURL a rdf:Property .
-dcat:theme a rdf:Property .
-dcat:distribution a rdf:Property .
+dcat:keyword a rdfs:Property .
+dcat:contactPoint a rdfs:Property .
+dcat:accessURL a rdfs:Property .
+dcat:downloadURL a rdfs:Property .
+dcat:theme a rdfs:Property .
+dcat:distribution a rdfs:Property .
 
 # ADMS
-adms:representationTechnique a rdf:Property .
+adms:representationTechnique a rdfs:Property .
 
 # vcard
 vcard:Organization a rdfs:Class .
 vcard:Kind a rdfs:Class .
-vcard:fn a rdf:Property .
-vcard:hasEmail a rdf:Property .
+vcard:fn a rdfs:Property .
+vcard:hasEmail a rdfs:Property .
 
 # SKOS
 skos:ConceptScheme a rdfs:Class .
 skos:Concept a rdfs:Class .
-skos:prefLabel a rdf:Property .
-skos:notation a rdf:Property .
-skos:inScheme a rdf:Property .
-skos:narrower a rdf:Property .
-skos:broader a rdf:Property .
-skos:broaderTransitive a rdf:Property .
-skos:narrowerTransitive a rdf:Property .
-skos:definition a rdf:Property .
-skos:exactMatch a rdf:Property .
+skos:prefLabel a rdfs:Property .
+skos:notation a rdfs:Property .
+skos:inScheme a rdfs:Property .
+skos:narrower a rdfs:Property .
+skos:broader a rdfs:Property .
+skos:broaderTransitive a rdfs:Property .
+skos:narrowerTransitive a rdfs:Property .
+skos:definition a rdfs:Property .
+skos:exactMatch a rdfs:Property .
 
 
 # XKOS
-xkos:numberOfLevels a rdf:Property .
+xkos:numberOfLevels a rdfs:Property .
 
 # FOAF
 foaf:Agent a rdfs:Class .
-foaf:name a rdf:Property .
+foaf:name a rdfs:Property .
 
 # dublin core terms
 dct:Standard a rdfs:Class .
-dct:title a rdf:Property .
-dct:type a rdf:Property .
-dct:description a rdf:Property .
-dct:creator a rdf:Property .
-dct:publisher a rdf:Property .
-dct:rightsHolder a rdf:Property .
-dct:conformsTo a rdf:Property .
-dct:subject a rdf:Property .
-dct:accrualPeriodicity a rdf:Property .
-dct:language a rdf:Property .
-dct:format a rdf:Property .
-dct:issued a rdf:Property .
-dct:modified a rdf:Property .
-dct:license a rdf:Property .
-dct:identifier a rdf:Property .
+dct:title a rdfs:Property .
+dct:type a rdfs:Property .
+dct:description a rdfs:Property .
+dct:creator a rdfs:Property .
+dct:publisher a rdfs:Property .
+dct:rightsHolder a rdfs:Property .
+dct:conformsTo a rdfs:Property .
+dct:subject a rdfs:Property .
+dct:accrualPeriodicity a rdfs:Property .
+dct:language a rdfs:Property .
+dct:format a rdfs:Property .
+dct:issued a rdfs:Property .
+dct:modified a rdfs:Property .
+dct:license a rdfs:Property .
+dct:identifier a rdfs:Property .
 
 
 # OntoPiA
 covapit:LegalStatus a rdfs:Class .
-clvapit:hasRankOrder a rdf:Property .
+clvapit:hasRankOrder a rdfs:Property .
 
-ndc:keyConcept a rdf:Property .
+ndc:keyConcept a rdfs:Property .
 
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-transparency/transparency-titulus> a skos:ConceptScheme, adms:Asset, dcatapit:Dataset ;
@@ -122,7 +122,7 @@ ndc:keyConcept a rdf:Property .
 	adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
 	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE>, <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
 	dct:subject  <http://eurovoc.europa.eu/5936>, <http://eurovoc.europa.eu/5937> ;
-	dct:conformsTo  <http://dati.gov.it/data/resource/Standard/SKOS> ;
+	dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
 	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ,
 		<http://publications.europa.eu/resource/authority/language/ENG> ,
 		<http://publications.europa.eu/resource/authority/language/DEU> ;
@@ -132,13 +132,14 @@ ndc:keyConcept a rdf:Property .
 		"trasparenza"@it, "trasparenza pubblica amministrazione"@it, "trasparenza PA"@it, "trasparenza pa"@it,
 		"transparency"@en, "transparency for public administration"@en ;
 
-	dcat:contactPoint <http://dati.gov.it/data/resource/ContactPoint/voc_AgID> ;
-	dct:rightsHolder <http://spcdata.digitpa.gov.it/Amministrazione/cvtiap> ;
-	dct:publisher <http://spcdata.digitpa.gov.it/Amministrazione/agid> ;
+	dcat:contactPoint <https://w3id.org/italia/data/contact-point/onto-agid> ;
+	dct:rightsHolder <https://w3id.org/italia/data/public-organization/cvtiap> ;
+	dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+	dct:creator <https://w3id.org/italia/data/public-organization/agid> ;
 
 	dct:issued "2018-12-13"^^xsd:date ;
-	dct:modified "2020-04-08"^^xsd:date ;
-	owl:versionInfo "versione 1.0"@it, "version 1.0"@en ;
+	dct:modified "2024-09-20"^^xsd:date ;
+	owl:versionInfo "versione 1.0 - metadati aggiornati"@it, "version 1.0 - updated metadata"@en ;
 
 	rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-transparency> ;
 
@@ -161,11 +162,11 @@ ndc:keyConcept a rdf:Property .
 	"""@it ;
 
 	dcat:distribution
-		<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_RDF_Turtle>,
-		<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_RDF_XML>,
-		<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_JSON_LD>,
-		<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_CSV> ,
-		<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_XLSX> ;
+		<https://w3id.org/italia/data/distribution/TransparencyClassification_RDF_Turtle>,
+		<https://w3id.org/italia/data/distribution/TransparencyClassification_RDF_XML>,
+		<https://w3id.org/italia/data/distribution/TransparencyClassification_JSON_LD>,
+		<https://w3id.org/italia/data/distribution/TransparencyClassification_CSV> ,
+		<https://w3id.org/italia/data/distribution/TransparencyClassification_XLSX> ;
 
 	skos:hasTopConcept
 		<https://w3id.org/italia/controlled-vocabulary/classifications-for-transparency/transparency-titulus/01>,
@@ -194,70 +195,78 @@ ndc:keyConcept a rdf:Property .
 	.
 
 
-<http://spcdata.digitpa.gov.it/Amministrazione/agid> a dcatapit:Agent, foaf:Agent ;
-	dct:identifier "agid" ;
-	foaf:name "Agenzia per l'Italia Digitale"@it , "Italian Digital Agency"@en ;
-	.
-<http://dati.gov.it/data/resource/ContactPoint/voc_AgID> a dcatapit:Organization , vcard:Organization, vcard:Kind ;
-	vcard:fn "banche dati e open data" ;
-	vcard:hasEmail <mailto:info@dati.gov.it> ;
-	.
+<https://w3id.org/italia/data/public-organization/agid>  a dcatapit:Agent , foaf:Agent ;
+		dct:identifier "agid" ;
+		foaf:name "Agenzia per l'Italia Digitale"@it ,
+			 				"Italian Digital Agency"@en .
 
-<http://spcdata.digitpa.gov.it/Amministrazione/cvtiap> a dcatapit:Agent, foaf:Agent ;
-	dct:identifier "ANAC" ;
-	foaf:name "ANAC - Autorità nazionale anticorruzione"@it ;
-	.
+<https://w3id.org/italia/data/contact-point/onto-agid> a dcatapit:Organization ,
+                                                                vcard:Kind ,
+                                                                vcard:Organization ;
+                                                       vcard:fn "banche dati e open data" ;
+                                                       vcard:hasEmail <mailto:info@dati.gov.it> .
 
-<http://dati.gov.it/data/resource/Standard/SKOS> a dcatapit:Standard, dct:Standard ;
+
+
+<https://w3id.org/italia/data/public-organization/cvtiap> a dcatapit:Agent , foaf:Agent ;
+		dct:identifier "cvtiap" ;
+		foaf:name "A.N.AC. - Autorità Nazionale Anticorruzione"@it .
+
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> a dcatapit:Agent , foaf:Agent ;
+dct:identifier "PCM-1RSIZZ" ;
+foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+"Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard, dct:Standard ;
 	dct:identifier "SKOS" ;
 	dct:title "Simple Knowledge Organization System - SKOS" ;
-	dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-	.
+	dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
 
 
-<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_RDF_Turtle> a dcatapit:Distribution  ;
+<https://w3id.org/italia/data/distribution/TransparencyClassification_RDF_Turtle> a dcatapit:Distribution  ;
 	dct:title "Distribuzione RDF/Turtle classificazione della trasparenza per le pubbliche amministrazioni"@it , "RDF/Turtle Classification of transparency for public administrations"@en ;
 	dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data della classificazione della trasparenza per le pubbliche amministrazioni"@it , "This is the RDF/Turtle distribution of the Linked Open Data dataset of the Transparency classification for public administrations"@en ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
 	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-	dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.ttl> ;
-	dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-transparency> ;
+	dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.ttl> ;
+	dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-transparency> ;
 	.
 
-<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_RDF_XML> a dcatapit:Distribution  ;
+<hhttps://w3id.org/italia/data/distribution/TransparencyClassification_RDF_XML> a dcatapit:Distribution  ;
 	dct:title "Distribuzione RDF/XML classificazione della trasparenza per le pubbliche amministrazioni"@it , "RDF/XML Classification of transparency for public administrations"@en ;
 	dct:description	"Questa è la distribuzione RDF/XML del dataset Linked Open Data della classificazione della trasparenza per le pubbliche amministrazioni"@it , "This is the RDF/Turtle distribution of the Linked Open Data dataset of the Transparency classification for public administrations"@en ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
 	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-	dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.rdf> ;
-	dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-transparency> ;
+	dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.rdf> ;
+	dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-transparency> ;
 	.
 
-<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_JSON_LD> a dcatapit:Distribution  ;
+<https://w3id.org/italia/data/distribution/TransparencyClassification_JSON_LD> a dcatapit:Distribution  ;
 	dct:title "Distribuzione JSON_LD classificazione della trasparenza per le pubbliche amministrazioni"@it , "JSON_LD Classification of transparency for public administrations"@en ;
 	dct:description	"Questa è la distribuzione JSON_LD del dataset Linked Open Data della classificazione della trasparenza per le pubbliche amministrazioni"@it , "This is the distribution in JSON_LD of the Linked Open Dataset of the Transparency classification for public administrations"@en ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
 	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-	dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.jsonld> ;
-	dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-transparency> ;
+	dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.jsonld> ;
+	dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-transparency> ;
 	.
 
-<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_CSV> a dcatapit:Distribution  ;
+<https://w3id.org/italia/data/distribution/TransparencyClassification_CSV> a dcatapit:Distribution  ;
 	dct:title "Distribuzione CSV classificazione della trasparenza per le pubbliche amministrazioni"@it , "CSV Classification of transparency for public administrations"@en ;
 	dct:description "Questa è la distribuzione CSV del dataset Linked Open Data della classificazione della trasparenza per le pubbliche amministrazioni"@it , "This is the distribution in CSV of the Linked Open Dataset of the Transparency classification for public administrations"@en ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
 	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-	dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.csv> ;
-	dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-transparency> ;
+	dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.csv> ;
+	dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-transparency> ;
 	.
 
-<http://dati.gov.it/data/resource/Distribution/TransparencyClassification_XLSX> a dcatapit:Distribution  ;
+<https://w3id.org/italia/data/distribution/TransparencyClassification_XLSX> a dcatapit:Distribution  ;
 	dct:title "Distribuzione XLSX cclassificazione della trasparenza per le pubbliche amministrazioni"@it , "XLSX Classification of transparency for public administrations"@en ;
 	dct:description "Questa è la distribuzione XLSX del dataset Linked Open Data della classificazione della trasparenza per le pubbliche amministrazioni"@it , "This is the distribution in XLSX of the Linked Open Dataset of the Transparency classification for public administrations"@en ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
 	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-	dcat:downloadURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/raw/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.xlsx> ;
-	dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/VocabolariControllati/classifications-for-transparency> ;
+	dcat:downloadURL <https://github.com/italia/dati-semantic-assets/raw/master/VocabolariControllati/classifications-for-transparency/transparency-titulus/transparency-titulus.xlsx> ;
+	dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-transparency> ;
 	.
 
 
