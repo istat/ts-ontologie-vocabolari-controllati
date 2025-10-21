@@ -43,7 +43,7 @@
     },
     {
       "@id": "dcatapit:referenceDoc",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:LicenseDocument",
@@ -55,74 +55,74 @@
     },
     {
       "@id": "dcterms:accrualPeriodicity",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:conformsTo",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:creator",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:description",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:format",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:identifier",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:issued",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:language",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:license",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:modified",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:publisher",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:rightsHolder",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:subject",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:title",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcterms:type",
       "@type": [
-        "rdf:Property",
-        "rdf:Property"
+        "rdfs:Property",
+        "rdfs:Property"
       ]
     },
     {
       "@id": "xkos:numberOfLevels",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "owl:versionInfo",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:Concept",
@@ -134,35 +134,35 @@
     },
     {
       "@id": "skos:broader",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:broaderTransitive",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:definition",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:inScheme",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:narrower",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:narrowerTransitive",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:notation",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "skos:prefLabel",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "vcard:Kind",
@@ -174,39 +174,39 @@
     },
     {
       "@id": "vcard:fn",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "vcard:hasEmail",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "adms:representationTechnique",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcat:accessURL",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcat:contactPoint",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcat:distribution",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcat:downloadURL",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcat:keyword",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "dcat:theme",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "foaf:Agent",
@@ -214,7 +214,7 @@
     },
     {
       "@id": "foaf:name",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "https://w3id.org/italia/controlled-vocabulary/identifiers/cr-00",
@@ -1262,10 +1262,10 @@
         }
       ],
       "dcat:accessURL": {
-        "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/blob/master/VocabolariControllati/territorial-classifications/regions"
+        "@id": "https://github.com/italia/dati-semantic-assets/blob/master/VocabolariControllati/territorial-classifications/regions"
       },
       "dcat:downloadURL": {
-        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/territorial-classifications/regions/regions.csv"
+        "@id": "https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/territorial-classifications/regions/regions.csv"
       }
     },
     {
@@ -1298,10 +1298,10 @@
         }
       ],
       "dcat:accessURL": {
-        "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/blob/master/VocabolariControllati/territorial-classifications/regions"
+        "@id": "https://github.com/italia/dati-semantic-assets/blob/master/VocabolariControllati/territorial-classifications/regions"
       },
       "dcat:downloadURL": {
-        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/territorial-classifications/regions/regions.jsonld"
+        "@id": "https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/territorial-classifications/regions/regions.jsonld"
       }
     },
     {
@@ -1334,10 +1334,10 @@
         }
       ],
       "dcat:accessURL": {
-        "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/blob/master/VocabolariControllati/territorial-classifications/regions"
+        "@id": "https://github.com/italia/dati-semantic-assets/blob/master/VocabolariControllati/territorial-classifications/regions"
       },
       "dcat:downloadURL": {
-        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/territorial-classifications/regions/regions.ttl"
+        "@id": "https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/territorial-classifications/regions/regions.ttl"
       }
     },
     {
@@ -1370,10 +1370,10 @@
         }
       ],
       "dcat:accessURL": {
-        "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/blob/master/VocabolariControllati/territorial-classifications/regions"
+        "@id": "https://github.com/italia/dati-semantic-assets/blob/master/VocabolariControllati/territorial-classifications/regions"
       },
       "dcat:downloadURL": {
-        "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/VocabolariControllati/territorial-classifications/regions/regions.rdf"
+        "@id": "https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/territorial-classifications/regions/regions.rdf"
       }
     },
     {
@@ -1412,11 +1412,11 @@
     },
     {
       "@id": "clvapit:hasRankOrder",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     },
     {
       "@id": "ndc:keyConcept",
-      "@type": "rdf:Property"
+      "@type": "rdfs:Property"
     }
   ]
 }
