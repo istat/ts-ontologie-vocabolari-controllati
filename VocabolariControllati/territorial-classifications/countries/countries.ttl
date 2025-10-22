@@ -26,7 +26,7 @@
 #    inizio metadati 
 #################################################################
 
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>
+<http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
   dct:title "Controlled Vocabulary for Foreign Countries"@en , "Vocabolario Controllato dei Paesi Esteri"@it ;
   dct:description "L’archivio contiene la lista dei Paesi esteri (Stati e Territori), dal 2017 resa coerente con l’elenco dei Luoghi previsti dal Regolamento Ue 2017/543."@it, "The archive contains the list of foreign countries (States and Territories), which since 2017 has been aligned with the list of Places established by EU Regulation 2017/543."@en;
