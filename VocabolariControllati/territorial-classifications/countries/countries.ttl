@@ -40,7 +40,7 @@
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
   dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/stat/italia/controlled-vocabulary/territorial-classifications/countries> ;
   dcat:keyword "Paesi Esteri"@it, "Paesi"@it, "Territori"@it, "Stati"@it, "State"@en,"Foreign Countries"@en, "Countries"@en , "Territories"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/countries_RDF_Turtle>, <https://w3id.org/italia/data/distribution/countries_CSV>, <https://w3id.org/italia/data/distribution/countries_XLSX>  ;
