@@ -43,7 +43,7 @@
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents> ;
   dcat:keyword "Contienti"@it, "Continents"@en ;
-  ## dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle> , <https://w3id.org/italia/data/distribution/continents_CSV> , <https://w3id.org/italia/data/distribution/continents_XLSX>;
+  dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle> , <https://w3id.org/italia/data/distribution/continents_CSV> , <https://w3id.org/italia/data/distribution/continents_XLSX>;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
   dct:issued "2023-12-31"^^xsd:date ;
   dct:modified "2025-10-22"^^xsd:date ;
