@@ -29,7 +29,7 @@
 <https://w3id.org/italia/stat/controlled-vocabulary/territorial-classifications/territorial-areas>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
   dct:title "Controlled Vocabulary for Territorial Areas"@en , "Vocabolario Controllato delle Aree Territoriali"@it ;
-  dct:description "Un'Area Territoriale è la porzione delimitata di superficie terrestre identificata per fini geografici, amministrativi, politici, statistici o funzionali."@it, "A territorial area is a defined portion of the Earth's surface identified for geographical, administrative, political, statistical, or functional purposes." @en; 
+  dct:description "Un'Area Territoriale è la porzione delimitata di superficie terrestre identificata per fini geografici, amministrativi, politici, statistici o funzionali."@it, "A territorial area is a defined portion of the Earth's surface identified for geographical, administrative, political, statistical, or functional purposes."@en; 
   xkos:numberOfLevels "1" ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
