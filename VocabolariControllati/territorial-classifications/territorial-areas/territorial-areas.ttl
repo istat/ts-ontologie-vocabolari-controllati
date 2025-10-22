@@ -44,7 +44,7 @@
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas> ;
   dcat:keyword "Aree Territoriali"@it,"Territorial Areas"@en;
   dcat:distribution <https://w3id.org/italia/data/distribution/territorial-areas_RDF_Turtle>, <https://w3id.org/italia/data/distribution/territorial-areas_CSV>, <https://w3id.org/italia/data/distribution/territorial-areas_XLSX>  ;
-  dcat:contactPoint <https://schema.gov.it/lodview/data/contact-point/ISTAT-NDC> ;
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
   dct:issued "2023-12-31"^^xsd:date ;
   dct:modified "2025-10-22"^^xsd:date ;
   owl:versionInfo "Versione al 31 dicembre 2023"@it ; 
@@ -72,7 +72,7 @@
   dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
 
  
-  <https://w3id.org/italia/data/distribution/territorial-areas_RDF_Turtle>
+<https://w3id.org/italia/data/distribution/territorial-areas_RDF_Turtle>
   a dcatapit:Distribution  ;
   dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulle Aree Territoriali"@it , "RDF/Turtle distribution of the Territorial Areas controlled vocabulary"@en ;
   dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sulle Aree Territoriali"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the Territorial Areas controlled vocabulary"@en ;
@@ -112,7 +112,7 @@
   skos:prefLabel "Unione europea"@it;
   l0:name "Unione europea"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "11";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/11>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/100>,
@@ -155,7 +155,7 @@
   skos:prefLabel "Europa centro orientale"@it;
   l0:name "Europa centro orientale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "12";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/12>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/201>,
@@ -182,7 +182,7 @@
   skos:prefLabel "Altri Paesi europei"@it, "Altri paesi europei"@it;
   l0:name "Altri Paesi europei"@it, "Altri paesi europei"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "13";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/13>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/202>,
@@ -213,7 +213,7 @@
   skos:prefLabel "Africa settentrionale"@it;
   l0:name "Africa settentrionale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "21";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/21>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/401>,
@@ -237,7 +237,7 @@
   skos:prefLabel "Africa occidentale"@it;
   l0:name "Africa occidentale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "22";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/22>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/404>,
@@ -269,7 +269,7 @@
   skos:prefLabel "Africa orientale"@it;
   l0:name "Africa orientale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "23";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/23>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/410>,
@@ -302,7 +302,7 @@
   skos:prefLabel "Africa centro meridionale"@it;
   l0:name "Africa centro meridionale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "24";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/24>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/402>,
@@ -333,7 +333,7 @@
   skos:prefLabel "Asia occidentale"@it;
   l0:name "Asia occidentale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "31";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/31>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/302>,
@@ -366,7 +366,7 @@
   skos:prefLabel "Asia centro meridionale"@it;
   l0:name "Asia centro meridionale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "32";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/32>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/301>,
@@ -395,7 +395,7 @@
   skos:prefLabel "Asia orientale"@it;
   l0:name "Asia orientale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "33";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/33>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/307>,
@@ -428,7 +428,7 @@
   skos:prefLabel "America settentrionale"@it;
   l0:name "America settentrionale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "41";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/41>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/509>,
@@ -449,7 +449,7 @@
   skos:prefLabel "America centro meridionale"@it;
   l0:name "America centro meridionale"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "42";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/42>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/503>,
@@ -509,7 +509,7 @@
   skos:prefLabel "Oceania"@it;
   l0:name "Oceania"@it;
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorialAreas>;
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas>;
   skos:notation "50";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/territorial-areas-identifiers/numeric-istat-code/50>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/701>,
