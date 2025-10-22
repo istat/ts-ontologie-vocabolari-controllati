@@ -43,7 +43,7 @@
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents> ;
   dcat:keyword "Contienti"@it, "Continents"@en ;
-  dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle> , <https://w3id.org/italia/data/distribution/continents_CSV> , <https://w3id.org/italia/data/distribution/continents_XLSX>;
+  dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle> ;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
   dct:issued "2023-12-31"^^xsd:date ;
   dct:modified "2025-10-22"^^xsd:date ;
@@ -80,26 +80,8 @@
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
   dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/continents/continents.ttl>;
   dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/continents> .
+ 
   
-  
-<https://w3id.org/italia/data/distribution/continents_CSV>
-  a dcatapit:Distribution  ;
-  dct:title "Distribuzione CSV del vocabolario controllato sui Continenti"@it , "CSV distribution of the Continents controlled vocabulary"@en ;
-  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato sui Continenti"@it , "This is the distribution in CSV of the Linked Open Dataset of the Continents controlled vocabulary"@en ;
-  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/continents/continents.csv>;
-  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/continents> .
-
-
-<https://w3id.org/italia/data/distribution/continents_XLSX>
-  a dcatapit:Distribution  ;
-  dct:title "Distribuzione XLSX del vocabolario controllato sui Continenti"@it , "XLSX distribution of the Continents controlled vocabulary"@en ;
-  dct:description "Questa è la distribuzione XLSX del dataset Linked Open Data del vocabolario controllato sui Continenti"@it , "This is the distribution in XLSX of the Linked Open Dataset of the Continents controlled vocabulary"@en ;
-  dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
-  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/continents/continents.xlsx>;
-  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/continents> .
 
 #################################################################
 #    fine metadati 
