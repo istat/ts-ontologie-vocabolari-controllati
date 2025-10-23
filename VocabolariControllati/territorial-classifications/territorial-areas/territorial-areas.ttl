@@ -196,10 +196,10 @@ ndc:keyConcept
   dcat:keyword "Aree Territoriali"@it,"Territorial Areas"@en;
   dcat:distribution <https://w3id.org/italia/data/distribution/territorial-areas_RDF_Turtle>, <https://w3id.org/italia/data/distribution/territorial-areas_CSV>, <https://w3id.org/italia/data/distribution/territorial-areas_XLSX>  ;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-  dct:issued "2023-12-31"^^xsd:date ;
-  dct:modified "2025-10-22"^^xsd:date ;
-  owl:versionInfo "Versione al 31 dicembre 2023"@it ; 
-  ndc:keyConcept "Aree Territoriali" ;
+  dct:issued "2025-10-23"^^xsd:date ;
+  dct:modified "2025-10-23"^^xsd:date ;
+  owl:versionInfo "Versione 1.0 - Dati riferiti al 31 dicembre 2023"@it ;  
+  ndc:keyConcept "territorial-areas" ;
   rdfs:comment "Controlled Vocabulary for Territorial Areas"@en , "Vocabolario Controllato delle Aree Territoriali"@it ;
   rdfs:label "Controlled Vocabulary for Territorial Areas"@en , "Vocabolario Controllato delle Aree Territoriali"@it ;
   skos:notation "Controlled Vocabulary for Territorial Areas"@en , "Vocabolario Controllato delle Aree Territoriali"@it ;      

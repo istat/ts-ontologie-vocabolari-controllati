@@ -198,10 +198,10 @@ ndc:keyConcept
   dcat:keyword "Contienti"@it, "Continents"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle> , <https://w3id.org/italia/data/distribution/continents_CSV> , <https://w3id.org/italia/data/distribution/continents_XLSX> ;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-  dct:issued "2023-12-31"^^xsd:date ;
-  dct:modified "2025-10-22"^^xsd:date ;
-  owl:versionInfo "Versione al 31 dicembre 2023"@it ; 
-  ndc:keyConcept "Continenti" ;
+  dct:issued "2025-10-23"^^xsd:date ;
+  dct:modified "2025-10-23"^^xsd:date ;
+  owl:versionInfo "Versione 1.0 - Dati riferiti al 31 dicembre 2023"@it ; 
+  ndc:keyConcept "continents" ;
   rdfs:comment "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;
   rdfs:label "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;
   skos:notation "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;       
