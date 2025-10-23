@@ -21,6 +21,159 @@
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 
+skos:ConceptScheme
+      a       rdfs:Class .
+
+skos:Concept
+      a       rdfs:Class .
+
+dcatapit:Dataset
+      a       rdfs:Class .
+
+dcatapit:Distribution
+      a       rdfs:Class .
+
+dcatapit:Standard
+      a        rdfs:Class .
+
+dcatapit:Organization
+      a        rdfs:Class .
+
+dcatapit:LicenseDocument
+      a        rdfs:Class .
+
+vcard:Organization
+      a        rdfs:Class .
+
+vcard:Kind
+      a        rdfs:Class .
+
+dcatapit:Agent
+      a       rdfs:Class .
+
+foaf:Agent
+      a       rdfs:Class .
+
+dct:Standard
+      a       rdfs:Class .
+
+dct:LicenseDocument
+      a       rdfs:Class .
+
+skos:prefLabel
+      a       rdfs:Property .
+
+skos:notation
+      a       rdfs:Property .
+
+skos:inScheme
+      a       rdfs:Property .
+
+skos:narrower
+	  a 	  rdfs:Property .
+
+skos:broader
+	  a		  rdfs:Property .
+
+skos:broaderTransitive
+      a 	  rdfs:Property .
+
+skos:narrowerTransitive
+      a       rdfs:Property .
+
+skos:definition
+	  a		  rdfs:Property .
+
+dct:identifier
+	  a       rdfs:Property .
+
+dct:title
+    a       rdfs:Property .
+
+dct:type
+    a       rdfs:Property .
+
+dct:description
+    a       rdfs:Property .
+
+dct:creator
+    a       rdfs:Property .
+
+dct:publisher
+    a       rdfs:Property .
+
+dct:rightsHolder
+    a       rdfs:Property .
+
+dct:conformsTo
+    a       rdfs:Property .
+
+dct:subject
+    a       rdfs:Property .
+
+dct:accrualPeriodicity
+    a       rdfs:Property .
+
+dct:language
+    a       rdfs:Property .
+
+dct:format
+    a       rdfs:Property .
+
+dct:issued
+    a       rdfs:Property .
+
+dct:modified
+    a       rdfs:Property .
+
+dct:license
+    a       rdfs:Property .
+
+dct:type
+    a       rdfs:Property .
+
+dcatapit:referenceDoc
+    a       rdfs:Property .
+
+dcat:theme
+    a     rdfs:Property .
+
+dcat:distribution
+    a     rdfs:Property .
+
+foaf:name
+    a       rdfs:Property .
+
+dcat:keyword
+    a     rdfs:Property .
+
+dcat:contactPoint
+    a     rdfs:Property .
+
+dcat:accessURL
+    a     rdfs:Property .
+
+dcat:downloadURL
+    a     rdfs:Property .
+
+owl:versionInfo
+    a     rdfs:Property .
+
+adms:representationTechnique
+    a       rdfs:Property .
+
+xkos:numberOfLevels
+    a       rdfs:Property .
+
+vcard:fn
+    a     rdfs:Property .
+
+vcard:hasEmail
+    a     rdfs:Property .
+
+ndc:keyConcept
+    a     rdfs:Property .
+
 
 #################################################################
 #    inizio metadati 
@@ -110,8 +263,7 @@
   rdfs:label "Europa"@it;
   skos:prefLabel "Europa"@it;
   l0:name "Europa"@it;
-  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "1";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/1>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/13>,
@@ -137,8 +289,7 @@
   rdfs:label "Asia"@it;
   skos:prefLabel "Asia"@it;
   l0:name "Asia"@it;
-  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "3";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/3>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/32>,
@@ -164,8 +315,7 @@
   rdfs:label "Africa"@it;
   skos:prefLabel "Africa"@it;
   l0:name "Africa"@it;
-  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "2";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/2>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/21>,
@@ -195,8 +345,7 @@
   rdfs:label "America"@it;
   skos:prefLabel "America"@it;
   l0:name "America"@it;
-  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "4";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/4>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/42>,
@@ -218,8 +367,7 @@
   rdfs:label "Oceania"@it;
   skos:prefLabel "Oceania"@it;
   l0:name "Oceania"@it;
-  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "5";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/5>;
   skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/50> .
