@@ -908,20 +908,6 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/CLV/isUnderSovereigntyOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/isUnderSovereigntyOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
-        <rdfs:comment xml:lang="it">La relazione lega il Territorio al suo Stato sovrano</rdfs:comment>
-        <rdfs:comment xml:lang="en">The relationship links the Territory to its sovereign Country</rdfs:comment>
-        <rdfs:label xml:lang="en">Is under sovereignty of</rdfs:label>
-        <rdfs:label xml:lang="it">È sotto la sovranità di</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/italia/onto/CLV/issuedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/issuedBy">
@@ -2095,6 +2081,18 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/GovernedTerritory -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/GovernedTerritory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
+        <rdfs:comment xml:lang="en">Area or region that is under the control or jurisdiction of a government or authority.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Zona o area che è sotto il controllo o la giurisdizione di un governo o autorità</rdfs:comment>
+        <rdfs:label xml:lang="en">GovernedTerritory</rdfs:label>
+        <rdfs:label xml:lang="it">Territorio governato</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/Identifier -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Identifier">
@@ -2378,6 +2376,18 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
         <rdfs:comment xml:lang="it">Area geografica dipendente da uno Stato sovrano, il cui riconoscimento di particolari forme di autonomia o specifiche condizioni storico-politiche, la rendono unità di interesse statistico secondo le modalità dettate da regolamenti Ue.</rdfs:comment>
         <rdfs:label xml:lang="it">Territorio</rdfs:label>
         <rdfs:label xml:lang="en">Territory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/UngovernedTerritory -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/UngovernedTerritory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
+        <rdfs:comment xml:lang="en">Area or region that isn&apos;t under the control or jurisdiction of a government or authority.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Zona o area che non è sotto il controllo o la giurisdizione di un governo o autorità.</rdfs:comment>
+        <rdfs:label xml:lang="it">Territorio non governato</rdfs:label>
+        <rdfs:label xml:lang="en">Ungoverned Territory</rdfs:label>
     </owl:Class>
     
 

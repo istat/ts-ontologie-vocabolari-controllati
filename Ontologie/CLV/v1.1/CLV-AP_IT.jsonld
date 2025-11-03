@@ -2010,6 +2010,26 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/onto/CLV/GovernedTerritory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area or region that is under the control or jurisdiction of a government or authority."
+  }, {
+    "@language" : "it",
+    "@value" : "Zona o area che è sotto il controllo o la giurisdizione di un governo o autorità"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GovernedTerritory"
+  }, {
+    "@language" : "it",
+    "@value" : "Territorio governato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Territory"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/onto/CLV/Identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2350,6 +2370,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/AdminUnitComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/CLV/UngovernedTerritory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area or region that isn't under the control or jurisdiction of a government or authority."
+  }, {
+    "@language" : "it",
+    "@value" : "Zona o area che non è sotto il controllo o la giurisdizione di un governo o autorità."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Territorio non governato"
+  }, {
+    "@language" : "en",
+    "@value" : "Ungoverned Territory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Territory"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/onto/CLV/acronym",
@@ -3779,29 +3819,6 @@
   }, {
     "@language" : "en",
     "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/CLV/isUnderSovereigntyOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La relazione lega il Territorio al suo Stato sovrano"
-  }, {
-    "@language" : "en",
-    "@value" : "The relationship links the Territory to its sovereign Country"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Territory"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Is under sovereignty of"
-  }, {
-    "@language" : "it",
-    "@value" : "È sotto la sovranità di"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Country"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/onto/CLV/issuedBy",
