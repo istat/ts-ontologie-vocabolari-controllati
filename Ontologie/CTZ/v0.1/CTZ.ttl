@@ -74,9 +74,7 @@
                                     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
                                     admsapit:acronym "CTZ" ;
                                     admsapit:hasOntologyLanguage admsapit:OWL ;
-                                    admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CTZ-JSON-LD> ,
-                                                                          <https://w3id.org/italia/data/distribution/CTZ-RDF-TURTLE> ,
-                                                                          <https://w3id.org/italia/data/distribution/CTZ-RDF-XML> ;
+                                    admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CTZ-RDF-XML> ;
                                     admsapit:last <https://w3id.org/italia/onto/citizen/0.1> .
 									
 									
@@ -121,26 +119,6 @@
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name rdf:type owl:AnnotationProperty .											
 													
-#################################################################
-#    DISTRIBUTIONS
-
-#################################################################
-
-
-###  https://w3id.org/italia/data/distribution/CTZ-JSON-LD
-#<https://w3id.org/italia/data/distribution/CTZ-JSON-LD> rdf:type owl:NamedIndividual ,
-#                                                                     admsapit:SemanticAssetDistribution ;
-#                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia delle cittadinanze"@it ,
-#                                                                            "This is the distribution in JSON-LD of the Citizenship ontology"@en ;
-#                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-#                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-#                                                            dct:title "Distribuzione JSON-LD ontologia CTZ"@it ,
-#                                                                      "JSON-LD distribution of CTZ Ontology"@en ;
-#                                                            dcat:downloadURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CTZ/latest> ;
-#                                                            dcat:accessURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CTZ/latest/CTZ.jsonld> .
-
-
-  
 
 
 #################################################################
