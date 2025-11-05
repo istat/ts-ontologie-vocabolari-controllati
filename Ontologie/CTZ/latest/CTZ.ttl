@@ -125,22 +125,22 @@ foaf:name rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-# https://w3id.org/italia/onto/citizen/bornInState
-CTZ:bornInState rdf:type owl:ObjectProperty,
+### https://w3id.org/italia/onto/citizen/bornInState
+<https://w3id.org/italia/onto/citizen/bornInState> rdf:type owl:ObjectProperty,
                       owl:FunctionalProperty ;
              rdfs:domain CPV:Person ;
              rdfs:range CTZ:State ;
              rdfs:label "born in state"@en,
                         "nato in stato"@it .
 
-#  https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory
-CTZ:bornInUngovernatedTerritory rdf:type owl:ObjectProperty ;
+###  https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory
+<https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory> rdf:type owl:ObjectProperty ;
                                 rdfs:domain CPV:Person ;
                                 rdfs:range CLV:UngovernedTerritory .
 
 
-#  https://w3id.org/italia/onto/citizen/hasCitizenship
-CTZ:hasCitizenship rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/citizen/hasCitizenship
+<https://w3id.org/italia/onto/citizen/hasCitizenship> rdf:type owl:ObjectProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain CTZ:CitizenshipInTime ;
                    rdfs:range rpo:Citizenship ;
@@ -148,8 +148,8 @@ CTZ:hasCitizenship rdf:type owl:ObjectProperty ,
                               "has citizenship"@en .
 
 
-#  https://w3id.org/italia/onto/citizen/hasCitizenshipInState
-CTZ:hasCitizenshipInState rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/citizen/hasCitizenshipInState
+<https://w3id.org/italia/onto/citizen/hasCitizenshipInState> rdf:type owl:ObjectProperty ,
                                    owl:FunctionalProperty ;
                           rdfs:domain CTZ:CitizenshipInTime ;
                           rdfs:range CTZ:State ;
@@ -157,8 +157,8 @@ CTZ:hasCitizenshipInState rdf:type owl:ObjectProperty ,
                                      "has citizenship in state"@en .
 
 
-#  https://w3id.org/italia/onto/citizen/hasCitizenshipName
-CTZ:hasCitizenshipName rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/citizen/hasCitizenshipName
+<https://w3id.org/italia/onto/citizen/hasCitizenshipName> rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ,
                                 owl:InverseFunctionalProperty ;
                        rdfs:domain CTZ:State ;
@@ -167,8 +167,8 @@ CTZ:hasCitizenshipName rdf:type owl:ObjectProperty ,
                                   "has citizenship name"@en .
 
 
-#  https://w3id.org/italia/onto/citizen/hasCitizenshipinTime
-CTZ:hasCitizenshipinTime rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/citizen/hasCitizenshipinTime
+<https://w3id.org/italia/onto/citizen/hasCitizenshipinTime> rdf:type owl:ObjectProperty ,
                                   owl:InverseFunctionalProperty ;
                          rdfs:domain CPV:Person ,
                                      [ rdf:type owl:Class ;
@@ -179,8 +179,8 @@ CTZ:hasCitizenshipinTime rdf:type owl:ObjectProperty ,
                                     "has citizenship in time"@en .
 
 
-#  https://w3id.org/italia/onto/citizen/hasSovereignty
-CTZ:hasSovereignty rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/citizen/hasSovereignty
+<https://w3id.org/italia/onto/citizen/hasSovereignty> rdf:type owl:ObjectProperty ,
                             owl:InverseFunctionalProperty ;
                    rdfs:domain CTZ:State ;
                    rdfs:range [ rdf:type owl:Class ;
@@ -192,8 +192,8 @@ CTZ:hasSovereignty rdf:type owl:ObjectProperty ,
                               "has sovereignty"@en .
 
 
-#  https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver
-CTZ:isPredominantCitizenshipOver rdf:type owl:ObjectProperty ,
+###  https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver
+<https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver> rdf:type owl:ObjectProperty ,
                                           owl:InverseFunctionalProperty ;
                                  rdfs:domain CTZ:CitizenshipInTime ;
                                  rdfs:range CTZ:CitizenshipInTime ;
