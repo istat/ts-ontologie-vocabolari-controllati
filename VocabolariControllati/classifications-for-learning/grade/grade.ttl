@@ -101,14 +101,7 @@
 
 
 
-<https://w3id.org/italia/data/distribution/grade_RDF_Turtle>
-        a						dcatapit:Distribution  ;
-        dct:title				"Distribuzione RDF/Turtle del vocabolario controllato dei Voti di Laurea"@it , "RDF/Turtle distribution of Degree Grade controlled vocabulary"@en ;
-        dct:description			"Questa è la distribuzione RDF/Turtle del vocabolario controllato dei Voti di Laurea"@it , "This is the distribution in RDF/Turtle of dataset on the Degree Grade controlled vocabulary"@en ;
-        dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
-        dcat:downloadURL	    <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-mur/grade/grade.ttl> ;
-      	dcat:accessURL 			<https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-mur/grade> .
+
 
 
 
