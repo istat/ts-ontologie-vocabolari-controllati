@@ -89,9 +89,9 @@
       dct:title "Simple Knowledge Organization System - SKOS" ;
       dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web"@en .	  
 
-#################################################################
+################################################################
 #    Distribution 
-#################################################################
+################################################################
 
 <https://w3id.org/italia/data/distribution/programme-types-afam_CSV>
         a						dcatapit:Distribution  ;
