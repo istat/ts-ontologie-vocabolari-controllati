@@ -5,7 +5,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> . 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 @prefix admsapit: <https://w3id.org/italia/onto/ADMS/> . 
- 
 @prefix l0: <https://w3id.org/italia/onto/l0/> . 
 @prefix L0: <https://w3id.org/italia/onto/l0/> . 
 @prefix RO: <https://w3id.org/italia/onto/RO/> . 
