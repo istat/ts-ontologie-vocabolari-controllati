@@ -1,283 +1,283 @@
-@prefix : <https://w3id.org/italia/onto/citizen/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
-
-@prefix l0: <https://w3id.org/italia/onto/l0/> .
-@prefix L0: <https://w3id.org/italia/onto/l0/> .
-@prefix RO: <https://w3id.org/italia/onto/RO/> .
-@prefix TI: <https://w3id.org/italia/onto/TI/> .
-@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
-@prefix COV: <https://w3id.org/italia/onto/COV/> .
-@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
-@prefix CTZ: <https://w3id.org/italia/onto/citizen/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rpo: <https://w3id.org/italia/onto/RPO/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
-@prefix countries: <http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/> .
-@base <https://w3id.org/italia/onto/citizen/> .
-
-
-#################################################################
-#   INIZIO METADATI
-
-#################################################################
-
-
-
-<https://w3id.org/italia/onto/citizen> rdf:type owl:Ontology ;
-                                    dct:identifier "https://w3id.org/italia/onto/citizen" ;
-                                    owl:versionIRI <https://w3id.org/italia/onto/citizen/0.1> ;
-                                    owl:imports <https://w3id.org/italia/onto/CLV> ,
-												<https://w3id.org/italia/onto/CPV> ,
-												<https://w3id.org/italia/onto/RPO> ,
-                                                <https://w3id.org/italia/onto/TI>,
-												<https://w3id.org/italia/onto/l0> ;
-                                    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                    dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
-                                    dct:description "Questa è l'ontologia delle cittadinanze"@it ,
-                                                    "This is the citizenship ontology"@en ;
-                                    dct:issued "2025-11-04"^^xsd:date ;
-                                    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
-                                                 <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                    dct:modified "2025-11-04"^^xsd:date ;
-                                    dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
-                                    dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
-                                    dct:title "Ontologia delle Cittadinanze"@en ,
-                                              "Citizenship Ontology"@it ;
-                                    rdfs:comment "Questa è l'ontologia delle cittadinanze"@it ,
-                                                 "This is the citizenship ontology"@en ;
-                                    rdfs:isDefinedBy <https://w3id.org/italia/onto/citizen> ;
-                                    rdfs:label "Ontologia delle Cittadinanze"@en ,
-                                              "Citizenship Ontology"@it ;
-								    admsapit:hasKeyClass :CitizenshipInTime ,
-                                                         :State ;
-									admsapit:semanticAssetInUse <https://w3id.org/italia/data/project/NDC>,
-                                                                 <https://w3id.org/italia/data/project/RPO>,  
-                                                                 <https://w3id.org/italia/data/project/CPV>, 
-                                                                 <https://w3id.org/italia/data/project/CLV> ;
-                                    owl:versionInfo "Version 0.1 - Modified on 04 November 2025"@en ,
-                                                    "Versione 0.1 - Modificata il 04 Novembre 2025"@it ;
-                                    dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-								    dcat:keyword "Cittadinanza"@it ,
-                                                 "Citizenship"@en ;
-                                    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
-                                    admsapit:acronym "CTZ" ;
-                                    admsapit:hasOntologyLanguage admsapit:OWL ;
-                                    admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CTZ-RDF-XML> ;
-                                    admsapit:last <https://w3id.org/italia/onto/citizen/0.1> .
-									
-									
-<https://w3id.org/italia/data/public-organization/ISTAT>
-	      a dcatapit:Agent , foaf:Agent ;
-	      dct:identifier "ISTAT" ;
-	      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
-				 
-<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
-				 a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
-				 vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
-				 vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
-
-
-#################################################################
-#    SemanticAssetInUse
-
-#################################################################
-
-###  https://w3id.org/italia/data/project/NDC
-<https://w3id.org/italia/data/project/NDC> rdf:type owl:NamedIndividual ,
-                                                    admsapit:Project ;
-                                           l0:name "National Data Catalog - schema.gov.it"@it .
-
-###  https://w3id.org/italia/data/project/RPO
-<https://w3id.org/italia/data/project/RPO> rdf:type owl:NamedIndividual ,
-                                                       admsapit:Project ;
-                                           l0:name ""@it .
-                                              
-###  https://w3id.org/italia/data/project/CPV
-<https://w3id.org/italia/data/project/CPV> rdf:type owl:NamedIndividual ,
-                                                    admsapit:Project ;
-                                           l0:name ""@it .
-													
-###  https://w3id.org/italia/data/project/CLV
-<https://w3id.org/italia/data/project/CLV> rdf:type owl:NamedIndividual ,
-                                                    admsapit:Project ;
-                                           l0:name ""@it .
-													
-													
-													
-###  http://xmlns.com/foaf/0.1/name
-foaf:name rdf:type owl:AnnotationProperty .											
-													
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-### https://w3id.org/italia/onto/citizen/bornInState
-<https://w3id.org/italia/onto/citizen/bornInState> rdf:type owl:ObjectProperty,
-                      owl:FunctionalProperty ;
-             rdfs:domain CPV:Person ;
-             rdfs:range CTZ:State ;
-             rdfs:label "born in state"@en,
-                        "nato in stato"@it .
-
-###  https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory
-<https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory> rdf:type owl:ObjectProperty ;
-                                rdfs:domain CPV:Person ;
-                                rdfs:range CLV:UngovernedTerritory .
-
-
-###  https://w3id.org/italia/onto/citizen/hasCitizenship
-<https://w3id.org/italia/onto/citizen/hasCitizenship> rdf:type owl:ObjectProperty ,
-                            owl:FunctionalProperty ;
-                   rdfs:domain CTZ:CitizenshipInTime ;
-                   rdfs:range rpo:Citizenship ;
-                   rdfs:label "ha cittadinanza"@it ,
-                              "has citizenship"@en .
-
-
-###  https://w3id.org/italia/onto/citizen/hasCitizenshipInState
-<https://w3id.org/italia/onto/citizen/hasCitizenshipInState> rdf:type owl:ObjectProperty ,
-                                   owl:FunctionalProperty ;
-                          rdfs:domain CTZ:CitizenshipInTime ;
-                          rdfs:range CTZ:State ;
-                          rdfs:label "ha stato di cittadinanza"@it ,
-                                     "has citizenship in state"@en .
-
-
-###  https://w3id.org/italia/onto/citizen/hasCitizenshipName
-<https://w3id.org/italia/onto/citizen/hasCitizenshipName> rdf:type owl:ObjectProperty ,
-                                owl:FunctionalProperty ,
-                                owl:InverseFunctionalProperty ;
-                       rdfs:domain CTZ:State ;
-                       rdfs:range rpo:Citizenship ;
-                       rdfs:label "ha denominazione di cittadinanza"@it ,
-                                  "has citizenship name"@en .
-
-
-###  https://w3id.org/italia/onto/citizen/hasCitizenshipinTime
-<https://w3id.org/italia/onto/citizen/hasCitizenshipinTime> rdf:type owl:ObjectProperty ,
-                                  owl:InverseFunctionalProperty ;
-                         rdfs:domain CPV:Person ,
-                                     [ rdf:type owl:Class ;
-                                       owl:complementOf CPV:Stateless
-                                     ] ;
-                         rdfs:range CTZ:CitizenshipInTime ;
-                         rdfs:label "ha cittadinanza nel periodo"@it ,
-                                    "has citizenship in time"@en .
-
-
-###  https://w3id.org/italia/onto/citizen/hasSovereignty
-<https://w3id.org/italia/onto/citizen/hasSovereignty> rdf:type owl:ObjectProperty ,
-                            owl:InverseFunctionalProperty ;
-                   rdfs:domain CTZ:State ;
-                   rdfs:range [ rdf:type owl:Class ;
-                                owl:unionOf ( CLV:Country
-                                              CLV:GovernedTerritory
-                                            )
-                              ] ;
-                   rdfs:label "ha sovranità"@it ,
-                              "has sovereignty"@en .
-
-
-###  https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver
-<https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver> rdf:type owl:ObjectProperty ,
-                                          owl:InverseFunctionalProperty ;
-                                 rdfs:domain CTZ:CitizenshipInTime ;
-                                 rdfs:range CTZ:CitizenshipInTime ;
-                                 rdfs:label "is predominant citizenship over"@en ,
-                                            "è cittadinanza prevalente su"@it .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://w3id.org/italia/onto/CLV/Country
-CLV:Country rdf:type owl:Class ;
-            owl:disjointWith CLV:GovernedTerritory .
-
-
-###  https://w3id.org/italia/onto/CLV/GovernedTerritory
-CLV:GovernedTerritory rdf:type owl:Class .
-
-
-###  https://w3id.org/italia/onto/CLV/UngovernedTerritory
-CLV:UngovernedTerritory rdf:type owl:Class .
-
-
-###  https://w3id.org/italia/onto/COV/PublicOrganization
-COV:PublicOrganization rdf:type owl:Class .
-
-
-###  https://w3id.org/italia/onto/CPV/Person
-CPV:Person rdf:type owl:Class .
-
-
-###  https://w3id.org/italia/onto/CPV/Stateless
-CPV:Stateless rdf:type owl:Class ;
-              owl:disjointWith [ rdf:type owl:Restriction ;
-                                 owl:onProperty CTZ:hasCitizenshipinTime ;
-                                 owl:someValuesFrom owl:Thing
-                               ] .
-
-
-###  https://w3id.org/italia/onto/RPO/Citizenship
-rpo:Citizenship rdf:type owl:Class ;
-                owl:equivalentClass [ rdf:type owl:Restriction ;
-                                      owl:onProperty [ owl:inverseOf CTZ:hasCitizenshipName
-                                                     ] ;
-                                      owl:someValuesFrom owl:Thing
-                                    ] .
-
-
-###  https://w3id.org/italia/onto/TI/TimeIndexedEvent
-TI:TimeIndexedEvent rdf:type owl:Class .
-
-
-###  https://w3id.org/italia/onto/citizen/CitizenshipInTime
-CTZ:CitizenshipInTime rdf:type owl:Class ;
-                      owl:equivalentClass [ rdf:type owl:Restriction ;
-                                            owl:onProperty CTZ:hasCitizenship ;
-                                            owl:someValuesFrom owl:Thing
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty CTZ:hasCitizenshipInState ;
-                                            owl:someValuesFrom owl:Thing
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty [ owl:inverseOf CTZ:hasCitizenshipinTime
-                                                           ] ;
-                                            owl:someValuesFrom owl:Thing
-                                          ] ;
-                      rdfs:subClassOf TI:TimeIndexedEvent ;
-                      rdfs:label "Citizenship in time"@en ,
-                                 "Cittadinanza nel periodo"@it .
-
-
-###  https://w3id.org/italia/onto/citizen/State
-CTZ:State rdf:type owl:Class ;
-          rdfs:subClassOf COV:PublicOrganization ;
-          rdfs:label "State"@en ,
-                     "Stato"@it .
-
-
-###  https://w3id.org/italia/onto/citizen/UnrecognizedState
-CTZ:UnrecognizedState rdf:type owl:Class ;
-                      rdfs:subClassOf CTZ:State ;
-                      rdfs:label "UnrecognizedState"@it .
-
-
-
+@prefix : <https://w3id.org/italia/onto/citizen/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> . 
+ 
+@prefix l0: <https://w3id.org/italia/onto/l0/> . 
+@prefix L0: <https://w3id.org/italia/onto/l0/> . 
+@prefix RO: <https://w3id.org/italia/onto/RO/> . 
+@prefix TI: <https://w3id.org/italia/onto/TI/> . 
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> . 
+@prefix COV: <https://w3id.org/italia/onto/COV/> . 
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> . 
+@prefix CTZ: <https://w3id.org/italia/onto/citizen/> . 
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rpo: <https://w3id.org/italia/onto/RPO/> . 
+@prefix xml: <http://www.w3.org/XML/1998/namespace> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> . 
+@prefix time: <http://www.w3.org/2006/time#> . 
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> . 
+@prefix countries: <http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/> . 
+@base <https://w3id.org/italia/onto/citizen/> . 
+ 
+ 
+################################################################# 
+#   INIZIO METADATI 
+ 
+################################################################# 
+ 
+ 
+ 
+<https://w3id.org/italia/onto/citizen> rdf:type owl:Ontology ; 
+                                    dct:identifier "https://w3id.org/italia/onto/citizen" ; 
+                                    owl:versionIRI <https://w3id.org/italia/onto/citizen/0.1> ; 
+                                    owl:imports <https://w3id.org/italia/onto/CLV> , 
+												<https://w3id.org/italia/onto/CPV> , 
+												<https://w3id.org/italia/onto/RPO> , 
+                                                <https://w3id.org/italia/onto/TI>, 
+												<https://w3id.org/italia/onto/l0> ; 
+                                    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ; 
+                                    dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ; 
+                                    dct:description "Questa è l'ontologia delle cittadinanze"@it , 
+                                                    "This is the citizenship ontology"@en ; 
+                                    dct:issued "2025-11-04"^^xsd:date ; 
+                                    dct:language <http://publications.europa.eu/resource/authority/language/ENG> , 
+                                                 <http://publications.europa.eu/resource/authority/language/ITA> ; 
+                                    dct:modified "2025-11-04"^^xsd:date ; 
+                                    dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ; 
+                                    dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ; 
+                                    dct:title "Ontologia delle Cittadinanze"@en , 
+                                              "Citizenship Ontology"@it ; 
+                                    rdfs:comment "Questa è l'ontologia delle cittadinanze"@it , 
+                                                 "This is the citizenship ontology"@en ; 
+                                    rdfs:isDefinedBy <https://w3id.org/italia/onto/citizen> ; 
+                                    rdfs:label "Ontologia delle Cittadinanze"@en , 
+                                              "Citizenship Ontology"@it ; 
+								    admsapit:hasKeyClass :CitizenshipInTime , 
+                                                         :State ; 
+									admsapit:semanticAssetInUse <https://w3id.org/italia/data/project/NDC>, 
+                                                                 <https://w3id.org/italia/data/project/RPO>,   
+                                                                 <https://w3id.org/italia/data/project/CPV>,  
+                                                                 <https://w3id.org/italia/data/project/CLV> ; 
+                                    owl:versionInfo "Version 0.1 - Modified on 04 November 2025"@en , 
+                                                    "Versione 0.1 - Modificata il 04 Novembre 2025"@it ; 
+                                    dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ; 
+								    dcat:keyword "Cittadinanza"@it , 
+                                                 "Citizenship"@en ; 
+                                    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; 
+                                    admsapit:acronym "CTZ" ; 
+                                    admsapit:hasOntologyLanguage admsapit:OWL ; 
+                                    admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CTZ-RDF-XML> ; 
+                                    admsapit:last <https://w3id.org/italia/onto/citizen/0.1> . 
+									 
+									 
+<https://w3id.org/italia/data/public-organization/ISTAT> 
+	      a dcatapit:Agent , foaf:Agent ; 
+	      dct:identifier "ISTAT" ; 
+	      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en . 
+				  
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> 
+				 a	dcatapit:Organization , vcard:Organization, vcard:Kind ; 
+				 vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ; 
+				 vcard:hasEmail <mailto:ndc-segr-tec@istat.it> . 
+ 
+ 
+################################################################# 
+#    SemanticAssetInUse 
+ 
+################################################################# 
+ 
+###  https://w3id.org/italia/data/project/NDC 
+<https://w3id.org/italia/data/project/NDC> rdf:type owl:NamedIndividual , 
+                                                    admsapit:Project ; 
+                                           l0:name "National Data Catalog - schema.gov.it"@it . 
+ 
+###  https://w3id.org/italia/data/project/RPO 
+<https://w3id.org/italia/data/project/RPO> rdf:type owl:NamedIndividual , 
+                                                       admsapit:Project ; 
+                                           l0:name ""@it . 
+                                               
+###  https://w3id.org/italia/data/project/CPV 
+<https://w3id.org/italia/data/project/CPV> rdf:type owl:NamedIndividual , 
+                                                    admsapit:Project ; 
+                                           l0:name ""@it . 
+													 
+###  https://w3id.org/italia/data/project/CLV 
+<https://w3id.org/italia/data/project/CLV> rdf:type owl:NamedIndividual , 
+                                                    admsapit:Project ; 
+                                           l0:name ""@it . 
+													 
+													 
+													 
+###  http://xmlns.com/foaf/0.1/name 
+foaf:name rdf:type owl:AnnotationProperty .											 
+													 
+ 
+ 
+################################################################# 
+#    Object Properties  
+################################################################# 
+ 
+### https://w3id.org/italia/onto/citizen/bornInState 
+<https://w3id.org/italia/onto/citizen/bornInState> rdf:type owl:ObjectProperty, 
+                                                            owl:FunctionalProperty ; 
+													 rdfs:domain CPV:Person ; 
+													 rdfs:range CTZ:State ; 
+													 rdfs:label "born in state"@en, 
+																"nato in stato"@it . 
+ 
+###  https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory 
+<https://w3id.org/italia/onto/citizen/bornInUngovernatedTerritory> rdf:type owl:ObjectProperty ; 
+                                rdfs:domain CPV:Person ; 
+                                rdfs:range CLV:UngovernedTerritory . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/hasCitizenship 
+<https://w3id.org/italia/onto/citizen/hasCitizenship> rdf:type owl:ObjectProperty , 
+                            owl:FunctionalProperty ; 
+                   rdfs:domain CTZ:CitizenshipInTime ; 
+                   rdfs:range rpo:Citizenship ; 
+                   rdfs:label "ha cittadinanza"@it , 
+                              "has citizenship"@en . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/hasCitizenshipInState 
+<https://w3id.org/italia/onto/citizen/hasCitizenshipInState> rdf:type owl:ObjectProperty , 
+                                   owl:FunctionalProperty ; 
+                          rdfs:domain CTZ:CitizenshipInTime ; 
+                          rdfs:range CTZ:State ; 
+                          rdfs:label "ha stato di cittadinanza"@it , 
+                                     "has citizenship in state"@en . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/hasCitizenshipName 
+<https://w3id.org/italia/onto/citizen/hasCitizenshipName> rdf:type owl:ObjectProperty , 
+                                owl:FunctionalProperty , 
+                                owl:InverseFunctionalProperty ; 
+                       rdfs:domain CTZ:State ; 
+                       rdfs:range rpo:Citizenship ; 
+                       rdfs:label "ha denominazione di cittadinanza"@it , 
+                                  "has citizenship name"@en . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/hasCitizenshipinTime 
+<https://w3id.org/italia/onto/citizen/hasCitizenshipinTime> rdf:type owl:ObjectProperty , 
+                                  owl:InverseFunctionalProperty ; 
+                         rdfs:domain CPV:Person , 
+                                     [ rdf:type owl:Class ; 
+                                       owl:complementOf CPV:Stateless 
+                                     ] ; 
+                         rdfs:range CTZ:CitizenshipInTime ; 
+                         rdfs:label "ha cittadinanza nel periodo"@it , 
+                                    "has citizenship in time"@en . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/hasSovereignty 
+<https://w3id.org/italia/onto/citizen/hasSovereignty> rdf:type owl:ObjectProperty , 
+                            owl:InverseFunctionalProperty ; 
+                   rdfs:domain CTZ:State ; 
+                   rdfs:range [ rdf:type owl:Class ; 
+                                owl:unionOf ( CLV:Country 
+                                              CLV:GovernedTerritory 
+                                            ) 
+                              ] ; 
+                   rdfs:label "ha sovranità"@it , 
+                              "has sovereignty"@en . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver 
+<https://w3id.org/italia/onto/citizen/isPredominantCitizenshipOver> rdf:type owl:ObjectProperty , 
+                                          owl:InverseFunctionalProperty ; 
+                                 rdfs:domain CTZ:CitizenshipInTime ; 
+                                 rdfs:range CTZ:CitizenshipInTime ; 
+                                 rdfs:label "is predominant citizenship over"@en , 
+                                            "è cittadinanza prevalente su"@it . 
+ 
+ 
+################################################################# 
+#    Classes  
+################################################################# 
+  
+###  https://w3id.org/italia/onto/CLV/Country 
+CLV:Country rdf:type owl:Class ; 
+            owl:disjointWith CLV:GovernedTerritory . 
+ 
+ 
+###  https://w3id.org/italia/onto/CLV/GovernedTerritory 
+CLV:GovernedTerritory rdf:type owl:Class . 
+ 
+ 
+###  https://w3id.org/italia/onto/CLV/UngovernedTerritory 
+CLV:UngovernedTerritory rdf:type owl:Class . 
+ 
+ 
+###  https://w3id.org/italia/onto/COV/PublicOrganization 
+COV:PublicOrganization rdf:type owl:Class . 
+ 
+ 
+###  https://w3id.org/italia/onto/CPV/Person 
+CPV:Person rdf:type owl:Class . 
+ 
+ 
+###  https://w3id.org/italia/onto/CPV/Stateless 
+CPV:Stateless rdf:type owl:Class ; 
+              owl:disjointWith [ rdf:type owl:Restriction ; 
+                                 owl:onProperty CTZ:hasCitizenshipinTime ; 
+                                 owl:someValuesFrom owl:Thing 
+                               ] . 
+ 
+ 
+###  https://w3id.org/italia/onto/RPO/Citizenship 
+rpo:Citizenship rdf:type owl:Class ; 
+                owl:equivalentClass [ rdf:type owl:Restriction ; 
+                                      owl:onProperty [ owl:inverseOf CTZ:hasCitizenshipName 
+                                                     ] ; 
+                                      owl:someValuesFrom owl:Thing 
+                                    ] . 
+ 
+ 
+###  https://w3id.org/italia/onto/TI/TimeIndexedEvent 
+TI:TimeIndexedEvent rdf:type owl:Class . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/CitizenshipInTime 
+CTZ:CitizenshipInTime rdf:type owl:Class ; 
+                      owl:equivalentClass [ rdf:type owl:Restriction ; 
+                                            owl:onProperty CTZ:hasCitizenship ; 
+                                            owl:someValuesFrom owl:Thing 
+                                          ] , 
+                                          [ rdf:type owl:Restriction ; 
+                                            owl:onProperty CTZ:hasCitizenshipInState ; 
+                                            owl:someValuesFrom owl:Thing 
+                                          ] , 
+                                          [ rdf:type owl:Restriction ; 
+                                            owl:onProperty [ owl:inverseOf CTZ:hasCitizenshipinTime 
+                                                           ] ; 
+                                            owl:someValuesFrom owl:Thing 
+                                          ] ; 
+                      rdfs:subClassOf TI:TimeIndexedEvent ; 
+                      rdfs:label "Citizenship in time"@en , 
+                                 "Cittadinanza nel periodo"@it . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/State 
+CTZ:State rdf:type owl:Class ; 
+          rdfs:subClassOf COV:PublicOrganization ; 
+          rdfs:label "State"@en , 
+                     "Stato"@it . 
+ 
+ 
+###  https://w3id.org/italia/onto/citizen/UnrecognizedState 
+CTZ:UnrecognizedState rdf:type owl:Class ; 
+                      rdfs:subClassOf CTZ:State ; 
+                      rdfs:label "UnrecognizedState"@it . 
+ 
+ 
+ 
