@@ -73,8 +73,8 @@
                                     admsapit:acronym "CTZ" ;
                                     admsapit:hasOntologyLanguage admsapit:OWL ;
                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/CTZ-RDF-XML> ;
-                                    admsapit:last <https://w3id.org/italia/onto/citizen/0.1> .
-								 
+                                    admsapit:last <https://w3id.org/italia/onto/citizen/0.1> ;
+								    admsapit:prefix "CTZ" .
 									
 <https://w3id.org/italia/data/public-organization/ISTAT>
 	      a dcatapit:Agent , foaf:Agent ;
