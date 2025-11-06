@@ -22,11 +22,13 @@
 #################################################################
 
 <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur>
-	  rdf:type      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
+	  a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;
       dct:description "This is the controlled vocabulary on Programme Types MUR."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio MUR (Ministero dell'Università e della Ricerca)."@it ;
       rdfs:comment "This is the controlled vocabulary on Programme Types MUR."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio MUR (Ministero dell'Università e della Ricerca)."@it ;
       rdfs:label "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;
+	  skos:notation "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;      
+      skos:prefLabel "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;	  
       dct:type <http://purl.org/adms/assettype/CodeList> ;
       xkos:numberOfLevels "1";
       ndc:keyConcept "programme-types-mur" ;

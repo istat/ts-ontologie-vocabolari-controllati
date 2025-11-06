@@ -25,11 +25,13 @@
 
 
 <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade>
-      rdf:type      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
+      a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei Voti di Laurea"@it ;
       dct:description "This is the controlled vocabulary on Degree Grade ."@en , "Questo è il vocabolario controllato dei Voti di Laurea."@it ;
       rdfs:comment "This is the controlled vocabulary on Degree Grade ."@en , "Questo è il vocabolario controllato dei Voti di Laurea ."@it ;
       rdfs:label "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei voti di Laurea"@it ;
+	  skos:notation "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei voti di Laurea"@it ;       
+      skos:prefLabel "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei voti di Laurea"@it ;	    
       dct:type <http://purl.org/adms/assettype/CodeList> ;
       xkos:numberOfLevels "1";
       ndc:keyConcept "grade" ;
