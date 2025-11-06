@@ -24,7 +24,7 @@
 #################################################################
 
 <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> 
-	  a dcatapit:Dataset ;
+	  rdf:type      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;
       dct:description "This is the controlled vocabulary on Degree Classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea."@it ;
       rdfs:comment "This is the controlled vocabulary on Degree classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea ."@it ;
