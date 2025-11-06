@@ -23,7 +23,7 @@
 #################################################################
 
 <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam>
-	  a dcatapit:Dataset ;
+	  rdf:type      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Programme Types AFAM Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio AFAM"@it ;
       dct:description "This is the controlled vocabulary on Programme Types AFAM."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio AFAM (Alta formazione artistica, musicale e coreutica)."@it ;
       rdfs:comment "This is the controlled vocabulary on Programme Types AFAM."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio AFAM (Alta formazione artistica, musicale e coreutica)."@it ;
