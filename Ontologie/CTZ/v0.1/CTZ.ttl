@@ -100,17 +100,17 @@
 ###  https://w3id.org/italia/data/project/RPO
 <https://w3id.org/italia/data/project/RPO> rdf:type owl:NamedIndividual ,
                                                        admsapit:Project ;
-                                           l0:name ""@it .
+                                           l0:name "Ontologia della Popolazione Residente Registrata in Anagrafe"@it .
                                               
 ###  https://w3id.org/italia/data/project/CPV
 <https://w3id.org/italia/data/project/CPV> rdf:type owl:NamedIndividual ,
                                                     admsapit:Project ;
-                                           l0:name ""@it .
+                                           l0:name "Core Person Vocabulary - profilo applicativo italiano - Ontologia delle persone"@it .
 													
 ###  https://w3id.org/italia/data/project/CLV
 <https://w3id.org/italia/data/project/CLV> rdf:type owl:NamedIndividual ,
                                                     admsapit:Project ;
-                                           l0:name ""@it .
+                                           l0:name "Ontologia degli Indirizzi/Luoghi"@it .
 													
 												 
 													 
