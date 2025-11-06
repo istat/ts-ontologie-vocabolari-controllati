@@ -1,5 +1,4 @@
-@prefix grade: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grades/> .
-@prefix obda:  <http://obdasystems.com/ontology/> .
+@prefix grade: <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grades/> .
 @prefix l0:    <https://w3id.org/italia/onto/l0/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -24,7 +23,7 @@
 
 
 
-<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade>
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade>
       a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Degree Grade Controlled Vocabulary"@en , "Vocabolario Controllato dei Voti di Laurea"@it ;
       dct:description "This is the controlled vocabulary on Degree Grade ."@en , "Questo è il vocabolario controllato dei Voti di Laurea."@it ;
@@ -36,7 +35,7 @@
       xkos:numberOfLevels "1";
       ndc:keyConcept "grade" ;
       adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade";
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade";
       dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
       dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
                   <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
@@ -45,7 +44,7 @@
       dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
       dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/grade> ;
       dcat:keyword "Voti di Laurea"@it, "Istruzione"@it ;
       dcat:distribution <https://w3id.org/italia/data/distribution/grade_RDF_Turtle> , <https://w3id.org/italia/data/distribution/grade_CSV> ;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;

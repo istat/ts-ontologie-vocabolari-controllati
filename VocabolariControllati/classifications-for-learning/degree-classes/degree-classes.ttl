@@ -1,12 +1,11 @@
-@prefix mur-pt: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur/> .
-@prefix obda:  <http://obdasystems.com/ontology/> .
+@prefix mur-pt: <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur/> .
 @prefix afam-pt: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam/> .
 @prefix l0:    <https://w3id.org/italia/onto/l0/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix learn: <https://w3id.org/italia/onto/Learning/> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix classes: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
+@prefix classes: <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -23,7 +22,7 @@
 #    Metadati 
 #################################################################
 
-<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> 
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> 
 	  a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;
       dct:description "This is the controlled vocabulary on Degree Classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea."@it ;
@@ -35,7 +34,7 @@
       xkos:numberOfLevels "1";
       ndc:keyConcept "degree-classes" ;
       adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes";
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes";
       dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
       dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
                   <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
@@ -44,7 +43,7 @@
       dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
       dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes>  ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes>  ;
       dcat:keyword "Classi di Laurea"@it, "Istruzione"@it ;
 	  dcat:distribution <https://w3id.org/italia/data/distribution/degree-classes_RDF_Turtle> , <https://w3id.org/italia/data/distribution/degree-classes_CSV>  ;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
