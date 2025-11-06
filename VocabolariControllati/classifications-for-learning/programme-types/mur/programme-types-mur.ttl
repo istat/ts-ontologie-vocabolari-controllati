@@ -3,7 +3,7 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix learn: <https://w3id.org/italia/onto/Learning/> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix classes: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
+@prefix classes: <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,14 +15,14 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix mur:   <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur/> .
+@prefix mur:   <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur/> .
 
 #################################################################
 #    Metadati 
 #################################################################
 
-<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur>
-	  a      dcatapit:Dataset ;
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur>
+	  a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Programme Types MUR Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio MUR"@it ;
       dct:description "This is the controlled vocabulary on Programme Types MUR."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio MUR (Ministero dell'Università e della Ricerca)."@it ;
       rdfs:comment "This is the controlled vocabulary on Programme Types MUR."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio MUR (Ministero dell'Università e della Ricerca)."@it ;
@@ -33,7 +33,7 @@
       xkos:numberOfLevels "1";
       ndc:keyConcept "programme-types-mur" ;
       adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur";
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur";
       dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
       dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
                   <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
@@ -42,9 +42,9 @@
       dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
       dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/mur> ;
       dcat:keyword "Tipologia di Corso di Laurea"@it, "Istruzione"@it , "MUR"@it ;
-	  dcat:distribution <https://w3id.org/italia/data/distribution/programme-types-mur_RDF_Turtle> , <https://w3id.org/italia/data/distribution/programme-types-mur_CSV ;
+	  dcat:distribution <https://w3id.org/italia/data/distribution/programme-types-mur_RDF_Turtle> , <https://w3id.org/italia/data/distribution/programme-types-mur_CSV> ;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
       dct:issued "2024-09-03"^^xsd:date ;
       dct:modified "2024-09-03"^^xsd:date ;
