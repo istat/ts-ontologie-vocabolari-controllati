@@ -24,11 +24,13 @@
 #################################################################
 
 <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes> 
-	  rdf:type      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
+	  a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;
       dct:description "This is the controlled vocabulary on Degree Classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea."@it ;
       rdfs:comment "This is the controlled vocabulary on Degree classes ."@en , "Questo è il vocabolario controllato delle Classi di Laurea ."@it ;
-      rdfs:label "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;
+      rdfs:label "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;  
+	  skos:notation "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;       
+      skos:prefLabel "Degree Classes Controlled Vocabulary"@en , "Vocabolario Controllato delle Classi di Laurea"@it ;	  
       dct:type <http://purl.org/adms/assettype/CodeList> ;
       xkos:numberOfLevels "1";
       ndc:keyConcept "degree-classes" ;
