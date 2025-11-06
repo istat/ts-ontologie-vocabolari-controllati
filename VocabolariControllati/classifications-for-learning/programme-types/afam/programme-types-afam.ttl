@@ -1,10 +1,9 @@
-@prefix obda:  <http://obdasystems.com/ontology/> .
 @prefix l0:    <https://w3id.org/italia/onto/l0/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix learn: <https://w3id.org/italia/onto/Learning/> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix classes: <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
+@prefix classes: <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/degree-classes/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -16,13 +15,13 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix afam:  <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam/> .
+@prefix afam:  <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam/> .
 
 #################################################################
 #    Metadati 
 #################################################################
 
-<http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam>
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam>
 	  a      skos:ConceptScheme , adms:Asset ,  dcatapit:Dataset ;
 	  dct:title "Programme Types AFAM Controlled Vocabulary"@en , "Vocabolario Controllato delle Tipologie di Corsi di Studio AFAM"@it ;
       dct:description "This is the controlled vocabulary on Programme Types AFAM."@en , "Questo è il vocabolario controllato delle Tipologie di Corsi di Studio AFAM (Alta formazione artistica, musicale e coreutica)."@it ;
@@ -34,7 +33,7 @@
       xkos:numberOfLevels "1";
       ndc:keyConcept "programme-types-afam" ;
       adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-      dct:identifier "http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam";
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam";
       dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
       dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ,
                   <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;  
@@ -43,7 +42,7 @@
       dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
       dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
       dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-      rdfs:isDefinedBy <http://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/programme-types/afam> ;
       dcat:keyword "Tipologia di Corso di Laurea"@it, "Istruzione"@it , "AFAM"@it ;
 	  dcat:distribution <https://w3id.org/italia/data/distribution/programme-types-afam_RDF_Turtle> , <https://w3id.org/italia/data/distribution/programme-types-afam_CSV> ;
       dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
