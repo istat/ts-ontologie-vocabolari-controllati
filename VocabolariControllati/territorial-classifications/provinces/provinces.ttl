@@ -1,4 +1,10 @@
 
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:deprecated
+    a owl:AnnotationProperty .
+
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.w3.org/ns/adms#Asset> , <http://dati.gov.it/onto/dcatapit#Dataset> ;
 	<http://purl.org/dc/terms/title> "Controlled Vocabulary for Italian Provinces"@en , "Vocabolario Controllato delle Province d'Italia"@it ;
 	<http://purl.org/dc/terms/description> "Vocabolario controllato delle province d'Italia e relativo codice regione"@it , "Controlled Vocabulary for describing Italy's Provinces"@en ;
@@ -69,6 +75,22 @@
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "001" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Torino"@it ;
+	<https://w3id.org/italia/onto/CLV/acronym> "TO" ;
+	<https://w3id.org/italia/onto/CLV/hasDirectHigherRank> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
+	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/TO> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/001> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/metropolitan-city-code/201> ;
+	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
+	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
+	owl:deprecated "true"^^xsd:boolean ;
+	<https://w3id.org/italia/onto/l0/name> "Torino"@it .
+	
+	
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Torino"@it ;
+	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC11> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "201" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Torino"@it ;
 	<https://w3id.org/italia/onto/CLV/acronym> "TO" ;
 	<https://w3id.org/italia/onto/CLV/hasDirectHigherRank> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
