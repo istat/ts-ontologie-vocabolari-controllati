@@ -1,6 +1,8 @@
 
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 
 owl:deprecated
     a owl:AnnotationProperty .
@@ -78,12 +80,13 @@ owl:deprecated
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Torino"@it ;
 	<https://w3id.org/italia/onto/CLV/acronym> "TO" ;
 	<https://w3id.org/italia/onto/CLV/hasDirectHigherRank> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
-	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/TO> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/001> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/metropolitan-city-code/201> ;
+	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/TO> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/001> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
-	owl:deprecated "true"^^xsd:boolean ;
-	<https://w3id.org/italia/onto/l0/name> "Torino"@it .
-	
+	owl:deprecated "true"^^xsd:boolean ;	
+	<https://w3id.org/italia/onto/l0/name> "Torino"@it ;
+	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
+    xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Torino"@it ;
@@ -97,7 +100,9 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/TO> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/001> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/metropolitan-city-code/201> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
-	<https://w3id.org/italia/onto/l0/name> "Torino"@it .
+	<https://w3id.org/italia/onto/l0/name> "Torino"@it ;
+	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
+	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/001> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/002> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Vercelli"@it ;
