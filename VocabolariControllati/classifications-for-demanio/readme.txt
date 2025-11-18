@@ -1,0 +1,1 @@
+vocabolario controllato RAPPORTO DI GESTIONE
