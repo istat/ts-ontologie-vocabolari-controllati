@@ -1,0 +1,143 @@
+@prefix : <https://w3id.org/italia/onto/demanio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix adms:     <http://www.w3.org/ns/adms#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+
+
+#################################################################
+#    inizio metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>
+  rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+  dct:title "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;
+  dct:description "La categoria patrimoniale rappresenta la classificazione amministrativo-contabile dei beni immobili e dei diritti reali gestiti dall’Agenzia del Demanio, finalizzata a identificarne la natura giuridica e la modalità di appartenenza o gestione nell’ambito del patrimonio dello Stato. Essa consente di distinguere i beni demaniali e patrimoniali in base alla loro disponibilità, destinazione, o all’esistenza di diritti reali a favore o a carico di soggetti terzi."@it, "The asset category represents the administrative and accounting classification of real estate properties and real rights managed by the State Property Agency, aimed at identifying their legal nature and the way in which they are owned or managed within the State’s assets. It makes it possible to distinguish between demanial and patrimonial assets on the basis of their availability, intended use, or the existence of real rights in favor of or encumbering third parties."@en;
+  xkos:numberOfLevels "1" ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale";
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/agd> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/agd>  ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/agd> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale> ;
+  dcat:keyword "Categoria Patrimoniale"@it, "Asset Category"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/categoria_patrimoniale_RDF_Turtle> , <https://w3id.org/italia/data/distribution/categoria_patrimoniale_CSV> , <https://w3id.org/italia/data/distribution/categoria_patrimoniale_XLSX> ;
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+  dct:issued "2025-11-24"^^xsd:date ;
+  dct:modified "2025-11-24"^^xsd:date ;
+  owl:versionInfo "Versione 0.1"@it ; 
+  ndc:keyConcept "Categoria_Patrimoniale" ;
+  rdfs:comment "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;
+  rdfs:label "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;
+  skos:notation "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;       
+  skos:prefLabel "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it .   
+   
+ 
+  <https://w3id.org/italia/data/public-organization/agd>
+  a dcatapit:Agent, foaf:Agent ;
+  dct:identifier "agd" ;
+  foaf:name "Agenzia del Demanio"@it , "State Property Agency"@en .
+  
+  <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
+	
+  <https://w3id.org/italia/data/resource/standard/SKOS>
+  a dcatapit:Standard , dct:Standard ;
+  dct:identifier "SKOS" ;
+  dct:title "Simple Knowledge Organization System - SKOS" ;
+  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+
+
+
+#################################################################
+#    fine metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A1>
+  a skos:Concept, :Demanio;
+  rdfs:label "23A1"@it;
+  skos:prefLabel "23A1"@it;
+  rdfs:comment "Beni appartenenti al patrimonio dello Stato suscettibili di alienazione o utilizzazione economica secondo le disposizioni del Codice civile e della normativa patrimoniale."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "BENI DISPONIBILI"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A4>
+  a skos:Concept, :Demanio;
+  rdfs:label "23A4"@it;
+  skos:prefLabel "23A4"@it;
+  rdfs:comment "Beni patrimoniali costituiti da giacimenti minerari e dalle relative pertinenze fisiche e infrastrutturali, disciplinati dalla normativa mineraria."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "MINIERE E RELATIVE PERTINENZE"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A5>
+  a skos:Concept, :Demanio;
+  rdfs:label "23A5"@it;
+  skos:prefLabel "23A5"@it;
+  rdfs:comment "Beni appartenenti allo Stato e assegnati in uso gratuito o oneroso a pubbliche amministrazioni per finalità istituzionali"@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "BENI ASSEGNATI IN USO GOVERNATIVO"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A6>
+  a skos:Concept, :Demanio;
+  rdfs:label "23A6"@it;
+  skos:prefLabel "23A6"@it;
+  rdfs:comment "Beni del patrimonio dello Stato non alienabili, in quanto destinati a un pubblico servizio o a un uso di pubblica utilità, pur non appartenendo al demanio necessario."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "BENI NON DISPONIBILI"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23B2>
+  a skos:Concept, :Demanio;
+  rdfs:label "23B2"@it;
+  skos:prefLabel "23B2"@it;
+  rdfs:comment "Beni patrimoniali dello Stato gravati da diritti reali (usufrutto, servitù, enfiteusi, ecc.) costituiti a favore di soggetti diversi dallo Stato."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "BENI SU CUI GRAVANO DIR. REALI A FAVORE TERZI"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3>
+  a skos:Concept, :Demanio;
+  rdfs:label "23C3"@it;
+  skos:prefLabel "23C3"@it;
+  rdfs:comment "Diritti reali attivi spettanti allo Stato su beni di proprietà altrui, aventi natura patrimoniale (es. servitù, enfiteusi attiva, usufrutto)."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "DIRITTI REALI SU BENI PATRIMONIALI"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3C>
+  a skos:Concept, :Demanio;
+  rdfs:label "23C3C"@it;
+  skos:prefLabel "23C3C"@it;
+  rdfs:comment "Diritti reali spettanti allo Stato su beni appartenenti a enti comunali."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "DIR. REALI SU BENI DI PROPRIETA` DI COMUNI"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3P>
+  a skos:Concept, :Demanio;
+  rdfs:label "23C3P"@it;
+  skos:prefLabel "23C3P"@it;
+  rdfs:comment "Diritti reali spettanti allo Stato su beni appartenenti a enti provinciali."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "DIR. REALI SU BENI DI PROPRIETA` DI PROVINCIE"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3R>
+  a skos:Concept, :Demanio;
+  rdfs:label "23C3R"@it;
+  skos:prefLabel "23C3R"@it;
+  rdfs:comment "Diritti reali spettanti allo Stato su beni appartenenti a enti regionali."@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/categoria_patrimoniale>;
+  skos:notation "DIR. REALI SU BENI DI PROPRIETA` DI REGIONI"@it .
