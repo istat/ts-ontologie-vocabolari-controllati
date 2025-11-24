@@ -37,8 +37,8 @@
   dcat:keyword "Categoria Patrimoniale"@it, "Asset Category"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/categoria_patrimoniale_RDF_Turtle> , <https://w3id.org/italia/data/distribution/categoria_patrimoniale_CSV> , <https://w3id.org/italia/data/distribution/categoria_patrimoniale_XLSX> ;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-  dct:issued "2025-11-24"^^xsd:date ;
-  dct:modified "2025-11-24"^^xsd:date ;
+  dct:issued "2025-11-25"^^xsd:date ;
+  dct:modified "2025-11-25"^^xsd:date ;
   owl:versionInfo "Versione 0.1"@it ; 
   ndc:keyConcept "Categoria_Patrimoniale" ;
   rdfs:comment "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;
@@ -62,6 +62,8 @@
   dct:identifier "SKOS" ;
   dct:title "Simple Knowledge Organization System - SKOS" ;
   dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+
 
 
 
