@@ -41,6 +41,15 @@
   dct:modified "2025-11-25"^^xsd:date ;
   owl:versionInfo "Versione 0.1"@it ; 
   ndc:keyConcept "Categoria_Patrimoniale" ;
+  skos:hasTopConcept    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A1> , 
+                        <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A4> ,
+					    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A5> ,
+						<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23A6> ,
+						<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23B2> ,
+						<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3> ,
+						<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3C> ,
+						<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3P> ,
+						<https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/TipoCategoriaPatrimonialeImmobile/23C3R> ;
   rdfs:comment "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;
   rdfs:label "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;
   skos:notation "Controlled Vocabulary for Asset Categories"@en , "Vocabolario Controllato delle Categorie Patrimoniali"@it ;       
@@ -92,7 +101,6 @@
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
   dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-demanio/categoria_patrimoniale/categoria_patrimoniale.xlsx>;
   dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-demanio/categoria_patrimoniale> .
-
 
 
 #################################################################
