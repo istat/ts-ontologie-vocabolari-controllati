@@ -1,8 +1,10 @@
-
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 owl:deprecated
     a owl:AnnotationProperty .
@@ -17,7 +19,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/NDC/keyConcept> "provinces" ;
 	<http://purl.org/dc/terms/rightsHolder> <https://w3id.org/italia/data/public-organization/ISTAT> ;
 	<http://purl.org/dc/terms/creator> <https://w3id.org/italia/data/public-organization/agid> , <https://w3id.org/italia/data/resource/Amministrazione/td_PCM> ;
-	<http://purl.org/dc/terms/publisher> <https://w3id.org/italia/data/resource/Amministrazione/td_PCM> ;
+	<http://purl.org/dc/terms/publisher> <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
 	<http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
 	<http://purl.org/dc/terms/conformsTo> <https://w3id.org/italia/data/resource/Standard/SKOS> ;
 	<http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ITA> ;
@@ -27,16 +29,18 @@ owl:deprecated
 	<http://www.w3.org/ns/dcat#distribution> <https://w3id.org/italia/data/resource/Distribution/provinces_RDF_Turtle> , <https://w3id.org/italia/data/resource/Distribution/provinces_RDF_XML> , <https://w3id.org/italia/data/resource/Distribution/provinces_JSON_LD> ;
 	<http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/data/resource/ContactPoint/voc_AgID> ;
 	<http://purl.org/dc/terms/issued> "2018-06-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://purl.org/dc/terms/modified> "2025-11-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://purl.org/dc/terms/modified> "2025-11-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://www.w3.org/2002/07/owl#versionInfo> "3.0 - Aggiornamento allineato alla riforma dell’assetto territoriale della Regione Sardegna, in vigore dal 17 luglio 2025, che istituisce la Città metropolitana di Sassari e le nuove Province della Gallura Nord-Est Sardegna, dell’Ogliastra, del Sulcis Iglesiente e del Medio Campidano e sopprime le Province di Sassari e del Sud Sardegna. Le nuove denominazioni e i nuovi codici statistici delle unità amministrative saranno utilizzati a partire dal 1° gennaio 2026."@it .
 
 <https://w3id.org/italia/data/public-organization/agid> a <http://dati.gov.it/onto/dcatapit#Agent> , <http://xmlns.com/foaf/0.1/Agent> ;
 	<http://purl.org/dc/terms/identifier> "agid" ;
 	<http://xmlns.com/foaf/0.1/name> "Agenzia per l'Italia Digitale"@it , "Italian Digital Agency"@en .
 
-<https://w3id.org/italia/data/resource/Amministrazione/td_PCM> a <http://dati.gov.it/onto/dcatapit#Agent> , <http://xmlns.com/foaf/0.1/Agent> ;
-	<http://purl.org/dc/terms/identifier> "PCM" ;
-	<http://xmlns.com/foaf/0.1/name> "Team per la Trasformazione Digitale"@it , "Digital Transformation Team"@en .
+  <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+   foaf:Agent ;
+   dct:identifier "PCM-1RSIZZ" ;
+   foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+   "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
 
 <https://w3id.org/italia/data/resource/Standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard> , <http://purl.org/dc/terms/Standard> ;
 	<http://purl.org/dc/terms/identifier> "SKOS" ;
