@@ -5,6 +5,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 
 owl:deprecated
     a owl:AnnotationProperty .
@@ -36,12 +37,16 @@ owl:deprecated
 	<http://purl.org/dc/terms/identifier> "agid" ;
 	<http://xmlns.com/foaf/0.1/name> "Agenzia per l'Italia Digitale"@it , "Italian Digital Agency"@en .
 
-  <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
-   foaf:Agent ;
+  <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> 
+   a dcatapit:Agent , foaf:Agent ;
    dct:identifier "PCM-1RSIZZ" ;
-   foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
-   "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+   foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it , "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
 
+<https://w3id.org/italia/data/public-organization/ISTAT>
+	      a dcatapit:Agent , foaf:Agent ;
+	      dct:identifier "ISTAT" ;
+	      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
+		  
 <https://w3id.org/italia/data/resource/Standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard> , <http://purl.org/dc/terms/Standard> ;
 	<http://purl.org/dc/terms/identifier> "SKOS" ;
 	<http://purl.org/dc/terms/title> "Simple Knowledge Organization System - SKOS" ;
