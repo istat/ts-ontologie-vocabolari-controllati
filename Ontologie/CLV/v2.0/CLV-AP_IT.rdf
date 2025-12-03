@@ -1,43 +1,40 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/italia/onto/CLV/"
-     xml:base="https://w3id.org/italia/onto/CLV/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns="https://w3id.org/italia/onto/CLV#"
+     xml:base="https://w3id.org/italia/onto/CLV"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
-     xmlns:ti="https://w3id.org/italia/onto/TI/"
-     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
-     xmlns:covapit="https://w3id.org/italia/onto/COV/"
-     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
-     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/italia/onto/CLV">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/CLV/1.1"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/CLV/2.0"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
-        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/age"/>
-        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
-        <dct:description xml:lang="it">Questa è l&apos;ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)</dct:description>
-        <dct:description xml:lang="en">This is the ontology of the Italian application profile for Location and Addresses</dct:description>
-        <dct:identifier>https://w3id.org/italia/onto/CLV</dct:identifier>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-07</dct:issued>
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-21</dct:modified>
-        <dct:publisher rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
-        <dct:rightsHolder rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
-        <dct:title xml:lang="en">Address(Location) Ontology</dct:title>
-        <dct:title xml:lang="it">Ontologia degli Indirizzi/Luoghi</dct:title>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
+        <terms:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/age"/>
+        <terms:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)</terms:description>
+        <terms:description xml:lang="en">This is the ontology of the Italian application profile for Location and Addresses</terms:description>
+        <terms:identifier>https://w3id.org/italia/onto/CLV</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-07</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-03</terms:modified>
+        <terms:publisher rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
+        <terms:rightsHolder rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
+        <terms:title xml:lang="en">Address(Location) Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia degli Indirizzi/Luoghi</terms:title>
         <rdfs:comment xml:lang="it">Questa è l&apos;ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the ontology of the Italian application profile for Location and Addresses</rdfs:comment>
+        <rdfs:comment xml:lang="it">versione della CLV con inserimento delle UTS 2.0</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV/"/>
         <rdfs:label xml:lang="en">Address(Location) Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia degli Indirizzi/Luoghi</rdfs:label>
@@ -59,33 +56,33 @@
         <dcat:keyword xml:lang="en">Spatial Object</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
         <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
-        <admsapit:acronym>CLV-AP_IT</admsapit:acronym>
-        <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/public-organization/td"/>
-        <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
-        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/SpatialObject"/>
-        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML"/>
-        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
-        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
-        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <admsapit:last rdf:resource="https://w3id.org/italia/onto/CLV/1.1"/>
-        <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/CLV</admsapit:officialURI>
-        <admsapit:prefix>clvapit</admsapit:prefix>
-        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/ANNCSU"/>
-        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/DAF"/>
-        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
-        <admsapit:status>catalogued</admsapit:status>
-        <admsapit:status>published</admsapit:status>
-        <admsapit:target>Imprese</admsapit:target>
-        <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
-        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
+        <ADMS:acronym>CLV-AP_IT</ADMS:acronym>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/italia/data/organization/public-organization/td"/>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/SpatialObject"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <ADMS:last rdf:resource="https://w3id.org/italia/onto/CLV/1.1"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/CLV</ADMS:officialURI>
+        <ADMS:prefix>clvapit</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/ANNCSU"/>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/DAF"/>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
+        <ADMS:status>catalogued</ADMS:status>
+        <ADMS:status>published</ADMS:status>
+        <ADMS:target>Imprese</ADMS:target>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
     </owl:Ontology>
     
 
@@ -572,8 +569,8 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -728,7 +725,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasProvince">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
         <rdfs:comment xml:lang="it">Questa proprietà collega l&apos;indirizzo alla Provincia. Esempio di Provincia: &quot;PA&quot;, &quot;BO&quot;, &quot;RM&quot;, ecc.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property links the address with the Province.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
@@ -1041,7 +1038,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/acronym">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/name"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">La sigla automobilistica con cui viene indicata la provincia.</rdfs:comment>
         <rdfs:comment xml:lang="en">The acronym of the province that is typically used over the Italian territory for the license plate.</rdfs:comment>
@@ -1747,6 +1744,24 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/AutonomousProvince -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/AutonomousProvince">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+        <rdfs:comment xml:lang="it">Province di Trento e di Bolzano, il cui riconoscimento dello Statuto speciale attribuisce loro particolari forme di autonomia, compresa quella legislativa, assimilandole alle regioni. 
+Le due province, insieme alla loro regione di appartenenza, il Trentino-Alto Adige, formano un sistema di enti autonomi, fra loro collegati, unico all&apos;interno dell&apos;ordinamento regionale italiano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Provinces of Trento and Bolzano, whose recognition under the Special Statute grants them specific forms of autonomy, including legislative autonomy, making them similar to regions.
+The two provinces, together with their belonging region, Trentino-Alto Adige, form a system of autonomous entities, interconnected with each other, unique within the Italian regional system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="en">Autonomous Province</rdfs:label>
+        <rdfs:label xml:lang="it">Provincia autonoma</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/CensusSection -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/CensusSection">
@@ -1779,8 +1794,8 @@
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1790,7 +1805,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la città (Comune)</rdfs:comment>
@@ -1802,7 +1817,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasRankOrder>
+        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</CLV:hasRankOrder>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities"/>
     </owl:Class>
     
@@ -1881,8 +1896,8 @@
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/District"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1896,7 +1911,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRankOrder>
+        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</CLV:hasRankOrder>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/foreign-countries"/>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy"/>
     </owl:Class>
@@ -1923,8 +1938,8 @@
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:onClass>
@@ -1939,7 +1954,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasRankOrder>
+        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</CLV:hasRankOrder>
     </owl:Class>
     
 
@@ -1986,6 +2001,24 @@
         <prov:wasDerivedFrom rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <prov:wasInfluencedBy rdf:resource="http://https://www.w3.org/ns/locn#Location"/>
         <prov:wasInfluencedBy rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+        <rdfs:comment xml:lang="en">An intermediate-level territorial entity, composed of a group of neighboring municipalities.
+As a result of Regional Law No. 15 of August 4, 2015, the administrative structure of Sicily provides for the operation of free municipal consortia, as wide-area entities, in place of the abolished provinces of the same name.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
+Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrativo della Sicilia prevede l’esercizio dei liberi consorzi comunali, quali enti di area vasta, in luogo delle omonime province soppresse.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="en">Free municipal consortium</rdfs:label>
+        <rdfs:label xml:lang="it">Libero consorzio di comuni</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
@@ -2185,67 +2218,59 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/MetropolitanCity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/MetropolitanCity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+        <rdfs:comment xml:lang="en">An intermediate-level territorial entity, composed of a group of neighboring municipalities.
+Introduced with the 2001 reform of Title V of the Constitution, metropolitan cities are recognized as wide-area territorial entities, on par with provinces (Article 114). In regions with ordinary statutes, the establishment of metropolitan cities is regulated by Law No. 56 of April 7, 2014, while in regions with special statutes, their regulation is deferred to regional laws.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
+Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="it">Città metropolitana</rdfs:label>
+        <rdfs:label xml:lang="en">Metropolitan city</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+        <rdfs:comment xml:lang="en">Intermediate-level territorial units between the Municipality and the Region, corresponding to the former provinces of Friuli Venezia Giulia, which were abolished according to the procedures outlined in Regional Law No. 20 of December 20, 2016.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Unità territoriali di livello intermedio tra il Comune e la Regione, corrispondenti alle ex province del Friuli-Venezia Giulia, cessate secondo le modalità espresse con legge regionale 20 dicembre 2016, n. 20</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="it">Ex Provincia</rdfs:label>
+        <rdfs:label xml:lang="en">Non administrative authority</rdfs:label>
+        <rdfs:label xml:lang="it">Unità non amministrativa territoriale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/Province -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Province">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/District"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Region"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/acronym"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">La classe rappresenta la componente Provincia.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The class represents the Province.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An intermediate-level territorial entity [Article 114 of the Constitution], composed of a group of neighboring municipalities, the most important of which serves as its capital. Since 2015, as a result of the provisions in Law No. 56 of April 7, 2014, provinces, like metropolitan cities, are recognized as second-level wide-area entities.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ente territoriale di livello intermedio [art. 114 Cost.], costituito da un aggregato di comuni limitrofi, il più importante dei quali ne costituisce il capoluogo. Dal 2015, per effetto della normativa contenuta nella legge 7 aprile 2014, n. 56, le province, al pari delle città metropolitane sono riconosciute enti di area vasta di secondo livello.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="it">Città Metropolitana</rdfs:label>
         <rdfs:label xml:lang="en">Province</rdfs:label>
         <rdfs:label xml:lang="it">Provincia</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasRankOrder>
-        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces"/>
     </owl:Class>
     
 
@@ -2289,7 +2314,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRankOrder>
+        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</CLV:hasRankOrder>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions"/>
     </owl:Class>
     
@@ -2380,6 +2405,64 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/UTS -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/UTS">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/District"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The territorial units at an intermediate level between municipalities and regions, effective since 2015. These units include, in addition to provinces, metropolitan cities, free consortia, and non-administrative territorial units (specifically the former provinces of Friuli Venezia Giulia), with the aim of establishing a comprehensive division of the national territory.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Unità territoriali di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="en">Supramunicipal territorial unit (Uts)</rdfs:label>
+        <rdfs:label xml:lang="it">Unità territoriale sovracomunale (Uts)</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</CLV:hasRankOrder>
+        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/UngovernedTerritory -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/UngovernedTerritory">
@@ -2448,7 +2531,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>ISTAT</dct:identifier>
+        <terms:identifier>ISTAT</terms:identifier>
         <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
         <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
     </owl:NamedIndividual>
@@ -2460,7 +2543,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/age">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>age</dct:identifier>
+        <terms:identifier>age</terms:identifier>
         <foaf:name xml:lang="it">Agenzia dell&apos;Entrate</foaf:name>
         <foaf:name xml:lang="en">Tax Agency</foaf:name>
     </owl:NamedIndividual>
@@ -2472,7 +2555,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>agid</dct:identifier>
+        <terms:identifier>agid</terms:identifier>
         <foaf:name xml:lang="it">Agenzia per l&apos;Italia Digitale</foaf:name>
         <foaf:name xml:lang="en">Italian Digital Agency</foaf:name>
     </owl:NamedIndividual>
@@ -2485,8 +2568,8 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-        <vcard:fn>banche dati e open data</vcard:fn>
-        <vcard:hasEmail rdf:resource="mailto:info@dati.gov.it"/>
+        <ns:fn>banche dati e open data</ns:fn>
+        <ns:hasEmail rdf:resource="mailto:info@dati.gov.it"/>
     </owl:NamedIndividual>
     
 
@@ -2495,12 +2578,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei Luoghi e degli Indirizzi</dct:description>
-        <dct:description xml:lang="en">This is the distribution in JSON-LD of the Location and Address ontology</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <dct:title xml:lang="it">Distribuzione JSON-LD ontologia CLV-AP_IT</dct:title>
-        <dct:title xml:lang="en">JSON-LD distribution of CLV-AP_IT Ontology</dct:title>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei Luoghi e degli Indirizzi</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of the Location and Address ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia CLV-AP_IT</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of CLV-AP_IT Ontology</terms:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.jsonld"/>
     </owl:NamedIndividual>
@@ -2511,12 +2594,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei luoghi e degli indirizzi</dct:description>
-        <dct:description xml:lang="en">This is the distribution in RDF/turtle of the location and address ontology</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia CLV-AP_IT</dct:title>
-        <dct:title xml:lang="en">RDF/Turtle distribution of CLV-AP_IT Ontology</dct:title>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei luoghi e degli indirizzi</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/turtle of the location and address ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia CLV-AP_IT</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of CLV-AP_IT Ontology</terms:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.ttl"/>
     </owl:NamedIndividual>
@@ -2527,12 +2610,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei luoghi e degli indirizzi</dct:description>
-        <dct:description xml:lang="en">This is the distribution in RDF/XML of the location and address ontology</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia CLV-AP_IT</dct:title>
-        <dct:title xml:lang="en">RDF/XML distribution of CLV-AP_IT Ontology</dct:title>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei luoghi e degli indirizzi</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of the location and address ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia CLV-AP_IT</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of CLV-AP_IT Ontology</terms:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.rdf"/>
     </owl:NamedIndividual>
@@ -2544,7 +2627,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/organization/public-organization/td">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <dct:identifier>TD</dct:identifier>
+        <terms:identifier>TD</terms:identifier>
         <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
         <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
     </owl:NamedIndividual>
@@ -2557,7 +2640,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
         <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
         <l0:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</l0:name>
         <l0:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</l0:name>
-        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
+        <terms:identifier>cnr - Z6HZEH - STLab</terms:identifier>
     </owl:NamedIndividual>
     
 
