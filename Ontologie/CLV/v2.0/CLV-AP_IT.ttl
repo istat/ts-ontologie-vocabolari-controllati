@@ -1988,43 +1988,6 @@ l0:Location rdf:type owl:Class .
                                                        vcard:hasEmail <mailto:info@dati.gov.it> .
 
 
-###  https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD
-<https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei Luoghi e degli Indirizzi"@it ,
-                                                                            "This is the distribution in JSON-LD of the Location and Address ontology"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione JSON-LD ontologia CLV-AP_IT"@it ,
-                                                                      "JSON-LD distribution of CLV-AP_IT Ontology"@en ;
-                                                            dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.jsonld> .
-
-
-###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE
-<https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
-                                                                        admsapit:SemanticAssetDistribution ;
-                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei luoghi e degli indirizzi"@it ,
-                                                                               "This is the distribution in RDF/turtle of the location and address ontology"@en ;
-                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                               dct:title "Distribuzione RDF/Turtle ontologia CLV-AP_IT"@it ,
-                                                                         "RDF/Turtle distribution of CLV-AP_IT Ontology"@en ;
-                                                               dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.ttl> .
-
-
-###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML
-<https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei luoghi e degli indirizzi"@it ,
-                                                                            "This is the distribution in RDF/XML of the location and address ontology"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione RDF/XML ontologia CLV-AP_IT"@it ,
-                                                                      "RDF/XML distribution of CLV-AP_IT Ontology"@en ;
-                                                            dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.rdf> .
 
 
 ###  https://w3id.org/italia/data/organization/public-organization/td
