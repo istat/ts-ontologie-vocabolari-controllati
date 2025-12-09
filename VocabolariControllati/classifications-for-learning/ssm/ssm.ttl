@@ -36,7 +36,7 @@
 	<http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
 	<http://purl.org/dc/terms/issued> "2025-12-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://purl.org/dc/terms/modified> "2025-12-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://www.w3.org/2004/02/skos/core#hasTopConcept>     <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/SpecialisationTitle/705010200010001000>, 
+	skos:hasTopConcept    <https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/SpecialisationTitle/705010200010001000>, 
 															<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/SpecialisationTitle/705010200010004000>, 
 															<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/SpecialisationTitle/705010200010005000>, 
 															<https://w3id.org/italia/controlled-vocabulary/classifications-for-learning/SpecialisationTitle/705010300020001000>, 
