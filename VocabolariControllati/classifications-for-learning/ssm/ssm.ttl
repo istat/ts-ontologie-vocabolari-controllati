@@ -191,8 +191,8 @@
 	<http://purl.org/dc/terms/description> "Distribuzione RDF/Turtle del vocabolario controllato delle Scuole di Specializzazione di Medicina"@it , "RDF/Turtle distribution of the controlled vocabulary of Medical Specialization Schools"@en ;
 	<http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
 	<http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-	<http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/VocabolariControllati/classifications-for-learning/ssm/ssm.ttl> ;
-	<http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/dati-semantic-assets/blob/master/VocabolariControllati/classifications-for-learning/ssm> .
+	<http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-learning/ssm/ssm.ttl> ;
+	<http://www.w3.org/ns/dcat#accessURL> <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-learning/ssm> .
 
 
 
