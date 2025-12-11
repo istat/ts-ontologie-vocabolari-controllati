@@ -82,7 +82,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/001> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Torino"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC11> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "001" ;
@@ -99,7 +98,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Torino"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC11> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "201" ;
@@ -115,7 +113,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/002> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Vercelli"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC12> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "002" ;
@@ -129,7 +126,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/003> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Novara"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC15> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "003" ;
@@ -143,7 +139,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/004> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cuneo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC16> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "004" ;
@@ -157,7 +152,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/005> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Asti"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC17> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "005" ;
@@ -171,7 +165,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/006> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Alessandria"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC18> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "006" ;
@@ -185,7 +178,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/007> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Valle d'Aosta/Vallée d'Aoste"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC20> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/02> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "007" ;
@@ -199,7 +191,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/008> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Imperia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC31> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "008" ;
@@ -213,7 +204,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/009> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Savona"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC32> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "009" ;
@@ -227,7 +217,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/010> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Genova"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "010" ;
@@ -244,7 +233,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/210> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Genova"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "210" ;
@@ -260,7 +248,6 @@ owl:deprecated
 		
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/011> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "La Spezia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC34> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "011" ;
@@ -274,7 +261,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/012> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Varese"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC41> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "012" ;
@@ -288,7 +274,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/013> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Como"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC42> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "013" ;
@@ -302,7 +287,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/014> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Sondrio"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC44> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "014" ;
@@ -316,7 +300,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/015> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Milano"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC45> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "015" ;
@@ -333,7 +316,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/215> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Milano"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC45> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "215" ;
@@ -349,7 +331,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/016> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Bergamo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC46> , <http://nuts.geovocab.org/id/ITC43> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "016" ;
@@ -363,7 +344,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/017> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Brescia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC47> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "017" ;
@@ -377,7 +357,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/018> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Pavia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC48> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "018" ;
@@ -391,7 +370,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/019> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cremona"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC4A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "019" ;
@@ -405,7 +383,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/020> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Mantova"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC4B> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "020" ;
@@ -419,7 +396,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/021> a <https://w3id.org/italia/onto/CLV/AutonomousProvince> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Bolzano/Bozen"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD10> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "021" ;
@@ -433,7 +409,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/022> a <https://w3id.org/italia/onto/CLV/AutonomousProvince> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Trento"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD20> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "022" ;
@@ -447,7 +422,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/023> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Verona"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD31> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "023" ;
@@ -461,7 +435,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/024> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Vicenza"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD32> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "024" ;
@@ -475,7 +448,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/025> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Belluno"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "025" ;
@@ -489,7 +461,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/026> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Treviso"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD34> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "026" ;
@@ -503,7 +474,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/027> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Venezia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD35> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "027" ;
@@ -520,7 +490,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/227> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Venezia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD35> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "227" ;
@@ -536,7 +505,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/028> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Padova"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD36> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "028" ;
@@ -550,7 +518,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/029> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Rovigo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD37> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "029" ;
@@ -564,7 +531,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/030> a <https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Udine"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD42> , <http://nuts.geovocab.org/id/ITD33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "030" ;
@@ -578,7 +544,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/031> a <https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Gorizia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD43> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "031" ;
@@ -592,7 +557,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/032> a <https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Trieste"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD44> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "032" ;
@@ -606,7 +570,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/033> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Piacenza"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD51> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "033" ;
@@ -620,7 +583,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/034> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Parma"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD52> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "034" ;
@@ -634,7 +596,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/035> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Reggio nell'Emilia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD53> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "035" ;
@@ -648,7 +609,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/036> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Modena"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD54> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "036" ;
@@ -662,7 +622,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/037> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Bologna"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD55> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "037" ;
@@ -679,7 +638,6 @@ owl:deprecated
 		
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/237> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Bologna"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD55> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "237" ;
@@ -695,7 +653,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/038> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ferrara"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD56> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "038" ;
@@ -709,7 +666,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/039> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ravenna"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD57> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "039" ;
@@ -723,7 +679,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/040> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Forlì-Cesena"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD58> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "040" ;
@@ -737,7 +692,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/041> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Pesaro e Urbino"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE31> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "041" ;
@@ -751,7 +705,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/042> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ancona"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE32> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "042" ;
@@ -765,7 +718,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/043> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Macerata"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "043" ;
@@ -779,7 +731,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/044> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ascoli Piceno"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE34> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "044" ;
@@ -793,7 +744,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/045> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Massa-Carrara"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE11> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "045" ;
@@ -807,7 +757,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/046> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Lucca"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE12> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "046" ;
@@ -821,7 +770,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/047> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Pistoia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE13> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "047" ;
@@ -835,7 +783,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/048> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Firenze"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE14> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "048" ;
@@ -852,7 +799,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/248> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Firenze"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE14> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "248" ;
@@ -868,7 +814,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/049> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Livorno"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE16> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "049" ;
@@ -882,7 +827,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/050> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Pisa"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE17> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "050" ;
@@ -896,7 +840,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/051> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Arezzo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE18> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "051" ;
@@ -910,7 +853,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/052> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Siena"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE19> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "052" ;
@@ -924,7 +866,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/053> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Grosseto"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE1A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "053" ;
@@ -938,7 +879,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/054> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Perugia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE21> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "054" ;
@@ -952,7 +892,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/055> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Terni"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE22> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "055" ;
@@ -966,7 +905,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/056> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Viterbo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE41> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "056" ;
@@ -980,7 +918,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/057> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Rieti"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE42> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "057" ;
@@ -994,7 +931,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/058> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Roma"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE43> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "058" ;
@@ -1011,7 +947,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/258> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Roma"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE43> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "258" ;
@@ -1027,7 +962,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/059> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Latina"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE44> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "059" ;
@@ -1041,7 +975,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/060> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Frosinone"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE45> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "060" ;
@@ -1055,7 +988,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/061> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Caserta"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF31> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "061" ;
@@ -1069,7 +1001,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/062> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Benevento"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF32> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "062" ;
@@ -1083,7 +1014,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/063> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Napoli"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "063" ;
@@ -1100,7 +1030,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/263> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Napoli"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF33> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "263" ;
@@ -1116,7 +1045,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/064> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Avellino"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF34> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "064" ;
@@ -1130,7 +1058,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/065> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Salerno"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF35> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "065" ;
@@ -1144,7 +1071,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/066> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "L'Aquila"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF11> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "066" ;
@@ -1158,7 +1084,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/067> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Teramo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF12> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "067" ;
@@ -1172,7 +1097,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/068> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Pescara"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF13> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "068" ;
@@ -1186,7 +1110,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/069> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Chieti"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF14> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "069" ;
@@ -1200,7 +1123,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/070> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Campobasso"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF22> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "070" ;
@@ -1214,7 +1136,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/071> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Foggia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF41> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "071" ;
@@ -1228,7 +1149,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/072> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Bari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF42> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "072" ;
@@ -1245,7 +1165,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/272> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Bari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF42> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "272" ;
@@ -1261,7 +1180,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/073> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Taranto"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF43> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "073" ;
@@ -1275,7 +1193,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/074> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Brindisi"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF44> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "074" ;
@@ -1289,7 +1206,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/075> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Lecce"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF45> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "075" ;
@@ -1303,7 +1219,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/076> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Potenza"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF51> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "076" ;
@@ -1317,7 +1232,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/077> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Matera"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF52> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "077" ;
@@ -1331,7 +1245,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/078> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cosenza"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF61> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "078" ;
@@ -1345,7 +1258,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/079> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Catanzaro"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF63> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "079" ;
@@ -1359,7 +1271,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/080> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Reggio di Calabria"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF65> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "080" ;
@@ -1376,7 +1287,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/280> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Reggio di Calabria"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF65> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "280" ;
@@ -1392,7 +1302,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/081> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Trapani"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG11> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "081" ;
@@ -1406,7 +1315,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/082> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Palermo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG12> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "082" ;
@@ -1423,7 +1331,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/282> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Palermo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG12> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "282" ;
@@ -1439,7 +1346,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/083> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Messina"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG13> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "083" ;
@@ -1456,7 +1362,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/283> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Messina"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG13> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "283" ;
@@ -1472,7 +1377,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/084> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Agrigento"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG14> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "084" ;
@@ -1486,7 +1390,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/085> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Caltanissetta"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG15> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "085" ;
@@ -1500,7 +1403,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/086> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Enna"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG16> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "086" ;
@@ -1514,7 +1416,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/087> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Catania"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG17> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "087" ;
@@ -1531,7 +1432,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/287> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Catania"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG17> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "287" ;
@@ -1547,7 +1447,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/088> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ragusa"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG18> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "088" ;
@@ -1561,7 +1460,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/089> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Siracusa"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG19> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "089" ;
@@ -1575,7 +1473,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/090> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Sassari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG29> , <http://nuts.geovocab.org/id/ITG25> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "090" ;
@@ -1592,7 +1489,6 @@ owl:deprecated
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/312> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Sassari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG29> , <http://nuts.geovocab.org/id/ITG25> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "312" ;
@@ -1608,7 +1504,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/091> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Nuoro"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "091" ;
@@ -1625,7 +1520,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/114> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Nuoro"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "114" ;
@@ -1641,7 +1535,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/113> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Gallura Nord-Est Sardegna"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "113" ;
@@ -1656,7 +1549,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/116> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ogliastra"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "116" ;
@@ -1671,7 +1563,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/117> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Medio Campidano"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "117" ;
@@ -1686,7 +1577,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/119> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Sulcis Iglesiente"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "119" ;
@@ -1701,7 +1591,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/092> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cagliari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG27> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "092" ;
@@ -1718,7 +1607,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/292> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cagliari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG27> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "292" ;
@@ -1736,7 +1624,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/318> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cagliari"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG27> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "318" ;
@@ -1752,7 +1639,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/093> a <https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Pordenone"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD41> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "093" ;
@@ -1766,7 +1652,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/094> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Isernia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF21> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "094" ;
@@ -1780,7 +1665,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/095> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Oristano"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG28> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "095" ;
@@ -1797,7 +1681,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/115> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Oristano"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG26> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "115" ;
@@ -1814,7 +1697,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/096> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Biella"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC13> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "096" ;
@@ -1828,7 +1710,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/097> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Lecco"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC43> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "097" ;
@@ -1842,7 +1723,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/098> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Lodi"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC49> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "098" ;
@@ -1856,7 +1736,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/099> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Rimini"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITD59> , <http://nuts.geovocab.org/id/ITE31> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "099" ;
@@ -1870,7 +1749,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/100> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Prato"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITE15> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "100" ;
@@ -1884,7 +1762,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/101> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Crotone"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF62> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "101" ;
@@ -1898,7 +1775,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/102> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Vibo Valentia"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITF64> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "102" ;
@@ -1912,7 +1788,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/103> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Verbano-Cusio-Ossola"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITC14> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "103" ;
@@ -1926,7 +1801,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/108> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Monza e della Brianza"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/-> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "108" ;
@@ -1940,7 +1814,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/109> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Fermo"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/-> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "109" ;
@@ -1954,7 +1827,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/110> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Barletta-Andria-Trani"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/-> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "110" ;
@@ -1968,7 +1840,6 @@ owl:deprecated
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/111> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Sud Sardegna"@it ;
-	<http://www.w3.org/2002/07/owl#sameAs> <http://nuts.geovocab.org/id/ITG2B> , <http://nuts.geovocab.org/id/ITG27> , <http://nuts.geovocab.org/id/ITG2C> , <http://nuts.geovocab.org/id/ITG28> , <http://nuts.geovocab.org/id/ITG2A> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "111" ;
@@ -1984,7 +1855,7 @@ owl:deprecated
 
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/002> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/003> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/004> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/005> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/006> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/096> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/103> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/007> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/012> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/013> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/014> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/016> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/017> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/018> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/019> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/020> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/097> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/098> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/108> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/021> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/022> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/023> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/024> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/025> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/026> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/028> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/029> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/030> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/031> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/032> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/093> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/008> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/009> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/011> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/033> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/034> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/035> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/036> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/038> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/039> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/040> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/099> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/045> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/046> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/047> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/049> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/050> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/051> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/052> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/053> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/100> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/054> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/055> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/041> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/042> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/043> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/044> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/109> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/056> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/057> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/059> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/060> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/066> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/067> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/068> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/069> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/070> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/094> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/061> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/062> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/064> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/065> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/071> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/073> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/074> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/075> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/110> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/076> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/077> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/078> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/079> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/101> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/102> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/081> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/084> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/085> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/086> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/088> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/089> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/090> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/091> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/095> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/111> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/001> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/015> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/027> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/010> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/037> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/048> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/058> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/063> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/072> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/080> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/082> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/083> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/087> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/092> ,  <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/215>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/227>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/210>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/237>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/248>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/258>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/263>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/272>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/282>  ,	 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/280>  , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/283>  , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/287>  , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/312>  , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/318>  , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/292>  .
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/002> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/003> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/004> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/005> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/006> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/096> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/103> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/007> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/012> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/013> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/014> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/016> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/017> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/018> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/019> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/020> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/097> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/098> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/108> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/021> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/022> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/023> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/024> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/025> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/026> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/028> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/029> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/030> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/031> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/032> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/093> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/008> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/009> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/011> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/033> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/034> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/035> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/036> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/038> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/039> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/040> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/099> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/045> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/046> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/047> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/049> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/050> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/051> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/052> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/053> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/100> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/054> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/055> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/041> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/042> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/043> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/044> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/109> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/056> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/057> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/059> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/060> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/066> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/067> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/068> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/069> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/070> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/094> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/061> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/062> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/064> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/065> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/071> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/073> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/074> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/075> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/110> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/076> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/077> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/078> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/079> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/101> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/102> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/081> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/084> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/085> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/086> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/088> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/089> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/090> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/091> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/095> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/111> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/001> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/015> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/027> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/010> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/037> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/048> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/058> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/063> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/072> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/080> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/082> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/083> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/087> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/092> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/215> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/227> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/210> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/237> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/248> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/258> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/263> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/272> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/282> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/280> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/283> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/287> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/312> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/318> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/292> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/113> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/114> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/115> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/116> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/117> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/119> .
 
 <https://w3id.org/italia/data/identifiers/provinces-identifiers/metropolitan-city-code/201> a <https://w3id.org/italia/onto/CLV/Identifier> ;
 	<https://w3id.org/italia/onto/CLV/identifierType> "Codice Città Metropolitana"@it ;
