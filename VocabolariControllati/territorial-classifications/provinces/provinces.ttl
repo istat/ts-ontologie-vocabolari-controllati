@@ -30,7 +30,7 @@ owl:deprecated
 	<http://www.w3.org/ns/dcat#distribution> <https://w3id.org/italia/data/resource/Distribution/provinces_RDF_Turtle> , <https://w3id.org/italia/data/resource/Distribution/provinces_RDF_XML> , <https://w3id.org/italia/data/resource/Distribution/provinces_JSON_LD> , <https://w3id.org/italia/data/resource/Distribution/provinces_CSV>;
 	<http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/data/resource/ContactPoint/voc_AgID> ;
 	<http://purl.org/dc/terms/issued> "2018-06-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://purl.org/dc/terms/modified> "2025-12-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://purl.org/dc/terms/modified> "2025-12-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://www.w3.org/2002/07/owl#versionInfo> "3.0 - Aggiornamento allineato alla riforma dell’assetto territoriale della Regione Sardegna, in vigore dal 17 luglio 2025, che istituisce la Città metropolitana di Sassari e le nuove Province della Gallura Nord-Est Sardegna, dell’Ogliastra, del Sulcis Iglesiente e del Medio Campidano e sopprime le Province di Sassari e del Sud Sardegna. Le nuove denominazioni e i nuovi codici statistici delle unità amministrative saranno utilizzati a partire dal 1° gennaio 2026."@it .
 
 <https://w3id.org/italia/data/public-organization/agid> a <http://dati.gov.it/onto/dcatapit#Agent> , <http://xmlns.com/foaf/0.1/Agent> ;
