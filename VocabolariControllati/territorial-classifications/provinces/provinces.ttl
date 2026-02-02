@@ -30,7 +30,7 @@ owl:deprecated
 	<http://www.w3.org/ns/dcat#distribution> <https://w3id.org/italia/data/resource/Distribution/provinces_RDF_Turtle> , <https://w3id.org/italia/data/resource/Distribution/provinces_RDF_XML> , <https://w3id.org/italia/data/resource/Distribution/provinces_JSON_LD> , <https://w3id.org/italia/data/resource/Distribution/provinces_CSV>;
 	<http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/data/resource/ContactPoint/voc_AgID> ;
 	<http://purl.org/dc/terms/issued> "2018-06-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://purl.org/dc/terms/modified> "2025-12-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://purl.org/dc/terms/modified> "2026-02-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://www.w3.org/2002/07/owl#versionInfo> "3.0 - Aggiornamento allineato alla riforma dell’assetto territoriale della Regione Sardegna, in vigore dal 17 luglio 2025, che istituisce la Città metropolitana di Sassari e le nuove Province della Gallura Nord-Est Sardegna, dell’Ogliastra, del Sulcis Iglesiente e del Medio Campidano e sopprime le Province di Sassari e del Sud Sardegna. Le nuove denominazioni e i nuovi codici statistici delle unità amministrative saranno utilizzati a partire dal 1° gennaio 2026."@it .
 
 <https://w3id.org/italia/data/public-organization/agid> a <http://dati.gov.it/onto/dcatapit#Agent> , <http://xmlns.com/foaf/0.1/Agent> ;
@@ -109,7 +109,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<https://w3id.org/italia/onto/l0/name> "Torino"@it ;
 	owl:deprecated "true"^^xsd:boolean ;	
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/201> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -124,7 +123,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> ;
 	<https://w3id.org/italia/onto/l0/name> "Torino"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/001> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/002> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -244,7 +242,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<https://w3id.org/italia/onto/l0/name> "Genova"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/210> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/210> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -259,7 +256,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> ;
 	<https://w3id.org/italia/onto/l0/name> "Genova"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/010> .
 		
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/011> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -327,7 +323,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<https://w3id.org/italia/onto/l0/name> "Milano"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/215> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/215> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -342,7 +337,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> ;
 	<https://w3id.org/italia/onto/l0/name> "Milano"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/015>.
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/016> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -501,7 +495,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<https://w3id.org/italia/onto/l0/name> "Venezia"@it ; 
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1866-11-20)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/227> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/227> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -516,7 +509,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> ;
 	<https://w3id.org/italia/onto/l0/name> "Venezia"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/027> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/028> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -649,7 +641,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<https://w3id.org/italia/onto/l0/name> "Bologna"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/237> .
 		
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/237> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -664,7 +655,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> ;
 	<https://w3id.org/italia/onto/l0/name> "Bologna"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/037> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/038> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -810,7 +800,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
 	<https://w3id.org/italia/onto/l0/name> "Firenze"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/248> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/248> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -824,8 +813,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/FI> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/metropolitan-city-code/248> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> ;
-	<https://w3id.org/italia/onto/l0/name> "Firenze"@it ;	
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
+	<https://w3id.org/italia/onto/l0/name> "Firenze"@it ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/048> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/049> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -958,7 +946,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<https://w3id.org/italia/onto/l0/name> "Roma"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1871-01-15)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/258> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/258> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -973,7 +960,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> ;
 	<https://w3id.org/italia/onto/l0/name> "Roma"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/058> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/059> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1041,7 +1027,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<https://w3id.org/italia/onto/l0/name> "Napoli"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/263> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/263> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1056,7 +1041,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> ;
 	<https://w3id.org/italia/onto/l0/name> "Napoli"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/063> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/064> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1176,7 +1160,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<https://w3id.org/italia/onto/l0/name> "Bari"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2015-01-01)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/272> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/272> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1191,7 +1174,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> ;
 	<https://w3id.org/italia/onto/l0/name> "Bari"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2015-01-01)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/072> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/073> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1298,7 +1280,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<https://w3id.org/italia/onto/l0/name> "Reggio di Calabria"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2016-12-29)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/280> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/280> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1313,7 +1294,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> ;
 	<https://w3id.org/italia/onto/l0/name> "Reggio di Calabria"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2016-12-29)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/080> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/081> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1342,7 +1322,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<https://w3id.org/italia/onto/l0/name> "Palermo"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2016-06-06)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/282> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/282> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1357,7 +1336,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<https://w3id.org/italia/onto/l0/name> "Palermo"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2016-06-06)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/082> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/083> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1373,7 +1351,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<https://w3id.org/italia/onto/l0/name> "Messina"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2016-06-06)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/283> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/283> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1388,7 +1365,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<https://w3id.org/italia/onto/l0/name> "Messina"@it ;	
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2016-06-06)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/083> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/084> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1443,7 +1419,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<https://w3id.org/italia/onto/l0/name> "Catania"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2016-06-06)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/287> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/287> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1458,7 +1433,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> ;
 	<https://w3id.org/italia/onto/l0/name> "Catania"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2016-06-06)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/087> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/088> a <https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1500,7 +1474,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Sassari"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2025-07-17)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/312> .
 	
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/312> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1515,7 +1488,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Sassari"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/090> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/091> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1531,7 +1503,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Nuoro"@it ;
     owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2025-07-17)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/114> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/114> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1546,7 +1517,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Nuoro"@it ;
-    clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/091> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/113> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1560,8 +1530,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/113> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/OT> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
-	<https://w3id.org/italia/onto/l0/name> "Gallura Nord-Est Sardegna"@it ;
-    clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> .
+	<https://w3id.org/italia/onto/l0/name> "Gallura Nord-Est Sardegna"@it .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/116> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Ogliastra"@it ;
@@ -1574,8 +1543,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/116> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/OG> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
-	<https://w3id.org/italia/onto/l0/name> "Ogliastra"@it ;
-    clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> .
+	<https://w3id.org/italia/onto/l0/name> "Ogliastra"@it .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/117> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Medio Campidano"@it ;
@@ -1588,8 +1556,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/117> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/VS> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
-	<https://w3id.org/italia/onto/l0/name> "Medio Campidano"@it ;
-    clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> .
+	<https://w3id.org/italia/onto/l0/name> "Medio Campidano"@it .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/119> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Sulcis Iglesiente"@it ;
@@ -1602,8 +1569,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasIdentifier> <https://w3id.org/italia/data/identifiers/provinces-identifiers/province-code/119> , <https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/CI> ;
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
-	<https://w3id.org/italia/onto/l0/name> "Sulcis Iglesiente"@it ;
-    clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> .
+	<https://w3id.org/italia/onto/l0/name> "Sulcis Iglesiente"@it .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/092> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Cagliari"@it ;
@@ -1618,7 +1584,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Cagliari"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2016-04-28)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/292> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/292> a <https://w3id.org/italia/onto/CLV/MetropolitanCity> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1634,7 +1599,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Cagliari"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2016-04-28)-(2025-07-17)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/092> ;
 	xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/318> .
 
@@ -1650,7 +1614,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "4" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Cagliari"@it ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/292> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/093> a <https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1692,7 +1655,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Oristano"@it ;
 	owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2025-07-17)> ;
     xkos:isReplacedBy	<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/115> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/115> a <https://w3id.org/italia/onto/CLV/Province> , <https://w3id.org/italia/onto/CLV/UTS> , <https://w3id.org/italia/onto/CLV/AdminUnitComponent> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -1707,7 +1669,6 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Oristano"@it ;
-    clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(2025-07-17)-(9999-12-31)> ;
 	xkos:replaces <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/095> .
 
 
@@ -1866,8 +1827,7 @@ owl:deprecated
 	<https://w3id.org/italia/onto/CLV/hasRankOrder> "3" ;
 	<https://w3id.org/italia/onto/CLV/situatedWithin> <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> ;
 	<https://w3id.org/italia/onto/l0/name> "Sud Sardegna"@it ;
-    owl:deprecated "true"^^xsd:boolean ;
-	clvapit:hasSOValidity <https://w3id.org/italia/data/time-intervals/(1861-03-17)-(2025-07-17)> .
+    owl:deprecated "true"^^xsd:boolean .
 
 
 
