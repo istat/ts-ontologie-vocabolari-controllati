@@ -251,7 +251,7 @@ ndc:keyConcept a rdfs:Property .
 	dct:title "Ateco 2007 - Classificazione delle attività economiche - Aggiornamento 2021"@it ;
 	rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/ateco-2007> ;
 	dct:identifier "ISTAT:D.6" ;
-	ndc:keyConcept "ateco-2007" ;
+	ndc:keyConcept "ateco-2007-2021" ;
 	dct:publisher <https://w3id.org/italia/data/public-organization/agid> ;
 	dcat:distribution <https://w3id.org/italia/data/distribution/Ateco2007-RDF-Turtle> ,  <https://w3id.org/italia/data/distribution/Ateco2007-CSV> ,
 	<https://w3id.org/italia/data/distribution/Ateco2007-XLSX>  ;
