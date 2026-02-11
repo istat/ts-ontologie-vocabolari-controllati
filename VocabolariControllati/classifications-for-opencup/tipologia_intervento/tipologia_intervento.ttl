@@ -1,0 +1,839 @@
+@prefix : <https://w3id.org/italia/onto/OpenCUP/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xkos: <http://purl.org/linked-data/xkos#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix adms:     <http://www.w3.org/ns/adms#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+
+
+
+###INSERIRE METADATI###
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/tipologia_intervento>
+  rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+  dct:title "Intervention Type Controlled Vocabulary"@en , "Vocabolario Controllato della Tipologia di Intervento"@it ;
+  dct:description "Vocabolario Controllato della Tipologia di Intervento"@it, "Intervention Type Controlled Vocabulary"@en;
+  xkos:numberOfLevels "2" ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/tipologia_intervento";
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/PCM-ESF6GG> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>  ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/tipologia_intervento> ;
+  dcat:keyword "Tipologia Intervento"@it, "Intervention Type"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/tipologia_intervento_RDF_Turtle> , <https://w3id.org/italia/data/distribution/tipologia_intervento_CSV> ;
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+  dct:issued "2026-02-11"^^xsd:date ;
+  dct:modified "20226-02-11"^^xsd:date ;
+  owl:versionInfo "Versione 0.1"@it ; 
+  ndc:keyConcept "Tipologia_di_Intervento" ;
+  skos:hasTopConcept  <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07> ;
+					
+  rdfs:comment "Intervention Type Controlled Vocabulary"@en , "Vocabolario Controllato della Tipologia di Intervento"@it ;
+  rdfs:label "Intervention Type Controlled Vocabulary"@en , "Vocabolario Controllato della Tipologia di Intervento"@it ;
+  skos:notation "Intervention Type Controlled Vocabulary"@en , "Vocabolario Controllato della Tipologia di Intervento"@it ;       
+  skos:prefLabel "Intervention Type Controlled Vocabulary"@en , "Vocabolario Controllato della Tipologia di Intervento"@it .   
+
+
+  <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+   foaf:Agent ;
+   dct:identifier "PCM-1RSIZZ" ;
+   foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+   "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+   
+   <https://w3id.org/italia/data/public-organization/PCM-ESF6GG> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+   foaf:Agent ;
+   dct:identifier "PCM-ESF6GG" ;
+   foaf:name "Dipartimento per la Programmazione e il Coordinamento della Politica Economica (DIPE) della Presidenza del Consiglio dei Ministri"@it,
+   "Department for Economic Policy Planning and Coordination (DIPE) of the Prime Minister's Office"@en .
+  
+  
+  <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
+
+
+  <https://w3id.org/italia/data/standard/SKOS>
+	  a dcatapit:Standard , dct:Standard ;
+	  dct:identifier "SKOS" ;
+	  dct:title "Simple Knowledge Organization System - SKOS" ;
+	  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+	      a dcatapit:Agent , foaf:Agent ;
+	      dct:identifier "ISTAT" ;
+	      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .  
+
+
+
+###INSERIRE DISTRIBUTION###
+
+
+
+	
+
+
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/tipologia_intervento>
+  skos:hasTopConcept <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07> .
+
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_02> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_02";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "SOTTOSCRIZIONE INIZIALE DI CAPITALE SOCIALE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:narrower <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_02>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_03>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_04>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_05>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_07>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_99>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_01>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:notation "08";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GARANZIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_03> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_03";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "COSTITUZIONE O INCREMENTO DI FONDO PER CAPITALE DI RISCHIO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_04> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_04";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "COSTITUZIONE O INCREMENTO DI FONDO PER PRESTITO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_05> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_05";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "COSTITUZIONE O INCREMENTO DI FONDO PER GARANZIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_07> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_07";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ACQUISTO DI AZIONI O QUOTE DI CAPITALE SOCIALE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_99> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_99";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ALTRO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01_00> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01>;
+  skos:notation "01_00";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "NUOVA FORNITURA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:narrower <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01_00>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01_08>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01_99>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:notation "01";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "ACQUISTO DI BENI" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01_08> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01>;
+  skos:notation "01_08";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01_99> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/01>;
+  skos:notation "01_99";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ALTRO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_10> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ASSISTENZA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:narrower <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_10>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_11>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_12>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_13>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_14>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_15>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_16>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_17>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_18>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_19>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_20>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_21>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_22>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_23>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_24>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_25>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_26>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_27>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_28>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_29>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_30>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_31>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_99>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:notation "02";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "ACQUISTO O REALIZZAZIONE DI SERVIZI" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_11> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_11";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI O PIANIFICAZIONE TERRITORIALE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_12> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_12";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "CORSI DI FORMAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_13> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_13";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "CONSULENZE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_14> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_14";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "PROGETTI DI RICERCA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_15> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_15";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "LAVORI SOCIALMENTE UTILI" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_16> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_16";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "BREVETTI" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_17> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_17";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RESTAURO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_18> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_18";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_19> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_19";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "APPLICATIVI E PIATTAFORME WEB" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_20> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_20";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER L'ADEGUAMENTO SISMICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_21> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_21";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER IL MIGLIORAMENTO SISMICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_22> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_22";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER NUOVA REALIZZAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_23> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_23";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER MESSA IN SICUREZZA (ESCLUSO DISSESTO IDROGEOLOGICO)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_24> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_24";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER RECUPERO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_25> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_25";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER RISTRUTTURAZIONE (PER CAMBIO DI DESTINAZIONE D'USO)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_26> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_26";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_27> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_27";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER ABBATTIMENTO BARRIERE ARCHITETTONICHE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_28> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_28";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER ADEGUAMENTO IMPIANTISTICA E O ANTINCENDIO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_29> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_29";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER AMPLIAMENTO (COMPRESA SOPRAELEVAZIONE) O POTENZIAMENTO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_30> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_30";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER DISSESTO IDROGEOLOGICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_31> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_31";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI PER AMMODERNAMENTO TECNOLOGICO E LABORATORIALE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02_99> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/02>;
+  skos:notation "02_99";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ALTRO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_01> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_01";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "NUOVA REALIZZAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:narrower <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_01>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_02>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_03>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_04>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_05>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_06>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_07>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_08>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_09>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_10>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_11>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_12>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_13>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_14>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_58>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_59>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_60>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_61>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_99>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:notation "03";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_02> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_02";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "DEMOLIZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_03> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_03";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RECUPERO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_04> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_04";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RISTRUTTURAZIONE (PER CAMBIO DI DESTINAZIONE D'USO)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_05> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_05";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RESTAURO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_06> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_06";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE ORDINARIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_07> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_07";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_08> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_08";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RISTRUTTURAZIONE CON EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_09> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_09";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA CON EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_10> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA DI ADEGUAMENTO SISMICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_11> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_11";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA DI MIGLIORAMENTO SISMICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_12> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_12";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA PER ACCESSIBILITÀ E ABBATTIMENTO DELLE BARRIERE ARCHITETTONICHE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_13> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_13";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA DI ADEGUAMENTO IMPIANTISTICA E O ANTINCENDIO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_14> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_14";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA PER MESSA IN SICUREZZA (ESCLUSO DISSESTO IDROGEOLOGICO)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_58> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_58";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "AMPLIAMENTO (COMPRESA SOPRAELEVAZIONE) O POTENZIAMENTO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_59> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_59";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "LAVORI SOCIALMENTE UTILI" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_60> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_60";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "AMMODERNAMENTO TECNOLOGICO E LABORATORIALE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_61> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_61";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA PER DISSESTO IDROGEOLOGICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03_99> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/03>;
+  skos:notation "03_99";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ALTRO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_01> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_01";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ACQUISTO SERVIZI REALI (INCLUSA FORMAZIONE)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:narrower <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_01>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_02>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_03>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_04>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_08>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_09>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_10>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_99>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:notation "06";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITÀ PRODUTTIVE)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_02> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_02";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "NUOVA REALIZZAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_03> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_03";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RESTAURO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_04> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_04";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RISTRUTTURAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_08> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_08";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_09> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_09";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "SOSTEGNO AL REDDITO CON RISORSE FSC E/O SIE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_10> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE STRAORDINARIA CON EFFIECIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06_99> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/06>;
+  skos:notation "06_99";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ALTRO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_01> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_01";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "NUOVA REALIZZAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:narrower <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_01>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_04>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_05>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_08>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_09>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_10>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_11>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_12>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_13>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_15>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_16>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_17>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_18>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_19>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_20>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_21>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_22>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_23>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_24>,
+    <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_25>, <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_99>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:notation "07";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "CONCESSIONE DI INCENTIVI AD UNITÀ PRODUTTIVE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_04> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_04";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RISTRUTTURAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_05> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_05";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "NUOVA REALIZZAZIONE CON EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_08> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_08";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_09> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_09";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "AMPLIAMENTO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_10> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "MANUTENZIONE CON EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_11> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_11";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STUDI E PROGETTAZIONI" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_12> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_12";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "AMPLIAMENTO CON EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_13> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_13";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "AMMODERNAMENTO CON EFFICIENTAMENTO ENERGETICO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_15> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_15";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "AMMODERNAMENTO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_16> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_16";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RICONVERSIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_17> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_17";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "RIATTIVAZIONE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_18> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_18";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "TRASFERIMENTO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_19> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_19";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ACQUISTO SERVIZI REALI (INCLUDE FORMAZIONE)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_20> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_20";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ATTIVITÀ DI RICERCA" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_21> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_21";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "INCENTIVI AL LAVORO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_22> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_22";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "COMPENSAZIONI (AD ESEMPIO PER PERDITA DI REDDITO O MANCATO GUADAGNO)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_23> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_23";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ACQUISTO DI IMMOBILIZZAZIONI (AD ESEMPIO PESCHERECCI O AZIENDE)" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_24> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_24";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "CARENZA DI LIQUIDITÀ" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_25> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_25";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "SOSTEGNO AL REDDITO CON RISORSE FSC E/O SIE" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07_99> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/07>;
+  skos:notation "07_99";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ALTRO" .
+
+<https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08_01> a skos:Concept,
+    :Tipologia_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/tipologia_intervento>;
+  skos:broader <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>;
+  skos:notation "08_01";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "SOTTOSCRIZIONE DI AUMENTO DI CAPITALE SOCIALE" .
