@@ -38,9 +38,9 @@
   dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/natura_intervento> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/natura_intervento>;
   dcat:keyword "Natura Intervento"@it, "Intervention Nature"@en ;
-  dcat:distribution <https://w3id.org/italia/data/distribution/natura_intervento_RDF_Turtle> ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/natura_intervento_RDF_Turtle> , <https://w3id.org/italia/data/distribution/natura_intervento_CSV>;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
   dct:issued "2026-02-11"^^xsd:date ;
   dct:modified "20226-02-11"^^xsd:date ;
@@ -90,7 +90,6 @@
 	      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .  
 
 
-
 ###INSERIRE DISTRIBUTION###
 
 <https://w3id.org/italia/data/distribution/natura_intervento_RDF_Turtle>
@@ -102,7 +101,14 @@
   dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-opencup/natura_intervento/natura_intervento.ttl>;
   dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-opencup/natura_intervento> .
  
- 
+ <https://w3id.org/italia/data/distribution/natura_intervento_CSV>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione CSV del vocabolario controllato della Natura di Intervento"@it , "CSV distribution of the Nature of Intervention controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato della Natura di Intervento"@it , "This is the distribution in CSV of the Linked Open Dataset of the Nature of Intervention controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-opencup/natura_intervento/natura_intervento.csv>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-opencup/natura_intervento> .
 
 
 	
