@@ -43,7 +43,7 @@
   dcat:distribution <https://w3id.org/italia/data/distribution/tipologia_intervento_RDF_Turtle> , <https://w3id.org/italia/data/distribution/tipologia_intervento_CSV> ;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
   dct:issued "2026-02-11"^^xsd:date ;
-  dct:modified "20226-02-11"^^xsd:date ;
+  dct:modified "2026-02-11"^^xsd:date ;
   owl:versionInfo "Versione 0.1"@it ; 
   ndc:keyConcept "Tipologia_di_Intervento" ;
   skos:hasTopConcept  <https://w3id.org/italia/onto/OpenCUP/Tipologia_di_intervento/08>,
