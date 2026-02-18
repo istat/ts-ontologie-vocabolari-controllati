@@ -97,6 +97,18 @@
 
 ###INSERIRE DISTRIBUTION###
 
+<https://w3id.org/italia/data/distribution/classificazione_intervento_RDF_Turtle>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione RDF/Turtle del vocabolario controllato della Classificazione di Intervento"@it , "RDF/Turtle distribution of the Classification of Intervention controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato della Classificazione di Intervento"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the Classification of Intervention controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-opencup/classificazione_intervento/classificazione_intervento.ttl>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-opencup/classificazione_intervento> .
+
+
+
+
 
 
 <https://w3id.org/italia/onto/OpenCUP/Area_di_intervento/1> a :Area_di_intervento;
