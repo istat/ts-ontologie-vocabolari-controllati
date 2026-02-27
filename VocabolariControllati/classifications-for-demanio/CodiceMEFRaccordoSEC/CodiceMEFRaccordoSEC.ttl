@@ -138,8 +138,8 @@ Railways and related operating equipment: infrastructures—managed directly or 
 Sports facilities: facilities used for sporting activities (football fields, stadiums, tennis courts, gymnasiums, public swimming pools, and other facilities owned by the State);
 Also included, separately, are structures under construction, which are accounted for when the final user is considered to have become the owner, either because a procurement contract has been concluded, as well as extraordinary maintenance works and land improvement works (i.e., interventions aimed at giving the territory an appropriate structure, such as land reclamation, protected area fencing, reforestation, etc.)."""@en;
   skos:altLabel "AN.11122";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEAEA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEAEA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFA>
   a skos:Concept;
@@ -148,8 +148,8 @@ Also included, separately, are structures under construction, which are accounte
   skos:prefLabel "Rights of enjoyment over property owned by others"@en, "Diritti reali di godimento sui beni altrui"@it;
   skos:definition "Diritti che attribuiscono al titolare (Stato) una signoria limitata su beni di terzi."@it,
     "Rights that grant the holder (the State) a limited control or authority over property owned by third parties."@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAA>
   a skos:Concept;
@@ -157,8 +157,8 @@ Also included, separately, are structures under construction, which are accounte
   skos:notation "BA AA BA AA";
   skos:prefLabel "Exploitation rights"@en, "Diritti di sfruttamento"@it;
   skos:definition "Diritti sui beni per ricavare il maggior utile possibile."@it, "Rights over assets aimed at deriving the maximum possible benefit."@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA>
   a skos:Concept;
@@ -167,10 +167,10 @@ Also included, separately, are structures under construction, which are accounte
   skos:prefLabel "Natural State-Owned Assets"@en, "Beni del demanio naturale"@it;
   skos:definition "Beni di proprietà dello Stato costituiti dal demanio marittimo, dal demanio idrico e forestale."@it,
     "State-owned assets consisting of maritime, water, and forest public property."@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAACA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAACA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA>
   a skos:Concept;
@@ -179,14 +179,14 @@ Also included, separately, are structures under construction, which are accounte
   skos:prefLabel "Land"@en, "Terreni"@it;
   skos:definition "Terreni, compresa la copertura del suolo, nonché le relative acque di superficie, su cui sono esercitati i diritti di proprietà. Sono esclusi i fabbricati o le altre opere costruite su di essi o che li attraversano, le coltivazioni, gli alberi e gli animali. I terreni sono costituiti da aree edificabili, terreni sottostanti a fabbricati e ad altre opere, terreni coltivati, parchi con relative acque di superficie, aree archeologiche e terreni sottoposti a tutela, ed altri terreni con relative acque di superficie, come specificato in appresso."@it,
     "The ground, including the soil covering and any associated surface waters, over which ownership rights are enforced. Excluded are any buildings or other structures situated on it or running through it; cultivated crops, trees and animals. Land consists of building sites, land underlying buildings and structures, land under cultivation, recreational land and associated surface water, archaeological areas and protected land, and other land and associated surface water, as defined below."@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAACA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAADA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAEA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAFA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAGA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAACA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAADA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAEA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAFA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAGA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA>
   a skos:Concept;
@@ -195,10 +195,10 @@ Also included, separately, are structures under construction, which are accounte
   skos:prefLabel "Subsoil Assets"@en, "Giacimenti"@it;
   skos:definition "Riserve comprovate di minerali, poste sulla superficie terrestre o al di sotto di essa, economicamente sfruttabili, considerata la tecnologia attuale ed i prezzi relativi. I giacimenti comprendono le riserve di carbone, di petrolio e di gas naturale, le riserve di minerali metalliferi e le riserve di minerali non metalliferi, come in appresso specificato."@it,
     "Proven reserves of mineral deposits located on or below the earth's surface that are economically exploitable, given current technology and relative prices. Subsoil assets consist of coal, oil and natural gas reserves, metallic mineral reserves and non-metallic mineral reserves, as defined below."@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAACA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAACA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAA>
   a skos:Concept;
@@ -207,8 +207,8 @@ Also included, separately, are structures under construction, which are accounte
   skos:prefLabel "Non-Cultivated Biological Resources "@en, "Risorse biologiche non coltivate"@it;
   skos:definition "Animali e piante che forniscono prodotti utilizzabili, sui quali sono esercitati diritti di proprietà, ma la cui crescita naturale e/o la cui rigenerazione non sono gestite o controllate direttamente (es. parchi protetti, zone di pesca nel territorio interno del Paese, acquacoltura)."@it,
     "Animals and plants that yield products over which ownership rights are enforced but for which natural growth and/or regeneration is not under direct control, responsibility and management (e.g., protected parks, fisheries within the territory of the country, aquaculture)"@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA>
   a skos:Concept;
@@ -222,11 +222,11 @@ Le abitazioni non completate sono incluse nella misura in cui si considera che l
 Examples include residential buildings, such as one- and two-dwelling buildings and other residential buildings intended for non-transient occupancy.
 Uncompleted dwellings are included to the extent that the ultimate user is deemed to have taken ownership, either because the construction is on own account or as evidenced by the existence of a contract of sale/purchase."""@en;
   skos:altLabel "AN.1111";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAEA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAFA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAEA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAFA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA>
   a skos:Concept;
@@ -236,13 +236,13 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:definition "Fabbricati diversi dalle abitazioni, compresi gli impianti e le attrezzature che costituiscono parte integrante delle costruzioni e compresi i costi dei lavori di sgombero dei cantieri e di preparazione del terreno. Sono incluse opere destinate al culto, chiese, certose, abbazie escluse fondo culto. Inoltre arsenali e stabilimenti sia dell'area operativa che dell'area tecnico-industriale della Difesa. Prefabbricati situati in aree militari con destinazione di alloggi temporanei e/o di uffici, officine depositi di materiali. Caserme sino a quando non sono transitate in carico alle Agenzie del Demanio. Gli altri fabbricati non ancora completati sono inclusi nella misura in cui si considera che l'utilizzatore finale ne è divenuto proprietario o perché è stato stipulato un contratto di appalto o perché è stato stipulato un contratto di compravendita."@it,
     "Buildings other than dwellings, including fixtures, facilities and equipment that are integral parts of the structures and costs of site clearance and preparation. Included are structures intended for worship—churches, charterhouses, abbeys—excluding worship-related land holdings. Also included are arsenals and facilities belonging to both the operational area and the technical-industrial area of the Defence sector. Prefabricated structures located in military areas and used as temporary housing and/or offices, workshops, and material depots. Barracks, until they are transferred to the State Property Agencies. Other buildings not yet completed are included to the extent that the final user is considered to have become the owner, either because a procurement contract has been signed or because a purchase agreement has been concluded."@en;
   skos:altLabel "AN.11121";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABACA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABADA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAEA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAHA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABACA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABADA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAEA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAHA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA>
   a skos:Concept;
@@ -251,9 +251,9 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:prefLabel "Cultural real estate assets"@en, "Beni immobili di valore culturale"@it;
   skos:definition "Fabbricati che presentano interesse artistico, storico, archeologico, paleontologico o che, a causa del loro riferimento con la storia politica, militare, della letteratura, dell'arte e della cultura in genere, siano stati riconosciuti di interesse particolarmente importante, nonché le opere di restauro (da capitalizzarsi) volte a mantenerne l'integrità materiale e ad assicurare la conservazione e la protezione dei loro valori culturali."@it,
     "Buildings of artistic, historical, archaeological or paleontological interest, or which, due to their association with political or military history, literature, art, or culture in general, have been recognized as being of particularly significant interest, as well as restoration works (to be capitalized) aimed at maintaining their material integrity and ensuring the preservation and protection of their cultural value."@en;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACACA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACACA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABA>
   a skos:Concept;
@@ -263,8 +263,8 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:definition "Fixed assets that consist of: mineral exploration, computer software, entertainment, literary or artistic originals and other intangible fixed assets, as defined below, intended to be used for more than one year."@en,
     "Capitale fisso costituito da: prospezioni minerarie, software, originali di opere artistiche, letterarie o di intrattenimento o altri beni immateriali prodotti, come specificato in appresso, che si intende utilizzare per più di un anno."@it;
   skos:altLabel "AN.112";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAA>
   a skos:Concept;
@@ -273,8 +273,8 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:prefLabel "NATURAL STATE-OWNED ASSETS"@en, "BENI DEL DEMANIO NATURALE"@it;
   skos:definition "State-owned assets consisting of maritime, water, and forest public property."@en,
     "Beni di proprietà dello Stato costituiti dal demanio marittimo, dal demanio idrico e forestale."@it;
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABA>
   a skos:Concept;
@@ -284,8 +284,8 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:definition "The ground, including the soil covering and any associated surface waters, over which ownership rights are enforced. Excluded are any buildings or other structures situated on it or running through it; cultivated crops, trees and animals. Land consists of building sites, land underlying buildings and structures, land under cultivation, recreational land and associated surface water, archaeological areas and protected land, and other land and associated surface water, as defined below."@en,
     "Terreni, compresa la copertura del suolo, nonché le relative acque di superficie, su cui sono esercitati i diritti di proprietà. Sono esclusi i fabbricati o le altre opere costruite su di essi o che li attraversano, le coltivazioni, gli alberi e gli animali. I terreni sono costituiti da aree edificabili, terreni sottostanti a fabbricati e ad altre opere, terreni coltivati, parchi con relative acque di superficie, aree archeologiche e terreni sottoposti a tutela, ed altri terreni con relative acque di superficie, come specificato in appresso."@it;
   skos:altLabel "AN.211";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACA>
   a skos:Concept;
@@ -295,8 +295,8 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:definition "Proven reserves of mineral deposits located on or below the earth's surface that are economically exploitable, given current technology and relative prices. Subsoil assets consist of coal, oil and natural gas reserves, metallic mineral reserves and non-metallic mineral reserves, as defined below."@en,
     "Riserve comprovate di minerali, poste sulla superficie terrestre o al di sotto di essa, economicamente sfruttabili, considerata la tecnologia attuale ed i prezzi relativi. I giacimenti comprendono le riserve di carbone, di petrolio e di gas naturale, le riserve di minerali metalliferi e le riserve di minerali non metalliferi, come in appresso specificato."@it;
   skos:altLabel "AN.212";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADA>
   a skos:Concept;
@@ -306,8 +306,8 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:definition "Animals and plants that yield products over which ownership rights are enforced but for which natural growth and/or regeneration is not under direct control, responsibility and management (e.g., protected parks, fisheries within the territory of the country, aquaculture)"@en,
     "Animali e piante che forniscono prodotti utilizzabili, sui quali sono esercitati diritti di proprietà, ma la cui crescita naturale e/o la cui rigenerazione non sono gestite o controllate direttamente (es. parchi protetti, zone di pesca nel territorio interno del Paese, acquacoltura)."@it;
   skos:altLabel "AN.213";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA>
   a skos:Concept;
@@ -317,12 +317,12 @@ Uncompleted dwellings are included to the extent that the ultimate user is deeme
   skos:definition "Fixed assets that consist of dwellings; other buildings, permanent structures intended for national defense, immovable property of cultural value, other structures different from dwellings and buildings, rights in rem of enjoyment over property owned by others, plants, equipment and machinery, furniture and furnishings, means of transport, weapons and military armaments, bibliographic material, equipment and clothing, musical instruments, crops and livestock, as well as other produced tangible assets as specified below."@en,
     "Capitale fisso costituito da abitazioni, fabbricati non residenziali, opere permanenti destinate alla difesa nazionale, beni immobili di valore culturale, altre opere diverse delle abitazioni e dai fabbricati, diritti reali di godimento su beni altrui, impianti attrezzature e macchinari, mobili e arredi, mezzi di trasporto, armi ed armamenti militari, materiale bibliografico, equipaggiamenti e vestiari, strumenti musicali, coltivazioni ed allevamenti nonché altri beni materiali prodotti come di seguito specificati."@it;
   skos:altLabel "AN.111";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CA>
   a skos:Concept;
@@ -334,7 +334,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
     "Attività non finanziarie che non sono ottenute quale prodotti di processi di produzione. Le attività non prodotte sono costituite da beni materiali e beni immateriali, come specificato in appresso."@it;
   skos:altLabel "AN.2";
   skos:isTopConcept "CA";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/ND>
   a skos:Concept;
@@ -363,7 +363,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
     "Attività non finanziarie ottenute quale prodotto dei processi di produzione. Le attività prodotte sono costituite da capitale fisso, scorte e oggetti di valore, come specificato in appresso."@it;
   skos:altLabel "AN.1";
   skos:isTopConcept "BA";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAA>
   a skos:Concept;
@@ -373,11 +373,11 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Attività non prodotte presenti in natura sulle quali possono essere esercitati diritti di proprietà, incluso il trasferimento di questi. Sono esclusi i beni legati all'ambiente sui quali non sono o non possono essere esercitati diritti di proprietà. I beni materiali non prodotti sono costituiti da beni del demanio naturale, terreni, giacimenti, risorse biologiche non coltivate."@it,
     "Non-produced assets that occur in nature and over which ownership may be enforced and transferred. Environmental assets over which ownership rights have not, or cannot, be enforced are excluded. Tangible non-produced assets consist of natural state-owned assets, land, subsoil assets, non-cultivated biological resources."@en;
   skos:altLabel "AN.21";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAA>
   a skos:Concept;
@@ -387,9 +387,9 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Attività prodotte utilizzate ripetutamente o continuamente nei processi di produzione per più di un anno. Il capitale fisso è composto da beni materiali e beni immateriali come specificato in appresso."@it,
     "Produced assets that are used repeatedly or continuously in production processes for more than one year. Fixed assets consist of tangible and intangible fixed assets, as defined below."@en;
   skos:altLabel "AN.11";
-  skos:narrower "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABA",
-    "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BA" .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABA>,
+    <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAA>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEAEA>
   a skos:Concept;
@@ -398,7 +398,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "SPORT FACILITIES"@en, "IMPIANTI SPORTIVI"@it;
   skos:definition "Strutture destinate ad attività sportive, comprese palestre, stadi, campi da gioco, piscine pubbliche e altri impianti di proprietà dello Stato, inclusi gli impianti permanenti necessari al loro funzionamento e le opere accessorie."@it,
     "Structures intended for sporting activities, including gyms, stadiums, playing fields, public swimming pools, and other state-owned facilities, including permanent installations necessary for their operation and ancillary works."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAEA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFAAA>
   a skos:Concept;
@@ -407,7 +407,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "RIGHTS OF ENJOYMENT OVER PROPERTY OWNED BY OTHERS"@en, "DIRITTI REALI DI GODIMENTO SU BENI ALTRUI"@it;
   skos:definition "Diritti che attribuiscono al titolare (Stato) una signoria limitata su beni di terzi."@it,
     "Rights that grant the holder (the State) a limited control or authority over property owned by third parties."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAFA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAAAA>
   a skos:Concept;
@@ -417,7 +417,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Importo delle spese per la ricerca di petrolio, di gas naturale e di giacimenti non petroliferi. Tali spese comprendono i costi precedenti all'ottenimento delle autorizzazioni, i costi per il rilascio delle autorizzazioni e i costi di acquisizione, i costi di valutazione e i costi delle effettive trivellazioni esplorative e di perforazione, come pure i costi di rilievi aerei o altre indagini, i costi di trasporto, ecc., sostenuti per rendere possibile l'esecuzione delle prospezioni."@it,
     "The value of expenditures on exploration for petroleum and natural gas and for non-petroleum deposits. These expenditures include prelicence costs, licence and acquisition costs, appraisal costs and the costs of actual test drilling and boring, as well as the costs of aerial and other surveys, transportation costs, etc., incurred to make it possible to carry out the tests."@en;
   skos:altLabel "AN.1121";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAAAA>
   a skos:Concept;
@@ -426,7 +426,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "Maritime public domain"@en, "Demanio marittimo"@it;
   skos:definition "Lido del mare, spiaggia, porti, rade, lagune, foci dei fiumi, bacini d'acqua, canali utilizzabili per uso pubblico marittimo, pertinenze del demanio marittimo."@it,
     "Seashores, beaches, harbours, roadsteads, lagoons, river mouths, water basins, canals usable for public maritime purposes, and appurtenances of the maritime public domain."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAABA>
   a skos:Concept;
@@ -435,7 +435,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "Water public domain"@en, "Demanio idrico"@it;
   skos:definition "Fiumi, laghi, torrenti, rivi, fossati, colatori, acque sotterranee, acque sorgenti, ghiacciai, porti ed approdi destinati alla navigazione interna, acquedotti e canali demaniali."@it,
     "Rivers, lakes, streams, creeks, ditches, drainage channels, groundwater, spring waters, glaciers, ports and landings intended for inland navigation, and public aqueducts and canals."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAACA>
   a skos:Concept;
@@ -443,7 +443,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:notation "CA AA AA AA CA";
   skos:prefLabel "Forests"@en, "Foreste"@it;
   skos:definition "Patrimonio boschivo nazionale."@it, "National forest heritage."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAAA>
   a skos:Concept;
@@ -451,7 +451,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:notation "CA AA BA AA AA";
   skos:prefLabel "BUILDING AREAS"@en, "AREE EDIFICABILI"@it;
   skos:definition "Aree per le quali sono prefigurati piani urbanistici."@it, "Areas for which urban development plans have been envisaged."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAABA>
   a skos:Concept;
@@ -461,7 +461,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
     "AREE ASSOGGETTATE A VINCOLI URBANISTICI PREORDINATI ALL'ESPROPRIO"@it;
   skos:definition "Aree per le quali esistono determinati vincoli urbanistici."@it,
     "Areas for which specific urban planning restrictions have been established."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAACA>
   a skos:Concept;
@@ -471,7 +471,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Terreni su cui sono costruiti fabbricati non residenziali, abitazioni ed altre opere o nei quali poggiano le fondazioni di questi, compresi i cortili ed i giardini considerati parte integrante di abitazioni rurali e non rurali e strade di accesso a fattorie."@it,
     "Land on which dwellings, non-residential buildings and structures are constructed or into which their foundations are dug, including yards and gardens deemed an integral part of farm and non-farm dwellings and access roads to farms."@en;
   skos:altLabel "AN.2111";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAADA>
   a skos:Concept;
@@ -481,7 +481,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Terreni sui quali viene svolta, a fini commerciali o di sussistenza, una attività di produzione agricola o orticola, compresi, in linea di principio, i terreni a frutteto, a vigneto e ad altre coltivazioni."@it,
     "Land on which agricultural or horticultural production is carried on for commercial or subsistence purposes, including, in principle, land under plantations, orchards and vineyards."@en;
   skos:altLabel "AN.2112";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAEA>
   a skos:Concept;
@@ -490,7 +490,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "RECREATIONAL LAND AND ASSOCIATED SURFACE WATER "@en, "PARCHI CON RELATIVE ACQUE DI SUPERFICIE"@it;
   skos:definition "Parchi, giardini per uso pubblico."@it, "Parks and gardens for public use."@en;
   skos:altLabel "AN.2113";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAFA>
   a skos:Concept;
@@ -499,7 +499,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "ARCHAEOLOGICAL AREAS AND PROTECTED LAND"@en, "AREE ARCHEOLOGICHE E TERRENI SOTTOPOSTI A TUTELA"@it;
   skos:definition "Aree che rivestono interesse archeologico, storico, artistico, ambientale, ivi compresi i tratturi, le centuriazioni, le sostituzioni, le gallerie e simili."@it,
     "Areas of archaeological, historical, artistic, or environmental interest, including ancient drove roads, Roman land divisions, underground structures, tunnels, and similar features."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAAGA>
   a skos:Concept;
@@ -509,7 +509,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Terreni non classificati altrove, compresi i giardini e le particelle di terreno non coltivate a scopo di sussistenza o commerciali, le superfici pubbliche adibite a pascolo, i terreni circondanti le abitazioni per la parte che eccede i cortili ed i giardini considerati parte integrante delle abitazioni rurali e non rurali e le connesse acque di superficie."@it,
     "Land not elsewhere classified, including gardens and plots not cultivated for subsistence or commercial purposes, communal grazing land, land surrounding dwellings in excess of those yards and gardens deemed an integral part of farm and non-farm dwellings and associated surface water."@en;
   skos:altLabel "AN.2119";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAABAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAAAA>
   a skos:Concept;
@@ -519,7 +519,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Depositi di antracite, di carbone bituminoso e di lignite; campi petroliferi e riserve di gas naturale."@it,
     "Anthracite, bituminous and brown coal deposits; petroleum and natural gas reserves and fields."@en;
   skos:altLabel "AN.2121";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAABA>
   a skos:Concept;
@@ -529,7 +529,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Depositi di minerali di metalli ferrosi e non ferrosi e di metalli preziosi, che non siano siti paleontologici."@it,
     "Ferrous, non-ferrous and precious metal ore deposits, excluding paleontological sites."@en;
   skos:altLabel "AN.2122";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAACA>
   a skos:Concept;
@@ -539,7 +539,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:definition "Cave di pietra, di argilla e di sabbia; depositi di minerali, di quarzo, di gesso, di altri minerali non metalliferi diversi dal carbone e dal petrolio, che non siano siti paleontologici."@it,
     "Stone quarries and clay and sand pits; mineral deposits; deposits of quartz, gypsum,other non-metallic minerals other than coal and petroleum, excluding paleontological sites."@en;
   skos:altLabel "AN.2123";
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAACAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAAAA>
   a skos:Concept;
@@ -548,7 +548,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "NON-CULTIVATED BIOLOGICAL RESOURCES "@en, "RISORSE BIOLOGICHE NON COLTIVATE"@it;
   skos:definition "Animali e piante che forniscono prodotti utilizzabili, sui quali sono esercitati diritti di proprietà, ma la cui crescita naturale e/o la cui rigenerazione non sono gestite o controllate direttamente (es. parchi protetti, zone di pesca nel territorio interno del Paese, acquacoltura)."@it,
     "Animals and plants that yield products over which ownership rights are enforced but for which natural growth and/or regeneration is not under direct control, responsibility and management (e.g., protected parks, fisheries within the territory of the country, aquaculture)"@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/CAAADAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAAA>
   a skos:Concept;
@@ -557,7 +557,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "RESIDENTIAL BUILDINGS (INCLUDING SERVICE HOUSING)"@en, "FABBRICATI CIVILI USO ABITATIVO (INCLUSI GLI ALLOGGI DI SERVIZIO)"@it;
   skos:definition "Edifici residenziali situati in contesti urbani o civili, destinati a nuclei familiari, comprensivi di eventuali alloggi di servizio e strutture accessorie come garage e impianti permanenti."@it,
     "Residential buildings located in urban or civil contexts, intended for family occupancy, including any service housing and ancillary structures such as garages and permanent installations."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAABA>
   a skos:Concept;
@@ -566,7 +566,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "RURAL RESIDENTIAL BUILDINGS"@en, "FABBRICATI RURALI USO ABITATIVO"@it;
   skos:definition "Abitazioni situate in aree rurali o agricole, comprese le costruzioni annesse necessarie per la vita quotidiana, destinate a essere occupate stabilmente dalle famiglie."@it,
     "Dwellings situated in rural or agricultural areas, including annexed constructions necessary for daily life, intended for stable family occupancy."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAEA>
   a skos:Concept;
@@ -575,7 +575,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "BUILDINGS MANAGED BY I.A.C.P."@en, "FABBRICATI GESTITI DALLO I.A.C.P."@it;
   skos:definition "Abitazioni pubbliche o sociali gestite dall’Istituto Autonomo Case Popolari, destinate a uso residenziale stabile di famiglie con particolari requisiti sociali o economici."@it,
     "Public or social housing managed by the Autonomous Institute for Public Housing (I.A.C.P.), intended for stable residential use by families with specific social or economic requirements."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAAFA>
   a skos:Concept;
@@ -584,7 +584,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "BUILDINGS MANAGED BY LOCAL AUTHORITIES"@en, "FABBRICATI GESTITI DAGLI ENTI TERRITORIALI"@it;
   skos:definition "Abitazioni di proprietà pubblica o sociale gestite da comuni, province o altre autorità locali, comprese le strutture accessorie e gli impianti permanenti, destinate all’uso residenziale della comunità o di specifici nuclei familiari."@it,
     "Public or social housing owned by local authorities (municipalities, provinces, or other territorial entities), including ancillary structures and permanent installations, intended for residential use by the community or specific family units."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAAAA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAAA>
   a skos:Concept;
@@ -594,7 +594,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
     "FABBRICATI CIVILI ADIBITI A FINI ISTITUZIONALI (USO GOVERNATIVO E CASERME)"@it;
   skos:definition "Edifici destinati a uffici pubblici, amministrazioni statali, e caserme fino al momento del trasferimento alla gestione delle Agenzie del Demanio, comprensivi di impianti e strutture permanenti."@it,
     "Buildings used as public offices, state administrations, and barracks until transferred to the management of the State Property Agencies, including permanent installations and equipment."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABABA>
   a skos:Concept;
@@ -603,7 +603,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "COMMERCIAL BUILDINGS"@en, "FABBRICATI COMMERCIALI"@it;
   skos:definition "Edifici adibiti ad attività commerciali, come negozi, centri servizi e uffici privati, comprensivi delle attrezzature permanenti necessarie per il funzionamento."@it,
     "Buildings used for commercial activities, such as shops, service centers, and private offices, including permanent equipment necessary for operation."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABACA>
   a skos:Concept;
@@ -612,7 +612,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "RURAL BUILDINGS"@en, "FABBRICATI RURALI"@it;
   skos:definition "Costruzioni in aree agricole o rurali utilizzate per attività produttive diverse dall’abitazione, come stalle, magazzini agricoli e depositi di materiali."@it,
     "Structures in agricultural or rural areas used for productive activities other than housing, such as stables, agricultural warehouses, and material storage facilities."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABADA>
   a skos:Concept;
@@ -621,7 +621,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "INDUSTRIAL BUILDINGS AND LIGHT CONSTRUCTIONS"@en, "FABBRICATI INDUSTRIALI E COSTRUZIONI LEGGERE"@it;
   skos:definition "Stabilimenti industriali, officine, depositi di materiali e prefabbricati, inclusi quelli situati in aree militari destinati a uffici o alloggi temporanei."@it,
     "Industrial plants, workshops, material depots, and prefabricated structures, including those located in military areas intended for offices or temporary housing."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAEA>
   a skos:Concept;
@@ -630,7 +630,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "RELIGIOUS BUILDINGS"@en, "OPERE DESTINATE AL CULTO"@it;
   skos:definition "Edifici religiosi come chiese, certose e abbazie (escluso il fondo culto), comprese le strutture annesse e gli impianti permanenti."@it,
     "Religious buildings such as churches, charterhouses, and abbeys (excluding worship-related land), including annexed structures and permanent installations."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABAHA>
   a skos:Concept;
@@ -639,7 +639,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "OTHER"@en, "ALTRO"@it;
   skos:definition "Altri fabbricati non completati o con destinazioni particolari non ricomprese nelle categorie precedenti, inclusi quelli in costruzione o acquisiti tramite appalto o contratto di compravendita."@it,
     "Other incomplete buildings or buildings with specific purposes not included in the previous categories, including those under construction or acquired through procurement or purchase agreements."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAABA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACABA>
   a skos:Concept;
@@ -648,7 +648,7 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "ARTISTIC ASSETS"@en, "BENI ARTISTICI"@it;
   skos:definition "Fabbricati riconosciuti di particolare interesse per il loro valore artistico, storico, letterario o culturale, comprendendo anche opere di restauro finalizzate a mantenere l’integrità materiale e la conservazione dei loro valori culturali."@it,
     "Buildings recognized as being of particular interest for their artistic, historical, literary, or cultural value, including restoration works aimed at maintaining their material integrity and ensuring the preservation and protection of their cultural significance."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA> .
 
 <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACACA>
   a skos:Concept;
@@ -657,4 +657,4 @@ NON PRODOTTE"""@it, "NON-FINANCIAL NON-PRODUCED ASSETS"@en;
   skos:prefLabel "ARCHAEOLOGICAL ASSETS"@en, "BENI ARCHEOLOGICI"@it;
   skos:definition "Fabbricati o strutture con rilevanza archeologica o paleontologica, inclusi siti che documentano periodi storici e culture passate, comprendendo interventi di restauro per la conservazione e protezione dei beni."@it,
     "Buildings or structures of archaeological or paleontological relevance, including sites documenting historical periods and past cultures, with restoration interventions intended to preserve and protect the assets."@en;
-  skos:broader "https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA" .
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/classifications-for-demanio/CodiceMEFRaccordoSEC/BAAAAACA> .
