@@ -11,20 +11,37 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Identifier"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/officialStreetName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
   "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/acronym"
+    "@id" : "https://w3id.org/italia/onto/CLV/toponymQualifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+    "@id" : "https://w3id.org/italia/onto/CLV/City"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/hasDirectLowerRank"
@@ -46,9 +63,20 @@
       "@id" : "https://w3id.org/italia/onto/CLV/City"
     }, {
       "@id" : "https://w3id.org/italia/onto/CLV/District"
-    }, {
-      "@id" : "https://w3id.org/italia/onto/CLV/Province"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Region"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectHigherRank"
   } ]
 }, {
   "@id" : "_:genid109",
@@ -58,10 +86,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Country"
+    "@id" : "_:genid110"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectHigherRank"
+    "@id" : "https://w3id.org/italia/onto/CLV/hasHigherRank"
   } ]
 }, {
   "@id" : "_:genid11",
@@ -75,30 +103,13 @@
   } ]
 }, {
   "@id" : "_:genid110",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasIdentifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Identifier"
-  } ]
-}, {
-  "@id" : "_:genid111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/officialStreetName"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/toponymQualifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/onto/CLV/Country"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CLV/Region"
+    } ]
   } ]
 }, {
   "@id" : "_:genid14",
@@ -451,9 +462,9 @@
     "@list" : [ {
       "@id" : "https://w3id.org/italia/onto/CLV/Country"
     }, {
-      "@id" : "https://w3id.org/italia/onto/CLV/Province"
-    }, {
       "@id" : "https://w3id.org/italia/onto/CLV/Region"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CLV/UTS"
     } ]
   } ]
 }, {
@@ -464,7 +475,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/hasDirectHigherRank"
@@ -539,9 +550,9 @@
     }, {
       "@id" : "https://w3id.org/italia/onto/CLV/District"
     }, {
-      "@id" : "https://w3id.org/italia/onto/CLV/Province"
-    }, {
       "@id" : "https://w3id.org/italia/onto/CLV/Region"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CLV/UTS"
     } ]
   } ]
 }, {
@@ -579,9 +590,9 @@
     }, {
       "@id" : "https://w3id.org/italia/onto/CLV/Country"
     }, {
-      "@id" : "https://w3id.org/italia/onto/CLV/Province"
-    }, {
       "@id" : "https://w3id.org/italia/onto/CLV/Region"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CLV/UTS"
     } ]
   } ]
 }, {
@@ -609,9 +620,9 @@
     "@list" : [ {
       "@id" : "https://w3id.org/italia/onto/CLV/City"
     }, {
-      "@id" : "https://w3id.org/italia/onto/CLV/Province"
-    }, {
       "@id" : "https://w3id.org/italia/onto/CLV/Region"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CLV/UTS"
     } ]
   } ]
 }, {
@@ -812,66 +823,55 @@
 }, {
   "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/City"
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectLowerRank"
+    "@id" : "https://w3id.org/italia/onto/CLV/acronym"
   } ]
 }, {
   "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid94"
+    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid95"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/hasLowerRank"
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/italia/onto/CLV/City"
     }, {
       "@id" : "https://w3id.org/italia/onto/CLV/District"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CLV/Province"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Region"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectHigherRank"
-  } ]
-}, {
-  "@id" : "_:genid98",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid99"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasHigherRank"
   } ]
 }, {
   "@id" : "_:genid99",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/italia/onto/CLV/Country"
-    }, {
-      "@id" : "https://w3id.org/italia/onto/CLV/Region"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectHigherRank"
   } ]
 }, {
   "@id" : "http://dati.gov.it/onto/dcatapit#Agent",
@@ -1227,7 +1227,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-10-21"
+    "@value" : "2025-11-03"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"
@@ -1248,6 +1248,9 @@
   }, {
     "@language" : "en",
     "@value" : "This is the ontology of the Italian application profile for Location and Addresses"
+  }, {
+    "@language" : "it",
+    "@value" : "versione della CLV con inserimento delle UTS 2.0"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/"
@@ -1263,7 +1266,7 @@
     "@id" : "https://w3id.org/italia/onto/l0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/1.1"
+    "@id" : "https://w3id.org/italia/onto/CLV/2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
@@ -1601,6 +1604,39 @@
     "@id" : "http://inspire.ec.europa.eu/featureconcept/AdminUnitName"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/onto/CLV/AutonomousProvince",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Province di Trento e di Bolzano, il cui riconoscimento dello Statuto speciale attribuisce loro particolari forme di autonomia, compresa quella legislativa, assimilandole alle regioni. \nLe due province, insieme alla loro regione di appartenenza, il Trentino-Alto Adige, formano un sistema di enti autonomi, fra loro collegati, unico all'interno dell'ordinamento regionale italiano."
+  }, {
+    "@language" : "en",
+    "@value" : "The Provinces of Trento and Bolzano, whose recognition under the Special Statute grants them specific forms of autonomy, including legislative autonomy, making them similar to regions.\nThe two provinces, together with their belonging region, Trentino-Alto Adige, form a system of autonomous entities, interconnected with each other, unique within the Italian regional system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Autonomous Province"
+  }, {
+    "@language" : "it",
+    "@value" : "Provincia autonoma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/onto/CLV/Box",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/CLV/GeometryType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -1897,6 +1933,39 @@
     "@id" : "http://www.geonames.org/ontology#Feature"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An intermediate-level territorial entity, composed of a group of neighboring municipalities.\nAs a result of Regional Law No. 15 of August 4, 2015, the administrative structure of Sicily provides for the operation of free municipal consortia, as wide-area entities, in place of the abolished provinces of the same name."
+  }, {
+    "@language" : "it",
+    "@value" : "Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.\nPer effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrativo della Sicilia prevede l’esercizio dei liberi consorzi comunali, quali enti di area vasta, in luogo delle omonime province soppresse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Free municipal consortium"
+  }, {
+    "@language" : "it",
+    "@value" : "Libero consorzio di comuni"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/onto/CLV/GeographicalDistribution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2129,6 +2198,75 @@
     "@value" : "Linea"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/onto/CLV/MetropolitanCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An intermediate-level territorial entity, composed of a group of neighboring municipalities.\nIntroduced with the 2001 reform of Title V of the Constitution, metropolitan cities are recognized as wide-area territorial entities, on par with provinces (Article 114). In regions with ordinary statutes, the establishment of metropolitan cities is regulated by Law No. 56 of April 7, 2014, while in regions with special statutes, their regulation is deferred to regional laws."
+  }, {
+    "@language" : "it",
+    "@value" : "Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.\nIntrodotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Città metropolitana"
+  }, {
+    "@language" : "en",
+    "@value" : "Metropolitan city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Intermediate-level territorial units between the Municipality and the Region, corresponding to the former provinces of Friuli Venezia Giulia, which were abolished according to the procedures outlined in Regional Law No. 20 of December 20, 2016."
+  }, {
+    "@language" : "it",
+    "@value" : "Unità territoriali di livello intermedio tra il Comune e la Regione, corrispondenti alle ex province del Friuli-Venezia Giulia, cessate secondo le modalità espresse con legge regionale 20 dicembre 2016, n. 20"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ex Provincia"
+  }, {
+    "@language" : "en",
+    "@value" : "Non administrative authority"
+  }, {
+    "@language" : "it",
+    "@value" : "Unità non amministrativa territoriale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/onto/CLV/Point",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/CLV/GeometryType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -2158,19 +2296,16 @@
   "@id" : "https://w3id.org/italia/onto/CLV/Province",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe rappresenta la componente Provincia."
-  }, {
     "@language" : "en",
-    "@value" : "The class represents the Province."
+    "@value" : "An intermediate-level territorial entity [Article 114 of the Constitution], composed of a group of neighboring municipalities, the most important of which serves as its capital. Since 2015, as a result of the provisions in Law No. 56 of April 7, 2014, provinces, like metropolitan cities, are recognized as second-level wide-area entities."
+  }, {
+    "@language" : "it",
+    "@value" : "Ente territoriale di livello intermedio [art. 114 Cost.], costituito da un aggregato di comuni limitrofi, il più importante dei quali ne costituisce il capoluogo. Dal 2015, per effetto della normativa contenuta nella legge 7 aprile 2014, n. 56, le province, al pari delle città metropolitane sono riconosciute enti di area vasta di secondo livello."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Città Metropolitana"
-  }, {
     "@language" : "en",
     "@value" : "Province"
   }, {
@@ -2178,17 +2313,9 @@
     "@value" : "Provincia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/AdminUnitComponent"
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
   }, {
     "@id" : "_:genid92"
-  }, {
-    "@id" : "_:genid93"
-  }, {
-    "@id" : "_:genid97"
-  }, {
-    "@id" : "_:genid98"
-  }, {
-    "@id" : "_:genid102"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2199,13 +2326,6 @@
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "https://w3id.org/italia/onto/CLV/hasRankOrder" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
-  } ],
-  "https://w3id.org/italia/onto/l0/controlledVocabulary" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/onto/CLV/Region",
@@ -2230,11 +2350,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/AdminUnitComponent"
   }, {
-    "@id" : "_:genid103"
+    "@id" : "_:genid93"
   }, {
-    "@id" : "_:genid104"
+    "@id" : "_:genid94"
   }, {
-    "@id" : "_:genid109"
+    "@id" : "_:genid99"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2276,7 +2396,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Location"
   }, {
-    "@id" : "_:genid110"
+    "@id" : "_:genid100"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2317,9 +2437,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/AddressComponent"
   }, {
-    "@id" : "_:genid111"
+    "@id" : "_:genid101"
   }, {
-    "@id" : "_:genid112"
+    "@id" : "_:genid102"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2372,6 +2492,54 @@
     "@id" : "https://w3id.org/italia/onto/CLV/AdminUnitComponent"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/onto/CLV/UTS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The territorial units at an intermediate level between municipalities and regions, effective since 2015. These units include, in addition to provinces, metropolitan cities, free consortia, and non-administrative territorial units (specifically the former provinces of Friuli Venezia Giulia), with the aim of establishing a comprehensive division of the national territory."
+  }, {
+    "@language" : "it",
+    "@value" : "Unità territoriali di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supramunicipal territorial unit (Uts)"
+  }, {
+    "@language" : "it",
+    "@value" : "Unità territoriale sovracomunale (Uts)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/AdminUnitComponent"
+  }, {
+    "@id" : "_:genid103"
+  }, {
+    "@id" : "_:genid104"
+  }, {
+    "@id" : "_:genid108"
+  }, {
+    "@id" : "_:genid109"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "https://w3id.org/italia/onto/CLV/hasRankOrder" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/italia/onto/l0/controlledVocabulary" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/onto/CLV/UngovernedTerritory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2402,7 +2570,7 @@
     "@value" : "The acronym of the province that is typically used over the Italian territory for the license plate."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV"
@@ -3441,7 +3609,7 @@
     "@value" : "has province"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+    "@id" : "https://w3id.org/italia/onto/CLV/UTS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV/hasAddressComponent"

@@ -1,0 +1,228 @@
+@prefix : <https://w3id.org/italia/onto/OpenCUP/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xkos: <http://purl.org/linked-data/xkos#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix adms:     <http://www.w3.org/ns/adms#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+
+
+
+###INSERIRE METADATI###
+
+<https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/natura_intervento>
+  rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+  dct:title "Controlled Vocabulary for Controlled Vocabulary of the Nature of Intervention"@en , "Vocabolario Controllato della Natura di Intervento"@it ;
+  dct:description "Vocabolario Controllato della Natura di Intervento"@it, "Controlled Vocabulary for Controlled Vocabulary of the Nature of Intervention"@en;
+  xkos:numberOfLevels "2" ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/natura_intervento";
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/PCM-ESF6GG> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>  ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/classifications-for-opencup/natura_intervento>;
+  dcat:keyword "Natura Intervento"@it, "Intervention Nature"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/natura_intervento_RDF_Turtle> , <https://w3id.org/italia/data/distribution/natura_intervento_CSV>;
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+  dct:issued "2026-02-11"^^xsd:date ;
+  dct:modified "2026-02-11"^^xsd:date ;
+  owl:versionInfo "Versione 0.1"@it ; 
+  ndc:keyConcept "Natura_di_intervento" ;
+  skos:hasTopConcept  <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/01>,
+				      <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/02>,
+					  <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/03>,
+					  <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/06>,
+					  <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/07>,
+					  <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/08> ;
+					
+  rdfs:comment "Controlled Vocabulary for Controlled Vocabulary of the Nature of Intervention"@en , "Vocabolario Controllato della Natura di Intervento"@it ;
+  rdfs:label "Controlled Vocabulary for Controlled Vocabulary of the Nature of Intervention"@en , "Vocabolario Controllato della Natura di Intervento"@it ;
+  skos:notation "Controlled Vocabulary for Controlled Vocabulary of the Nature of Intervention"@en , "Vocabolario Controllato della Natura di Intervento"@it ;       
+  skos:prefLabel "Controlled Vocabulary for Controlled Vocabulary of the Nature of Intervention"@en , "Vocabolario Controllato della Natura di Intervento"@it .   
+
+
+  <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+   foaf:Agent ;
+   dct:identifier "PCM-1RSIZZ" ;
+   foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+   "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+   
+   <https://w3id.org/italia/data/public-organization/PCM-ESF6GG> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+   foaf:Agent ;
+   dct:identifier "PCM-ESF6GG" ;
+   foaf:name "Dipartimento per la Programmazione e il Coordinamento della Politica Economica (DIPE) della Presidenza del Consiglio dei Ministri"@it,
+   "Department for Economic Policy Planning and Coordination (DIPE) of the Prime Minister's Office"@en .
+  
+  
+  <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
+
+
+  <https://w3id.org/italia/data/standard/SKOS>
+	  a dcatapit:Standard , dct:Standard ;
+	  dct:identifier "SKOS" ;
+	  dct:title "Simple Knowledge Organization System - SKOS" ;
+	  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+	      a dcatapit:Agent , foaf:Agent ;
+	      dct:identifier "ISTAT" ;
+	      foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .  
+
+
+###INSERIRE DISTRIBUTION###
+
+<https://w3id.org/italia/data/distribution/natura_intervento_RDF_Turtle>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione RDF/Turtle del vocabolario controllato della Natura di Intervento"@it , "RDF/Turtle distribution of the Nature of Intervention controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato della Natura di Intervento"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the Nature of Intervention controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-opencup/natura_intervento/natura_intervento.ttl>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-opencup/natura_intervento> .
+ 
+ <https://w3id.org/italia/data/distribution/natura_intervento_CSV>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione CSV del vocabolario controllato della Natura di Intervento"@it , "CSV distribution of the Nature of Intervention controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato della Natura di Intervento"@it , "This is the distribution in CSV of the Linked Open Dataset of the Nature of Intervention controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/classifications-for-opencup/natura_intervento/natura_intervento.csv>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/classifications-for-opencup/natura_intervento> .
+
+
+	
+	
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/AB>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/01>;
+  skos:notation "AB";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "ACQUISTO DI BENI"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/01>
+  a skos:Concept, :Natura_di_intervento;
+  skos:narrower <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/AB>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:notation "01";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "ACQUISTO DI BENI"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/SS>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/02>;
+  skos:notation "SS";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "SERVIZI (INCLUSA PROGETTAZIONE)"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/02>
+  a skos:Concept, :Natura_di_intervento;
+  skos:narrower <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/SS>,
+    <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/CF>,
+    <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/PR>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:notation "02";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "ACQUISTO O REALIZZAZIONE DI SERVIZI"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/CF>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/02>;
+  skos:notation "CF";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "CORSI DI FORMAZIONE"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/PR>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/02>;
+  skos:notation "PR";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "PROGETTI DI RICERCA"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/LP>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/03>;
+  skos:notation "LP";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "LAVORI PUBBLICI"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/03>
+  a skos:Concept, :Natura_di_intervento;
+  skos:narrower <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/LP>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:notation "03";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA)"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/CS>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/06>;
+  skos:notation "CS";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "CONTRIBUTI (PER CALAMITÀ E ALTRO)"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/06>
+  a skos:Concept, :Natura_di_intervento;
+  skos:narrower <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/CS>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:notation "06";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITÀ PRODUTTIVE)"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/II>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/07>;
+  skos:notation "II";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "INCENTIVI ALLE IMPRESE"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/07>
+  a skos:Concept, :Natura_di_intervento;
+  skos:narrower <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/II>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:notation "07";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "CONCESSIONE DI INCENTIVI AD UNITÀ PRODUTTIVE"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/ST>
+  a skos:Concept, :Natura_di_intervento;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:broader <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/08>;
+  skos:notation "ST";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:prefLabel "STRUMENTI FINANZIARI"@it .
+
+<https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/08>
+  a skos:Concept, :Natura_di_intervento;
+  skos:narrower <https://w3id.org/italia/stat/controlled-vocabulary/open_cup/natura_intervento/ST>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/open_cup/natura_intervento>;
+  skos:notation "08";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:prefLabel "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GARANZIA"@it .
