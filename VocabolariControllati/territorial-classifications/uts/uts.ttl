@@ -45,7 +45,7 @@
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_CSV>, <https://w3id.org/italia/data/distribution/uts_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
   dct:issued "2026-01-01"^^xsd:date ;
-  dct:modified "2026-03-07"^^xsd:date ;
+  dct:modified "2026-03-08"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;  
   dct:temporal "2026/..." ;
   ndc:keyConcept "Provinces" ;
