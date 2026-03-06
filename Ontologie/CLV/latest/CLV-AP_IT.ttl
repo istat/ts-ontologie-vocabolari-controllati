@@ -261,6 +261,13 @@ xsd:time rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/italia/onto/CLV#hasUTSType
+:hasUTSType rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :UTS ;
+            rdfs:range :UTS .
+
+
 ###  https://w3id.org/italia/onto/CLV/countryIsInContinent
 :countryIsInContinent rdf:type owl:ObjectProperty ,
                                owl:FunctionalProperty ;
@@ -800,6 +807,22 @@ ti:atTime rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
+###  https://w3id.org/italia/onto/CLV#UtsTypeDescription
+:UtsTypeDescription rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :UTS ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "uts type description"@en .
+
+
+###  https://w3id.org/italia/onto/CLV#taxCode
+:taxCode rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :UTS ;
+         rdfs:range xsd:string ;
+         rdfs:label "tax code"@en .
+
+
 ###  https://w3id.org/italia/onto/CLV/acronym
 :acronym rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf l0:name ;
@@ -1195,43 +1218,6 @@ l0:name rdf:type owl:DatatypeProperty ;
    prov:wasDerivedFrom <https://w3id.org/italia/onto/CLV>
  ] .
 
-###  https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD
-<https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei Luoghi e degli Indirizzi"@it ,
-                                                                            "This is the distribution in JSON-LD of the Location and Address ontology"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione JSON-LD ontologia CLV-AP_IT"@it ,
-                                                                      "JSON-LD distribution of CLV-AP_IT Ontology"@en ;
-                                                            dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.jsonld> .
-
-
-###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE
-<https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
-                                                                        admsapit:SemanticAssetDistribution ;
-                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei luoghi e degli indirizzi"@it ,
-                                                                               "This is the distribution in RDF/turtle of the location and address ontology"@en ;
-                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                               dct:title "Distribuzione RDF/Turtle ontologia CLV-AP_IT"@it ,
-                                                                         "RDF/Turtle distribution of CLV-AP_IT Ontology"@en ;
-                                                               dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.ttl> .
-
-
-###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML
-<https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
-                                                                     admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei luoghi e degli indirizzi"@it ,
-                                                                            "This is the distribution in RDF/XML of the location and address ontology"@en ;
-                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
-                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                            dct:title "Distribuzione RDF/XML ontologia CLV-AP_IT"@it ,
-                                                                      "RDF/XML distribution of CLV-AP_IT Ontology"@en ;
-                                                            dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.rdf> .
 
 #################################################################
 #    Classes
@@ -1771,7 +1757,7 @@ Introduced with the 2001 reform of Title V of the Constitution, metropolitan cit
                                """Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
 Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali."""@it ;
                   rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-                  rdfs:label "Città Metropolitana"@it , "Metropolitan city"@en ;
+                  rdfs:label "Città metropolitana"@it , "Metropolitan city"@en ;
                   owl:versionInfo "stabile"@it ,
                                   "stable"@en ;
                   prov:wasDerivedFrom skos:Concept .
@@ -2024,6 +2010,43 @@ l0:Location rdf:type owl:Class .
                                                        vcard:hasEmail <mailto:info@dati.gov.it> .
 
 
+###  https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD
+<https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                                     admsapit:SemanticAssetDistribution ;
+                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei Luoghi e degli Indirizzi"@it ,
+                                                                            "This is the distribution in JSON-LD of the Location and Address ontology"@en ;
+                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                            dct:title "Distribuzione JSON-LD ontologia CLV-AP_IT"@it ,
+                                                                      "JSON-LD distribution of CLV-AP_IT Ontology"@en ;
+                                                            dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
+                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.jsonld> .
+
+
+###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                        admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei luoghi e degli indirizzi"@it ,
+                                                                               "This is the distribution in RDF/turtle of the location and address ontology"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/Turtle ontologia CLV-AP_IT"@it ,
+                                                                         "RDF/Turtle distribution of CLV-AP_IT Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.ttl> .
+
+
+###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML
+<https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                                     admsapit:SemanticAssetDistribution ;
+                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei luoghi e degli indirizzi"@it ,
+                                                                            "This is the distribution in RDF/XML of the location and address ontology"@en ;
+                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                            dct:title "Distribuzione RDF/XML ontologia CLV-AP_IT"@it ,
+                                                                      "RDF/XML distribution of CLV-AP_IT Ontology"@en ;
+                                                            dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
+                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.rdf> .
 
 
 ###  https://w3id.org/italia/data/organization/public-organization/td
