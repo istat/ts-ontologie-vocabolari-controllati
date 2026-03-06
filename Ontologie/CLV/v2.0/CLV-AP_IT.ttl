@@ -1771,8 +1771,7 @@ Introduced with the 2001 reform of Title V of the Constitution, metropolitan cit
                                """Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
 Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali."""@it ;
                   rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-                  rdfs:label "Città metropolitana"@it ,
-                             "Metropolitan city"@en ;
+                  rdfs:label "Città Metropolitana"@it , "Metropolitan city"@en ;
                   owl:versionInfo "stabile"@it ,
                                   "stable"@en ;
                   prov:wasDerivedFrom skos:Concept .
