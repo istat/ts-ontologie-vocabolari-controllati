@@ -1,0 +1,458 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix schema: <https://schema.org/> .
+@prefix : <https://w3id.org/italia/onto/CLV/> .
+@prefix obda: <http://www.obdasystems.com/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix covapit: <https://w3id.org/italia/onto/COV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+
+
+
+#################################################################
+#    inizio metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>
+  rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+  dct:title "Controlled Vocabulary of Provinces-Uts Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Province-Uts soppresse o cedute a Stato estero"@it ;
+  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione soppresse o cedute a Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome (Trentino Alto Adige), i liberi consorzi di Comuni (Sicilia), e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region abolished or transferred to a foreign state. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units (Friuli Venezia Giulia)."@en ;
+  xkos:numberOfLevels "1" ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse";
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>  ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse> ;
+   dcat:keyword "Provincia soppressa"@it , "UTS soppresse"@it ,  "Abolished province"@en , "Abolished UTS"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/uts_soppresse_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_soppresse_CSV>, <https://w3id.org/italia/data/distribution/uts_soppresse_XLSX>  ;                             
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
+  dct:issued "2026-03-20"^^xsd:date ;
+  dct:modified "2026-03-20"^^xsd:date ;
+  owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
+  dct:temporal "Dal 1886" ;
+  ndc:keyConcept "Abolished-Provinces" ;
+  rdfs:comment "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it ;
+  rdfs:label "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it ;
+  skos:notation "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it ;     
+  skos:prefLabel "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it .     
+   
+  <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>
+    dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
+
+<https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications>
+    a skos:Concept ;
+    skos:prefLabel "Classificazioni territoriali"@it ;
+    skos:prefLabel "Territorial classifications"@en . 
+ 
+  <https://w3id.org/italia/data/public-organization/ISTAT>
+  a dcatapit:Agent, foaf:Agent ;
+  dct:identifier "ISTAT" ;
+  foaf:name "Istituto Nazionale di Statistica"@it , "Italian National Institute of Statistics"@en .
+  
+  <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
+	
+  <https://w3id.org/italia/data/standard/SKOS>
+  a dcatapit:Standard , dct:Standard ;
+  dct:identifier "SKOS" ;
+  foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+  dct:title "Simple Knowledge Organization System - SKOS" ;
+  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+  
+
+
+
+
+
+#################################################################
+#    fine metadati 
+#################################################################
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>
+  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/001>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/010>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/015>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/027>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/030>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/031>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/032>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/037>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/048>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/058>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/061>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/063>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/072>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/080>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/081>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/082>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/083>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/084>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/085>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/086>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/087>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/088>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/089>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/090>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/092>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/093>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/104>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/105>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/106>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/107>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/111>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/701>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/702>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/703>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/801>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/802> .
+
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/001>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Torino"@it;
+  skos:notation "001";
+  :acronym "TO";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/010>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Genova"@it;
+  skos:notation "010";
+  :acronym "GE";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/015>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Milano"@it;
+  skos:notation "015";
+  :acronym "MI";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/027>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Venezia"@it;
+  skos:notation "027";
+  :acronym "VE";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/030>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Udine"@it;
+  skos:notation "030";
+  :acronym "UD";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2018-04-22" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/031>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Gorizia"@it;
+  skos:notation "031";
+  :acronym "GO";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2017-09-30" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/032>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Trieste"@it;
+  skos:notation "032";
+  :acronym "TS";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2017-09-30" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/037>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Bologna"@it;
+  skos:notation "037";
+  :acronym "BO";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/048>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Firenze"@it;
+  skos:notation "048";
+  :acronym "FI";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/058>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Roma"@it;
+  skos:notation "058";
+  :acronym "RM";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/061>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Caserta"@it;
+  skos:notation "061";
+  :acronym "CE";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/063>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Napoli"@it;
+  skos:notation "063";
+  :acronym "NA";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/072>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Bari"@it;
+  skos:notation "072";
+  :acronym "BA";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/080>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Reggio di Calabria"@it;
+  skos:notation "080";
+  :acronym "RC";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-12-29" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/081>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Trapani"@it;
+  skos:notation "081";
+  :acronym "TP";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/082>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Palermo"@it;
+  skos:notation "082";
+  :acronym "PA";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/083>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Messina"@it;
+  skos:notation "083";
+  :acronym "ME";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/084>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Agrigento"@it;
+  skos:notation "084";
+  :acronym "AG";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/085>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Caltanissetta"@it;
+  skos:notation "085";
+  :acronym "CL";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/086>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Enna"@it;
+  skos:notation "086";
+  :acronym "EN";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/087>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Catania"@it;
+  skos:notation "087";
+  :acronym "CT";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/088>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Ragusa"@it;
+  skos:notation "088";
+  :acronym "RG";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/089>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Siracusa"@it;
+  skos:notation "089";
+  :acronym "SR";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/090>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Sassari"@it;
+  skos:notation "090";
+  :acronym "SS";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2025-07-17" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/092>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Cagliari"@it;
+  skos:notation "092";
+  :acronym "CA";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/093>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Pordenone"@it;
+  skos:notation "093";
+  :acronym "PN";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2017-09-30" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/104>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Olbia-Tempio"@it;
+  skos:notation "104";
+  :acronym "OT";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/105>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Ogliastra"@it;
+  skos:notation "105";
+  :acronym "OG";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/106>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Medio Campidano"@it;
+  skos:notation "106";
+  :acronym "VS";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/107>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Carbonia-Iglesias"@it;
+  skos:notation "107";
+  :acronym "CI";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/111>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Sud Sardegna"@it;
+  skos:notation "111";
+  :acronym "SU";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "2025-07-17" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/701>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Fiume"@it;
+  skos:notation "701";
+  :acronym "FU";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "1947-09-16" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/702>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Istria (Pola)"@it;
+  skos:notation "702";
+  :acronym "PL";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "1947-09-16" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/703>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Zara"@it;
+  skos:notation "703";
+  :acronym "ZA";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "1947-09-16" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/801>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Venezia Giulia"@it;
+  skos:notation "801";
+  :acronym "Venezia Giulia";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "1923-02-08" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse/802>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_soppresse>;
+  rdfs:label "Venezia Tridentina"@it;
+  skos:notation "802";
+  :acronym "TN";
+  :UtsTypeDescription "Provincia";
+  schema:endDate "1923-02-14" .
