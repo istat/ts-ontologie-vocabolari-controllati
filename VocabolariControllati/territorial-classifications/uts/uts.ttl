@@ -1,0 +1,2114 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix : <https://w3id.org/italia/onto/CLV/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix covapit: <https://w3id.org/italia/onto/COV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+
+
+#################################################################
+#    inizio metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>
+  rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+  dct:title "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
+  dct:description "Vocabolario controllato delle Unità territoriali di livello intermedio tra il Comune e la Regione al 01/01/2026. Tali unità comprendono le province, le città metropolitane, le province autonome (Trentino Alto Adige), i liberi consorzi di Comuni (Sicilia), e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Territorial units of intermediate area level between the municipality and the region at 2026/01/01. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units (Friuli Venezia Giulia)."@en ;
+  xkos:numberOfLevels "1" ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts";
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>  ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
+  dcat:keyword "Provincia"@it , "Province"@it , "Città metropolitana"@it , "Provincia autonoma"@it, "Libero consorzio di comuni"@it, "Unità territoriale non amministrativa"@it, "Province"@en , "Provinces"@en , "Metropolitan city"@en , "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_CSV>, <https://w3id.org/italia/data/distribution/uts_XLSX>  ;                             
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
+  dct:issued "2026-01-01"^^xsd:date ;
+  dct:modified "2026-03-08"^^xsd:date ;
+  owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;  
+  dct:temporal "2026/..." ;
+  ndc:keyConcept "Provinces" ;
+  rdfs:comment "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
+  rdfs:label "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
+  skos:notation "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;     
+  skos:prefLabel "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it .     
+   
+  <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>
+    dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
+
+<https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications>
+    a skos:Concept ;
+    skos:prefLabel "Classificazioni territoriali"@it ;
+    skos:prefLabel "Territorial classifications"@en . 
+ 
+  <https://w3id.org/italia/data/public-organization/ISTAT>
+  a dcatapit:Agent, foaf:Agent ;
+  dct:identifier "ISTAT" ;
+  foaf:name "Istituto Nazionale di Statistica"@it , "Italian National Institute of Statistics"@en .
+  
+  <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
+	
+  <https://w3id.org/italia/data/standard/SKOS>
+  a dcatapit:Standard , dct:Standard ;
+  dct:identifier "SKOS" ;
+  foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+  dct:title "Simple Knowledge Organization System - SKOS" ;
+  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+  
+<https://w3id.org/italia/data/distribution/uts_RDF_Turtle>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione RDF/Turtle del vocabolario controllato delle UTS"@it , "RDF/Turtle distribution of the UTS controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato delle UTS"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the UTS controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/uts/uts.ttl>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/uts> .
+  
+ 
+<https://w3id.org/italia/data/distribution/uts_CSV>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione CSV del vocabolario controllato delle UTS"@it , "CSV distribution of the UTS controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato delle UTS"@it , "This is the distribution in CSV of the Linked Open Dataset of the UTS controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/uts/uts.csv>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/uts> .
+
+
+<https://w3id.org/italia/data/distribution/uts_XLSX>
+  a dcatapit:Distribution  ;
+  dct:title "Distribuzione XLSX del vocabolario controllato delle UTS"@it , "XLSX distribution of the UTS controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione XLSX del dataset Linked Open Data del vocabolario controllato delle UTS"@it , "This is the distribution in XLSX of the Linked Open Dataset of the UTS controlled vocabulary"@en ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/uts/uts.xlsx>;
+  dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/uts> .
+
+
+
+
+#################################################################
+#    fine metadati 
+#################################################################
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>
+  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/002>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/003>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/004>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/005>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/006>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/007>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/008>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/009>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/011>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/012>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/013>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/014>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/016>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/017>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/018>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/019>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/020>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/021>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/022>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/023>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/024>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/025>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/026>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/028>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/029>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/030>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/031>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/032>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/033>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/034>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/035>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/036>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/038>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/039>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/040>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/041>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/042>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/043>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/044>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/045>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/046>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/047>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/049>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/050>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/051>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/052>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/053>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/054>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/055>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/056>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/057>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/059>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/060>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/061>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/062>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/064>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/065>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/066>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/067>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/068>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/069>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/070>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/071>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/073>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/074>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/075>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/076>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/077>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/078>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/079>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/081>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/084>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/085>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/086>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/088>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/089>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/093>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/094>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/096>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/097>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/098>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/099>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/100>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/101>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/102>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/103>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/108>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/109>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/110>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/113>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/114>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/115>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/116>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/117>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/119>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/201>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/210>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/215>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/227>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/237>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/248>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/258>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/263>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/272>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/280>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/282>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/283>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/287>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/312>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/318> .
+
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/002>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Vercelli"@it;
+  l0:name "Vercelli"@it, "VC";
+  skos:notation "002";
+  :acronym "VC";
+  :taxCode "80005210028";
+  l0:identifier "002", "80005210028", "ITC12", "VC";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/002>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC12>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VC>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/003>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Novara"@it;
+  l0:name "Novara"@it, "NO";
+  skos:notation "003";
+  :acronym "NO";
+  :taxCode "80026850034";
+  l0:identifier "003", "80026850034", "ITC15", "NO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/003>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC15>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/NO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/004>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Cuneo"@it;
+  l0:name "Cuneo"@it, "CN";
+  skos:notation "004";
+  :acronym "CN";
+  :taxCode "00447820044";
+  l0:identifier "004", "00447820044", "CN", "ITC16";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/004>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC16>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/005>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Asti"@it;
+  l0:name "Asti"@it, "AT";
+  skos:notation "005";
+  :acronym "AT";
+  :taxCode "80001630054";
+  l0:identifier "005", "80001630054", "AT", "ITC17";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/005>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC17>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/006>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Alessandria"@it;
+  l0:name "Alessandria"@it, "AL";
+  skos:notation "006";
+  :acronym "AL";
+  :taxCode "80003870062";
+  l0:identifier "006", "80003870062", "AL", "ITC18";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/006>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC18>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AL>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/007>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Valle d'Aosta/Vallée d'Aoste"@it;
+  l0:name "Valle d'Aosta/Vallée d'Aoste"@it, "AO";
+  skos:notation "007";
+  :acronym "AO";
+  :taxCode "80002270074";
+  l0:identifier "007", "80002270074", "AO", "ITC20";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/007>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC20>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/02>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/02> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/008>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Imperia"@it;
+  l0:name "Imperia"@it, "IM";
+  skos:notation "008";
+  :acronym "IM";
+  :taxCode "00247260086";
+  l0:identifier "00247260086", "008", "IM", "ITC31";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/008>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC31>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/IM>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/009>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Savona"@it;
+  l0:name "Savona"@it, "SV";
+  skos:notation "009";
+  :acronym "SV";
+  :taxCode "00311260095";
+  l0:identifier "00311260095", "009", "ITC32", "SV";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/009>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC32>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SV>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/011>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "La Spezia"@it;
+  l0:name "La Spezia"@it, "SP";
+  skos:notation "011";
+  :acronym "SP";
+  :taxCode "00218930113";
+  l0:identifier "00218930113", "011", "ITC34", "SP";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/011>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC34>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SP>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/012>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Varese"@it;
+  l0:name "Varese"@it, "VA";
+  skos:notation "012";
+  :acronym "VA";
+  :taxCode "80000710121";
+  l0:identifier "012", "80000710121", "ITC41", "VA";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/012>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC41>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/013>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Como"@it;
+  l0:name "Como"@it, "CO";
+  skos:notation "013";
+  :acronym "CO";
+  :taxCode "80004650133";
+  l0:identifier "013", "80004650133", "CO", "ITC42";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/013>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC42>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/014>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Sondrio"@it;
+  l0:name "Sondrio"@it, "SO";
+  skos:notation "014";
+  :acronym "SO";
+  :taxCode "80002950147";
+  l0:identifier "014", "80002950147", "ITC44", "SO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/014>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC44>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/016>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Bergamo"@it;
+  l0:name "Bergamo"@it, "BG";
+  skos:notation "016";
+  :acronym "BG";
+  :taxCode "80004870160";
+  l0:identifier "016", "80004870160", "BG", "ITC46";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/016>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC46>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BG>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/017>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Brescia"@it;
+  l0:name "Brescia"@it, "BS";
+  skos:notation "017";
+  :acronym "BS";
+  :taxCode "80008750178";
+  l0:identifier "017", "80008750178", "BS", "ITC47";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/017>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC47>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/018>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Pavia"@it;
+  l0:name "Pavia"@it, "PV";
+  skos:notation "018";
+  :acronym "PV";
+  :taxCode "80000030181";
+  l0:identifier "018", "80000030181", "ITC48", "PV";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/018>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC48>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PV>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/019>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Cremona"@it;
+  l0:name "Cremona"@it, "CR";
+  skos:notation "019";
+  :acronym "CR";
+  :taxCode "80002130195";
+  l0:identifier "019", "80002130195", "CR", "ITC4A";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/019>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC4A>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/020>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Mantova"@it;
+  l0:name "Mantova"@it, "MN";
+  skos:notation "020";
+  :acronym "MN";
+  :taxCode "80001070202";
+  l0:identifier "020", "80001070202", "ITC4B", "MN";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/020>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC4B>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/021>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Bolzano/Bozen"@it;
+  l0:name "Bolzano/Bozen"@it, "BZ";
+  skos:notation "021";
+  :acronym "BZ";
+  :taxCode "00390090215";
+  l0:identifier "00390090215", "021", "BZ", "ITH10";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/021>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH10>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BZ>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/2>;
+  :UtsTypeDescription "Provincia autonoma"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/022>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Trento"@it;
+  l0:name "Trento"@it, "TN";
+  skos:notation "022";
+  :acronym "TN";
+  :taxCode "00337460224";
+  l0:identifier "00337460224", "022", "ITH20", "TN";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/022>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH20>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/2>;
+  :UtsTypeDescription "Provincia autonoma"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/023>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Verona"@it;
+  l0:name "Verona"@it, "VR";
+  skos:notation "023";
+  :acronym "VR";
+  :taxCode "00654810233";
+  l0:identifier "00654810233", "023", "ITH31", "VR";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/023>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH31>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/024>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Vicenza"@it;
+  l0:name "Vicenza"@it, "VI";
+  skos:notation "024";
+  :acronym "VI";
+  :taxCode "00496080243";
+  l0:identifier "00496080243", "024", "ITH32", "VI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/024>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH32>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/025>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Belluno"@it;
+  l0:name "Belluno"@it, "BL";
+  skos:notation "025";
+  :acronym "BL";
+  :taxCode "93005430256";
+  l0:identifier "025", "93005430256", "BL", "ITH33";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/025>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH33>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BL>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/026>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Treviso"@it;
+  l0:name "Treviso"@it, "TV";
+  skos:notation "026";
+  :acronym "TV";
+  :taxCode "80008870265";
+  l0:identifier "026", "80008870265", "ITH34", "TV";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/026>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH34>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TV>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/028>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Padova"@it;
+  l0:name "Padova"@it, "PD";
+  skos:notation "028";
+  :acronym "PD";
+  :taxCode "80006510285";
+  l0:identifier "028", "80006510285", "ITH36", "PD";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/028>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH36>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PD>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/029>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Rovigo"@it;
+  l0:name "Rovigo"@it, "RO";
+  skos:notation "029";
+  :acronym "RO";
+  :taxCode "93006330299";
+  l0:identifier "029", "93006330299", "ITH37", "RO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/029>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH37>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/030>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Udine"@it;
+  l0:name "Udine"@it, "UD";
+  skos:notation "030";
+  :acronym "UD";
+  :taxCode "00400130308";
+  l0:identifier "00400130308", "030", "ITH42", "UD";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/030>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH42>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/UD>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/5>;
+  :UtsTypeDescription "Unità non amministrativa"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/031>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Gorizia"@it;
+  l0:name "Gorizia"@it, "GO";
+  skos:notation "031";
+  :acronym "GO";
+  :taxCode "00123060311";
+  l0:identifier "00123060311", "031", "GO", "ITH43";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/031>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH43>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/GO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/5>;
+  :UtsTypeDescription "Unità non amministrativa"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/032>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Trieste"@it;
+  l0:name "Trieste"@it, "TS";
+  skos:notation "032";
+  :acronym "TS";
+  :taxCode "80011310325";
+  l0:identifier "032", "80011310325", "ITH44", "TS";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/032>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH44>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/5>;
+  :UtsTypeDescription "Unità non amministrativa"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/033>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Piacenza"@it;
+  l0:name "Piacenza"@it, "PC";
+  skos:notation "033";
+  :acronym "PC";
+  :taxCode "00233540335";
+  l0:identifier "00233540335", "033", "ITH51", "PC";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/033>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH51>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PC>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/034>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Parma"@it;
+  l0:name "Parma"@it, "PR";
+  skos:notation "034";
+  :acronym "PR";
+  :taxCode "80015230347";
+  l0:identifier "034", "80015230347", "ITH52", "PR";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/034>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH52>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/035>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Reggio nell'Emilia"@it;
+  l0:name "Reggio nell'Emilia"@it, "RE";
+  skos:notation "035";
+  :acronym "RE";
+  :taxCode "00209290352";
+  l0:identifier "00209290352", "035", "ITH53", "RE";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/035>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH53>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/036>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Modena"@it;
+  l0:name "Modena"@it, "MO";
+  skos:notation "036";
+  :acronym "MO";
+  :taxCode "01375710363";
+  l0:identifier "01375710363", "036", "ITH54", "MO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/036>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH54>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/038>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Ferrara"@it;
+  l0:name "Ferrara"@it, "FE";
+  skos:notation "038";
+  :acronym "FE";
+  :taxCode "00334500386";
+  l0:identifier "00334500386", "038", "FE", "ITH56";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/038>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH56>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/FE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/039>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Ravenna"@it;
+  l0:name "Ravenna"@it, "RA";
+  skos:notation "039";
+  :acronym "RA";
+  :taxCode "00356680397";
+  l0:identifier "00356680397", "039", "ITH57", "RA";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/039>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH57>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/040>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Forlì-Cesena"@it;
+  l0:name "Forlì-Cesena"@it, "FC";
+  skos:notation "040";
+  :acronym "FC";
+  :taxCode "80001550401";
+  l0:identifier "040", "80001550401", "FC", "ITH58";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/040>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH58>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/FC>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/041>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Pesaro e Urbino"@it;
+  l0:name "Pesaro e Urbino"@it, "PU";
+  skos:notation "041";
+  :acronym "PU";
+  :taxCode "00212000418";
+  l0:identifier "00212000418", "041", "ITI31", "PU";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/041>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI31>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PU>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/042>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Ancona"@it;
+  l0:name "Ancona"@it, "AN";
+  skos:notation "042";
+  :acronym "AN";
+  :taxCode "00369930425";
+  l0:identifier "00369930425", "042", "AN", "ITI32";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/042>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI32>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/043>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Macerata"@it;
+  l0:name "Macerata"@it, "MC";
+  skos:notation "043";
+  :acronym "MC";
+  :taxCode "80001250432";
+  l0:identifier "043", "80001250432", "ITI33", "MC";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/043>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI33>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MC>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/044>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Ascoli Piceno"@it;
+  l0:name "Ascoli Piceno"@it, "AP";
+  skos:notation "044";
+  :acronym "AP";
+  :taxCode "01116550441";
+  l0:identifier "01116550441", "044", "AP", "ITI34";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/044>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI34>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AP>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/045>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Massa-Carrara"@it;
+  l0:name "Massa-Carrara"@it, "MS";
+  skos:notation "045";
+  :acronym "MS";
+  :taxCode "80000150450";
+  l0:identifier "045", "80000150450", "ITI11", "MS";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/045>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI11>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/046>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Lucca"@it;
+  l0:name "Lucca"@it, "LU";
+  skos:notation "046";
+  :acronym "LU";
+  :taxCode "80001210469";
+  l0:identifier "046", "80001210469", "ITI12", "LU";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/046>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI12>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/LU>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/047>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Pistoia"@it;
+  l0:name "Pistoia"@it, "PT";
+  skos:notation "047";
+  :acronym "PT";
+  :taxCode "00236340477";
+  l0:identifier "00236340477", "047", "ITI13", "PT";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/047>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI13>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/049>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Livorno"@it;
+  l0:name "Livorno"@it, "LI";
+  skos:notation "049";
+  :acronym "LI";
+  :taxCode "80011010495";
+  l0:identifier "049", "80011010495", "ITI16", "LI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/049>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI16>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/LI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/050>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Pisa"@it;
+  l0:name "Pisa"@it, "PI";
+  skos:notation "050";
+  :acronym "PI";
+  :taxCode "80000410508";
+  l0:identifier "050", "80000410508", "ITI17", "PI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/050>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI17>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/051>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Arezzo"@it;
+  l0:name "Arezzo"@it, "AR";
+  skos:notation "051";
+  :acronym "AR";
+  :taxCode "80000610511";
+  l0:identifier "051", "80000610511", "AR", "ITI18";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/051>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI18>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/052>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Siena"@it;
+  l0:name "Siena"@it, "SI";
+  skos:notation "052";
+  :acronym "SI";
+  :taxCode "80001130527";
+  l0:identifier "052", "80001130527", "ITI19", "SI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/052>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI19>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/053>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Grosseto"@it;
+  l0:name "Grosseto"@it, "GR";
+  skos:notation "053";
+  :acronym "GR";
+  :taxCode "80000030538";
+  l0:identifier "053", "80000030538", "GR", "ITI1A";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/053>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI1A>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/GR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/054>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Perugia"@it;
+  l0:name "Perugia"@it;
+  skos:notation "054";
+  :acronym "PG";
+  :taxCode "00443770540";
+  l0:identifier "00443770540";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/054>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  a :UTS, skos:Concept;
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Perugia"@it;
+  l0:name "Perugia"@it, "PG";
+  skos:notation "054";
+  :acronym "PG";
+  :taxCode "00443770540";
+  l0:identifier "00443770540", "054", "ITI21", "PG";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI21>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PG>, <https://w3id.org/italia/data/identifiers/uts-identifiers/054>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4" .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/055>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Terni"@it;
+  l0:name "Terni"@it, "TR";
+  skos:notation "055";
+  :acronym "TR";
+  :taxCode "00179350558";
+  l0:identifier "00179350558", "055", "ITI22", "TR";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/055>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI22>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/056>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Viterbo"@it;
+  l0:name "Viterbo"@it, "VT";
+  skos:notation "056";
+  :acronym "VT";
+  :taxCode "80005570561";
+  l0:identifier "056", "80005570561", "ITI41", "VT";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/056>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI41>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/057>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Rieti"@it;
+  l0:name "Rieti"@it, "RI";
+  skos:notation "057";
+  :acronym "RI";
+  :taxCode "00114510571";
+  l0:identifier "00114510571", "057", "ITI42", "RI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/057>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI42>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/059>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Latina"@it;
+  l0:name "Latina"@it, "LT";
+  skos:notation "059";
+  :acronym "LT";
+  :taxCode "80003530591";
+  l0:identifier "059", "80003530591", "ITI44", "LT";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/059>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI44>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/LT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/060>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Frosinone"@it;
+  l0:name "Frosinone"@it, "FR";
+  skos:notation "060";
+  :acronym "FR";
+  :taxCode "01633570609";
+  l0:identifier "01633570609", "060", "FR", "ITI45";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/060>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI45>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/FR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/061>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Caserta"@it;
+  l0:name "Caserta"@it, "CE";
+  skos:notation "061";
+  :acronym "CE";
+  :taxCode "80004770618";
+  l0:identifier "061", "80004770618", "CE", "ITF31";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/061>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF31>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/062>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Benevento"@it;
+  l0:name "Benevento"@it, "BN";
+  skos:notation "062";
+  :acronym "BN";
+  :taxCode "92002770623";
+  l0:identifier "062", "92002770623", "BN", "ITF32";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/062>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF32>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/064>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Avellino"@it;
+  l0:name "Avellino"@it, "AV";
+  skos:notation "064";
+  :acronym "AV";
+  :taxCode "80000190647";
+  l0:identifier "064", "80000190647", "AV", "ITF34";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/064>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF34>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AV>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/065>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Salerno"@it;
+  l0:name "Salerno"@it, "SA";
+  skos:notation "065";
+  :acronym "SA";
+  :taxCode "80000390650";
+  l0:identifier "065", "80000390650", "ITF35", "SA";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/065>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF35>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/066>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "L'Aquila"@it;
+  l0:name "L'Aquila"@it, "AQ";
+  skos:notation "066";
+  :acronym "AQ";
+  :taxCode "80002370668";
+  l0:identifier "066", "80002370668", "AQ", "ITF11";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/066>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF11>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AQ>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/067>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Teramo"@it;
+  l0:name "Teramo"@it, "TE";
+  skos:notation "067";
+  :acronym "TE";
+  :taxCode "80001070673";
+  l0:identifier "067", "80001070673", "ITF12", "TE";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/067>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF12>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/068>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Pescara"@it;
+  l0:name "Pescara"@it, "PE";
+  skos:notation "068";
+  :acronym "PE";
+  :taxCode "00212850689";
+  l0:identifier "00212850689", "068", "ITF13", "PE";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/068>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF13>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/069>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Chieti"@it;
+  l0:name "Chieti"@it, "CH";
+  skos:notation "069";
+  :acronym "CH";
+  :taxCode "80000130692";
+  l0:identifier "069", "80000130692", "CH", "ITF14";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/069>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF14>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CH>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/070>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Campobasso"@it;
+  l0:name "Campobasso"@it, "CB";
+  skos:notation "070";
+  :acronym "CB";
+  :taxCode "00139600704";
+  l0:identifier "00139600704", "070", "CB", "ITF22";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/070>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF22>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CB>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/071>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Foggia"@it;
+  l0:name "Foggia"@it, "FG";
+  skos:notation "071";
+  :acronym "FG";
+  :taxCode "00374200715";
+  l0:identifier "00374200715", "071", "FG", "ITF46";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/071>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF46>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/FG>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/073>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Taranto"@it;
+  l0:name "Taranto"@it, "TA";
+  skos:notation "073";
+  :acronym "TA";
+  :taxCode "80004930733";
+  l0:identifier "073", "80004930733", "ITF43", "TA";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/073>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF43>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/074>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Brindisi"@it;
+  l0:name "Brindisi"@it, "BR";
+  skos:notation "074";
+  :acronym "BR";
+  :taxCode "80001390741";
+  l0:identifier "074", "80001390741", "BR", "ITF44";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/074>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF44>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/075>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Lecce"@it;
+  l0:name "Lecce"@it, "LE";
+  skos:notation "075";
+  :acronym "LE";
+  :taxCode "80000840753";
+  l0:identifier "075", "80000840753", "ITF45", "LE";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/075>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF45>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/LE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/076>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Potenza"@it;
+  l0:name "Potenza"@it, "PZ";
+  skos:notation "076";
+  :acronym "PZ";
+  :taxCode "80002710764";
+  l0:identifier "076", "80002710764", "ITF51", "PZ";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/076>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF51>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PZ>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/077>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Matera"@it;
+  l0:name "Matera"@it, "MT";
+  skos:notation "077";
+  :acronym "MT";
+  :taxCode "80000970774";
+  l0:identifier "077", "80000970774", "ITF52", "MT";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/077>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF52>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/078>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Cosenza"@it;
+  l0:name "Cosenza"@it, "CS";
+  skos:notation "078";
+  :acronym "CS";
+  :taxCode "80003710789";
+  l0:identifier "078", "80003710789", "CS", "ITF61";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/078>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF61>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/079>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Catanzaro"@it;
+  l0:name "Catanzaro"@it, "CZ";
+  skos:notation "079";
+  :acronym "CZ";
+  :taxCode "80003090794";
+  l0:identifier "079", "80003090794", "CZ", "ITF63";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/079>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF63>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CZ>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/081>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Trapani"@it;
+  l0:name "Trapani"@it, "TP";
+  skos:notation "081";
+  :acronym "TP";
+  :taxCode "93004780818";
+  l0:identifier "081", "93004780818", "ITG11", "TP";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/081>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG11>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TP>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/4>;
+  :UtsTypeDescription "Libero consorzio di comuni"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/084>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Agrigento"@it;
+  l0:name "Agrigento"@it, "AG";
+  skos:notation "084";
+  :acronym "AG";
+  :taxCode "80002590844";
+  l0:identifier "084", "80002590844", "AG", "ITG14";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/084>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG14>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/AG>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/4>;
+  :UtsTypeDescription "Libero consorzio di comuni"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/085>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Caltanissetta"@it;
+  l0:name "Caltanissetta"@it, "CL";
+  skos:notation "085";
+  :acronym "CL";
+  :taxCode "00115070856";
+  l0:identifier "00115070856", "085", "CL", "ITG15";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/085>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG15>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CL>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/4>;
+  :UtsTypeDescription "Libero consorzio di comuni"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/086>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Enna"@it;
+  l0:name "Enna"@it, "EN";
+  skos:notation "086";
+  :acronym "EN";
+  :taxCode "80000810863";
+  l0:identifier "086", "80000810863", "EN", "ITG16";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/086>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG16>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/EN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/4>;
+  :UtsTypeDescription "Libero consorzio di comuni"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/088>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Ragusa"@it;
+  l0:name "Ragusa"@it, "RG";
+  skos:notation "088";
+  :acronym "RG";
+  :taxCode "80000010886";
+  l0:identifier "088", "80000010886", "ITG18", "RG";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/088>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG18>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RG>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/4>;
+  :UtsTypeDescription "Libero consorzio di comuni"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/089>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Siracusa"@it;
+  l0:name "Siracusa"@it, "SR";
+  skos:notation "089";
+  :acronym "SR";
+  :taxCode "80001670894";
+  l0:identifier "089", "80001670894", "ITG19", "SR";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/089>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG19>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/4>;
+  :UtsTypeDescription "Libero consorzio di comuni"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/093>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Pordenone"@it;
+  l0:name "Pordenone"@it, "PN";
+  skos:notation "093";
+  :acronym "PN";
+  :taxCode "00137050936";
+  l0:identifier "00137050936", "093", "ITH41", "PN";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/093>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH41>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/5>;
+  :UtsTypeDescription "Unità non amministrativa"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/094>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Isernia"@it;
+  l0:name "Isernia"@it, "IS";
+  skos:notation "094";
+  :acronym "IS";
+  :taxCode "80051970947";
+  l0:identifier "094", "80051970947", "IS", "ITF21";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/094>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF21>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/IS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/096>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Biella"@it;
+  l0:name "Biella"@it, "BI";
+  skos:notation "096";
+  :acronym "BI";
+  :taxCode "90027160028";
+  l0:identifier "096", "90027160028", "BI", "ITC13";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/096>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC13>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/097>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Lecco"@it;
+  l0:name "Lecco"@it, "LC";
+  skos:notation "097";
+  :acronym "LC";
+  :taxCode "92013170136";
+  l0:identifier "097", "92013170136", "ITC43", "LC";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/097>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC43>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/LC>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/098>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Lodi"@it;
+  l0:name "Lodi"@it, "LO";
+  skos:notation "098";
+  :acronym "LO";
+  :taxCode "92514470159";
+  l0:identifier "098", "92514470159", "ITC49", "LO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/098>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC49>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/LO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/099>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Rimini"@it;
+  l0:name "Rimini"@it, "RN";
+  skos:notation "099";
+  :acronym "RN";
+  :taxCode "91023860405";
+  l0:identifier "099", "91023860405", "ITH59", "RN";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/099>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH59>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RN>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/100>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Prato"@it;
+  l0:name "Prato"@it, "PO";
+  skos:notation "100";
+  :acronym "PO";
+  :taxCode "92035800488";
+  l0:identifier "100", "92035800488", "ITI15", "PO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/100>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI15>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/101>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Crotone"@it;
+  l0:name "Crotone"@it, "KR";
+  skos:notation "101";
+  :acronym "KR";
+  :taxCode "91006950793";
+  l0:identifier "101", "91006950793", "ITF62", "KR";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/101>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF62>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/KR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/102>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Vibo Valentia"@it;
+  l0:name "Vibo Valentia"@it, "VV";
+  skos:notation "102";
+  :acronym "VV";
+  :taxCode "96004570790";
+  l0:identifier "102", "96004570790", "ITF64", "VV";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/102>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF64>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VV>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/103>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Verbano-Cusio-Ossola"@it;
+  l0:name "Verbano-Cusio-Ossola"@it, "VB";
+  skos:notation "103";
+  :acronym "VB";
+  :taxCode "93009110037";
+  l0:identifier "103", "93009110037", "ITC14", "VB";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/103>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC14>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VB>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/108>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Monza e della Brianza"@it;
+  l0:name "Monza e della Brianza"@it, "MB";
+  skos:notation "108";
+  :acronym "MB";
+  :taxCode "94616010156";
+  l0:identifier "108", "94616010156", "ITC4D", "MB";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/108>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC4D>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MB>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/109>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Fermo"@it;
+  l0:name "Fermo"@it, "FM";
+  skos:notation "109";
+  :acronym "FM";
+  :taxCode "90038780442";
+  l0:identifier "109", "90038780442", "FM", "ITI35";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/109>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI35>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/FM>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/110>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Barletta-Andria-Trani"@it;
+  l0:name "Barletta-Andria-Trani"@it, "BT";
+  skos:notation "110";
+  :acronym "BT";
+  :taxCode "6931240722";
+  l0:identifier "110", "6931240722", "BT", "ITF48";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/110>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF48>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/113>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Gallura Nord-Est Sardegna"@it;
+  l0:name "Gallura Nord-Est Sardegna"@it, "OT";
+  skos:notation "113";
+  :acronym "OT";
+  l0:identifier "113", "OT";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/113>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/OT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/114>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Nuoro"@it;
+  l0:name "Nuoro"@it, "NU";
+  skos:notation "114";
+  :acronym "NU";
+  :taxCode "00166520916";
+  l0:identifier "00166520916", "114", "ITG2E", "NU";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/114>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG2E>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/NU>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/115>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Oristano"@it;
+  l0:name "Oristano"@it, "OR";
+  skos:notation "115";
+  :acronym "OR";
+  :taxCode "80004010957";
+  l0:identifier "115", "80004010957", "ITG2G", "OR";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/115>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG2G>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/OR>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/116>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Ogliastra"@it;
+  l0:name "Ogliastra"@it, "OG";
+  skos:notation "116";
+  :acronym "OG";
+  l0:identifier "116", "OG";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/116>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/OG>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/117>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Medio Campidano"@it;
+  l0:name "Medio Campidano"@it, "VS";
+  skos:notation "117";
+  :acronym "VS";
+  l0:identifier "117", "VS";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/117>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/119>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Sulcis Iglesiente"@it;
+  l0:name "Sulcis Iglesiente"@it, "CI";
+  skos:notation "119";
+  :acronym "CI";
+  l0:identifier "119", "CI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/119>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/1>;
+  :UtsTypeDescription "Provincia"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/201>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Torino"@it;
+  a :UTS, skos:Concept;
+  l0:name "Torino"@it, "TO";
+  skos:notation "201";
+  :acronym "TO";
+  :taxCode "01907990012";
+  l0:identifier "01907990012", "201", "ITC11", "TO";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/201>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC11>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/TO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Torino"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/210>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Genova"@it;
+  l0:name "Genova"@it, "GE";
+  skos:notation "210";
+  :acronym "GE";
+  :taxCode "80007350103";
+  l0:identifier "210", "80007350103", "GE", "ITC33";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/210>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC33>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/GE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/215>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Milano"@it;
+  l0:name "Milano"@it, "MI";
+  skos:notation "215";
+  :acronym "MI";
+  :taxCode "08911820960";
+  l0:identifier "08911820960", "215", "ITC4C", "MI";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/215>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITC4C>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/MI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/227>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Venezia"@it;
+  l0:name "Venezia"@it, "VE";
+  skos:notation "227";
+  :acronym "VE";
+  :taxCode "80008840276";
+  l0:identifier "227", "80008840276", "ITH35", "VE";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/227>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH35>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/VE>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/237>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Bologna"@it;
+  l0:name "Bologna"@it, "BO";
+  skos:notation "237";
+  :acronym "BO";
+  :taxCode "03428581205";
+  l0:identifier "03428581205", "237", "BO", "ITH55";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/237>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITH55>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BO>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/08> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/248>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Firenze"@it;
+  l0:name "Firenze"@it, "FI";
+  skos:notation "248";
+  :acronym "FI";
+  :taxCode "80016450480";
+  l0:identifier "248", "80016450480", "FI", "ITI14";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/248>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI14>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/FI>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/258>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Roma"@it;
+  l0:name "Roma"@it, "RM";
+  skos:notation "258";
+  :acronym "RM";
+  :taxCode "80034390585";
+  l0:identifier "258", "80034390585", "ITI43", "RM";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/258>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITI43>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RM>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/263>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Napoli"@it;
+  l0:name "Napoli"@it, "NA";
+  skos:notation "263";
+  :acronym "NA";
+  :taxCode "01263370635";
+  l0:identifier "01263370635", "263", "ITF33", "NA";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/263>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF33>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/NA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/272>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Bari"@it;
+  l0:name "Bari"@it, "BA";
+  skos:notation "272";
+  :acronym "BA";
+  :taxCode "80000110728";
+  l0:identifier "272", "80000110728", "BA", "ITF47";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/272>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF47>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/BA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/280>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Reggio Calabria"@it;
+  l0:name "Reggio Calabria"@it, "RC";
+  skos:notation "280";
+  :acronym "RC";
+  :taxCode "80000100802";
+  l0:identifier "280", "80000100802", "ITF65", "RC";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/280>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITF65>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/RC>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/282>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Palermo"@it;
+  l0:name "Palermo"@it, "PA";
+  skos:notation "282";
+  :acronym "PA";
+  :taxCode "80021470820";
+  l0:identifier "282", "80021470820", "ITG12", "PA";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/282>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG12>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/PA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/283>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Messina"@it;
+  l0:name "Messina"@it, "ME";
+  skos:notation "283";
+  :acronym "ME";
+  :taxCode "80002760835";
+  l0:identifier "283", "80002760835", "ITG13", "ME";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/283>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG13>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/ME>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/287>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Catania"@it;
+  l0:name "Catania"@it, "CT";
+  skos:notation "287";
+  :acronym "CT";
+  :taxCode "00397470873";
+  l0:identifier "00397470873", "287", "CT", "ITG17";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/287>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG17>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CT>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/312>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Sassari"@it;
+  l0:name "Sassari"@it, "SS";
+  skos:notation "312";
+  :acronym "SS";
+  l0:identifier "312", "SS";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/312>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/SS>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/318>
+  a :UTS, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>;
+  rdfs:label "Cagliari"@it;
+  l0:name "Cagliari"@it, "CA";
+  skos:notation "318";
+  :acronym "CA";
+  :taxCode "00510810922";
+  l0:identifier "00510810922", "318", "CA", "ITG2F";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/uts-identifiers/318>, <https://w3id.org/italia/data/identifiers/uts-identifiers/nuts-code/ITG2F>,
+    <https://w3id.org/italia/data/identifiers/uts-identifiers/vehicle-code/CA>;
+  :hasUTSType <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts-type/3>;
+  :UtsTypeDescription "Città metropolitana"@it;
+  :hasRankOrder "4";
+  :hasHigherRank <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20>;
+  :situatedWithin <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
