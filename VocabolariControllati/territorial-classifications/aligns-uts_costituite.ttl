@@ -7,9 +7,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix uts: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/> .
 @prefix utsc: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite/> .
-@base <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/aligns-uts_costituite/> .
+@base <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite/> .
 
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/aligns-uts_costituite> rdf:type owl:Ontology ;
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite> rdf:type owl:Ontology ;
     owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;
     dc:creator "ISTAT - Segreteria Tecnica Istat - Progetto PNRR National Data Catalog"@it ;
     dc:issued "2026-03-24"^^xsd:date ;
