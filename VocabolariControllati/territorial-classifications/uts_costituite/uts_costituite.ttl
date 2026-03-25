@@ -68,7 +68,7 @@
   <https://w3id.org/italia/data/public-organization/ISTAT>
   a dcatapit:Agent, foaf:Agent ;
   dct:identifier "ISTAT" ;
-  foaf:name "Istituto Nazionale di Statistica"@it , "Italian National Institute of Statistics"@en .
+  foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
   
   <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
   a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
