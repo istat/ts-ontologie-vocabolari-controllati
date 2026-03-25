@@ -12,12 +12,12 @@
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite> rdf:type owl:Ontology ;
     owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;
     dc:creator "ISTAT - Segreteria Tecnica Istat - Progetto PNRR National Data Catalog"@it ;
-    dc:issued "2026-03-24"^^xsd:date ;
-    dc:modified "2026-03-24"^^xsd:date ;
+    dc:issued "2026-03-25"^^xsd:date ;
+    dc:modified "2026-03-25"^^xsd:date ;
     dc:title "Allineamento tra UTS e UTS costituite o annesse da Stato estero"@it ;
     dc:title "Alignment between UTS and UTS established or annexed from a foreign state"@en ;
-    dc:description "File di allineamento SKOS tra i due vocabolari controllati UTS (completo) e UTS_costituite (sottoinsieme storico)"@it ;
-    owl:imports uts: , utsc: .
+    dc:description "File di allineamento SKOS tra i due vocabolari controllati UTS attuali e UTS_costituite"@it ;
+    owl:imports <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> , <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite>  .
 
 # Allineamenti Concepts (skos:exactMatch per codici UTS condivisi)
 uts:002 skos:exactMatch utsc:002 .

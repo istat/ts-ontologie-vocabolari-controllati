@@ -41,7 +41,7 @@
   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
-  dcat:keyword "Provincia"@it , "Province"@it , "Città metropolitana"@it , "Provincia autonoma"@it, "Libero consorzio di comuni"@it, "Unità territoriale non amministrativa"@it, "Province"@en , "Provinces"@en , "Metropolitan city"@en , "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en ;
+  dcat:keyword "uts"@it , "Provincia"@it , "Province"@it , "Città metropolitana"@it , "Provincia autonoma"@it, "Libero consorzio di comuni"@it, "Unità territoriale non amministrativa"@it , "uts"@en , "Province"@en , "Provinces"@en , "Metropolitan city"@en , "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_CSV>, <https://w3id.org/italia/data/distribution/uts_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
   dct:issued "2026-01-01"^^xsd:date ;
@@ -65,7 +65,7 @@
   <https://w3id.org/italia/data/public-organization/ISTAT>
   a dcatapit:Agent, foaf:Agent ;
   dct:identifier "ISTAT" ;
-  foaf:name "Istituto Nazionale di Statistica"@it , "Italian National Institute of Statistics"@en .
+  foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
   
   <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
   a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
