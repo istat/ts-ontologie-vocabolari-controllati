@@ -45,17 +45,20 @@
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
   dcat:keyword "uts"@it , "Provincia"@it , "Province"@it , "Città metropolitana"@it , "Provincia autonoma"@it, "Libero consorzio di comuni"@it, "Unità territoriale non amministrativa"@it , "uts"@en , "Province"@en , "Provinces"@en , "Metropolitan city"@en , "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en ;
-  dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_CSV>, <https://w3id.org/italia/data/distribution/uts_XLSX>  ;                             
+  dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_CSV>, <https://w3id.org/italia/data/distribution/uts_XLSX> , <https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle> ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
-  dct:issued "2026-01-01"^^xsd:date ;
-  dct:modified "2026-03-08"^^xsd:date ;
+  dct:issued "2026-03-25"^^xsd:date ;
+  dct:modified "2026-03-25"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;  
   dct:temporal "2026/..." ;
   ndc:keyConcept "Provinces" ;
   rdfs:comment "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
   rdfs:label "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
   skos:notation "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;     
-  skos:prefLabel "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it .     
+  skos:prefLabel "Controlled Vocabulary for Territorial Statistical Units UTS"@en , "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;     
+  dct:relation <https://w3id.org/italia/data/linkset/uts_aligns_costituite> ;
+  rdfs:seeAlso <https://w3id.org/italia/data/linkset/uts_aligns_costituite> . 
+   
    
   <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts>
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
@@ -114,7 +117,25 @@
 
 
 
+#################################################################
+# ALIGNMENTS / LINKSET
+#################################################################
 
+
+
+<https://w3id.org/italia/data/linkset/uts_aligns_costituite>
+  a void:Linkset;
+  dct:title "Allineamento tra UTS e UTS costituite"@it ,
+            "Alignment between UTS and constituted UTS"@en ;
+  dct:description "Risorsa che documenta il file di allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite."@it ,
+                  "Resource documenting the alignment file between the UTS controlled vocabulary and the constituted UTS controlled vocabulary."@en ;
+  dct:relation <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
+  dct:relation <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle> ;
+  void:subjectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
+  void:objectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle> .
+  
 #################################################################
 #    fine metadati 
 #################################################################
@@ -2118,77 +2139,3 @@
 
 
 
-#################################################################
-#    allineamenti (skos:exactMatch)
-#################################################################
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite>
-  rdf:type void:Linkset ;
-  dct:title "Allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite o annesse da Stato estero"@it ,
-            "Alignment between the controlled vocabulary of UTS and the controlled vocabulary of UTS established or annexed from a foreign state"@en ;
-  dct:description "Dataset di raccordo che esprime gli allineamenti SKOS tra i concetti del vocabolario controllato delle UTS e i concetti del vocabolario controllato delle UTS costituite o annesse da Stato estero."@it ,
-                  "Linkset expressing SKOS mappings between concepts in the controlled vocabulary of UTS and the concepts in the controlled vocabulary of UTS established or annexed from a foreign state."@en ;
-  void:subjectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
-  void:objectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
-  void:linkPredicate skos:exactMatch ; 
-  owl:imports <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ,
-              <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> . 
-			  
-			  
-uts:002 skos:exactMatch utsc:002 .
-uts:005 skos:exactMatch utsc:005 .
-uts:007 skos:exactMatch utsc:007 .
-uts:009 skos:exactMatch utsc:009 .
-uts:011 skos:exactMatch utsc:011 .
-uts:012 skos:exactMatch utsc:012 .
-uts:020 skos:exactMatch utsc:020 .
-uts:021 skos:exactMatch utsc:021 .
-uts:022 skos:exactMatch utsc:022 .
-uts:023 skos:exactMatch utsc:023 .
-uts:024 skos:exactMatch utsc:024 .
-uts:025 skos:exactMatch utsc:025 .
-uts:026 skos:exactMatch utsc:026 .
-uts:028 skos:exactMatch utsc:028 .
-uts:029 skos:exactMatch utsc:029 .
-uts:030 skos:exactMatch utsc:030 .
-uts:031 skos:exactMatch utsc:031 .
-uts:032 skos:exactMatch utsc:032 .
-uts:047 skos:exactMatch utsc:047 .
-uts:055 skos:exactMatch utsc:055 .
-uts:056 skos:exactMatch utsc:056 .
-uts:057 skos:exactMatch utsc:057 .
-uts:059 skos:exactMatch utsc:059 .
-uts:060 skos:exactMatch utsc:060 .
-uts:061 skos:exactMatch utsc:061 .
-uts:068 skos:exactMatch utsc:068 .
-uts:073 skos:exactMatch utsc:073 .
-uts:074 skos:exactMatch utsc:074 .
-uts:077 skos:exactMatch utsc:077 .
-uts:081 skos:exactMatch utsc:081 .
-uts:093 skos:exactMatch utsc:093 .
-uts:096 skos:exactMatch utsc:096 .
-uts:097 skos:exactMatch utsc:097 .
-uts:098 skos:exactMatch utsc:098 .
-uts:099 skos:exactMatch utsc:099 .
-uts:100 skos:exactMatch utsc:100 .
-uts:101 skos:exactMatch utsc:101 .
-uts:102 skos:exactMatch utsc:102 .
-uts:103 skos:exactMatch utsc:103 .
-uts:108 skos:exactMatch utsc:108 .
-uts:109 skos:exactMatch utsc:109 .
-uts:110 skos:exactMatch utsc:110 .
-uts:201 skos:exactMatch utsc:201 .
-uts:210 skos:exactMatch utsc:210 .
-uts:215 skos:exactMatch utsc:215 .
-uts:227 skos:exactMatch utsc:227 .
-uts:237 skos:exactMatch utsc:237 .
-uts:248 skos:exactMatch utsc:248 .
-uts:258 skos:exactMatch utsc:258 .
-uts:263 skos:exactMatch utsc:263 .
-uts:272 skos:exactMatch utsc:272 .
-uts:280 skos:exactMatch utsc:280 .
-uts:282 skos:exactMatch utsc:282 .
-uts:283 skos:exactMatch utsc:283 .
-uts:287 skos:exactMatch utsc:287 .
-uts:312 skos:exactMatch utsc:312 .
-uts:318 skos:exactMatch utsc:292 .
