@@ -1,0 +1,153 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix uts: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/> .
+@prefix utsc: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite/> .
+@prefix linkset: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite/> .
+
+#################################################################
+#    inizio metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite>
+  rdf:type adms:Asset , dcatapit:Dataset , void:Linkset , owl:Ontology ;
+  dct:title "Allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite o annesse da Stato estero"@it ,
+            "Alignment between the controlled vocabulary of UTS and the controlled vocabulary of UTS established or annexed from a foreign state"@en ;
+  dct:description "Dataset di raccordo che esprime gli allineamenti SKOS tra i concetti del vocabolario controllato delle UTS e i concetti del vocabolario controllato delle UTS costituite o annesse da Stato estero."@it ,
+                  "Linkset expressing SKOS mappings between concepts in the controlled vocabulary of UTS and the concepts in the controlled vocabulary of UTS established or annexed from a foreign state."@en ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite" ;
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+  dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ,
+               <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite> ;
+  dcat:keyword "uts"@it , "uts costituite"@it , "allineamento"@it , "raccordo"@it , "exact match"@it ,
+               "uts"@en , "constituted uts"@en , "alignment"@en , "linkset"@en , "exact match"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/aligns-uts_costituite_RDF_Turtle> ;
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+  dct:issued "2026-03-24"^^xsd:date ;
+  dct:modified "2026-03-25"^^xsd:date ;
+  owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;
+  dct:temporal "2026/..." ;
+  ndc:keyConcept "UTS" ;
+  rdfs:comment "Dataset di allineamento tra UTS e UTS costituite o annesse da Stato estero"@it ,
+               "Alignment dataset between UTS and UTS established or annexed from a foreign state"@en ;
+  rdfs:label "Allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite o annesse da Stato estero"@it ,
+             "Alignment between the controlled vocabulary of UTS and the controlled vocabulary of UTS established or annexed from a foreign state"@en ;
+  void:subjectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
+  void:objectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+  void:linkPredicate skos:exactMatch ;
+  owl:imports <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ,
+              <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> .
+
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/aligns-uts_costituite>
+  dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
+
+<https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications>
+  a skos:Concept ;
+  skos:prefLabel "Classificazioni territoriali"@it ;
+  skos:prefLabel "Territorial classifications"@en .
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+  a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "ISTAT" ;
+  foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+            "Italian National Institute of Statistics - ISTAT"@en .
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a dcatapit:Organization , vcard:Organization , vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+<https://w3id.org/italia/data/standard/SKOS>
+  a dcatapit:Standard , dct:Standard ;
+  dct:identifier "SKOS" ;
+  foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+  dct:title "Simple Knowledge Organization System - SKOS" ;
+  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+
+
+#################################################################
+#    fine metadati 
+#################################################################
+
+#################################################################
+#    allineamenti (skos:exactMatch)
+#################################################################
+
+uts:002 skos:exactMatch utsc:002 .
+uts:005 skos:exactMatch utsc:005 .
+uts:007 skos:exactMatch utsc:007 .
+uts:009 skos:exactMatch utsc:009 .
+uts:011 skos:exactMatch utsc:011 .
+uts:012 skos:exactMatch utsc:012 .
+uts:020 skos:exactMatch utsc:020 .
+uts:021 skos:exactMatch utsc:021 .
+uts:022 skos:exactMatch utsc:022 .
+uts:023 skos:exactMatch utsc:023 .
+uts:024 skos:exactMatch utsc:024 .
+uts:025 skos:exactMatch utsc:025 .
+uts:026 skos:exactMatch utsc:026 .
+uts:028 skos:exactMatch utsc:028 .
+uts:029 skos:exactMatch utsc:029 .
+uts:030 skos:exactMatch utsc:030 .
+uts:031 skos:exactMatch utsc:031 .
+uts:032 skos:exactMatch utsc:032 .
+uts:047 skos:exactMatch utsc:047 .
+uts:055 skos:exactMatch utsc:055 .
+uts:056 skos:exactMatch utsc:056 .
+uts:057 skos:exactMatch utsc:057 .
+uts:059 skos:exactMatch utsc:059 .
+uts:060 skos:exactMatch utsc:060 .
+uts:061 skos:exactMatch utsc:061 .
+uts:068 skos:exactMatch utsc:068 .
+uts:073 skos:exactMatch utsc:073 .
+uts:074 skos:exactMatch utsc:074 .
+uts:077 skos:exactMatch utsc:077 .
+uts:081 skos:exactMatch utsc:081 .
+uts:093 skos:exactMatch utsc:093 .
+uts:096 skos:exactMatch utsc:096 .
+uts:097 skos:exactMatch utsc:097 .
+uts:098 skos:exactMatch utsc:098 .
+uts:099 skos:exactMatch utsc:099 .
+uts:100 skos:exactMatch utsc:100 .
+uts:101 skos:exactMatch utsc:101 .
+uts:102 skos:exactMatch utsc:102 .
+uts:103 skos:exactMatch utsc:103 .
+uts:108 skos:exactMatch utsc:108 .
+uts:109 skos:exactMatch utsc:109 .
+uts:110 skos:exactMatch utsc:110 .
+uts:201 skos:exactMatch utsc:201 .
+uts:210 skos:exactMatch utsc:210 .
+uts:215 skos:exactMatch utsc:215 .
+uts:227 skos:exactMatch utsc:227 .
+uts:237 skos:exactMatch utsc:237 .
+uts:248 skos:exactMatch utsc:248 .
+uts:258 skos:exactMatch utsc:258 .
+uts:263 skos:exactMatch utsc:263 .
+uts:272 skos:exactMatch utsc:272 .
+uts:280 skos:exactMatch utsc:280 .
+uts:282 skos:exactMatch utsc:282 .
+uts:283 skos:exactMatch utsc:283 .
+uts:287 skos:exactMatch utsc:287 .
+uts:312 skos:exactMatch utsc:312 .
+uts:318 skos:exactMatch utsc:292 .
