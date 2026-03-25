@@ -25,24 +25,34 @@
 
 
 
-
 #################################################################
-#    allineamenti (skos:exactMatch)
+# linkset
 #################################################################
 
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/uts_aligns_costituite>
-  rdf:type void:Linkset ;
-  dct:title "Allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite o annesse da Stato estero"@it ,
-            "Alignment between the controlled vocabulary of UTS and the controlled vocabulary of UTS established or annexed from a foreign state"@en ;
-  dct:description "Dataset di raccordo che esprime gli allineamenti SKOS tra i concetti del vocabolario controllato delle UTS e i concetti del vocabolario controllato delle UTS costituite o annesse da Stato estero."@it ,
-                  "Linkset expressing SKOS mappings between concepts in the controlled vocabulary of UTS and the concepts in the controlled vocabulary of UTS established or annexed from a foreign state."@en ;
-  void:subjectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
-  void:objectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
-  void:linkPredicate skos:exactMatch ; 
-  owl:imports <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ,
-              <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> . 
-			  
-			  
+<https://w3id.org/italia/data/linkset/uts_aligns_costituite>
+    a void:Linkset , dcatapit:Dataset ;
+    dct:title "Allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite o annesse da Stato estero"@it ,
+              "Alignment between the controlled vocabulary of UTS and the controlled vocabulary of UTS established or annexed from a foreign state"@en ;
+    dct:description "Dataset di raccordo che esprime gli allineamenti SKOS tra i concetti del vocabolario controllato delle UTS e i concetti del vocabolario controllato delle UTS costituite o annesse da Stato estero."@it ,
+                    "Linkset expressing SKOS mappings between concepts in the controlled vocabulary of UTS and the concepts in the controlled vocabulary of UTS established or annexed from a foreign state."@en ;
+    dct:relation <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ,
+                 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+    void:subjectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
+    void:objectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+    void:linkPredicate skos:exactMatch ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle> .
+
+<https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle>
+    a dcatapit:Distribution ;
+    dct:title "Distribuzione RDF/Turtle del linkset di allineamento tra UTS e UTS costituite"@it ,
+              "RDF/Turtle distribution of the alignment linkset between UTS and constituted UTS"@en ;
+    dct:description "Questa è la distribuzione RDF/Turtle del linkset che esprime gli allineamenti SKOS tra UTS e UTS costituite o annesse da Stato estero"@it ,
+                    "This is the RDF/Turtle distribution of the linkset expressing SKOS alignments between UTS and territorial statistical units established or annexed from a foreign state"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/uts_aligns_costituite/uts_aligns_costituite.ttl> ;
+    dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/uts_aligns_costituite> .
+
 uts:002 skos:exactMatch utsc:002 .
 uts:005 skos:exactMatch utsc:005 .
 uts:007 skos:exactMatch utsc:007 .
