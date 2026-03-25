@@ -42,16 +42,6 @@
     void:linkPredicate skos:exactMatch ;
     dcat:distribution <https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle> .
 
-<https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle>
-    a dcatapit:Distribution ;
-    dct:title "Distribuzione RDF/Turtle del linkset di allineamento tra UTS e UTS costituite"@it ,
-              "RDF/Turtle distribution of the alignment linkset between UTS and constituted UTS"@en ;
-    dct:description "Questa è la distribuzione RDF/Turtle del linkset che esprime gli allineamenti SKOS tra UTS e UTS costituite o annesse da Stato estero"@it ,
-                    "This is the RDF/Turtle distribution of the linkset expressing SKOS alignments between UTS and territorial statistical units established or annexed from a foreign state"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/uts_aligns_costituite/uts_aligns_costituite.ttl> ;
-    dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/uts_aligns_costituite> .
 
 uts:002 skos:exactMatch utsc:002 .
 uts:005 skos:exactMatch utsc:005 .
