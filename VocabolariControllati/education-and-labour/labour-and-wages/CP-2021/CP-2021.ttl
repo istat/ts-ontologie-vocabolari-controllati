@@ -107,6 +107,14 @@
 		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/labour-and-wages/CP-2021/CP-2021.csv> ;
 		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/labour-and-wages/CP-2021> .
 
+<https://w3id.org/italia/data/distribution/CP-2021-XLSX>
+		a	dcatapit:Distribution  ;
+		dct:title	"Distribuzione XLSX classificazione ufficiale CP 2021"@it , "XLSX distribution of the Italian official classification CP 2021"@en ;
+		dct:description	"Questa è la distribuzione XLSX del dataset Linked Open Data della classificazione ufficiale CP 2021"@it , "This is the distribution in XLSX of the Linked Open Dataset of Italian official classification CP 2021"@en ;
+		dct:format 	<http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+		dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/labour-and-wages/CP-2021/CP-2021.xlsx> ;
+		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/labour-and-wages/CP-2021> .
 
 
 
