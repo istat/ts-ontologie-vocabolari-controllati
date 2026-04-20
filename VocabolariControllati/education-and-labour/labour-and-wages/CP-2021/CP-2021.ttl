@@ -122,7 +122,7 @@
 # inizio file data CP-2021
 #################################################################
 
-<https://w3id.org/italia/controlled-vocabulary/education-and-labour/labour-and-wages/CP-2021/>
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/labour-and-wages/CP-2021>
   skos:hasTopConcept :1, :2, :3, :4, :5, :6, :7, :8, :9 .
 
 :Level_1 a xkos:ClassificationLevel;
