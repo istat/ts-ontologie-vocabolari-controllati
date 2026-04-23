@@ -1,0 +1,114 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix : <https://w3id.org/italia/onto/CLV/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix covapit: <https://w3id.org/italia/onto/COV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix uts: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts/> .
+@prefix utsc: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+
+
+#################################################################
+# linkset
+#################################################################
+
+<https://w3id.org/italia/data/linkset/uts_aligns_costituite>
+    a void:Linkset , dcatapit:Dataset ;
+    dct:title "Allineamento tra il vocabolario controllato delle UTS e il vocabolario controllato delle UTS costituite o annesse da Stato estero"@it ,
+              "Alignment between the controlled vocabulary of UTS and the controlled vocabulary of UTS established or annexed from a foreign state"@en ;
+    dct:description "Dataset di raccordo che esprime gli allineamenti SKOS tra i concetti del vocabolario controllato delle UTS e i concetti del vocabolario controllato delle UTS costituite o annesse da Stato estero."@it ,
+                    "Linkset expressing SKOS mappings between concepts in the controlled vocabulary of UTS and the concepts in the controlled vocabulary of UTS established or annexed from a foreign state."@en ;
+    dct:relation <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ,
+                 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+    void:subjectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts> ;
+    void:objectsTarget <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/uts_costituite> ;
+    void:linkPredicate skos:exactMatch ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle> .
+
+<https://w3id.org/italia/data/distribution/uts_aligns_costituite_RDF_Turtle>
+    a dcatapit:Distribution ;
+    dct:title "Distribuzione RDF/Turtle del linkset di allineamento tra UTS e UTS costituite"@it ,
+              "RDF/Turtle distribution of the alignment linkset between UTS and constituted UTS"@en ;
+    dct:description "Questa è la distribuzione RDF/Turtle del linkset che esprime gli allineamenti SKOS tra UTS e UTS costituite o annesse da Stato estero"@it ,
+                    "This is the RDF/Turtle distribution of the linkset expressing SKOS alignments between UTS and territorial statistical units established or annexed from a foreign state"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/uts_aligns_costituite/uts_aligns_costituite.ttl> ;
+    dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/uts_aligns_costituite> .
+
+
+
+uts:002 skos:exactMatch utsc:002 .
+uts:005 skos:exactMatch utsc:005 .
+uts:007 skos:exactMatch utsc:007 .
+uts:009 skos:exactMatch utsc:009 .
+uts:011 skos:exactMatch utsc:011 .
+uts:012 skos:exactMatch utsc:012 .
+uts:020 skos:exactMatch utsc:020 .
+uts:021 skos:exactMatch utsc:021 .
+uts:022 skos:exactMatch utsc:022 .
+uts:023 skos:exactMatch utsc:023 .
+uts:024 skos:exactMatch utsc:024 .
+uts:025 skos:exactMatch utsc:025 .
+uts:026 skos:exactMatch utsc:026 .
+uts:028 skos:exactMatch utsc:028 .
+uts:029 skos:exactMatch utsc:029 .
+uts:030 skos:exactMatch utsc:030 .
+uts:031 skos:exactMatch utsc:031 .
+uts:032 skos:exactMatch utsc:032 .
+uts:047 skos:exactMatch utsc:047 .
+uts:055 skos:exactMatch utsc:055 .
+uts:056 skos:exactMatch utsc:056 .
+uts:057 skos:exactMatch utsc:057 .
+uts:059 skos:exactMatch utsc:059 .
+uts:060 skos:exactMatch utsc:060 .
+uts:061 skos:exactMatch utsc:061 .
+uts:068 skos:exactMatch utsc:068 .
+uts:073 skos:exactMatch utsc:073 .
+uts:074 skos:exactMatch utsc:074 .
+uts:077 skos:exactMatch utsc:077 .
+uts:081 skos:exactMatch utsc:081 .
+uts:093 skos:exactMatch utsc:093 .
+uts:096 skos:exactMatch utsc:096 .
+uts:097 skos:exactMatch utsc:097 .
+uts:098 skos:exactMatch utsc:098 .
+uts:099 skos:exactMatch utsc:099 .
+uts:100 skos:exactMatch utsc:100 .
+uts:101 skos:exactMatch utsc:101 .
+uts:102 skos:exactMatch utsc:102 .
+uts:103 skos:exactMatch utsc:103 .
+uts:108 skos:exactMatch utsc:108 .
+uts:109 skos:exactMatch utsc:109 .
+uts:110 skos:exactMatch utsc:110 .
+uts:201 skos:exactMatch utsc:201 .
+uts:210 skos:exactMatch utsc:210 .
+uts:215 skos:exactMatch utsc:215 .
+uts:227 skos:exactMatch utsc:227 .
+uts:237 skos:exactMatch utsc:237 .
+uts:248 skos:exactMatch utsc:248 .
+uts:258 skos:exactMatch utsc:258 .
+uts:263 skos:exactMatch utsc:263 .
+uts:272 skos:exactMatch utsc:272 .
+uts:280 skos:exactMatch utsc:280 .
+uts:282 skos:exactMatch utsc:282 .
+uts:283 skos:exactMatch utsc:283 .
+uts:287 skos:exactMatch utsc:287 .
+uts:312 skos:exactMatch utsc:312 .
+uts:318 skos:exactMatch utsc:292 .
