@@ -1,0 +1,1081 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix schema: <https://schema.org/> .
+@prefix : <https://w3id.org/italia/onto/CLV/> .
+@prefix obda: <http://www.obdasystems.com/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix covapit: <https://w3id.org/italia/onto/COV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix utsc: <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/> .
+@prefix utss: <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse/> .
+@prefix agidP: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/> .
+
+#################################################################
+#    inizio metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>
+  rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+  dct:title "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
+  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione costituite o annesse da Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome (Trentino Alto Adige), i liberi consorzi di Comuni (Sicilia), e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region established or annexed from a foreign state. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units (Friuli Venezia Giulia)."@en ;
+  xkos:numberOfLevels "1" ;
+  dct:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dct:identifier "https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite";
+  dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dct:creator <https://w3id.org/italia/data/public-organization/ISTAT>  ;
+  dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite> ;
+  dcat:keyword "Provincia costituita"@it , "UTS costituite"@it ,  "Established province"@en , "Established UTS"@en ;
+  dcat:distribution <https://w3id.org/italia/data/distribution/uts_costituite_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_costituite_CSV>, <https://w3id.org/italia/data/distribution/uts_costituite_XLSX>  ;                             
+  dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
+  dct:issued "2026-03-20"^^xsd:date ;
+  dct:modified "2026-03-20"^^xsd:date ;
+  owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
+  dct:temporal "Dal 1886" ;
+  ndc:keyConcept "Established-Provinces" ;
+  rdfs:comment "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
+  rdfs:label "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
+  skos:notation "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;     
+  skos:prefLabel "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it .     
+   
+  <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>
+    dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
+
+<https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications>
+    a skos:Concept ;
+    skos:prefLabel "Classificazioni territoriali"@it ;
+    skos:prefLabel "Territorial classifications"@en . 
+ 
+  <https://w3id.org/italia/data/public-organization/ISTAT>
+  a dcatapit:Agent, foaf:Agent ;
+  dct:identifier "ISTAT" ;
+  foaf:name "Istituto Nazionale di Statistica - ISTAT"@it , "Italian National Institute of Statistics - ISTAT"@en .
+  
+  <https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+  a	dcatapit:Organization , vcard:Organization, vcard:Kind ;
+  vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+  vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
+	
+  <https://w3id.org/italia/data/standard/SKOS>
+  a dcatapit:Standard , dct:Standard ;
+  dct:identifier "SKOS" ;
+  foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+  dct:title "Simple Knowledge Organization System - SKOS" ;
+  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+
+
+
+
+
+#################################################################
+#    fine metadati 
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>
+  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/113>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/116>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/117>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/119>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/312>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/030>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/031>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/032>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/093>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/280>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/081>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/084>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/085>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/086>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/088>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/089>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/282>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/283>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/287>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/111>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/292>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/201>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/210>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/215>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/227>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/237>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/248>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/258>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/263>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/272>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/110>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/109>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/108>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/104>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/105>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/106>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/107>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/096>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/097>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/098>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/099>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/100>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/101>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/102>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/103>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/095>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/094>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/061>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/005>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/059>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/002>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/007>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/009>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/012>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/021>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/047>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/055>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/056>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/057>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/060>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/068>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/074>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/077>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/091>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/701>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/011>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/073>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/022>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/702>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/703>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/801>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/802>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/058>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/020>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/023>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/024>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/025>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/026>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/027>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/028>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/029> .
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/002>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Vercelli"@it;
+  skos:notation "002";
+  :acronym "VC";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/005>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Asti"@it;
+  skos:notation "005";
+  :acronym "AT";
+  schema:startDate "1935-04-15" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/007>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Aosta"@it;
+  skos:notation "007";
+  :acronym "AO";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/009>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Savona"@it;
+  skos:notation "009";
+  :acronym "SV";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/011>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Spezia"@it;
+  skos:notation "011";
+  :acronym "SP";
+  schema:startDate "1923-12-22" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/012>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Varese"@it;
+  skos:notation "012";
+  :acronym "VA";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/020>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Mantova"@it;
+  skos:notation "020";
+  :acronym "MN";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/021>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Bolzano/Bozen"@it;
+  skos:notation "021";
+  :acronym "BZ";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/022>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Trento"@it;
+  skos:notation "022";
+  :acronym "TN";
+  schema:startDate "1923-02-14" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/023>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Verona"@it;
+  skos:notation "023";
+  :acronym "VR";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/024>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Vicenza"@it;
+  skos:notation "024";
+  :acronym "VI";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/025>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Belluno"@it;
+  skos:notation "025";
+  :acronym "BL";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/026>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Treviso"@it;
+  skos:notation "026";
+  :acronym "TV";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/027>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Venezia"@it;
+  skos:notation "027";
+  :acronym "VE";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/028>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Padova"@it;
+  skos:notation "028";
+  :acronym "PD";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/029>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Rovigo"@it;
+  skos:notation "029";
+  :acronym "RO";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/030>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Udine"@it;
+  skos:notation "030";
+  :acronym "UD";
+  schema:startDate "1866-11-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/031>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Gorizia"@it;
+  skos:notation "031";
+  :acronym "GO";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/032>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Trieste"@it;
+  skos:notation "032";
+  :acronym "TS";
+  schema:startDate "1923-02-08" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/047>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Pistoia"@it;
+  skos:notation "047";
+  :acronym "PT";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/055>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Terni"@it;
+  skos:notation "055";
+  :acronym "TR";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/056>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Viterbo"@it;
+  skos:notation "056";
+  :acronym "VT";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/057>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Rieti"@it;
+  skos:notation "057";
+  :acronym "RI";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/058>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Roma"@it;
+  skos:notation "058";
+  :acronym "RM";
+  schema:startDate "1871-01-15" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/059>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Littoria"@it;
+  skos:notation "059";
+  :acronym "LT";
+  schema:startDate "1934-10-26" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/060>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Frosinone"@it;
+  skos:notation "060";
+  :acronym "FR";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/061>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Caserta"@it;
+  skos:notation "061";
+  :acronym "CE";
+  schema:startDate "1945-09-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/068>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Pescara"@it;
+  skos:notation "068";
+  :acronym "PE";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/073>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Jonio"@it;
+  skos:notation "073";
+  :acronym "TA";
+  schema:startDate "1923-12-22" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/074>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Brindisi"@it;
+  skos:notation "074";
+  :acronym "BR";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/077>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Matera"@it;
+  skos:notation "077";
+  :acronym "MT";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/086>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Castrogiovanni"@it;
+  skos:notation "086";
+  :acronym "EN";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/088>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Ragusa"@it;
+  skos:notation "088";
+  :acronym "RG";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/091>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Nuoro"@it;
+  skos:notation "091";
+  :acronym "NU";
+  schema:startDate "1927-01-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/093>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Pordenone"@it;
+  skos:notation "093";
+  :acronym "PN";
+  schema:startDate "1968-04-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/094>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Isernia"@it;
+  skos:notation "094";
+  :acronym "IS";
+  schema:startDate "1970-03-03" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/095>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Oristano"@it;
+  skos:notation "095";
+  :acronym "OR";
+  schema:startDate "1974-08-20" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/096>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Biella"@it;
+  skos:notation "096";
+  :acronym "BI";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/097>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Lecco"@it;
+  skos:notation "097";
+  :acronym "LC";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/098>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Lodi"@it;
+  skos:notation "098";
+  :acronym "LO";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/099>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Rimini"@it;
+  skos:notation "099";
+  :acronym "RN";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/100>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Prato"@it;
+  skos:notation "100";
+  :acronym "PO";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/101>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Crotone"@it;
+  skos:notation "101";
+  :acronym "KR";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/102>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Vibo Valentia"@it;
+  skos:notation "102";
+  :acronym "VV";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/103>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Verbano-Cusio-Ossola"@it;
+  skos:notation "103";
+  :acronym "VB";
+  schema:startDate "1995-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/104>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Olbia-Tempio"@it;
+  skos:notation "104";
+  :acronym "OT";
+  schema:startDate "2006-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/105>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Ogliastra"@it;
+  skos:notation "105";
+  :acronym "OG";
+  schema:startDate "2006-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/106>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Medio Campidano"@it;
+  skos:notation "106";
+  :acronym "VS";
+  schema:startDate "2006-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/107>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Carbonia-Iglesias"@it;
+  skos:notation "107";
+  :acronym "CI";
+  schema:startDate "2006-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/108>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Monza e della Brianza"@it;
+  skos:notation "108";
+  :acronym "MB";
+  schema:startDate "2009-06-30" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/109>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Fermo"@it;
+  skos:notation "109";
+  :acronym "FM";
+  schema:startDate "2009-07-12" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/110>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Barletta-Andria-Trani"@it;
+  skos:notation "110";
+  :acronym "BT";
+  schema:startDate "2009-07-27" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/111>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Sud Sardegna"@it;
+  skos:notation "111";
+  :acronym "SU";
+  schema:startDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/113>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Gallura Nord-Est Sardegna"@it;
+  skos:notation "113";
+  :acronym "OT";
+  schema:startDate "2025-07-17" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/116>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Ogliastra"@it;
+  skos:notation "116";
+  :acronym "OG";
+  schema:startDate "2025-07-17" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/117>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Medio Campidano"@it;
+  skos:notation "117";
+  :acronym "VS";
+  schema:startDate "2025-07-17" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/119>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Sulcis Iglesiente"@it;
+  skos:notation "119";
+  :acronym "CI";
+  schema:startDate "2025-07-17" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/701>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Fiume"@it;
+  skos:notation "701";
+  :acronym "FU";
+  schema:startDate "1924-02-23" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/702>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Istria (Pola)"@it;
+  skos:notation "702";
+  :acronym "PL";
+  schema:startDate "1923-02-08" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/703>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Zara"@it;
+  skos:notation "703";
+  :acronym "ZA";
+  schema:startDate "1923-02-08" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/801>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Venezia Giulia"@it;
+  skos:notation "801";
+  :acronym "Venezia Giulia";
+  schema:startDate "1921-01-05" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/802>
+  a :Province, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Provincia";
+  rdfs:label "Venezia Tridentina"@it;
+  skos:notation "802";
+  :acronym "TN";
+  schema:startDate "1920-10-16" .
+
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/201>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Torino"@it;
+  skos:notation "201";
+  :acronym "TO";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/210>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Genova"@it;
+  skos:notation "210";
+  :acronym "GE";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/215>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Milano"@it;
+  skos:notation "215";
+  :acronym "MI";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/227>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Venezia"@it;
+  skos:notation "227";
+  :acronym "VE";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/237>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Bologna"@it;
+  skos:notation "237";
+  :acronym "BO";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/248>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Firenze"@it;
+  skos:notation "248";
+  :acronym "FI";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/258>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Roma"@it;
+  skos:notation "258";
+  :acronym "RM";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/263>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Napoli"@it;
+  skos:notation "263";
+  :acronym "NA";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/272>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Bari"@it;
+  skos:notation "272";
+  :acronym "BA";
+  schema:startDate "2015-01-01" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/280>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Reggio Calabria"@it;
+  skos:notation "280";
+  :acronym "RC";
+  schema:startDate "2016-12-29" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/282>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Palermo"@it;
+  skos:notation "282";
+  :acronym "PA";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/283>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Messina"@it;
+  skos:notation "283";
+  :acronym "ME";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/287>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Catania"@it;
+  skos:notation "287";
+  :acronym "CT";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/292>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Cagliari"@it;
+  skos:notation "292";
+  :acronym "CA";
+  schema:startDate "2016-04-28" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/312>
+  a :MetropolitanCity, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Città metropolitana";
+  rdfs:label "Sassari"@it;
+  skos:notation "312";
+  :acronym "SS";
+  schema:startDate "2025-07-17" .
+
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/081>
+  a :FreeMunicipalConsortium, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Libero consorzio di comuni";
+  rdfs:label "Trapani"@it;
+  skos:notation "081";
+  :acronym "TP";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/084>
+  a :FreeMunicipalConsortium, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Libero consorzio di comuni";
+  rdfs:label "Agrigento"@it;
+  skos:notation "084";
+  :acronym "AG";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/085>
+  a :FreeMunicipalConsortium, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Libero consorzio di comuni";
+  rdfs:label "Caltanissetta"@it;
+  skos:notation "085";
+  :acronym "CL";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/086>
+  a :FreeMunicipalConsortium, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Libero consorzio di comuni";
+  rdfs:label "Enna"@it;
+  skos:notation "086";
+  :acronym "EN";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/088>
+  a :FreeMunicipalConsortium, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Libero consorzio di comuni";
+  rdfs:label "Ragusa"@it;
+  skos:notation "088";
+  :acronym "RG";
+  schema:startDate "2016-06-06" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/089>
+  a :FreeMunicipalConsortium, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Libero consorzio di comuni";
+  rdfs:label "Siracusa"@it;
+  skos:notation "089";
+  :acronym "SR";
+  schema:startDate "2016-06-06" .
+
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/030>
+  a :Non-administrativeUnit, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Unità non amministrativa";
+  rdfs:label "Udine"@it;
+  skos:notation "030";
+  :acronym "UD";
+  schema:startDate "2018-04-22" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/031>
+  a :Non-administrativeUnit, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Unità non amministrativa";
+  rdfs:label "Gorizia"@it;
+  skos:notation "031";
+  :acronym "GO";
+  schema:startDate "2017-09-30" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/032>
+  a :Non-administrativeUnit, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Unità non amministrativa";
+  rdfs:label "Trieste"@it;
+  skos:notation "032";
+  :acronym "TS";
+  schema:startDate "2017-09-30" .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite/093>
+  a :Non-administrativeUnit, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>;
+  dcterms:type "Unità non amministrativa";
+  rdfs:label "Pordenone"@it;
+  skos:notation "093";
+  :acronym "PN";
+  schema:startDate "2017-09-30" .
+
+
+#################################################################
+# Allineamneto con <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse/>
+#################################################################
+
+utsc:104 skos:exactMatch utss:104 . 
+utsc:105 skos:exactMatch utss:105 . 
+utsc:106 skos:exactMatch utss:106 . 
+utsc:107 skos:exactMatch utss:107 . 
+utsc:111 skos:exactMatch utss:111 . 
+utsc:701 skos:exactMatch utss:701 . 
+utsc:702 skos:exactMatch utss:702 . 
+utsc:703 skos:exactMatch utss:703 . 
+utsc:801 skos:exactMatch utss:801 . 
+utsc:802 skos:exactMatch utss:802 . 
+ 
+
+#################################################################
+# Allineamneto con <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/>
+#################################################################
+
+
+
+##Appunto - in DAF NON sono presenti Gallura Nord-Est Sardegna, Ogliastra, Medio Campidano, Sulcis Iglesiente
+
+utsc:114 skos:exactMatch agidP:091 . #Nuoro
+utsc:115 skos:exactMatch agidP:095 . #Oristano
+
+utsc:201 skos:exactMatch agidP:001 . #Città metropolitana
+utsc:002 skos:exactMatch agidP:002 .
+utsc:005 skos:exactMatch agidP:005 .
+utsc:007 skos:exactMatch agidP:007 .
+utsc:009 skos:exactMatch agidP:009 .
+utsc:210 skos:exactMatch agidP:010 . #Città metropolitana
+utsc:011 skos:exactMatch agidP:011 .
+utsc:012 skos:exactMatch agidP:012 .
+utsc:215 skos:exactMatch agidP:015 . #Città metropolitana
+utsc:020 skos:exactMatch agidP:020 .
+utsc:021 skos:exactMatch agidP:021 .
+utsc:022 skos:exactMatch agidP:022 .
+utsc:023 skos:exactMatch agidP:023 .
+utsc:024 skos:exactMatch agidP:024 .
+utsc:025 skos:exactMatch agidP:025 .
+utsc:026 skos:exactMatch agidP:026 .
+utsc:227 skos:exactMatch agidP:027 . #Città metropolitana - Venezia
+utsc:028 skos:exactMatch agidP:028 .
+utsc:029 skos:exactMatch agidP:029 .
+utsc:030 skos:exactMatch agidP:030 .
+utsc:031 skos:exactMatch agidP:031 .
+utsc:032 skos:exactMatch agidP:032 .
+utsc:237 skos:exactMatch agidP:037 . #Città metropolitana
+utsc:047 skos:exactMatch agidP:047 .
+utsc:248 skos:exactMatch agidP:048 . #Città metropolitana
+utsc:055 skos:exactMatch agidP:055 .
+utsc:056 skos:exactMatch agidP:056 .
+utsc:057 skos:exactMatch agidP:057 .
+utsc:258 skos:exactMatch agidP:058 . #Città metropolitana - Roma
+utsc:059 skos:exactMatch agidP:059 .
+utsc:060 skos:exactMatch agidP:060 .
+utsc:061 skos:exactMatch agidP:061 .
+utsc:263 skos:exactMatch agidP:063 . #Città metropolitana - Napoli
+utsc:068 skos:exactMatch agidP:068 .
+utsc:272 skos:exactMatch agidP:072 . #Città metropolitana
+utsc:073 skos:exactMatch agidP:073 .
+utsc:074 skos:exactMatch agidP:074 .
+utsc:077 skos:exactMatch agidP:077 .
+utsc:280 skos:exactMatch agidP:080 .
+utsc:081 skos:exactMatch agidP:081 .
+utsc:282 skos:exactMatch agidP:082 . #Città metropolitana
+utsc:283 skos:exactMatch agidP:083 . #Città metropolitana
+utsc:084 skos:exactMatch agidP:084 .
+utsc:085 skos:exactMatch agidP:085 .
+utsc:086 skos:exactMatch agidP:086 .
+utsc:287 skos:exactMatch agidP:087 . #Città metropolitana - Catania
+utsc:088 skos:exactMatch agidP:088 .
+utsc:089 skos:exactMatch agidP:089 .
+utsc:312 skos:exactMatch agidP:090 . #Città metropolitana - Sassari
+utsc:292 skos:exactMatch agidP:092 . #Città metropolitana - Cagliari
+utsc:093 skos:exactMatch agidP:093 .
+utsc:094 skos:exactMatch agidP:094 .
+utsc:096 skos:exactMatch agidP:096 .
+utsc:097 skos:exactMatch agidP:097 .
+utsc:098 skos:exactMatch agidP:098 .
+utsc:099 skos:exactMatch agidP:099 .
+utsc:100 skos:exactMatch agidP:100 .
+utsc:101 skos:exactMatch agidP:101 .
+utsc:102 skos:exactMatch agidP:102 .
+utsc:103 skos:exactMatch agidP:103 .
+utsc:108 skos:exactMatch agidP:108 .
+utsc:109 skos:exactMatch agidP:109 .
+utsc:110 skos:exactMatch agidP:110 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	
+	
+
+
+   
