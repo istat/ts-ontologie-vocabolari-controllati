@@ -33,7 +33,7 @@
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
   dct:title "Controlled Vocabulary of Provinces-Uts Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Province-Uts soppresse o cedute a Stato estero"@it ;
-  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione soppresse o cedute a Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome (Trentino Alto Adige), i liberi consorzi di Comuni (Sicilia), e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region abolished or transferred to a foreign state. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units (Friuli Venezia Giulia)."@en ;
+  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione soppresse o cedute a Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region abolished or transferred to a foreign state. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units."@en ;
   xkos:numberOfLevels "1" ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
@@ -49,8 +49,8 @@
    dcat:keyword "Provincia soppressa"@it , "UTS soppresse"@it ,  "Abolished province"@en , "Abolished UTS"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_soppresse_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_soppresse_CSV>, <https://w3id.org/italia/data/distribution/uts_soppresse_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
-  dct:issued "2026-05-11"^^xsd:date ;
-  dct:modified "2026-05-11"^^xsd:date ;
+  dct:issued "2026-05-13"^^xsd:date ;
+  dct:modified "2026-05-13"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
   dct:temporal "Dal 1886" ;
   ndc:keyConcept "Abolished-Provinces" ;
