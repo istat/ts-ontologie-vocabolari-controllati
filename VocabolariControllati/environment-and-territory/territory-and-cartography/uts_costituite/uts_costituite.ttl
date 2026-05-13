@@ -33,7 +33,7 @@
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
   dct:title "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
-  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione costituite o annesse da Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome (Trentino Alto Adige), i liberi consorzi di Comuni (Sicilia), e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region established or annexed from a foreign state. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units (Friuli Venezia Giulia)."@en ;
+  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione costituite o annesse da Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region established or annexed from a foreign state. The units include provinces, metropolitan cities, autonomous province, free municipal consortiums and non-administrative units."@en ;
   xkos:numberOfLevels "1" ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
@@ -49,8 +49,8 @@
   dcat:keyword "Provincia costituita"@it , "UTS costituite"@it ,  "Established province"@en , "Established UTS"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_costituite_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_costituite_CSV>, <https://w3id.org/italia/data/distribution/uts_costituite_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
-  dct:issued "2026-03-20"^^xsd:date ;
-  dct:modified "2026-03-20"^^xsd:date ;
+  dct:issued "2026-05-13"^^xsd:date ;
+  dct:modified "2026-05-13"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
   dct:temporal "Dal 1886" ;
   ndc:keyConcept "Established-Provinces" ;

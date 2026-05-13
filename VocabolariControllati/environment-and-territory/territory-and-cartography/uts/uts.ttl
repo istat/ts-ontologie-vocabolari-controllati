@@ -33,10 +33,10 @@
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts>
     a skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
-    dct:title "Controlled Vocabulary for Territorial Statistical Units UTS"@en ,
-              "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
-    dct:description "Vocabolario controllato delle Unità territoriali di livello intermedio tra il Comune e la Regione al 01/01/2026. Tali unità comprendono le province, le città metropolitane, le province autonome (Trentino Alto Adige), i liberi consorzi di Comuni (Sicilia), e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it ,
-                    "Controlled Vocabulary of Territorial units of intermediate area level between the municipality and the region at 2026/01/01. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units (Friuli Venezia Giulia)."@en ;
+    dct:title "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
+              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
+    dct:description "Vocabolario controllato delle Unità territoriali di livello intermedio tra il Comune e la Regione al 01/01/2026. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative."@it ,
+                    "Controlled Vocabulary of Territorial units of intermediate area level between the municipality and the region at 2026/01/01. The units include provinces, metropolitan cities, autonomous province, free municipal consortiums and non-administrative units."@en ;
     xkos:numberOfLevels "1" ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
@@ -52,26 +52,26 @@
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> ;
     dcat:keyword "uts"@it , "Provincia"@it , "Province"@it , "Città metropolitana"@it ,
                  "Provincia autonoma"@it , "Libero consorzio di comuni"@it ,
-                 "Unità territoriale non amministrativa"@it , "uts"@en , "Province"@en ,
+                 "Unità territoriale non amministrativa"@it , "UTS"@en , "Province"@en ,
                  "Provinces"@en , "Metropolitan city"@en , "Autonomous province"@en ,
                  "Free municipal consortium"@en , "Non-administrative unit"@en ;
     dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle> ,
                       <https://w3id.org/italia/data/distribution/uts_CSV> ,
                       <https://w3id.org/italia/data/distribution/uts_XLSX> ;
     dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-    dct:issued "2026-05-11"^^xsd:date ;
-    dct:modified "2026-05-11"^^xsd:date ;
+    dct:issued "2026-05-13"^^xsd:date ;
+    dct:modified "2026-05-13"^^xsd:date ;
     owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;
     dct:temporal "2026/..." ;
     ndc:keyConcept "Provinces" ;
-    rdfs:comment "Controlled Vocabulary for Territorial Statistical Units UTS"@en ,
-                 "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
-    rdfs:label "Controlled Vocabulary for Territorial Statistical Units UTS"@en ,
-               "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
-    skos:notation "Controlled Vocabulary for Territorial Statistical Units UTS"@en ,
-                  "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
-    skos:prefLabel "Controlled Vocabulary for Territorial Statistical Units UTS"@en ,
-                   "Vocabolario Controllato delle Unità Statistiche Territoriali UTS"@it ;
+    rdfs:comment "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
+              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
+    rdfs:label "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
+              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
+    skos:notation "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
+              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
+    skos:prefLabel "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
+              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
     dct:relation <https://w3id.org/italia/data/linkset/uts_aligns_costituite> ;
     rdfs:seeAlso <https://w3id.org/italia/data/linkset/uts_aligns_costituite> ;
     void:subset <https://w3id.org/italia/data/linkset/uts_aligns_costituite> .
