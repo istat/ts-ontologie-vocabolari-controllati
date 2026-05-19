@@ -32,8 +32,8 @@
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
-  dct:title "Controlled Vocabulary of Provinces-Uts Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Province-Uts soppresse o cedute a Stato estero"@it ;
-  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione soppresse o cedute a Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative (Friuli Venezia Giulia)."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region abolished or transferred to a foreign state. The units include provinces, metropolitan cities, autonomous province (Trentino Alto Adige), free municipal consortiums (Sicilia), and non-administrative units."@en ;
+  dct:title "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;
+  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione soppresse o cedute a Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region abolished or transferred to a foreign state. The units include provinces, metropolitan cities, autonomous province, free municipal consortiums, and non-administrative units."@en ;
   xkos:numberOfLevels "1" ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
@@ -49,15 +49,15 @@
    dcat:keyword "Provincia soppressa"@it , "UTS soppresse"@it ,  "Abolished province"@en , "Abolished UTS"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_soppresse_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_soppresse_CSV>, <https://w3id.org/italia/data/distribution/uts_soppresse_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
-  dct:issued "2026-05-13"^^xsd:date ;
-  dct:modified "2026-05-13"^^xsd:date ;
+  dct:issued "2026-05-19"^^xsd:date ;
+  dct:modified "2026-05-19"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
   dct:temporal "Dal 1886" ;
-  ndc:keyConcept "Abolished-Provinces" ;
-  rdfs:comment "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it ;
-  rdfs:label "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it ;
-  skos:notation "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it ;     
-  skos:prefLabel "Controlled Vocabulary of Provinces/UTS abolished or trasnferred to a foreign state"@en , "Vocabolario Controllato delle Province-Uts abolite o cedute a Stato estero"@it .     
+  ndc:keyConcept "Abolished-UTS" ;
+  rdfs:comment "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;
+  rdfs:label "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;
+  skos:notation "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;  
+  skos:prefLabel "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it .  
    
   <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse>
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
@@ -462,6 +462,7 @@
 #################################################################
 # Allineamneto con <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/>
 #################################################################
+
 utss:001 skos:exactMatch agidP:001 .
 utss:010 skos:exactMatch agidP:010 .
 utss:015 skos:exactMatch agidP:015 .
@@ -485,8 +486,8 @@ utss:086 skos:exactMatch agidP:086 .
 utss:087 skos:exactMatch agidP:087 .
 utss:088 skos:exactMatch agidP:088 .
 utss:089 skos:exactMatch agidP:089 .
-utss:090 skos:exactMatch agidP:090 . #Sassari
-utss:091 skos:exactMatch agidP:091 . #Nuoro
-utss:092 skos:exactMatch agidP:092 . #Cagliari
+utss:090 skos:exactMatch agidP:090 . 
+utss:091 skos:exactMatch agidP:091 . 
+utss:092 skos:exactMatch agidP:092 . 
 utss:093 skos:exactMatch agidP:093 .
-utss:095 skos:exactMatch agidP:095 . #Oristano
+utss:095 skos:exactMatch agidP:095 .

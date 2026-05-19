@@ -50,20 +50,20 @@
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts> ;
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> ;
-    dcat:keyword "uts"@it , "Provincia"@it , "Province"@it , "Città metropolitana"@it ,
-                 "Provincia autonoma"@it , "Libero consorzio di comuni"@it ,
-                 "Unità territoriale non amministrativa"@it , "UTS"@en , "Province"@en ,
-                 "Provinces"@en , "Metropolitan city"@en , "Autonomous province"@en ,
-                 "Free municipal consortium"@en , "Non-administrative unit"@en ;
+    dcat:keyword "UTS"@it , "Provincia"@it , "Province"@it , 
+	             "Città metropolitana"@it , "Provincia autonoma"@it , "Libero consorzio di comuni"@it ,
+                 "Unità territoriale non amministrativa"@it , 
+				 "UTS"@en , "Province"@en , "Provinces"@en , "Metropolitan city"@en , 
+				 "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en ;
     dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle> ,
                       <https://w3id.org/italia/data/distribution/uts_CSV> ,
                       <https://w3id.org/italia/data/distribution/uts_XLSX> ;
     dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-    dct:issued "2026-05-13"^^xsd:date ;
-    dct:modified "2026-05-13"^^xsd:date ;
+    dct:issued "2026-05-19"^^xsd:date ;
+    dct:modified "2026-05-19"^^xsd:date ;
     owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;
     dct:temporal "2026/..." ;
-    ndc:keyConcept "Provinces" ;
+    ndc:keyConcept "UTS" ;
     rdfs:comment "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
               "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
     rdfs:label "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
@@ -71,10 +71,7 @@
     skos:notation "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
               "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
     skos:prefLabel "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
-              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
-    dct:relation <https://w3id.org/italia/data/linkset/uts_aligns_costituite> ;
-    rdfs:seeAlso <https://w3id.org/italia/data/linkset/uts_aligns_costituite> ;
-    void:subset <https://w3id.org/italia/data/linkset/uts_aligns_costituite> .
+              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it .
 
 <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications>
     a skos:Concept ;
@@ -1954,13 +1951,7 @@ uts:318 skos:exactMatch utsc:292 .
 #################################################################
 
 
-##Appunto - in DAF NON sono presenti Gallura Nord-Est Sardegna 113, Ogliastra 116, Medio Campidano 117, Sulcis Iglesiente 119
 
-uts:114 skos:exactMatch agidP:091 . #Nuoro
-uts:115 skos:exactMatch agidP:095 . #Oristano
-uts:312 skos:exactMatch agidP:090 . #Sassari
-uts:318 skos:exactMatch agidP:092 . #Cagliari
-uts:201 skos:exactMatch agidP:001 .
 uts:002 skos:exactMatch agidP:002 .
 uts:003 skos:exactMatch agidP:003 .
 uts:004 skos:exactMatch agidP:004 .
@@ -1969,12 +1960,10 @@ uts:006 skos:exactMatch agidP:006 .
 uts:007 skos:exactMatch agidP:007 .
 uts:008 skos:exactMatch agidP:008 .
 uts:009 skos:exactMatch agidP:009 .
-uts:210 skos:exactMatch agidP:010 .
 uts:011 skos:exactMatch agidP:011 .
 uts:012 skos:exactMatch agidP:012 .
 uts:013 skos:exactMatch agidP:013 .
 uts:014 skos:exactMatch agidP:014 .
-uts:215 skos:exactMatch agidP:015 .
 uts:016 skos:exactMatch agidP:016 .
 uts:017 skos:exactMatch agidP:017 .
 uts:018 skos:exactMatch agidP:018 .
@@ -1986,7 +1975,6 @@ uts:023 skos:exactMatch agidP:023 .
 uts:024 skos:exactMatch agidP:024 .
 uts:025 skos:exactMatch agidP:025 .
 uts:026 skos:exactMatch agidP:026 .
-uts:227 skos:exactMatch agidP:027 .
 uts:028 skos:exactMatch agidP:028 .
 uts:029 skos:exactMatch agidP:029 .
 uts:030 skos:exactMatch agidP:030 .
@@ -1996,7 +1984,6 @@ uts:033 skos:exactMatch agidP:033 .
 uts:034 skos:exactMatch agidP:034 .
 uts:035 skos:exactMatch agidP:035 .
 uts:036 skos:exactMatch agidP:036 .
-uts:237 skos:exactMatch agidP:037 .
 uts:038 skos:exactMatch agidP:038 .
 uts:039 skos:exactMatch agidP:039 .
 uts:040 skos:exactMatch agidP:040 .
@@ -2007,7 +1994,6 @@ uts:044 skos:exactMatch agidP:044 .
 uts:045 skos:exactMatch agidP:045 .
 uts:046 skos:exactMatch agidP:046 .
 uts:047 skos:exactMatch agidP:047 .
-uts:248 skos:exactMatch agidP:048 .
 uts:049 skos:exactMatch agidP:049 .
 uts:050 skos:exactMatch agidP:050 .
 uts:051 skos:exactMatch agidP:051 .
@@ -2017,12 +2003,10 @@ uts:054 skos:exactMatch agidP:054 .
 uts:055 skos:exactMatch agidP:055 .
 uts:056 skos:exactMatch agidP:056 .
 uts:057 skos:exactMatch agidP:057 .
-uts:258 skos:exactMatch agidP:058 .
 uts:059 skos:exactMatch agidP:059 .
 uts:060 skos:exactMatch agidP:060 .
 uts:061 skos:exactMatch agidP:061 .
 uts:062 skos:exactMatch agidP:062 .
-uts:263 skos:exactMatch agidP:063 .
 uts:064 skos:exactMatch agidP:064 .
 uts:065 skos:exactMatch agidP:065 .
 uts:066 skos:exactMatch agidP:066 .
@@ -2031,7 +2015,6 @@ uts:068 skos:exactMatch agidP:068 .
 uts:069 skos:exactMatch agidP:069 .
 uts:070 skos:exactMatch agidP:070 .
 uts:071 skos:exactMatch agidP:071 .
-uts:272 skos:exactMatch agidP:072 .
 uts:073 skos:exactMatch agidP:073 .
 uts:074 skos:exactMatch agidP:074 .
 uts:075 skos:exactMatch agidP:075 .
@@ -2040,13 +2023,9 @@ uts:077 skos:exactMatch agidP:077 .
 uts:078 skos:exactMatch agidP:078 .
 uts:079 skos:exactMatch agidP:079 .
 uts:081 skos:exactMatch agidP:081 .
-uts:280 skos:exactMatch agidP:080 .
-uts:282 skos:exactMatch agidP:082 .
-uts:283 skos:exactMatch agidP:083 .
 uts:084 skos:exactMatch agidP:084 .
 uts:085 skos:exactMatch agidP:085 .
 uts:086 skos:exactMatch agidP:086 .
-uts:287 skos:exactMatch agidP:087 .
 uts:088 skos:exactMatch agidP:088 .
 uts:089 skos:exactMatch agidP:089 .
 uts:093 skos:exactMatch agidP:093 .
@@ -2062,5 +2041,23 @@ uts:103 skos:exactMatch agidP:103 .
 uts:108 skos:exactMatch agidP:108 .
 uts:109 skos:exactMatch agidP:109 .
 uts:110 skos:exactMatch agidP:110 .
+uts:114 skos:relatedMatch agidP:091 .
+uts:115 skos:relatedMatch agidP:095 .
+uts:201 skos:relatedMatch agidP:001 .
+uts:210 skos:relatedMatch agidP:010 .
+uts:215 skos:relatedMatch agidP:015 .
+uts:227 skos:relatedMatch agidP:027 .
+uts:237 skos:relatedMatch agidP:037 .
+uts:248 skos:relatedMatch agidP:048 .
+uts:258 skos:relatedMatch agidP:058 .
+uts:263 skos:relatedMatch agidP:063 .
+uts:272 skos:relatedMatch agidP:072 .
+uts:280 skos:relatedMatch agidP:080 .
+uts:282 skos:relatedMatch agidP:082 .
+uts:283 skos:relatedMatch agidP:083 .
+uts:287 skos:relatedMatch agidP:087 .
+uts:312 skos:relatedMatch agidP:090 .
+uts:318 skos:relatedMatch agidP:092 .
+
 
 

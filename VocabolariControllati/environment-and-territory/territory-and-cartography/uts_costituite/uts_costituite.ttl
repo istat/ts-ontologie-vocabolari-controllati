@@ -32,7 +32,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
-  dct:title "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
+  dct:title "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces established or annexed from a foreign state"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province costituite o annesse da Stato estero"@it ;
   dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione costituite o annesse da Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region established or annexed from a foreign state. The units include provinces, metropolitan cities, autonomous province, free municipal consortiums and non-administrative units."@en ;
   xkos:numberOfLevels "1" ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
@@ -49,15 +49,15 @@
   dcat:keyword "Provincia costituita"@it , "UTS costituite"@it ,  "Established province"@en , "Established UTS"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_costituite_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_costituite_CSV>, <https://w3id.org/italia/data/distribution/uts_costituite_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
-  dct:issued "2026-05-13"^^xsd:date ;
-  dct:modified "2026-05-13"^^xsd:date ;
+  dct:issued "2026-05-19"^^xsd:date ;
+  dct:modified "2026-05-19"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
   dct:temporal "Dal 1886" ;
-  ndc:keyConcept "Established-Provinces" ;
-  rdfs:comment "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
-  rdfs:label "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;
-  skos:notation "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it ;     
-  skos:prefLabel "Controlled Vocabulary of Provinces/UTS established or annexed from a foreign state"@en , "Vocabolario Controllato delle Province-Uts costituite o annesse da Stato estero"@it .     
+  ndc:keyConcept "Established-UTS" ;
+  rdfs:comment "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces established or annexed from a foreign state"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province costituite o annesse da Stato estero"@it ;
+  rdfs:label "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces established or annexed from a foreign state"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province costituite o annesse da Stato estero"@it ;
+  skos:notation "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces established or annexed from a foreign state"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province costituite o annesse da Stato estero"@it ;     
+  skos:prefLabel "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces established or annexed from a foreign state"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province costituite o annesse da Stato estero"@it .     
    
   <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_costituite>
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
@@ -985,22 +985,12 @@ utsc:802 skos:exactMatch utss:802 .
 # Allineamneto con <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/>
 #################################################################
 
-
-
-##Appunto - in DAF NON sono presenti Gallura Nord-Est Sardegna, Ogliastra, Medio Campidano, Sulcis Iglesiente
-
-utsc:114 skos:exactMatch agidP:091 . #Nuoro
-utsc:115 skos:exactMatch agidP:095 . #Oristano
-
-utsc:201 skos:exactMatch agidP:001 . #Città metropolitana
 utsc:002 skos:exactMatch agidP:002 .
 utsc:005 skos:exactMatch agidP:005 .
 utsc:007 skos:exactMatch agidP:007 .
 utsc:009 skos:exactMatch agidP:009 .
-utsc:210 skos:exactMatch agidP:010 . #Città metropolitana
 utsc:011 skos:exactMatch agidP:011 .
 utsc:012 skos:exactMatch agidP:012 .
-utsc:215 skos:exactMatch agidP:015 . #Città metropolitana
 utsc:020 skos:exactMatch agidP:020 .
 utsc:021 skos:exactMatch agidP:021 .
 utsc:022 skos:exactMatch agidP:022 .
@@ -1008,40 +998,28 @@ utsc:023 skos:exactMatch agidP:023 .
 utsc:024 skos:exactMatch agidP:024 .
 utsc:025 skos:exactMatch agidP:025 .
 utsc:026 skos:exactMatch agidP:026 .
-utsc:227 skos:exactMatch agidP:027 . #Città metropolitana - Venezia
 utsc:028 skos:exactMatch agidP:028 .
 utsc:029 skos:exactMatch agidP:029 .
 utsc:030 skos:exactMatch agidP:030 .
 utsc:031 skos:exactMatch agidP:031 .
 utsc:032 skos:exactMatch agidP:032 .
-utsc:237 skos:exactMatch agidP:037 . #Città metropolitana
 utsc:047 skos:exactMatch agidP:047 .
-utsc:248 skos:exactMatch agidP:048 . #Città metropolitana
 utsc:055 skos:exactMatch agidP:055 .
 utsc:056 skos:exactMatch agidP:056 .
 utsc:057 skos:exactMatch agidP:057 .
-utsc:258 skos:exactMatch agidP:058 . #Città metropolitana - Roma
 utsc:059 skos:exactMatch agidP:059 .
 utsc:060 skos:exactMatch agidP:060 .
 utsc:061 skos:exactMatch agidP:061 .
-utsc:263 skos:exactMatch agidP:063 . #Città metropolitana - Napoli
 utsc:068 skos:exactMatch agidP:068 .
-utsc:272 skos:exactMatch agidP:072 . #Città metropolitana
 utsc:073 skos:exactMatch agidP:073 .
 utsc:074 skos:exactMatch agidP:074 .
 utsc:077 skos:exactMatch agidP:077 .
-utsc:280 skos:exactMatch agidP:080 .
 utsc:081 skos:exactMatch agidP:081 .
-utsc:282 skos:exactMatch agidP:082 . #Città metropolitana
-utsc:283 skos:exactMatch agidP:083 . #Città metropolitana
 utsc:084 skos:exactMatch agidP:084 .
 utsc:085 skos:exactMatch agidP:085 .
 utsc:086 skos:exactMatch agidP:086 .
-utsc:287 skos:exactMatch agidP:087 . #Città metropolitana - Catania
 utsc:088 skos:exactMatch agidP:088 .
 utsc:089 skos:exactMatch agidP:089 .
-utsc:312 skos:exactMatch agidP:090 . #Città metropolitana - Sassari
-utsc:292 skos:exactMatch agidP:092 . #Città metropolitana - Cagliari
 utsc:093 skos:exactMatch agidP:093 .
 utsc:094 skos:exactMatch agidP:094 .
 utsc:096 skos:exactMatch agidP:096 .
@@ -1055,6 +1033,24 @@ utsc:103 skos:exactMatch agidP:103 .
 utsc:108 skos:exactMatch agidP:108 .
 utsc:109 skos:exactMatch agidP:109 .
 utsc:110 skos:exactMatch agidP:110 .
+utsc:114 skos:relatedMatch agidP:091 .
+utsc:115 skos:relatedMatch agidP:095 .
+utsc:201 skos:relatedMatch agidP:001 .
+utsc:210 skos:relatedMatch agidP:010 .
+utsc:215 skos:relatedMatch agidP:015 .
+utsc:227 skos:relatedMatch agidP:027 .
+utsc:237 skos:relatedMatch agidP:037 .
+utsc:248 skos:relatedMatch agidP:048 .
+utsc:258 skos:relatedMatch agidP:058 .
+utsc:263 skos:relatedMatch agidP:063 .
+utsc:272 skos:relatedMatch agidP:072 .
+utsc:280 skos:relatedMatch agidP:080 .
+utsc:282 skos:relatedMatch agidP:082 .
+utsc:283 skos:relatedMatch agidP:083 .
+utsc:287 skos:relatedMatch agidP:087 .
+utsc:292 skos:relatedMatch agidP:092 .
+utsc:312 skos:relatedMatch agidP:090 .
+
 
 
 
