@@ -13,9 +13,9 @@
 
 <https://w3id.org/italia/onto/Learning> rdf:type owl:Ontology ;
                                          owl:versionIRI <https://w3id.org/italia/onto/Learning/0.3> ;
-                                         owl:imports <https://w3id.org/italia/onto/HER> ,
-                                                     <https://w3id.org/italia/onto/COV> ,
+                                         owl:imports <https://w3id.org/italia/onto/COV> ,
                                                      <https://w3id.org/italia/onto/CPV> ,
+                                                     <https://w3id.org/italia/onto/HER> ,
                                                      <https://w3id.org/italia/onto/Language> ,
                                                      <https://w3id.org/italia/onto/RO> ;
                                          <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning.png> ;
@@ -233,7 +233,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/italia/onto/HER/hasAcademicDiscipline
 <https://w3id.org/italia/onto/HER/hasAcademicDiscipline> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain :QualificationTitle ;
+                                                         rdfs:domain :DegreeCourse ,
+                                                                     :QualificationTitle ;
                                                          rdfs:range <https://w3id.org/italia/onto/HER/AcademicDiscipline> ;
                                                          rdfs:comment "Collega il titolo di qualifica alla disciplina accademica."@it ,
                                                                       "Links the qualification title to the academic discipline."@en ;
@@ -703,14 +704,6 @@ l0:hasMember rdf:type owl:ObjectProperty .
 l0:isMemberOf rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/learning/onto/Learning/usesAcademicDiscipline
-<https://w3id.org/learning/onto/Learning/usesAcademicDiscipline> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:subPropertyOf <https://w3id.org/italia/onto/HER/hasAcademicDiscipline> ;
-                                                                 rdfs:range <https://w3id.org/italia/onto/HER/AcademicDiscipline> ;
-                                                                 rdfs:label "usa disciplina accademica"@it ,
-                                                                            "uses academic discipline"@en .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -921,8 +914,8 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
                rdfs:subClassOf :QualificationTitle ;
                rdfs:comment "It is a type of qualification title obtained upon completion of a standard academic programme within university or AFAM systems. It includes titles that award official academic degrees recognized at national and European level."@en ,
                             "È un tipo di titolo della qualifica che deriva dal completamento di un percorso accademico ordinario previsto dagli ordinamenti universitari o AFAM. Comprende titoli che attribuiscono gradi accademici riconosciuti a livello nazionale ed europeo."@it ;
-               rdfs:label "Academic title"@en ,
-                          "Titolo accademico"@it .
+               rdfs:label "Academic Title"@en ,
+                          "Titolo Accademico"@it .
 
 
 ###  https://w3id.org/italia/onto/Learning/AcademicYear
@@ -982,6 +975,10 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasDegreeClass ;
                                 owl:someValuesFrom :DegreeClass
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/italia/onto/HER/hasAcademicDiscipline> ;
+                                owl:allValuesFrom <https://w3id.org/italia/onto/HER/AcademicDiscipline>
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/italia/onto/Language/hasLanguage> ;
@@ -1449,8 +1446,8 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
                     rdfs:subClassOf l0:Concept ;
                     rdfs:comment "It is the official designation used to identify and record a qualification in higher education. It represents the formal name of the achieved qualification and clearly describes the completed learning path within the university or AFAM systems."@en ,
                                  "È la denominazione ufficiale con cui una qualifica dell’istruzione superiore viene identificata e registrata. Rappresenta il nome formale del titolo conseguito, utile per descrivere in modo chiaro il percorso formativo completato all’interno dei sistemi universitari e AFAM."@it ;
-                    rdfs:label "Qualification title"@en ,
-                               "Titolo di qualifica"@it .
+                    rdfs:label "Qualification Title"@en ,
+                               "Titolo di Qualifica"@it .
 
 
 ###  https://w3id.org/italia/onto/Learning/SpecialisationTitle
@@ -1458,8 +1455,8 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
                      rdfs:subClassOf :QualificationTitle ;
                      rdfs:comment "It is a title awarded at the end of specialised or advanced training programmes that provide in-depth or professional competences beyond basic academic education. It certifies a specialization in a specific field and may hold professional relevance. Specialisation titles in Italy currently belong to the healthcare area, the veterinary area, the cultural heritage area, the psychology area, and the legal professions area."@en ,
                                   "È un titolo rilasciato al termine di percorsi formativi specialistici o di perfezionamento che approfondiscono competenze avanzate oltre la formazione accademica di base. Riconosce una specializzazione in un ambito specifico e può avere valore professionale. I titoli di specializzazione, attualmente in Italia, appartengono all’area sanitaria, all’area veterinaria, all’area dei beni culturali, all’area psicologica ed all’area delle professioni legali."@it ;
-                     rdfs:label "Specialisation title"@en ,
-                                "Titolo di specializzazione"@it .
+                     rdfs:label "Specialisation Title"@en ,
+                                "Titolo di Specializzazione"@it .
 
 
 ###  https://w3id.org/italia/onto/Learning/Student
@@ -1479,8 +1476,8 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
            rdfs:subClassOf l0:Concept ;
            rdfs:comment "Indica l’area disciplinare a cui appartiene un titolo della qualifica, secondo le classificazioni adottate nell’istruzione superiore. Serve a contestualizzare il contenuto formativo del titolo e a facilitarne la categorizzazione."@it ,
                         "It indicates the disciplinary area to which a qualification title belongs, according to classifications adopted in higher education. It helps contextualize the educational content of the title and facilitates its categorization."@en ;
-           rdfs:label "Area del titolo"@it ,
-                      "Title area"@en .
+           rdfs:label "Area del Titolo"@it ,
+                      "Title Area"@en .
 
 
 ###  https://w3id.org/italia/onto/RO/Role

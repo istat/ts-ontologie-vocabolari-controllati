@@ -1,40 +1,40 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/italia/onto/Learning#"
-     xml:base="https://w3id.org/italia/onto/Learning"
+<rdf:RDF xmlns="https://w3id.org/italia/onto/Learning/"
+     xml:base="https://w3id.org/italia/onto/Learning/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/">
     <owl:Ontology rdf:about="https://w3id.org/italia/onto/Learning">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/Learning/0."/>
-        <owl:imports rdf:resource="file:////pc.istat.it/xendesktop/DaaS/vincenzo.piscitelli/Downloads/learning_her_minimal.ttl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/Learning/0.3"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/HER"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/Language"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/RO"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning.png"/>
-        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <terms:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
-        <terms:creator rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
-        <terms:description xml:lang="it">Questa è l&apos;ontologia del profilo applicativo italiano sull&apos;alta formazione e AFAM. L&apos;ontologia modella informazioni come l&apos;iscrizione a istituti AFAM - Alta Formazione Artistica, Musicale e Coreutica, il titolo di laurea ottenuto con la relativa votazione, l&apos;offerta formativa di questi istituti. La modellazione è usata per definire le API della banca dati ANIS - Anagrafe Nazionale Istruzione Superiore</terms:description>
-        <terms:description xml:lang="en">This is the ontology of the Italian application profile on higher education and AFAM. The ontology models information such as enrolment in AFAM - Alta Formazione Artistica, Musicale e Coreutica (Higher Education in Artistic, Musical and Choreographic Education) institutes, the degree obtained and its grade, and the educational offerings of these institutes. The modelling is used to define the API of the ANIS - Anagrafe Nazionale Istruzione Superiore (National Register of Higher Education) database.</terms:description>
-        <terms:identifier>https://w3id.org/italia/onto/Learning</terms:identifier>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-27</terms:issued>
-        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <terms:modified>2026-05-26</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
-        <terms:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/KH5RHFCV"/>
-        <terms:title xml:lang="en">Learning Ontology</terms:title>
-        <terms:title xml:lang="it">Ontologia della Formazione (inclusa Artistica, Musicale e Coreutica - AFAM)</terms:title>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
+        <dct:description xml:lang="it">Questa è l&apos;ontologia del profilo applicativo italiano sull&apos;alta formazione e AFAM. L&apos;ontologia modella informazioni come l&apos;iscrizione a istituti AFAM - Alta Formazione Artistica, Musicale e Coreutica, il titolo di laurea ottenuto con la relativa votazione, l&apos;offerta formativa di questi istituti. La modellazione è usata per definire le API della banca dati ANIS - Anagrafe Nazionale Istruzione Superiore</dct:description>
+        <dct:description xml:lang="en">This is the ontology of the Italian application profile on higher education and AFAM. The ontology models information such as enrolment in AFAM - Alta Formazione Artistica, Musicale e Coreutica (Higher Education in Artistic, Musical and Choreographic Education) institutes, the degree obtained and its grade, and the educational offerings of these institutes. The modelling is used to define the API of the ANIS - Anagrafe Nazionale Istruzione Superiore (National Register of Higher Education) database.</dct:description>
+        <dct:identifier>https://w3id.org/italia/onto/Learning</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-27</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dct:modified>2026-05-26</dct:modified>
+        <dct:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
+        <dct:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/KH5RHFCV"/>
+        <dct:title xml:lang="en">Learning Ontology</dct:title>
+        <dct:title xml:lang="it">Ontologia della Formazione (inclusa Artistica, Musicale e Coreutica - AFAM)</dct:title>
         <rdfs:comment xml:lang="it">Questa è l&apos;ontologia del profilo applicativo italiano della (alta) formazione e AFAM. L&apos;ontologia modella informazioni come l&apos;iscrizione a istituti (e.g., AFAM - Alta Formazione Artistica, Musicale e Coreutica, Università, ITS), il titolo ottenuto con la relativa votazione, l&apos;offerta formativa di questi istituti. La modellazione è usata per definire le API della banca dati ANIS - Anagrafe Nazionale Istruzione Superiore, nonché per mappare alcune evidenze nel contesto del Single Digital Gateway europeo.
 
 Al momento l&apos;ontologia non modella le informazioni relative a periodi erasmus e alla mobilità di uno studente, nonché criteri di ammissione ai corsi. In successive revisioni dell&apos;ontologia si raccoglieranno requisiti per modellare anche questi aspetti.</rdfs:comment>
@@ -54,28 +54,28 @@ At the moment, the ontology does not model information about a student&apos;s Er
         <dcat:keyword xml:lang="it">titolo di studio</dcat:keyword>
         <dcat:keyword xml:lang="it">voto</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
-        <ADMS:acronym>LE-AP_IT</ADMS:acronym>
-        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/DegreeClass"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/DegreeCourse"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/EducationalOffering"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/Enrolment"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/Qualification"/>
-        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/le-JSON-LD"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/le-RDF-TURTLE"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/le-RDF-XML"/>
-        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
-        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
-        <ADMS:last rdf:resource="https://w3id.org/italia/onto/Learning/0.1"/>
-        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/Learning</ADMS:officialURI>
-        <ADMS:prefix>le</ADMS:prefix>
-        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
-        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
-        <ADMS:status>draft</ADMS:status>
-        <ADMS:target>Imprese</ADMS:target>
-        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
-        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+        <admsapit:acronym>LE-AP_IT</admsapit:acronym>
+        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/DegreeClass"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/DegreeCourse"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/EducationalOffering"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/Enrolment"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/Learning/Qualification"/>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/le-JSON-LD"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/le-RDF-TURTLE"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/le-RDF-XML"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <admsapit:last rdf:resource="https://w3id.org/italia/onto/Learning/0.1"/>
+        <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/Learning</admsapit:officialURI>
+        <admsapit:prefix>le</admsapit:prefix>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
+        <admsapit:status>draft</admsapit:status>
+        <admsapit:target>Imprese</admsapit:target>
+        <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
+        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
     
 
@@ -332,6 +332,7 @@ At the moment, the ontology does not model information about a student&apos;s Er
     <!-- https://w3id.org/italia/onto/HER/hasAcademicDiscipline -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/HER/hasAcademicDiscipline">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/Learning/DegreeCourse"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/Learning/QualificationTitle"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/HER/AcademicDiscipline"/>
         <rdfs:comment xml:lang="it">Collega il titolo di qualifica alla disciplina accademica.</rdfs:comment>
@@ -926,17 +927,6 @@ At the moment, the ontology does not model information about a student&apos;s Er
     
 
 
-    <!-- https://w3id.org/learning/onto/Learning/usesAcademicDiscipline -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/learning/onto/Learning/usesAcademicDiscipline">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/HER/hasAcademicDiscipline"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/HER/AcademicDiscipline"/>
-        <rdfs:label xml:lang="it">usa disciplina accademica</rdfs:label>
-        <rdfs:label xml:lang="en">uses academic discipline</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1224,8 +1214,8 @@ La proprietà è usata con la relativa classe &apos;Anno Accademico&apos; per in
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/Learning/QualificationTitle"/>
         <rdfs:comment xml:lang="en">It is a type of qualification title obtained upon completion of a standard academic programme within university or AFAM systems. It includes titles that award official academic degrees recognized at national and European level.</rdfs:comment>
         <rdfs:comment xml:lang="it">È un tipo di titolo della qualifica che deriva dal completamento di un percorso accademico ordinario previsto dagli ordinamenti universitari o AFAM. Comprende titoli che attribuiscono gradi accademici riconosciuti a livello nazionale ed europeo.</rdfs:comment>
-        <rdfs:label xml:lang="en">Academic title</rdfs:label>
-        <rdfs:label xml:lang="it">Titolo accademico</rdfs:label>
+        <rdfs:label xml:lang="en">Academic Title</rdfs:label>
+        <rdfs:label xml:lang="it">Titolo Accademico</rdfs:label>
     </owl:Class>
     
 
@@ -1307,6 +1297,12 @@ La proprietà è usata con la relativa classe &apos;Anno Accademico&apos; per in
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/Learning/hasDegreeClass"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/Learning/DegreeClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/HER/hasAcademicDiscipline"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/HER/AcademicDiscipline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1935,8 +1931,8 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
         <rdfs:comment xml:lang="en">It is the official designation used to identify and record a qualification in higher education. It represents the formal name of the achieved qualification and clearly describes the completed learning path within the university or AFAM systems.</rdfs:comment>
         <rdfs:comment xml:lang="it">È la denominazione ufficiale con cui una qualifica dell’istruzione superiore viene identificata e registrata. Rappresenta il nome formale del titolo conseguito, utile per descrivere in modo chiaro il percorso formativo completato all’interno dei sistemi universitari e AFAM.</rdfs:comment>
-        <rdfs:label xml:lang="en">Qualification title</rdfs:label>
-        <rdfs:label xml:lang="it">Titolo di qualifica</rdfs:label>
+        <rdfs:label xml:lang="en">Qualification Title</rdfs:label>
+        <rdfs:label xml:lang="it">Titolo di Qualifica</rdfs:label>
     </owl:Class>
     
 
@@ -1947,8 +1943,8 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/Learning/QualificationTitle"/>
         <rdfs:comment xml:lang="en">It is a title awarded at the end of specialised or advanced training programmes that provide in-depth or professional competences beyond basic academic education. It certifies a specialization in a specific field and may hold professional relevance. Specialisation titles in Italy currently belong to the healthcare area, the veterinary area, the cultural heritage area, the psychology area, and the legal professions area.</rdfs:comment>
         <rdfs:comment xml:lang="it">È un titolo rilasciato al termine di percorsi formativi specialistici o di perfezionamento che approfondiscono competenze avanzate oltre la formazione accademica di base. Riconosce una specializzazione in un ambito specifico e può avere valore professionale. I titoli di specializzazione, attualmente in Italia, appartengono all’area sanitaria, all’area veterinaria, all’area dei beni culturali, all’area psicologica ed all’area delle professioni legali.</rdfs:comment>
-        <rdfs:label xml:lang="en">Specialisation title</rdfs:label>
-        <rdfs:label xml:lang="it">Titolo di specializzazione</rdfs:label>
+        <rdfs:label xml:lang="en">Specialisation Title</rdfs:label>
+        <rdfs:label xml:lang="it">Titolo di Specializzazione</rdfs:label>
     </owl:Class>
     
 
@@ -1974,8 +1970,8 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
         <rdfs:comment xml:lang="it">Indica l’area disciplinare a cui appartiene un titolo della qualifica, secondo le classificazioni adottate nell’istruzione superiore. Serve a contestualizzare il contenuto formativo del titolo e a facilitarne la categorizzazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">It indicates the disciplinary area to which a qualification title belongs, according to classifications adopted in higher education. It helps contextualize the educational content of the title and facilitates its categorization.</rdfs:comment>
-        <rdfs:label xml:lang="it">Area del titolo</rdfs:label>
-        <rdfs:label xml:lang="en">Title area</rdfs:label>
+        <rdfs:label xml:lang="it">Area del Titolo</rdfs:label>
+        <rdfs:label xml:lang="en">Title Area</rdfs:label>
     </owl:Class>
     
 
@@ -2067,12 +2063,12 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/le-JSON-LD">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia della (alta) Formazione (anche Artistica, Musicale e Coreutica - AFAM)</terms:description>
-        <terms:description xml:lang="en">This is the distribution in JSON-LD of the Learning ontology</terms:description>
-        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia LE-AP_IT</terms:title>
-        <terms:title xml:lang="en">JSON-LD distribution of LE-AP_IT Ontology</terms:title>
+        <dct:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia della (alta) Formazione (anche Artistica, Musicale e Coreutica - AFAM)</dct:description>
+        <dct:description xml:lang="en">This is the distribution in JSON-LD of the Learning ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione JSON-LD ontologia LE-AP_IT</dct:title>
+        <dct:title xml:lang="en">JSON-LD distribution of LE-AP_IT Ontology</dct:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/Learning/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning-AP_IT.jsonld"/>
     </owl:NamedIndividual>
@@ -2083,12 +2079,12 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/le-RDF-TURTLE">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia della (alta) Formazione (anche Artistica, Musicale e Coreutica - AFAM)e</terms:description>
-        <terms:description xml:lang="en">This is the distribution in RDF/turtle of the Learning ontology</terms:description>
-        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia LE-AP_IT</terms:title>
-        <terms:title xml:lang="en">RDF/Turtle distribution of LE-AP_IT Ontology</terms:title>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia della (alta) Formazione (anche Artistica, Musicale e Coreutica - AFAM)e</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/turtle of the Learning ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia LE-AP_IT</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of LE-AP_IT Ontology</dct:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/Learning/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning-AP_IT.ttl"/>
     </owl:NamedIndividual>
@@ -2099,12 +2095,12 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/le-RDF-XML">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia della (alta) Formazione (anche Artistica, Musicale e Coreutica - AFAM)</terms:description>
-        <terms:description xml:lang="en">This is the distribution in RDF/XML of the Learning ontology</terms:description>
-        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia LE-AP_IT</terms:title>
-        <terms:title xml:lang="en">RDF/XML distribution of LE-AP_IT Ontology</terms:title>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia della (alta) Formazione (anche Artistica, Musicale e Coreutica - AFAM)</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/XML of the Learning ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia LE-AP_IT</dct:title>
+        <dct:title xml:lang="en">RDF/XML distribution of LE-AP_IT Ontology</dct:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/Learning/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning-AP_IT.rdf"/>
     </owl:NamedIndividual>
@@ -2116,7 +2112,7 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>cnr - Z6HZEH - STLab</terms:identifier>
+        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
         <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
         <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
     </owl:NamedIndividual>
@@ -2146,7 +2142,7 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/KH5RHFCV">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>KH5RHFCV</terms:identifier>
+        <dct:identifier>KH5RHFCV</dct:identifier>
         <rdfs:label xml:lang="it">Ministero dell&apos;Università e della Ricerca</rdfs:label>
         <foaf:name xml:lang="it">Ministero dell&apos;Università e della Ricerca</foaf:name>
     </owl:NamedIndividual>
@@ -2158,7 +2154,7 @@ Nel caso di istruzione superiore, ogni istituto che eroga corsi di istruzione su
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>PCM-1RSIZZ</terms:identifier>
+        <dct:identifier>PCM-1RSIZZ</dct:identifier>
         <foaf:name xml:lang="en">Digital Transformation Department of the Presidency of the Council of Ministers</foaf:name>
         <foaf:name xml:lang="it">Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri</foaf:name>
     </owl:NamedIndividual>
