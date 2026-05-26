@@ -110,13 +110,22 @@
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/onto/HER/AcademicDiscipline"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/HER/hasAcademicDiscipline"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Language/Language"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Language/hasLanguage"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/DegreeClass"
@@ -125,7 +134,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/hasDegreeClass"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Learning"
@@ -134,23 +143,13 @@
     "@id" : "https://w3id.org/italia/onto/l0/hasMember"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/name"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/Learning/credit"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -160,10 +159,20 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
+    "@id" : "https://w3id.org/italia/onto/Learning/credit"
   } ]
 }, {
   "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/identifier"
+  } ]
+}, {
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -176,7 +185,7 @@
     "@id" : "https://w3id.org/italia/onto/SM/URL"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Language/hasLanguage"
@@ -185,7 +194,7 @@
     "@id" : "https://w3id.org/italia/onto/Language/Language"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/definesDegreeCourse"
@@ -194,7 +203,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/DegreeCourse"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/definesProgrammeType"
@@ -203,7 +212,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/ProgrammeType"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/hasEOSite"
@@ -212,7 +221,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/EducationalOfferingSite"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Language/Language"
@@ -221,22 +230,13 @@
     "@id" : "https://w3id.org/italia/onto/Language/hasLanguage"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/DegreeCourse"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/definesDegreeCourse"
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/Learning/ProgrammeType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/Learning/definesProgrammeType"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -252,13 +252,22 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/onto/Learning/ProgrammeType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/Learning/definesProgrammeType"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/EducationalOfferingSite"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/hasEOSite"
   } ]
 }, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/AcademicYear"
@@ -271,7 +280,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/atInstitute"
@@ -280,7 +289,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/Institute"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Institute"
@@ -289,7 +298,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/atInstitute"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/DegreeCourse"
@@ -302,7 +311,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/ProgrammeType"
@@ -315,7 +324,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -328,7 +337,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/hasEnrolmentStatus"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -341,7 +350,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/hasRegistrationYear"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -351,7 +360,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/courseYear"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Grade"
@@ -364,7 +373,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Qualification"
@@ -373,7 +382,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/leadsTo"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -386,7 +395,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/hasGradingScale"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -396,7 +405,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/gradeValue"
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Grade"
@@ -409,7 +418,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Grade"
@@ -422,7 +431,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/InstituteType"
@@ -435,7 +444,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/instituteName"
@@ -444,7 +453,7 @@
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
@@ -453,7 +462,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/instituteName"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -463,7 +472,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/instituteCode"
   } ]
 }, {
-  "@id" : "_:genid59",
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/providedBy"
@@ -472,7 +481,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/Institute"
   } ]
 }, {
-  "@id" : "_:genid60",
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Examination"
@@ -481,7 +490,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/includesExamination"
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Institute"
@@ -490,7 +499,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/providedBy"
   } ]
 }, {
-  "@id" : "_:genid62",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/DegreeCourse"
@@ -499,7 +508,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/isMemberOf"
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -509,7 +518,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/credit"
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -522,7 +531,7 @@
     "@id" : "https://w3id.org/italia/onto/SM/URL"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/hasMember"
@@ -531,7 +540,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/Learning"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Learning"
@@ -540,7 +549,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/hasMember"
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -551,15 +560,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/entitlesTo"
-  } ]
-}, {
-  "@id" : "_:genid68",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "_:genid69",
@@ -583,6 +583,15 @@
 }, {
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/name"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -591,7 +600,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/identifier"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Profession"
@@ -600,7 +609,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/enablesProfession"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/QualificationLevel"
@@ -609,7 +618,7 @@
     "@id" : "https://w3id.org/italia/onto/Learning/hasLevel"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Grade"
@@ -622,7 +631,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Institute"
@@ -635,7 +644,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/achievedTitleName"
@@ -644,7 +653,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -653,10 +662,10 @@
     "@id" : "https://w3id.org/italia/onto/Learning/achievedTitleName"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid78"
+    "@id" : "_:genid79"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/qualificationDate"
@@ -666,7 +675,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -959,6 +968,8 @@
     "@value" : "Links the qualification title to the academic discipline."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/onto/Learning/DegreeCourse"
+  }, {
     "@id" : "https://w3id.org/italia/onto/Learning/QualificationTitle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1044,18 +1055,18 @@
     "@value" : "Ontologia della Formazione (inclusa Artistica, Musicale e Coreutica - AFAM)"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "file:////pc.istat.it/xendesktop/DaaS/vincenzo.piscitelli/Downloads/learning_her_minimal.ttl"
-  }, {
     "@id" : "https://w3id.org/italia/onto/COV"
   }, {
     "@id" : "https://w3id.org/italia/onto/CPV"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/HER"
   }, {
     "@id" : "https://w3id.org/italia/onto/Language"
   }, {
     "@id" : "https://w3id.org/italia/onto/RO"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/italia/onto/Learning/0."
+    "@id" : "https://w3id.org/italia/onto/Learning/0.3"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
@@ -1159,10 +1170,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Academic title"
+    "@value" : "Academic Title"
   }, {
     "@language" : "it",
-    "@value" : "Titolo accademico"
+    "@value" : "Titolo Accademico"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/QualificationTitle"
@@ -1301,6 +1312,8 @@
     "@id" : "_:genid31"
   }, {
     "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1335,8 +1348,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Description"
   }, {
-    "@id" : "_:genid33"
-  }, {
     "@id" : "_:genid34"
   }, {
     "@id" : "_:genid35"
@@ -1352,6 +1363,8 @@
     "@id" : "_:genid40"
   }, {
     "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1413,8 +1426,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
   }, {
-    "@id" : "_:genid42"
-  }, {
     "@id" : "_:genid43"
   }, {
     "@id" : "_:genid44"
@@ -1426,6 +1437,8 @@
     "@id" : "_:genid47"
   }, {
     "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1487,7 +1500,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/TimeIndexedEvent"
   }, {
-    "@id" : "_:genid49"
+    "@id" : "_:genid50"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1519,7 +1532,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Examination"
   }, {
-    "@id" : "_:genid50"
+    "@id" : "_:genid51"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1554,9 +1567,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Concept"
   }, {
-    "@id" : "_:genid51"
-  }, {
     "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1588,9 +1601,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid53"
-  }, {
     "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1625,13 +1638,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/Organization"
   }, {
-    "@id" : "_:genid55"
-  }, {
     "@id" : "_:genid56"
   }, {
     "@id" : "_:genid57"
   }, {
     "@id" : "_:genid58"
+  }, {
+    "@id" : "_:genid59"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1698,8 +1711,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/TimeIndexedEvent"
   }, {
-    "@id" : "_:genid59"
-  }, {
     "@id" : "_:genid60"
   }, {
     "@id" : "_:genid61"
@@ -1709,6 +1720,8 @@
     "@id" : "_:genid63"
   }, {
     "@id" : "_:genid64"
+  }, {
+    "@id" : "_:genid65"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "http://data.europa.eu/snb/model/elm/LearningActivity"
@@ -1738,11 +1751,11 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Description"
   }, {
-    "@id" : "_:genid65"
-  }, {
     "@id" : "_:genid66"
   }, {
     "@id" : "_:genid67"
+  }, {
+    "@id" : "_:genid68"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1807,7 +1820,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/RO/Role"
   }, {
-    "@id" : "_:genid68"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1844,9 +1857,9 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Concept"
   }, {
-    "@id" : "_:genid69"
-  }, {
     "@id" : "_:genid70"
+  }, {
+    "@id" : "_:genid71"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1908,8 +1921,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Object"
   }, {
-    "@id" : "_:genid71"
-  }, {
     "@id" : "_:genid72"
   }, {
     "@id" : "_:genid73"
@@ -1921,6 +1932,8 @@
     "@id" : "_:genid76"
   }, {
     "@id" : "_:genid77"
+  }, {
+    "@id" : "_:genid78"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1979,10 +1992,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Qualification title"
+    "@value" : "Qualification Title"
   }, {
     "@language" : "it",
-    "@value" : "Titolo di qualifica"
+    "@value" : "Titolo di Qualifica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Concept"
@@ -1999,10 +2012,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Specialisation title"
+    "@value" : "Specialisation Title"
   }, {
     "@language" : "it",
-    "@value" : "Titolo di specializzazione"
+    "@value" : "Titolo di Specializzazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/Learning/QualificationTitle"
@@ -2089,10 +2102,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
-    "@value" : "Area del titolo"
+    "@value" : "Area del Titolo"
   }, {
     "@language" : "en",
-    "@value" : "Title area"
+    "@value" : "Title Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Concept"
@@ -3555,20 +3568,4 @@
 }, {
   "@id" : "https://w3id.org/italia/onto/l0/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "https://w3id.org/learning/onto/Learning/usesAcademicDiscipline",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "usa disciplina accademica"
-  }, {
-    "@language" : "en",
-    "@value" : "uses academic discipline"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/onto/HER/AcademicDiscipline"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/HER/hasAcademicDiscipline"
-  } ]
 } ]
