@@ -20,7 +20,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/HER"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/Language"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/RO"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning.png"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Ontologie/Learning/latest/Learning.png"/>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
         <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
@@ -30,7 +30,7 @@
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-27</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dct:modified>2026-05-26</dct:modified>
+        <dct:modified>2026-06-04</dct:modified>
         <dct:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
         <dct:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/KH5RHFCV"/>
         <dct:title xml:lang="en">Learning Ontology</dct:title>
@@ -44,8 +44,8 @@ At the moment, the ontology does not model information about a student&apos;s Er
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/Learning"/>
         <rdfs:label xml:lang="en">Learning Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia della Formazione (inclusa Artistica, Musicale e Coreutica - AFAM)</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 0.3 – Introduction of new concepts such as the qualification title, the title area, the academic title, and the specialization title. These adjustments make it possible to include information related to post-graduate titles.</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 0.3 - Introduzione di nuovi concetti come il titolo della qualifica, l’area del titolo, il titolo accademico e il titolo di specializzazione. Tali accorgimenti consentono di includere informazioni inerenti ai titoli post lauream</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version 0.3 – Introduction of new concepts such as the qualification title, the title area, the academic title, and the specialization title. These adjustments make it possible to include information related to post-graduate titles. The controlled vocabulary of qualifications issued by specialization schools will be linked to the concept of Specialization Title.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.3 - Introduzione di nuovi concetti come il titolo della qualifica, l’area del titolo, il titolo accademico e il titolo di specializzazione. Tali accorgimenti consentono di includere informazioni inerenti ai titoli post lauream. Verrà collegato, al concetto di Titolo di Specializzazione, il vocabolario controllato dei titoli rilasciati delle scuole di specializzazione.</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/italia/data/contact-point/stat-off-mur"/>
         <dcat:keyword xml:lang="it">AFAM</dcat:keyword>
         <dcat:keyword xml:lang="it">alta formazione</dcat:keyword>
