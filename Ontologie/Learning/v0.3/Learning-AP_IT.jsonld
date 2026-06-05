@@ -992,7 +992,7 @@
   "@id" : "https://w3id.org/italia/onto/Learning",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning.png"
+    "@id" : "https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Ontologie/Learning/latest/Learning.png"
   } ],
   "http://purl.org/dc/terms/accrualPeriodicity" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
@@ -1022,7 +1022,7 @@
     "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2026-05-26"
+    "@value" : "2026-06-04"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"
@@ -1070,10 +1070,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "Version 0.3 – Introduction of new concepts such as the qualification title, the title area, the academic title, and the specialization title. These adjustments make it possible to include information related to post-graduate titles."
+    "@value" : "Version 0.3 – Introduction of new concepts such as the qualification title, the title area, the academic title, and the specialization title. These adjustments make it possible to include information related to post-graduate titles. The controlled vocabulary of qualifications issued by specialization schools will be linked to the concept of Specialization Title."
   }, {
     "@language" : "it",
-    "@value" : "Versione 0.3 - Introduzione di nuovi concetti come il titolo della qualifica, l’area del titolo, il titolo accademico e il titolo di specializzazione. Tali accorgimenti consentono di includere informazioni inerenti ai titoli post lauream"
+    "@value" : "Versione 0.3 - Introduzione di nuovi concetti come il titolo della qualifica, l’area del titolo, il titolo accademico e il titolo di specializzazione. Tali accorgimenti consentono di includere informazioni inerenti ai titoli post lauream. Verrà collegato, al concetto di Titolo di Specializzazione, il vocabolario controllato dei titoli rilasciati delle scuole di specializzazione."
   } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "https://w3id.org/italia/data/contact-point/stat-off-mur"

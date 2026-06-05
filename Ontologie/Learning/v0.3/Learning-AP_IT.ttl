@@ -18,7 +18,7 @@
                                                      <https://w3id.org/italia/onto/HER> ,
                                                      <https://w3id.org/italia/onto/Language> ,
                                                      <https://w3id.org/italia/onto/RO> ;
-                                         <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/Learning/latest/Learning.png> ;
+                                         <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Ontologie/Learning/latest/Learning.png> ;
                                          dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                          dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
                                                      <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
@@ -28,7 +28,7 @@
                                          dct:issued "2023-07-27"^^xsd:date ;
                                          dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                       <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                         dct:modified "2026-05-26" ;
+                                         dct:modified "2026-06-04" ;
                                          dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
                                          dct:rightsHolder <https://w3id.org/italia/data/public-organization/KH5RHFCV> ;
                                          dct:title "Learning Ontology"@en ,
@@ -42,8 +42,8 @@ At the moment, the ontology does not model information about a student's Erasmus
                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/Learning> ;
                                          rdfs:label "Learning Ontology"@en ,
                                                     "Ontologia della Formazione (inclusa Artistica, Musicale e Coreutica - AFAM)"@it ;
-                                         owl:versionInfo "Version 0.3 – Introduction of new concepts such as the qualification title, the title area, the academic title, and the specialization title. These adjustments make it possible to include information related to post-graduate titles."@en ,
-                                                         "Versione 0.3 - Introduzione di nuovi concetti come il titolo della qualifica, l’area del titolo, il titolo accademico e il titolo di specializzazione. Tali accorgimenti consentono di includere informazioni inerenti ai titoli post lauream"@it ;
+                                         owl:versionInfo "Version 0.3 – Introduction of new concepts such as the qualification title, the title area, the academic title, and the specialization title. These adjustments make it possible to include information related to post-graduate titles. The controlled vocabulary of qualifications issued by specialization schools will be linked to the concept of Specialization Title."@en ,
+                                                         "Versione 0.3 - Introduzione di nuovi concetti come il titolo della qualifica, l’area del titolo, il titolo accademico e il titolo di specializzazione. Tali accorgimenti consentono di includere informazioni inerenti ai titoli post lauream. Verrà collegato, al concetto di Titolo di Specializzazione, il vocabolario controllato dei titoli rilasciati delle scuole di specializzazione."@it ;
                                          dcat:contactPoint <https://w3id.org/italia/data/contact-point/stat-off-mur> ;
                                          dcat:keyword "AFAM"@it ,
                                                       "alta formazione"@it ,
