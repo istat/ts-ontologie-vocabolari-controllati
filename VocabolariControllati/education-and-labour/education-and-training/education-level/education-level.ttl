@@ -1,0 +1,1012 @@
+@prefix : <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xkos: <http://purl.org/linked-data/xkos#> .
+@prefix cpv: <https://w3id.org/italia/onto/CPV/> .
+@prefix learning: <https://w3id.org/italia/onto/Learning/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+
+
+
+
+
+#################################################################
+# inizio metadati
+#################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>
+    a skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+    dct:title "Controlled Vocabulary of Education Level"@en ,
+              "Vocabolario Controllato dei liveli di istruzione"@it ;
+    dct:description "Vocabolario controllato ..."@it ,
+                    "Controlled Vocabulary ..."@en ;
+    xkos:numberOfLevels "3" ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level" ;
+    dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+    dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
+    dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level> ;
+    dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/education-and-labour> ;
+    dcat:keyword "..."@it , "..."@it , "..."@it , 
+				 "..."@en , "..."@en , "..."@en  ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle> ,
+                      <https://w3id.org/italia/data/distribution/uts_CSV> ,
+                      <https://w3id.org/italia/data/distribution/uts_XLSX> ;
+    dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+    dct:issued "2026-06-17"^^xsd:date ;
+    dct:modified "2026-06-17"^^xsd:date ;
+    owl:versionInfo "Versione 1.0"@it ;
+    dct:temporal "Da luglio 2026/..." ;
+    ndc:keyConcept "Education" ;
+    rdfs:comment "Controlled Vocabulary of Education Levels"@en ,
+              "Vocabolario Controllato dei liveli di istruzione"@it ;
+    rdfs:label "Controlled Vocabulary of Education Level"@en ,
+              "Vocabolario Controllato dei liveli di istruzione"@it ;
+    skos:notation "Controlled Vocabulary of Education Level"@en ,
+              "Vocabolario Controllato dei liveli di istruzione"@it ;
+    skos:prefLabel "Controlled Vocabulary of Education Level"@en ,
+              "Vocabolario Controllato dei liveli di istruzione"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/themes/education-and-labour>
+    a skos:Concept ;
+    skos:prefLabel "Educazione e lavoro"@it ;
+    skos:prefLabel "Education and labour"@en .
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+    a dcatapit:Agent , foaf:Agent ;
+    dct:identifier "ISTAT" ;
+    foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+              "Italian National Institute of Statistics - ISTAT"@en .
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+    a dcatapit:Organization , vcard:Organization , vcard:Kind ;
+    vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+    vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+<https://w3id.org/italia/data/standard/SKOS>
+    a dcatapit:Standard , dct:Standard ;
+    dct:identifier "SKOS" ;
+    foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+    dct:title "Simple Knowledge Organization System - SKOS" ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+
+
+#################################################################
+# fine metadati
+#################################################################
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>
+  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/Livello1>
+  a xkos:ClassificationLevel;
+  skos:member <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99>;
+  skos:prefLabel "ISCED_A - TITOLO";
+  xkos:depth "1" .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/Livello2>
+  a xkos:ClassificationLevel;
+  skos:member <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_30>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_40>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_40>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99_00>;
+  skos:prefLabel "TIPO - TITOLO";
+  xkos:depth "2" .
+  
+  
+  <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30>;
+  skos:notation "CTS_3_30_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Upper secondary school diploma (Ante 2010)"@en, "Diploma di maturità (Ante 2010)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30_20>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>;
+  skos:notation "CTS_3_30";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Upper secondary school diploma "@en, "Diploma di maturità; Diploma di istruzione secondaria di 2° grado  (che danno accesso all’istruzione universitaria o accademica)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30>;
+  skos:notation "CTS_3_30_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Upper secondary school diploma"@en, "Diploma di superamento dell’esame di stato/maturità conclusivo dei corsi di istruzione secondaria di 2° grado "@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10>;
+  skos:notation "CTS_4_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "IFTS higher technical specialisation certificate"@en, "Certificato di specializzazione tecnica superiore IFTS"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10_20>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4>;
+  skos:notation "CTS_4_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "IFTS higher technical specialisation certificate (specialisation oenology diploma included)"@en,
+    "Certificato di specializzazione tecnica superiore IFTS (incluso il Diploma di specializzazione in enotecnico)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10>;
+  skos:notation "CTS_4_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Specialisation diploma in oenology"@en, "Diploma di specializzazione in enotecnico"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10>;
+  skos:notation "CTS_5_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "ITS Higher technical diploma  (2 or 3 years)"@en, "Diploma di tecnico superiore ITS (biennale o triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10_20>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5>;
+  skos:notation "CTS_5_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel """ITS Higher technical diploma;
+ITS specialisation in applied technologies diploma"""@en,
+    """Diploma di tecnico superiore ITS;
+Diploma di specializzazione per le tecnologie applicate ITS (biennale)"""@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10>;
+  skos:notation "CTS_5_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel """ITS specialisation in applied technologies diploma (2 years)
+"""@en,
+    "Diploma di specializzazione per le tecnologie applicate ITS (biennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_10>;
+  skos:notation "CTS_6_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Advanced ITS diploma of specialisation in applied technologies (3 years)"@en,
+    "Diploma di specializzazione superiore per le tecnologie applicate ITS (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_10_10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>;
+  skos:notation "CTS_6_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Advanced ITS diploma of specialisation in applied technologies (3 years)"@en,
+    "Diploma di specializzazione superiore per le tecnologie applicate ITS (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_20_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_20>;
+  skos:notation "CTS_6_20_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "University diploma under the former system (2 or 3 years)"@en, "Diploma universitario del vecchio ordinamento (biennale/triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_20_10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>;
+  skos:notation "CTS_6_20";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "University diploma under the former system (2 or 3 years)"@en, "Diploma universitario del vecchio ordinamento (biennale/triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_30_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_30>;
+  skos:notation "CTS_6_30_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Bachelor’s degree (3 years)"@en, "Laurea di 1° livello (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_30_10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>;
+  skos:notation "CTS_6_30";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Bachelor’s degree (2 or 3 years)"@en, "Laurea di 1° livello (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_40_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_40>;
+  skos:notation "CTS_6_40_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "AFAM academic diploma (3 years)"@en, "Diploma accademico di 1° livello AFAM (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_40>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_40_10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>;
+  skos:notation "CTS_6_40";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "AFAM academic diploma (3 years)"@en, "Diploma accademico di 1° livello AFAM (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50>;
+  skos:notation "CTS_6_50_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "First-level university postgraduate diploma"@en, "Master universitario di 1° livello"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50_20>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>;
+  skos:notation "CTS_6_50";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Second-level university or AFAM academic master’s diploma"@en, "Master universitario o accademico AFAM di 1° livello "@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50>;
+  skos:notation "CTS_6_50_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "First-level AFAM academic master’s diploma"@en, "Master accademico di 1° livello AFAM"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10>;
+  skos:notation "CTS_7_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "University degree under the former system (4–6 years)"@en, "Diploma di laurea del vecchio ordinamento  (4-6 anni)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10_30>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>;
+  skos:notation "CTS_7_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel """University degree under the former system (4–6 years);
+Master’s degree (2-years);
+Master’s degree (5–6 years)"""@en,
+    """Diploma di laurea del vecchio ordinamento  (4-6 anni);
+Laurea specialistica/magistrale di 2° livello (biennale);
+Laurea specialistica/magistrale  di 2° livello  a ciclo unico (5-6 anni)"""@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10>;
+  skos:notation "CTS_7_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Master’s degree (2 years)"@en, "Laurea specialistica/magistrale di 2° livello (biennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10>;
+  skos:notation "CTS_7_10_30";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Master’s degree (5–6 years)"@en, "Laurea specialistica/magistrale di 2° livello a ciclo unico (5-6 anni)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20>;
+  skos:notation "CTS_7_20_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "AFAM academic diploma under the former system (4–6 years)"@en, "Diploma accademico del vecchio ordinamento AFAM (4-6 anni)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20_30>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>;
+  skos:notation "CTS_7_20";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel """Academic diploma under the former system (4–6 years);
+Second-cycle AFAM academic diploma (2 years);
+Single-cycle AFAM academic diploma (5–6 years)
+
+"""@en,
+    """Diploma accademico del vecchio ordinamento  (4-6 anni);
+Diploma accademico di 2° livello AFAM (biennale);
+Diploma accademico di 2° livello a ciclo unico AFAM (5-6 anni)"""@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20>;
+  skos:notation "CTS_7_20_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Second-cycle AFAM academic diploma (2 years)"@en, "Diploma accademico di 2° livello AFAM (biennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20>;
+  skos:notation "CTS_7_20_30";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Single-cycle AFAM academic diploma (5–6 years)"@en, "Diploma accademico di 2° livello a ciclo unico AFAM  (5-6 anni)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30>;
+  skos:notation "CTS_7_30_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Second-level university master’s diploma"@en, "Master universitario di 2° livello"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30_20>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>;
+  skos:notation "CTS_7_30";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Second-level university or AFAM academic master’s diploma"@en, "Master universitario o accademico AFAM di 2° livello"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30>;
+  skos:notation "CTS_7_30_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Second-level AFAM academic master’s diploma"@en, "Master accademico di 2° livello AFAM"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_40_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_40>;
+  skos:notation "CTS_7_40_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Specialisation diploma"@en, "Diploma di specializzazione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_40>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_40_10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>;
+  skos:notation "CTS_7_40";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Specialisation diploma"@en, "Diploma di specializzazione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10>;
+  skos:notation "CTS_8_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Doctor of Philosophy (PhD)"@en, "Dottore di ricerca (universitario)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10_20>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8>;
+  skos:notation "CTS_8_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Doctor of Philosophy (PhD); AFAM PhD and academic diploma in research training"@en,
+    """Dottore di ricerca (universitario);
+Dottore di ricerca (AFAM); Diploma accademico di formazione alla ricerca AFAM"""@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10>;
+  skos:notation "CTS_8_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "AFAM Doctor of Philosophy  (PhD) and AFAM academic diploma in research training"@en,
+    "Dottore di ricerca (AFAM); Diploma accademico di formazione alla ricerca AFAM"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99_00_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99_00>;
+  skos:notation "CTS_99_00_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Vocational qualification certificate (regional training courses)"@en,
+    "Qualificazione di formazione professionale regionale di area operativa, di area tecnica e di alta formazione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99_00>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99_00_10>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99>;
+  skos:notation "CTS_99_00";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Vocational qualification certificate (regional training courses)"@en,
+    "Qualificazione di formazione professionale regionale di area operativa, di area tecnica e di alta formazione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_0";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note "PROVA NOTE"@it;
+  skos:prefLabel "Early childhood education (‘less than primary’ for educational attainment); No educational degree"@en,
+    "Nessun titolo di studio "@it;
+  skos:altLabel "PROVA 1"@it, "PROVA 1 EN"@en;
+  skos:definition "BOZZA: ISCED level 0 programmes are usually school-based or otherwise institutionalised for a group of children (e.g. centre-based, community-based, home-based). ISCED level 0 excludes purely family-based arrangements that may be purposeful but are not organized in a ‘programme’ (e.g. informal learning by children from their parents, other relatives or friends is not included under ISCED 0). Within ISCED 0, early childhood educational development programmes are targeted at children aged 0 to 2 years; and pre-primary education programmes are targeted at children aged 3 years until the age to start ISCED 1. The upper age limit for the pre-primary education category depends in each case on the theoretical age of entry into ISCED level 1. (See ISCED 2011 Manual, paragraphs 107-108)"@en,
+    "BOZZA: I programmi ISCED livello 0 sono solitamente basati sulla scuola o in altro modo istituzionalizzati per un gruppo di bambini (ad esempio centri, comunitari, domestici). Il livello 0 dell'ISCED esclude gli accordi puramente familiari che possono essere intenzionali ma non sono organizzati in un 'programma' (ad esempio, l'apprendimento informale da parte dei bambini dai genitori, altri parenti o amici non è incluso nell'ISCED 0). All'interno di ISCED 0, i programmi di sviluppo educativo della prima infanzia sono rivolti ai bambini di età compresa tra 0 e 2 anni; e i programmi di istruzione pre-primaria sono rivolti ai bambini di età 3 anni fino all'età per iniziare ISCED 1. Il limite massimo di età per la categoria pre-primaria dipende in ogni caso dall'età teorica di ingresso al livello 1 dell'ISCED. (Vedi Manuale ISCED 2011, paragrafi 107-108)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>
+  a skos:Concept, cpv:EducationLevel;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99>;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>;
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Second-level AFAM academic master’s diploma"@en, "Master accademico di 2° livello AFAM"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_1";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Primary education"@en, "Istruzione primaria"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 1, or primary education, are typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy) and establish a solid foundation for learning and understanding core areas of knowledge, personal and social development, in preparation for lower secondary education. It focuses on learning at a basic level of complexity with little, if any, specialisation. (see ISCED 2011 Manual paragraph 120)"@en,
+    "I programmi di livello 1 ISCED, ovvero istruzione primaria, sono tipicamente progettati per fornire agli studenti competenze fondamentali in lettura, scrittura e matematica (cioè alfabetizzazione e matematica) e per stabilire una solida base per l'apprendimento e la comprensione delle aree fondamentali di conoscenza, sviluppo personale e sociale, in preparazione all'istruzione secondaria inferiore. Si concentra sull'apprendimento a un livello di complessità di base, con poca o nessuna specializzazione. (vedi ISCED 2011 Manuale paragrafo 120)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_20> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_2";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Lower secondary education"@en, "Istruzione secondaria inferiore "@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 2, or lower secondary education, are typically designed to build on the earning outcomes from ISCED level 1. Usually, the aim is to lay the foundation for lifelong learning and human development upon which education systems may then expand further educational opportunities. Some education systems may already offer vocational education programmes at ISCED level 2 to provide individuals with skills relevant to employment. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects. Teachers typically have pedagogical training in specific subjects and, more often than at ISCED level 1, a class of students may have several teachers with specialised knowledge of the subjects they teach. (see ISCED 2011 Manual, paragraphs 139-140)"@en,
+    "I programmi al livello 2 ISCED, ovvero istruzione secondaria inferiore, sono tipicamente progettati per sviluppare i risultati di guadagno del livello 1 dell'ISCED. Di solito, l'obiettivo è gettare le basi per l'apprendimento permanente e lo sviluppo umano su cui i sistemi educativi possano poi ampliare ulteriori opportunità educative. Alcuni sistemi educativi possono già offrire programmi di formazione professionale al livello 2 ISCED per fornire agli individui competenze rilevanti per l'impiego. I programmi a questo livello sono solitamente organizzati attorno a un curriculum più orientato alle materie, introducendo concetti teorici in una vasta gamma di materie. Gli insegnanti tipicamente hanno una formazione pedagogica in materie specifiche e, più spesso rispetto al livello 1 ISCED, una classe di studenti può avere diversi insegnanti con conoscenze specializzate nelle materie che insegnano. (vedi Manuale ISCED 2011, paragrafi 139-140)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_3";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Upper secondary education"@en, "Istruzione secondaria  superiore "@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 3, or upper secondary education, are typically designed to complete secondary education in preparation for tertiary education or provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at ISCED level 2. They are more differentiated, with an increased range of options and streams available. Teachers are often highly qualified in the subjects or fields of specialisation they teach, particularly in the higher grades. (see ISCED 2011 Manual, paragraphs 162-163)"@en,
+    "I programmi di livello 3 ISCED, ovvero istruzione secondaria superiore, sono tipicamente progettati per completare l'istruzione secondaria in preparazione all'istruzione terziaria o fornire competenze rilevanti per l'impiego, o entrambe le cose. I programmi a questo livello offrono agli studenti un'istruzione più varia, specializzata e approfondita rispetto ai programmi ISCED livello 2. Sono più differenziati, con una gamma più ampia di opzioni e flussi disponibili. Gli insegnanti sono spesso altamente qualificati nelle materie o nei campi di specializzazione che insegnano, in particolare nelle classi superiori. (vedi Manuale ISCED 2011, paragrafi 162-163)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_30> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_4";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Post-secondary non-tertiary education"@en, "Istruzione post-secondaria non terziaria"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Post-secondary non-tertiary education provides learning experiences building on secondary education, preparing for labour market entry as well as tertiary education. It aims at the individual acquisition of knowledge, skills and competencies lower than the level of complexity characteristic of tertiary education. Programmes at ISCED level 4, or post-secondary non-tertiary education, are typically designed to provide individuals who completed ISCED level 3 with non-tertiary qualifications required for progression to tertiary education or for employment when their ISCED level 3 qualification does not grant such access. For example, graduates from general ISCED level 3 programmes may choose to complete a non-tertiary vocational qualification; or graduates from vocational ISCED level 3 programmes may choose to increase their level of qualifications or specialise further. The content of ISCED level 4 programmes is not sufficiently complex to be regarded as tertiary education, although it is clearly post-secondary. (see ISCED 2011 Manual, paragraph 185)"@en,
+    "L'istruzione post-secondaria non terziaria offre esperienze di apprendimento basate sull'istruzione secondaria, preparando sia all'ingresso nel mercato del lavoro sia all'istruzione terziaria. Mira all'acquisizione individuale di conoscenze, competenze e competenze inferiori al livello di complessità caratteristico dell'istruzione terziaria. I programmi di livello 4 ISCED, ovvero istruzione post-secondaria non terziaria, sono tipicamente progettati per fornire a chi ha completato ISCED livello 3 qualifiche non terziari necessarie per il progresso verso l'istruzione terziaria o per l'impiego quando la loro qualifica ISCED livello 3 non consente tale accesso. Ad esempio, i laureati dei programmi generali ISCED di livello 3 possono scegliere di completare una qualifica professionale non terziaria; oppure i laureati dei programmi professionali ISCED di livello 3 possono scegliere di aumentare il proprio livello di qualifiche o specializzarsi ulteriormente. Il contenuto dei programmi ISCED di livello 4 non è sufficientemente complesso da essere considerato istruzione terziaria, anche se è chiaramente post-secondario. (vedi Manuale ISCED 2011, paragrafo 185)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_4_10> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_5";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Short-cycle tertiary education"@en, "Istruzione terziaria a ciclo breve (non universitaria/accademica)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 5, or short-cycle tertiary education, are often designed to provide participants with professional knowledge, skills and competencies. Typically, they are practically based, occupationally-specific and prepare students to enter the labour market. However, these programmes may also provide a pathway to other tertiary education programmes. Academic tertiary education programmes below the level of a Bachelor’s programme or equivalent are also classified as ISCED level 5. (see ISCED 2011 Manual, paragraph 207)"@en,
+    "I programmi di livello 5 ISCED, ovvero istruzione terziaria a ciclo breve, sono spesso progettati per fornire ai partecipanti conoscenze, competenze e competenze professionali. Tipicamente, sono basate su base pratica, specifiche per professione e preparano gli studenti all'ingresso nel mercato del lavoro. Tuttavia, questi programmi possono anche offrire un percorso verso altri programmi di istruzione terziaria. I programmi accademici di istruzione superiore inferiori al livello di un programma di laurea triennale o equivalente sono anch'essi classificati come livello ISCED 5. (vedi Manuale ISCED 2011, paragrafo 207)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_5_10> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_6";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Bachelor’s or equivalent level"@en, """Istruzione terziaria di 1° livello (universitaria/accademica/ITS Academy triennale)
+"""@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 6, or Bachelor’s or equivalent level, are often designed to provide participants with intermediate academic and/or professional knowledge, skills and competencies, leading to a first degree or equivalent qualification. Programmes at this level are typically theoretically-based but may include practical components and are informed by state of the art research and/or best professional practice. They are traditionally offered by universities and equivalent tertiary educational institutions. (see ISCED 2011 Manual, paragraph 224)"@en,
+    "I programmi al livello ISCED 6, o Bachelor o livello equivalente, sono spesso progettati per fornire ai partecipanti conoscenze accademiche e/o professionali intermedie, che conducono a una laurea di primo livello o a una qualifica equivalente. I programmi a questo livello sono tipicamente basati su teorie, ma possono includere componenti pratiche e sono guidati da ricerche all'avanguardia e/o dalle migliori pratiche professionali. Tradizionalmente sono offerte da università e istituzioni di istruzione superiore equivalenti. (vedi Manuale ISCED 2011, paragrafo 224)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_30>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_40>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_6_50> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_7";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Master’s or equivalent level"@en, "Istruzione terziaria di 2° livello (universitaria/accademica)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 7, or Master’s or equivalent level, are often designed to provide participants with advanced academic and/or professional knowledge, skills and competencies, leading to a second degree or equivalent qualification. Programmes at this level may have a substantial research component but do not yet lead to the award of a doctoral qualification. Typically, programmes at this level are theoretically-based but may include practical components and are informed by state of the art research and/or best professional practice. They are traditionally offered by universities and other tertiary educational institutions. (see ISCED 2011 Manual, paragraph 241)"@en,
+    "I programmi al livello ISCED 7, o Master o livello equivalente, sono spesso progettati per fornire ai partecipanti conoscenze accademiche e/o professionali avanzate, che portano a una seconda qualifica o qualifica equivalente. I programmi a questo livello possono avere una componente di ricerca sostanziale ma non portano ancora al conseguimento di una qualifica di dottorato. Tipicamente, i programmi a questo livello sono basati teoricamente ma possono includere componenti pratiche e sono informati da ricerche all'avanguardia e/o dalle migliori pratiche professionali. Tradizionalmente sono offerti da università e altre istituzioni di istruzione terziaria. (vedi Manuale ISCED 2011, paragrafo 241)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_30>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_7_40> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_8";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Doctoral or equivalent level"@en, "Istruzione terziaria di 3° livello (universitaria/accademica)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition "Programmes at ISCED level 8, or doctoral or equivalent level, are designed primarily to lead to an advanced research qualification. Programmes at this ISCED level are devoted to advanced study and original research and are typically offered only by research-oriented tertiary educational institutions such as universities. Doctoral programmes exist in both academic and professional fields. (see ISCED 2011 Manual, paragraph 259)"@en,
+    "I programmi al livello ISCED 8, o livello dottorale o equivalente, sono progettati principalmente per condurre a una qualifica di ricerca avanzata. I programmi a questo livello ISCED sono dedicati allo studio avanzato e alla ricerca originale e sono tipicamente offerti solo da istituzioni di istruzione terziaria orientate alla ricerca, come le università. I programmi di dottorato esistono sia in ambito accademico che professionale. (vedi Manuale ISCED 2011, paragrafo 259)"@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_8_10> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/>;
+  skos:notation "CTS_99";
+  clvapit:hasRankOrder "1"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Vocational qualification certificate (regional training courses)"@en,
+    "Qualificazione di formazione professionale regionale di area operativa, di area tecnica e di alta formazione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_99_00> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0>;
+  skos:notation "CTS_0_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "No educational degree"@en, "Nessun titolo di studio "@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10_30> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1>;
+  skos:notation "CTS_1_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Final assessment (primary school)"@en, "Licenza elementare; Certificazione delle competenze"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10_20> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1>;
+  skos:notation "CTS_1_20";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Literacy and learning of Italian language certificate"@en, "Attestato di conoscenza della lingua italiana (livello a2)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10_30> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2>;
+  skos:notation "CTS_2_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Lower secondary education certificate"@en, "Licenza media; Avviamento professionale; Diploma conclusivo del 1° ciclo di istruzione (Scuola secondaria di 1° grado)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10_20> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>;
+  skos:notation "CTS_3_10";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Vocational qualification diploma (3 years); Pre-school teaching qualification  (3 years);Master craftsman certificate  (3 years)"@en,
+    "Diploma di qualifica professionale (triennale); Titolo di abilitazione all'insegnamento nella scuola materna (triennale); Licenza di maestro d'arte (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10_20>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10_30> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3>;
+  skos:notation "CTS_3_20";
+  clvapit:hasRankOrder "2"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "IeFP vocational qualification - Operator (3 years); IeFP vocational diploma - Technician (4 years)"@en,
+    "Attestato di qualifica professionale IeFP di operatore (triennale); Diploma professionale IeFP di tecnico (quadriennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20_10>,
+    <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20_20> .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10>;
+  skos:notation "CTS_0_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "No educational degree;  No access to educational system"@en, "Nessun titolo; Nessun accesso all'istruzione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10>;
+  skos:notation "CTS_0_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "No educational degree; Pre-primary education and early childhood"@en,
+    "Nessun titolo; Scuola dell'infanzia e prima infanzia"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_0_10>;
+  skos:notation "CTS_0_10_30";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "No educational degree; Not completed primary education"@en, "Nessun titolo; Istruzione primaria non completata"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10>;
+  skos:notation "CTS_1_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Primary school certificate"@en, "Licenza elementare"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10>;
+  skos:notation "CTS_1_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Competency certification - Final evaluation certificate (primary school)"@en,
+    "Certificazione delle competenze e attestato di valutazione finale"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_10_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_1_20>;
+  skos:notation "CTS_1_10_30";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Competency certification - Literacy and learning of Italian language certificate"@en,
+    "Attestato di conoscenza della lingua italiana (livello a2)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10>;
+  skos:notation "CTS_2_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Lower secondary education certificate (vocational training included) "@en,
+    "Licenza media (inclusa licenza di avviamento professionale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_2_10>;
+  skos:notation "CTS_2_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Final evaluation certificate (lower secondary school)"@en, "Diploma conclusivo del 1° ciclo di istruzione"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10>;
+  skos:notation "CTS_3_10_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Vocational qualification diploma (3 years)"@en, "Diploma di qualifica professionale (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10>;
+  skos:notation "CTS_3_10_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Master craftsman certificate"@en, "Licenza di maestro d'arte"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10_30>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_10>;
+  skos:notation "CTS_3_10_30";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "Pre-school teaching qualification "@en, "Titolo di abilitazione all'insegnamento nella scuola materna"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20_10>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20>;
+  skos:notation "CTS_3_20_10";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "IeFP vocational qualification - Operator (3 years)"@en, "Attestato di qualifica professionale IeFP di operatore (triennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .
+
+<https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20_20>
+  a skos:Concept, cpv:EducationLevel;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level>;
+  skos:broader <https://w3id.org/italia/controlled-vocabulary/education-and-labour/education-and-training/education-level/CTS_3_20>;
+  skos:notation "CTS_3_20_20";
+  clvapit:hasRankOrder "3"^^xsd:int;
+  skos:note ""@it;
+  skos:prefLabel "IeFP vocational diploma - Technician (4 years)"@en, "Diploma professionale IeFP di tecnico (quadriennale)"@it;
+  skos:altLabel ""@it, ""@en;
+  skos:definition ""@en, ""@it .

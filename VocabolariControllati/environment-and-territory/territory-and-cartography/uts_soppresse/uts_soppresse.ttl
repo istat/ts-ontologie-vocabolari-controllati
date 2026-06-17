@@ -32,8 +32,8 @@
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
-  dct:title "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;
-  dct:description "Vocabolario controllato delle Province-Unità territoriali di livello intermedio tra il Comune e la Regione soppresse o cedute a Stato estero. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative."@it , "Controlled Vocabulary of Provinces/UTS of intermediate area level between the municipality and the region abolished or transferred to a foreign state. The units include provinces, metropolitan cities, autonomous province, free municipal consortiums, and non-administrative units."@en ;
+  dct:title "Controlled Vocabulary of Abolished Provinces/Supramunicipal Territorial Units (UTS)"@en , "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS) soppresse"@it ;
+  dct:description "L'archivio restituisce l'elenco delle unità territoriali sovracomunali (UTS) soppresse a partire dal 1861 (costituzione del Regno d'Italia), la cui fonte è il Sistema informativo territoriale delle unità amministrative e statistiche (Situas) dell'Istituto Nazionale di Statistica. Le Unità territoriali sovracomunali, definite a fini statistici dall'Istat, ricomprendono a partire dal 2015, oltre alle tradizionali Province, anche le Città metropolitane, i Liberi consorzi comunali e le unità non amministrative, categoria che accoglie i territori delle ex Province del Friuli-Venezia Giulia. L'introduzione di questo concetto risponde ai cambiamenti che hanno interessato l'assetto amministrativo italiano, con la necessità di definire unità omogenee sia per la produzione di statistiche, a livello nazionale ed europeo, sia per la diffusione delle informazioni a un livello intermedio tra Regione e Comune. Per ciascuna unità censita, e con riferimento alla data dell'evento, il vocabolario fornisce un set di informazioni identificative che comprende: tipologia di ente, denominazione ufficiale, codice statistico e sigla automobilistica. "@it , "The archive returns the list of Supramunicipal Territorial Units (UTS) suppressed since 1861 (the constitution of the Kingdom of Italy), sourced from the Territorial Information System of Administrative and Statistical Units (Situas) of the Italian National Institute of Statistics (Istat). Supramunicipal Territorial Units, defined by Istat for statistical purposes, have included since 2015 not only traditional Provinces, but also Metropolitan Cities, Free Municipal Consortium, and non-administrative units—a category that encompasses the territories of the former Provinces of Friuli-Venezia Giulia. The introduction of this concept addresses the changes affecting the Italian administrative framework, fulfilling the need to define homogeneous units both for producing statistics at national and European levels, and for disseminating information at an intermediate level between Regions and Municipalities. For each surveyed unit, and with reference to the date of the event, the vocabulary provides a set of identifying information including: type of entity, official name, statistical code, and vehicle registration code."@en ;
   xkos:numberOfLevels "1" ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
@@ -46,18 +46,18 @@
   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse> ;
-   dcat:keyword "Provincia soppressa"@it , "UTS soppresse"@it ,  "Abolished province"@en , "Abolished UTS"@en ;
+   dcat:keyword "Provincia soppressa"@it , "UTS soppresse"@it ,  "Abolished province"@en , "Abolished UTS"@en, "Suppressed province"@en , " Suppressed UTS"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/uts_soppresse_RDF_Turtle>, <https://w3id.org/italia/data/distribution/uts_soppresse_CSV>, <https://w3id.org/italia/data/distribution/uts_soppresse_XLSX>  ;                             
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;                                                                                                                                                               
-  dct:issued "2026-05-19"^^xsd:date ;
-  dct:modified "2026-05-19"^^xsd:date ;
+  dct:issued "2026-06-17"^^xsd:date ;
+  dct:modified "2026-06-17"^^xsd:date ;
   owl:versionInfo "Versione 1.0 - Dati aggiornati al 01 gennaio 2026"@it ;  
-  dct:temporal "Dal 1886" ;
+  dct:temporal "Dal 1861" ;
   ndc:keyConcept "Abolished-UTS" ;
-  rdfs:comment "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;
-  rdfs:label "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;
-  skos:notation "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it ;  
-  skos:prefLabel "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces Abolished or Transferred to a Foreign State"@en , "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province soppresse o cedute a Stato estero"@it .  
+  rdfs:comment "Controlled Vocabulary of Abolished Provinces/Supramunicipal Territorial Units (UTS)"@en , "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS) soppresse"@it ;
+  rdfs:label "Controlled Vocabulary of Abolished Provinces/Supramunicipal Territorial Units (UTS)"@en , "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS) soppresse"@it ;
+  skos:notation "Controlled Vocabulary of Abolished Provinces/Supramunicipal Territorial Units (UTS)"@en , "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS) soppresse"@it ;  
+  skos:prefLabel "Controlled Vocabulary of Abolished Provinces/Supramunicipal Territorial Units (UTS)"@en , "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS) soppresse"@it .  
    
   <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts_soppresse>
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> .
