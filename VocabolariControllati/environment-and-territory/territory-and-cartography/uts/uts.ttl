@@ -33,10 +33,10 @@
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/uts>
     a skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
-    dct:title "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
-              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
-    dct:description "Vocabolario controllato delle Unità territoriali di livello intermedio tra il Comune e la Regione al 01/01/2026. Tali unità comprendono le province, le città metropolitane, le province autonome, i liberi consorzi di Comuni e le unità territoriali non amministrative."@it ,
-                    "Controlled Vocabulary of Territorial units of intermediate area level between the municipality and the region at 2026/01/01. The units include provinces, metropolitan cities, autonomous province, free municipal consortiums and non-administrative units."@en ;
+    dct:title "Controlled Vocabulary of Provinces/Supramunicipal Territorial Units (UTS)"@en ,
+              "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS)"@it ;
+    dct:description "L'archivio restituisce l'elenco delle Unità Territoriali Sovracomunali (UTS) attive alla data del 1° gennaio 2026, la cui fonte è il Sistema informativo territoriale delle unità amministrative e statistiche (Situas) dell'Istituto Nazionale di Statistica. Le Unità territoriali sovracomunali, definite a fini statistici dall'Istat, ricomprendono a partire dal 2015, oltre alle tradizionali Province, anche le Città metropolitane, i Liberi consorzi comunali e le unità non amministrative, categoria che accoglie i territori delle ex Province del Friuli-Venezia Giulia. L'introduzione di questo concetto risponde ai cambiamenti che hanno interessato l'assetto amministrativo italiano, con la necessità di definire unità omogenee sia per la produzione di statistiche, a livello nazionale ed europeo, sia per la diffusione delle informazioni a un livello intermedio tra Regione e Comune. Per ciascuna unità, il vocabolario fornisce il seguente set di informazioni identificative: tipologia di ente, denominazione ufficiale, codice statistico, Sigla automobilistica, regione di appartenenza e nomenclatura Nuts3 di riferimento secondo il regolamento Ue vigente (Commission Delegated Regulation (EU) 2023/674). "@it ,
+                    "The archive returns the list of Supramunicipal Territorial Units (UTS) active as of January 1, 2026, sourced from the Territorial Information System of Administrative and Statistical Units (Situas) of the Italian National Institute of Statistics (Istat). Supramunicipal Territorial Units, defined by Istat for statistical purposes, have included since 2015 not only traditional Provinces, but also Metropolitan Cities, Free Municipal Consortium, and non-administrative units—a category that encompasses the territories of the former Provinces of Friuli-Venezia Giulia. The introduction of this concept addresses the changes affecting the Italian administrative framework, fulfilling the need to define homogeneous units both for producing statistics at national and European levels, and for disseminating information at an intermediate level between Regions and Municipalities. For each unit, the vocabulary provides the following set of identifying information: type of entity, official name, statistical code, vehicle registration code, region of belonging, and the reference NUTS3 nomenclature according to the current EU regulation (Commission Delegated Regulation (EU) 2023/674). "@en ;
     xkos:numberOfLevels "1" ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
@@ -52,26 +52,26 @@
     dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> ;
     dcat:keyword "UTS"@it , "Provincia"@it , "Province"@it , 
 	             "Città metropolitana"@it , "Provincia autonoma"@it , "Libero consorzio di comuni"@it ,
-                 "Unità territoriale non amministrativa"@it , 
+                 "Unità non amministrativa"@it , "Unità Territoriale Sovracomunale"@it ,
 				 "UTS"@en , "Province"@en , "Provinces"@en , "Metropolitan city"@en , 
-				 "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en ;
+				 "Autonomous province"@en , "Free municipal consortium"@en , "Non-administrative unit"@en , "Supramunicipal Territorial Units"@en ;
     dcat:distribution <https://w3id.org/italia/data/distribution/uts_RDF_Turtle> ,
                       <https://w3id.org/italia/data/distribution/uts_CSV> ,
                       <https://w3id.org/italia/data/distribution/uts_XLSX> ;
     dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-    dct:issued "2026-05-19"^^xsd:date ;
-    dct:modified "2026-05-19"^^xsd:date ;
+    dct:issued "2026-06-17"^^xsd:date ;
+    dct:modified "2026-06-17"^^xsd:date ;
     owl:versionInfo "Versione 1.0 - Dati riferiti al 01 gennaio 2026"@it ;
-    dct:temporal "2026/..." ;
+    dct:temporal "Dal 2026" ;
     ndc:keyConcept "UTS" ;
-    rdfs:comment "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
-              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
-    rdfs:label "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
-              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
-    skos:notation "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
-              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it ;
-    skos:prefLabel "Controlled Vocabulary of Supracommunal Territorial Units (UTS) - Provinces"@en ,
-              "Vocabolario Controllato delle Unità Territoriali Sovracomunali (UTS) - Province"@it .
+    rdfs:comment "Controlled Vocabulary of Provinces/Supramunicipal Territorial Units (UTS)"@en ,
+              "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS)"@it ;
+    rdfs:label "Controlled Vocabulary of Provinces/Supramunicipal Territorial Units (UTS)"@en ,
+              "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS)"@it ;
+    skos:notation "Controlled Vocabulary of Provinces/Supramunicipal Territorial Units (UTS)"@en ,
+              "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS)"@it ;
+    skos:prefLabel "Controlled Vocabulary of Provinces/Supramunicipal Territorial Units (UTS)"@en ,
+              "Vocabolario Controllato delle Province/Unità Territoriali Sovracomunali (UTS)"@it .
 
 <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications>
     a skos:Concept ;
