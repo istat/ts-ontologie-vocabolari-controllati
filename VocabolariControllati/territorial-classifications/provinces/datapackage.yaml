@@ -1,0 +1,71 @@
+---
+$schema: https://datapackage.org/profiles/2.0/datapackage.json
+created: '2018-06-19T00:00:00Z'
+description: Vocabolario controllato delle province d'Italia e
+  relativo codice regione
+id: https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces
+keywords:
+- Province
+- Province
+- Provinces
+- Provincia
+name: provinces
+resources:
+- dialect:
+    commentChar: '#'
+    delimiter: ','
+    doubleQuote: true
+    header: true
+    lineTerminator: "\r\n"
+    quoteChar: '"'
+    skipInitialSpace: true
+  encoding: utf-8
+  format: csv
+  mediatype: text/csv
+  name: provinces
+  path: provinces.csv
+  schema:
+    fields:
+    - name: uri
+      type: string
+    - name: id
+      type: string
+    - name: label
+      type: string
+    - name: acronym
+      type: string
+    x-jsonld-context:
+      '@base': https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/
+      '@vocab': https://w3id.org/italia/onto/CLV/
+      acronym:
+        '@id': clvapit:acronym
+      clvapit: https://w3id.org/italia/onto/CLV/
+      dct: http://purl.org/dc/terms/
+      id:
+        '@id': skos:notation
+      l0: https://w3id.org/italia/onto/l0/
+      label:
+        '@id': skos:prefLabel
+        '@language': it
+      owl: http://www.w3.org/2002/07/owl#
+      parent:
+        '@container': '@set'
+        '@context':
+          uri: '@id'
+        '@id': skos:broader
+      rdfs: http://www.w3.org/2000/01/rdf-schema#
+      skos: http://www.w3.org/2004/02/skos/core#
+      uri: '@id'
+      vocab:
+        '@container': '@set'
+        '@context':
+          uri: '@id'
+        '@id': skos:inScheme
+      xsd: http://www.w3.org/2001/XMLSchema#
+  scheme: file
+  type: table
+sources:
+- path: https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces
+title: Vocabolario Controllato delle Province d'Italia
+version: 2.0 - allineamento all'ontologia e alle pratiche di gestione
+  dei vocabolari controllati di OntoPiA
