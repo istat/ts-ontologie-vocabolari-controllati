@@ -23,20 +23,20 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - assets
+    - main
     paths:
-    - 'assets/controlled-vocabularies/**'
+    - 'VocabolariControllati/**'
     - '.github/workflows/ci-tabular.yml'
   pull_request:
     branches:
-    - assets
+    - main
     paths:
-    - 'assets/controlled-vocabularies/**'
+    - 'VocabolariControllati/**'
     - '.github/workflows/ci-tabular.yml'
 env:
   CI: true
   PYTHON_VERSION: ${{ inputs.python_version }}
-  VOCABULARY_DIR: 'assets/controlled-vocabularies'
+  VOCABULARY_DIR: 'VocabolariControllati'
   CLI_VERSION: '0.0.19'
   # To avoid clashes between CSV and API frames and data,
   #  you can use the "-csv" suffix for CSV-specific files,
