@@ -70,7 +70,7 @@ jobs:
 
         FILTERED_DIRS=()
         for DIR in "${ALL_DIRS[@]}"; do
-          mapfile -t TTL_FILES < <(find "$DIR" -maxdepth 3 -type f -name "*.ttl")
+          mapfile -t TTL_FILES < <(find "$DIR" -maxdepth 3 -type f -name "*.ttl" -a ! -ipath '*r2rml*')
           COUNT=${#TTL_FILES[@]}
           if [ "$COUNT" -gt 1 ]; then
             echo "::warning::Directory $DIR contains $COUNT TTL files. Skipping."
