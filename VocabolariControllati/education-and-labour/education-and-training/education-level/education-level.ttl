@@ -109,8 +109,8 @@
 		dct:description	"Questa è la distribuzione RDF/Turtle del dataset Linked Open Data della classificazione ufficiale dei titoli di studio"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of Italian official classification Educational Attainment"@en ;
 		dct:format 	<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
 		dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/labour-and-wages/education-level/education-level.ttl> ;
-		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/labour-and-wages/education-level> .
+		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/education-and-training/education-level/education-level.ttl> ;
+		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/education-and-training/education-level> .
 
 <https://w3id.org/italia/data/distribution/education-level_CSV>
 		a	dcatapit:Distribution  ;
@@ -118,8 +118,8 @@
 		dct:description	"Questa è la distribuzione CSV del dataset Linked Open Data della classificazione ufficiale dei titoli di studio"@it , "This is the distribution in CSV of the Linked Open Dataset of Italian official classification Educational Attainment"@en ;
 		dct:format 	<http://publications.europa.eu/resource/authority/file-type/CSV> ;
 		dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/labour-and-wages/education-level/education-level.csv> ;
-		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/labour-and-wages/education-level> .
+		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/education-and-training/education-level/education-level.csv> ;
+		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/education-and-training/education-level> .
 
 <https://w3id.org/italia/data/distribution/education-level_XLSX>
 		a	dcatapit:Distribution  ;
@@ -127,8 +127,8 @@
 		dct:description	"Questa è la distribuzione XLSX del dataset Linked Open Data della classificazione ufficiale dei titoli di studio"@it , "This is the distribution in XLSX of the Linked Open Dataset of Italian official classification Educational Attainment"@en ;
 		dct:format 	<http://publications.europa.eu/resource/authority/file-type/XLSX> ;
 		dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/labour-and-wages/education-level/education-level.xlsx> ;
-		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/labour-and-wages/education-level> .
+		dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/education-and-labour/education-and-training/education-level/education-level.xlsx> ;
+		dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/education-and-labour/education-and-training/education-level> .
 
 
 
