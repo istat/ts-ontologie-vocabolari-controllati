@@ -1,0 +1,1220 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix : <https://w3id.org/italia/onto/CLV/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix obdaFunc: <http://www.obdasystems.com/custom/function#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix obdaAggr: <http://www.obdasystems.com/custom/aggr#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dug: <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/> .
+@prefix xkos: <http://purl.org/linked-data/xkos#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+
+
+#################################################################
+# inizio metadati
+#################################################################
+
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>
+    a skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
+    dct:title "Generic urban denominations Controlled Vocabulary"@en ,
+              "Vocabolario controllato delle denominazioni urbanistiche generiche"@it ;
+    dct:description "Il vocabolario controllato delle Denominazioni Urbanistiche Generiche (DUG) raccoglie e definisce in modo standardizzato i termini utilizzati per qualificare i toponimi stradali, come \"via\", \"viale\", \"piazza\", \"corso\" e \"vicolo\", favorendone l’interpretazione uniforme e l’interoperabilità nei dati relativi agli indirizzi e alla toponomastica."@it ,
+	                "The controlled vocabulary of Generic Urban Designations (DUG) collects and standardizes the terms used to qualify street toponyms, such as \"via\", \"viale\", \"piazza\", \"corso\" and \"vicolo\", thereby promoting their consistent interpretation and interoperability in address and toponymy-related data."@en ;
+    xkos:numberOfLevels "1" ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug" ;
+    dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+    dct:creator <https://w3id.org/italia/data/public-organization/ISTAT> ;
+    dct:publisher <https://w3id.org/italia/data/public-organization/ISTAT> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug> ;
+    dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/environment-and-territory> ;
+    dcat:keyword "DUG"@it , "Denominazioni Urbanistiche Generiche"@it , "odonimo"@it , 
+				 "DUG"@en , "Generic urban denominations"@en , "odonym"@en  ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/dug_RDF_Turtle> ,
+                      <https://w3id.org/italia/data/distribution/dug_CSV> ,
+                      <https://w3id.org/italia/data/distribution/dug_XLSX> ;
+    dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
+    dct:issued "2026-08-07"^^xsd:date ;
+    dct:modified "2026-08-07"^^xsd:date ;
+    owl:versionInfo "Version 1.0"@it ;
+    dct:temporal "Da Agosto 2026" ;
+    ndc:keyConcept "dug" ;
+    rdfs:comment "Generic urban denominations Controlled Vocabulary"@en ,
+              "Vocabolario controllato delle denominazioni urbanistiche generiche"@it ;
+    rdfs:label "Generic urban denominations Controlled Vocabulary"@en ,
+              "Vocabolario controllato delle denominazioni urbanistiche generiche"@it ;
+    skos:notation "Generic urban denominations Controlled Vocabulary"@en ,
+              "Vocabolario controllato delle denominazioni urbanistiche generiche"@it ;
+    skos:prefLabel "Generic urban denominations Controlled Vocabulary"@en ,
+              "Vocabolario controllato delle denominazioni urbanistiche generiche"@it .
+  
+
+<https://w3id.org/italia/data/public-organization/ISTAT>
+    a dcatapit:Agent , foaf:Agent ;
+    dct:identifier "ISTAT" ;
+    foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+              "Italian National Institute of Statistics - ISTAT"@en .
+
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC>
+    a dcatapit:Organization , vcard:Organization , vcard:Kind ;
+    vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+    vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
+
+<https://w3id.org/italia/data/standard/SKOS>
+    a dcatapit:Standard , dct:Standard ;
+    dct:identifier "SKOS" ;
+    foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+    dct:title "Simple Knowledge Organization System - SKOS" ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+		
+
+
+
+
+#################################################################
+# fine metadati
+#################################################################
+
+
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/170>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "RUA"@it;
+  skos:notation "170";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/088009-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066071-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/16>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "BANCHINA"@it;
+  skos:notation "16";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/046033-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/011015-(1923-12-22)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/008031-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/009056-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/044066-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027042-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/092009-(1991-12-10)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042045-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/54>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CONTRADA"@it;
+  skos:notation "54";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/038008-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/017029-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/069067-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/570>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICOLO ROTTO"@it;
+  skos:notation "570";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/072022-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/369>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "COSTARELLA"@it;
+  skos:notation "369";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053001-(1948-01-01)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/387>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "GRADINATA"@it;
+  skos:notation "387";
+  skos:altLabel ""@it, "SCALINATA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/116>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "MOLO"@it;
+  skos:notation "116";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/132>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PIAZZALE"@it;
+  skos:notation "132";
+  skos:altLabel ""@it, "SPIAZZO"@it, "PIAZZA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/636>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA PANORAMICA"@it;
+  skos:notation "636";
+  skos:altLabel ""@it, "VIA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/240>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIALE"@it;
+  skos:notation "240";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/149>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CARRAIA"@it;
+  skos:notation "149";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039002-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/66>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CUPA"@it;
+  skos:notation "66";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064008-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/476>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PORTICI"@it;
+  skos:notation "476";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/005005-(1935-04-15)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/021011-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/054052-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/017065-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/016053-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/597>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "TRATTURO"@it;
+  skos:notation "597";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/071024-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/110003-(2009-07-27)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/059023-(1947-07-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/271>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICOLOZZO"@it;
+  skos:notation "271";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/058039-(1871-01-15)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/258>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VOLTA"@it;
+  skos:notation "258";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/038008-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/034027-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/58>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CORSO"@it;
+  skos:notation "58";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/37>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LITORANEA"@it;
+  skos:notation "37";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/126>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PASSEGGIATA"@it;
+  skos:notation "126";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/139>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PERCORSO CICLABILE"@it;
+  skos:notation "139";
+  skos:altLabel ""@it, "PISTA CICLABILE"@it, "PERCORSO CICLOPEDONALE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/11>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PISTA CICLABILE"@it;
+  skos:notation "11";
+  skos:altLabel ""@it, "PERCORSO CICLABILE"@it, "PERCORSO CICLOPEDONALE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/531>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOTTOPASSO"@it;
+  skos:notation "531";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/652>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA VECCHIA"@it;
+  skos:notation "652";
+  skos:altLabel ""@it, "VIA ANTICA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/246>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICOLETTO"@it;
+  skos:notation "246";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/530>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOTTOPASSAGGIO"@it;
+  skos:notation "530";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/028060-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/001272-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/204>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOTTOPORTICO"@it;
+  skos:notation "204";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/022205-(1923-02-14)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/020030-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/026049-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/078154-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/206>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOTTOVIA"@it;
+  skos:notation "206";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/058091-(1871-01-15)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/582>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRETTO"@it;
+  skos:notation "582";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/083005-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/586>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRETTOLA"@it;
+  skos:notation "586";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064008-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/192>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SCALONE"@it;
+  skos:notation "192";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065050-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/288>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "AIA"@it;
+  skos:notation "288";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066052-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/047024-(2017-01-01)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/318>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "BALUARDO"@it;
+  skos:notation "318";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/006039-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/48>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CHIASSO"@it;
+  skos:notation "48";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048053-(2014-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/084029-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050008-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/088009-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/053002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/072030-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/946>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGAVISIO"@it;
+  skos:notation "946";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/022205-(1923-02-14)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/257>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOBRENTA"@it;
+  skos:notation "257";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/024012-(1866-11-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/232>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VALLONE"@it;
+  skos:notation "232";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/083005-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/188>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SCALI"@it;
+  skos:notation "188";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/049009-(1948-01-01)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/134>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PIAZZETTA"@it;
+  skos:notation "134";
+  skos:altLabel ""@it, "SPIAZZO"@it, "PIAZZA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/190>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SCALINATA"@it;
+  skos:notation "190";
+  skos:altLabel ""@it, "GRADINATA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/566>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA PROVINCIALE"@it;
+  skos:notation "566";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/619>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA COMUNALE"@it;
+  skos:notation "619";
+  skos:altLabel ""@it, "VIA NAZIONALE"@it, "VIA VICINALE"@it, "VIA PROVINCIALE"@it,
+    "VIA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/361>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CONTRA'"@it;
+  skos:notation "361";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/024057-(1866-11-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/469>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PIAZZOLA"@it;
+  skos:notation "469";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/001272-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/653>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA VICINALE"@it;
+  skos:notation "653";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/040007-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066025-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/060045-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/049001-(1925-12-11)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/075026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/103039-(1995-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/057011-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064042-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048005-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/063007-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039016-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050031-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/568>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA ROTABILE"@it;
+  skos:notation "568";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066049-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/711>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIAL"@it;
+  skos:notation "711";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/093033-(2017-09-30)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/50>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CIRCONVALLAZIONE"@it;
+  skos:notation "50";
+  skos:altLabel ""@it, "RACCORDO"@it, "TANGENZIALE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/102>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOMARE"@it;
+  skos:notation "102";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/444>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOTORRENTE"@it;
+  skos:notation "444";
+  skos:altLabel ""@it, "LUNGARGINE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/196>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SENTIERO"@it;
+  skos:notation "196";
+  skos:altLabel ""@it, "VIOTTOLO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/690>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICOLO PRIVATO"@it;
+  skos:notation "690";
+  skos:altLabel ""@it, "VICO PRIVATO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/229>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOPPORTICO"@it;
+  skos:notation "229";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077028-(1927-01-12)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/249>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOTOPORTEGO"@it;
+  skos:notation "249";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027042-(1866-11-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/500>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "RUGA"@it;
+  skos:notation "500";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052015-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/194>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SDRUCCIOLO"@it;
+  skos:notation "194";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048053-(2014-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052023-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/74>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "FONDAMENTA"@it;
+  skos:notation "74";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027008-(1866-11-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/262>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "FORO"@it;
+  skos:notation "262";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/043023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/089017-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/82>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "GRADINI"@it;
+  skos:notation "82";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065116-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/98>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGARNO"@it;
+  skos:notation "98";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048024-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/624>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA ESTERNA"@it;
+  skos:notation "624";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/075019-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/342>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CANTO"@it;
+  skos:notation "342";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/047012-(1991-05-15)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/6>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "ARCO"@it;
+  skos:notation "6";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/78>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "GALLERIA"@it;
+  skos:notation "78";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/565>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA PRIVATA"@it;
+  skos:notation "565";
+  skos:altLabel ""@it, "VIA PRIVATA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/897>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA REGIONALE"@it;
+  skos:notation "897";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/589>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "TANGENZIALE"@it;
+  skos:notation "589";
+  skos:altLabel ""@it, "CIRCONVALLAZIONE"@it, "RACCORDO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/532>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SPALTO"@it;
+  skos:notation "532";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/006003-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/300>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "ACCESSO"@it;
+  skos:notation "300";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027019-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/041007-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/191>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "ACCORCIATOIA"@it;
+  skos:notation "191";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/004130-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/14>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "BAGLIO"@it;
+  skos:notation "14";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082053-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/320>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "BASTIONE"@it;
+  skos:notation "320";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/023091-(1927-02-16)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/5>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CAL"@it;
+  skos:notation "5";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/026021-(1866-11-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/351>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CHIASSETTO"@it;
+  skos:notation "351";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066009-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064052-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/417>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOGESSO"@it;
+  skos:notation "417";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/004078-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/839>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGONERA"@it;
+  skos:notation "839";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/055032-(1927-01-12)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/118>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "MULATTIERA"@it;
+  skos:notation "118";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082053-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/974>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PASSAGGIO PEDONALE"@it;
+  skos:notation "974";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/017120-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/142>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PORTA"@it;
+  skos:notation "142";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/025006-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082053-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065050-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/043023-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/235>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VENULA"@it;
+  skos:notation "235";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/081008-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/978>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIAZZA"@it;
+  skos:notation "978";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/036023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/035028-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039014-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/394>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LARGHETTO"@it;
+  skos:notation "394";
+  skos:altLabel ""@it, "SLARGO"@it, "LARGO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/86>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LARGO"@it;
+  skos:notation "86";
+  skos:altLabel ""@it, "SLARGO"@it, "LARGHETTO"@it, "SPIAZZO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/138>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PONTE"@it;
+  skos:notation "138";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/172>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SALITA"@it;
+  skos:notation "172";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/534>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SPIAZZO"@it;
+  skos:notation "534";
+  skos:altLabel "PIAZZALE"@it, "PIAZZETTA"@it, "SLARGO"@it, "LARGO"@it, "PIAZZA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/224>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "TRAVERSA"@it;
+  skos:notation "224";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/635>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA NUOVA"@it;
+  skos:notation "635";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/242>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIALETTO"@it;
+  skos:notation "242";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/223>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CARRARONE"@it;
+  skos:notation "223";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039014-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/84>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "GRADONI"@it;
+  skos:notation "84";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077028-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065116-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077014-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065022-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/169>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PIAZZALETTO"@it;
+  skos:notation "169";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/160>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "RECINTO"@it;
+  skos:notation "160";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077014-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/005005-(1935-04-15)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/26>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CALATA"@it;
+  skos:notation "26";
+  skos:altLabel ""@it, "DISCESA"@it, "SCESA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/28>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CALLE"@it;
+  skos:notation "28";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/431>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOPARCO"@it;
+  skos:notation "431";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/890>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA CONSORTILE"@it;
+  skos:notation "890";
+  skos:altLabel ""@it, "STRADA"@it, "STRADA VICINALE"@it, "STRADA PODERALE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/248>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICOLO"@it;
+  skos:notation "248";
+  skos:altLabel ""@it, "VICO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/526>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SELCIATO"@it;
+  skos:notation "526";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/028060-(1866-11-20)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/218>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SUPPORTICO"@it;
+  skos:notation "218";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076024-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/062047-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076088-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/4>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "ARCHIVOLTO"@it;
+  skos:notation "4";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/010025-(1874-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/009034-(1927-01-12)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/94>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGADIGE"@it;
+  skos:notation "94";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/022205-(1923-02-14)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/110>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOTEVERE"@it;
+  skos:notation "110";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/058091-(1871-01-15)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/120>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "MURA"@it;
+  skos:notation "120";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/010025-(1874-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/037006-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/260>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PASSO"@it;
+  skos:notation "260";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/021001-(1948-03-14)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042015-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/010025-(1874-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/668>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICO STORTO"@it;
+  skos:notation "668";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076024-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076043-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/075035-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077027-(1927-01-12)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/842>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGOTANARO"@it;
+  skos:notation "842";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/006003-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/60>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "CORTE"@it;
+  skos:notation "60";
+  skos:altLabel ""@it, "CORTILE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/96>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "LUNGARGINE"@it;
+  skos:notation "96";
+  skos:altLabel ""@it, "LUNGOTORRENTE"@it, "LUNGOFIUME"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/153>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PERCORSO CICLOPEDONALE"@it;
+  skos:notation "153";
+  skos:altLabel ""@it, "PERCORSO CICLABILE"@it, "PISTA CICLABILE"@it, "PERCORSO PEDONALE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/130>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "PIAZZA"@it;
+  skos:notation "130";
+  skos:altLabel ""@it, "PIAZZALE"@it, "PIAZZETTA"@it, "SPIAZZO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/293>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SOVRAPPASSO"@it;
+  skos:notation "293";
+  skos:altLabel ""@it, "CAVALCAVIA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/562>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA PANORAMICA"@it;
+  skos:notation "562";
+  skos:altLabel ""@it, "STRADA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/894>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA PODERALE"@it;
+  skos:notation "894";
+  skos:altLabel ""@it, "STRADA"@it, "STRADA VICINALE"@it, "STRADA CONSORTILE"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/571>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA STATALE"@it;
+  skos:notation "571";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/216>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADONE"@it;
+  skos:notation "216";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/603>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "TRAVERSA PRIVATA"@it;
+  skos:notation "603";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/639>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VIA PRIVATA"@it;
+  skos:notation "639";
+  skos:altLabel ""@it, "STRADA PRIVATA"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/684>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "VICOLO CHIUSO"@it;
+  skos:notation "684";
+  skos:altLabel ""@it, "VICO CIECO"@it, "VICOLO CIECO"@it, "VICO CHIUSO"@it;
+  :ambitoDiDUG "Nazionale"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/569>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRADA RURALE"@it;
+  skos:notation "569";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/097014-(1995-01-01)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/903>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "STRETTA"@it;
+  skos:notation "903";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/016006-(1861-03-17)> .
+
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/63>
+  a :DenominazioneUrbanisticaGenerica, skos:Concept;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>;
+  rdfs:label "SUBBORGO"@it;
+  skos:notation "63";
+  skos:altLabel ""@it;
+  :ambitoDiDUG "Locale"@it;
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/040007-(1861-03-17)> .
+
+<https://kg.com/DUG> <http://dublincore.org/2012/06/14/dcterms#identifier> <https://kg.com/DUG>;
+  <http://dublincore.org/2012/06/14/dcterms#title> "DUG" .
