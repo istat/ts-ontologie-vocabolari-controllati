@@ -11,11 +11,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix TI: <https://w3id.org/italia/onto/TI/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix obdaFunc: <http://www.obdasystems.com/custom/function#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obdaAggr: <http://www.obdasystems.com/custom/aggr#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dug: <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/> .
 @prefix xkos: <http://purl.org/linked-data/xkos#> .
@@ -53,8 +51,8 @@
                       <https://w3id.org/italia/data/distribution/dug_CSV> ,
                       <https://w3id.org/italia/data/distribution/dug_XLSX> ;
     dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-    dct:issued "2026-08-07"^^xsd:date ;
-    dct:modified "2026-08-07"^^xsd:date ;
+    dct:issued "2026-08-10"^^xsd:date ;
+    dct:modified "2026-08-10"^^xsd:date ;
     owl:versionInfo "Version 1.0"@it ;
     dct:temporal "Da Agosto 2026" ;
     ndc:keyConcept "dug" ;
@@ -95,7 +93,199 @@
 # fine metadati
 #################################################################
 
-
+<https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug>
+  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/180>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/186>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/192>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/194>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/526>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/229>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/376>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/249>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/530>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/204>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/206>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/532>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/569>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/903>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/582>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/586>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/63>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/218>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/300>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/191>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/288>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/2>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/4>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/14>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/318>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/16>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/320>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/5>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/38>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/149>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/345>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/223>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/351>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/48>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/361>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/54>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/368>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/66>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/380>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/72>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/74>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/262>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/157>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/82>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/84>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/94>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/98>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/946>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/257>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/417>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/839>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/106>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/165>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/108>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/110>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/233>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/118>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/120>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/974>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/87>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/128>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/260>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/462>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/169>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/469>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/142>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/990>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/476>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/154>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/160>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/209>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/264>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/164>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/166>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/170>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/500>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/226>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/178>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/238>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/978>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/979>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/668>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/672>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/570>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/271>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/304>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/254>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/258>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/702>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/342>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/369>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/282>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/842>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/144>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/188>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/568>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/711>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/6>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/316>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/754>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/26>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/28>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/46>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/50>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/58>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/60>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/64>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/70>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/78>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/387>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/394>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/86>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/37>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/96>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/31>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/423>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/102>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/431>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/444>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/116>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/103>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/124>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/126>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/139>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/153>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/41>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/130>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/132>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/134>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/11>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/138>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/266>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/156>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/496>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/85>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/168>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/172>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/190>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/524>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/196>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/281>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/531>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/293>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/534>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/210>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/539>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/546>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/890>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/561>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/562>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/894>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/565>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/566>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/897>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/571>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/578>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/579>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/214>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/721>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/216>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/589>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/224>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/603>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/236>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/610>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/619>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/940>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/635>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/636>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/639>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/640>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/652>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/240>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/242>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/244>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/661>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/662>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/667>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/246>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/248>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/684>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/685>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/690>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/252>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/590>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/597>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/143>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/232>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/235>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/624>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/645>,
+    <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/653> .
 
 
 
@@ -106,8 +296,8 @@
   skos:notation "170";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/088009-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066071-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/088009-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066071-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/16>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -116,15 +306,15 @@
   skos:notation "16";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/046033-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/011015-(1923-12-22)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/008031-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/009056-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/044066-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027042-(1866-11-20)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/092009-(1991-12-10)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042045-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/011015-(1923-12-22)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/008031-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009056-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/044066-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/092009-(1991-12-10)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042045-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/54>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -133,9 +323,9 @@
   skos:notation "54";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/038008-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/017029-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/069067-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/038008-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017029-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/069067-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/570>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -144,7 +334,7 @@
   skos:notation "570";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/072022-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072022-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/369>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -202,7 +392,7 @@
   skos:notation "149";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039002-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039002-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/66>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -211,7 +401,7 @@
   skos:notation "66";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064008-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/476>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -220,11 +410,11 @@
   skos:notation "476";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/005005-(1935-04-15)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/021011-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/054052-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/017065-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/016053-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/005005-(1935-04-15)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021011-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/054052-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017065-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/016053-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/597>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -233,9 +423,9 @@
   skos:notation "597";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/071024-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/110003-(2009-07-27)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/059023-(1947-07-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/071024-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/110003-(2009-07-27)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/059023-(1947-07-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/271>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -244,7 +434,7 @@
   skos:notation "271";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/058039-(1871-01-15)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058039-(1871-01-15)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/258>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -253,9 +443,9 @@
   skos:notation "258";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/038008-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/034027-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/038008-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/034027-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/58>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -328,8 +518,8 @@
   skos:notation "530";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/028060-(1866-11-20)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/001272-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/204>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -338,11 +528,11 @@
   skos:notation "204";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/022205-(1923-02-14)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/020030-(1866-11-20)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/026049-(1866-11-20)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/078154-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026049-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/078154-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/206>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -351,7 +541,7 @@
   skos:notation "206";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/058091-(1871-01-15)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/582>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -360,7 +550,7 @@
   skos:notation "582";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/083005-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/586>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -369,7 +559,7 @@
   skos:notation "586";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064008-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/192>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -378,8 +568,8 @@
   skos:notation "192";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065050-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/288>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -388,8 +578,8 @@
   skos:notation "288";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066052-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/047024-(2017-01-01)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066052-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/047024-(2017-01-01)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/318>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -398,7 +588,7 @@
   skos:notation "318";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/006039-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006039-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/48>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -407,16 +597,16 @@
   skos:notation "48";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048053-(2014-01-01)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052023-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/084029-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050008-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/088009-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082049-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/053002-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/072030-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048053-(2014-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/084029-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050008-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/088009-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072030-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/946>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -425,7 +615,7 @@
   skos:notation "946";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/022205-(1923-02-14)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/257>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -434,7 +624,7 @@
   skos:notation "257";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/024012-(1866-11-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024012-(1866-11-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/232>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -443,7 +633,7 @@
   skos:notation "232";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/083005-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/188>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -494,7 +684,7 @@
   skos:notation "361";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/024057-(1866-11-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024057-(1866-11-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/469>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -503,7 +693,7 @@
   skos:notation "469";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/001272-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/653>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -512,20 +702,20 @@
   skos:notation "653";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052023-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/040007-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066025-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/060045-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/049001-(1925-12-11)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/075026-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/103039-(1995-01-01)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/057011-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064042-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048005-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/063007-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039016-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050031-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066025-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/060045-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/049001-(1925-12-11)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/103039-(1995-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057011-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064042-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048005-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/063007-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039016-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050031-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/568>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -534,7 +724,7 @@
   skos:notation "568";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066049-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/711>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -543,7 +733,7 @@
   skos:notation "711";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/093033-(2017-09-30)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/093033-(2017-09-30)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/50>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -592,7 +782,7 @@
   skos:notation "229";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077028-(1927-01-12)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077028-(1927-01-12)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/249>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -601,7 +791,7 @@
   skos:notation "249";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027042-(1866-11-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/500>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -610,7 +800,7 @@
   skos:notation "500";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052015-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052015-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/194>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -619,10 +809,10 @@
   skos:notation "194";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066049-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048053-(2014-01-01)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/052023-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048053-(2014-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/74>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -631,7 +821,7 @@
   skos:notation "74";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027008-(1866-11-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027008-(1866-11-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/262>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -640,8 +830,8 @@
   skos:notation "262";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/043023-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/089017-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/089017-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/82>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -650,7 +840,7 @@
   skos:notation "82";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065116-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065116-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/98>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -659,9 +849,9 @@
   skos:notation "98";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048024-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048024-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/624>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -670,8 +860,8 @@
   skos:notation "624";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082049-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/075019-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075019-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/342>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -729,7 +919,7 @@
   skos:notation "532";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/006003-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006003-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/300>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -738,9 +928,9 @@
   skos:notation "300";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042002-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/027019-(1866-11-20)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/041007-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027019-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/041007-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/191>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -749,7 +939,7 @@
   skos:notation "191";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/004130-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004130-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/14>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -758,7 +948,7 @@
   skos:notation "14";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082053-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/320>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -767,7 +957,7 @@
   skos:notation "320";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/023091-(1927-02-16)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/023091-(1927-02-16)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/5>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -776,7 +966,7 @@
   skos:notation "5";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/026021-(1866-11-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026021-(1866-11-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/351>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -785,10 +975,10 @@
   skos:notation "351";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066009-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/066049-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/050026-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/064052-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066009-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064052-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/417>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -797,7 +987,7 @@
   skos:notation "417";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/004078-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/839>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -806,7 +996,7 @@
   skos:notation "839";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/055032-(1927-01-12)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/055032-(1927-01-12)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/118>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -815,7 +1005,7 @@
   skos:notation "118";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082053-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/974>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -824,7 +1014,7 @@
   skos:notation "974";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/017120-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017120-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/142>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -833,10 +1023,10 @@
   skos:notation "142";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/025006-(1866-11-20)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/082053-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065050-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/043023-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/025006-(1866-11-20)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/235>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -845,7 +1035,7 @@
   skos:notation "235";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/081008-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/081008-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/978>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -854,9 +1044,9 @@
   skos:notation "978";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/036023-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/035028-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039014-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/036023-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/035028-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/394>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -929,7 +1119,7 @@
   skos:notation "223";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/039014-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/84>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -938,10 +1128,10 @@
   skos:notation "84";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077028-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065116-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077014-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/065022-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077028-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065116-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065022-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/169>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -950,7 +1140,7 @@
   skos:notation "169";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/160>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -959,8 +1149,8 @@
   skos:notation "160";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077014-(1927-01-12)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/005005-(1935-04-15)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/005005-(1935-04-15)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/26>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1009,7 +1199,7 @@
   skos:notation "526";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/028060-(1866-11-20)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/218>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1018,9 +1208,9 @@
   skos:notation "218";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076024-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/062047-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076088-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076024-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/062047-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076088-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/4>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1029,8 +1219,8 @@
   skos:notation "4";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/010025-(1874-01-01)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/009034-(1927-01-12)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009034-(1927-01-12)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/94>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1039,7 +1229,7 @@
   skos:notation "94";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/022205-(1923-02-14)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/110>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1048,7 +1238,7 @@
   skos:notation "110";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/058091-(1871-01-15)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/120>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1057,8 +1247,8 @@
   skos:notation "120";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/010025-(1874-01-01)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/037006-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/037006-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/260>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1067,10 +1257,10 @@
   skos:notation "260";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/021001-(1948-03-14)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/042015-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/010025-(1874-01-01)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/048017-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021001-(1948-03-14)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/668>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1079,10 +1269,10 @@
   skos:notation "668";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076024-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/076043-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/075035-(1861-03-17)>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/077027-(1927-01-12)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076024-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076043-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075035-(1861-03-17)>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077027-(1927-01-12)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/842>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1091,7 +1281,7 @@
   skos:notation "842";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/006003-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006003-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/60>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1196,7 +1386,7 @@
   skos:notation "569";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/097014-(1995-01-01)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/097014-(1995-01-01)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/903>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1205,7 +1395,7 @@
   skos:notation "903";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/016006-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/016006-(1861-03-17)> .
 
 <https://w3id.org/italia/controlled-vocabulary/environment-and-territory/territory-and-cartography/dug/63>
   a :DenominazioneUrbanisticaGenerica, skos:Concept;
@@ -1214,7 +1404,5 @@
   skos:notation "63";
   skos:altLabel ""@it;
   :ambitoDiDUG "Locale"@it;
-  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classification/cities/040007-(1861-03-17)> .
+  dct:coverage <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)> .
 
-<https://kg.com/DUG> <http://dublincore.org/2012/06/14/dcterms#identifier> <https://kg.com/DUG>;
-  <http://dublincore.org/2012/06/14/dcterms#title> "DUG" .
