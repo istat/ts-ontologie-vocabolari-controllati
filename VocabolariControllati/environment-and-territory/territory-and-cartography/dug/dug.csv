@@ -1,334 +1,325 @@
-﻿COD_DUG;DESC_DUG;AMBITO;ALT_LAB_NAZ_1;ALT_LAB_NAZ_2;ALT_LAB_NAZ_3;ALT_LAB_NAZ_4;ALT_LAB_NAZ_5;IRI
-300;ACCESSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027019-(1866-11-20)
-300;ACCESSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)
-300;ACCESSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/041007-(1861-03-17)
-191;ACCORCIATOIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004130-(1861-03-17)
-288;AIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066052-(1861-03-17)
-288;AIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/047024-(2017-01-01)
-2;ANDRONA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/031007-(1927-01-12)
-2;ANDRONA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)
-4;ARCHIVOLTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009034-(1927-01-12)
-4;ARCHIVOLTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)
-14;BAGLIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)
-318;BALUARDO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006039-(1861-03-17)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/011015-(1923-12-22)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/008031-(1861-03-17)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/044066-(1861-03-17)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042045-(1861-03-17)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/092009-(1991-12-10)
-16;BANCHINA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009056-(1927-01-12)
-320;BASTIONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/023091-(1927-02-16)
-5;CAL;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026021-(1866-11-20)
-38;CAMPO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)
-38;CAMPO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/090047-(1861-03-17)
-38;CAMPO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027012-(1866-11-20)
-38;CAMPO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009034-(1927-01-12)
-149;CARRAIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039002-(1861-03-17)
-149;CARRAIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)
-345;CARRARA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039012-(1861-03-17)
-345;CARRARA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/110003-(2009-07-27)
-223;CARRARONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)
-351;CHIASSETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066009-(1861-03-17)
-351;CHIASSETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064052-(1861-03-17)
-351;CHIASSETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)
-351;CHIASSETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/084029-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/088009-(1927-01-12)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048053-(2014-01-01)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050008-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)
-48;CHIASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072030-(1861-03-17)
-361;CONTRA';Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024057-(1866-11-20)
-54;CONTRADA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/038008-(1861-03-17)
-54;CONTRADA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/069067-(1861-03-17)
-54;CONTRADA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017029-(1861-03-17)
-368;COSTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)
-368;COSTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042021-(1861-03-17)
-368;COSTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-368;COSTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)
-66;CUPA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)
-380;EMICICLO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/051002-(1861-03-17)
-72;FONDACO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072022-(1861-03-17)
-74;FONDAMENTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027008-(1866-11-20)
-262;FORO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)
-262;FORO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/089017-(1861-03-17)
-157;GRADELLE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)
-157;GRADELLE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)
-82;GRADINI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065116-(1861-03-17)
-84;GRADONI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065022-(1861-03-17)
-84;GRADONI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077028-(1927-01-12)
-84;GRADONI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)
-84;GRADONI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065116-(1861-03-17)
-94;LUNGADIGE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)
-98;LUNGARNO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048024-(1861-03-17)
-98;LUNGARNO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-98;LUNGARNO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)
-946;LUNGAVISIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)
-257;LUNGOBRENTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024012-(1866-11-20)
-417;LUNGOGESSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)
-839;LUNGONERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/055032-(1927-01-12)
-106;LUNGOPO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006039-(1861-03-17)
-165;LUNGORIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)
-165;LUNGORIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021011-(1927-01-12)
-108;LUNGOSTURA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)
-108;LUNGOSTURA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)
-110;LUNGOTEVERE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)
-233;LUNGOVELINO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057059-(1927-01-12)
-118;MULATTIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)
-120;MURA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)
-120;MURA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/037006-(1861-03-17)
-974;PASSAGGIO PEDONALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017120-(1861-03-17)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/012119-(1927-01-12)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026086-(1866-11-20)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046005-(1861-03-17)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/015146-(1861-03-17)
-87;PASSERELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)
-128;PASSETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)
-260;PASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)
-260;PASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)
-260;PASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021001-(1948-03-14)
-260;PASSO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-462;PIAGGIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)
-462;PIAGGIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/051025-(1861-03-17)
-462;PIAGGIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/054039-(1861-03-17)
-169;PIAZZALETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-469;PIAZZOLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)
-142;PORTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/025006-(1866-11-20)
-142;PORTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)
-142;PORTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)
-142;PORTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)
-990;PORTEGO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024100-(1866-11-20)
-476;PORTICI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/054052-(1861-03-17)
-476;PORTICI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021011-(1927-01-12)
-476;PORTICI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/005005-(1935-04-15)
-476;PORTICI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017065-(1861-03-17)
-476;PORTICI;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/016053-(1861-03-17)
-154;RAMO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)
-160;RECINTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)
-160;RECINTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/005005-(1935-04-15)
-209;RECINTO PRIVATO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)
-264;RIPA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/013248-(2003-01-01)
-164;RIVA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027012-(1866-11-20)
-164;RIVA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/031007-(1927-01-12)
-164;RIVA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/089017-(1861-03-17)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027011-(1866-11-20)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027012-(1866-11-20)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/029041-(1866-11-20)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026049-(1866-11-20)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/029004-(1866-11-20)
-166;RIVIERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/029001-(1866-11-20)
-170;RUA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066071-(1861-03-17)
-170;RUA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/088009-(1927-01-12)
-500;RUGA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052015-(1861-03-17)
-226;SAIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)
-178;SCALA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)
-178;SCALA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/032006-(1923-02-08)
-178;SCALA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/049017-(1925-12-11)
-178;SCALA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)
-178;SCALA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053016-(1861-03-17)
-180;SCALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)
-180;SCALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/087021-(1861-03-17)
-180;SCALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076063-(1861-03-17)
-186;SCALETTE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)
-186;SCALETTE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057059-(1927-01-12)
-186;SCALETTE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)
-186;SCALETTE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024100-(1866-11-20)
-192;SCALONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)
-192;SCALONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)
-194;SDRUCCIOLO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048053-(2014-01-01)
-194;SDRUCCIOLO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)
-194;SDRUCCIOLO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-194;SDRUCCIOLO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)
-526;SELCIATO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)
-229;SOPPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077028-(1927-01-12)
-376;SOPRAELEVATA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/015146-(1861-03-17)
-249;SOTOPORTEGO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)
-530;SOTTOPASSAGGIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)
-530;SOTTOPASSAGGIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)
-204;SOTTOPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/078154-(1861-03-17)
-204;SOTTOPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)
-204;SOTTOPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)
-204;SOTTOPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)
-204;SOTTOPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026049-(1866-11-20)
-206;SOTTOVIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)
-532;SPALTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006003-(1861-03-17)
-569;STRADA RURALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/097014-(1995-01-01)
-903;STRETTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/016006-(1861-03-17)
-582;STRETTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)
-586;STRETTOLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)
-63;SUBBORGO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)
-218;SUPPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/062047-(1861-03-17)
-218;SUPPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076024-(1861-03-17)
-218;SUPPORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076088-(1861-03-17)
-590;TERRAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-590;TERRAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/092009-(1991-12-10)
-590;TERRAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)
-590;TERRAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048038-(1861-03-17)
-597;TRATTURO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/110003-(2009-07-27)
-597;TRATTURO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/071024-(1861-03-17)
-597;TRATTURO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/059023-(1947-07-20)
-143;TRAZZERA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)
-232;VALLONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)
-235;VENULA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/081008-(1861-03-17)
-624;VIA ESTERNA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)
-624;VIA ESTERNA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075019-(1861-03-17)
-645;VIA STATALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048005-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/060045-(1927-01-12)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064042-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057011-(1927-01-12)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/063007-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/049001-(1925-12-11)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039016-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075026-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066025-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050031-(1861-03-17)
-653;VIA VICINALE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/103039-(1995-01-01)
-238;VIADOTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)
-238;VIADOTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)
-238;VIADOTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/031007-(1927-01-12)
-238;VIADOTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-238;VIADOTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043053-(1861-03-17)
-238;VIADOTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)
-978;VIAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/035028-(1861-03-17)
-978;VIAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/036023-(1861-03-17)
-978;VIAZZA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)
-979;VIAZZOLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/035028-(1861-03-17)
-668;VICO STORTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077027-(1927-01-12)
-668;VICO STORTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076024-(1861-03-17)
-668;VICO STORTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075035-(1861-03-17)
-668;VICO STORTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076043-(1861-03-17)
-672;VICOLETTO CIECO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/023091-(1927-02-16)
-570;VICOLO ROTTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072022-(1861-03-17)
-271;VICOLOZZO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058039-(1871-01-15)
-304;VIUCOLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/051002-(1861-03-17)
-254;VIUZZO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-254;VIUZZO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048024-(1861-03-17)
-254;VIUZZO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)
-258;VOLTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/038008-(1861-03-17)
-258;VOLTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/034027-(1861-03-17)
-258;VOLTA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)
-702;VOLTONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040012-(1861-03-17)
-702;VOLTONE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/037006-(1861-03-17)
-342;CANTO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/047012-(1991-05-15)
-369;COSTARELLA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053001-(1948-01-01)
-946;LUNGAVISIO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)
-282;LUNGOROGGIA;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/030129-(2018-04-22)
-842;LUNGOTANARO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006003-(1861-03-17)
-144;PORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/078033-(1948-01-01)
-144;PORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)
-144;PORTICO;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)
-188;SCALI;Locale;;;;;;https:​/​/​w3id.​org/​italia/​controlled-​vocabulary/​territorial-​classifications/​cities/049009-(1948-01-01)
-568;STRADA ROTABILE;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)
-711;VIAL;Locale;;;;;;https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/093033-(2017-09-30)
-6;ARCO;Nazionale;;;;;;
-316;AUTOSTRADA;Nazionale;;;;;;
-754;BELVEDERE;Nazionale;;;;;;
-26;CALATA;Nazionale;DISCESA;SCESA;;;;
-28;CALLE;Nazionale;;;;;;
-46;CAVALCAVIA;Nazionale;SOVRAPPASSO;;;;;
-50;CIRCONVALLAZIONE;Nazionale;RACCORDO;TANGENZIALE;;;;
-58;CORSO;Nazionale;;;;;;
-60;CORTE;Nazionale;CORTILE;;;;;
-64;CORTILE;Nazionale;CORTE;;;;;
-70;DISCESA;Nazionale;CALATA;SCESA;;;;
-78;GALLERIA;Nazionale;;;;;;
-387;GRADINATA;Nazionale;SCALINATA;;;;;
-394;LARGHETTO;Nazionale;LARGO;SLARGO;;;;
-86;LARGO;Nazionale;LARGHETTO;SLARGO;SPIAZZO;;;
-37;LITORANEA;Nazionale;;;;;;
-96;LUNGARGINE;Nazionale;LUNGOFIUME;LUNGOTORRENTE;;;;
-31;LUNGOFIUME;Nazionale;LUNGARGINE;;;;;
-423;LUNGOLAGO;Nazionale;LUNGARGINE;;;;;
-102;LUNGOMARE;Nazionale;;;;;;
-431;LUNGOPARCO;Nazionale;;;;;;
-444;LUNGOTORRENTE;Nazionale;LUNGARGINE;;;;;
-116;MOLO;Nazionale;;;;;;
-103;PARCHEGGIO;Nazionale;;;;;;
-124;PASSAGGIO;Nazionale;PASSAGGIO PEDONALE;;;;;
-126;PASSEGGIATA;Nazionale;;;;;;
-139;PERCORSO CICLABILE;Nazionale;PERCORSO CICLOPEDONALE;PISTA CICLABILE;;;;
-153;PERCORSO CICLOPEDONALE;Nazionale;PERCORSO CICLABILE;PISTA CICLABILE;PERCORSO PEDONALE;;;
-41;PERCORSO PEDONALE;Nazionale;PERCORSO CICLOPEDONALE;;;;;
-130;PIAZZA;Nazionale;PIAZZALE;PIAZZETTA;SPIAZZO;;;
-132;PIAZZALE;Nazionale;PIAZZA;SPIAZZO;;;;
-134;PIAZZETTA;Nazionale;PIAZZA;SPIAZZO;;;;
-11;PISTA CICLABILE;Nazionale;PERCORSO CICLOPEDONALE;PERCORSO CICLABILE;;;;
-138;PONTE;Nazionale;;;;;;
-266;RACCORDO;Nazionale;CIRCONVALLAZIONE;TANGENZIALE;;;;
-156;RAMPA;Nazionale;;;;;;
-496;RONCO;Nazionale;;;;;;
-85;ROTATORIA;Nazionale;ROTONDA;;;;;
-168;ROTONDA;Nazionale;ROTATORIA;;;;;
-172;SALITA;Nazionale;;;;;;
-190;SCALINATA;Nazionale;GRADINATA;;;;;
-524;SCESA;Nazionale;CALATA;DISCESA;;;;
-196;SENTIERO;Nazionale;VIOTTOLO;;;;;
-281;SLARGO;Nazionale;LARGHETTO;LARGO;SPIAZZO;;;
-531;SOTTOPASSO;Nazionale;;;;;;
-293;SOVRAPPASSO;Nazionale;CAVALCAVIA;;;;;
-534;SPIAZZO;Nazionale;LARGO;SLARGO;PIAZZA;PIAZZALE;PIAZZETTA;
-210;STRADA;Nazionale;STRADA COMUNALE;STRADA CONSORTILE;STRADA PANORAMICA;STRADA PODERALE;STRADA VICINALE;
-539;STRADA ANTICA;Nazionale;STRADA VECCHIA;;;;;
-546;STRADA COMUNALE;Nazionale;STRADA;;;;;
-890;STRADA CONSORTILE;Nazionale;STRADA;STRADA PODERALE;STRADA VICINALE;;;
-561;STRADA NUOVA;Nazionale;;;;;;
-562;STRADA PANORAMICA;Nazionale;STRADA;;;;;
-894;STRADA PODERALE;Nazionale;STRADA;STRADA CONSORTILE;STRADA VICINALE;;;
-565;STRADA PRIVATA;Nazionale;VIA PRIVATA;;;;;
-566;STRADA PROVINCIALE;Nazionale;;;;;;
-897;STRADA REGIONALE;Nazionale;;;;;;
-571;STRADA STATALE;Nazionale;;;;;;
-578;STRADA VECCHIA;Nazionale;STRADA ANTICA;;;;;
-579;STRADA VICINALE;Nazionale;STRADA;STRADA CONSORTILE;STRADA PODERALE;;;
-214;STRADELLA;Nazionale;STRADELLO;;;;;
-721;STRADELLO;Nazionale;STRADELLA;;;;;
-216;STRADONE;Nazionale;;;;;;
-589;TANGENZIALE;Nazionale;CIRCONVALLAZIONE;RACCORDO;;;;
-224;TRAVERSA;Nazionale;;;;;;
-603;TRAVERSA PRIVATA;Nazionale;;;;;;
-236;VIA;Nazionale;VIA COMUNALE;VIA PANORAMICA;VIA VICINALE;VIA NAZIONALE;VIA PROVINCIALE;
-610;VIA ANTICA;Nazionale;VIA VECCHIA;;;;;
-619;VIA COMUNALE;Nazionale;VIA;VIA VICINALE;VIA NAZIONALE;VIA PROVINCIALE;;
-940;VIA NAZIONALE;Nazionale;VIA;VIA COMUNALE;VIA PROVINCIALE;;;
-635;VIA NUOVA;Nazionale;;;;;;
-636;VIA PANORAMICA;Nazionale;VIA;;;;;
-639;VIA PRIVATA;Nazionale;STRADA PRIVATA;;;;;
-640;VIA PROVINCIALE;Nazionale;VIA;VIA COMUNALE;VIA NAZIONALE;;;
-652;VIA VECCHIA;Nazionale;VIA ANTICA;;;;;
-240;VIALE;Nazionale;;;;;;
-242;VIALETTO;Nazionale;;;;;;
-244;VICO;Nazionale;VICOLO;;;;;
-661;VICO CHIUSO;Nazionale;VICOLO CHIUSO;VICO CIECO;VICOLO CIECO;;;
-662;VICO CIECO;Nazionale;VICO CHIUSO;VICOLO CHIUSO;VICOLO CIECO;;;
-667;VICO PRIVATO;Nazionale;VICOLO PRIVATO;;;;;
-246;VICOLETTO;Nazionale;;;;;;
-248;VICOLO;Nazionale;VICO;;;;;
-684;VICOLO CHIUSO;Nazionale;VICO CHIUSO;VICO CIECO;VICOLO CIECO;;;
-685;VICOLO CIECO;Nazionale;VICO CHIUSO;VICOLO CHIUSO;VICO CIECO;;;
-690;VICOLO PRIVATO;Nazionale;VICO PRIVATO;;;;;
-252;VIOTTOLO;Nazionale;SENTIERO;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
+"COD_DUG","DESC_DUG","NAZIONALE","LOCALE","LOCALE_NAZIONALE_ENTRAMBI","AMBITO","NAZ_SIN_1","NAZ_SIN_2","NAZ_SIN_3","NAZ_SIN_4","NAZ_SIN_5","NUMERO_LOC_COM","LABEL","NOME","CODICE","IRI","IRI_SHORT"
+153,"PERCORSO CICLOPEDONALE","PERCORSO CICLOPEDONALE","","PERCORSO CICLOPEDONALE","Nazionale","PERCORSO CICLABILE","PISTA CICLABILE","PERCORSO PEDONALE","","",,"","","","",""
+534,"SPIAZZO","SPIAZZO","","SPIAZZO","Nazionale","LARGO","SLARGO","PIAZZA","PIAZZALE","PIAZZETTA",,"","","","",""
+86,"LARGO","LARGO","","LARGO","Nazionale","LARGHETTO","SLARGO","SPIAZZO","","",,"","","","",""
+130,"PIAZZA","PIAZZA","","PIAZZA","Nazionale","PIAZZALE","PIAZZETTA","SPIAZZO","","",,"","","","",""
+281,"SLARGO","SLARGO","","SLARGO","Nazionale","LARGHETTO","LARGO","SPIAZZO","","",,"","","","",""
+210,"STRADA","STRADA","","STRADA","Nazionale","STRADA COMUNALE","STRADA CONSORTILE","STRADA PANORAMICA","STRADA PODERALE","STRADA VICINALE",,"","","","",""
+579,"STRADA VICINALE","STRADA VICINALE","","STRADA VICINALE","Nazionale","STRADA","STRADA CONSORTILE","STRADA PODERALE","","",,"","","","",""
+894,"STRADA PODERALE","STRADA PODERALE","","STRADA PODERALE","Nazionale","STRADA","STRADA CONSORTILE","STRADA VICINALE","","",,"","","","",""
+890,"STRADA CONSORTILE","STRADA CONSORTILE","","STRADA CONSORTILE","Nazionale","STRADA","STRADA PODERALE","STRADA VICINALE","","",,"","","","",""
+640,"VIA PROVINCIALE","VIA PROVINCIALE","","VIA PROVINCIALE","Nazionale","VIA","VIA COMUNALE","VIA NAZIONALE","","",,"","","","",""
+619,"VIA COMUNALE","VIA COMUNALE","","VIA COMUNALE","Nazionale","VIA","VIA VICINALE","VIA NAZIONALE","VIA PROVINCIALE","",,"","","","",""
+940,"VIA NAZIONALE","VIA NAZIONALE","","VIA NAZIONALE","Nazionale","VIA","VIA COMUNALE","VIA PROVINCIALE","","",,"","","","",""
+236,"VIA","VIA","","VIA","Nazionale","VIA COMUNALE","VIA PANORAMICA","VIA VICINALE","VIA NAZIONALE","VIA PROVINCIALE",,"","","","",""
+685,"VICOLO CIECO","VICOLO CIECO","","VICOLO CIECO","Nazionale","VICO CHIUSO","VICOLO CHIUSO","VICO CIECO","","",,"","","","",""
+661,"VICO CHIUSO","VICO CHIUSO","","VICO CHIUSO","Nazionale","VICOLO CHIUSO","VICO CIECO","VICOLO CIECO","","",,"","","","",""
+662,"VICO CIECO","VICO CIECO","","VICO CIECO","Nazionale","VICO CHIUSO","VICOLO CHIUSO","VICOLO CIECO","","",,"","","","",""
+684,"VICOLO CHIUSO","VICOLO CHIUSO","","VICOLO CHIUSO","Nazionale","VICO CHIUSO","VICO CIECO","VICOLO CIECO","","",,"","","","",""
+180,"SCALE","","SCALE","SCALE","Locale","","","","","",1,"ANCONA (42002)","ANCONA","042002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)","​042002-(1861-03-17)"
+180,"SCALE","","SCALE","SCALE","Locale","","","","","",2,"LINGUAGLOSSA (87021)","LINGUAGLOSSA","087021","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/087021-(1861-03-17)","​087021-(1861-03-17)"
+180,"SCALE","","SCALE","SCALE","Locale","","","","","",3,"POTENZA (76063)","POTENZA","076063","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076063-(1861-03-17)","​076063-(1861-03-17)"
+186,"SCALETTE","","SCALETTE","SCALETTE","Locale","","","","","",1,"CORINALDO (42015)","CORINALDO","042015","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)","​042015-(1861-03-17)"
+186,"SCALETTE","","SCALETTE","SCALETTE","Locale","","","","","",2,"RIETI (57059)","RIETI","057059","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057059-(1927-01-12)","​057059-(1927-01-12)"
+186,"SCALETTE","","SCALETTE","SCALETTE","Locale","","","","","",3,"EBOLI (65050)","EBOLI","065050","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)","​065050-(1861-03-17)"
+186,"SCALETTE","","SCALETTE","SCALETTE","Locale","","","","","",4,"SCHIO (24100)","SCHIO","024100","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024100-(1866-11-20)","​024100-(1866-11-20)"
+192,"SCALONE","","SCALONE","SCALONE","Locale","","","","","",1,"ANCONA (42002)","ANCONA","042002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)","​042002-(1861-03-17)"
+192,"SCALONE","","SCALONE","SCALONE","Locale","","","","","",2,"EBOLI (65050)","EBOLI","065050","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)","​065050-(1861-03-17)"
+194,"SDRUCCIOLO","","SDRUCCIOLO","SDRUCCIOLO","Locale","","","","","",1,"SCARPERIA E SAN PIERO (48053)","SCARPERIA E SAN PIERO","048053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048053-(2014-01-01)","​048053-(2014-01-01)"
+194,"SDRUCCIOLO","","SDRUCCIOLO","SDRUCCIOLO","Locale","","","","","",2,"RADDA IN CHIANTI (52023)","RADDA IN CHIANTI","052023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)","​052023-(1861-03-17)"
+194,"SDRUCCIOLO","","SDRUCCIOLO","SDRUCCIOLO","Locale","","","","","",3,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+194,"SDRUCCIOLO","","SDRUCCIOLO","SDRUCCIOLO","Locale","","","","","",4,"L'AQUILA (66049)","L'AQUILA","066049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)","​066049-(1861-03-17)"
+526,"SELCIATO","","SELCIATO","SELCIATO","Locale","","","","","",1,"PADOVA (28060)","PADOVA","028060","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)","​028060-(1866-11-20)"
+229,"SOPPORTICO","","SOPPORTICO","SOPPORTICO","Locale","","","","","",1,"TRICARICO (77028)","TRICARICO","077028","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077028-(1927-01-12)","​077028-(1927-01-12)"
+376,"SOPRAELEVATA","","SOPRAELEVATA","SOPRAELEVATA","Locale","","","","","",1,"MILANO (15146)","MILANO","015146","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/015146-(1861-03-17)","​015146-(1861-03-17)"
+249,"SOTOPORTEGO","","SOTOPORTEGO","SOTOPORTEGO","Locale","","","","","",1,"VENEZIA (27042)","VENEZIA","027042","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)","​027042-(1866-11-20)"
+530,"SOTTOPASSAGGIO","","SOTTOPASSAGGIO","SOTTOPASSAGGIO","Locale","","","","","",1,"PADOVA (28060)","PADOVA","028060","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)","​028060-(1866-11-20)"
+530,"SOTTOPASSAGGIO","","SOTTOPASSAGGIO","SOTTOPASSAGGIO","Locale","","","","","",2,"TORINO (1272)","TORINO","001272","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)","​001272-(1861-03-17)"
+204,"SOTTOPORTICO","","SOTTOPORTICO","SOTTOPORTICO","Locale","","","","","",1,"VILLAPIANA (78154)","VILLAPIANA","078154","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/078154-(1861-03-17)","​078154-(1861-03-17)"
+204,"SOTTOPORTICO","","SOTTOPORTICO","SOTTOPORTICO","Locale","","","","","",2,"ANCONA (42002)","ANCONA","042002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)","​042002-(1861-03-17)"
+204,"SOTTOPORTICO","","SOTTOPORTICO","SOTTOPORTICO","Locale","","","","","",3,"TRENTO (22205)","TRENTO","022205","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)","​022205-(1923-02-14)"
+204,"SOTTOPORTICO","","SOTTOPORTICO","SOTTOPORTICO","Locale","","","","","",4,"MANTOVA (20030)","MANTOVA","020030","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)","​020030-(1866-11-20)"
+204,"SOTTOPORTICO","","SOTTOPORTICO","SOTTOPORTICO","Locale","","","","","",5,"MOTTA DI LIVENZA (26049)","MOTTA DI LIVENZA","026049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026049-(1866-11-20)","​026049-(1866-11-20)"
+206,"SOTTOVIA","","SOTTOVIA","SOTTOVIA","Locale","","","","","",1,"ROMA (58091)","ROMA","058091","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)","​058091-(1871-01-15)"
+532,"SPALTO","","SPALTO","SPALTO","Locale","","","","","",1,"ALESSANDRIA (6003)","ALESSANDRIA","006003","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006003-(1861-03-17)","​006003-(1861-03-17)"
+569,"STRADA RURALE","","STRADA RURALE","STRADA RURALE","Locale","","","","","",1,"CARENNO (97014)","CARENNO","097014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/097014-(1995-01-01)","​097014-(1995-01-01)"
+903,"STRETTA","","STRETTA","STRETTA","Locale","","","","","",1,"ALMENNO SAN BARTOLOMEO (16006)","ALMENNO SAN BARTOLOMEO","016006","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/016006-(1861-03-17)","​016006-(1861-03-17)"
+582,"STRETTO","","STRETTO","STRETTO","Locale","","","","","",1,"BARCELLONA POZZO DI GOTTO (83005)","BARCELLONA POZZO DI GOTTO","083005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)","​083005-(1861-03-17)"
+586,"STRETTOLA","","STRETTOLA","STRETTOLA","Locale","","","","","",1,"AVELLINO (64008)","AVELLINO","064008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)","​064008-(1861-03-17)"
+63,"SUBBORGO","","SUBBORGO","SUBBORGO","Locale","","","","","",1,"CESENA (40007)","CESENA","040007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)","​040007-(1861-03-17)"
+218,"SUPPORTICO","","SUPPORTICO","SUPPORTICO","Locale","","","","","",1,"PANNARANO (62047)","PANNARANO","062047","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/062047-(1861-03-17)","​062047-(1861-03-17)"
+218,"SUPPORTICO","","SUPPORTICO","SUPPORTICO","Locale","","","","","",2,"CASTELMEZZANO (76024)","CASTELMEZZANO","076024","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076024-(1861-03-17)","​076024-(1861-03-17)"
+300,"ACCESSO","","ACCESSO","ACCESSO","Locale","","","","","",1,"JESOLO (27019)","JESOLO","027019","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027019-(1866-11-20)","​027019-(1866-11-20)"
+300,"ACCESSO","","ACCESSO","ACCESSO","Locale","","","","","",2,"ANCONA (42002)","ANCONA","042002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)","​042002-(1861-03-17)"
+300,"ACCESSO","","ACCESSO","ACCESSO","Locale","","","","","",3,"CAGLI (41007)","CAGLI","041007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/041007-(1861-03-17)","​041007-(1861-03-17)"
+191,"ACCORCIATOIA","","ACCORCIATOIA","ACCORCIATOIA","Locale","","","","","",1,"MONDOVI' (4130)","MONDOVI'","004130","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004130-(1861-03-17)","​004130-(1861-03-17)"
+288,"AIA","","AIA","AIA","Locale","","","","","",1,"LUCOLI (66052)","LUCOLI","066052","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066052-(1861-03-17)","​066052-(1861-03-17)"
+288,"AIA","","AIA","AIA","Locale","","","","","",2,"SAN MARCELLO PITEGLIO (47024)","SAN MARCELLO PITEGLIO","047024","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/047024-(2017-01-01)","​047024-(2017-01-01)"
+2,"ANDRONA","","ANDRONA","ANDRONA","Locale","","","","","",1,"GORIZIA (31007)","GORIZIA","031007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/031007-(1927-01-12)","​031007-(1927-01-12)"
+2,"ANDRONA","","ANDRONA","ANDRONA","Locale","","","","","",2,"TRENTO (22205)","TRENTO","022205","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)","​022205-(1923-02-14)"
+4,"ARCHIVOLTO","","ARCHIVOLTO","ARCHIVOLTO","Locale","","","","","",1,"LOANO (9034)","LOANO","009034","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009034-(1927-01-12)","​009034-(1927-01-12)"
+4,"ARCHIVOLTO","","ARCHIVOLTO","ARCHIVOLTO","Locale","","","","","",2,"GENOVA (10025)","GENOVA","010025","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)","​010025-(1874-01-01)"
+14,"BAGLIO","","BAGLIO","BAGLIO","Locale","","","","","",1,"PALERMO (82053)","PALERMO","082053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)","​082053-(1861-03-17)"
+318,"BALUARDO","","BALUARDO","BALUARDO","Locale","","","","","",1,"CASALE MONFERRATO (6039)","CASALE MONFERRATO","006039","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006039-(1861-03-17)","​006039-(1861-03-17)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",1,"ANCONA (42002)","ANCONA","042002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042002-(1861-03-17)","​042002-(1861-03-17)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",2,"LA SPEZIA (11015)","LA SPEZIA","011015","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/011015-(1923-12-22)","​011015-(1923-12-22)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",3,"IMPERIA (8031)","IMPERIA","008031","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/008031-(1861-03-17)","​008031-(1861-03-17)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",4,"SAN BENEDETTO DEL TRONTO (44066)","SAN BENEDETTO DEL TRONTO","044066","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/044066-(1861-03-17)","​044066-(1861-03-17)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",5,"SENIGAGLIA (42045)","SENIGAGLIA","042045","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042045-(1861-03-17)","​042045-(1861-03-17)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",6,"VENEZIA (27042)","VENEZIA","027042","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)","​027042-(1866-11-20)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",7,"VIAREGGIO (46033)","VIAREGGIO","046033","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)","​046033-(1861-03-17)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",8,"CAGLIARI (92009)","CAGLIARI","092009","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/092009-(1991-12-10)","​092009-(1991-12-10)"
+16,"BANCHINA","","BANCHINA","BANCHINA","Locale","","","","","",9,"SAVONA (9056)","SAVONA","009056","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009056-(1927-01-12)","​009056-(1927-01-12)"
+320,"BASTIONE","","BASTIONE","BASTIONE","Locale","","","","","",1,"VERONA (23091)","VERONA","023091","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/023091-(1927-02-16)","​023091-(1927-02-16)"
+5,"CAL","","CAL","CAL","Locale","","","","","",1,"CONEGLIANO (26021)","CONEGLIANO","026021","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026021-(1866-11-20)","​026021-(1866-11-20)"
+38,"CAMPO","","CAMPO","CAMPO","Locale","","","","","",1,"VENEZIA (27042)","VENEZIA","027042","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)","​027042-(1866-11-20)"
+38,"CAMPO","","CAMPO","CAMPO","Locale","","","","","",2,"OLBIA (90047)","OLBIA","090047","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/090047-(1861-03-17)","​090047-(1861-03-17)"
+38,"CAMPO","","CAMPO","CAMPO","Locale","","","","","",3,"DOLO (27012)","DOLO","027012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027012-(1866-11-20)","​027012-(1866-11-20)"
+38,"CAMPO","","CAMPO","CAMPO","Locale","","","","","",4,"LOANO (9034)","LOANO","009034","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/009034-(1927-01-12)","​009034-(1927-01-12)"
+149,"CARRAIA","","CARRAIA","CARRAIA","Locale","","","","","",1,"BAGNACAVALLO (39002)","BAGNACAVALLO","039002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039002-(1861-03-17)","​039002-(1861-03-17)"
+149,"CARRAIA","","CARRAIA","CARRAIA","Locale","","","","","",2,"RAVENNA (39014)","RAVENNA","039014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)","​039014-(1861-03-17)"
+345,"CARRARA","","CARRARA","CARRARA","Locale","","","","","",1,"LUGO (39012)","LUGO","039012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039012-(1861-03-17)","​039012-(1861-03-17)"
+345,"CARRARA","","CARRARA","CARRARA","Locale","","","","","",2,"BISCEGLIE (110003)","BISCEGLIE","110003","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/110003-(2009-07-27)","​110003-(2009-07-27)"
+223,"CARRARONE","","CARRARONE","CARRARONE","Locale","","","","","",1,"RAVENNA (39014)","RAVENNA","039014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)","​039014-(1861-03-17)"
+351,"CHIASSETTO","","CHIASSETTO","CHIASSETTO","Locale","","","","","",1,"BARISCIANO (66009)","BARISCIANO","066009","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066009-(1861-03-17)","​066009-(1861-03-17)"
+351,"CHIASSETTO","","CHIASSETTO","CHIASSETTO","Locale","","","","","",2,"MONTECALVO IRPINO (64052)","MONTECALVO IRPINO","064052","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064052-(1861-03-17)","​064052-(1861-03-17)"
+351,"CHIASSETTO","","CHIASSETTO","CHIASSETTO","Locale","","","","","",3,"L'AQUILA (66049)","L'AQUILA","066049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)","​066049-(1861-03-17)"
+351,"CHIASSETTO","","CHIASSETTO","CHIASSETTO","Locale","","","","","",4,"PISA (50026)","PISA","050026","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)","​050026-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",1,"MONREALE (82049)","MONREALE","082049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)","​082049-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",2,"PISA (50026)","PISA","050026","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)","​050026-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",3,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",4,"RADDA IN CHIANTI (52023)","RADDA IN CHIANTI","052023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)","​052023-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",5,"RACALMUTO (84029)","RACALMUTO","084029","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/084029-(1861-03-17)","​084029-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",6,"RAGUSA (88009)","RAGUSA","088009","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/088009-(1927-01-12)","​088009-(1927-01-12)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",7,"SCARPERIA E SAN PIERO (48053)","SCARPERIA E SAN PIERO","048053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048053-(2014-01-01)","​048053-(2014-01-01)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",8,"CAMPAGNATICO (53002)","CAMPAGNATICO","053002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)","​053002-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",9,"CASCINA (50008)","CASCINA","050008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050008-(1861-03-17)","​050008-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",10,"CAMPAGNATICO (53002)","CAMPAGNATICO","053002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)","​053002-(1861-03-17)"
+48,"CHIASSO","","CHIASSO","CHIASSO","Locale","","","","","",11,"MONOPOLI (72030)","MONOPOLI","072030","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072030-(1861-03-17)","​072030-(1861-03-17)"
+361,"CONTRA'","","CONTRA'","CONTRA'","Locale","","","","","",1,"MAROSTICA (24057)","MAROSTICA","024057","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024057-(1866-11-20)","​024057-(1866-11-20)"
+54,"CONTRADA","","CONTRADA","CONTRADA","Locale","","","","","",1,"FERRARA (38008)","FERRARA","038008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/038008-(1861-03-17)","​038008-(1861-03-17)"
+54,"CONTRADA","","CONTRADA","CONTRADA","Locale","","","","","",2,"POGGIOFIORITO (69067)","","069067","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/069067-(1861-03-17)","​069067-(1861-03-17)"
+54,"CONTRADA","","CONTRADA","CONTRADA","Locale","","","","","",3,"BRESCIA (17029)","BRESCIA","017029","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017029-(1861-03-17)","​017029-(1861-03-17)"
+368,"COSTA","","COSTA","COSTA","Locale","","","","","",1,"CORINALDO (42015)","CORINALDO","042015","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)","​042015-(1861-03-17)"
+368,"COSTA","","COSTA","COSTA","Locale","","","","","",2,"JESI (42021)","JESI","042021","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042021-(1861-03-17)","​042021-(1861-03-17)"
+368,"COSTA","","COSTA","COSTA","Locale","","","","","",3,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+368,"COSTA","","COSTA","COSTA","Locale","","","","","",4,"L'AQUILA (66049)","L'AQUILA","066049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)","​066049-(1861-03-17)"
+66,"CUPA","","CUPA","CUPA","Locale","","","","","",1,"AVELLINO (64008)","AVELLINO","064008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)","​064008-(1861-03-17)"
+380,"EMICICLO","","EMICICLO","EMICICLO","Locale","","","","","",1,"AREZZO (51002)","AREZZO","051002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/051002-(1861-03-17)","​051002-(1861-03-17)"
+72,"FONDACO","","FONDACO","FONDACO","Locale","","","","","",1,"GIOVINAZZO (72022)","GIOVINAZZO","072022","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072022-(1861-03-17)","​072022-(1861-03-17)"
+74,"FONDAMENTA","","FONDAMENTA","FONDAMENTA","Locale","","","","","",1,"CHIOGGIA (27008)","CHIOGGIA","027008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027008-(1866-11-20)","​027008-(1866-11-20)"
+262,"FORO","","FORO","FORO","Locale","","","","","",1,"MACERATA (43023)","MACERATA","043023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)","​043023-(1861-03-17)"
+262,"FORO","","FORO","FORO","Locale","","","","","",2,"SIRACUSA (89017)","SIRACUSA","089017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/089017-(1861-03-17)","​089017-(1861-03-17)"
+157,"GRADELLE","","GRADELLE","GRADELLE","Locale","","","","","",1,"AVELLINO (64008)","AVELLINO","064008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064008-(1861-03-17)","​064008-(1861-03-17)"
+157,"GRADELLE","","GRADELLE","GRADELLE","Locale","","","","","",2,"MATERA (77014)","MATERA","077014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)","​077014-(1927-01-12)"
+82,"GRADINI","","GRADINI","GRADINI","Locale","","","","","",1,"SALERNO (65116)","SALERNO","065116","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065116-(1861-03-17)","​065116-(1861-03-17)"
+84,"GRADONI","","GRADONI","GRADONI","Locale","","","","","",1,"CAMPAGNA (65022)","CAMPAGNA","065022","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065022-(1861-03-17)","​065022-(1861-03-17)"
+84,"GRADONI","","GRADONI","GRADONI","Locale","","","","","",2,"TRICARICO (77028)","TRICARICO","077028","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077028-(1927-01-12)","​077028-(1927-01-12)"
+84,"GRADONI","","GRADONI","GRADONI","Locale","","","","","",3,"MATERA (77014)","MATERA","077014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)","​077014-(1927-01-12)"
+84,"GRADONI","","GRADONI","GRADONI","Locale","","","","","",4,"SALERNO (65116)","SALERNO","065116","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065116-(1861-03-17)","​065116-(1861-03-17)"
+94,"LUNGADIGE","","LUNGADIGE","LUNGADIGE","Locale","","","","","",1,"TRENTO (22205)","TRENTO","022205","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)","​022205-(1923-02-14)"
+98,"LUNGARNO","","LUNGARNO","LUNGARNO","Locale","","","","","",1,"LASTRA A SIGNA (48024)","LASTRA A SIGNA","048024","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048024-(1861-03-17)","​048024-(1861-03-17)"
+98,"LUNGARNO","","LUNGARNO","LUNGARNO","Locale","","","","","",2,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+98,"LUNGARNO","","LUNGARNO","LUNGARNO","Locale","","","","","",3,"PISA (50026)","PISA","050026","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)","​050026-(1861-03-17)"
+946,"LUNGAVISIO","","LUNGAVISIO","LUNGAVISIO","Locale","","","","","",1,"TRENTO (22205)","TRENTO","022205","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)","​022205-(1923-02-14)"
+257,"LUNGOBRENTA","","LUNGOBRENTA","LUNGOBRENTA","Locale","","","","","",1,"BASSANO DEL GRAPPA (24012)","BASSANO DEL GRAPPA","024012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024012-(1866-11-20)","​024012-(1866-11-20)"
+417,"LUNGOGESSO","","LUNGOGESSO","LUNGOGESSO","Locale","","","","","",1,"CUNEO (4078)","CUNEO","004078","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)","​004078-(1861-03-17)"
+839,"LUNGONERA","","LUNGONERA","LUNGONERA","Locale","","","","","",1,"TERNI (55032)","TERNI","055032","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/055032-(1927-01-12)","​055032-(1927-01-12)"
+106,"LUNGOPO","","LUNGOPO","LUNGOPO","Locale","","","","","",1,"CASALE MONFERRATO (6039)","CASALE MONFERRATO","006039","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006039-(1861-03-17)","​006039-(1861-03-17)"
+165,"LUNGORIO","","LUNGORIO","LUNGORIO","Locale","","","","","",1,"MANTOVA (20030)","MANTOVA","020030","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)","​020030-(1866-11-20)"
+165,"LUNGORIO","","LUNGORIO","LUNGORIO","Locale","","","","","",2,"BRESSANONE (21011)","BRESSANONE","021011","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021011-(1927-01-12)","​021011-(1927-01-12)"
+108,"LUNGOSTURA","","LUNGOSTURA","LUNGOSTURA","Locale","","","","","",1,"CUNEO (4078)","CUNEO","004078","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)","​004078-(1861-03-17)"
+108,"LUNGOSTURA","","LUNGOSTURA","LUNGOSTURA","Locale","","","","","",2,"TORINO (1272)","TORINO","001272","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)","​001272-(1861-03-17)"
+110,"LUNGOTEVERE","","LUNGOTEVERE","LUNGOTEVERE","Locale","","","","","",1,"ROMA (58091)","ROMA","058091","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)","​058091-(1871-01-15)"
+233,"LUNGOVELINO","","LUNGOVELINO","LUNGOVELINO","Locale","","","","","",1,"RIETI (57059)","RIETI","057059","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057059-(1927-01-12)","​057059-(1927-01-12)"
+118,"MULATTIERA","","MULATTIERA","MULATTIERA","Locale","","","","","",1,"PALERMO (82053)","PALERMO","082053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)","​082053-(1861-03-17)"
+120,"MURA","","MURA","MURA","Locale","","","","","",1,"GENOVA (10025)","GENOVA","010025","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)","​010025-(1874-01-01)"
+120,"MURA","","MURA","MURA","Locale","","","","","",2,"BOLOGNA (37006)","BOLOGNA","037006","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/037006-(1861-03-17)","​037006-(1861-03-17)"
+974,"PASSAGGIO PEDONALE","","PASSAGGIO PEDONALE","PASSAGGIO PEDONALE","Locale","","","","","",1,"NUVOLERA (17120)","NUVOLERA","017120","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017120-(1861-03-17)","​017120-(1861-03-17)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",1,"SARONNO (12119)","SARONNO","012119","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/012119-(1927-01-12)","​012119-(1927-01-12)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",2,"TREVISO (26086)","TREVISO","026086","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026086-(1866-11-20)","​026086-(1866-11-20)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",3,"GENOVA (10025)","GENOVA","010025","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)","​010025-(1874-01-01)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",4,"CAMAIORE (46005)","CAMAIORE","046005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046005-(1861-03-17)","​046005-(1861-03-17)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",5,"VIAREGGIO (46033)","VIAREGGIO","046033","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)","​046033-(1861-03-17)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",6,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",7,"MILANO (15146)","MILANO","015146","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/015146-(1861-03-17)","​015146-(1861-03-17)"
+87,"PASSERELLA","","PASSERELLA","PASSERELLA","Locale","","","","","",8,"TORINO (1272)","TORINO","001272","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)","​001272-(1861-03-17)"
+128,"PASSETTO","","PASSETTO","PASSETTO","Locale","","","","","",1,"ROMA (58091)","ROMA","058091","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)","​058091-(1871-01-15)"
+260,"PASSO","","PASSO","PASSO","Locale","","","","","",1,"GENOVA (10025)","GENOVA","010025","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/010025-(1874-01-01)","​010025-(1874-01-01)"
+260,"PASSO","","PASSO","PASSO","Locale","","","","","",2,"CORINALDO (42015)","CORINALDO","042015","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/042015-(1861-03-17)","​042015-(1861-03-17)"
+260,"PASSO","","PASSO","PASSO","Locale","","","","","",3,"ALDINO (21001)","ALDINO","021001","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021001-(1948-03-14)","​021001-(1948-03-14)"
+260,"PASSO","","PASSO","PASSO","Locale","","","","","",4,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+462,"PIAGGIA","","PIAGGIA","PIAGGIA","Locale","","","","","",1,"MACERATA (43023)","MACERATA","043023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)","​043023-(1861-03-17)"
+462,"PIAGGIA","","PIAGGIA","PIAGGIA","Locale","","","","","",2,"MONTE SAN SAVINO (51025)","MONTE SAN SAVINO","051025","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/051025-(1861-03-17)","​051025-(1861-03-17)"
+462,"PIAGGIA","","PIAGGIA","PIAGGIA","Locale","","","","","",3,"PERUGIA (54039)","PERUGIA","054039","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/054039-(1861-03-17)","​054039-(1861-03-17)"
+169,"PIAZZALETTO","","PIAZZALETTO","PIAZZALETTO","Locale","","","","","",1,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+469,"PIAZZOLA","","PIAZZOLA","PIAZZOLA","Locale","","","","","",1,"TORINO (1272)","TORINO","001272","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/001272-(1861-03-17)","​001272-(1861-03-17)"
+142,"PORTA","","PORTA","PORTA","Locale","","","","","",1,"BELLUNO (25006)","BELLUNO","025006","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/025006-(1866-11-20)","​025006-(1866-11-20)"
+142,"PORTA","","PORTA","PORTA","Locale","","","","","",2,"MACERATA (43023)","MACERATA","043023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043023-(1861-03-17)","​043023-(1861-03-17)"
+142,"PORTA","","PORTA","PORTA","Locale","","","","","",3,"EBOLI (65050)","EBOLI","065050","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/065050-(1861-03-17)","​065050-(1861-03-17)"
+142,"PORTA","","PORTA","PORTA","Locale","","","","","",4,"PALERMO (82053)","PALERMO","082053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082053-(1861-03-17)","​082053-(1861-03-17)"
+990,"PORTEGO","","PORTEGO","PORTEGO","Locale","","","","","",1,"SCHIO (24100)","SCHIO","024100","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/024100-(1866-11-20)","​024100-(1866-11-20)"
+476,"PORTICI","","PORTICI","PORTICI","Locale","","","","","",1,"TODI (54052)","TODI","054052","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/054052-(1861-03-17)","​054052-(1861-03-17)"
+476,"PORTICI","","PORTICI","PORTICI","Locale","","","","","",2,"BRESSANONE (21011)","BRESSANONE","021011","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/021011-(1927-01-12)","​021011-(1927-01-12)"
+476,"PORTICI","","PORTICI","PORTICI","Locale","","","","","",3,"ASTI (5005)","ASTI","005005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/005005-(1935-04-15)","​005005-(1935-04-15)"
+476,"PORTICI","","PORTICI","PORTICI","Locale","","","","","",4,"DARFO BOARIO TERME (17065)","DARFO BOARIO TERME","017065","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/017065-(1861-03-17)","​017065-(1861-03-17)"
+476,"PORTICI","","PORTICI","PORTICI","Locale","","","","","",5,"CARAVAGGIO (16053)","CARAVAGGIO","016053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/016053-(1861-03-17)","​016053-(1861-03-17)"
+154,"RAMO","","RAMO","RAMO","Locale","","","","","",1,"VENEZIA (27042)","VENEZIA","027042","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027042-(1866-11-20)","​027042-(1866-11-20)"
+160,"RECINTO","","RECINTO","RECINTO","Locale","","","","","",1,"MATERA (77014)","MATERA","077014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)","​077014-(1927-01-12)"
+160,"RECINTO","","RECINTO","RECINTO","Locale","","","","","",2,"ASTI (5005)","ASTI","005005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/005005-(1935-04-15)","​005005-(1935-04-15)"
+209,"RECINTO PRIVATO","","RECINTO PRIVATO","RECINTO PRIVATO","Locale","","","","","",1,"MATERA (77014)","MATERA","077014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077014-(1927-01-12)","​077014-(1927-01-12)"
+264,"RIPA","","RIPA","RIPA","Locale","","","","","",1,"SAN SIRO (13248)","SAN SIRO","013248","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/013248-(2003-01-01)","​013248-(2003-01-01)"
+164,"RIVA","","RIVA","RIVA","Locale","","","","","",1,"DOLO (27012)","DOLO","027012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027012-(1866-11-20)","​027012-(1866-11-20)"
+164,"RIVA","","RIVA","RIVA","Locale","","","","","",2,"GORIZIA (31007)","GORIZIA","031007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/031007-(1927-01-12)","​031007-(1927-01-12)"
+164,"RIVA","","RIVA","RIVA","Locale","","","","","",3,"SIRACUSA (89017)","SIRACUSA","089017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/089017-(1861-03-17)","​089017-(1861-03-17)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",1,"CONCORDIA SAGITTARIA (27011)","CONCORDIA SAGITTARIA","027011","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027011-(1866-11-20)","​027011-(1866-11-20)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",2,"PADOVA (28060)","PADOVA","028060","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/028060-(1866-11-20)","​028060-(1866-11-20)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",3,"DOLO (27012)","DOLO","027012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/027012-(1866-11-20)","​027012-(1866-11-20)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",4,"ROVIGO (29041)","ROVIGO","029041","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/029041-(1866-11-20)","​029041-(1866-11-20)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",5,"MOTTA DI LIVENZA (26049)","MOTTA DI LIVENZA","026049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/026049-(1866-11-20)","​026049-(1866-11-20)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",6,"BADIA POLESINE (29004)","BADIA POLESINE","029004","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/029004-(1866-11-20)","​029004-(1866-11-20)"
+166,"RIVIERA","","RIVIERA","RIVIERA","Locale","","","","","",7,"ADRIA (29001)","ADRIA","029001","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/029001-(1866-11-20)","​029001-(1866-11-20)"
+170,"RUA","","RUA","RUA","Locale","","","","","",1,"PETTORANO SUL GIZIO (66071)","PETTORANO SUL GIZIO","066071","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066071-(1861-03-17)","​066071-(1861-03-17)"
+170,"RUA","","RUA","RUA","Locale","","","","","",2,"RAGUSA (88009)","RAGUSA","088009","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/088009-(1927-01-12)","​088009-(1927-01-12)"
+500,"RUGA","","RUGA","RUGA","Locale","","","","","",1,"MONTEPULCIANO (52015)","MONTEPULCIANO","052015","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052015-(1861-03-17)","​052015-(1861-03-17)"
+226,"SAIA","","SAIA","SAIA","Locale","","","","","",1,"BARCELLONA POZZO DI GOTTO (83005)","BARCELLONA POZZO DI GOTTO","083005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)","​083005-(1861-03-17)"
+178,"SCALA","","SCALA","SCALA","Locale","","","","","",1,"CAMPAGNATICO (53002)","CAMPAGNATICO","053002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053002-(1861-03-17)","​053002-(1861-03-17)"
+178,"SCALA","","SCALA","SCALA","Locale","","","","","",2,"TRIESTE (32006)","TRIESTE","032006","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/032006-(1923-02-08)","​032006-(1923-02-08)"
+178,"SCALA","","SCALA","SCALA","Locale","","","","","",3,"ROSIGNANO MARITTIMO (49017)","ROSIGNANO MARITTIMO","049017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/049017-(1925-12-11)","​049017-(1925-12-11)"
+178,"SCALA","","SCALA","SCALA","Locale","","","","","",4,"ROMA (58091)","ROMA","058091","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058091-(1871-01-15)","​058091-(1871-01-15)"
+178,"SCALA","","SCALA","SCALA","Locale","","","","","",5,"MONTE ARGENTARIO (53016)","MONTE ARGENTARIO","053016","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053016-(1861-03-17)","​053016-(1861-03-17)"
+238,"VIADOTTO","","VIADOTTO","VIADOTTO","Locale","","","","","",6,"PISA (50026)","PISA","050026","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)","​050026-(1861-03-17)"
+978,"VIAZZA","","VIAZZA","VIAZZA","Locale","","","","","",1,"NOVELLARA (35028)","NOVELLARA","035028","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/035028-(1861-03-17)","​035028-(1861-03-17)"
+978,"VIAZZA","","VIAZZA","VIAZZA","Locale","","","","","",2,"MODENA (36023)","MODENA","036023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/036023-(1861-03-17)","​036023-(1861-03-17)"
+978,"VIAZZA","","VIAZZA","VIAZZA","Locale","","","","","",3,"RAVENNA (39014)","RAVENNA","039014","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039014-(1861-03-17)","​039014-(1861-03-17)"
+979,"VIAZZOLA","","VIAZZOLA","VIAZZOLA","Locale","","","","","",1,"NOVELLARA (35028)","NOVELLARA","035028","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/035028-(1861-03-17)","​035028-(1861-03-17)"
+668,"VICO STORTO","","VICO STORTO","VICO STORTO","Locale","","","","","",1,"STIGLIANO (77027)","STIGLIANO","077027","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/077027-(1927-01-12)","​077027-(1927-01-12)"
+668,"VICO STORTO","","VICO STORTO","VICO STORTO","Locale","","","","","",2,"CASTELMEZZANO (76024)","CASTELMEZZANO","076024","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076024-(1861-03-17)","​076024-(1861-03-17)"
+668,"VICO STORTO","","VICO STORTO","VICO STORTO","Locale","","","","","",3,"LECCE (75035)","LECCE","075035","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075035-(1861-03-17)","​075035-(1861-03-17)"
+668,"VICO STORTO","","VICO STORTO","VICO STORTO","Locale","","","","","",4,"LAVELLO (76043)","LAVELLO","076043","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076043-(1861-03-17)","​076043-(1861-03-17)"
+672,"VICOLETTO CIECO","","VICOLETTO CIECO","VICOLETTO CIECO","Locale","","","","","",1,"VERONA (23091)","VERONA","023091","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/023091-(1927-02-16)","​023091-(1927-02-16)"
+570,"VICOLO ROTTO","","VICOLO ROTTO","VICOLO ROTTO","Locale","","","","","",1,"GIOVINAZZO (72022)","GIOVINAZZO","072022","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/072022-(1861-03-17)","​072022-(1861-03-17)"
+271,"VICOLOZZO","","VICOLOZZO","VICOLOZZO","Locale","","","","","",1,"FRASCATI (58039)","FRASCATI","058039","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/058039-(1871-01-15)","​058039-(1871-01-15)"
+304,"VIUCOLA","","VIUCOLA","VIUCOLA","Locale","","","","","",1,"AREZZO (51002)","AREZZO","051002","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/051002-(1861-03-17)","​051002-(1861-03-17)"
+254,"VIUZZO","","VIUZZO","VIUZZO","Locale","","","","","",1,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+254,"VIUZZO","","VIUZZO","VIUZZO","Locale","","","","","",2,"LASTRA A SIGNA (48024)","LASTRA A SIGNA","048024","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048024-(1861-03-17)","​048024-(1861-03-17)"
+254,"VIUZZO","","VIUZZO","VIUZZO","Locale","","","","","",3,"RADDA IN CHIANTI (52023)","RADDA IN CHIANTI","052023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)","​052023-(1861-03-17)"
+258,"VOLTA","","VOLTA","VOLTA","Locale","","","","","",1,"FERRARA (38008)","FERRARA","038008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/038008-(1861-03-17)","​038008-(1861-03-17)"
+258,"VOLTA","","VOLTA","VOLTA","Locale","","","","","",2,"PARMA (34027)","PARMA","034027","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/034027-(1861-03-17)","​034027-(1861-03-17)"
+258,"VOLTA","","VOLTA","VOLTA","Locale","","","","","",3,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+702,"VOLTONE","","VOLTONE","VOLTONE","Locale","","","","","",1,"FORLI' (40012)","FORLI'","040012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040012-(1861-03-17)","​040012-(1861-03-17)"
+702,"VOLTONE","","VOLTONE","VOLTONE","Locale","","","","","",2,"BOLOGNA (37006)","BOLOGNA","037006","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/037006-(1861-03-17)","​037006-(1861-03-17)"
+342,"CANTO","","CANTO","CANTO","Locale","","","","","",1,"PESCIA (47012)","PESCIA","047012","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/047012-(1991-05-15)","047012-(1991-05-15)"
+369,"COSTARELLA","","COSTARELLA","COSTARELLA","Locale","","","","","",1,"ARCIDOSSO (53001)","ARCIDOSSO","053001","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/053001-(1948-01-01)","053001-(1948-01-01)"
+946,"LUNGAVISIO","","LUNGAVISIO","LUNGAVISIO","Locale","","","","","",1,"TRENTO (22205)","TRENTO","022205","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)","​022205-(1923-02-14)"
+282,"LUNGOROGGIA","","LUNGOROGGIA","LUNGOROGGIA","Locale","","","","","",1,"UDINE (30129)","UDINE","030129","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/030129-(2018-04-22)","030129-(2018-04-22)"
+842,"LUNGOTANARO","","LUNGOTANARO","LUNGOTANARO","Locale","","","","","",1,"ALESSANDRIA (6003)","ALESSANDRIA","006003","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/006003-(1861-03-17)","​006003-(1861-03-17)"
+144,"PORTICO","","PORTICO","PORTICO","Locale","","","","","",1,"CASTROVILLARI (78033)","CASTROVILLARI","078033","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/078033-(1948-01-01)","078033-(1948-01-01)"
+144,"PORTICO","","PORTICO","PORTICO","Locale","","","","","",2,"TRENTO (22205)","TRENTO","022205","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/022205-(1923-02-14)","​022205-(1923-02-14)"
+144,"PORTICO","","PORTICO","PORTICO","Locale","","","","","",3,"MANTOVA (20030)","MANTOVA","020030","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/020030-(1866-11-20)","​020030-(1866-11-20)"
+188,"SCALI","","SCALI","SCALI","Locale","","","","","",1,"LIVORNO (49009)","LIVORNO","049009","https:​/​/​w3id.​org/​italia/​controlled-​vocabulary/​territorial-​classifications/​cities/049009-(1948-01-01)","049009-(1948-01-01)"
+568,"STRADA ROTABILE","","STRADA ROTABILE","STRADA ROTABILE","Locale","","","","","",1,"L'AQUILA (66049)","L'AQUILA","066049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066049-(1861-03-17)","​066049-(1861-03-17)"
+711,"VIAL","","VIAL","VIAL","Locale","","","","","",1,"PORDENONE (93033)","PORDENONE","093033","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/093033-(2017-09-30)","093033-(2017-09-30)"
+6,"ARCO","ARCO","","ARCO","Nazionale","","","","","",,"","","","",""
+316,"AUTOSTRADA","AUTOSTRADA","","AUTOSTRADA","Nazionale","","","","","",,"","","","",""
+754,"BELVEDERE","BELVEDERE","","BELVEDERE","Nazionale","","","","","",,"","","","",""
+26,"CALATA","CALATA","","CALATA","Nazionale","DISCESA","SCESA","","","",,"","","","",""
+28,"CALLE","CALLE","","CALLE","Nazionale","","","","","",,"","","","",""
+46,"CAVALCAVIA","CAVALCAVIA","","CAVALCAVIA","Nazionale","SOVRAPPASSO","","","","",,"","","","",""
+50,"CIRCONVALLAZIONE","CIRCONVALLAZIONE","","CIRCONVALLAZIONE","Nazionale","RACCORDO","TANGENZIALE","","","",,"","","","",""
+58,"CORSO","CORSO","","CORSO","Nazionale","","","","","",,"","","","",""
+60,"CORTE","CORTE","","CORTE","Nazionale","CORTILE","","","","",,"","","","",""
+64,"CORTILE","CORTILE","","CORTILE","Nazionale","CORTE","","","","",,"","","","",""
+70,"DISCESA","DISCESA","","DISCESA","Nazionale","CALATA","SCESA","","","",,"","","","",""
+78,"GALLERIA","GALLERIA","","GALLERIA","Nazionale","","","","","",,"","","","",""
+387,"GRADINATA","GRADINATA","","GRADINATA","Nazionale","SCALINATA","","","","",,"","","","",""
+394,"LARGHETTO","LARGHETTO","","LARGHETTO","Nazionale","LARGO","SLARGO","","","",,"","","","",""
+37,"LITORANEA","LITORANEA","","LITORANEA","Nazionale","","","","","",,"","","","",""
+96,"LUNGARGINE","LUNGARGINE","","LUNGARGINE","Nazionale","LUNGOFIUME","LUNGOTORRENTE","","","",,"","","","",""
+31,"LUNGOFIUME","LUNGOFIUME","","LUNGOFIUME","Nazionale","LUNGARGINE","","","","",,"","","","",""
+423,"LUNGOLAGO","LUNGOLAGO","","LUNGOLAGO","Nazionale","LUNGARGINE","","","","",,"","","","",""
+102,"LUNGOMARE","LUNGOMARE","","LUNGOMARE","Nazionale","","","","","",,"","","","",""
+431,"LUNGOPARCO","LUNGOPARCO","","LUNGOPARCO","Nazionale","","","","","",,"","","","",""
+444,"LUNGOTORRENTE","LUNGOTORRENTE","","LUNGOTORRENTE","Nazionale","LUNGARGINE","","","","",,"","","","",""
+116,"MOLO","MOLO","","MOLO","Nazionale","","","","","",,"","","","",""
+103,"PARCHEGGIO","PARCHEGGIO","","PARCHEGGIO","Nazionale","","","","","",,"","","","",""
+124,"PASSAGGIO","PASSAGGIO","","PASSAGGIO","Nazionale","PASSAGGIO PEDONALE","","","","",,"","","","",""
+126,"PASSEGGIATA","PASSEGGIATA","PASSEGGIATA","PASSEGGIATA","Nazionale","","","","","",,"","","","",""
+139,"PERCORSO CICLABILE","PERCORSO CICLABILE","","PERCORSO CICLABILE","Nazionale","PERCORSO CICLOPEDONALE","PISTA CICLABILE","","","",,"","","","",""
+41,"PERCORSO PEDONALE","PERCORSO PEDONALE","","PERCORSO PEDONALE","Nazionale","PERCORSO CICLOPEDONALE","","","","",,"","","","",""
+132,"PIAZZALE","PIAZZALE","","PIAZZALE","Nazionale","PIAZZA","SPIAZZO","","","",,"","","","",""
+134,"PIAZZETTA","PIAZZETTA","","PIAZZETTA","Nazionale","PIAZZA","SPIAZZO","","","",,"","","","",""
+11,"PISTA CICLABILE","PISTA CICLABILE","","PISTA CICLABILE","Nazionale","PERCORSO CICLOPEDONALE","PERCORSO CICLABILE","","","",,"","","","",""
+138,"PONTE","PONTE","","PONTE","Nazionale","","","","","",,"","","","",""
+266,"RACCORDO","RACCORDO","","RACCORDO","Nazionale","CIRCONVALLAZIONE","TANGENZIALE","","","",,"","","","",""
+156,"RAMPA","RAMPA","","RAMPA","Nazionale","","","","","",,"","","","",""
+496,"RONCO","RONCO","RONCO","RONCO","Nazionale","","","","","",,"","","","",""
+85,"ROTATORIA","ROTATORIA","","ROTATORIA","Nazionale","ROTONDA","","","","",,"","","","",""
+168,"ROTONDA","ROTONDA","","ROTONDA","Nazionale","ROTATORIA","","","","",,"","","","",""
+172,"SALITA","SALITA","","SALITA","Nazionale","","","","","",,"","","","",""
+190,"SCALINATA","SCALINATA","","SCALINATA","Nazionale","GRADINATA","","","","",,"","","","",""
+524,"SCESA","SCESA","","SCESA","Nazionale","CALATA","DISCESA","","","",,"","","","",""
+196,"SENTIERO","SENTIERO","","SENTIERO","Nazionale","VIOTTOLO","","","","",,"","","","",""
+531,"SOTTOPASSO","SOTTOPASSO","","SOTTOPASSO","Nazionale","","","","","",,"","","","",""
+293,"SOVRAPPASSO","SOVRAPPASSO","","SOVRAPPASSO","Nazionale","CAVALCAVIA","","","","",,"","","","",""
+539,"STRADA ANTICA","STRADA ANTICA","","STRADA ANTICA","Nazionale","STRADA VECCHIA","","","","",,"","","","",""
+546,"STRADA COMUNALE","STRADA COMUNALE","","STRADA COMUNALE","Nazionale","STRADA","","","","",,"","","","",""
+561,"STRADA NUOVA","STRADA NUOVA","","STRADA NUOVA","Nazionale","","","","","",,"","","","",""
+562,"STRADA PANORAMICA","STRADA PANORAMICA","","STRADA PANORAMICA","Nazionale","STRADA","","","","",,"","","","",""
+565,"STRADA PRIVATA","STRADA PRIVATA","","STRADA PRIVATA","Nazionale","VIA PRIVATA","","","","",,"","","","",""
+566,"STRADA PROVINCIALE","STRADA PROVINCIALE","","STRADA PROVINCIALE","Nazionale","","","","","",,"","","","",""
+897,"STRADA REGIONALE","STRADA REGIONALE","","STRADA REGIONALE","Nazionale","","","","","",,"","","","",""
+571,"STRADA STATALE","STRADA STATALE","","STRADA STATALE","Nazionale","","","","","",,"","","","",""
+578,"STRADA VECCHIA","STRADA VECCHIA","","STRADA VECCHIA","Nazionale","STRADA ANTICA","","","","",,"","","","",""
+214,"STRADELLA","STRADELLA","","STRADELLA","Nazionale","STRADELLO","","","","",,"","","","",""
+721,"STRADELLO","STRADELLO","","STRADELLO","Nazionale","STRADELLA","","","","",,"","","","",""
+216,"STRADONE","STRADONE","","STRADONE","Nazionale","","","","","",,"","","","",""
+589,"TANGENZIALE","TANGENZIALE","","TANGENZIALE","Nazionale","CIRCONVALLAZIONE","RACCORDO","","","",,"","","","",""
+224,"TRAVERSA","TRAVERSA","","TRAVERSA","Nazionale","","","","","",,"","","","",""
+603,"TRAVERSA PRIVATA","TRAVERSA PRIVATA","","TRAVERSA PRIVATA","Nazionale","","","","","",,"","","","",""
+610,"VIA ANTICA","VIA ANTICA","","VIA ANTICA","Nazionale","VIA VECCHIA","","","","",,"","","","",""
+635,"VIA NUOVA","VIA NUOVA","","VIA NUOVA","Nazionale","","","","","",,"","","","",""
+636,"VIA PANORAMICA","VIA PANORAMICA","","VIA PANORAMICA","Nazionale","VIA","","","","",,"","","","",""
+639,"VIA PRIVATA","VIA PRIVATA","","VIA PRIVATA","Nazionale","STRADA PRIVATA","","","","",,"","","","",""
+652,"VIA VECCHIA","VIA VECCHIA","","VIA VECCHIA","Nazionale","VIA ANTICA","","","","",,"","","","",""
+240,"VIALE","VIALE","","VIALE","Nazionale","","","","","",,"","","","",""
+242,"VIALETTO","VIALETTO","","VIALETTO","Nazionale","","","","","",,"","","","",""
+244,"VICO","VICO","","VICO","Nazionale","VICOLO","","","","",,"","","","",""
+667,"VICO PRIVATO","VICO PRIVATO","","VICO PRIVATO","Nazionale","VICOLO PRIVATO","","","","",,"","","","",""
+246,"VICOLETTO","VICOLETTO","","VICOLETTO","Nazionale","","","","","",,"","","","",""
+248,"VICOLO","VICOLO","","VICOLO","Nazionale","VICO","","","","",,"","","","",""
+690,"VICOLO PRIVATO","VICOLO PRIVATO","","VICOLO PRIVATO","Nazionale","VICO PRIVATO","","","","",,"","","","",""
+252,"VIOTTOLO","VIOTTOLO","","VIOTTOLO","Nazionale","SENTIERO","","","","",,"","","","",""
+218,"SUPPORTICO","","SUPPORTICO","SUPPORTICO","Locale","","","","","",3,"TRAMUTOLA (76088)","TRAMUTOLA","076088","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/076088-(1861-03-17)","​076088-(1861-03-17)"
+590,"TERRAZZA","","TERRAZZA","TERRAZZA","Locale","","","","","",1,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+590,"TERRAZZA","","TERRAZZA","TERRAZZA","Locale","","","","","",2,"CAGLIARI (92009)","CAGLIARI","092009","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/092009-(1991-12-10)","​092009-(1991-12-10)"
+590,"TERRAZZA","","TERRAZZA","TERRAZZA","Locale","","","","","",3,"VIAREGGIO (46033)","VIAREGGIO","046033","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/046033-(1861-03-17)","​046033-(1861-03-17)"
+590,"TERRAZZA","","TERRAZZA","TERRAZZA","Locale","","","","","",4,"SAN CASCIANO IN VAL DI PESA (48038)","SAN CASCIANO IN VAL DI PESA","048038","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048038-(1861-03-17)","​048038-(1861-03-17)"
+597,"TRATTURO","","TRATTURO","TRATTURO","Locale","","","","","",1,"BISCEGLIE (110003)","BISCEGLIE","110003","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/110003-(2009-07-27)","​110003-(2009-07-27)"
+597,"TRATTURO","","TRATTURO","TRATTURO","Locale","","","","","",2,"FOGGIA (71024)","FOGGIA","071024","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/071024-(1861-03-17)","​071024-(1861-03-17)"
+597,"TRATTURO","","TRATTURO","TRATTURO","Locale","","","","","",3,"ROCCASECCA DEI VOLSCI (59023)","ROCCASECCA DEI VOLSCI","059023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/059023-(1947-07-20)","​059023-(1947-07-20)"
+143,"TRAZZERA","","TRAZZERA","TRAZZERA","Locale","","","","","",1,"MONREALE (82049)","","082049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)","​082049-(1861-03-17)"
+232,"VALLONE","","VALLONE","VALLONE","Locale","","","","","",1,"BARCELLONA POZZO DI GOTTO (83005)","BARCELLONA POZZO DI GOTTO","083005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)","​083005-(1861-03-17)"
+235,"VENULA","","VENULA","VENULA","Locale","","","","","",1,"ERICE (81008)","ERICE","081008","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/081008-(1861-03-17)","​081008-(1861-03-17)"
+624,"VIA ESTERNA","","VIA ESTERNA","VIA ESTERNA","Locale","","","","","",1,"MONREALE (82049)","MONREALE","082049","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/082049-(1861-03-17)","​082049-(1861-03-17)"
+624,"VIA ESTERNA","","VIA ESTERNA","VIA ESTERNA","Locale","","","","","",2,"CASTRIGNANO DEL CAPO (75019)","CASTRIGNANO DEL CAPO","075019","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075019-(1861-03-17)","​075019-(1861-03-17)"
+645,"VIA STATALE","","VIA STATALE","VIA STATALE","Locale","","","","","",1,"BARCELLONA POZZO DI GOTTO (83005)","BARCELLONA POZZO DI GOTTO","083005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/083005-(1861-03-17)","​083005-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",1,"CALENZANO (48005)","CALENZANO","048005","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048005-(1861-03-17)","​048005-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",2,"PISA (50026)","PISA","050026","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050026-(1861-03-17)","​050026-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",3,"MOROLO (60045)","MOROLO","060045","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/060045-(1927-01-12)","​060045-(1927-01-12)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",4,"LAPIO (64042)","LAPIO","064042","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/064042-(1861-03-17)","​064042-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",5,"CASAPROTA (57011)","CASAPROTA","057011","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/057011-(1927-01-12)","​057011-(1927-01-12)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",6,"CESENA (40007)","CESENA","040007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)","​040007-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",7,"BARANO D'ISCHIA (63007)","BARANO D'ISCHIA","063007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/063007-(1861-03-17)","​063007-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",8,"BIBBONA (49001)","BIBBONA","049001","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/049001-(1925-12-11)","​049001-(1925-12-11)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",9,"RUSSI (39016)","RUSSI","039016","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/039016-(1861-03-17)","​039016-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",10,"CUTROFIANO (75026)","CUTROFIANO","075026","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/075026-(1861-03-17)","​075026-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",11,"RADDA IN CHIANTI (52023)","RADDA IN CHIANTI","052023","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/052023-(1861-03-17)","​052023-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",12,"CARSOLI (66025)","CARSOLI","066025","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/066025-(1861-03-17)","​066025-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",13,"SAN GIULIANO TERME (50031)","SAN GIULIANO TERME","050031","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/050031-(1861-03-17)","​050031-(1861-03-17)"
+653,"VIA VICINALE","","VIA VICINALE","VIA VICINALE","Locale","","","","","",14,"MACUGNAGA (103039)","MACUGNAGA","103039","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/103039-(1995-01-01)","​103039-(1995-01-01)"
+238,"VIADOTTO","","VIADOTTO","VIADOTTO","Locale","","","","","",1,"CESENA (40007)","CESENA","040007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/040007-(1861-03-17)","​040007-(1861-03-17)"
+238,"VIADOTTO","","VIADOTTO","VIADOTTO","Locale","","","","","",2,"CUNEO (4078)","CUNEO","004078","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/004078-(1861-03-17)","​004078-(1861-03-17)"
+238,"VIADOTTO","","VIADOTTO","VIADOTTO","Locale","","","","","",3,"GORIZIA (31007)","GORIZIA","031007","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/031007-(1927-01-12)","​031007-(1927-01-12)"
+238,"VIADOTTO","","VIADOTTO","VIADOTTO","Locale","","","","","",4,"FIRENZE (48017)","FIRENZE","048017","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/048017-(1861-03-17)","​048017-(1861-03-17)"
+238,"VIADOTTO","","VIADOTTO","VIADOTTO","Locale","","","","","",5,"TOLENTINO (43053)","TOLENTINO","043053","https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/043053-(1861-03-17)","​043053-(1861-03-17)"
