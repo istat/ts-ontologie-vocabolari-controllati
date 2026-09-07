@@ -16,9 +16,10 @@
 @prefix covapit: <https://w3id.org/italia/onto/COV/> .
 @prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@base <https://w3id.org/italia/onto/CLV/> .
+@base <https://w3id.org/italia/onto/CLV> .
 
 <https://w3id.org/italia/onto/CLV> rdf:type owl:Ontology ;
+                                    dct:identifier "https://w3id.org/italia/onto/CLV" ;
                                     owl:versionIRI <https://w3id.org/italia/onto/CLV/2.0> ;
                                     owl:imports <https://w3id.org/italia/onto/l0> ;
                                     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
@@ -27,24 +28,21 @@
                                                 <http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid> ;
                                     dct:description "Questa è l'ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)"@it ,
                                                     "This is the ontology of the Italian application profile for Location and Addresses"@en ;
-                                    dct:identifier "https://w3id.org/italia/onto/CLV" ;
                                     dct:issued "2017-08-07"^^xsd:date ;
                                     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                  <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                    dct:modified "2025-12-03"^^xsd:date ;
+                                    dct:modified "2026-09-07"^^xsd:date ;
                                     dct:publisher <http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid> ;
                                     dct:rightsHolder <http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT> ;
                                     dct:title "Address(Location) Ontology"@en ,
                                               "Ontologia degli Indirizzi/Luoghi"@it ;
                                     rdfs:comment "Questa è l'ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)"@it ,
-                                                 "This is the ontology of the Italian application profile for Location and Addresses"@en ,
-                                                 "versione della CLV con inserimento delle UTS 2.0"@it ;
+                                                 "This is the ontology of the Italian application profile for Location and Addresses"@en ;
                                     rdfs:isDefinedBy : ;
                                     rdfs:label "Address(Location) Ontology"@en ,
                                                "Ontologia degli Indirizzi/Luoghi"@it ;
-                                    owl:versionInfo "Version 2.0 - Modified on 21 October 2025 - Added the classes Continent, Territorial Area, Territory, and the relationships among them and with Country."@en ,
-                                                    "Versione 2.0 - Modificata il 03 Dicembre 2025 - Aggiornamento delle UTS"@it ;
-                                    dcat:contactPoint <https://w3id.org/italia/data/contact-point/onto-agid> ;
+                                    owl:versionInfo "Version 2.0 - Modified on 07 Semptember 2026 - Alignment of the ontology with the concepts of the National Archive of Street Numbers for Urban Roads (ANNCSU) and introduction of concepts relating to Foreign States and the Territories governed by them."@en ,
+                                                    "Versione 2.0 - Modificata il 7 Settembre 2026 - Allineamento dell'ontologia con  i concetti dell'Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU) e introduzione dei concetti relativi agli Stati Esteri e ai Territori governati da essi."@it;
                                     dcat:keyword "Accesso esterno"@it ,
                                                  "Accesso interno"@it ,
                                                  "Address"@en ,
@@ -76,7 +74,7 @@
                                     admsapit:hasTask admsapit:AnnotationTask ,
                                                      admsapit:QueryFormulationTask ,
                                                      admsapit:SearchTask ;
-                                    admsapit:last <https://w3id.org/italia/onto/CLV/1.1> ;
+                                    admsapit:last <https://w3id.org/italia/onto/CLV/1.0> ;
                                     admsapit:officialURI "https://w3id.org/italia/onto/CLV"^^xsd:anyURI ;
                                     admsapit:prefix "clvapit" ;
                                     admsapit:semanticAssetInUse <https://w3id.org/italia/data/project/ANNCSU> ,
@@ -92,14 +90,6 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/terms/accrualPeriodicity
-dct:accrualPeriodicity rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/creator
-dct:creator rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/description
 dct:description rdf:type owl:AnnotationProperty .
 
@@ -112,28 +102,8 @@ dct:format rdf:type owl:AnnotationProperty .
 dct:identifier rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/issued
-dct:issued rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/language
-dct:language rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/license
 dct:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
-dct:modified rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/publisher
-dct:publisher rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/rightsHolder
-dct:rightsHolder rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
@@ -152,20 +122,8 @@ vcard:hasEmail rdf:type owl:AnnotationProperty .
 dcat:accessURL rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/ns/dcat#contactPoint
-dcat:contactPoint rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/ns/dcat#downloadURL
 dcat:downloadURL rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/dcat#keyword
-dcat:keyword rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/dcat#theme
-dcat:theme rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#wasDerivedFrom
@@ -180,65 +138,14 @@ prov:wasInfluencedBy rdf:type owl:AnnotationProperty .
 foaf:name rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/italia/onto/ADMS/acronym
-admsapit:acronym rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-admsapit:hasContributor rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
-admsapit:hasFormalityLevel rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasKeyClass
-admsapit:hasKeyClass rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasOntologyLanguage
-admsapit:hasOntologyLanguage rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution
-admsapit:hasSemanticAssetDistribution rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasTask
-admsapit:hasTask rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/last
-admsapit:last rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/officialURI
-admsapit:officialURI rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/prefix
-admsapit:prefix rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/semanticAssetInUse
-admsapit:semanticAssetInUse rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/italia/onto/ADMS/status
 admsapit:status rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/italia/onto/ADMS/target
-admsapit:target rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/type
-admsapit:type rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/italia/onto/CLV/hasRankOrder
 :hasRankOrder rdf:type owl:AnnotationProperty ;
-              rdfs:range xsd:int .
+              rdfs:range xsd:int ;
+              rdfs:domain owl:Thing .
 
 
 ###  https://w3id.org/italia/onto/l0/controlledVocabulary
@@ -261,22 +168,71 @@ xsd:time rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/italia/onto/CLV#hasUTSType
-:hasUTSType rdf:type owl:ObjectProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:domain :UTS ;
-            rdfs:range :UTS .
-
 
 ###  https://w3id.org/italia/onto/CLV/countryIsInContinent
 :countryIsInContinent rdf:type owl:ObjectProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:domain :Country ;
-                      rdfs:range :Continent ;
-                      rdfs:comment "La relazione lega lo Stato al Continente di appartenenza"@it ,
-                                   "The relationship links the Country to its corresponding Continent."@en ;
-                      rdfs:label "Country is in Continent"@en ,
-                                 "Lo Stato è nel Continente"@it .
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Country ;
+                         rdfs:range :Continent ;
+                         rdfs:comment "La relazione lega lo Stato al Continente di appartenenza."@it ,
+                                      "The relationship links the Country to its corresponding Continent."@en ;
+                         rdfs:label "Country is in Continent"@en ,
+                                    "Lo Stato è nel Continente"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/hasInternalAccessCode
+:hasInternalAccessCode rdf:type owl:ObjectProperty ,
+                                      owl:InverseFunctionalProperty ;
+                             rdfs:domain :InternalAccess ;
+                             rdfs:range :Identifier ;
+                             rdfs:comment "La relazione lega l'Identificativo con l'Accesso interno."@it ,
+                                          "The relationship links the Identifier with the Internal Access."@en ;
+                             rdfs:label "ha codice di accesso interno"@it ,
+                                        "has internal access code"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/hasDUG
+:hasDUG rdf:type owl:ObjectProperty ,
+                                                owl:FunctionalProperty ;
+                                       rdfs:domain :StreetToponym ;
+                                       rdfs:range :DUG ;
+                                       rdfs:comment "La relazione lega il Nome dell'area di circolazione con la Denominazione urbanistica generica."@it ,
+                                                    "The relationship links the Circulation Area Name with the Generic Urban Designation."@en ;
+                                       rdfs:label "ha denominazione urbanistica generica"@it ,
+                                                  "has generic urban designation"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/hasAddressComplianceStatus
+:hasAddressComplianceStatus rdf:type owl:ObjectProperty ,
+                                            owl:InverseFunctionalProperty ;
+                                   rdfs:domain :Address ;
+                                   rdfs:range :AddressComplianceStatus ;
+                                   rdfs:comment "La relazione lega l'Indirizzo allo Stato di conformità dell'indirizzo."@it ,
+                                                "The relationship links the Address with the Address Compliance Status."@en ;
+                                   rdfs:label "ha stato di conformità di indirizzo"@it ,
+                                              "has address compliance status"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/hasDUGStatus
+:hasDUGStatus rdf:type owl:ObjectProperty ,
+                          owl:InverseFunctionalProperty ;
+                 rdfs:domain :DUG ;
+                 rdfs:range :DUGStatus ;
+                 rdfs:comment "La relazione lega la Denominazione urbanistica generica con lo Stato di DUG."@it ,
+                              "The relationship links the Generic Urban Designation with the DUG Status."@en ;
+                 rdfs:label "ha stato di DUG"@it ,
+                            "has DUG status"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/hasCoordinateAssignmentMethodType
+:hasCoordinateAssignmentMethodType rdf:type owl:ObjectProperty ,
+                                                   owl:FunctionalProperty ;
+                                          rdfs:domain :Geometry ;
+                                          rdfs:range :CoordinateAssignmentMethod ;
+                                          rdfs:comment "La relazione lega la Geometria con il Metodo di attribuzione coordinate."@it ,
+                                                       "The relationship links the Geometry with the Coordinate Assignment Method."@en ;
+                                          rdfs:label "ha tipo di metodo di attibuzione coordinate"@it ,
+                                                     "has coordinate assignment method type"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/hasAddress
@@ -298,7 +254,7 @@ xsd:time rdf:type rdfs:Datatype .
                 rdfs:subPropertyOf :hasAddressComponent ;
                 rdfs:domain :Address ;
                 rdfs:range :AddressArea ;
-                rdfs:comment "Questa proprietà è utilizzata per collegare l'indirizzo a un'area geografica o località che raggruppa diverse areee geografiche."@it ,
+                rdfs:comment "Questa proprietà è utilizzata per collegare l'indirizzo a un'area geografica o località che raggruppa diverse aree geografiche."@it ,
                              "This property is used in order to link the address to a geographical area or a locality that groups different addressable objects."@en ;
                 rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                 rdfs:label "ha area indirizzo"@it ,
@@ -378,7 +334,7 @@ xsd:time rdf:type rdfs:Datatype .
             rdfs:subPropertyOf :hasAddressComponent ;
             rdfs:domain :Address ;
             rdfs:range :Country ;
-            rdfs:comment "La proprietà collega i'indirizzo allo stato,. Esempio: Italia, Francia, ecc."@it ,
+            rdfs:comment "La proprietà collega i'indirizzo allo stato. Esempio: Italia, Francia, ecc."@it ,
                          "This property links the address to the country."@en ;
             rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
             rdfs:label "ha paese"@it ,
@@ -407,7 +363,7 @@ xsd:time rdf:type rdfs:Datatype .
                     rdfs:subPropertyOf :hasLowerRank ;
                     rdfs:domain :AdminUnitComponent ;
                     rdfs:range :AdminUnitComponent ;
-                    rdfs:comment "Questa proprietà mette in relazione componenti dell'indirizzo con un nome, dove la prima è meno specifica della seconda e non esise un'altra componente dell'indirizzo con nome che è sia più specifica della prima che più generale della seconda."@it ,
+                    rdfs:comment "Questa proprietà mette in relazione componenti dell'indirizzo con un nome, dove la prima è meno specifica della seconda e non esiste un'altra componente dell'indirizzo con nome che è sia più specifica della prima che più generale della seconda."@it ,
                                  "This property relates two named address components, where the first is less specific then the second and there is no other named address component that is both more specific than the first and more general than the second."@en ;
                     rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                     rdfs:label "ha livello diretto più basso"@it ,
@@ -435,8 +391,8 @@ xsd:time rdf:type rdfs:Datatype .
 :hasGeographicalDistribution rdf:type owl:ObjectProperty ;
                              rdfs:domain [ rdf:type owl:Class ;
                                            owl:unionOf ( :City
+                                                         :Province
                                                          :Region
-                                                         :UTS
                                                        )
                                          ] ;
                              rdfs:range :GeographicalDistribution ;
@@ -563,7 +519,7 @@ xsd:time rdf:type rdfs:Datatype .
 :hasProvince rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasAddressComponent ;
              rdfs:domain :Address ;
-             rdfs:range :UTS ;
+             rdfs:range :Province ;
              rdfs:comment "Questa proprietà collega l'indirizzo alla Provincia. Esempio di Provincia: \"PA\", \"BO\", \"RM\", ecc."@it ,
                           "This property links the address with the Province."@en ;
              rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
@@ -619,7 +575,7 @@ xsd:time rdf:type rdfs:Datatype .
                   rdfs:subPropertyOf :hasAddressComponent ;
                   rdfs:domain :Address ;
                   rdfs:range :StreetToponym ;
-                  rdfs:comment "Questa proprietà è usata per collegare l'indirizzo al suo toponymo stradale (o odonimo)"@it ,
+                  rdfs:comment "Questa proprietà è usata per collegare l'indirizzo al suo toponimo stradale (o odonimo)"@it ,
                                "This property is used to  to link an address to the street  toponym component of it."@en ;
                   rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                   rdfs:label "ha odonimo"@it ,
@@ -670,28 +626,31 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/italia/onto/CLV/isInContinent
 :isInContinent rdf:type owl:ObjectProperty ,
-                        owl:FunctionalProperty ;
-               rdfs:domain :TerritorialArea ;
-               rdfs:range :Continent ;
-               rdfs:comment "La relazione lega l'Area Territoriale al Continente"@it ,
-                            "The relationship links the Territorial Area to the Continent."@en ;
-               rdfs:label "Area Territoriale è nel Continente"@it ,
-                          "Territorial Area is in Continent"@en .
+                           owl:FunctionalProperty ;
+                  rdfs:domain :TerritorialArea ;
+                  rdfs:range :Continent ;
+                  rdfs:comment "La relazione lega l'Area geopolitica sub-continentale al Continente di appartenenza."@it ,
+                               "The relationship links the Sub-continental geopolitical area to its corresponding Continent."@none ,
+                               "The relationship links the Territorial Area to the Continent" ;
+                  rdfs:label "Area geopolitica sub-continentale è nel Continente"@it ,
+                             "Sub-continental geopolitical area is in Continent"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/isInTerritorialArea
 :isInTerritorialArea rdf:type owl:ObjectProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Country
-                                                 :Territory
-                                               )
-                                 ] ;
-                     rdfs:range :TerritorialArea ;
-                     rdfs:comment "La relazione lega il Paese (Stato o Territorio) all'Area Territoriale"@it ,
-                                  "The relationship links the Country (State or Territory) to the Territorial Area."@en ;
-                     rdfs:label "Country or Territory is in Territorial area"@en ,
-                                "Paese è nell'Area territoriale"@it .
+                                 owl:FunctionalProperty ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :Country
+                                                    :Territory
+                                                  )
+                                    ] ;
+                        rdfs:range :TerritorialArea ;
+                        rdfs:comment "La relazione lega il Paese (Stato o Territorio) all'Area geopolitica sub-continentale di appartenenza."@it ,
+                                     "The relationship links the Country (State or Territory) to its corresponding Sub-continental geopolitical area."@en ;
+                        rdfs:label "Country or Territory is in Sub-continental geopolitical area"@en ,
+                                   "Paese è nell'Area geopolitica sub-continentale"@it .
+
+
 
 
 ###  https://w3id.org/italia/onto/CLV/isSpatialCoverageOf
@@ -770,19 +729,19 @@ xsd:time rdf:type rdfs:Datatype .
                 rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                 rdfs:label "situated within"@en ,
                            "situato in"@it ;
-                owl:versionInfo "stabile"@it ,
-                                "stable"@en .
+                   owl:versionInfo "stabile"@it ,
+                                   "stable"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/territoryIsInContinent
 :territoryIsInContinent rdf:type owl:ObjectProperty ,
-                                 owl:FunctionalProperty ;
-                        rdfs:domain :Territory ;
-                        rdfs:range :Continent ;
-                        rdfs:comment "La relazione lega il Territorio al Continente di appartenenza"@it ,
-                                     "The relationship links the Territory to its respective Continent."@en ;
-                        rdfs:label "Il Territorio è nel Continente"@it ,
-                                   "Territory is in Continent"@en .
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :Territory ;
+                           rdfs:range :Continent ;
+                           rdfs:comment "La relazione lega il Territorio al Continente di appartenenza."@it ,
+                                        "The relationship links the Territory to its corresponding Continent."@en ;
+                           rdfs:label "Il Territorio è nel Continente"@it ,
+                                      "Territory is in Continent"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/withAddress
@@ -791,13 +750,22 @@ xsd:time rdf:type rdfs:Datatype .
              rdfs:domain :AddressInTime ;
              rdfs:range :Address ;
              rdfs:comment "Property that links the situation of an address that changes over time to the address itself."@en ,
-                          "Proprietà che collega la sitauzione di un indirizzo che cambia nel tempo all'indirizzo stesso."@it ;
+                          "Proprietà che collega la situazione di un indirizzo che cambia nel tempo all'indirizzo stesso."@it ;
              rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
              rdfs:label "con indirizzo"@it ,
                         "with address"@en ;
              owl:versionInfo "stabile"@it ,
                              "stable"@en .
 
+
+###  https://w3id.org/italia/onto/CLV/isSpecificUrbanDesignationOfMunicipality
+:isSpecificUrbanDesignationOfMunicipality rdf:type owl:ObjectProperty ;
+                                                rdfs:domain :DUG ;
+                                                rdfs:range :City ;
+                                                rdfs:comment "La relazione lega il Comune con la Denominazione urbanistica specifica."@it ,
+                                                             "The relationship links the Municipality with the Specific Urban Designation."@en ;
+                                                rdfs:label "is specific urban designation of the municipality"@en ,
+                                                           "è denominazione urbanistica specifica del comune"@it .
 
 ###  https://w3id.org/italia/onto/TI/atTime
 ti:atTime rdf:type owl:ObjectProperty .
@@ -807,26 +775,10 @@ ti:atTime rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  https://w3id.org/italia/onto/CLV#UtsTypeDescription
-:UtsTypeDescription rdf:type owl:DatatypeProperty ,
-                             owl:FunctionalProperty ;
-                    rdfs:domain :UTS ;
-                    rdfs:range xsd:string ;
-                    rdfs:label "uts type description"@en .
-
-
-###  https://w3id.org/italia/onto/CLV#taxCode
-:taxCode rdf:type owl:DatatypeProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :UTS ;
-         rdfs:range xsd:string ;
-         rdfs:label "tax code"@en .
-
-
 ###  https://w3id.org/italia/onto/CLV/acronym
 :acronym rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf l0:name ;
-         rdfs:domain :UTS ;
+         rdfs:domain :Province ;
          rdfs:range rdfs:Literal ;
          rdfs:comment "La sigla automobilistica con cui viene indicata la provincia."@it ,
                       "The acronym of the province that is typically used over the Italian territory for the license plate."@en ;
@@ -852,6 +804,17 @@ ti:atTime rdf:type owl:ObjectProperty .
                 "quota"@it ;
      owl:versionInfo "stabile"@it ,
                      "stable"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/DUGScope
+:DUGScope rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :DUG ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Questa proprietà rappresenta la categoria tipologica del DUG definita dai dizionari ufficiali Istat per l'identificazione univoca dell'indirizzo."@it ,
+                             "This property represents the DUG typological category defined by official Istat dictionaries for the unique identification of the address."@en ;
+                rdfs:label "DUG scope"@en ,
+                           "ambito di DUG"@it .
 
 
 ###  https://w3id.org/italia/onto/CLV/building
@@ -892,6 +855,89 @@ ti:atTime rdf:type owl:ObjectProperty .
                              "sistema di coordinate di riferimento"@it ;
                   owl:versionInfo "stabile"@it ,
                                   "stable"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/internalNumberUpdateDate
+:internalNumberUpdateDate rdf:type owl:DatatypeProperty ,
+                                            owl:FunctionalProperty ;						 
+                                   rdfs:range xsd:date ;
+                                   rdfs:comment "Questa proprietà rappresenta la data dell'ultimo aggiornamento delle informazioni a corredo del numero interno."@it ,
+                                                "This property represents the date of the last update of the information accompanying the internal number."@en ;
+                                   rdfs:label "data aggiornamento numero interno"@it ,
+                                              "internal number update date"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/streetNameUpdateDate
+:streetNameUpdateDate rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :StreetToponym ;
+                             rdfs:range xsd:date ;
+                             rdfs:comment "Questa proprietà rappresenta la data dell'ultimo aggiornamento di una qualsiasi informazione relativa all'odonimo."@it ,
+                                          "This property represents the date of the last update of any information related to the street name."@en ;
+                             rdfs:label "data aggiornamento odonimo"@it ,
+                                        "street name update date"@en .
+									 
+												 
+										  
+										 
+
+
+###  https://w3id.org/italia/onto/CLV/prefecturalAuthorizationDate
+:prefecturalAuthorizationDate rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain :StreetToponym ;
+                                 rdfs:range xsd:date ;
+                                 rdfs:comment "Questa proprietà rappresenta la data del provvedimento rilasciato dalla Prefettura per l'autorizzazione della denominazione ufficiale."@it ,
+                                              "This property represents the date of the authorization issued by the Prefecture for the official street naming"@en ;
+                                 rdfs:label "data autorizzazione prefettura"@it ,
+                                            "prefectural authorization date."@en .
+							  
+									 
+									
+
+
+###  https://w3id.org/italia/onto/CLV/municipalResolutionDate
+:municipalResolutionDate rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :StreetToponym ;
+                         rdfs:range xsd:date ;
+                         rdfs:comment "Questa proprietà rappresenta la data del provvedimento amministrativo con cui il Comune ha attribuito l'odonimo."@it ,
+                                      "This property represents the date of the administrative act by which the Municipality assigned the street name."@en ;
+                         rdfs:label "data delibera comunale"@it ,
+                                    "municipal resolution date"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/addressInsertionDate
+:addressInsertionDate rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :Address ;
+                             rdfs:range xsd:date ;
+                             rdfs:comment "Questa proprietà rappresenta la data di inserimento o modifica del numero civico nel sistema."@it ,
+                                          "This property represents the date the house number was entered or modified in the system."@en ;
+                             rdfs:label "address insertion date"@en ,
+                                        "data inserimento indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/internalNumberInsertionDate
+:internalNumberInsertionDate rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:range xsd:date ;
+                                 rdfs:comment "Questa proprietà rappresenta la data in cui l'accesso interno è stato registrato o modificato."@it ,
+                                              "This property represents the date the internal access point was registered or modified."@en ;
+                                 rdfs:label "data inserimento numero interno"@it ,
+                                            "internal number insertion date"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/streetNameInsertionDate
+:streetNameInsertionDate rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :StreetToponym ;
+                           rdfs:range xsd:date ;
+                           rdfs:comment "Questa proprietà rappresenta la data in cui il nome della strada è stato inserito o modificato nel sistema."@it ,
+                                        "This property represents the date the street name was entered or modified in the system."@en ;
+                           rdfs:label "data inserimento odonimo"@it ,
+                                      "street name insertion date"@en .
+
 
 
 ###  https://w3id.org/italia/onto/CLV/exponent
@@ -953,10 +999,15 @@ ti:atTime rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/italia/onto/CLV/hasRankOrder
-:hasRankOrder rdf:type owl:DatatypeProperty ;
-              rdfs:domain owl:Thing .
-
-
+:hasRankOrder rdf:type owl:DatatypeProperty .
+											   
+											
+																																																					 
+																																																											 
+																		
+													
+														
+												 
 ###  https://w3id.org/italia/onto/CLV/identifierType
 :identifierType rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Identifier ;
@@ -968,6 +1019,18 @@ ti:atTime rdf:type owl:ObjectProperty .
                            "tipo identificativo"@it ;
                 owl:versionInfo "stabile"@it ,
                                 "stable"@en .
+
+###  https://w3id.org/italia/onto/CLV/cityBlock
+:cityBlock rdf:type owl:DatatypeProperty ,
+									  
+                     owl:FunctionalProperty ;
+            rdfs:domain :CivicNumbering ;
+            rdfs:range xsd:int ;
+            rdfs:comment "Questa proprietà rappresenta il valore assegnato all’isolato secondo la successione naturale dei numeri. Identificativo utilizzato dal Comune ove presente."@it ,
+                         "This property represents the value assigned to the city block according to the natural sequence of numbers. It is an identifier used by the municipality where available."@en ;
+														   
+            rdfs:label "city block"@en ,
+                       "isolato"@it .
 
 
 ###  https://w3id.org/italia/onto/CLV/lat
@@ -1001,16 +1064,25 @@ ti:atTime rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/italia/onto/CLV/metric
-:metric rdf:type owl:DatatypeProperty ;
+:metric rdf:type owl:DatatypeProperty ;										 
         rdfs:domain :CivicNumbering ;
         rdfs:range rdfs:Literal ;
-        rdfs:comment "Valore del numero civico assegnato all’accesso esterno espresso in metri, utilizzato in caso di adozione del sistema metrico anziché della successione naturale dei numeri"@it ;
+        rdfs:comment "Valore del numero civico assegnato all’accesso esterno espresso in metri, utilizzato in caso di adozione del sistema metrico anziché della successione naturale dei numeri"@it ;																									  
         rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
         rdfs:label "metric"@en ,
                    "valore metrico"@it ;
         owl:versionInfo "stabile"@it ,
                         "stable"@en .
 
+
+###  https://w3id.org/italia/onto/CLV/odonimoNonInLinguaItaliana
+:odonimoNonInLinguaItaliana rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :StreetToponym ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:comment "Questa proprietà rappresenta l'odonimo in una lingua diversa dall'italiano."@it ,
+                                            "This property represents the odonym in a language other than Italian."@en ;
+                               rdfs:label "odonimo non in lingua italiana"@it ,
+                                          "odonym street name"@en .
 
 ###  https://w3id.org/italia/onto/CLV/officialStreetName
 :officialStreetName rdf:type owl:DatatypeProperty ;
@@ -1029,9 +1101,9 @@ ti:atTime rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/italia/onto/CLV/peculiarity
 :peculiarity rdf:type owl:DatatypeProperty ;
-             rdfs:domain :CivicNumbering ;
+             rdfs:domain :CivicNumbering ;											
              rdfs:range rdfs:Literal ;
-             rdfs:comment "Valore utilizzato in presenza di uno specifico metodo di classificazione della numerazione civica, validata dall’Istat (es. ROSSO e NERO); Potrebbe forse essere utilizzato anche per indicare A, B , bis che si riferiscono ai numeri civici di accesso esterno."@it ;
+             rdfs:comment "Valore utilizzato in presenza di uno specifico metodo di classificazione della numerazione civica, validata dall’Istat (es. ROSSO e NERO); Potrebbe forse essere utilizzato anche per indicare A, B , bis che si riferiscono ai numeri civici di accesso esterno."@it ;																															   
              rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
              rdfs:label "peculiarity"@en ,
                         "specificità"@it ;
@@ -1053,6 +1125,26 @@ ti:atTime rdf:type owl:ObjectProperty .
           owl:versionInfo "stabile"@it ,
                           "stable"@en .
 
+###  https://w3id.org/italia/onto/CLV/prefecturalAuthorizationProtocol
+:prefecturalAuthorizationProtocol rdf:type owl:DatatypeProperty ,
+                                                owl:FunctionalProperty ;
+                                       rdfs:domain :StreetToponym ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:comment "Questa proprietà rappresenta il codice del provvedimento rilasciato dalla Prefettura per l'autorizzazione della denominazione ufficiale."@it ,
+                                                    "This property represents the protocol of the authorization issued by the Prefecture for the official street naming."@en ;
+                                       rdfs:label "prefectural authorization protocol"@en ,
+                                                  "protocollo autorizzazione prefettura"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/municipalResolutionProtocol
+:municipalResolutionProtocol rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :StreetToponym ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:comment "Questa proprietà rappresenta la data del provvedimento amministrativo con cui il Comune ha attribuito l'odonimo."@it ,
+                                            "This property represents the protocol of the administrative act by which the Municipality assigned the street name."@en ;
+                               rdfs:label "municipal resolution protocol"@en ,
+                                          "protocollo delibera comunale"@it .
 
 ###  https://w3id.org/italia/onto/CLV/serialization
 :serialization rdf:type owl:DatatypeProperty ;
@@ -1079,6 +1171,27 @@ ti:atTime rdf:type owl:ObjectProperty .
            owl:versionInfo "stabile"@it ,
                            "stable"@en .
 
+
+###  https://w3id.org/italia/onto/CLV/addressComplianceStatusValue
+:addressComplianceStatusValue rdf:type owl:DatatypeProperty ,
+                                           owl:FunctionalProperty ;
+                                  rdfs:domain :AddressComplianceStatus ;
+                                  rdfs:range rdfs:Literal ;
+                                  rdfs:comment "Questa proprietà rappresenta lo stato di conformità dell'indirizzo."@it ,
+                                               "This property represents the compliance status of the address."@en ;
+                                  rdfs:label "address compliance status"@en ,
+                                             "status di conformità di indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/DUGStatusValue
+:DUGStatusValue rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :DUGStatus ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Questa proprietà rappresenta lo stato di DUG."@it ,
+                             "This property represents the status of the Generic Urban Designation (DUG)."@en ;
+                rdfs:label "DUG status"@en ,
+                           "status di DUG"@it .
 
 ###  https://w3id.org/italia/onto/CLV/streetNumber
 :streetNumber rdf:type owl:DatatypeProperty ;
@@ -1257,7 +1370,19 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
 
 ###  https://w3id.org/italia/onto/CLV/Address
 :Address rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+													 
+                                  owl:onProperty :hasAddressComplianceStatus ;
+                                  owl:someValuesFrom owl:Thing
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :addressInsertionDate ;
+                                  owl:someValuesFrom rdfs:Literal
+                                ] ;
          rdfs:subClassOf :Feature ,
+		 
+
+                           
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAddressComponent ;
                            owl:someValuesFrom :AddressComponent
@@ -1274,13 +1399,13 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
                            owl:onProperty :hasNumber ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :CivicNumbering
-                         ] ,
+                         ] ,							   
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasStreetToponym ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :StreetToponym
-                         ] ,
-                         [ rdf:type owl:Restriction ;
+                        ] ,
+                         [ rdf:type owl:Restriction ;									
                            owl:onProperty :hasAdressinTime ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :AddressInTime
@@ -1320,7 +1445,7 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
                                owl:someValuesFrom rdfs:Literal
                              ] ;
              rdfs:comment "An address component which represents the name of a geographic area or a locality that groups a number of addressable objects for addressing purposes, without being an administrative unit."@en ,
-                          "E' una componente dell'indirizzo che rappresenta il nome di un'area geografica o di una località che raggruppa un numero di oggetti indirizzatibili, per scopi di indirizzamento, senza necessariamente essere un'unità amministrativa territoriale. Nell'ambito dell'anagrafe nazionale numeri civici e strade urbane (ANNCSU) la classe può essere usata per rappresentare la LOCALITA’: una porzione più o meno vasta di territorio comunale, sulla quale insistono una o più aree di circolazione (presente se fornita dal Comune)."@it ;
+                          "E' una componente dell'indirizzo che rappresenta il nome di un'area geografica o di una località che raggruppa un numero di oggetti indirizzabili, per scopi di indirizzamento, senza necessariamente essere un'unità amministrativa territoriale. Nell'ambito dell'anagrafe nazionale numeri civici e strade urbane (ANNCSU) la classe può essere usata per rappresentare la LOCALITA’: una porzione più o meno vasta di territorio comunale, sulla quale insistono una o più aree di circolazione (presente se fornita dal Comune)."@it ;
              rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
              rdfs:label "Address Area"@en ,
                         "Area dell'Indirizzo"@it ;
@@ -1352,7 +1477,7 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
                rdfs:subClassOf l0:EventOrSituation ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty ti:atTime ;
-                                 owl:someValuesFrom ti:TimeInterval
+                                 owl:someValuesFrom ti:TimeInterval																	   
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :nextAddress ;
@@ -1396,18 +1521,10 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
 
 ###  https://w3id.org/italia/onto/CLV/AutonomousProvince
 :AutonomousProvince rdf:type owl:Class ;
-                    rdfs:subClassOf :UTS ;
-                    rdfs:comment """Province di Trento e di Bolzano, il cui riconoscimento dello Statuto speciale attribuisce loro particolari forme di autonomia, compresa quella legislativa, assimilandole alle regioni. 
-Le due province, insieme alla loro regione di appartenenza, il Trentino-Alto Adige, formano un sistema di enti autonomi, fra loro collegati, unico all'interno dell'ordinamento regionale italiano."""@it ,
-                                 """The Provinces of Trento and Bolzano, whose recognition under the Special Statute grants them specific forms of autonomy, including legislative autonomy, making them similar to regions.
-The two provinces, together with their belonging region, Trentino-Alto Adige, form a system of autonomous entities, interconnected with each other, unique within the Italian regional system."""@en ;
-                    rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-                    rdfs:label "Autonomous Province"@en ,
-                               "Provincia autonoma"@it ;
-                    owl:versionInfo "stabile"@it ,
-                                    "stable"@en ;
-                    prov:wasDerivedFrom skos:Concept .
-
+                       rdfs:comment "Province di Trento e di Bolzano, il cui riconoscimento dello statuto speciale attribuisce loro particolari forme di autonomia, compresa quella legislativa, assimilandole alle regioni. Le due province, insieme alla loro regione di appartenenza, il Trentino-Alto Adige, formano un sistema di enti autonomi, fra loro collegati, unico all'interno dell'ordinamento regionale italiano."@it ,
+                                    "The Provinces of Trento and Bolzano whose special legal status provides for specific autonomous powers including the legislative function, thus making them similar to regions. These two provinces together with the region they belong to, Trentino-Alto Adige, form a system of autonomous bodies linked to one another, that is unique in the Italian regional asset."@en ;
+                       rdfs:label "Autonomous province"@en ,
+                                  "Provincia autonoma"@it .
 
 ###  https://w3id.org/italia/onto/CLV/CensusSection
 :CensusSection rdf:type owl:Class ;
@@ -1432,15 +1549,15 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                         owl:onProperty :hasHigherRank ;
                         owl:allValuesFrom [ rdf:type owl:Class ;
                                             owl:unionOf ( :Country
+                                                          :Province
                                                           :Region
-                                                          :UTS
                                                         )
                                           ]
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasDirectHigherRank ;
                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :UTS
+                        owl:onClass :Province
                       ] ;
       rdfs:comment "Questa classe rappresenta la città (Comune)"@it ,
                    "This class represents the city"@en ;
@@ -1475,7 +1592,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                                   owl:onProperty :peculiarity ;
                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                 ] ;
-                rdfs:comment "Questa classe rappresenta il numero civico dell'indirizzo che individua l' ACCESSO ESTERNO, cioè quello che dall’area di circolazione immette, direttamente o indirettamente, alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili."@it ,
+                rdfs:comment "Questa classe rappresenta il numero civico dell'indirizzo che individua l'ACCESSO ESTERNO, cioè quello che dall’area di circolazione immette, direttamente o indirettamente, alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili."@it ,
                              "This class represents the civic number, the number of the street. They are the numbers that identify external accesses."@en ;
                 rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                 rdfs:label "Civic Numbering"@en ,
@@ -1489,12 +1606,11 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
 
 ###  https://w3id.org/italia/onto/CLV/Continent
 :Continent rdf:type owl:Class ;
-           rdfs:subClassOf :Feature ;
-           rdfs:comment "A continent is the largest of the divisions into which the Earth's land surface is separated."@en ,
-                        "Un continente  è la più vasta delle ripartizioni con le quali si suddividono le terre emerse della crosta terrestre."@it ;
-           rdfs:label "Continent"@en ,
-                      "Continente"@it .
-
+              rdfs:subClassOf :Feature ;
+              rdfs:comment "Territorial macro-area defined by the aggregation of foreign countries (states and territories) according to geographical, geopolitical, or historical-cultural criteria. Within the national statistical framework, Istat adopts a classification based on geographical criteria, dividing the world into five continents: 1. Europe; 2. Africa; 3. Asia; 4. America; 5. Oceania."@en ,
+                           "Macro-area territoriale definita dall’aggregazione di Paesi esteri (stati e territori) secondo criteri di tipo geografico, geopolitico o storico-culturale. In ambito statistico nazionale, l’Istat adotta la ripartizione basata su criteri geografici, suddividendo il mondo in 5 continenti: 1. Europa; 2. Africa; 3. Asia; 4. America; 5. Oceania."@it ;
+              rdfs:label "Continent"@en ,
+                         "Continente"@it .
 
 ###  https://w3id.org/italia/onto/CLV/Country
 :Country rdf:type owl:Class ;
@@ -1508,13 +1624,14 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                            owl:allValuesFrom [ rdf:type owl:Class ;
                                                owl:unionOf ( :City
                                                              :District
+                                                             :Province
                                                              :Region
-                                                             :UTS
                                                            )
                                              ]
                          ] ;
-         rdfs:comment "Questa classe rappresenta lo Stato. Esempio: \"Italia - Italy\" oppure \"United Kingdom\", ecc. E' l'unità amministrativa più alta nella gerarchia di contenimento territoriale dell'indirizzo. Nel Core Location Vocabulary del programma ISA2 essa è modellata con la proprietà dell'indirizzo nominata adminUnit1"@it ,
-                      "This class represents the  uppermost administrative unit for the address, almost always a country. \"United Kingdom\", \"Italy\", etc. In the Core Location Vocabulary this is modelled as adminUnit1."@en ;
+		 owl:disjointWith :Territory ;									
+         rdfs:comment "Ente primario e originario, autonomo e indipendente da ogni altra entità politica la cui sovranità si estende al suo territorio e al suo popolo. Esempio: \"Italia - Italy\" oppure \"United Kingdom\", ecc. Nel Core Location Vocabulary del programma ISA2 rappresenta l'unità amministrativa più alta nella gerarchia di contenimento territoriale dell'indirizzo ed è modellata con la proprietà dell'indirizzo nominata adminUnit1."@it ,
+                      "Political entity that is represented by one centralized government that has sovereignty over a geographic area and a permanent population. Example: \"Italia - Italy\" or \"United Kingdom\", etc. Within the Core Location Vocabulary of the ISA2 Programme, it represents the highest administrative unit in the territorial containment hierarchy of the address and is modelled using the address property named adminUnit1."@en ;
          rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
          rdfs:label "Country"@en ,
                     "Stato"@it ;
@@ -1524,6 +1641,22 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
          :hasRankOrder 1 ;
          l0:controlledVocabulary <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/foreign-countries> ,
                                  <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy> .
+
+
+###  https://w3id.org/italia/onto/CLV/DUG
+:DUG rdf:type owl:Class ;
+                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :hasDUGStatus ;
+                                                           owl:someValuesFrom owl:Thing
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :DUGScope ;
+                                                           owl:someValuesFrom rdfs:Literal
+                                                         ] ;
+                                     rdfs:comment "Questa classe rappresenta la tipologia di area di circolazione (es. via, piazza, viale, ecc.)."@it ,
+                                                  "This class represents the type of circulation area (e.g., street, square, avenue)."@en ;
+                                     rdfs:label "Denominazione urbanistica generica"@it ,
+                                                "Generic urban denomination"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/District
@@ -1540,12 +1673,12 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                             owl:onClass [ rdf:type owl:Class ;
                                           owl:unionOf ( :City
                                                         :Country
+                                                        :Province
                                                         :Region
-                                                        :UTS
                                                       )
                                         ]
                           ] ;
-          rdfs:comment "Questa classe rappresenta un minicipio/quartiere del comune"@it ,
+          rdfs:comment "Questa classe rappresenta un municipio/quartiere del comune"@it ,
                        "This class represents a district of a city"@en ;
           rdfs:isDefinedBy : ;
           rdfs:label "District"@en ,
@@ -1579,7 +1712,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                                            ]
                          ] ;
          owl:disjointWith :Geometry ;
-         rdfs:comment "Questa classe è utilizzata per rappresentare un'entittà geografica o localizzazione."@it ,
+         rdfs:comment "Questa classe è utilizzata per rappresentare un'entità geografica o localizzazione."@it ,
                       "This class is used to represent any geographical entity."@en ;
          rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
          rdfs:label "Feature (Location)"@en ,
@@ -1590,25 +1723,17 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
          prov:wasInfluencedBy <http://https://www.w3.org/ns/locn#Location> ,
                               <http://www.geonames.org/ontology#Feature> .
 
-
 ###  https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium
 :FreeMunicipalConsortium rdf:type owl:Class ;
-                         rdfs:subClassOf :UTS ;
-                         rdfs:comment """An intermediate-level territorial entity, composed of a group of neighboring municipalities.
-As a result of Regional Law No. 15 of August 4, 2015, the administrative structure of Sicily provides for the operation of free municipal consortia, as wide-area entities, in place of the abolished provinces of the same name."""@en ,
-                                      """Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
-Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrativo della Sicilia prevede l’esercizio dei liberi consorzi comunali, quali enti di area vasta, in luogo delle omonime province soppresse."""@it ;
-                         rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-                         rdfs:label "Free municipal consortium"@en ,
-                                    "Libero consorzio di comuni"@it ;
-                         owl:versionInfo "stabile"@it ,
-                                         "stable"@en ;
-                         prov:wasDerivedFrom skos:Concept .
-
-
+                            rdfs:comment """Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
+Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrativo della Sicilia prevede l’esercizio dei liberi consorzi comunali, quali enti di area vasta, in luogo delle omonime province soppresse."""@it ,
+                                         """Second-level large territorial body formed by an aggregation of nearby municipalities same as provinces and metropolitan cities. 
+Due to the provisions contained in law n. 15 of August 4, 2015, the administrative structure of the region Sicilia envisages the exercise of free municipal consortia in place of the abolished provinces with the same name."""@en ;
+                            rdfs:label "Free municipal consortium"@en ,
+                                       "Libero consorzio"@it .
 ###  https://w3id.org/italia/onto/CLV/GeographicalDistribution
 :GeographicalDistribution rdf:type owl:Class ;
-                          rdfs:subClassOf :AdminUnitComponent ;
+                      
                           rdfs:comment "Questa classe rappresenta la ripartizione geografica del territorio italiano. Essa assume i valori predefiniti definiti nel seguente vocabolario controllato https://w3id.org/italia/controlled-vocabulary/territorial-classifications/geographical-distribution"@it ,
                                        "This class represents the geographical distribution of the Italian territory. It assumes the predefined values defined in the following controlled vocaulary https://w3id.org/italia/controlled-vocabulary/territorial-classifications/geographical-distribution"@en ;
                           rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
@@ -1664,8 +1789,8 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
 
 ###  https://w3id.org/italia/onto/CLV/GeometryType
 :GeometryType rdf:type owl:Class ;
-              rdfs:subClassOf :Identifier ;
-              rdfs:comment "La classe rappresenta il tipo di geometria. Attualmente, la classe asusme questi valori: poligono, linea, punto, riquadro."@it ,
+              rdfs:subClassOf l0:Characteristic ;
+              rdfs:comment "La classe rappresenta il tipo di geometria. Attualmente, la classe assume questi valori: poligono, linea, punto, riquadro."@it ,
                            "The class represents the type of geometry. At the time being the class assume the following values: Polygon, Point, Box, Line."@en ;
               rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
               rdfs:label "Geometry Type"@en ,
@@ -1676,11 +1801,11 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
 
 ###  https://w3id.org/italia/onto/CLV/GovernedTerritory
 :GovernedTerritory rdf:type owl:Class ;
-                   rdfs:subClassOf :Territory ;
-                   rdfs:comment "Area or region that is under the control or jurisdiction of a government or authority."@en ,
-                                "Zona o area che è sotto il controllo o la giurisdizione di un governo o autorità"@it ;
-                   rdfs:label "GovernedTerritory"@en ,
-                              "Territorio governato"@it .
+                      rdfs:subClassOf :Territory ;
+                      rdfs:comment "Area geografica dipendente da uno Stato sovrano, sottoposta alla sovranità territoriale effettiva ed esclusiva di uno Stato riconosciuto, nell’ambito della quale le funzioni di governo sono esercitate in modo diretto o tramite enti territoriali dotati di autonomia, secondo l’ordinamento vigente. Costituisce unità di interesse statistico secondo le modalità definite dai regolamenti dell’Ue."@it ,
+                                   "Geographical area dependent on a sovereign State, subject to the effective and exclusive territorial sovereignty of a recognized State, within which governmental functions are exercised either directly or through autonomous territorial entities, in accordance with the applicable legal order. It constitutes a statistical unit of interest according to the provisions established by EU regulations."@en ;
+                      rdfs:label "Governed territory"@en ,
+                                 "Territorio governato"@it .
 
 
 ###  https://w3id.org/italia/onto/CLV/Identifier
@@ -1711,11 +1836,28 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
 
 ###  https://w3id.org/italia/onto/CLV/InternalAccess
 :InternalAccess rdf:type owl:Class ;
-                rdfs:subClassOf l0:Characteristic ,
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasInternalAccessCode ;
+                                         owl:someValuesFrom owl:Thing
+                                       ] ;
+               rdfs:subClassOf l0:Characteristic ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :refersToExternalAccess ;
                                   owl:someValuesFrom :Address
-                                ] ,
+                                ] ,						
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ti:atTime ;
+                                     owl:someValuesFrom owl:Thing
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :internalNumberUpdateDate ;
+                                     owl:someValuesFrom rdfs:Literal
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :internalNumberInsertionDate ;
+                                     owl:someValuesFrom rdfs:Literal
+                                   ] ,
+								
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :staircase ;
                                   owl:allValuesFrom rdfs:Literal
@@ -1726,6 +1868,7 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :building ;
+								  
                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                 ] ,
                                 [ rdf:type owl:Restriction ;
@@ -1740,7 +1883,7 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
                                   owl:onProperty :yard ;
                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                 ] ;
-                rdfs:comment "Questa classe rappresenta i numeri interni, relativi alll'accesso interno associato all'accesso esterno. Gli accessi interni sono quelli che da spazi privati o da scale immettono direttamente alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili."@it ,
+                rdfs:comment "Questa classe rappresenta i numeri interni, relativi all'accesso interno associato all'accesso esterno. Gli accessi interni sono quelli che da spazi privati o da scale immettono direttamente alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili."@it ,
                              "This class represents the internal access that refers to the external access . The internal access consists of a set of informaton related to the Internal accesses (e.g., building, flat number) to private spaces or staircase that allow one to access to private residential units."@en ;
                 rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                 rdfs:label "Accesso Interno"@it ,
@@ -1748,50 +1891,75 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
                 owl:versionInfo "stabile"@it ,
                                 "stable"@en .
 
+###  https://w3id.org/italia/onto/CLV/CoordinateAssignmentMethod
+:CoordinateAssignmentMethod rdf:type owl:Class ;
+                                  rdfs:comment "Questa classe rappresenta la modalità con cui il Comune ha attribuito le coordinate (es. rilevazione strumentale, derivazione indiretta ecc.)."@it ,
+                                               "This class represents the method by which the municipality assigned the coordinates (e.g. instrumental survey, indirect derivation, etc.)."@en ;
+                                  rdfs:label "Coordinate assignment method"@en ,
+                                             "Metodo di attribuzione coordinate"@it .
+
 
 ###  https://w3id.org/italia/onto/CLV/MetropolitanCity
 :MetropolitanCity rdf:type owl:Class ;
-                  rdfs:subClassOf :UTS ;
-                  rdfs:comment """An intermediate-level territorial entity, composed of a group of neighboring municipalities.
-Introduced with the 2001 reform of Title V of the Constitution, metropolitan cities are recognized as wide-area territorial entities, on par with provinces (Article 114). In regions with ordinary statutes, the establishment of metropolitan cities is regulated by Law No. 56 of April 7, 2014, while in regions with special statutes, their regulation is deferred to regional laws."""@en ,
-                               """Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
-Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali."""@it ;
-                  rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-                  rdfs:label "Città metropolitana"@it , "Metropolitan city"@en ;
-                  owl:versionInfo "stabile"@it ,
-                                  "stable"@en ;
-                  prov:wasDerivedFrom skos:Concept .
+                     rdfs:comment """Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
+Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali.uali enti di area vasta, in luogo delle omonime province soppresse. """@it ,
+                                  """Territorial body with constitutional relevance (art. 114 of  the Italian Constitution) formed by an aggregation of nearby municipalities. 
+Introduced with the reform of title V of  the Italian Constitution in 2001, metropolitan cities are acknowledged as territorial bodies with a large surface defined by the aggregation of nearby municipalities in a similar way as provinces (art. 114). In regions with standard legal status the setting up of metropolitan cities is ruled by law n. 56 of April 7, 2014, while in regions under special statutes their regulation is referred to the regional laws."""@en ;
+                     rdfs:label "Città metropolitana"@it ,
+                                "Metropolitan city"@en .
 
 
-###  https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority
-:NonAdministrativeAuthority rdf:type owl:Class ;
-                            rdfs:subClassOf :UTS ;
-                            rdfs:comment "Intermediate-level territorial units between the Municipality and the Region, corresponding to the former provinces of Friuli Venezia Giulia, which were abolished according to the procedures outlined in Regional Law No. 20 of December 20, 2016."@en ,
-                                         "Unità territoriali di livello intermedio tra il Comune e la Regione, corrispondenti alle ex province del Friuli-Venezia Giulia, cessate secondo le modalità espresse con legge regionale 20 dicembre 2016, n. 20"@it ;
-                            rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-                            rdfs:label "Ex Provincia"@it ,
-                                       "Non administrative authority"@en ,
-                                       "Unità non amministrativa territoriale"@it ;
-                            owl:versionInfo "stabile"@it ,
-                                            "stable"@en ;
-                            prov:wasDerivedFrom skos:Concept .
+###  https://w3id.org/italia/onto/CLV/Non-administrativeUnit
+:Non-administrativeUnit rdf:type owl:Class ;
+                           rdfs:comment "Territorial units at a intermediate area level corresponding to the former provinces of the region Friuli-Venezia Giulia, which were deleted following the provisions of regional Law n. 20 of December 20, 2016 (Ordinary Supplement n. 55 to Official Regional Bullettin n. 50 of December 14, 2016)."@en ,
+                                        "Unità territoriali di livello intermedio tra il Comune e la Regione, corrispondenti alle ex province del Friuli-Venezia Giulia, cessate secondo le modalità espresse con legge regionale 20 dicembre 2016, n. 20."@it ;
+                           rdfs:label "Non-administrative unit"@en ,
+                                      "Unità non amministrativa"@it .
 
 
 ###  https://w3id.org/italia/onto/CLV/Province
 :Province rdf:type owl:Class ;
-          rdfs:subClassOf :UTS ,
+          rdfs:subClassOf :AdminUnitComponent ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDirectLowerRank ;
+                            owl:allValuesFrom :City
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasLowerRank ;
+                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( :City
+                                                              :District
+                                                            )
+                                              ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDirectHigherRank ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Region
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasHigherRank ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass [ rdf:type owl:Class ;
+                                          owl:unionOf ( :Country
+                                                        :Region
+                                                      )
+                                        ]
+                          ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :acronym ;
                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
                           ] ;
-          rdfs:comment "An intermediate-level territorial entity [Article 114 of the Constitution], composed of a group of neighboring municipalities, the most important of which serves as its capital. Since 2015, as a result of the provisions in Law No. 56 of April 7, 2014, provinces, like metropolitan cities, are recognized as second-level wide-area entities."@en ,
-                       "Ente territoriale di livello intermedio [art. 114 Cost.], costituito da un aggregato di comuni limitrofi, il più importante dei quali ne costituisce il capoluogo. Dal 2015, per effetto della normativa contenuta nella legge 7 aprile 2014, n. 56, le province, al pari delle città metropolitane sono riconosciute enti di area vasta di secondo livello."@it ;
+             rdfs:comment "Unità territoriale di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale.  "@it ,
+                          "Terrritorial units of intermediate area level between the municipality and the region, valid since 2015. Besides provinces and metropolitan cities, since 2015 those units have included free municipal consortiums and non-administrative centres (former provinces of the region Friuli-Venezia Giulia). "@en ;
           rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-          rdfs:label "Province"@en ,
-                     "Provincia"@it ;
+          rdfs:label "Provincia"@it ,
+                     "Province"@en ;
           owl:versionInfo "stabile"@it ,
                           "stable"@en ;
-          prov:wasDerivedFrom skos:Concept .
+          prov:wasDerivedFrom skos:Concept ;
+          :hasRankOrder 3 ;
+          l0:controlledVocabulary <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> .
 
 
 ###  https://w3id.org/italia/onto/CLV/Region
@@ -1815,8 +1983,8 @@ Introdotte con la riforma del titolo V della Costituzione nel 2001, le città me
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onClass :Country
                         ] ;
-        rdfs:comment "Questa classe rappresenta la componente Regione dell'Indirizzo."@it ,
-                     "This class represents the Region of the Address."@en ;
+        rdfs:comment "Ente territoriale autonomo rappresentativo di una collettività stanziata su un determinato territorio, dotato di propri poteri e funzioni e di un ordinamento autonomo secondo i principi fissati dalla Costituzione (art. 114 Cost.).Lo Stato italiano è diviso in 20 regioni, di cui 5 sono dotate di uno statuto speciale di autonomia (art. 116 Cost.), tra queste il Trentino-Alto Adige e la Valle d'Aosta, nel rispetto delle minoranze linguistiche, sono riportate con le denominazioni bilingue di Trentino-Alto Adige/Südtirol e Valle d'Aosta/Vallée d'Aoste."@it ,
+                     "Public body with constitutional relevance (art. 114) representing a community of residents living in a specific territory. It has its own powers and functions as well as an autonomous legislation as envisaged for by the Italian Constitution and constitutional laws. The initial 19 regions set up in 1946 by the Italian Constitution became 20 in 1963 following the separation of the region Abruzzi and Molise into two: Abruzzi and Molise; 5 out of the 20 regions have a special statutes  and one of these, namely Trentino-Alto Adige, is formed by the only two Italian autonomous provinces: Trento and Bolzano. These have the same legislative powers as the regions with special legal status. In order to respect linguistic minorities, Trentino-Alto Adige and Valle d'Aosta are reported with the bilingual denomination of Trentino-Alto Adige/Südtirol and Valle d'Aosta/Vallée d'Aoste."@en ;
         rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
         rdfs:label "Region"@en ,
                    "Regione"@it ;
@@ -1844,18 +2012,108 @@ Introdotte con la riforma del titolo V della Costituzione nel 2001, le città me
                prov:wasDerivedFrom <http://www.opengis.net/ont/geosparql#SpatialObject> .
 
 
+###  https://w3id.org/italia/onto/CLV/SpecialStatusRegion
+:SpecialStatusRegion rdf:type owl:Class ;
+                        rdfs:subClassOf :Region ;
+                        rdfs:comment """Public body with constitutional relevance (art. 114) representing a community of residents living in a specific territory. It has its own powers and functions as well as an autonomous legislation within the limits set by the Italian Constitution and constitutional laws. The Italian regions with special statutes are: Valle d’Aosta, Trentino-Alto Adige, Friuli-Venezia Giulia, Sicilia and Sardegna. 
+Trentino-Alto Adige is  formed by the only two Italian autonomous provinces: Trento and Bolzano. These have the same legislative powers as the regions with special statutes. In order to respect linguistic minorities, Trentino-Alto Adige and Valle d'Aosta are reported with the bilingual denomination of Trentino-Alto Adige/Südtirol and Valle d'Aosta/Vallée d'Aoste."""@en ,
+                                     "Regione a cui sono costituzionalmente riconosciute particolari forme di autonomia (art. 116 Cost.). Le regioni a statuto speciale sono: la Valle d’Aosta, il Trentino-Alto Adige, il Friuli-Venezia Giulia, la Sicilia e la Sardegna. "@it ;
+                        rdfs:label "Region with special legal status"@en ,
+                                   "Regione a statuto speciale"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/AddressComplianceStatus
+:AddressComplianceStatus rdf:type owl:Class ;
+                                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                       owl:onProperty [ owl:inverseOf :hasAddressComplianceStatus
+                                                                      ] ;
+                                                       owl:someValuesFrom owl:Thing
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :addressComplianceStatusValue ;
+                                                       owl:someValuesFrom rdfs:Literal
+                                                     ] ;
+                                 rdfs:subClassOf ti:TimeIndexedEvent ;
+                                 rdfs:comment "Questa classe rappresenta la condizione rilevata tramite appositi marcatori che segnalano se l'indirizzo rispetta pienamente le regole tecniche stabilite dall'Istat."@it ,
+                                              "This class represents the condition identified through specific markers indicating whether the address fully complies with the technical rules established by ISTAT."@en ;
+                                 rdfs:label "Address compliance status"@en ,
+                                            "Stato di conformità di indirizzo"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/DUGStatus
+:DUGStatus rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :DUGStatusValue ;
+                                     owl:someValuesFrom rdfs:Literal
+                                   ] ;
+               rdfs:subClassOf ti:TimeIndexedEvent ;
+               rdfs:comment "La classe rappresenta l'indicatore della rispondenza tecnica della Denominazione Urbanistica Generica (DUG) ai criteri di standardizzazione stabiliti a livello nazionale."@it ,
+                            "This class represents the indicator of the technical compliance of the Generic Urban Designation (DUG) with the standardization criteria established at the national level."@en ;
+               rdfs:label "DUG status"@en ,
+                          "Stato di DUG"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/CompliantAddressStatus
+:CompliantAddressStatus rdf:type owl:Class ;
+                             owl:disjointWith :NonCompliantAddressStatus ;
+                             rdfs:comment "Questa classe rappresenta il grado di rispondenza di un indirizzo ai requisiti tecnici e alle regole di standardizzazione stabiliti dall'Istat per l'Archivio Nazionale dei Numeri Civici delle Strade Urbane. (ANNCSU)."@it ,
+                                          "This class represents the degree of compliance of an address with the technical requirements and standardization rules established by ISTAT for the ANNCSU."@en ;
+                             rdfs:label "Compliant address status"@en ,
+                                        "Stato di indirizzo conforme"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/NonCompliantAddressStatus
+:NonCompliantAddressStatus rdf:type owl:Class ;
+                                rdfs:comment "Questa classe rappresenta quegli indirizzi (o nomi di aree di circolazione) che non rispettano pienamente le regole tecniche e i requisiti di standardizzazione stabiliti dall'Istat per l'Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU)."@it ,
+                                             "This class represents those addresses (or names of circulation areas) that do not fully comply with the technical rules and standardization requirements established by ISTAT for the ANNCSU."@en ;
+                                rdfs:label "Not compliant address status"@en ,
+                                           "Stato di indirizzo non conforme"@it .
+
+
 ###  https://w3id.org/italia/onto/CLV/StreetToponym
 :StreetToponym rdf:type owl:Class ;
-               rdfs:subClassOf :AddressComponent ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :officialStreetName ;
-                                 owl:someValuesFrom rdfs:Literal
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :toponymQualifier ;
-                                 owl:someValuesFrom rdfs:Literal
-                               ] ;
-               rdfs:comment """Questa classe rappresenta il toponimo stradale. Esso consiste nel nome dalla strada o denominazione urbanistica ufficiale - DUF (rappresentato attraverso la proprietà nome della strada) e della denominazione urbanistica generica (DUG) o qualitficatore del toponimo (e.g., via, viale, piazza, ecc.). La parte DUF  può  comprendere  l’eventuale  complemento  alla  specie  (preposizioni  non  strettamente  legate  alla denominazione del toponimo come dei, di, delle, la,
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasDUG ;
+                                        owl:someValuesFrom owl:Thing
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :prefecturalAuthorizationDate ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :municipalResolutionDate ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :streetNameInsertionDate ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :officialStreetName ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :prefecturalAuthorizationProtocol ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :municipalResolutionProtocol ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :toponymQualifier ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ;
+                  rdfs:subClassOf :AddressComponent ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ti:atTime ;
+                                    owl:someValuesFrom owl:Thing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :odonimoNonInLinguaItaliana ;
+                                    owl:maxCardinality "2"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:comment """Questa classe rappresenta il toponimo stradale. Esso consiste nel nome dalla strada o denominazione urbanistica ufficiale - DUF (rappresentato attraverso la proprietà nome della strada) e della denominazione urbanistica generica (DUG) o qualificatore del toponimo (e.g., via, viale, piazza, ecc.). La parte DUF  può  comprendere  l’eventuale  complemento  alla  specie  (preposizioni  non  strettamente  legate  alla denominazione del toponimo come dei, di, delle, la,
 il, eccetera) e gli eventual complementi alla denominazione (esempio i titoli onorifici per i nomi propri)
 Esempi:
 1) Via San Donato: Via (DUG o qualificatore del toponimo), San Donato (DUF - o nome della strada)
@@ -1865,7 +2123,7 @@ Esempi:
 Nel complesso questa componente spaziale dell'indirizzo può essere vista come il nome dell'area di circolazione ovvero il nome dell'area che individua ogni spazio del suolo pubblico, o aperto al pubblico, destinato alla viabilità.
 
 DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specificare un valore delle stesse valido per ciascuna lingua. L'odonimo infatti può essere registrato in lingue differenti, secondo quanto previsto dalle norme in materia di bilinguismo e sull’uso delle lingue delle minoranze linguistiche riconosciute."""@it ,
-                            "This class represents the street toponym. It consists of a name (property name) and a Toponym qualifier."@en ;
+                               "This class represents the street toponym. It consists of a name (property name) and a Toponym qualifier."@en ;
                rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
                rdfs:label "Nome dell' Area di Circolazione"@it ,
                           "Odonimo"@it ,
@@ -1878,75 +2136,36 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
 ###  https://w3id.org/italia/onto/CLV/TerritorialArea
 :TerritorialArea rdf:type owl:Class ;
-                 rdfs:subClassOf :Feature ;
-                 rdfs:comment "A territorial area is a defined portion of the Earth's surface identified for geographical, administrative, political, statistical, or functional purposes."@en ,
-                              "Un'area territoriale è una porzione delimitata di superficie terrestre identificata per fini geografici, amministrativi, politici, statistici o funzionali."@it ;
-                 rdfs:label "Area territoriale"@it ,
-                            "Territorial area"@en .
+                    rdfs:subClassOf :Feature ;
+                    rdfs:comment "An area that represents an intermediate level of geo-political and functional territorial organization, positioned between the continent and the state/territory. The classification includes the following thirteen areas: 11. European Union, 12. Central and Eastern Europe, 13. Other European Countries, 21. Northern Africa, 22. Western Africa, 23. Eastern Africa, 24. Central and Southern Africa, 31. Western Asia, 32. Central and Southern Asia, 33. Eastern Asia, 41. Northern America, 42. Central and Southern America, 50. Oceania."@en ,
+                                 "Area che costituisce un livello intermedio di organizzazione geo-politico funzionale del territorio, situata tra il continente e lo stato/territorio.  La suddivisione comprende le seguenti 13 aree: 11. Unione europea; 12. Europa centro orientale; 13. Altri paesi europei; 21. Africa settentrionale; 22. Africa occidentale; 23. Africa orientale; 24. Africa centro meridionale; 31. Asia occidentale; 32. Asia centro meridionale; 33. Asia orientale; 41. America settentrionale; 42. America centro meridionale; 50. Oceania."@it ;
+                    rdfs:label "Area geopolitica sub-continentale"@it ,
+                               "Sub-continental geopolitical area"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/Territory
 :Territory rdf:type owl:Class ;
-           rdfs:subClassOf :AdminUnitComponent ;
-           rdfs:comment "A geographical area dependent on a sovereign State, whose recognition of particular forms of autonomy or specific historical-political conditions makes it a unit of statistical interest according to the methods established by EU regulations."@en ,
-                        "Area geografica dipendente da uno Stato sovrano, il cui riconoscimento di particolari forme di autonomia o specifiche condizioni storico-politiche, la rendono unità di interesse statistico secondo le modalità dettate da regolamenti Ue."@it ;
-           rdfs:label "Territorio"@it ,
-                      "Territory"@en .
-
-
-###  https://w3id.org/italia/onto/CLV/UTS
-:UTS rdf:type owl:Class ;
-     rdfs:subClassOf :AdminUnitComponent ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasDirectLowerRank ;
-                       owl:allValuesFrom :City
-                     ] ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasLowerRank ;
-                       owl:allValuesFrom [ rdf:type owl:Class ;
-                                           owl:unionOf ( :City
-                                                         :District
-                                                       )
-                                         ]
-                     ] ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasDirectHigherRank ;
-                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                       owl:onClass :Region
-                     ] ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasHigherRank ;
-                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                       owl:onClass [ rdf:type owl:Class ;
-                                     owl:unionOf ( :Country
-                                                   :Region
-                                                 )
-                                   ]
-                     ] ;
-     rdfs:comment "The territorial units at an intermediate level between municipalities and regions, effective since 2015. These units include, in addition to provinces, metropolitan cities, free consortia, and non-administrative territorial units (specifically the former provinces of Friuli Venezia Giulia), with the aim of establishing a comprehensive division of the national territory."@en ,
-                  "Unità territoriali di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale"@it ;
-     rdfs:isDefinedBy <https://w3id.org/italia/onto/CLV> ;
-     rdfs:label "Supramunicipal territorial unit (Uts)"@en ,
-                "Unità territoriale sovracomunale (Uts)"@it ;
-     owl:versionInfo "stabile"@it ,
-                     "stable"@en ;
-     prov:wasDerivedFrom skos:Concept ;
-     :hasRankOrder "3"^^xsd:int ;
-     l0:controlledVocabulary <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> .
+              rdfs:subClassOf :AdminUnitComponent ;
+              rdfs:comment "Area geografica dipendente da uno Stato sovrano, il cui riconoscimento di particolari forme di autonomia o specifiche condizioni storico-politiche, la rende unità di interesse statistico secondo le modalità dettate dai regolamenti Ue."@it ,
+                           "Geographical area over which a state has sovereignity. According to Eu regulations such an area is considered statistically relevant when it is in some specific functions autonomous from the central government or due to its specific historical-political conditions."@en ;
+              rdfs:label "Territorio"@it ,
+                         "Territory"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/UngovernedTerritory
 :UngovernedTerritory rdf:type owl:Class ;
-                     rdfs:subClassOf :Territory ;
-                     rdfs:comment "Area or region that isn't under the control or jurisdiction of a government or authority."@en ,
-                                  "Zona o area che non è sotto il controllo o la giurisdizione di un governo o autorità."@it ;
-                     rdfs:label "Territorio non governato"@it ,
-                                "Ungoverned Territory"@en .
+                        rdfs:subClassOf :Territory ;
+                        rdfs:comment "Area geografica non sottoposta alla sovranità territoriale effettiva ed esclusiva di uno Stato riconosciuto, oppure caratterizzata da un esercizio della sovranità contestato, limitato o privo di effettività, in ragione di condizioni storico-politiche, giuridiche o geopolitiche. Può costituire unità di interesse statistico secondo criteri specifici stabiliti dai regolamenti dell’Ue."@it ,
+                                     "Geographical area not subject to the effective and exclusive territorial sovereignty of a recognized State, or characterized by a contested, limited, or ineffective exercise of sovereignty, due to historical-political, legal, or geopolitical conditions. It may constitute a statistical unit of interest according to specific criteria established by EU regulations."@en ;
+                        rdfs:label "Territorio non governato"@it ,
+                                   "Ungoverned territory"@en .
 
 
 ###  https://w3id.org/italia/onto/COV/Organization
 covapit:Organization rdf:type owl:Class ;
                      rdfs:isDefinedBy covapit: .
+###  https://w3id.org/italia/onto/TI/TimeIndexedEvent
+ti:TimeIndexedEvent rdf:type owl:Class .													 
 
 
 ###  https://w3id.org/italia/onto/TI/TimeInterval
@@ -2121,4 +2340,34 @@ l0:Location rdf:type owl:Class .
                     "Polygon"@en .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+#################################################################
+#    General axioms
+
+#################################################################
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( :AutonomousProvince
+                :FreeMunicipalConsortium
+                :MetropolitanCity
+                :Non-administrativeUnit
+              ) ;
+  rdfs:subClassOf :Province
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( :CompliantAddressStatus
+                :NonCompliantAddressStatus
+              ) ;
+  rdfs:subClassOf :AddressComplianceStatus
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AutonomousProvince
+                :FreeMunicipalConsortium
+                :MetropolitanCity
+                :Non-administrativeUnit
+              )
+] .

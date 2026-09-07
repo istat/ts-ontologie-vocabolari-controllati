@@ -1,46 +1,48 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/italia/onto/CLV#"
-     xml:base="https://w3id.org/italia/onto/CLV"
+<rdf:RDF xmlns="https://w3id.org/italia/onto/CLV/"
+     xml:base="https://w3id.org/italia/onto/CLV/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
-     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
-     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:ti="https://w3id.org/italia/onto/TI/"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:covapit="https://w3id.org/italia/onto/COV/"
+     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#">
     <owl:Ontology rdf:about="https://w3id.org/italia/onto/CLV">
         <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/CLV/2.0"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <terms:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
-        <terms:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/age"/>
-        <terms:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
-        <terms:description xml:lang="it">Questa è l&apos;ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)</terms:description>
-        <terms:description xml:lang="en">This is the ontology of the Italian application profile for Location and Addresses</terms:description>
-        <terms:identifier>https://w3id.org/italia/onto/CLV</terms:identifier>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-07</terms:issued>
-        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-03</terms:modified>
-        <terms:publisher rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
-        <terms:rightsHolder rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
-        <terms:title xml:lang="en">Address(Location) Ontology</terms:title>
-        <terms:title xml:lang="it">Ontologia degli Indirizzi/Luoghi</terms:title>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
+        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/age"/>
+        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
+        <dct:description xml:lang="it">Questa è l&apos;ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)</dct:description>
+        <dct:description xml:lang="en">This is the ontology of the Italian application profile for Location and Addresses</dct:description>
+        <dct:identifier>https://w3id.org/italia/onto/CLV</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-07</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-07</dct:modified>
+        <dct:publisher rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"/>
+        <dct:rightsHolder rdf:resource="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT"/>
+        <dct:title xml:lang="en">Address(Location) Ontology</dct:title>
+        <dct:title xml:lang="it">Ontologia degli Indirizzi/Luoghi</dct:title>
         <rdfs:comment xml:lang="it">Questa è l&apos;ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the ontology of the Italian application profile for Location and Addresses</rdfs:comment>
-        <rdfs:comment xml:lang="it">versione della CLV con inserimento delle UTS 2.0</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV/"/>
         <rdfs:label xml:lang="en">Address(Location) Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia degli Indirizzi/Luoghi</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 1.1 - Modified on 21 October 2025 - Added the classes Continent, Territorial Area, Territory, and the relationships among them and with Country.</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 1.1 - Modificata il 21 Ottobre 2025 - Aggiunte le classi Continente, Area Territoriale, Territorio e le relazioni tra di esse e con Country</owl:versionInfo>
-        <dcat:contactPoint rdf:resource="https://w3id.org/italia/data/contact-point/onto-agid"/>
+        <owl:versionInfo xml:lang="en">Version 2.0 - Modified on 07 Semptember 2026 - Alignment of the ontology with the concepts of the National Archive of Street Numbers for Urban Roads (ANNCSU) and introduction of concepts relating to Foreign States and the Territories governed by them.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 7 Settembre 2026 - Allineamento dell&apos;ontologia con  i concetti dell&apos;Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU) e introduzione dei concetti relativi agli Stati Esteri e ai Territori governati da essi.</owl:versionInfo>
         <dcat:keyword xml:lang="it">Accesso esterno</dcat:keyword>
         <dcat:keyword xml:lang="it">Accesso interno</dcat:keyword>
         <dcat:keyword xml:lang="en">Address</dcat:keyword>
@@ -56,33 +58,33 @@
         <dcat:keyword xml:lang="en">Spatial Object</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
         <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
-        <ADMS:acronym>CLV-AP_IT</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/italia/data/organization/public-organization/td"/>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
-        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/SpatialObject"/>
-        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML"/>
-        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
-        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
-        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <ADMS:last rdf:resource="https://w3id.org/italia/onto/CLV/1.1"/>
-        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/CLV</ADMS:officialURI>
-        <ADMS:prefix>clvapit</ADMS:prefix>
-        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/ANNCSU"/>
-        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/DAF"/>
-        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
-        <ADMS:status>catalogued</ADMS:status>
-        <ADMS:status>published</ADMS:status>
-        <ADMS:target>Imprese</ADMS:target>
-        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
-        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
+        <admsapit:acronym>CLV-AP_IT</admsapit:acronym>
+        <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/public-organization/td"/>
+        <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/CLV/SpatialObject"/>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <admsapit:last rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
+        <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/CLV</admsapit:officialURI>
+        <admsapit:prefix>clvapit</admsapit:prefix>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/ANNCSU"/>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/DAF"/>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
+        <admsapit:status>catalogued</admsapit:status>
+        <admsapit:status>published</admsapit:status>
+        <admsapit:target>Imprese</admsapit:target>
+        <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
+        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
     </owl:Ontology>
     
 
@@ -185,12 +187,6 @@
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#contactPoint -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
     
 
 
@@ -368,7 +364,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Continent"/>
-        <rdfs:comment xml:lang="it">La relazione lega lo Stato al Continente di appartenenza</rdfs:comment>
+        <rdfs:comment xml:lang="it">La relazione lega lo Stato al Continente di appartenenza.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship links the Country to its corresponding Continent.</rdfs:comment>
         <rdfs:label xml:lang="en">Country is in Continent</rdfs:label>
         <rdfs:label xml:lang="it">Lo Stato è nel Continente</rdfs:label>
@@ -399,7 +395,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AddressArea"/>
-        <rdfs:comment xml:lang="it">Questa proprietà è utilizzata per collegare l&apos;indirizzo a un&apos;area geografica o località che raggruppa diverse areee geografiche.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà è utilizzata per collegare l&apos;indirizzo a un&apos;area geografica o località che raggruppa diverse aree geografiche.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property is used in order to link the address to a geographical area or a locality that groups different addressable objects.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="it">ha area indirizzo</rdfs:label>
@@ -408,6 +404,20 @@
         <rdfs:label xml:lang="en">has locality</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasAddressComplianceStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasAddressComplianceStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AddressComplianceStatus"/>
+        <rdfs:comment xml:lang="it">La relazione lega l&apos;Indirizzo allo Stato di conformità dell&apos;indirizzo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Address with the Address Compliance Status.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha stato di conformità di indirizzo</rdfs:label>
+        <rdfs:label xml:lang="en">has address compliance status</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -492,13 +502,27 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/hasCoordinateAssignmentMethodType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasCoordinateAssignmentMethodType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/CoordinateAssignmentMethod"/>
+        <rdfs:comment xml:lang="it">La relazione lega la Geometria con il Metodo di attribuzione coordinate.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Geometry with the Coordinate Assignment Method.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha tipo di metodo di attibuzione coordinate</rdfs:label>
+        <rdfs:label xml:lang="en">has coordinate assignment method type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/hasCountry -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasCountry">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
-        <rdfs:comment xml:lang="it">La proprietà collega i&apos;indirizzo allo stato,. Esempio: Italia, Francia, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="it">La proprietà collega i&apos;indirizzo allo stato. Esempio: Italia, Francia, ecc.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property links the address to the country.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="it">ha paese</rdfs:label>
@@ -506,6 +530,34 @@
         <rdfs:label xml:lang="en">has country</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasDUG -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasDUG">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/DUG"/>
+        <rdfs:comment xml:lang="it">La relazione lega il Nome dell&apos;area di circolazione con la Denominazione urbanistica generica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Circulation Area Name with the Generic Urban Designation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha denominazione urbanistica generica</rdfs:label>
+        <rdfs:label xml:lang="en">has generic urban designation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasDUGStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasDUGStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/DUG"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/DUGStatus"/>
+        <rdfs:comment xml:lang="it">La relazione lega la Denominazione urbanistica generica con lo Stato di DUG.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Generic Urban Designation with the DUG Status.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha stato di DUG</rdfs:label>
+        <rdfs:label xml:lang="en">has DUG status</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -533,7 +585,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
-        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è meno specifica della seconda e non esise un&apos;altra componente dell&apos;indirizzo con nome che è sia più specifica della prima che più generale della seconda.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è meno specifica della seconda e non esiste un&apos;altra componente dell&apos;indirizzo con nome che è sia più specifica della prima che più generale della seconda.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates two named address components, where the first is less specific then the second and there is no other named address component that is both more specific than the first and more general than the second.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="it">ha livello diretto più basso</rdfs:label>
@@ -569,8 +621,8 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -670,6 +722,20 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/hasInternalAccessCode -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasInternalAccessCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/InternalAccess"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Identifier"/>
+        <rdfs:comment xml:lang="it">La relazione lega l&apos;Identificativo con l&apos;Accesso interno.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Identifier with the Internal Access.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha codice di accesso interno</rdfs:label>
+        <rdfs:label xml:lang="en">has internal access code</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/hasLowerRank -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasLowerRank">
@@ -725,7 +791,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasProvince">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
         <rdfs:comment xml:lang="it">Questa proprietà collega l&apos;indirizzo alla Provincia. Esempio di Provincia: &quot;PA&quot;, &quot;BO&quot;, &quot;RM&quot;, ecc.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property links the address with the Province.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
@@ -793,7 +859,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
-        <rdfs:comment xml:lang="it">Questa proprietà è usata per collegare l&apos;indirizzo al suo toponymo stradale (o odonimo)</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà è usata per collegare l&apos;indirizzo al suo toponimo stradale (o odonimo)</rdfs:comment>
         <rdfs:comment xml:lang="en">This property is used to  to link an address to the street  toponym component of it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="it">ha odonimo</rdfs:label>
@@ -859,10 +925,11 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/TerritorialArea"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Continent"/>
-        <rdfs:comment xml:lang="it">La relazione lega l&apos;Area Territoriale al Continente</rdfs:comment>
-        <rdfs:comment xml:lang="en">The relationship links the Territorial Area to the Continent.</rdfs:comment>
-        <rdfs:label xml:lang="it">Area Territoriale è nel Continente</rdfs:label>
-        <rdfs:label xml:lang="en">Territorial Area is in Continent</rdfs:label>
+        <rdfs:comment xml:lang="it">La relazione lega l&apos;Area geopolitica sub-continentale al Continente di appartenenza.</rdfs:comment>
+        <rdfs:comment xml:lang="none">The relationship links the Sub-continental geopolitical area to its corresponding Continent.</rdfs:comment>
+        <rdfs:comment>The relationship links the Territorial Area to the Continent</rdfs:comment>
+        <rdfs:label xml:lang="it">Area geopolitica sub-continentale è nel Continente</rdfs:label>
+        <rdfs:label xml:lang="en">Sub-continental geopolitical area is in Continent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -880,10 +947,10 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/TerritorialArea"/>
-        <rdfs:comment xml:lang="it">La relazione lega il Paese (Stato o Territorio) all&apos;Area Territoriale</rdfs:comment>
-        <rdfs:comment xml:lang="en">The relationship links the Country (State or Territory) to the Territorial Area.</rdfs:comment>
-        <rdfs:label xml:lang="en">Country or Territory is in Territorial area</rdfs:label>
-        <rdfs:label xml:lang="it">Paese è nell&apos;Area territoriale</rdfs:label>
+        <rdfs:comment xml:lang="it">La relazione lega il Paese (Stato o Territorio) all&apos;Area geopolitica sub-continentale di appartenenza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Country (State or Territory) to its corresponding Sub-continental geopolitical area.</rdfs:comment>
+        <rdfs:label xml:lang="en">Country or Territory is in Sub-continental geopolitical area</rdfs:label>
+        <rdfs:label xml:lang="it">Paese è nell&apos;Area geopolitica sub-continentale</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -901,6 +968,19 @@
         <rdfs:label xml:lang="it">è giurisdizione di</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/isSpecificUrbanDesignationOfMunicipality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/isSpecificUrbanDesignationOfMunicipality">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/DUG"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+        <rdfs:comment xml:lang="it">La relazione lega il Comune con la Denominazione urbanistica specifica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Municipality with the Specific Urban Designation.</rdfs:comment>
+        <rdfs:label xml:lang="en">is specific urban designation of the municipality</rdfs:label>
+        <rdfs:label xml:lang="it">è denominazione urbanistica specifica del comune</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -992,8 +1072,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Continent"/>
-        <rdfs:comment xml:lang="it">La relazione lega il Territorio al Continente di appartenenza</rdfs:comment>
-        <rdfs:comment xml:lang="en">The relationship links the Territory to its respective Continent.</rdfs:comment>
+        <rdfs:comment xml:lang="it">La relazione lega il Territorio al Continente di appartenenza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship links the Territory to its corresponding Continent.</rdfs:comment>
         <rdfs:label xml:lang="it">Il Territorio è nel Continente</rdfs:label>
         <rdfs:label xml:lang="en">Territory is in Continent</rdfs:label>
     </owl:ObjectProperty>
@@ -1007,7 +1087,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/AddressInTime"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
         <rdfs:comment xml:lang="en">Property that links the situation of an address that changes over time to the address itself.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Proprietà che collega la sitauzione di un indirizzo che cambia nel tempo all&apos;indirizzo stesso.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega la situazione di un indirizzo che cambia nel tempo all&apos;indirizzo stesso.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="it">con indirizzo</rdfs:label>
         <rdfs:label xml:lang="en">with address</rdfs:label>
@@ -1034,11 +1114,39 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/DUGScope -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/DUGScope">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/DUG"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la categoria tipologica del DUG definita dai dizionari ufficiali Istat per l&apos;identificazione univoca dell&apos;indirizzo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the DUG typological category defined by official Istat dictionaries for the unique identification of the address.</rdfs:comment>
+        <rdfs:label xml:lang="en">DUG scope</rdfs:label>
+        <rdfs:label xml:lang="it">ambito di DUG</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/DUGStatusValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/DUGStatusValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/DUGStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta lo stato di DUG.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the status of the Generic Urban Designation (DUG).</rdfs:comment>
+        <rdfs:label xml:lang="en">DUG status</rdfs:label>
+        <rdfs:label xml:lang="it">status di DUG</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/acronym -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/acronym">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/name"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">La sigla automobilistica con cui viene indicata la provincia.</rdfs:comment>
         <rdfs:comment xml:lang="en">The acronym of the province that is typically used over the Italian territory for the license plate.</rdfs:comment>
@@ -1049,6 +1157,34 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/addressComplianceStatusValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/addressComplianceStatusValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/AddressComplianceStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta lo stato di conformità dell&apos;indirizzo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the compliance status of the address.</rdfs:comment>
+        <rdfs:label xml:lang="en">address compliance status</rdfs:label>
+        <rdfs:label xml:lang="it">status di conformità di indirizzo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/addressInsertionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/addressInsertionDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data di inserimento o modifica del numero civico nel sistema.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date the house number was entered or modified in the system.</rdfs:comment>
+        <rdfs:label xml:lang="en">address insertion date</rdfs:label>
+        <rdfs:label xml:lang="it">data inserimento indirizzo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1084,6 +1220,20 @@
         <rdfs:label xml:lang="it">palazzo</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/cityBlock -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/cityBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta il valore assegnato all’isolato secondo la successione naturale dei numeri. Identificativo utilizzato dal Comune ove presente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the value assigned to the city block according to the natural sequence of numbers. It is an identifier used by the municipality where available.</rdfs:comment>
+        <rdfs:label xml:lang="en">city block</rdfs:label>
+        <rdfs:label xml:lang="it">isolato</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1217,6 +1367,32 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/internalNumberInsertionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/internalNumberInsertionDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data in cui l&apos;accesso interno è stato registrato o modificato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date the internal access point was registered or modified.</rdfs:comment>
+        <rdfs:label xml:lang="it">data inserimento numero interno</rdfs:label>
+        <rdfs:label xml:lang="en">internal number insertion date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/internalNumberUpdateDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/internalNumberUpdateDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data dell&apos;ultimo aggiornamento delle informazioni a corredo del numero interno.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date of the last update of the information accompanying the internal number.</rdfs:comment>
+        <rdfs:label xml:lang="it">data aggiornamento numero interno</rdfs:label>
+        <rdfs:label xml:lang="en">internal number update date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/lat -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/lat">
@@ -1264,6 +1440,47 @@
         <rdfs:label xml:lang="it">valore metrico</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/municipalResolutionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/municipalResolutionDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data del provvedimento amministrativo con cui il Comune ha attribuito l&apos;odonimo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date of the administrative act by which the Municipality assigned the street name.</rdfs:comment>
+        <rdfs:label xml:lang="it">data delibera comunale</rdfs:label>
+        <rdfs:label xml:lang="en">municipal resolution date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/municipalResolutionProtocol -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/municipalResolutionProtocol">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data del provvedimento amministrativo con cui il Comune ha attribuito l&apos;odonimo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the protocol of the administrative act by which the Municipality assigned the street name.</rdfs:comment>
+        <rdfs:label xml:lang="en">municipal resolution protocol</rdfs:label>
+        <rdfs:label xml:lang="it">protocollo delibera comunale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/odonimoNonInLinguaItaliana -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/odonimoNonInLinguaItaliana">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta l&apos;odonimo in una lingua diversa dall&apos;italiano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the odonym in a language other than Italian.</rdfs:comment>
+        <rdfs:label xml:lang="it">odonimo non in lingua italiana</rdfs:label>
+        <rdfs:label xml:lang="en">odonym street name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1319,6 +1536,34 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/prefecturalAuthorizationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/prefecturalAuthorizationDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data del provvedimento rilasciato dalla Prefettura per l&apos;autorizzazione della denominazione ufficiale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date of the authorization issued by the Prefecture for the official street naming</rdfs:comment>
+        <rdfs:label xml:lang="it">data autorizzazione prefettura</rdfs:label>
+        <rdfs:label xml:lang="en">prefectural authorization date.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/prefecturalAuthorizationProtocol -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/prefecturalAuthorizationProtocol">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta il codice del provvedimento rilasciato dalla Prefettura per l&apos;autorizzazione della denominazione ufficiale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the protocol of the authorization issued by the Prefecture for the official street naming.</rdfs:comment>
+        <rdfs:label xml:lang="en">prefectural authorization protocol</rdfs:label>
+        <rdfs:label xml:lang="it">protocollo autorizzazione prefettura</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/serialization -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/serialization">
@@ -1347,6 +1592,34 @@
         <rdfs:label xml:lang="en">staircase</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/streetNameInsertionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/streetNameInsertionDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data in cui il nome della strada è stato inserito o modificato nel sistema.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date the street name was entered or modified in the system.</rdfs:comment>
+        <rdfs:label xml:lang="it">data inserimento odonimo</rdfs:label>
+        <rdfs:label xml:lang="en">street name insertion date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/streetNameUpdateDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/streetNameUpdateDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la data dell&apos;ultimo aggiornamento di una qualsiasi informazione relativa all&apos;odonimo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the date of the last update of any information related to the street name.</rdfs:comment>
+        <rdfs:label xml:lang="it">data aggiornamento odonimo</rdfs:label>
+        <rdfs:label xml:lang="en">street name update date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1561,6 +1834,18 @@
     <!-- https://w3id.org/italia/onto/CLV/Address -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComplianceStatus"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/addressInsertionDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1647,13 +1932,41 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An address component which represents the name of a geographic area or a locality that groups a number of addressable objects for addressing purposes, without being an administrative unit.</rdfs:comment>
-        <rdfs:comment xml:lang="it">E&apos; una componente dell&apos;indirizzo che rappresenta il nome di un&apos;area geografica o di una località che raggruppa un numero di oggetti indirizzatibili, per scopi di indirizzamento, senza necessariamente essere un&apos;unità amministrativa territoriale. Nell&apos;ambito dell&apos;anagrafe nazionale numeri civici e strade urbane (ANNCSU) la classe può essere usata per rappresentare la LOCALITA’: una porzione più o meno vasta di territorio comunale, sulla quale insistono una o più aree di circolazione (presente se fornita dal Comune).</rdfs:comment>
+        <rdfs:comment xml:lang="it">E&apos; una componente dell&apos;indirizzo che rappresenta il nome di un&apos;area geografica o di una località che raggruppa un numero di oggetti indirizzabili, per scopi di indirizzamento, senza necessariamente essere un&apos;unità amministrativa territoriale. Nell&apos;ambito dell&apos;anagrafe nazionale numeri civici e strade urbane (ANNCSU) la classe può essere usata per rappresentare la LOCALITA’: una porzione più o meno vasta di territorio comunale, sulla quale insistono una o più aree di circolazione (presente se fornita dal Comune).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="en">Address Area</rdfs:label>
         <rdfs:label xml:lang="it">Area dell&apos;Indirizzo</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasInfluencedBy rdf:resource="http://inspire.ec.europa.eu/featureconcept/AddressAreaName"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/AddressComplianceStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/AddressComplianceStatus">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComplianceStatus"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/addressComplianceStatusValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la condizione rilevata tramite appositi marcatori che segnalano se l&apos;indirizzo rispetta pienamente le regole tecniche stabilite dall&apos;Istat.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the condition identified through specific markers indicating whether the address fully complies with the technical rules established by ISTAT.</rdfs:comment>
+        <rdfs:label xml:lang="en">Address compliance status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato di conformità di indirizzo</rdfs:label>
     </owl:Class>
     
 
@@ -1747,17 +2060,10 @@
     <!-- https://w3id.org/italia/onto/CLV/AutonomousProvince -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/AutonomousProvince">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
-        <rdfs:comment xml:lang="it">Province di Trento e di Bolzano, il cui riconoscimento dello Statuto speciale attribuisce loro particolari forme di autonomia, compresa quella legislativa, assimilandole alle regioni. 
-Le due province, insieme alla loro regione di appartenenza, il Trentino-Alto Adige, formano un sistema di enti autonomi, fra loro collegati, unico all&apos;interno dell&apos;ordinamento regionale italiano.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The Provinces of Trento and Bolzano, whose recognition under the Special Statute grants them specific forms of autonomy, including legislative autonomy, making them similar to regions.
-The two provinces, together with their belonging region, Trentino-Alto Adige, form a system of autonomous entities, interconnected with each other, unique within the Italian regional system.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="en">Autonomous Province</rdfs:label>
+        <rdfs:comment xml:lang="it">Province di Trento e di Bolzano, il cui riconoscimento dello statuto speciale attribuisce loro particolari forme di autonomia, compresa quella legislativa, assimilandole alle regioni. Le due province, insieme alla loro regione di appartenenza, il Trentino-Alto Adige, formano un sistema di enti autonomi, fra loro collegati, unico all&apos;interno dell&apos;ordinamento regionale italiano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Provinces of Trento and Bolzano whose special legal status provides for specific autonomous powers including the legislative function, thus making them similar to regions. These two provinces together with the region they belong to, Trentino-Alto Adige, form a system of autonomous bodies linked to one another, that is unique in the Italian regional asset.</rdfs:comment>
+        <rdfs:label xml:lang="en">Autonomous province</rdfs:label>
         <rdfs:label xml:lang="it">Provincia autonoma</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
@@ -1794,8 +2100,8 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1805,7 +2111,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la città (Comune)</rdfs:comment>
@@ -1817,7 +2123,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</CLV:hasRankOrder>
+        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasRankOrder>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities"/>
     </owl:Class>
     
@@ -1852,7 +2158,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta il numero civico dell&apos;indirizzo che individua l&apos; ACCESSO ESTERNO, cioè quello che dall’area di circolazione immette, direttamente o indirettamente, alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il numero civico dell&apos;indirizzo che individua l&apos;ACCESSO ESTERNO, cioè quello che dall’area di circolazione immette, direttamente o indirettamente, alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the civic number, the number of the street. They are the numbers that identify external accesses.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="en">Civic Numbering</rdfs:label>
@@ -1866,14 +2172,37 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
     
 
 
+    <!-- https://w3id.org/italia/onto/CLV/CompliantAddressStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/CompliantAddressStatus">
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/CLV/NonCompliantAddressStatus"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il grado di rispondenza di un indirizzo ai requisiti tecnici e alle regole di standardizzazione stabiliti dall&apos;Istat per l&apos;Archivio Nazionale dei Numeri Civici delle Strade Urbane. (ANNCSU).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the degree of compliance of an address with the technical requirements and standardization rules established by ISTAT for the ANNCSU.</rdfs:comment>
+        <rdfs:label xml:lang="en">Compliant address status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato di indirizzo conforme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/CLV/Continent -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Continent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
-        <rdfs:comment xml:lang="en">A continent is the largest of the divisions into which the Earth&apos;s land surface is separated.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un continente  è la più vasta delle ripartizioni con le quali si suddividono le terre emerse della crosta terrestre.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Macro-area territoriale definita dall’aggregazione di Paesi esteri (stati e territori) secondo criteri di tipo geografico, geopolitico o storico-culturale. In ambito statistico nazionale, l’Istat adotta la ripartizione basata su criteri geografici, suddividendo il mondo in 5 continenti: 1. Europa; 2. Africa; 3. Asia; 4. America; 5. Oceania.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Territorial macro-area defined by the aggregation of foreign countries (states and territories) according to geographical, geopolitical, or historical-cultural criteria. Within the national statistical framework, Istat adopts a classification based on geographical criteria, dividing the world into five continents: 1. Europe; 2. Africa; 3. Asia; 4. America; 5. Oceania.</rdfs:comment>
         <rdfs:label xml:lang="en">Continent</rdfs:label>
         <rdfs:label xml:lang="it">Continente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/CoordinateAssignmentMethod -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/CoordinateAssignmentMethod">
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la modalità con cui il Comune ha attribuito le coordinate (es. rilevazione strumentale, derivazione indiretta ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the method by which the municipality assigned the coordinates (e.g. instrumental survey, indirect derivation, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">Coordinate assignment method</rdfs:label>
+        <rdfs:label xml:lang="it">Metodo di attribuzione coordinate</rdfs:label>
     </owl:Class>
     
 
@@ -1896,24 +2225,66 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/District"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta lo Stato. Esempio: &quot;Italia - Italy&quot; oppure &quot;United Kingdom&quot;, ecc. E&apos; l&apos;unità amministrativa più alta nella gerarchia di contenimento territoriale dell&apos;indirizzo. Nel Core Location Vocabulary del programma ISA2 essa è modellata con la proprietà dell&apos;indirizzo nominata adminUnit1</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents the  uppermost administrative unit for the address, almost always a country. &quot;United Kingdom&quot;, &quot;Italy&quot;, etc. In the Core Location Vocabulary this is modelled as adminUnit1.</rdfs:comment>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
+        <rdfs:comment xml:lang="it">Ente primario e originario, autonomo e indipendente da ogni altra entità politica la cui sovranità si estende al suo territorio e al suo popolo. Esempio: &quot;Italia - Italy&quot; oppure &quot;United Kingdom&quot;, ecc. Nel Core Location Vocabulary del programma ISA2 rappresenta l&apos;unità amministrativa più alta nella gerarchia di contenimento territoriale dell&apos;indirizzo ed è modellata con la proprietà dell&apos;indirizzo nominata adminUnit1.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Political entity that is represented by one centralized government that has sovereignty over a geographic area and a permanent population. Example: &quot;Italia - Italy&quot; or &quot;United Kingdom&quot;, etc. Within the Core Location Vocabulary of the ISA2 Programme, it represents the highest administrative unit in the territorial containment hierarchy of the address and is modelled using the address property named adminUnit1.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="en">Country</rdfs:label>
         <rdfs:label xml:lang="it">Stato</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</CLV:hasRankOrder>
+        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRankOrder>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/foreign-countries"/>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/DUG -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/DUG">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDUGStatus"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/DUGScope"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la tipologia di area di circolazione (es. via, piazza, viale, ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the type of circulation area (e.g., street, square, avenue).</rdfs:comment>
+        <rdfs:label xml:lang="it">Denominazione urbanistica generica</rdfs:label>
+        <rdfs:label xml:lang="en">Generic urban denomination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/DUGStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/DUGStatus">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/DUGStatusValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta l&apos;indicatore della rispondenza tecnica della Denominazione Urbanistica Generica (DUG) ai criteri di standardizzazione stabiliti a livello nazionale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the indicator of the technical compliance of the Generic Urban Designation (DUG) with the standardization criteria established at the national level.</rdfs:comment>
+        <rdfs:label xml:lang="en">DUG status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato di DUG</rdfs:label>
     </owl:Class>
     
 
@@ -1938,14 +2309,14 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
                             <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/UTS"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta un minicipio/quartiere del comune</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un municipio/quartiere del comune</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents a district of a city</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV/"/>
         <rdfs:label xml:lang="en">District</rdfs:label>
@@ -1954,7 +2325,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</CLV:hasRankOrder>
+        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasRankOrder>
     </owl:Class>
     
 
@@ -1991,7 +2362,7 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
-        <rdfs:comment xml:lang="it">Questa classe è utilizzata per rappresentare un&apos;entittà geografica o localizzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe è utilizzata per rappresentare un&apos;entità geografica o localizzazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class is used to represent any geographical entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="en">Feature (Location)</rdfs:label>
@@ -2008,17 +2379,12 @@ The two provinces, together with their belonging region, Trentino-Alto Adige, fo
     <!-- https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
-        <rdfs:comment xml:lang="en">An intermediate-level territorial entity, composed of a group of neighboring municipalities.
-As a result of Regional Law No. 15 of August 4, 2015, the administrative structure of Sicily provides for the operation of free municipal consortia, as wide-area entities, in place of the abolished provinces of the same name.</rdfs:comment>
         <rdfs:comment xml:lang="it">Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
 Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrativo della Sicilia prevede l’esercizio dei liberi consorzi comunali, quali enti di area vasta, in luogo delle omonime province soppresse.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:comment xml:lang="en">Second-level large territorial body formed by an aggregation of nearby municipalities same as provinces and metropolitan cities. 
+Due to the provisions contained in law n. 15 of August 4, 2015, the administrative structure of the region Sicilia envisages the exercise of free municipal consortia in place of the abolished provinces with the same name.</rdfs:comment>
         <rdfs:label xml:lang="en">Free municipal consortium</rdfs:label>
-        <rdfs:label xml:lang="it">Libero consorzio di comuni</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="it">Libero consorzio</rdfs:label>
     </owl:Class>
     
 
@@ -2026,7 +2392,6 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
     <!-- https://w3id.org/italia/onto/CLV/GeographicalDistribution -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/GeographicalDistribution">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la ripartizione geografica del territorio italiano. Essa assume i valori predefiniti definiti nel seguente vocabolario controllato https://w3id.org/italia/controlled-vocabulary/territorial-classifications/geographical-distribution</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the geographical distribution of the Italian territory. It assumes the predefined values defined in the following controlled vocaulary https://w3id.org/italia/controlled-vocabulary/territorial-classifications/geographical-distribution</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
@@ -2102,8 +2467,8 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
     <!-- https://w3id.org/italia/onto/CLV/GeometryType -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/GeometryType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Identifier"/>
-        <rdfs:comment xml:lang="it">La classe rappresenta il tipo di geometria. Attualmente, la classe asusme questi valori: poligono, linea, punto, riquadro.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta il tipo di geometria. Attualmente, la classe assume questi valori: poligono, linea, punto, riquadro.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class represents the type of geometry. At the time being the class assume the following values: Polygon, Point, Box, Line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="en">Geometry Type</rdfs:label>
@@ -2118,9 +2483,9 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/GovernedTerritory">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
-        <rdfs:comment xml:lang="en">Area or region that is under the control or jurisdiction of a government or authority.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Zona o area che è sotto il controllo o la giurisdizione di un governo o autorità</rdfs:comment>
-        <rdfs:label xml:lang="en">GovernedTerritory</rdfs:label>
+        <rdfs:comment xml:lang="it">Area geografica dipendente da uno Stato sovrano, sottoposta alla sovranità territoriale effettiva ed esclusiva di uno Stato riconosciuto, nell’ambito della quale le funzioni di governo sono esercitate in modo diretto o tramite enti territoriali dotati di autonomia, secondo l’ordinamento vigente. Costituisce unità di interesse statistico secondo le modalità definite dai regolamenti dell’Ue.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Geographical area dependent on a sovereign State, subject to the effective and exclusive territorial sovereignty of a recognized State, within which governmental functions are exercised either directly or through autonomous territorial entities, in accordance with the applicable legal order. It constitutes a statistical unit of interest according to the provisions established by EU regulations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Governed territory</rdfs:label>
         <rdfs:label xml:lang="it">Territorio governato</rdfs:label>
     </owl:Class>
     
@@ -2164,11 +2529,35 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
     <!-- https://w3id.org/italia/onto/CLV/InternalAccess -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/InternalAccess">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasInternalAccessCode"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/refersToExternalAccess"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/internalNumberInsertionDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/internalNumberUpdateDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2207,7 +2596,7 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta i numeri interni, relativi alll&apos;accesso interno associato all&apos;accesso esterno. Gli accessi interni sono quelli che da spazi privati o da scale immettono direttamente alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta i numeri interni, relativi all&apos;accesso interno associato all&apos;accesso esterno. Gli accessi interni sono quelli che da spazi privati o da scale immettono direttamente alle unità ecografiche semplici ossia abitazioni, esercizi commerciali, uffici e simili.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the internal access that refers to the external access . The internal access consists of a set of informaton related to the Internal accesses (e.g., building, flat number) to private spaces or staircase that allow one to access to private residential units.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <rdfs:label xml:lang="it">Accesso Interno</rdfs:label>
@@ -2221,34 +2610,34 @@ Per effetto della legge regionale 4 agosto 2015, n. 15, l’assetto amministrati
     <!-- https://w3id.org/italia/onto/CLV/MetropolitanCity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/MetropolitanCity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
-        <rdfs:comment xml:lang="en">An intermediate-level territorial entity, composed of a group of neighboring municipalities.
-Introduced with the 2001 reform of Title V of the Constitution, metropolitan cities are recognized as wide-area territorial entities, on par with provinces (Article 114). In regions with ordinary statutes, the establishment of metropolitan cities is regulated by Law No. 56 of April 7, 2014, while in regions with special statutes, their regulation is deferred to regional laws.</rdfs:comment>
         <rdfs:comment xml:lang="it">Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.
-Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+Introdotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali.uali enti di area vasta, in luogo delle omonime province soppresse. </rdfs:comment>
+        <rdfs:comment xml:lang="en">Territorial body with constitutional relevance (art. 114 of  the Italian Constitution) formed by an aggregation of nearby municipalities. 
+Introduced with the reform of title V of  the Italian Constitution in 2001, metropolitan cities are acknowledged as territorial bodies with a large surface defined by the aggregation of nearby municipalities in a similar way as provinces (art. 114). In regions with standard legal status the setting up of metropolitan cities is ruled by law n. 56 of April 7, 2014, while in regions under special statutes their regulation is referred to the regional laws.</rdfs:comment>
         <rdfs:label xml:lang="it">Città metropolitana</rdfs:label>
         <rdfs:label xml:lang="en">Metropolitan city</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority -->
+    <!-- https://w3id.org/italia/onto/CLV/Non-administrativeUnit -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/NonAdministrativeAuthority">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
-        <rdfs:comment xml:lang="en">Intermediate-level territorial units between the Municipality and the Region, corresponding to the former provinces of Friuli Venezia Giulia, which were abolished according to the procedures outlined in Regional Law No. 20 of December 20, 2016.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Unità territoriali di livello intermedio tra il Comune e la Regione, corrispondenti alle ex province del Friuli-Venezia Giulia, cessate secondo le modalità espresse con legge regionale 20 dicembre 2016, n. 20</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="it">Ex Provincia</rdfs:label>
-        <rdfs:label xml:lang="en">Non administrative authority</rdfs:label>
-        <rdfs:label xml:lang="it">Unità non amministrativa territoriale</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Non-administrativeUnit">
+        <rdfs:comment xml:lang="en">Territorial units at a intermediate area level corresponding to the former provinces of the region Friuli-Venezia Giulia, which were deleted following the provisions of regional Law n. 20 of December 20, 2016 (Ordinary Supplement n. 55 to Official Regional Bullettin n. 50 of December 14, 2016).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Unità territoriali di livello intermedio tra il Comune e la Regione, corrispondenti alle ex province del Friuli-Venezia Giulia, cessate secondo le modalità espresse con legge regionale 20 dicembre 2016, n. 20.</rdfs:comment>
+        <rdfs:label xml:lang="en">Non-administrative unit</rdfs:label>
+        <rdfs:label xml:lang="it">Unità non amministrativa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/NonCompliantAddressStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/NonCompliantAddressStatus">
+        <rdfs:comment xml:lang="it">Questa classe rappresenta quegli indirizzi (o nomi di aree di circolazione) che non rispettano pienamente le regole tecniche e i requisiti di standardizzazione stabiliti dall&apos;Istat per l&apos;Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents those addresses (or names of circulation areas) that do not fully comply with the technical rules and standardization requirements established by ISTAT for the ANNCSU.</rdfs:comment>
+        <rdfs:label xml:lang="en">Not compliant address status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato di indirizzo non conforme</rdfs:label>
     </owl:Class>
     
 
@@ -2256,158 +2645,6 @@ Introdotte con la riforma del titolo V della Costituzione nel 2001, le città me
     <!-- https://w3id.org/italia/onto/CLV/Province -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Province">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/UTS"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/acronym"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An intermediate-level territorial entity [Article 114 of the Constitution], composed of a group of neighboring municipalities, the most important of which serves as its capital. Since 2015, as a result of the provisions in Law No. 56 of April 7, 2014, provinces, like metropolitan cities, are recognized as second-level wide-area entities.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Ente territoriale di livello intermedio [art. 114 Cost.], costituito da un aggregato di comuni limitrofi, il più importante dei quali ne costituisce il capoluogo. Dal 2015, per effetto della normativa contenuta nella legge 7 aprile 2014, n. 56, le province, al pari delle città metropolitane sono riconosciute enti di area vasta di secondo livello.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="en">Province</rdfs:label>
-        <rdfs:label xml:lang="it">Provincia</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/CLV/Region -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Region">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/District"/>
-                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta la componente Regione dell&apos;Indirizzo.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents the Region of the Address.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="en">Region</rdfs:label>
-        <rdfs:label xml:lang="it">Regione</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</CLV:hasRankOrder>
-        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/CLV/SpatialObject -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/SpatialObject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasIdentifier"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Identifier"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Qualsiasi cosa che può avere una rappresentazione spaziale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents everything that can have a spatial representation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="it">Oggetto Spaziale</rdfs:label>
-        <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/CLV/StreetToponym -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/StreetToponym">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AddressComponent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/officialStreetName"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/toponymQualifier"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta il toponimo stradale. Esso consiste nel nome dalla strada o denominazione urbanistica ufficiale - DUF (rappresentato attraverso la proprietà nome della strada) e della denominazione urbanistica generica (DUG) o qualitficatore del toponimo (e.g., via, viale, piazza, ecc.). La parte DUF  può  comprendere  l’eventuale  complemento  alla  specie  (preposizioni  non  strettamente  legate  alla denominazione del toponimo come dei, di, delle, la,
-il, eccetera) e gli eventual complementi alla denominazione (esempio i titoli onorifici per i nomi propri)
-Esempi:
-1) Via San Donato: Via (DUG o qualificatore del toponimo), San Donato (DUF - o nome della strada)
-2) Via dei tulipani: Via (DUG), dei Tulipani (DUF)
-3) Via A GENERALE CARLO ALBERTO DALLA CHIESA: Via (DUG) Generale Carlo Alberto Dalla Chiesa (DUF)
-
-Nel complesso questa componente spaziale dell&apos;indirizzo può essere vista come il nome dell&apos;area di circolazione ovvero il nome dell&apos;area che individua ogni spazio del suolo pubblico, o aperto al pubblico, destinato alla viabilità.
-
-DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specificare un valore delle stesse valido per ciascuna lingua. L&apos;odonimo infatti può essere registrato in lingue differenti, secondo quanto previsto dalle norme in materia di bilinguismo e sull’uso delle lingue delle minoranze linguistiche riconosciute.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents the street toponym. It consists of a name (property name) and a Toponym qualifier.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="it">Nome dell&apos; Area di Circolazione</rdfs:label>
-        <rdfs:label xml:lang="it">Odonimo</rdfs:label>
-        <rdfs:label xml:lang="en">Street Toponym</rdfs:label>
-        <rdfs:label xml:lang="it">Toponimo Stradale</rdfs:label>
-        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/ThoroughfareName"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/CLV/TerritorialArea -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/TerritorialArea">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
-        <rdfs:comment xml:lang="en">A territorial area is a defined portion of the Earth&apos;s surface identified for geographical, administrative, political, statistical, or functional purposes.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un&apos;area territoriale è una porzione delimitata di superficie terrestre identificata per fini geografici, amministrativi, politici, statistici o funzionali.</rdfs:comment>
-        <rdfs:label xml:lang="it">Area territoriale</rdfs:label>
-        <rdfs:label xml:lang="en">Territorial area</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/CLV/Territory -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Territory">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
-        <rdfs:comment xml:lang="en">A geographical area dependent on a sovereign State, whose recognition of particular forms of autonomy or specific historical-political conditions makes it a unit of statistical interest according to the methods established by EU regulations.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Area geografica dipendente da uno Stato sovrano, il cui riconoscimento di particolari forme di autonomia o specifiche condizioni storico-politiche, la rendono unità di interesse statistico secondo le modalità dettate da regolamenti Ue.</rdfs:comment>
-        <rdfs:label xml:lang="it">Territorio</rdfs:label>
-        <rdfs:label xml:lang="en">Territory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/CLV/UTS -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/UTS">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2449,16 +2686,213 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The territorial units at an intermediate level between municipalities and regions, effective since 2015. These units include, in addition to provinces, metropolitan cities, free consortia, and non-administrative territorial units (specifically the former provinces of Friuli Venezia Giulia), with the aim of establishing a comprehensive division of the national territory.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Unità territoriali di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/acronym"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Terrritorial units of intermediate area level between the municipality and the region, valid since 2015. Besides provinces and metropolitan cities, since 2015 those units have included free municipal consortiums and non-administrative centres (former provinces of the region Friuli-Venezia Giulia). </rdfs:comment>
+        <rdfs:comment xml:lang="it">Unità territoriale di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale.  </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <rdfs:label xml:lang="en">Supramunicipal territorial unit (Uts)</rdfs:label>
-        <rdfs:label xml:lang="it">Unità territoriale sovracomunale (Uts)</rdfs:label>
+        <rdfs:label xml:lang="en">Province</rdfs:label>
+        <rdfs:label xml:lang="it">Provincia</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <CLV:hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</CLV:hasRankOrder>
+        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasRankOrder>
         <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Region -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Region">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/City"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/District"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Ente territoriale autonomo rappresentativo di una collettività stanziata su un determinato territorio, dotato di propri poteri e funzioni e di un ordinamento autonomo secondo i principi fissati dalla Costituzione (art. 114 Cost.).Lo Stato italiano è diviso in 20 regioni, di cui 5 sono dotate di uno statuto speciale di autonomia (art. 116 Cost.), tra queste il Trentino-Alto Adige e la Valle d&apos;Aosta, nel rispetto delle minoranze linguistiche, sono riportate con le denominazioni bilingue di Trentino-Alto Adige/Südtirol e Valle d&apos;Aosta/Vallée d&apos;Aoste.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Public body with constitutional relevance (art. 114) representing a community of residents living in a specific territory. It has its own powers and functions as well as an autonomous legislation as envisaged for by the Italian Constitution and constitutional laws. The initial 19 regions set up in 1946 by the Italian Constitution became 20 in 1963 following the separation of the region Abruzzi and Molise into two: Abruzzi and Molise; 5 out of the 20 regions have a special statutes  and one of these, namely Trentino-Alto Adige, is formed by the only two Italian autonomous provinces: Trento and Bolzano. These have the same legislative powers as the regions with special legal status. In order to respect linguistic minorities, Trentino-Alto Adige and Valle d&apos;Aosta are reported with the bilingual denomination of Trentino-Alto Adige/Südtirol and Valle d&apos;Aosta/Vallée d&apos;Aoste.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="it">Regione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <hasRankOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRankOrder>
+        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/SpatialObject -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/SpatialObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Qualsiasi cosa che può avere una rappresentazione spaziale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents everything that can have a spatial representation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="it">Oggetto Spaziale</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/SpecialStatusRegion -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/SpecialStatusRegion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Region"/>
+        <rdfs:comment xml:lang="en">Public body with constitutional relevance (art. 114) representing a community of residents living in a specific territory. It has its own powers and functions as well as an autonomous legislation within the limits set by the Italian Constitution and constitutional laws. The Italian regions with special statutes are: Valle d’Aosta, Trentino-Alto Adige, Friuli-Venezia Giulia, Sicilia and Sardegna. 
+Trentino-Alto Adige is  formed by the only two Italian autonomous provinces: Trento and Bolzano. These have the same legislative powers as the regions with special statutes. In order to respect linguistic minorities, Trentino-Alto Adige and Valle d&apos;Aosta are reported with the bilingual denomination of Trentino-Alto Adige/Südtirol and Valle d&apos;Aosta/Vallée d&apos;Aoste.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Regione a cui sono costituzionalmente riconosciute particolari forme di autonomia (art. 116 Cost.). Le regioni a statuto speciale sono: la Valle d’Aosta, il Trentino-Alto Adige, il Friuli-Venezia Giulia, la Sicilia e la Sardegna. </rdfs:comment>
+        <rdfs:label xml:lang="en">Region with special legal status</rdfs:label>
+        <rdfs:label xml:lang="it">Regione a statuto speciale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/StreetToponym -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/StreetToponym">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDUG"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/municipalResolutionDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/municipalResolutionProtocol"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/officialStreetName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/prefecturalAuthorizationDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/prefecturalAuthorizationProtocol"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/streetNameInsertionDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/toponymQualifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AddressComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/odonimoNonInLinguaItaliana"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il toponimo stradale. Esso consiste nel nome dalla strada o denominazione urbanistica ufficiale - DUF (rappresentato attraverso la proprietà nome della strada) e della denominazione urbanistica generica (DUG) o qualificatore del toponimo (e.g., via, viale, piazza, ecc.). La parte DUF  può  comprendere  l’eventuale  complemento  alla  specie  (preposizioni  non  strettamente  legate  alla denominazione del toponimo come dei, di, delle, la,
+il, eccetera) e gli eventual complementi alla denominazione (esempio i titoli onorifici per i nomi propri)
+Esempi:
+1) Via San Donato: Via (DUG o qualificatore del toponimo), San Donato (DUF - o nome della strada)
+2) Via dei tulipani: Via (DUG), dei Tulipani (DUF)
+3) Via A GENERALE CARLO ALBERTO DALLA CHIESA: Via (DUG) Generale Carlo Alberto Dalla Chiesa (DUF)
+
+Nel complesso questa componente spaziale dell&apos;indirizzo può essere vista come il nome dell&apos;area di circolazione ovvero il nome dell&apos;area che individua ogni spazio del suolo pubblico, o aperto al pubblico, destinato alla viabilità.
+
+DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specificare un valore delle stesse valido per ciascuna lingua. L&apos;odonimo infatti può essere registrato in lingue differenti, secondo quanto previsto dalle norme in materia di bilinguismo e sull’uso delle lingue delle minoranze linguistiche riconosciute.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the street toponym. It consists of a name (property name) and a Toponym qualifier.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <rdfs:label xml:lang="it">Nome dell&apos; Area di Circolazione</rdfs:label>
+        <rdfs:label xml:lang="it">Odonimo</rdfs:label>
+        <rdfs:label xml:lang="en">Street Toponym</rdfs:label>
+        <rdfs:label xml:lang="it">Toponimo Stradale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/ThoroughfareName"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/TerritorialArea -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/TerritorialArea">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+        <rdfs:comment xml:lang="en">An area that represents an intermediate level of geo-political and functional territorial organization, positioned between the continent and the state/territory. The classification includes the following thirteen areas: 11. European Union, 12. Central and Eastern Europe, 13. Other European Countries, 21. Northern Africa, 22. Western Africa, 23. Eastern Africa, 24. Central and Southern Africa, 31. Western Asia, 32. Central and Southern Asia, 33. Eastern Asia, 41. Northern America, 42. Central and Southern America, 50. Oceania.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Area che costituisce un livello intermedio di organizzazione geo-politico funzionale del territorio, situata tra il continente e lo stato/territorio.  La suddivisione comprende le seguenti 13 aree: 11. Unione europea; 12. Europa centro orientale; 13. Altri paesi europei; 21. Africa settentrionale; 22. Africa occidentale; 23. Africa orientale; 24. Africa centro meridionale; 31. Asia occidentale; 32. Asia centro meridionale; 33. Asia orientale; 41. America settentrionale; 42. America centro meridionale; 50. Oceania.</rdfs:comment>
+        <rdfs:label xml:lang="it">Area geopolitica sub-continentale</rdfs:label>
+        <rdfs:label xml:lang="en">Sub-continental geopolitical area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Territory -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Territory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+        <rdfs:comment xml:lang="it">Area geografica dipendente da uno Stato sovrano, il cui riconoscimento di particolari forme di autonomia o specifiche condizioni storico-politiche, la rende unità di interesse statistico secondo le modalità dettate dai regolamenti Ue.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Geographical area over which a state has sovereignity. According to Eu regulations such an area is considered statistically relevant when it is in some specific functions autonomous from the central government or due to its specific historical-political conditions.</rdfs:comment>
+        <rdfs:label xml:lang="it">Territorio</rdfs:label>
+        <rdfs:label xml:lang="en">Territory</rdfs:label>
     </owl:Class>
     
 
@@ -2467,10 +2901,10 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/UngovernedTerritory">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Territory"/>
-        <rdfs:comment xml:lang="en">Area or region that isn&apos;t under the control or jurisdiction of a government or authority.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Zona o area che non è sotto il controllo o la giurisdizione di un governo o autorità.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Area geografica non sottoposta alla sovranità territoriale effettiva ed esclusiva di uno Stato riconosciuto, oppure caratterizzata da un esercizio della sovranità contestato, limitato o privo di effettività, in ragione di condizioni storico-politiche, giuridiche o geopolitiche. Può costituire unità di interesse statistico secondo criteri specifici stabiliti dai regolamenti dell’Ue.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Geographical area not subject to the effective and exclusive territorial sovereignty of a recognized State, or characterized by a contested, limited, or ineffective exercise of sovereignty, due to historical-political, legal, or geopolitical conditions. It may constitute a statistical unit of interest according to specific criteria established by EU regulations.</rdfs:comment>
         <rdfs:label xml:lang="it">Territorio non governato</rdfs:label>
-        <rdfs:label xml:lang="en">Ungoverned Territory</rdfs:label>
+        <rdfs:label xml:lang="en">Ungoverned territory</rdfs:label>
     </owl:Class>
     
 
@@ -2480,6 +2914,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/COV/"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
     
 
 
@@ -2531,7 +2971,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/ISTAT">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>ISTAT</terms:identifier>
+        <dct:identifier>ISTAT</dct:identifier>
         <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
         <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
     </owl:NamedIndividual>
@@ -2543,7 +2983,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/age">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>age</terms:identifier>
+        <dct:identifier>age</dct:identifier>
         <foaf:name xml:lang="it">Agenzia dell&apos;Entrate</foaf:name>
         <foaf:name xml:lang="en">Tax Agency</foaf:name>
     </owl:NamedIndividual>
@@ -2555,7 +2995,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>agid</terms:identifier>
+        <dct:identifier>agid</dct:identifier>
         <foaf:name xml:lang="it">Agenzia per l&apos;Italia Digitale</foaf:name>
         <foaf:name xml:lang="en">Italian Digital Agency</foaf:name>
     </owl:NamedIndividual>
@@ -2568,8 +3008,8 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-        <ns:fn>banche dati e open data</ns:fn>
-        <ns:hasEmail rdf:resource="mailto:info@dati.gov.it"/>
+        <vcard:fn>banche dati e open data</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:info@dati.gov.it"/>
     </owl:NamedIndividual>
     
 
@@ -2578,12 +3018,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/CLVAPIT-JSON-LD">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei Luoghi e degli Indirizzi</terms:description>
-        <terms:description xml:lang="en">This is the distribution in JSON-LD of the Location and Address ontology</terms:description>
-        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia CLV-AP_IT</terms:title>
-        <terms:title xml:lang="en">JSON-LD distribution of CLV-AP_IT Ontology</terms:title>
+        <dct:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei Luoghi e degli Indirizzi</dct:description>
+        <dct:description xml:lang="en">This is the distribution in JSON-LD of the Location and Address ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione JSON-LD ontologia CLV-AP_IT</dct:title>
+        <dct:title xml:lang="en">JSON-LD distribution of CLV-AP_IT Ontology</dct:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.jsonld"/>
     </owl:NamedIndividual>
@@ -2594,12 +3034,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-TURTLE">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei luoghi e degli indirizzi</terms:description>
-        <terms:description xml:lang="en">This is the distribution in RDF/turtle of the location and address ontology</terms:description>
-        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia CLV-AP_IT</terms:title>
-        <terms:title xml:lang="en">RDF/Turtle distribution of CLV-AP_IT Ontology</terms:title>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei luoghi e degli indirizzi</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/turtle of the location and address ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia CLV-AP_IT</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of CLV-AP_IT Ontology</dct:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.ttl"/>
     </owl:NamedIndividual>
@@ -2610,12 +3050,12 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei luoghi e degli indirizzi</terms:description>
-        <terms:description xml:lang="en">This is the distribution in RDF/XML of the location and address ontology</terms:description>
-        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia CLV-AP_IT</terms:title>
-        <terms:title xml:lang="en">RDF/XML distribution of CLV-AP_IT Ontology</terms:title>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei luoghi e degli indirizzi</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/XML of the location and address ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia CLV-AP_IT</dct:title>
+        <dct:title xml:lang="en">RDF/XML distribution of CLV-AP_IT Ontology</dct:title>
         <dcat:accessURL rdf:resource="https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.rdf"/>
     </owl:NamedIndividual>
@@ -2627,7 +3067,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/organization/public-organization/td">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <terms:identifier>TD</terms:identifier>
+        <dct:identifier>TD</dct:identifier>
         <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
         <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
     </owl:NamedIndividual>
@@ -2640,7 +3080,7 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
         <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
         <l0:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</l0:name>
         <l0:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</l0:name>
-        <terms:identifier>cnr - Z6HZEH - STLab</terms:identifier>
+        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
     </owl:NamedIndividual>
     
 
@@ -2721,9 +3161,45 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
         <rdfs:label xml:lang="it">Poligono</rdfs:label>
         <rdfs:label xml:lang="en">Polygon</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/AutonomousProvince"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/MetropolitanCity"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Non-administrativeUnit"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/CompliantAddressStatus"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/NonCompliantAddressStatus"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AddressComplianceStatus"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/AutonomousProvince"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/FreeMunicipalConsortium"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/MetropolitanCity"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Non-administrativeUnit"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
