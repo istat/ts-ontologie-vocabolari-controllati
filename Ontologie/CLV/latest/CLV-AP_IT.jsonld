@@ -1493,7 +1493,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-09-07"
+    "@value" : "2026-09-08"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid"
@@ -1536,10 +1536,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "Version 2.0 - Modified on 07 Semptember 2026 - Alignment of the ontology with the concepts of the National Archive of Street Numbers for Urban Roads (ANNCSU) and introduction of concepts relating to Foreign States and the Territories governed by them."
+    "@value" : "Version 2.0 - Modified on 08 Semptember 2026 - Alignment of the ontology with the concepts of the National Archive of Street Numbers for Urban Roads (ANNCSU) and introduction of concepts relating to Foreign States and the Territories governed by them."
   }, {
     "@language" : "it",
-    "@value" : "Versione 2.0 - Modificata il 7 Settembre 2026 - Allineamento dell'ontologia con  i concetti dell'Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU) e introduzione dei concetti relativi agli Stati Esteri e ai Territori governati da essi."
+    "@value" : "Versione 2.0 - Modificata l' 8 Settembre 2026 - Allineamento dell'ontologia con  i concetti dell'Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU) e introduzione dei concetti relativi agli Stati Esteri e ai Territori governati da essi."
   } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "it",
@@ -2606,10 +2606,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.\nIntrodotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali.uali enti di area vasta, in luogo delle omonime province soppresse. "
+    "@value" : "Ente territoriale di livello intermedio, costituito da un aggregato di comuni limitrofi.\nIntrodotte con la riforma del titolo V della Costituzione nel 2001, le città metropolitane sono riconosciute enti territoriali di area vasta al pari delle province (art. 114). Nelle regioni a statuto ordinario l’istituzione delle città metropolitane è disciplinata dalla legge 7 aprile 2014, n. 56, mentre nelle regioni a statuto speciale la loro disciplina è rinviata alle leggi regionali, quali enti di area vasta, in luogo delle omonime province soppresse. "
   }, {
     "@language" : "en",
-    "@value" : "Territorial body with constitutional relevance (art. 114 of  the Italian Constitution) formed by an aggregation of nearby municipalities. \nIntroduced with the reform of title V of  the Italian Constitution in 2001, metropolitan cities are acknowledged as territorial bodies with a large surface defined by the aggregation of nearby municipalities in a similar way as provinces (art. 114). In regions with standard legal status the setting up of metropolitan cities is ruled by law n. 56 of April 7, 2014, while in regions under special statutes their regulation is referred to the regional laws."
+    "@value" : "Territorial body with constitutional relevance (art. 114 of the Italian Constitution) formed by an aggregation of nearby municipalities. \nIntroduced with the reform of title V of the Italian Constitution in 2001, metropolitan cities are acknowledged as territorial bodies with a large surface defined by the aggregation of nearby municipalities in a similar way as provinces (art. 114). In regions with standard legal status the setting up of metropolitan cities is ruled by law n. 56 of April 7, 2014, while in regions under special statutes their regulation is referred to the regional laws."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -2689,10 +2689,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Terrritorial units of intermediate area level between the municipality and the region, valid since 2015. Besides provinces and metropolitan cities, since 2015 those units have included free municipal consortiums and non-administrative centres (former provinces of the region Friuli-Venezia Giulia). "
+    "@value" : "Province/Supracommunal Territorial Unit (UTS): Intermediate-level territorial units between the municipality and the region, effective from 2015. To ensure a complete breakdown of the national territory, these units comprise: metropolitan cities, free municipal consortium, and non-administrative centres (specifically, the former provinces of Friuli-Venezia Giulia), in addition to provinces. The latter are intermediate-level territorial entities recognized by Article 114 of the Italian Constitution, composed of an aggregate of neighboring municipalities, the most important of which serves as the provincial capital; since 2015, under the regulations of Law No. 56 of April 7, 2014, provinces, like metropolitan cities, are recognized as second-level wide-area bodies. "
   }, {
     "@language" : "it",
-    "@value" : "Unità territoriale di livello intermedio tra il Comune e la Regione, valide a partire dal 2015. Tali unità comprendono oltre le province, le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), al fine di costituire una suddivisione completa del territorio nazionale.  "
+    "@value" : "Provincia/Unità territoriale sovracomunale (Uts): Unità territoriali di livello intermedio tra il comune e la regione, valide a partire dal 2015. Al fine di costituire una suddivisione completa del territorio nazionale, tali unità comprendono: le città metropolitane, i liberi consorzi e le unità territoriali non amministrative (nella fattispecie ex province del Friuli-Venezia Giulia), oltre le province. Queste ultime sono enti territoriali di livello intermedio riconosciute dall’articolo 114 della Costituzione italiana, costituite da un aggregato di comuni limitrofi, il più importante dei quali ne costituisce il capoluogo; dal 2015, per effetto della normativa contenuta nella legge 7 aprile 2014, n. 56, le province, al pari delle città metropolitane sono riconosciute enti di area vasta di secondo livello.  "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/italia/onto/CLV"
