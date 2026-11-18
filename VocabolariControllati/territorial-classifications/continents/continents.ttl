@@ -1,4 +1,3 @@
-@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
 @prefix : <https://w3id.org/italia/onto/CLV/> .
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,171 +7,12 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ti: <https://w3id.org/italia/onto/TI/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix covapit: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix adms:     <http://www.w3.org/ns/adms#> .
-@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
-
-
-skos:ConceptScheme
-      a       rdfs:Class .
-
-skos:Concept
-      a       rdfs:Class .
-
-dcatapit:Dataset
-      a       rdfs:Class .
-
-dcatapit:Distribution
-      a       rdfs:Class .
-
-dcatapit:Standard
-      a        rdfs:Class .
-
-dcatapit:Organization
-      a        rdfs:Class .
-
-dcatapit:LicenseDocument
-      a        rdfs:Class .
-
-vcard:Organization
-      a        rdfs:Class .
-
-vcard:Kind
-      a        rdfs:Class .
-
-dcatapit:Agent
-      a       rdfs:Class .
-
-foaf:Agent
-      a       rdfs:Class .
-
-dct:Standard
-      a       rdfs:Class .
-
-dct:LicenseDocument
-      a       rdfs:Class .
-
-skos:prefLabel
-      a       rdfs:Property .
-
-skos:notation
-      a       rdfs:Property .
-
-skos:inScheme
-      a       rdfs:Property .
-
-skos:narrower
-	  a 	  rdfs:Property .
-
-skos:broader
-	  a		  rdfs:Property .
-
-skos:broaderTransitive
-      a 	  rdfs:Property .
-
-skos:narrowerTransitive
-      a       rdfs:Property .
-
-skos:definition
-	  a		  rdfs:Property .
-
-dct:identifier
-	  a       rdfs:Property .
-
-dct:title
-    a       rdfs:Property .
-
-dct:type
-    a       rdfs:Property .
-
-dct:description
-    a       rdfs:Property .
-
-dct:creator
-    a       rdfs:Property .
-
-dct:publisher
-    a       rdfs:Property .
-
-dct:rightsHolder
-    a       rdfs:Property .
-
-dct:conformsTo
-    a       rdfs:Property .
-
-dct:subject
-    a       rdfs:Property .
-
-dct:accrualPeriodicity
-    a       rdfs:Property .
-
-dct:language
-    a       rdfs:Property .
-
-dct:format
-    a       rdfs:Property .
-
-dct:issued
-    a       rdfs:Property .
-
-dct:modified
-    a       rdfs:Property .
-
-dct:license
-    a       rdfs:Property .
-
-dct:type
-    a       rdfs:Property .
-
-dcatapit:referenceDoc
-    a       rdfs:Property .
-
-dcat:theme
-    a     rdfs:Property .
-
-dcat:distribution
-    a     rdfs:Property .
-
-foaf:name
-    a       rdfs:Property .
-
-dcat:keyword
-    a     rdfs:Property .
-
-dcat:contactPoint
-    a     rdfs:Property .
-
-dcat:accessURL
-    a     rdfs:Property .
-
-dcat:downloadURL
-    a     rdfs:Property .
-
-owl:versionInfo
-    a     rdfs:Property .
-
-adms:representationTechnique
-    a       rdfs:Property .
-
-xkos:numberOfLevels
-    a       rdfs:Property .
-
-vcard:fn
-    a     rdfs:Property .
-
-vcard:hasEmail
-    a     rdfs:Property .
-
-ndc:keyConcept
-    a     rdfs:Property .
 
 
 #################################################################
@@ -182,8 +22,8 @@ ndc:keyConcept
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>
   rdf:type      skos:ConceptScheme , adms:Asset , dcatapit:Dataset ;
   dct:title "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;
-  dct:description "Un continente è la più vasta delle ripartizioni con le quali si suddividono le terre emerse della crosta terrestre."@it, "A continent is the largest of the divisions into which the Earth's land surface is separated."@en;
-  xkos:numberOfLevels "1" ;
+  dct:description "Un continente è un vasto complesso di terre emerse circondato dagli oceani, la cui delimitazione e suddivisione può variare in base all'adozione di criteri di tipo geografico, geopolitico o storico-culturale. In ambito statistico nazionale, l’Istat adotta la ripartizione basata su criteri geografici, considerando il mondo suddiviso in 5 continenti: Europa, Africa, Asia, America e Oceania."@it, "A continent is a vast landmass surrounded by oceans, whose delimitation and subdivision may vary according to the adoption of geographical, geopolitical or historical-cultural criteria. Within the field of national statistics, Istat adopts the division based on geographical criteria, considering the world as divided into 5 continents: Europe, Africa, Asia, America and Oceania."@en;
+  xkos:numberOfLevels "1"^^xsd:positiveInteger ;
   dct:type <http://purl.org/adms/assettype/CodeList> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
   dct:identifier "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents";
@@ -195,18 +35,23 @@ ndc:keyConcept
   dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents> ;
-  dcat:keyword "Contienti"@it, "Continents"@en ;
+  dct:subject <https://w3id.org/italia/controlled-vocabulary/themes/territorial-classifications> ;
+  dcat:keyword "Continenti"@it, "Continents"@en ;
   dcat:distribution <https://w3id.org/italia/data/distribution/continents_RDF_Turtle> , <https://w3id.org/italia/data/distribution/continents_CSV> , <https://w3id.org/italia/data/distribution/continents_XLSX> ;
   dcat:contactPoint <https://w3id.org/italia/data/contact-point/ISTAT-NDC> ;
-  dct:issued "2025-10-23"^^xsd:date ;
-  dct:modified "2025-10-23"^^xsd:date ;
-  owl:versionInfo "Versione 1.0 - Dati riferiti al 31 dicembre 2023"@it ; 
+  dct:issued "2026-10-26"^^xsd:date ;
+  dct:modified "2026-10-26"^^xsd:date ;
+  dct:temporal "Da ottobre 2026" ;
+  owl:versionInfo "Versione 1.0 - Dati riferiti al 31 dicembre 2025"@it ; 
   ndc:keyConcept "continents" ;
   rdfs:comment "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;
   rdfs:label "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;
-  skos:notation "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it ;       
   skos:prefLabel "Controlled Vocabulary for Continents"@en , "Vocabolario Controllato dei Continenti"@it .   
-   
+
+
+#################################################################
+#    fine metadati 
+################################################################# 
  
   <https://w3id.org/italia/data/public-organization/ISTAT>
   a dcatapit:Agent, foaf:Agent ;
@@ -218,17 +63,18 @@ ndc:keyConcept
   vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
   vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .    
 	
-  <https://w3id.org/italia/data/resource/standard/SKOS>
-  a dcatapit:Standard , dct:Standard ;
-  dct:identifier "SKOS" ;
-  dct:title "Simple Knowledge Organization System - SKOS" ;
-  dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+<https://w3id.org/italia/data/standard/SKOS>
+    a dcatapit:Standard , dct:Standard ;
+    dct:identifier "SKOS" ;
+    foaf:name "Simple Knowledge Organization System (SKOS)"@en ;
+    dct:title "Simple Knowledge Organization System - SKOS" ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
 
 
 <https://w3id.org/italia/data/distribution/continents_RDF_Turtle>
   a dcatapit:Distribution  ;
   dct:title "Distribuzione RDF/Turtle del vocabolario controllato sui Continenti"@it , "RDF/Turtle distribution of the Continents controlled vocabulary"@en ;
-  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sui Continenti"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the Continents controlled vocabulary"@en ;
+  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sui Continenti"@it , "This is the distribution in RDF/Turtle of the Linked Open Dataset of the Continents controlled vocabulary"@en ;
   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
   dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/VocabolariControllati/territorial-classifications/continents/continents.ttl>;
@@ -255,34 +101,17 @@ ndc:keyConcept
   dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/VocabolariControllati/territorial-classifications/continents> .
 
 #################################################################
-#    fine metadati 
+#    fine 
 #################################################################
 
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1>
-  a skos:Concept, :Feature, :Continent;
-  rdfs:label "Europa"@it;
-  skos:prefLabel "Europa"@it;
-  l0:name "Europa"@it;
-  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
-  skos:notation "1";
-  :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/1>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/13>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/12>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/11> .
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>
+    skos:hasTopConcept
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5> .
 
-<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/1>
-  a :Identifier;
-  l0:identifier "1";
-  :identifierType "Codice ISTAT numerico" .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/13>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/12>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/11>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3>
   a skos:Concept, :Feature, :Continent;
@@ -292,23 +121,21 @@ ndc:keyConcept
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "3";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/3>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/32>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/31>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/33> .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/33>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/31>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/32> .
 
-<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/3>
-  a :Identifier;
-  l0:identifier "3";
-  :identifierType "Codice ISTAT numerico" .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/32>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/31>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/33>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1>
+  a skos:Concept, :Feature, :Continent;
+  rdfs:label "Europa"@it;
+  skos:prefLabel "Europa"@it;
+  l0:name "Europa"@it;
+  skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
+  skos:notation "1";
+  :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/1>;
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/12>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/13>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/11> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2>
   a skos:Concept, :Feature, :Continent;
@@ -318,27 +145,10 @@ ndc:keyConcept
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "2";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/2>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/21>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/24>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/22>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/23> .
-
-<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/2>
-  a :Identifier;
-  l0:identifier "2";
-  :identifierType "Codice ISTAT numerico" .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/21>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/24>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/22>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/23>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/21>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/24>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/22>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/23> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4>
   a skos:Concept, :Feature, :Continent;
@@ -348,19 +158,8 @@ ndc:keyConcept
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "4";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/4>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/42>,
-    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/41> .
-
-<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/4>
-  a :Identifier;
-  l0:identifier "4";
-  :identifierType "Codice ISTAT numerico" .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/42>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4> .
-
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/41>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4> .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/42>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/41> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5>
   a skos:Concept, :Feature, :Continent;
@@ -370,17 +169,31 @@ ndc:keyConcept
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents>;
   skos:notation "5";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/5>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/50> .
+  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/52>,
+    <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/51> .
+
+
+<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/3>
+  a :Identifier;
+  l0:identifier "3";
+  :identifierType "Codice ISTAT numerico" .
+
+<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/2>
+  a :Identifier;
+  l0:identifier "2";
+  :identifierType "Codice ISTAT numerico" .
+
+<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/4>
+  a :Identifier;
+  l0:identifier "4";
+  :identifierType "Codice ISTAT numerico" .
 
 <https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/5>
   a :Identifier;
   l0:identifier "5";
   :identifierType "Codice ISTAT numerico" .
 
-<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territorial-areas/50>
-  :isInContinent <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5> .
-
-<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/>
+<https://w3id.org/italia/data/identifiers/continents-identifiers/numeric-istat-code/1>
   a :Identifier;
+  l0:identifier "1";
   :identifierType "Codice ISTAT numerico" .
-
