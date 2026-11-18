@@ -1,0 +1,323 @@
+---
+#
+# This workflow detects which file types changed per asset and runs:
+#   - jsonld create   if .ttl or .frame.yamlld changed
+#   - csv create if .ttl, .frame.yamlld, datapackage.yaml, or .data.yaml changed
+#
+# Logic:
+#   .ttl or .frame.yamlld changed  →  jsonld create + csv create
+#   datapackage.yaml changed      →  csv create only
+#   .data.yaml changed             →  csv create only
+#   nothing relevant changed       →  skip asset
+#
+name: CI CSV Create
+permissions: {}
+on:
+  workflow_call:
+    inputs:
+      python_version:
+        description: 'Python version to use'
+        required: false
+        type: string
+        default: '3.14'
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+    paths:
+    - 'VocabolariControllati/**'
+    - '.github/workflows/ci-tabular.yml'
+  pull_request:
+    branches:
+    - main
+    paths:
+    - 'VocabolariControllati/**'
+    - '.github/workflows/ci-tabular.yml'
+env:
+  CI: true
+  PYTHON_VERSION: ${{ inputs.python_version }}
+  VOCABULARY_DIR: 'VocabolariControllati'
+  CLI_VERSION: '0.0.19'
+  # To avoid clashes between CSV and API frames and data,
+  #  you can use the "-csv" suffix for CSV-specific files,
+  #  otherwise the same data.yaml is used for both CSV and APIStore.
+  SUFFIX: ''
+jobs:
+  #
+  # Job 1: Detect which assets changed and what type of files changed.
+  #   Outputs a JSON array of objects: [{path, needs_jsonld, needs_csv}, ...]
+  #
+  detect-changes:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      assets: ${{ steps.detect.outputs.assets }}
+    steps:
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    - name: Detect changed assets with change type
+      id: detect
+      shell: bash
+      run: |
+        set -euo pipefail
+        EVENT="${{ github.event_name }}"
+
+        # Collect all valid asset directories (each must contain exactly one .ttl)
+        mapfile -t ALL_DIRS < <(find "$VOCABULARY_DIR" -type f -name "*.ttl" -exec dirname {} \; | sort -u)
+
+        FILTERED_DIRS=()
+        for DIR in "${ALL_DIRS[@]}"; do
+          mapfile -t TTL_FILES < <(find "$DIR" -maxdepth 3 -type f -name "*.ttl" -a ! -ipath '*r2rml*')
+          COUNT=${#TTL_FILES[@]}
+          if [ "$COUNT" -gt 1 ]; then
+            echo "::warning::Directory $DIR contains $COUNT TTL files. Skipping."
+            continue
+          fi
+          FILTERED_DIRS+=("$DIR")
+        done
+
+        # Determine the set of changed files (empty for workflow_dispatch → process all)
+        CHANGED_FILES=""
+        if [ "$EVENT" != "workflow_dispatch" ]; then
+          if [ "$EVENT" = "pull_request" ]; then
+            BASE_SHA="${{ github.event.pull_request.base.sha }}"
+            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE_SHA="${{ github.event.before }}"
+            HEAD_SHA="${{ github.sha }}"
+            # New branch: treat all files as changed
+            if [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
+              BASE_SHA=""
+            fi
+          fi
+
+          if [ -n "${BASE_SHA:-}" ]; then
+            CHANGED_FILES=$(git diff --name-only "${BASE_SHA}..${HEAD_SHA}" -- "${VOCABULARY_DIR}/" 2>/dev/null || true)
+          fi
+        fi
+
+        # Build JSON array
+        RESULT_JSON="["
+        FIRST=true
+
+        for DIR in "${FILTERED_DIRS[@]}"; do
+          if [ "$EVENT" = "workflow_dispatch" ] || [ -z "${BASE_SHA:-}" ]; then
+            NEEDS_JSONLD=true
+            NEEDS_CSV=true
+          else
+            TTL_CHANGED=$(echo "$CHANGED_FILES"   | grep -c "^${DIR}/.*\.ttl$"              || true)
+            FRAME_CHANGED=$(echo "$CHANGED_FILES" | grep -c "^${DIR}/.*${SUFFIX}\.frame\.yamlld$"    || true)
+            DATAPACKAGE_CHANGED=$(echo "$CHANGED_FILES"  | grep -c "^${DIR}/datapackage.yaml$"       || true)
+            DATA_CHANGED=$(echo "$CHANGED_FILES"  | grep -cE "^${DIR}/.*${SUFFIX}\.data\.yaml(ld)?$" || true)
+
+            if [ "$TTL_CHANGED" -gt 0 ] || [ "$FRAME_CHANGED" -gt 0 ]; then
+              NEEDS_JSONLD=true
+              NEEDS_CSV=true
+            elif [ "$DATAPACKAGE_CHANGED" -gt 0 ] || [ "$DATA_CHANGED" -gt 0 ]; then
+              NEEDS_JSONLD=false
+              NEEDS_CSV=true
+            else
+              # No relevant changes in this asset directory
+              continue
+            fi
+          fi
+
+          if [ "$FIRST" = "false" ]; then
+            RESULT_JSON+=","
+          fi
+          RESULT_JSON+="{\"path\":\"${DIR}\",\"needs_jsonld\":${NEEDS_JSONLD},\"needs_csv\":${NEEDS_CSV}}"
+          FIRST=false
+        done
+
+        RESULT_JSON+="]"
+        echo "assets=${RESULT_JSON}" >> "$GITHUB_OUTPUT"
+        echo "Detected assets: ${RESULT_JSON}"
+
+  #
+  # Job 2: For each changed asset, run jsonld create and/or csv create
+  #   based on what changed, then open a PR with the regenerated artifacts.
+  #
+  ci-csv:
+    needs: [detect-changes]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        asset: >-
+          ${{ fromJson(needs.detect-changes.outputs.assets) }}
+    steps:
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+      with:
+        persist-credentials: true
+        ref: main
+        fetch-depth: 0
+    - name: Fetch source files from triggering commit
+      run: |
+        git fetch origin ${{ github.sha }}
+        git checkout ${{ github.sha }} -- "${{ matrix.asset.path }}"
+    - name: Set up Python
+      uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    - name: Download schema_gov_it_tools.bin
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        set -e
+        ARTIFACT_URL=https://github.com/teamdigitale/dati-semantic-csv-apis/releases/download/${{ env.CLI_VERSION }}/schema_gov_it_tools.bin
+        curl -L "${ARTIFACT_URL}" -o /usr/local/bin/schema_gov_it_tools.bin
+        chmod +x /usr/local/bin/schema_gov_it_tools.bin
+        echo "Downloaded schema_gov_it_tools.bin version $(/usr/local/bin/schema_gov_it_tools.bin --version)"
+    - name: Check required files exist
+      id: check-files
+      working-directory: ${{ matrix.asset.path }}
+      shell: python {0}
+      env:
+        NEEDS_JSONLD: ${{ matrix.asset.needs_jsonld }}
+        NEEDS_CSV: ${{ matrix.asset.needs_csv }}
+      run: |
+        import glob, os
+        github_output = os.environ["GITHUB_OUTPUT"]
+        needs_jsonld = os.environ.get("NEEDS_JSONLD", "false") == "true"
+        needs_csv = os.environ.get("NEEDS_CSV", "false") == "true"
+        found = {}
+        with open(github_output, "a") as f:
+            for pattern, key, file_key in [
+                ("datapackage.yaml",    "datapackage_exists",  "datapackage_file"),
+                ("*.frame.yamlld", "frame_exists", "frame_file"),
+                ("*.ttl",          "ttl_exists",   "ttl_file"),
+                ("*.data.yaml",    "data_exists",  "data_file"),
+            ]:
+                files = glob.glob(pattern)
+                found[key] = bool(files)
+                if files:
+                    f.write(f"{key}=true\n")
+                    f.write(f"{file_key}={files[0]}\n")
+                    print(f"Found {pattern}: {files[0]}")
+                else:
+                    f.write(f"{key}=false\n")
+                    print(f"::warning title=Missing file::No {pattern} found in {os.getcwd()}")
+            ttl_files = glob.glob("*.ttl")
+            asset_name = ttl_files[0].removesuffix(".ttl") if ttl_files else ""
+            f.write(f"asset_name={asset_name}\n")
+            should_jsonld = (
+                (needs_jsonld or not found["data_exists"]) and
+                found["ttl_exists"] and
+                found["frame_exists"]
+            )
+            f.write(f"should_jsonld_create={str(should_jsonld).lower()}\n")
+            should_csv = (
+                needs_csv and
+                found["datapackage_exists"] and
+                found["frame_exists"]
+            )
+            f.write(f"should_csv_create={str(should_csv).lower()}\n")
+    - name: Run jsonld create
+      id: jsonld-create
+      if: >-
+        steps.check-files.outputs.should_jsonld_create == 'true'
+        &&
+        !contains(matrix.asset.path, 'theme-subtheme-mapping')
+      working-directory: ${{ matrix.asset.path }}
+      run: |
+        set -eu
+        ASSET_NAME="${STEPS_CHECK_FILES_OUTPUTS_ASSET_NAME}"
+
+        # Use the only vocabulary URI available in the .ttl file.
+        # Current implementation fails if more than one vocabulary URI is present,
+        #   but this is not the case for any current asset. This is because
+        #   the frame expects exactly one vocabulary URI to be present in the data.
+        /usr/local/bin/schema_gov_it_tools.bin \
+          jsonld create \
+          --ttl "${ASSET_NAME}.ttl" \
+          --frame "${ASSET_NAME}${SUFFIX}.frame.yamlld" \
+          --vocabulary-uri self \
+          --output "${ASSET_NAME}${SUFFIX}.data.yaml" \
+          --force
+      env:
+        STEPS_CHECK_FILES_OUTPUTS_ASSET_NAME: ${{ steps.check-files.outputs.asset_name
+          }}
+    - name: Run csv create
+      if: >-
+        steps.check-files.outputs.should_csv_create == 'true'
+        &&
+        !contains(matrix.asset.path, 'theme-subtheme-mapping')
+      working-directory: ${{ matrix.asset.path }}
+      run: |
+        set -eu
+        ASSET_NAME="${STEPS_CHECK_FILES_OUTPUTS_ASSET_NAME}"
+
+        # The CSV file to create is defined in the datapackage.yaml.
+        /usr/local/bin/schema_gov_it_tools.bin \
+          csv create \
+          --jsonld "${ASSET_NAME}${SUFFIX}.data.yaml" \
+          --datapackage "datapackage.yaml" \
+          --force
+
+        echo "Generated CSV for ${ASSET_NAME}"
+      env:
+        STEPS_CHECK_FILES_OUTPUTS_ASSET_NAME: ${{ steps.check-files.outputs.asset_name
+          }}
+    - name: Check CSV file
+      id: check-csv
+      if: >-
+        matrix.asset.needs_csv
+        &&
+        steps.check-files.outputs.datapackage_exists == 'true'
+        &&
+        !contains(matrix.asset.path, 'theme-subtheme-mapping')
+      working-directory: ${{ matrix.asset.path }}
+      env:
+        STEPS_CHECK_FILES_OUTPUTS_ASSET_NAME: ${{ steps.check-files.outputs.asset_name
+          }}
+      run: |
+        set -euo pipefail
+        ASSET_NAME="${STEPS_CHECK_FILES_OUTPUTS_ASSET_NAME}"
+
+        # The CSV file to create is defined in the datapackage.yaml.
+        /usr/local/bin/schema_gov_it_tools.bin \
+          csv validate \
+          --ttl "${ASSET_NAME}.ttl" \
+          --datapackage "datapackage.yaml"
+
+        echo "csv_exists=true" >> "$GITHUB_OUTPUT"
+    - name: Create Pull Request
+      if: steps.check-csv.outputs.csv_exists == 'true'
+      uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0  # v8.1.0
+      with:
+        # By default, the PR is created towards the branch that triggered the workflow.
+        #   If it's not the desider behavior, you can force the base branch with the `base` input.
+        base: >-
+          ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref
+          || github.ref_name }}
+        commit-message: >-
+          build: CSV regenerate assets for ${{ matrix.asset.path
+          }} [skip ci]
+        title: >-
+          build: CSV regenerate assets for ${{ matrix.asset.path
+          }}
+        body: |
+          # CSV Regeneration for `${{ matrix.asset.path }}`
+
+          This PR contains the auto-regenerated artifacts for the `${{ matrix.asset.path }}` controlled vocabulary.
+
+          ## Triggered by changes to
+          - `.ttl` / `.frame.yamlld` → `jsonld create` + `csv create`
+          - `datapackage.yaml` / `.data.yaml` → `csv create` only
+
+          ## Generated Files
+          ${{ steps.check-files.outputs.should_jsonld_create == 'true' && format('- `{0}/{1}{2}.data.yaml`', matrix.asset.path, steps.check-files.outputs.asset_name, env.SUFFIX) || '' }}
+          ${{ steps.check-csv.outputs.csv_exists == 'true' && format('- `{0}/{1}.csv`', matrix.asset.path, steps.check-files.outputs.asset_name) || '' }}
+
+          Generated by the [CI Tabular Create workflow](.github/workflows/ci-tabular.yml).
+        branch: >-
+          build/csv-generation${{ matrix.asset.path }}
+        delete-branch: true
+        labels: 'automated,csv-generation'
