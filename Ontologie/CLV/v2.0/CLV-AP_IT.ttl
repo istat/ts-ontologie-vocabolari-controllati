@@ -31,11 +31,12 @@
                                     dct:issued "2017-08-07"^^xsd:date ;
                                     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                  <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                    dct:modified "2026-09-23"^^xsd:date ;
+                                    dct:modified "2026-09-24"^^xsd:date ;
 									dct:temporal "";
 									dct:subject <http://publications.europa.eu/resource/authority/data-theme/REGI>;
                                     dct:publisher <http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid> ;
                                     dct:rightsHolder <https://w3id.org/italia/data/public-organization/ISTAT> ;
+									dct:conformsTo <https://w3id.org/italia/data/standard/OWL> ;
                                     dct:title "Address(Location) Ontology"@en ,
                                               "Ontologia degli Indirizzi/Luoghi"@it ;
                                     rdfs:comment "Questa è l'ontologia del profilo di italiano sugli indirizzi e i luoghi (Italian Core Location Vocabulary - Application Profile  - CLV-AP_IT)"@it ,
@@ -43,8 +44,8 @@
                                     rdfs:isDefinedBy : ;
                                     rdfs:label "Address(Location) Ontology"@en ,
                                                "Ontologia degli Indirizzi/Luoghi"@it ;
-                                    owl:versionInfo "Version 2.0 - Modified on 23 Semptember 2026 - Alignment of the ontology with the concepts of the National Archive of Street Numbers for Urban Roads (ANNCSU) and introduction of concepts relating to Foreign States and the Territories governed by them."@en ,
-                                                    "Versione 2.0 - Modificata il 23 Settembre 2026 - Allineamento dell'ontologia con  i concetti dell'Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU) e introduzione dei concetti relativi agli Stati Esteri e ai Territori governati da essi."@it;
+                                    owl:versionInfo "Version 2.0 - Modified on 24 Semptember 2026 - Alignment of the ontology with the concepts of the National Archive of Street Numbers for Urban Roads (ANNCSU) and introduction of concepts relating to Foreign States and the Territories governed by them."@en ,
+                                                    "Versione 2.0 - Modificata il 24 Settembre 2026 - Allineamento dell'ontologia con  i concetti dell'Archivio Nazionale dei Numeri Civici delle Strade Urbane (ANNCSU) e introduzione dei concetti relativi agli Stati Esteri e ai Territori governati da essi."@it;
                                     dcat:keyword "Accesso esterno"@it ,
                                                  "Accesso interno"@it ,
                                                  "Address"@en ,
@@ -83,8 +84,7 @@
                                     admsapit:semanticAssetInUse <https://w3id.org/italia/data/project/ANNCSU> ,
                                                                 <https://w3id.org/italia/data/project/DAF> ,
                                                                 <https://w3id.org/italia/data/project/OntoPiA> ;
-                                    admsapit:status "catalogued" ,
-                                                    "published" ;
+                                    admsapit:status <http://purl.org/adms/status/Completed> ;                                                   
                                     admsapit:target "Imprese" ,
                                                     "Pubbliche Amministrazioni" ;
                                     admsapit:type admsapit:CoreOntology .
@@ -101,7 +101,11 @@
     vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
     vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
 
-
+<https://w3id.org/italia/data/standard/OWL>
+    a dct:Standard ;
+    dct:title "OWL"@en , "OWL"@it ;
+    foaf:name "OWL"@en , "OWL"@it ;
+    dct:description "Web Ontology Language (OWL) standard"@en .
 
 
 
@@ -205,8 +209,8 @@ xsd:time rdf:type rdfs:Datatype .
                          rdfs:range :Continent ;
                          rdfs:comment "La relazione lega lo Stato al Continente di appartenenza."@it ,
                                       "The relationship links the Country to its corresponding Continent."@en ;
-                         rdfs:label "Country is in Continent"@en ,
-                                    "Lo Stato è nel Continente"@it .
+                         rdfs:label "country is in continent"@en ,
+                                    "lo stato è nel continente"@it .
 
 
 ###  https://w3id.org/italia/onto/CLV/hasSovereignState
@@ -216,8 +220,8 @@ xsd:time rdf:type rdfs:Datatype .
                       rdfs:range  :State ;
                       rdfs:comment "Il territorio descritto ha stato sovrano di riferimento (Stato padre) da cui dipende amministrativamente o politicamente."@it ,
 					               "The territory described has a reference sovereign state (parent state) on which it depends administratively or politically."@en;
-                      rdfs:label "ha Stato sovrano"@it ,
-                                 "has Sovereign State"@en .
+                      rdfs:label "ha stato sovrano"@it ,
+                                 "has sovereign state"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/hasInternalAccessCode
@@ -672,8 +676,8 @@ xsd:time rdf:type rdfs:Datatype .
                   rdfs:comment "La relazione lega l'Area geopolitica sub-continentale al Continente di appartenenza."@it ,
                                "The relationship links the Sub-continental geopolitical area to its corresponding Continent."@none ,
                                "The relationship links the Territorial Area to the Continent" ;
-                  rdfs:label "Area geopolitica sub-continentale è nel Continente"@it ,
-                             "Sub-continental geopolitical area is in Continent"@en .
+                  rdfs:label "area geopolitica sub-continentale è nel continente"@it ,
+                             "sub-continental geopolitical area is in continent"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/isInTerritorialArea
@@ -688,8 +692,8 @@ xsd:time rdf:type rdfs:Datatype .
                         rdfs:range :TerritorialArea ;
                         rdfs:comment "La relazione lega il Paese (Stato o Territorio) all'Area geopolitica sub-continentale di appartenenza."@it ,
                                      "The relationship links the Country (State or Territory) to its corresponding Sub-continental geopolitical area."@en ;
-                        rdfs:label "Country or Territory is in Sub-continental geopolitical area"@en ,
-                                   "Paese è nell'Area geopolitica sub-continentale"@it .
+                        rdfs:label "country or territory is in sub-continental geopolitical area"@en ,
+                                   "paese è nell'area geopolitica sub-continentale"@it .
 
 
 
@@ -781,8 +785,8 @@ xsd:time rdf:type rdfs:Datatype .
                            rdfs:range :Continent ;
                            rdfs:comment "La relazione lega il Territorio al Continente di appartenenza."@it ,
                                         "The relationship links the Territory to its corresponding Continent."@en ;
-                           rdfs:label "Il Territorio è nel Continente"@it ,
-                                      "Territory is in Continent"@en .
+                           rdfs:label "il territorio è nel continente"@it ,
+                                      "territory is in continent"@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/withAddress
@@ -1687,6 +1691,8 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
           rdfs:subClassOf covapit:PublicOrganization ;
           rdfs:label "State"@en ,
                      "Stato"@it ;
+		  owl:versionInfo "non stabile"@it ,
+                         "unstable"@en ;
 		  rdfs:comment "Soggetto di diritto internazionale (destinatario di norme di diritto internazionale) riconosciuto come tale dall’ordinamento italiano essendo costituito da un apparato politico (insieme di organi) che esercita effettivamente una sovranità su un determinato territorio e nei confronti di una popolazione e che gode di una sovranità esterna (indipendenza dagli altri Stati). Ricadono, di regola, fuori dall’ambito del concetto di Stato come soggetto di diritto internazionale: gli Stati membri di Stati federali, da considerarsi organi dello Stato federale stesso; i Governi in esilio, organizzazioni o fronti o comitati di liberazione nazionale con sede in un territorio straniero."@it,
 		               "Subject of international law (addressee of rules of international law) recognised as such by the Italian legal order, insofar as it consists of a political apparatus (a set of organs) that effectively exercises sovereignty over a given territory and population, and that enjoys external sovereignty (independence from other States). As a rule, the following fall outside the scope of the concept of State as a subject of international law: the member states of federal states, which are to be regarded as organs of the federal State itself; governments in exile; and organisations, fronts or national liberation committees based in foreign territory."@en.		  
 
@@ -1695,6 +1701,8 @@ admsapit:SemanticAssetDistribution rdf:type owl:Class .
 :SpecialTerritory   rdf:type owl:Class ;
                      rdfs:comment "Area geografica speciale non assimilabile allo Stato o al Territorio"@it ,
                                   "Special geographic area not equivalent to a State or Territory"@en ;
+					 owl:versionInfo "non stabile"@it ,
+                                  "unstable"@en ;
                      rdfs:label "Special Territory"@en ,
                                 "Territorio Speciale"@it .
 
@@ -2197,10 +2205,10 @@ DUF e DUG sono due proprietà obbligatorie per la classe ed è possibile specifi
               rdfs:subClassOf :AdminUnitComponent ;
               rdfs:comment "Area geografica dipendente da uno Stato sovrano, il cui riconoscimento di particolari forme di autonomia o specifiche condizioni storico-politiche, la rende unità di interesse statistico secondo le modalità dettate dai regolamenti Ue."@it ,
                            "Geographical area over which a state has sovereignity. According to Eu regulations such an area is considered statistically relevant when it is in some specific functions autonomous from the central government or due to its specific historical-political conditions."@en ;
-              rdfs:label "Territorio"@it ,
+              owl:versionInfo "non stabile"@it ,
+                         "unstable"@en ;
+			  rdfs:label "Territorio"@it ,
                          "Territory"@en .
-
-
 
 
 ###  https://w3id.org/italia/onto/COV/Organization
@@ -2293,10 +2301,10 @@ l0:Location rdf:type owl:Class .
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia CLV-AP_IT"@it ,
                                                                          "RDF/Turtle distribution of CLV-AP_IT Ontology"@en ;
-                                                               dcat:accessURL <https://github.com/italia/dati-semantic-assets/tree/master/Ontologie/CLV/latest> ;
-                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/dati-semantic-assets/master/Ontologie/CLV/latest/CLV-AP_IT.ttl> .
+                                                               dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Ontologie/CLV/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/main/Ontologie/CLV/latest/CLV-AP_IT.ttl> .
 
-
+                                                                               
 ###  https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML
 <https://w3id.org/italia/data/distribution/CLVAPIT-RDF-XML> rdf:type owl:NamedIndividual ,
                                                                      admsapit:SemanticAssetDistribution ;
