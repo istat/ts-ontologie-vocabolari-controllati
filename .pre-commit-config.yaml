@@ -51,25 +51,52 @@ repos:
   rev: v1.3.0
   hooks:
     - id: python-safety-dependencies-check
+#- repo: https://github.com/teamdigitale/json-semantic-playground.git
+#  rev: 30fef4df
+#  hooks:
+#  -   id: validate-csv
+#      files: >-
+#        ^VocabolariControllati/.*\.csv
+#      exclude: >-
+#        ^.*(scriptR2RML|vocs-deprecated).*
+#  -   id: validate-directory-versioning
+#      files: >-
+#        ^Ontologie/.*/latest/.*\.ttl
+#  -   id: validate-turtle
+#      name: validate-turtle-ontologies
+#      files: >-
+#        ^Ontologie/.*/latest/.*\.ttl
+#  -   id: validate-turtle
+#      name: validate-turtle-vocabularies
+#      files: >-
+#        ^VocabolariControllati/.*\.ttl
+#      exclude: >-
+#        ^.*(scriptR2RML|vocs-deprecated).*
+#  -   id: validate-oas-schema
 - repo: https://github.com/teamdigitale/json-semantic-playground.git
   rev: 30fef4df
   hooks:
   -   id: validate-csv
+      additional_dependencies: ["setuptools<81"]
       files: >-
         ^VocabolariControllati/.*\.csv
       exclude: >-
         ^.*(scriptR2RML|vocs-deprecated).*
   -   id: validate-directory-versioning
+      additional_dependencies: ["setuptools<81"]
       files: >-
         ^Ontologie/.*/latest/.*\.ttl
   -   id: validate-turtle
+      additional_dependencies: ["setuptools<81"]
       name: validate-turtle-ontologies
       files: >-
         ^Ontologie/.*/latest/.*\.ttl
   -   id: validate-turtle
+      additional_dependencies: ["setuptools<81"]
       name: validate-turtle-vocabularies
       files: >-
         ^VocabolariControllati/.*\.ttl
       exclude: >-
         ^.*(scriptR2RML|vocs-deprecated).*
   -   id: validate-oas-schema
+      additional_dependencies: ["setuptools<81"]
