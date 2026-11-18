@@ -77,26 +77,26 @@ repos:
   rev: 30fef4df
   hooks:
   -   id: validate-csv
-      additional_dependencies: ["setuptools<81"]
+      additional_dependencies: ["setuptools<81", "numpy<2"]
       files: >-
         ^VocabolariControllati/.*\.csv
       exclude: >-
         ^.*(scriptR2RML|vocs-deprecated).*
   -   id: validate-directory-versioning
-      additional_dependencies: ["setuptools<81"]
+      additional_dependencies: ["setuptools<81", "numpy<2"]
       files: >-
         ^Ontologie/.*/latest/.*\.ttl
   -   id: validate-turtle
-      additional_dependencies: ["setuptools<81"]
+      additional_dependencies: ["setuptools<81", "numpy<2"]
       name: validate-turtle-ontologies
       files: >-
         ^Ontologie/.*/latest/.*\.ttl
   -   id: validate-turtle
-      additional_dependencies: ["setuptools<81"]
+      additional_dependencies: ["setuptools<81", "numpy<2"]
       name: validate-turtle-vocabularies
       files: >-
         ^VocabolariControllati/.*\.ttl
       exclude: >-
         ^.*(scriptR2RML|vocs-deprecated).*
   -   id: validate-oas-schema
-      additional_dependencies: ["setuptools<81"]
+      additional_dependencies: ["setuptools<81", "numpy<2"]
