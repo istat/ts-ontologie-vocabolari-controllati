@@ -880,6 +880,8 @@
         <rdfs:comment xml:lang="en">The territory described has a reference sovereign state (parent state) on which it depends administratively or politically.</rdfs:comment>
         <rdfs:label xml:lang="it">ha Stato sovrano</rdfs:label>
         <rdfs:label xml:lang="en">has Sovereign State</rdfs:label>
+		<owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
     
 
@@ -2828,6 +2830,8 @@ Trentino-Alto Adige is  formed by the only two Italian autonomous provinces: Tre
         <rdfs:comment xml:lang="en">Special geographic area not equivalent to a State or Territory</rdfs:comment>
         <rdfs:label xml:lang="en">Special Territory</rdfs:label>
         <rdfs:label xml:lang="it">Territorio Speciale</rdfs:label>
+		<owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
     
 
@@ -2840,6 +2844,8 @@ Trentino-Alto Adige is  formed by the only two Italian autonomous provinces: Tre
         <rdfs:comment xml:lang="en">Subject of international law (addressee of rules of international law) recognised as such by the Italian legal order, insofar as it consists of a political apparatus (a set of organs) that effectively exercises sovereignty over a given territory and population, and that enjoys external sovereignty (independence from other States). As a rule, the following fall outside the scope of the concept of State as a subject of international law: the member states of federal states, which are to be regarded as organs of the federal State itself; governments in exile; and organisations, fronts or national liberation committees based in foreign territory.</rdfs:comment>
         <rdfs:label xml:lang="en">State</rdfs:label>
         <rdfs:label xml:lang="it">Stato</rdfs:label>
+		<owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
     
 
