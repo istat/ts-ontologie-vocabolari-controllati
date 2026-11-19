@@ -131,7 +131,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "33";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/33>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/307>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/307>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/309>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/310>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/314>,
@@ -150,7 +150,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/363>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/947>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/956>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/12>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -161,7 +161,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "12";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/12>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/201>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/201>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/243>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/245>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/252>,
@@ -172,7 +172,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/271>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/272>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/351>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/31>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -183,7 +183,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "31";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/31>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/302>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/302>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/304>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/322>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/327>,
@@ -200,7 +200,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/359>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/360>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/324>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/32>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -211,7 +211,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "32";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/32>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/301>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/301>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/305>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/306>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/311>,
@@ -224,7 +224,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/361>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/362>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/364>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/3> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/21>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -235,7 +235,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "21";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/21>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/401>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/401>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/419>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/431>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/436>,
@@ -245,7 +245,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/905>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/856>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/882>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/24>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -256,7 +256,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "24";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/24>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/402>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/402>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/408>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/411>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/414>,
@@ -271,7 +271,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/456>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/463>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/983>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/22>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -282,7 +282,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "22";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/22>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/404>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/404>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/406>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/409>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/413>,
@@ -298,7 +298,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/450>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/451>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/458>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/23>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -309,7 +309,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "23";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/23>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/410>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/410>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/417>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/420>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/424>,
@@ -329,7 +329,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/929>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/962>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/976>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/2> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/42>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -340,7 +340,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "42";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/42>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/503>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/503>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/505>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/506>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/507>,
@@ -390,7 +390,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/992>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/994>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/995>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/41>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -401,12 +401,12 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "41";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/41>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/509>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/509>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/536>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/908>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/934>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/980>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/4> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/52>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -417,7 +417,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "52";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/52>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/703>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/703>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/708>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/712>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/713>,
@@ -441,7 +441,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/984>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/988>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/997>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/13>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -452,7 +452,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "13";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/13>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/202>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/202>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/219>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/223>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/225>,
@@ -469,7 +469,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/952>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/959>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/987>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/51>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -480,7 +480,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "51";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/51>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/701>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/701>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/719>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/909>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/945>,
@@ -489,7 +489,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/967>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/975>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/990>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/5> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/11>
   a skos:Concept, :Feature, :TerritorialArea;
@@ -500,7 +500,7 @@
   skos:inScheme <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>;
   skos:notation "11";
   :hasIdentifier <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/11>;
-  skos:narrower <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/100>,
+  skos:narrowMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/100>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/203>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/206>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/209>,
@@ -527,7 +527,7 @@
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/255>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/257>,
     <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/315>;
-  skos:broader <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
+  skos:broadMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/continents/1> .
 
 <https://w3id.org/italia/data/identifiers/subcontinental-areas-identifiers/numeric-istat-code/33>
   a :Identifier;
