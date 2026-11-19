@@ -105,6 +105,22 @@
 #    fine 
 #################################################################
 
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas>
+    skos:hasTopConcept
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/11>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/12>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/13>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/21>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/22>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/23>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/24>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/31>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/32>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/33>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/41>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/42>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/51>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/52> .
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/subcontinental-areas/33>
   a skos:Concept, :Feature, :TerritorialArea;
