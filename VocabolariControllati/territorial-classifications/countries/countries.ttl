@@ -104,6 +104,263 @@
 #    fine 
 #################################################################
 
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>
+    skos:hasTopConcept
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/100>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/201>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/202>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/203>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/206>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/209>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/212>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/214>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/215>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/216>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/219>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/220>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/221>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/223>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/225>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/226>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/227>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/229>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/231>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/232>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/233>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/234>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/235>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/236>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/239>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/240>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/241>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/243>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/244>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/245>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/246>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/247>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/248>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/249>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/250>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/251>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/252>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/253>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/254>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/255>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/256>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/257>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/270>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/271>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/272>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/301>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/302>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/304>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/305>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/306>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/307>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/309>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/310>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/311>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/314>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/315>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/319>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/320>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/322>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/323>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/324>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/326>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/327>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/330>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/331>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/332>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/333>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/334>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/335>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/336>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/337>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/338>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/339>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/340>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/341>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/342>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/343>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/344>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/345>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/346>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/348>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/349>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/351>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/353>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/354>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/356>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/357>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/358>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/359>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/360>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/361>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/362>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/363>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/364>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/401>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/402>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/404>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/406>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/408>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/409>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/410>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/411>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/413>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/414>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/415>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/417>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/418>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/419>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/420>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/421>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/422>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/423>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/424>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/425>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/426>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/427>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/428>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/429>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/430>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/431>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/432>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/434>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/435>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/436>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/437>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/438>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/440>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/441>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/442>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/443>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/446>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/448>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/449>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/450>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/451>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/453>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/454>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/455>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/456>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/457>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/458>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/460>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/461>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/463>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/464>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/465>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/466>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/467>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/503>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/505>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/506>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/507>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/509>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/513>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/514>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/515>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/516>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/517>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/518>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/519>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/523>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/524>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/525>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/527>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/529>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/530>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/532>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/533>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/534>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/536>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/602>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/604>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/605>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/606>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/608>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/609>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/612>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/614>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/615>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/616>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/617>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/618>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/619>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/701>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/703>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/708>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/712>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/713>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/715>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/719>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/720>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/721>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/725>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/727>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/730>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/731>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/732>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/856>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/882>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/901>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/902>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/904>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/905>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/906>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/908>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/909>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/910>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/911>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/914>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/915>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/917>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/919>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/920>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/924>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/925>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/926>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/928>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/929>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/934>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/935>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/937>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/939>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/940>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/944>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/945>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/947>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/948>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/952>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/956>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/958>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/959>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/960>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/962>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/964>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/965>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/966>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/967>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/972>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/974>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/975>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/976>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/979>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/980>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/982>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/983>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/984>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/987>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/988>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/990>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/992>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/994>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/995>,
+        <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/997> .
+
+
 <https://w3id.org/italia/data/identifiers/countries-identifiers/unsd_m49-code/764>
   a :Identifier;
   l0:identifier "764";
@@ -1346,6 +1603,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/100>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Italia"@it, "Italy"@en;
   skos:prefLabel "Italia"@it, "Italy"@en;
   l0:name "Italia"@it, "Italy"@en;
@@ -1376,6 +1634,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/201>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Albania"@en, "Albania"@it;
   skos:prefLabel "Albania"@en, "Albania"@it;
   l0:name "Albania"@en, "Albania"@it;
@@ -1410,6 +1669,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/202>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Andorra"@en, "Andorra"@it;
   skos:prefLabel "Andorra"@en, "Andorra"@it;
   l0:name "Andorra"@en, "Andorra"@it;
@@ -1444,6 +1704,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/203>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Austria"@en, "Austria"@it;
   skos:prefLabel "Austria"@en, "Austria"@it;
   l0:name "Austria"@en, "Austria"@it;
@@ -1478,6 +1739,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/206>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Belgio"@it, "Belgium"@en;
   skos:prefLabel "Belgio"@it, "Belgium"@en;
   l0:name "Belgio"@it, "Belgium"@en;
@@ -1512,6 +1774,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/209>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bulgaria"@en, "Bulgaria"@it;
   skos:prefLabel "Bulgaria"@en, "Bulgaria"@it;
   l0:name "Bulgaria"@en, "Bulgaria"@it;
@@ -1546,6 +1809,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/212>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Danimarca"@it, "Denmark"@en;
   skos:prefLabel "Danimarca"@it, "Denmark"@en;
   l0:name "Danimarca"@it, "Denmark"@en;
@@ -1580,6 +1844,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/214>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Finland"@en, "Finlandia"@it;
   skos:prefLabel "Finland"@en, "Finlandia"@it;
   l0:name "Finland"@en, "Finlandia"@it;
@@ -1614,6 +1879,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/215>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "France"@en, "Francia"@it;
   skos:prefLabel "France"@en, "Francia"@it;
   l0:name "France"@en, "Francia"@it;
@@ -1648,6 +1914,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/216>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Germania"@it, "Germany"@en;
   skos:prefLabel "Germania"@it, "Germany"@en;
   l0:name "Germania"@it, "Germany"@en;
@@ -1682,6 +1949,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/219>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Regno Unito"@it, "United Kingdom"@en;
   skos:prefLabel "Regno Unito"@it, "United Kingdom"@en;
   l0:name "Regno Unito"@it, "United Kingdom"@en;
@@ -1716,6 +1984,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/220>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Grecia"@it, "Greece"@en;
   skos:prefLabel "Grecia"@it, "Greece"@en;
   l0:name "Grecia"@it, "Greece"@en;
@@ -1750,6 +2019,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/221>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ireland"@en, "Irlanda"@it;
   skos:prefLabel "Ireland"@en, "Irlanda"@it;
   l0:name "Ireland"@en, "Irlanda"@it;
@@ -1784,6 +2054,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/223>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Iceland"@en, "Islanda"@it;
   skos:prefLabel "Iceland"@en, "Islanda"@it;
   l0:name "Iceland"@en, "Islanda"@it;
@@ -1818,6 +2089,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/225>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Liechtenstein"@en, "Liechtenstein"@it;
   skos:prefLabel "Liechtenstein"@en, "Liechtenstein"@it;
   l0:name "Liechtenstein"@en, "Liechtenstein"@it;
@@ -1852,6 +2124,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/226>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Lussemburgo"@it, "Luxembourg"@en;
   skos:prefLabel "Lussemburgo"@it, "Luxembourg"@en;
   l0:name "Lussemburgo"@it, "Luxembourg"@en;
@@ -1886,6 +2159,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/227>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Malta"@en, "Malta"@it;
   skos:prefLabel "Malta"@en, "Malta"@it;
   l0:name "Malta"@en, "Malta"@it;
@@ -1920,6 +2194,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/229>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Monaco"@en, "Monaco"@it;
   skos:prefLabel "Monaco"@en, "Monaco"@it;
   l0:name "Monaco"@en, "Monaco"@it;
@@ -1954,6 +2229,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/231>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Norvegia"@it, "Norway"@en;
   skos:prefLabel "Norvegia"@it, "Norway"@en;
   l0:name "Norvegia"@it, "Norway"@en;
@@ -1988,6 +2264,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/232>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Netherlands"@en, "Paesi Bassi"@it;
   skos:prefLabel "Netherlands"@en, "Paesi Bassi"@it;
   l0:name "Netherlands"@en, "Paesi Bassi"@it;
@@ -2022,6 +2299,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/233>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Poland"@en, "Polonia"@it;
   skos:prefLabel "Poland"@en, "Polonia"@it;
   l0:name "Poland"@en, "Polonia"@it;
@@ -2056,6 +2334,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/234>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Portogallo"@it, "Portugal"@en;
   skos:prefLabel "Portogallo"@it, "Portugal"@en;
   l0:name "Portogallo"@it, "Portugal"@en;
@@ -2090,6 +2369,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/235>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Romania"@en, "Romania"@it;
   skos:prefLabel "Romania"@en, "Romania"@it;
   l0:name "Romania"@en, "Romania"@it;
@@ -2124,6 +2404,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/236>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "San Marino"@en, "San Marino"@it;
   skos:prefLabel "San Marino"@en, "San Marino"@it;
   l0:name "San Marino"@en, "San Marino"@it;
@@ -2158,6 +2439,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/239>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Spagna"@it, "Spain"@en;
   skos:prefLabel "Spagna"@it, "Spain"@en;
   l0:name "Spagna"@it, "Spain"@en;
@@ -2192,6 +2474,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/240>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Svezia"@it, "Sweden"@en;
   skos:prefLabel "Svezia"@it, "Sweden"@en;
   l0:name "Svezia"@it, "Sweden"@en;
@@ -2226,6 +2509,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/241>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Svizzera"@it, "Switzerland"@en;
   skos:prefLabel "Svizzera"@it, "Switzerland"@en;
   l0:name "Svizzera"@it, "Switzerland"@en;
@@ -2260,6 +2544,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/243>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ucraina"@it, "Ukraine"@en;
   skos:prefLabel "Ucraina"@it, "Ukraine"@en;
   l0:name "Ucraina"@it, "Ukraine"@en;
@@ -2294,6 +2579,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/244>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Hungary"@en, "Ungheria"@it;
   skos:prefLabel "Hungary"@en, "Ungheria"@it;
   l0:name "Hungary"@en, "Ungheria"@it;
@@ -2328,6 +2614,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/245>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Federazione russa"@it, "Russian Federation"@en;
   skos:prefLabel "Federazione russa"@it, "Russian Federation"@en;
   l0:name "Federazione russa"@it, "Russian Federation"@en;
@@ -2362,6 +2649,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/246>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Stato della Città del Vaticano"@it, "Vatican City State"@en;
   skos:prefLabel "Stato della Città del Vaticano"@it, "Vatican City State"@en;
   l0:name "Stato della Città del Vaticano"@it, "Vatican City State"@en;
@@ -2396,6 +2684,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/247>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Estonia"@en, "Estonia"@it;
   skos:prefLabel "Estonia"@en, "Estonia"@it;
   l0:name "Estonia"@en, "Estonia"@it;
@@ -2430,6 +2719,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/248>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Latvia"@en, "Lettonia"@it;
   skos:prefLabel "Latvia"@en, "Lettonia"@it;
   l0:name "Latvia"@en, "Lettonia"@it;
@@ -2464,6 +2754,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/249>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Lithuania"@en, "Lituania"@it;
   skos:prefLabel "Lithuania"@en, "Lituania"@it;
   l0:name "Lithuania"@en, "Lituania"@it;
@@ -2498,6 +2789,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/250>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Croatia"@en, "Croazia"@it;
   skos:prefLabel "Croatia"@en, "Croazia"@it;
   l0:name "Croatia"@en, "Croazia"@it;
@@ -2532,6 +2824,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/251>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Slovenia"@en, "Slovenia"@it;
   skos:prefLabel "Slovenia"@en, "Slovenia"@it;
   l0:name "Slovenia"@en, "Slovenia"@it;
@@ -2566,6 +2859,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/252>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bosnia and Herzegovina"@en, "Bosnia-Erzegovina"@it;
   skos:prefLabel "Bosnia and Herzegovina"@en, "Bosnia-Erzegovina"@it;
   l0:name "Bosnia and Herzegovina"@en, "Bosnia-Erzegovina"@it;
@@ -2600,6 +2894,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/253>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Macedonia del Nord"@it, "North Macedonia"@en;
   skos:prefLabel "Macedonia del Nord"@it, "North Macedonia"@en;
   l0:name "Macedonia del Nord"@it, "North Macedonia"@en;
@@ -2634,6 +2929,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/254>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Moldova"@en, "Moldova"@it;
   skos:prefLabel "Moldova"@en, "Moldova"@it;
   l0:name "Moldova"@en, "Moldova"@it;
@@ -2668,6 +2964,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/255>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Slovacchia"@it, "Slovakia"@en;
   skos:prefLabel "Slovacchia"@it, "Slovakia"@en;
   l0:name "Slovacchia"@it, "Slovakia"@en;
@@ -2702,6 +2999,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/256>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Belarus"@en, "Bielorussia"@it;
   skos:prefLabel "Belarus"@en, "Bielorussia"@it;
   l0:name "Belarus"@en, "Bielorussia"@it;
@@ -2736,6 +3034,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/257>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Czech Republic"@en, "Repubblica ceca"@it;
   skos:prefLabel "Czech Republic"@en, "Repubblica ceca"@it;
   l0:name "Czech Republic"@en, "Repubblica ceca"@it;
@@ -2770,6 +3069,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/270>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Montenegro"@en, "Montenegro"@it;
   skos:prefLabel "Montenegro"@en, "Montenegro"@it;
   l0:name "Montenegro"@en, "Montenegro"@it;
@@ -2804,6 +3104,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/271>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Serbia"@en, "Serbia"@it;
   skos:prefLabel "Serbia"@en, "Serbia"@it;
   l0:name "Serbia"@en, "Serbia"@it;
@@ -2838,6 +3139,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/272>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Kosovo"@en, "Kosovo"@it;
   skos:prefLabel "Kosovo"@en, "Kosovo"@it;
   l0:name "Kosovo"@en, "Kosovo"@it;
@@ -2866,6 +3168,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/301>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Afghanistan"@en, "Afghanistan"@it;
   skos:prefLabel "Afghanistan"@en, "Afghanistan"@it;
   l0:name "Afghanistan"@en, "Afghanistan"@it;
@@ -2900,6 +3203,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/302>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Arabia Saudita"@it, "Saudi Arabia"@en;
   skos:prefLabel "Arabia Saudita"@it, "Saudi Arabia"@en;
   l0:name "Arabia Saudita"@it, "Saudi Arabia"@en;
@@ -2934,6 +3238,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/304>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bahrain"@en, "Bahrein"@it;
   skos:prefLabel "Bahrain"@en, "Bahrein"@it;
   l0:name "Bahrain"@en, "Bahrein"@it;
@@ -2968,6 +3273,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/305>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bangladesh"@en, "Bangladesh"@it;
   skos:prefLabel "Bangladesh"@en, "Bangladesh"@it;
   l0:name "Bangladesh"@en, "Bangladesh"@it;
@@ -3002,6 +3308,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/306>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bhutan"@en, "Bhutan"@it;
   skos:prefLabel "Bhutan"@en, "Bhutan"@it;
   l0:name "Bhutan"@en, "Bhutan"@it;
@@ -3036,6 +3343,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/307>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Myanmar/Birmania"@it, "Myanmar/Burma"@en;
   skos:prefLabel "Myanmar/Birmania"@it, "Myanmar/Burma"@en;
   l0:name "Myanmar/Birmania"@it, "Myanmar/Burma"@en;
@@ -3070,6 +3378,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/309>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Brunei Darussalam"@en, "Brunei Darussalam"@it;
   skos:prefLabel "Brunei Darussalam"@en, "Brunei Darussalam"@it;
   l0:name "Brunei Darussalam"@en, "Brunei Darussalam"@it;
@@ -3104,6 +3413,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/310>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cambodia"@en, "Cambogia"@it;
   skos:prefLabel "Cambodia"@en, "Cambogia"@it;
   l0:name "Cambodia"@en, "Cambogia"@it;
@@ -3138,6 +3448,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/311>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sri Lanka"@en, "Sri Lanka"@it;
   skos:prefLabel "Sri Lanka"@en, "Sri Lanka"@it;
   l0:name "Sri Lanka"@en, "Sri Lanka"@it;
@@ -3172,6 +3483,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/314>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "China"@en, "Cina"@it;
   skos:prefLabel "China"@en, "Cina"@it;
   l0:name "China"@en, "Cina"@it;
@@ -3206,6 +3518,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/315>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cipro"@it, "Cyprus"@en;
   skos:prefLabel "Cipro"@it, "Cyprus"@en;
   l0:name "Cipro"@it, "Cyprus"@en;
@@ -3240,6 +3553,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/319>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Corea del Nord"@it, "North Korea"@en;
   skos:prefLabel "Corea del Nord"@it, "North Korea"@en;
   l0:name "Corea del Nord"@it, "North Korea"@en;
@@ -3274,6 +3588,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/320>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Corea del Sud"@it, "South Korea"@en;
   skos:prefLabel "Corea del Sud"@it, "South Korea"@en;
   l0:name "Corea del Sud"@it, "South Korea"@en;
@@ -3308,6 +3623,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/322>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Emirati Arabi Uniti"@it, "United Arab Emirates"@en;
   skos:prefLabel "Emirati Arabi Uniti"@it, "United Arab Emirates"@en;
   l0:name "Emirati Arabi Uniti"@it, "United Arab Emirates"@en;
@@ -3342,6 +3658,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/323>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Filippine"@it, "Philippines"@en;
   skos:prefLabel "Filippine"@it, "Philippines"@en;
   l0:name "Filippine"@it, "Philippines"@en;
@@ -3376,6 +3693,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/326>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Giappone"@it, "Japan"@en;
   skos:prefLabel "Giappone"@it, "Japan"@en;
   l0:name "Giappone"@it, "Japan"@en;
@@ -3410,6 +3728,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/327>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Giordania"@it, "Jordan"@en;
   skos:prefLabel "Giordania"@it, "Jordan"@en;
   l0:name "Giordania"@it, "Jordan"@en;
@@ -3444,6 +3763,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/330>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "India"@en, "India"@it;
   skos:prefLabel "India"@en, "India"@it;
   l0:name "India"@en, "India"@it;
@@ -3478,6 +3798,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/331>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Indonesia"@en, "Indonesia"@it;
   skos:prefLabel "Indonesia"@en, "Indonesia"@it;
   l0:name "Indonesia"@en, "Indonesia"@it;
@@ -3512,6 +3833,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/332>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Iran"@en, "Iran"@it;
   skos:prefLabel "Iran"@en, "Iran"@it;
   l0:name "Iran"@en, "Iran"@it;
@@ -3546,6 +3868,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/333>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Iraq"@en, "Iraq"@it;
   skos:prefLabel "Iraq"@en, "Iraq"@it;
   l0:name "Iraq"@en, "Iraq"@it;
@@ -3580,6 +3903,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/334>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Israel"@en, "Israele"@it;
   skos:prefLabel "Israel"@en, "Israele"@it;
   l0:name "Israel"@en, "Israele"@it;
@@ -3614,6 +3938,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/335>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Kuwait"@en, "Kuwait"@it;
   skos:prefLabel "Kuwait"@en, "Kuwait"@it;
   l0:name "Kuwait"@en, "Kuwait"@it;
@@ -3648,6 +3973,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/336>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Laos"@en, "Laos"@it;
   skos:prefLabel "Laos"@en, "Laos"@it;
   l0:name "Laos"@en, "Laos"@it;
@@ -3682,6 +4008,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/337>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Lebanon"@en, "Libano"@it;
   skos:prefLabel "Lebanon"@en, "Libano"@it;
   l0:name "Lebanon"@en, "Libano"@it;
@@ -3716,6 +4043,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/338>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Timor Leste"@en, "Timor Leste"@it;
   skos:prefLabel "Timor Leste"@en, "Timor Leste"@it;
   l0:name "Timor Leste"@en, "Timor Leste"@it;
@@ -3750,6 +4078,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/339>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Maldive"@it, "Maldives"@en;
   skos:prefLabel "Maldive"@it, "Maldives"@en;
   l0:name "Maldive"@it, "Maldives"@en;
@@ -3784,6 +4113,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/340>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Malaysia"@en, "Malaysia"@it;
   skos:prefLabel "Malaysia"@en, "Malaysia"@it;
   l0:name "Malaysia"@en, "Malaysia"@it;
@@ -3818,6 +4148,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/341>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Mongolia"@en, "Mongolia"@it;
   skos:prefLabel "Mongolia"@en, "Mongolia"@it;
   l0:name "Mongolia"@en, "Mongolia"@it;
@@ -3852,6 +4183,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/342>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Nepal"@en, "Nepal"@it;
   skos:prefLabel "Nepal"@en, "Nepal"@it;
   l0:name "Nepal"@en, "Nepal"@it;
@@ -3886,6 +4218,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/343>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Oman"@en, "Oman"@it;
   skos:prefLabel "Oman"@en, "Oman"@it;
   l0:name "Oman"@en, "Oman"@it;
@@ -3920,6 +4253,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/344>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Pakistan"@en, "Pakistan"@it;
   skos:prefLabel "Pakistan"@en, "Pakistan"@it;
   l0:name "Pakistan"@en, "Pakistan"@it;
@@ -3954,6 +4288,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/345>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Qatar"@en, "Qatar"@it;
   skos:prefLabel "Qatar"@en, "Qatar"@it;
   l0:name "Qatar"@en, "Qatar"@it;
@@ -3988,6 +4323,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/346>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Singapore"@en, "Singapore"@it;
   skos:prefLabel "Singapore"@en, "Singapore"@it;
   l0:name "Singapore"@en, "Singapore"@it;
@@ -4022,6 +4358,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/348>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Siria"@it, "Syria"@en;
   skos:prefLabel "Siria"@it, "Syria"@en;
   l0:name "Siria"@it, "Syria"@en;
@@ -4056,6 +4393,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/349>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Thailand"@en, "Thailandia"@it;
   skos:prefLabel "Thailand"@en, "Thailandia"@it;
   l0:name "Thailand"@en, "Thailandia"@it;
@@ -4090,6 +4428,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/351>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Turchia"@it, "Turkey"@en;
   skos:prefLabel "Turchia"@it, "Turkey"@en;
   l0:name "Turchia"@it, "Turkey"@en;
@@ -4124,6 +4463,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/353>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Vietnam"@en, "Vietnam"@it;
   skos:prefLabel "Vietnam"@en, "Vietnam"@it;
   l0:name "Vietnam"@en, "Vietnam"@it;
@@ -4158,6 +4498,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/354>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Yemen"@en, "Yemen"@it;
   skos:prefLabel "Yemen"@en, "Yemen"@it;
   l0:name "Yemen"@en, "Yemen"@it;
@@ -4192,6 +4533,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/356>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Kazakhstan"@en, "Kazakhstan"@it;
   skos:prefLabel "Kazakhstan"@en, "Kazakhstan"@it;
   l0:name "Kazakhstan"@en, "Kazakhstan"@it;
@@ -4226,6 +4568,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/357>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Uzbekistan"@en, "Uzbekistan"@it;
   skos:prefLabel "Uzbekistan"@en, "Uzbekistan"@it;
   l0:name "Uzbekistan"@en, "Uzbekistan"@it;
@@ -4260,6 +4603,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/358>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Armenia"@en, "Armenia"@it;
   skos:prefLabel "Armenia"@en, "Armenia"@it;
   l0:name "Armenia"@en, "Armenia"@it;
@@ -4294,6 +4638,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/359>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Azerbaigian"@it, "Azerbaijan"@en;
   skos:prefLabel "Azerbaigian"@it, "Azerbaijan"@en;
   l0:name "Azerbaigian"@it, "Azerbaijan"@en;
@@ -4328,6 +4673,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/360>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Georgia"@en, "Georgia"@it;
   skos:prefLabel "Georgia"@en, "Georgia"@it;
   l0:name "Georgia"@en, "Georgia"@it;
@@ -4362,6 +4708,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/361>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Kirghizistan"@it, "Kyrgyzstan"@en;
   skos:prefLabel "Kirghizistan"@it, "Kyrgyzstan"@en;
   l0:name "Kirghizistan"@it, "Kyrgyzstan"@en;
@@ -4396,6 +4743,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/362>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Tagikistan"@it, "Tajikistan"@en;
   skos:prefLabel "Tagikistan"@it, "Tajikistan"@en;
   l0:name "Tagikistan"@it, "Tajikistan"@en;
@@ -4430,6 +4778,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/363>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Taiwan"@en, "Taiwan"@it;
   skos:prefLabel "Taiwan"@en, "Taiwan"@it;
   l0:name "Taiwan"@en, "Taiwan"@it;
@@ -4463,6 +4812,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/364>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Turkmenistan"@en, "Turkmenistan"@it;
   skos:prefLabel "Turkmenistan"@en, "Turkmenistan"@it;
   l0:name "Turkmenistan"@en, "Turkmenistan"@it;
@@ -4497,6 +4847,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/401>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Algeria"@en, "Algeria"@it;
   skos:prefLabel "Algeria"@en, "Algeria"@it;
   l0:name "Algeria"@en, "Algeria"@it;
@@ -4531,6 +4882,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/402>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Angola"@en, "Angola"@it;
   skos:prefLabel "Angola"@en, "Angola"@it;
   l0:name "Angola"@en, "Angola"@it;
@@ -4565,6 +4917,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/404>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Costa d'Avorio"@it, "Côte d'Ivoire"@en;
   skos:prefLabel "Costa d'Avorio"@it, "Côte d'Ivoire"@en;
   l0:name "Costa d'Avorio"@it, "Côte d'Ivoire"@en;
@@ -4599,6 +4952,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/406>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Benin"@en, "Benin"@it;
   skos:prefLabel "Benin"@en, "Benin"@it;
   l0:name "Benin"@en, "Benin"@it;
@@ -4633,6 +4987,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/408>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Botswana"@en, "Botswana"@it;
   skos:prefLabel "Botswana"@en, "Botswana"@it;
   l0:name "Botswana"@en, "Botswana"@it;
@@ -4667,6 +5022,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/409>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Burkina Faso"@en, "Burkina Faso"@it;
   skos:prefLabel "Burkina Faso"@en, "Burkina Faso"@it;
   l0:name "Burkina Faso"@en, "Burkina Faso"@it;
@@ -4701,6 +5057,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/410>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Burundi"@en, "Burundi"@it;
   skos:prefLabel "Burundi"@en, "Burundi"@it;
   l0:name "Burundi"@en, "Burundi"@it;
@@ -4735,6 +5092,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/411>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cameroon"@en, "Camerun"@it;
   skos:prefLabel "Cameroon"@en, "Camerun"@it;
   l0:name "Cameroon"@en, "Camerun"@it;
@@ -4769,6 +5127,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/413>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cape Verde"@en, "Capo Verde"@it;
   skos:prefLabel "Cape Verde"@en, "Capo Verde"@it;
   l0:name "Cape Verde"@en, "Capo Verde"@it;
@@ -4803,6 +5162,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/414>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Central African Republic"@en, "Repubblica Centrafricana"@it;
   skos:prefLabel "Central African Republic"@en, "Repubblica Centrafricana"@it;
   l0:name "Central African Republic"@en, "Repubblica Centrafricana"@it;
@@ -4837,6 +5197,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/415>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Chad"@en, "Ciad"@it;
   skos:prefLabel "Chad"@en, "Ciad"@it;
   l0:name "Chad"@en, "Ciad"@it;
@@ -4871,6 +5232,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/417>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Comore"@it, "Comoros"@en;
   skos:prefLabel "Comore"@it, "Comoros"@en;
   l0:name "Comore"@it, "Comoros"@en;
@@ -4905,6 +5267,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/418>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Congo"@en, "Congo"@it;
   skos:prefLabel "Congo"@en, "Congo"@it;
   l0:name "Congo"@en, "Congo"@it;
@@ -4939,6 +5302,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/419>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Egitto"@it, "Egypt"@en;
   skos:prefLabel "Egitto"@it, "Egypt"@en;
   l0:name "Egitto"@it, "Egypt"@en;
@@ -4973,6 +5337,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/420>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ethiopia"@en, "Etiopia"@it;
   skos:prefLabel "Ethiopia"@en, "Etiopia"@it;
   l0:name "Ethiopia"@en, "Etiopia"@it;
@@ -5007,6 +5372,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/421>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Gabon"@en, "Gabon"@it;
   skos:prefLabel "Gabon"@en, "Gabon"@it;
   l0:name "Gabon"@en, "Gabon"@it;
@@ -5041,6 +5407,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/422>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Gambia"@en, "Gambia"@it;
   skos:prefLabel "Gambia"@en, "Gambia"@it;
   l0:name "Gambia"@en, "Gambia"@it;
@@ -5075,6 +5442,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/423>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ghana"@en, "Ghana"@it;
   skos:prefLabel "Ghana"@en, "Ghana"@it;
   l0:name "Ghana"@en, "Ghana"@it;
@@ -5109,6 +5477,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/424>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Djibouti"@en, "Gibuti"@it;
   skos:prefLabel "Djibouti"@en, "Gibuti"@it;
   l0:name "Djibouti"@en, "Gibuti"@it;
@@ -5143,6 +5512,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/425>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guinea"@en, "Guinea"@it;
   skos:prefLabel "Guinea"@en, "Guinea"@it;
   l0:name "Guinea"@en, "Guinea"@it;
@@ -5177,6 +5547,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/426>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guinea-Bissau"@en, "Guinea-Bissau"@it;
   skos:prefLabel "Guinea-Bissau"@en, "Guinea-Bissau"@it;
   l0:name "Guinea-Bissau"@en, "Guinea-Bissau"@it;
@@ -5211,6 +5582,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/427>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Equatorial Guinea"@en, "Guinea equatoriale"@it;
   skos:prefLabel "Equatorial Guinea"@en, "Guinea equatoriale"@it;
   l0:name "Equatorial Guinea"@en, "Guinea equatoriale"@it;
@@ -5245,6 +5617,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/428>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Kenya"@en, "Kenya"@it;
   skos:prefLabel "Kenya"@en, "Kenya"@it;
   l0:name "Kenya"@en, "Kenya"@it;
@@ -5279,6 +5652,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/429>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Lesotho"@en, "Lesotho"@it;
   skos:prefLabel "Lesotho"@en, "Lesotho"@it;
   l0:name "Lesotho"@en, "Lesotho"@it;
@@ -5313,6 +5687,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/430>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Liberia"@en, "Liberia"@it;
   skos:prefLabel "Liberia"@en, "Liberia"@it;
   l0:name "Liberia"@en, "Liberia"@it;
@@ -5347,6 +5722,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/431>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Libia"@it, "Libya"@en;
   skos:prefLabel "Libia"@it, "Libya"@en;
   l0:name "Libia"@it, "Libya"@en;
@@ -5381,6 +5757,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/432>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Madagascar"@en, "Madagascar"@it;
   skos:prefLabel "Madagascar"@en, "Madagascar"@it;
   l0:name "Madagascar"@en, "Madagascar"@it;
@@ -5415,6 +5792,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/434>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Malawi"@en, "Malawi"@it;
   skos:prefLabel "Malawi"@en, "Malawi"@it;
   l0:name "Malawi"@en, "Malawi"@it;
@@ -5449,6 +5827,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/435>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Mali"@en, "Mali"@it;
   skos:prefLabel "Mali"@en, "Mali"@it;
   l0:name "Mali"@en, "Mali"@it;
@@ -5483,6 +5862,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/436>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Marocco"@it, "Morocco"@en;
   skos:prefLabel "Marocco"@it, "Morocco"@en;
   l0:name "Marocco"@it, "Morocco"@en;
@@ -5517,6 +5897,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/437>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Mauritania"@en, "Mauritania"@it;
   skos:prefLabel "Mauritania"@en, "Mauritania"@it;
   l0:name "Mauritania"@en, "Mauritania"@it;
@@ -5551,6 +5932,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/438>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Mauritius"@en, "Maurizio"@it;
   skos:prefLabel "Mauritius"@en, "Maurizio"@it;
   l0:name "Mauritius"@en, "Maurizio"@it;
@@ -5585,6 +5967,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/440>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Mozambico"@it, "Mozambique"@en;
   skos:prefLabel "Mozambico"@it, "Mozambique"@en;
   l0:name "Mozambico"@it, "Mozambique"@en;
@@ -5619,6 +6002,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/441>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Namibia"@en, "Namibia"@it;
   skos:prefLabel "Namibia"@en, "Namibia"@it;
   l0:name "Namibia"@en, "Namibia"@it;
@@ -5653,6 +6037,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/442>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Niger"@en, "Niger"@it;
   skos:prefLabel "Niger"@en, "Niger"@it;
   l0:name "Niger"@en, "Niger"@it;
@@ -5687,6 +6072,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/443>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Nigeria"@en, "Nigeria"@it;
   skos:prefLabel "Nigeria"@en, "Nigeria"@it;
   l0:name "Nigeria"@en, "Nigeria"@it;
@@ -5721,6 +6107,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/446>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ruanda"@it, "Rwanda"@en;
   skos:prefLabel "Ruanda"@it, "Rwanda"@en;
   l0:name "Ruanda"@it, "Rwanda"@en;
@@ -5755,6 +6142,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/448>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sao Tome and Principe"@en, "Sao Tomé e Principe"@it;
   skos:prefLabel "Sao Tome and Principe"@en, "Sao Tomé e Principe"@it;
   l0:name "Sao Tome and Principe"@en, "Sao Tomé e Principe"@it;
@@ -5789,6 +6177,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/449>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Seychelles"@en, "Seychelles"@it;
   skos:prefLabel "Seychelles"@en, "Seychelles"@it;
   l0:name "Seychelles"@en, "Seychelles"@it;
@@ -5823,6 +6212,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/450>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Senegal"@en, "Senegal"@it;
   skos:prefLabel "Senegal"@en, "Senegal"@it;
   l0:name "Senegal"@en, "Senegal"@it;
@@ -5857,6 +6247,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/451>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sierra Leone"@en, "Sierra Leone"@it;
   skos:prefLabel "Sierra Leone"@en, "Sierra Leone"@it;
   l0:name "Sierra Leone"@en, "Sierra Leone"@it;
@@ -5891,6 +6282,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/453>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Somalia"@en, "Somalia"@it;
   skos:prefLabel "Somalia"@en, "Somalia"@it;
   l0:name "Somalia"@en, "Somalia"@it;
@@ -5925,6 +6317,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/454>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "South Africa"@en, "Sudafrica"@it;
   skos:prefLabel "South Africa"@en, "Sudafrica"@it;
   l0:name "South Africa"@en, "Sudafrica"@it;
@@ -5959,6 +6352,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/455>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sudan"@en, "Sudan"@it;
   skos:prefLabel "Sudan"@en, "Sudan"@it;
   l0:name "Sudan"@en, "Sudan"@it;
@@ -5993,6 +6387,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/456>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Eswatini"@en, "Eswatini"@it;
   skos:prefLabel "Eswatini"@en, "Eswatini"@it;
   l0:name "Eswatini"@en, "Eswatini"@it;
@@ -6027,6 +6422,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/457>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Tanzania"@it, "Tanzania, United Republic of"@en;
   skos:prefLabel "Tanzania"@it, "Tanzania, United Republic of"@en;
   l0:name "Tanzania"@it, "Tanzania, United Republic of"@en;
@@ -6061,6 +6457,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/458>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Togo"@en, "Togo"@it;
   skos:prefLabel "Togo"@en, "Togo"@it;
   l0:name "Togo"@en, "Togo"@it;
@@ -6095,6 +6492,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/460>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Tunisia"@en, "Tunisia"@it;
   skos:prefLabel "Tunisia"@en, "Tunisia"@it;
   l0:name "Tunisia"@en, "Tunisia"@it;
@@ -6129,6 +6527,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/461>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Uganda"@en, "Uganda"@it;
   skos:prefLabel "Uganda"@en, "Uganda"@it;
   l0:name "Uganda"@en, "Uganda"@it;
@@ -6163,6 +6562,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/463>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Democratic Republic of the Congo"@en, "Repubblica Democratica del Congo"@it;
   skos:prefLabel "Democratic Republic of the Congo"@en, "Repubblica Democratica del Congo"@it;
   l0:name "Democratic Republic of the Congo"@en, "Repubblica Democratica del Congo"@it;
@@ -6197,6 +6597,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/464>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Zambia"@en, "Zambia"@it;
   skos:prefLabel "Zambia"@en, "Zambia"@it;
   l0:name "Zambia"@en, "Zambia"@it;
@@ -6231,6 +6632,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/465>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Zimbabwe"@en, "Zimbabwe"@it;
   skos:prefLabel "Zimbabwe"@en, "Zimbabwe"@it;
   l0:name "Zimbabwe"@en, "Zimbabwe"@it;
@@ -6265,6 +6667,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/466>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Eritrea"@en, "Eritrea"@it;
   skos:prefLabel "Eritrea"@en, "Eritrea"@it;
   l0:name "Eritrea"@en, "Eritrea"@it;
@@ -6299,6 +6702,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/467>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "South Sudan"@en, "Sud Sudan"@it;
   skos:prefLabel "South Sudan"@en, "Sud Sudan"@it;
   l0:name "South Sudan"@en, "Sud Sudan"@it;
@@ -6333,6 +6737,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/503>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Antigua and Barbuda"@en, "Antigua e Barbuda"@it;
   skos:prefLabel "Antigua and Barbuda"@en, "Antigua e Barbuda"@it;
   l0:name "Antigua and Barbuda"@en, "Antigua e Barbuda"@it;
@@ -6367,6 +6772,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/505>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bahamas"@en, "Bahamas"@it;
   skos:prefLabel "Bahamas"@en, "Bahamas"@it;
   l0:name "Bahamas"@en, "Bahamas"@it;
@@ -6401,6 +6807,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/506>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Barbados"@en, "Barbados"@it;
   skos:prefLabel "Barbados"@en, "Barbados"@it;
   l0:name "Barbados"@en, "Barbados"@it;
@@ -6435,6 +6842,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/507>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Belize"@en, "Belize"@it;
   skos:prefLabel "Belize"@en, "Belize"@it;
   l0:name "Belize"@en, "Belize"@it;
@@ -6469,6 +6877,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/509>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Canada"@en, "Canada"@it;
   skos:prefLabel "Canada"@en, "Canada"@it;
   l0:name "Canada"@en, "Canada"@it;
@@ -6503,6 +6912,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/513>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Costa Rica"@en, "Costa Rica"@it;
   skos:prefLabel "Costa Rica"@en, "Costa Rica"@it;
   l0:name "Costa Rica"@en, "Costa Rica"@it;
@@ -6537,6 +6947,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/514>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cuba"@en, "Cuba"@it;
   skos:prefLabel "Cuba"@en, "Cuba"@it;
   l0:name "Cuba"@en, "Cuba"@it;
@@ -6571,6 +6982,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/515>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Dominica"@en, "Dominica"@it;
   skos:prefLabel "Dominica"@en, "Dominica"@it;
   l0:name "Dominica"@en, "Dominica"@it;
@@ -6605,6 +7017,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/516>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Dominican Republic"@en, "Repubblica Dominicana"@it;
   skos:prefLabel "Dominican Republic"@en, "Repubblica Dominicana"@it;
   l0:name "Dominican Republic"@en, "Repubblica Dominicana"@it;
@@ -6639,6 +7052,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/517>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "El Salvador"@en, "El Salvador"@it;
   skos:prefLabel "El Salvador"@en, "El Salvador"@it;
   l0:name "El Salvador"@en, "El Salvador"@it;
@@ -6673,6 +7087,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/518>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Giamaica"@it, "Jamaica"@en;
   skos:prefLabel "Giamaica"@it, "Jamaica"@en;
   l0:name "Giamaica"@it, "Jamaica"@en;
@@ -6707,6 +7122,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/519>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Grenada"@en, "Grenada"@it;
   skos:prefLabel "Grenada"@en, "Grenada"@it;
   l0:name "Grenada"@en, "Grenada"@it;
@@ -6741,6 +7157,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/523>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guatemala"@en, "Guatemala"@it;
   skos:prefLabel "Guatemala"@en, "Guatemala"@it;
   l0:name "Guatemala"@en, "Guatemala"@it;
@@ -6775,6 +7192,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/524>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Haiti"@en, "Haiti"@it;
   skos:prefLabel "Haiti"@en, "Haiti"@it;
   l0:name "Haiti"@en, "Haiti"@it;
@@ -6809,6 +7227,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/525>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Honduras"@en, "Honduras"@it;
   skos:prefLabel "Honduras"@en, "Honduras"@it;
   l0:name "Honduras"@en, "Honduras"@it;
@@ -6843,6 +7262,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/527>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Messico"@it, "Mexico"@en;
   skos:prefLabel "Messico"@it, "Mexico"@en;
   l0:name "Messico"@it, "Mexico"@en;
@@ -6877,6 +7297,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/529>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Nicaragua"@en, "Nicaragua"@it;
   skos:prefLabel "Nicaragua"@en, "Nicaragua"@it;
   l0:name "Nicaragua"@en, "Nicaragua"@it;
@@ -6911,6 +7332,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/530>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Panama"@en, "Panama"@it;
   skos:prefLabel "Panama"@en, "Panama"@it;
   l0:name "Panama"@en, "Panama"@it;
@@ -6945,6 +7367,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/532>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Lucia"@en, "Santa Lucia"@it;
   skos:prefLabel "Saint Lucia"@en, "Santa Lucia"@it;
   l0:name "Saint Lucia"@en, "Santa Lucia"@it;
@@ -6979,6 +7402,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/533>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Vincent and the Grenadines"@en, "Saint Vincent e Grenadine"@it;
   skos:prefLabel "Saint Vincent and the Grenadines"@en, "Saint Vincent e Grenadine"@it;
   l0:name "Saint Vincent and the Grenadines"@en, "Saint Vincent e Grenadine"@it;
@@ -7013,6 +7437,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/534>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Kitts and Nevis"@en, "Saint Kitts e Nevis"@it;
   skos:prefLabel "Saint Kitts and Nevis"@en, "Saint Kitts e Nevis"@it;
   l0:name "Saint Kitts and Nevis"@en, "Saint Kitts e Nevis"@it;
@@ -7047,6 +7472,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/536>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Stati Uniti d'America"@it, "United States of America"@en;
   skos:prefLabel "Stati Uniti d'America"@it, "United States of America"@en;
   l0:name "Stati Uniti d'America"@it, "United States of America"@en;
@@ -7081,6 +7507,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/602>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Argentina"@en, "Argentina"@it;
   skos:prefLabel "Argentina"@en, "Argentina"@it;
   l0:name "Argentina"@en, "Argentina"@it;
@@ -7115,6 +7542,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/604>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bolivia"@it, "Bolivia, Plurinational State of"@en;
   skos:prefLabel "Bolivia"@it, "Bolivia, Plurinational State of"@en;
   l0:name "Bolivia"@it, "Bolivia, Plurinational State of"@en;
@@ -7149,6 +7577,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/605>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Brasile"@it, "Brazil"@en;
   skos:prefLabel "Brasile"@it, "Brazil"@en;
   l0:name "Brasile"@it, "Brazil"@en;
@@ -7183,6 +7612,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/606>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Chile"@en, "Cile"@it;
   skos:prefLabel "Chile"@en, "Cile"@it;
   l0:name "Chile"@en, "Cile"@it;
@@ -7217,6 +7647,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/608>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Colombia"@en, "Colombia"@it;
   skos:prefLabel "Colombia"@en, "Colombia"@it;
   l0:name "Colombia"@en, "Colombia"@it;
@@ -7251,6 +7682,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/609>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ecuador"@en, "Ecuador"@it;
   skos:prefLabel "Ecuador"@en, "Ecuador"@it;
   l0:name "Ecuador"@en, "Ecuador"@it;
@@ -7285,6 +7717,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/612>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guyana"@en, "Guyana"@it;
   skos:prefLabel "Guyana"@en, "Guyana"@it;
   l0:name "Guyana"@en, "Guyana"@it;
@@ -7319,6 +7752,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/614>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Paraguay"@en, "Paraguay"@it;
   skos:prefLabel "Paraguay"@en, "Paraguay"@it;
   l0:name "Paraguay"@en, "Paraguay"@it;
@@ -7353,6 +7787,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/615>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Peru"@en, "Perù"@it;
   skos:prefLabel "Peru"@en, "Perù"@it;
   l0:name "Peru"@en, "Perù"@it;
@@ -7387,6 +7822,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/616>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Suriname"@en, "Suriname"@it;
   skos:prefLabel "Suriname"@en, "Suriname"@it;
   l0:name "Suriname"@en, "Suriname"@it;
@@ -7421,6 +7857,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/617>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Trinidad and Tobago"@en, "Trinidad e Tobago"@it;
   skos:prefLabel "Trinidad and Tobago"@en, "Trinidad e Tobago"@it;
   l0:name "Trinidad and Tobago"@en, "Trinidad e Tobago"@it;
@@ -7455,6 +7892,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/618>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Uruguay"@en, "Uruguay"@it;
   skos:prefLabel "Uruguay"@en, "Uruguay"@it;
   l0:name "Uruguay"@en, "Uruguay"@it;
@@ -7489,6 +7927,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/619>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Venezuela"@en, "Venezuela"@it;
   skos:prefLabel "Venezuela"@en, "Venezuela"@it;
   l0:name "Venezuela"@en, "Venezuela"@it;
@@ -7523,6 +7962,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/701>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Australia"@en, "Australia"@it;
   skos:prefLabel "Australia"@en, "Australia"@it;
   l0:name "Australia"@en, "Australia"@it;
@@ -7557,6 +7997,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/703>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Figi"@it, "Fiji"@en;
   skos:prefLabel "Figi"@it, "Fiji"@en;
   l0:name "Figi"@it, "Fiji"@en;
@@ -7591,6 +8032,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/708>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Kiribati"@en, "Kiribati"@it;
   skos:prefLabel "Kiribati"@en, "Kiribati"@it;
   l0:name "Kiribati"@en, "Kiribati"@it;
@@ -7625,6 +8067,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/712>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Marshall"@it, "Marshall Islands"@en;
   skos:prefLabel "Isole Marshall"@it, "Marshall Islands"@en;
   l0:name "Isole Marshall"@it, "Marshall Islands"@en;
@@ -7659,6 +8102,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/713>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Federated States of Micronesia"@en, "Stati Federati di Micronesia"@it;
   skos:prefLabel "Federated States of Micronesia"@en, "Stati Federati di Micronesia"@it;
   l0:name "Federated States of Micronesia"@en, "Stati Federati di Micronesia"@it;
@@ -7693,6 +8137,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/715>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Nauru"@en, "Nauru"@it;
   skos:prefLabel "Nauru"@en, "Nauru"@it;
   l0:name "Nauru"@en, "Nauru"@it;
@@ -7727,6 +8172,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/719>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "New Zealand"@en, "Nuova Zelanda"@it;
   skos:prefLabel "New Zealand"@en, "Nuova Zelanda"@it;
   l0:name "New Zealand"@en, "Nuova Zelanda"@it;
@@ -7761,6 +8207,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/720>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Palau"@en, "Palau"@it;
   skos:prefLabel "Palau"@en, "Palau"@it;
   l0:name "Palau"@en, "Palau"@it;
@@ -7795,6 +8242,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/721>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Papua New Guinea"@en, "Papua Nuova Guinea"@it;
   skos:prefLabel "Papua New Guinea"@en, "Papua Nuova Guinea"@it;
   l0:name "Papua New Guinea"@en, "Papua Nuova Guinea"@it;
@@ -7829,6 +8277,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/725>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Salomone"@it, "Solomon Islands"@en;
   skos:prefLabel "Isole Salomone"@it, "Solomon Islands"@en;
   l0:name "Isole Salomone"@it, "Solomon Islands"@en;
@@ -7863,6 +8312,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/727>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Samoa"@en, "Samoa"@it;
   skos:prefLabel "Samoa"@en, "Samoa"@it;
   l0:name "Samoa"@en, "Samoa"@it;
@@ -7897,6 +8347,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/730>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Tonga"@en, "Tonga"@it;
   skos:prefLabel "Tonga"@en, "Tonga"@it;
   l0:name "Tonga"@en, "Tonga"@it;
@@ -7931,6 +8382,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/731>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Tuvalu"@en, "Tuvalu"@it;
   skos:prefLabel "Tuvalu"@en, "Tuvalu"@it;
   l0:name "Tuvalu"@en, "Tuvalu"@it;
@@ -7965,6 +8417,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/732>
   a skos:Concept, :Feature, :AdminUnitComponent, :Country, :State;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Vanuatu"@en, "Vanuatu"@it;
   skos:prefLabel "Vanuatu"@en, "Vanuatu"@it;
   l0:name "Vanuatu"@en, "Vanuatu"@it;
@@ -7999,6 +8452,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/856>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Ceuta"@en, "Ceuta"@it;
   skos:prefLabel "Ceuta"@en, "Ceuta"@it;
   l0:name "Ceuta"@en, "Ceuta"@it;
@@ -8029,6 +8483,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/882>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Melilla"@en, "Melilla"@it;
   skos:prefLabel "Melilla"@en, "Melilla"@it;
   l0:name "Melilla"@en, "Melilla"@it;
@@ -8054,6 +8509,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/901>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Minori Esterne degli Stati Uniti d'America"@it, "United States Minor Outlying Islands"@en;
   skos:prefLabel "Isole Minori Esterne degli Stati Uniti d'America"@it, "United States Minor Outlying Islands"@en;
   l0:name "Isole Minori Esterne degli Stati Uniti d'America"@it, "United States Minor Outlying Islands"@en;
@@ -8091,6 +8547,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/902>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "New Caledonia"@en, "Nuova Caledonia"@it;
   skos:prefLabel "New Caledonia"@en, "Nuova Caledonia"@it;
   l0:name "New Caledonia"@en, "Nuova Caledonia"@it;
@@ -8132,6 +8589,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/904>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Martin"@en, "Saint-Martin (FR)"@it;
   skos:prefLabel "Saint Martin"@en, "Saint-Martin (FR)"@it;
   l0:name "Saint Martin"@en, "Saint-Martin (FR)"@it;
@@ -8164,6 +8622,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/906>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Barthélemy"@en, "Saint-Barthélemy"@it;
   skos:prefLabel "Saint Barthélemy"@en, "Saint-Barthélemy"@it;
   l0:name "Saint Barthélemy"@en, "Saint-Barthélemy"@it;
@@ -8196,6 +8655,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/908>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bermuda"@en, "Bermuda"@it;
   skos:prefLabel "Bermuda"@en, "Bermuda"@it;
   l0:name "Bermuda"@en, "Bermuda"@it;
@@ -8237,6 +8697,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/909>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cook Islands"@en, "Isole Cook (NZ)"@it;
   skos:prefLabel "Cook Islands"@en, "Isole Cook (NZ)"@it;
   l0:name "Cook Islands"@en, "Isole Cook (NZ)"@it;
@@ -8278,6 +8739,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/910>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Gibilterra"@it, "Gibraltar"@en;
   skos:prefLabel "Gibilterra"@it, "Gibraltar"@en;
   l0:name "Gibilterra"@it, "Gibraltar"@en;
@@ -8314,6 +8776,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/911>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cayman Islands"@en, "Isole Cayman"@it;
   skos:prefLabel "Cayman Islands"@en, "Isole Cayman"@it;
   l0:name "Cayman Islands"@en, "Isole Cayman"@it;
@@ -8350,6 +8813,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/914>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guadalupa"@it, "Guadeloupe"@en;
   skos:prefLabel "Guadalupa"@it, "Guadeloupe"@en;
   l0:name "Guadalupa"@it, "Guadeloupe"@en;
@@ -8386,6 +8850,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/915>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Martinica"@it, "Martinique"@en;
   skos:prefLabel "Martinica"@it, "Martinique"@en;
   l0:name "Martinica"@it, "Martinique"@en;
@@ -8422,6 +8887,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/917>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Anguilla"@en, "Anguilla"@it;
   skos:prefLabel "Anguilla"@en, "Anguilla"@it;
   l0:name "Anguilla"@en, "Anguilla"@it;
@@ -8458,6 +8924,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/919>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Porto Rico"@it, "Puerto Rico"@en;
   skos:prefLabel "Porto Rico"@it, "Puerto Rico"@en;
   l0:name "Porto Rico"@it, "Puerto Rico"@en;
@@ -8494,6 +8961,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/920>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "French Polynesia"@en, "Polinesia francese"@it;
   skos:prefLabel "French Polynesia"@en, "Polinesia francese"@it;
   l0:name "French Polynesia"@en, "Polinesia francese"@it;
@@ -8530,6 +8998,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/924>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Faroe Islands"@en, "Isole Fær Øer"@it;
   skos:prefLabel "Faroe Islands"@en, "Isole Fær Øer"@it;
   l0:name "Faroe Islands"@en, "Isole Fær Øer"@it;
@@ -8571,6 +9040,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/925>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Jersey"@en, "Jersey"@it;
   skos:prefLabel "Jersey"@en, "Jersey"@it;
   l0:name "Jersey"@en, "Jersey"@it;
@@ -8603,6 +9073,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/926>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Aruba"@en, "Aruba"@it;
   skos:prefLabel "Aruba"@en, "Aruba"@it;
   l0:name "Aruba"@en, "Aruba"@it;
@@ -8640,6 +9111,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/928>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sint Maarten (NL)"@it, "Sint Maarten"@en;
   skos:prefLabel "Sint Maarten (NL)"@it, "Sint Maarten"@en;
   l0:name "Sint Maarten (NL)"@it, "Sint Maarten"@en;
@@ -8672,6 +9144,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/929>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Riunione"@it, "Réunion"@en;
   skos:prefLabel "Riunione"@it, "Réunion"@en;
   l0:name "Riunione"@it, "Réunion"@en;
@@ -8708,6 +9181,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/934>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Greenland"@en, "Groenlandia"@it;
   skos:prefLabel "Greenland"@en, "Groenlandia"@it;
   l0:name "Greenland"@en, "Groenlandia"@it;
@@ -8744,6 +9218,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/935>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bonaire, Saint Eustatius e Saba"@it, "Bonaire, Sint Eustatius and Saba"@en;
   skos:prefLabel "Bonaire, Saint Eustatius e Saba"@it, "Bonaire, Sint Eustatius and Saba"@en;
   l0:name "Bonaire, Saint Eustatius e Saba"@it, "Bonaire, Sint Eustatius and Saba"@en;
@@ -8776,6 +9251,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/937>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guam"@en, "Guam"@it;
   skos:prefLabel "Guam"@en, "Guam"@it;
   l0:name "Guam"@en, "Guam"@it;
@@ -8812,6 +9288,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/939>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sark"@en, "Sark"@it;
   skos:prefLabel "Sark"@en, "Sark"@it;
   l0:name "Sark"@en, "Sark"@it;
@@ -8831,6 +9308,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/940>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Guernsey"@en, "Guernsey"@it;
   skos:prefLabel "Guernsey"@en, "Guernsey"@it;
   l0:name "Guernsey"@en, "Guernsey"@it;
@@ -8863,6 +9341,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/944>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "French Guiana"@en, "Guyana Francese"@it;
   skos:prefLabel "French Guiana"@en, "Guyana Francese"@it;
   l0:name "French Guiana"@en, "Guyana Francese"@it;
@@ -8899,6 +9378,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/945>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Heard Island and McDonald Islands"@en, "Heard e McDonald"@it;
   skos:prefLabel "Heard Island and McDonald Islands"@en, "Heard e McDonald"@it;
   l0:name "Heard Island and McDonald Islands"@en, "Heard e McDonald"@it;
@@ -8936,6 +9416,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/947>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Hong Kong"@en, "Hong Kong"@it;
   skos:prefLabel "Hong Kong"@en, "Hong Kong"@it;
   l0:name "Hong Kong"@en, "Hong Kong"@it;
@@ -8977,6 +9458,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/948>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Christmas Island"@en, "Isola di Natale"@it;
   skos:prefLabel "Christmas Island"@en, "Isola di Natale"@it;
   l0:name "Christmas Island"@en, "Isola di Natale"@it;
@@ -9013,6 +9495,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/952>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Aland"@it, "Åland Islands"@en;
   skos:prefLabel "Isole Aland"@it, "Åland Islands"@en;
   l0:name "Isole Aland"@it, "Åland Islands"@en;
@@ -9050,6 +9533,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/956>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Macao"@en, "Macao"@it;
   skos:prefLabel "Macao"@en, "Macao"@it;
   l0:name "Macao"@en, "Macao"@it;
@@ -9086,6 +9570,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/958>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Falkland Islands (Malvinas)"@en, "Isole Falkland (Malvine)"@it;
   skos:prefLabel "Falkland Islands (Malvinas)"@en, "Isole Falkland (Malvine)"@it;
   l0:name "Falkland Islands (Malvinas)"@en, "Isole Falkland (Malvine)"@it;
@@ -9122,6 +9607,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/959>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isle of Man"@en, "Isola di Man"@it;
   skos:prefLabel "Isle of Man"@en, "Isola di Man"@it;
   l0:name "Isle of Man"@en, "Isola di Man"@it;
@@ -9158,6 +9644,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/960>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole delle Marianne settentrionali"@it, "Northern Mariana Islands"@en;
   skos:prefLabel "Isole delle Marianne settentrionali"@it, "Northern Mariana Islands"@en;
   l0:name "Isole delle Marianne settentrionali"@it, "Northern Mariana Islands"@en;
@@ -9194,6 +9681,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/962>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Mayotte"@en, "Mayotte"@it;
   skos:prefLabel "Mayotte"@en, "Mayotte"@it;
   l0:name "Mayotte"@en, "Mayotte"@it;
@@ -9230,6 +9718,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/964>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Montserrat"@en, "Montserrat"@it;
   skos:prefLabel "Montserrat"@en, "Montserrat"@it;
   l0:name "Montserrat"@en, "Montserrat"@it;
@@ -9266,6 +9755,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/965>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Niue"@en, "Niue"@it;
   skos:prefLabel "Niue"@en, "Niue"@it;
   l0:name "Niue"@en, "Niue"@it;
@@ -9302,6 +9792,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/966>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Curaçao"@en, "Curaçao"@it;
   skos:prefLabel "Curaçao"@en, "Curaçao"@it;
   l0:name "Curaçao"@en, "Curaçao"@it;
@@ -9334,6 +9825,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/967>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isola Norfolk"@it, "Norfolk Island"@en;
   skos:prefLabel "Isola Norfolk"@it, "Norfolk Island"@en;
   l0:name "Isola Norfolk"@it, "Norfolk Island"@en;
@@ -9370,6 +9862,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/972>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Pitcairn"@it, "Pitcairn"@en;
   skos:prefLabel "Isole Pitcairn"@it, "Pitcairn"@en;
   l0:name "Isole Pitcairn"@it, "Pitcairn"@en;
@@ -9406,6 +9899,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/975>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Cocos (Keeling) Islands"@en, "Isole Cocos"@it;
   skos:prefLabel "Cocos (Keeling) Islands"@en, "Isole Cocos"@it;
   l0:name "Cocos (Keeling) Islands"@en, "Isole Cocos"@it;
@@ -9442,6 +9936,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/976>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "British Indian Ocean Territory"@en, "Territorio Britannico dell'Oceano Indiano"@it;
   skos:prefLabel "British Indian Ocean Territory"@en, "Territorio Britannico dell'Oceano Indiano"@it;
   l0:name "British Indian Ocean Territory"@en, "Territorio Britannico dell'Oceano Indiano"@it;
@@ -9474,6 +9969,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/979>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Georgia del Sud e Sandwich Australi"@it, "South Georgia and the South Sandwich Islands"@en;
   skos:prefLabel "Georgia del Sud e Sandwich Australi"@it, "South Georgia and the South Sandwich Islands"@en;
   l0:name "Georgia del Sud e Sandwich Australi"@it, "South Georgia and the South Sandwich Islands"@en;
@@ -9506,6 +10002,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/980>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Pierre and Miquelon"@en, "Saint Pierre e Miquelon"@it;
   skos:prefLabel "Saint Pierre and Miquelon"@en, "Saint Pierre e Miquelon"@it;
   l0:name "Saint Pierre and Miquelon"@en, "Saint Pierre e Miquelon"@it;
@@ -9542,6 +10039,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/982>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "American Samoa"@en, "Samoa Americane"@it;
   skos:prefLabel "American Samoa"@en, "Samoa Americane"@it;
   l0:name "American Samoa"@en, "Samoa Americane"@it;
@@ -9578,6 +10076,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/983>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Saint Helena"@en, "Sant'Elena"@it;
   skos:prefLabel "Saint Helena"@en, "Sant'Elena"@it;
   l0:name "Saint Helena"@en, "Sant'Elena"@it;
@@ -9614,6 +10113,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/984>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Bouvet Island"@en, "Bouvet, isola"@it;
   skos:prefLabel "Bouvet Island"@en, "Bouvet, isola"@it;
   l0:name "Bouvet Island"@en, "Bouvet, isola"@it;
@@ -9651,6 +10151,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/987>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Svalbard and Jan Mayen"@en, "Svalbard e Jan Mayen"@it;
   skos:prefLabel "Svalbard and Jan Mayen"@en, "Svalbard e Jan Mayen"@it;
   l0:name "Svalbard and Jan Mayen"@en, "Svalbard e Jan Mayen"@it;
@@ -9683,6 +10184,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/988>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "French Southern Territories"@en, "Terre australi e antartiche francesi"@it;
   skos:prefLabel "French Southern Territories"@en, "Terre australi e antartiche francesi"@it;
   l0:name "French Southern Territories"@en, "Terre australi e antartiche francesi"@it;
@@ -9715,6 +10217,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/990>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Tokelau"@en, "Tokelau"@it;
   skos:prefLabel "Tokelau"@en, "Tokelau"@it;
   l0:name "Tokelau"@en, "Tokelau"@it;
@@ -9751,6 +10254,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/992>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Turks e Caicos"@it, "Turks and Caicos Islands"@en;
   skos:prefLabel "Isole Turks e Caicos"@it, "Turks and Caicos Islands"@en;
   l0:name "Isole Turks e Caicos"@it, "Turks and Caicos Islands"@en;
@@ -9787,6 +10291,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/994>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "British Virgin Islands"@en, "Isole Vergini britanniche"@it;
   skos:prefLabel "British Virgin Islands"@en, "Isole Vergini britanniche"@it;
   l0:name "British Virgin Islands"@en, "Isole Vergini britanniche"@it;
@@ -9823,6 +10328,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/995>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Isole Vergini americane"@it, "Virgin Islands of the United States"@en;
   skos:prefLabel "Isole Vergini americane"@it, "Virgin Islands of the United States"@en;
   l0:name "Isole Vergini americane"@it, "Virgin Islands of the United States"@en;
@@ -9859,6 +10365,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/territories/997>
   a skos:Concept, :Feature, :AdminUnitComponent, :Territory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Wallis and Futuna"@en, "Wallis e Futuna"@it;
   skos:prefLabel "Wallis and Futuna"@en, "Wallis e Futuna"@it;
   l0:name "Wallis and Futuna"@en, "Wallis e Futuna"@it;
@@ -9918,6 +10425,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/324>
   a skos:Concept, :Feature, :AdminUnitComponent, :SpecialTerritory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Palestina"@it, "Palestine"@en;
   skos:prefLabel "Palestina"@it, "Palestine"@en;
   l0:name "Palestina"@it, "Palestine"@en;
@@ -9943,6 +10451,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/905>
   a skos:Concept, :Feature, :AdminUnitComponent, :SpecialTerritory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Sahara occidentale"@it, "Western Sahara"@en;
   skos:prefLabel "Sahara occidentale"@it, "Western Sahara"@en;
   l0:name "Sahara occidentale"@it, "Western Sahara"@en;
@@ -9968,6 +10477,7 @@
 
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/special-territories/974>
   a skos:Concept, :Feature, :AdminUnitComponent, :SpecialTerritory;
+  skos:topConceptOf <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries>;
   rdfs:label "Antarctica"@en, "Antartide"@it;
   skos:prefLabel "Antarctica"@en, "Antartide"@it;
   l0:name "Antarctica"@en, "Antartide"@it;
@@ -9991,4 +10501,9 @@
   l0:identifier "974";
   :identifierType "Codice ISTAT numerico" .
 
+#################################################################
+# Allineamneto con <https://w3id.org/italia/stat/controlled-vocabulary/environment-and-territory/territory-and-cartography/countries/italy>
+#################################################################
 
+<https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/100> 
+      skos:exactMatch    <https://w3id.org/italia/stat/controlled-vocabulary/environment-and-territory/territory-and-cartography/countries/italy/ITA> .
